@@ -30,7 +30,7 @@ def claim_summary(g, c) -> tuple[str, str, str]:
     if DHO.Nutriment in types:
         effect = "fuels" if g.value(c, DHO.fuels) else "starves"
         target = g.value(c, DHO.fuels) or g.value(c, DHO.starves)
-        return "nutriment", "sutta", f"{L(g.value(c, DHO.attention))} to {L(g.value(c, DHO.object))} {effect} {L(target)}"
+        return "nutriment", "sutta", f"{dho.nutriment_attention(g, g.value(c, DHO.attention))} to {L(g.value(c, DHO.object))} {effect} {L(target)}"
     if DHO.TimingAdvice in types:
         state, factor, timing = g.value(c, DHO.whenMind), g.value(c, DHO.develop), g.value(c, DHO.timing)
         when = f"when the mind is {L(state).replace(' mind', '')}: " if state else ""
@@ -43,6 +43,13 @@ def claim_summary(g, c) -> tuple[str, str, str]:
                                        f"has {L(g.value(c, DHO.possesses))}")
     if DHO.Definition in types:
         return "definition", "sutta", f"{L(g.value(c, DHO.defines))} is defined as {L(g.value(c, DHO['as']))}"
+    if DHO.Outcome in types:
+        return "outcome", "sutta", (f"{L(g.value(c, DHO.of))} {L(g.value(c, DHO.effect))} {L(g.value(c, DHO.to))}"
+                                    f" (“{g.value(c, DHO.wording)}”)")
+    if DHO.Condition in types:
+        res = g.value(c, DHO.result)
+        what = f"{L(g.value(c, DHO.relation))} {L(g.value(c, DHO.conditioned))}" + (f": {L(res)}" if res else "")
+        return "condition", "sutta", f"{L(g.value(c, DHO.condition))} {what} (“{g.value(c, DHO.wording)}”)"
     if ONTOLEX.LexicalSense in types:
         return "word sense", "lexicon", f"'dhamma' meaning {L(g.value(c, ONTOLEX.reference))}"
     if DHO.Opposition in types:

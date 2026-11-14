@@ -180,3 +180,50 @@ dho:DefinitionShape a sh:NodeShape ;
     sh:property [ sh:path dho:defines ; sh:minCount 1 ; sh:maxCount 1 ; sh:message "S11: definition must name the term it defines." ] ;
     sh:property [ sh:path dho:as ;      sh:minCount 1 ; sh:maxCount 1 ; sh:message "S11: definition must name what the term is defined as." ] ;
     sh:property [ sh:path dho:citedBy ; sh:minCount 1 ; sh:class dho:Passage ; sh:message "S11: definition must cite the passage that states it." ] .
+
+# ---------------------------------------------------------------- S12: outcomes (pattern A)
+
+dho:OutcomeShape a sh:NodeShape ;
+    sh:targetClass dho:Outcome ;
+    sh:property [ sh:path dho:of ;      sh:minCount 1 ; sh:maxCount 1 ; sh:message "S12: outcome must say what has the effect (dho:of)." ] ;
+    sh:property [ sh:path dho:effect ;  sh:minCount 1 ; sh:maxCount 1 ; sh:in ( dho:LeadsTo dho:DoesNotLeadTo dho:Strengthens dho:Weakens ) ;
+                  sh:message "S12: outcome needs exactly one effect: leads to, does not lead to, strengthens, weakens." ] ;
+    sh:property [ sh:path dho:to ;      sh:minCount 1 ; sh:maxCount 1 ; sh:message "S12: outcome must say what it leads to (dho:to)." ] ;
+    sh:property [ sh:path dho:wording ; sh:minCount 1 ; sh:maxCount 1 ; sh:message "S12: outcome must keep the text's own wording." ] ;
+    sh:property [ sh:path dho:citedBy ; sh:minCount 1 ; sh:class dho:Passage ; sh:message "S12: outcome must cite a passage." ] .
+
+# ---------------------------------------------------------------- S13: conditions (pattern B)
+
+dho:ConditionShape a sh:NodeShape ;
+    sh:targetClass dho:Condition ;
+    sh:property [ sh:path dho:condition ;   sh:minCount 1 ; sh:maxCount 1 ; sh:message "S13: condition must name what conditions." ] ;
+    sh:property [ sh:path dho:conditioned ; sh:minCount 1 ; sh:maxCount 1 ; sh:message "S13: condition must name what is conditioned." ] ;
+    sh:property [ sh:path dho:relation ;    sh:minCount 1 ; sh:maxCount 1 ; sh:class dho:ConditionRelation ;
+                  sh:message "S13: condition needs exactly one relation (basis, forerunner, root, gives rise to, supports, when-then)." ] ;
+    sh:property [ sh:path dho:result ;      sh:maxCount 1 ; sh:class dho:Result ; sh:message "S13: at most one result." ] ;
+    sh:property [ sh:path dho:wording ;     sh:minCount 1 ; sh:maxCount 1 ; sh:message "S13: condition must keep the text's own wording." ] ;
+    sh:property [ sh:path dho:citedBy ;     sh:minCount 1 ; sh:class dho:Passage ; sh:message "S13: condition must cite a passage." ] .
+
+dho:WhenThenNeedsResultShape a sh:NodeShape ;
+    sh:targetSubjectsOf dho:relation ;
+    sh:sparql [
+        sh:prefixes <https://guoxiangng.github.io/dhamma-ontology/shapes> ;
+        sh:message "S13: a when-then condition must say what happens (dho:result)." ;
+        sh:select """
+            SELECT $this WHERE { $this dho:relation dho:WhenThen . FILTER NOT EXISTS { $this dho:result ?r } }""" ] .
+
+# ---------------------------------------------------------------- S14: the wording is really in the text
+
+dho:WordingInTextShape a sh:NodeShape ;
+    sh:targetSubjectsOf dho:wording ;
+    sh:sparql [
+        sh:prefixes <https://guoxiangng.github.io/dhamma-ontology/shapes> ;
+        sh:message "S14: wording '{?w}' does not occur in any passage this claim cites." ;
+        sh:select """
+            SELECT $this ?w WHERE {
+                $this dho:wording ?w .
+                FILTER NOT EXISTS {
+                    $this dho:citedBy ?p . ?p dho:textEn ?t .
+                    FILTER (CONTAINS(LCASE(STR(?t)), LCASE(STR(?w))))
+                }
+            }""" ] .

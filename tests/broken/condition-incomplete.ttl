@@ -1,0 +1,6 @@
+@prefix dho: <https://guoxiangng.github.io/dhamma-ontology/ns#> .
+# A condition with no relation and a when-then with no result: S13 must catch both.
+dho:c-bad1 a dho:Condition ; dho:condition dho:Ethics ; dho:conditioned dho:SevenAwakeningFactors ;
+    dho:wording "depending on and grounded on ethics" ; dho:citedBy dho:p-sn46.1-1.4 .
+dho:c-bad2 a dho:Condition ; dho:condition dho:RationalAttention ; dho:relation dho:WhenThen ; dho:conditioned dho:FiveHindrances ;
+    dho:wording "when you apply the mind rationally" ; dho:citedBy dho:p-sn46.24-2.1 .

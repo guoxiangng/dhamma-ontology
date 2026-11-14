@@ -14,7 +14,7 @@ import sys
 from pathlib import Path
 
 from rdflib import Literal
-from rdflib.namespace import RDF, SKOS
+from rdflib.namespace import RDF, RDFS, SKOS
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import dho  # noqa: E402
@@ -29,7 +29,8 @@ KINDS = [  # order matters: first match is the node's main kind
     (DHO.NumberedList, "list"),
     (DHO.Attainment, "attainment"),
     (ONTOLEX.LexicalEntry, "word"),
-    (DHO.Concept, "sense"),
+    (DHO.AttentionMode, "attention"),
+    (DHO.Concept, "concept"),
 ]
 CLASS_NAMES = {DHO.Hindrance: "Hindrance", DHO.AwakeningFactor: "Awakening factor", DHO.JhanaFactor: "Jhāna factor"}
 
@@ -59,13 +60,14 @@ def export() -> dict:
             if lid(n) in nodes or not str(n).startswith(str(DHO)):
                 continue
             types = set(g.objects(n, RDF.type))
-            pref = langs(g, n, SKOS.prefLabel)
-            if kind == "word":
+            pref = langs(g, n, SKOS.prefLabel) or langs(g, n, RDFS.label)
+            node_kind = "sense" if kind == "concept" and (None, ONTOLEX.reference, n) in g else kind
+            if node_kind == "word":
                 form = next(g.objects(n, ONTOLEX.canonicalForm))
                 pref = {"pi": [str(next(g.objects(form, ONTOLEX.writtenRep)))]}
             nodes[lid(n)] = {
                 "id": lid(n),
-                "kind": kind,
+                "kind": node_kind,
                 "en": (pref.get("en") or [None])[0],
                 "pi": (pref.get("pi") or [None])[0],
                 "zh": (pref.get("zh") or [None])[0],
@@ -98,7 +100,7 @@ def export() -> dict:
         effect = "fuels" if g.value(n, DHO.fuels) else "starves"
         target = g.value(n, DHO.fuels) or g.value(n, DHO.starves)
         att = g.value(n, DHO.attention)
-        nutriments.append({"id": lid(n), "object": lid(g.value(n, DHO.object)), "attention": label(g, att),
+        nutriments.append({"id": lid(n), "object": lid(g.value(n, DHO.object)), "attention": dho.nutriment_attention(g, att),
                            "attentionId": lid(att), "effect": effect, "target": lid(target), "cites": cites(g, n)})
     nutriments.sort(key=lambda x: x["id"])
 
@@ -123,6 +125,20 @@ def export() -> dict:
     for op in g.subjects(RDF.type, DHO.Opposition):
         edge(g.value(op, DHO.opponent), g.value(op, DHO.target), "opposes", "commentary",
              cites(g, op), str(g.value(op, DHO.citationNote) or ""))
+
+    for o in g.subjects(RDF.type, DHO.Outcome):
+        eff = g.value(o, DHO.effect)
+        edge(g.value(o, DHO.of), g.value(o, DHO.to), label(g, eff), "sutta", cites(g, o),
+             f"“{g.value(o, DHO.wording)}”", group="outcomes", effect=lid(eff),
+             inv={"LeadsTo": "reached through", "DoesNotLeadTo": "not reached through",
+                  "Strengthens": "strengthened by", "Weakens": "weakened by"}.get(lid(eff), "from"))
+
+    for k in g.subjects(RDF.type, DHO.Condition):
+        rel, res = g.value(k, DHO.relation), g.value(k, DHO.result)
+        rel_label = label(g, rel) + (f" ({label(g, res)})" if res else "")
+        note = f"“{g.value(k, DHO.wording)}”" + (f" {g.value(k, SKOS.note)}" if g.value(k, SKOS.note) else "")
+        edge(g.value(k, DHO.condition), g.value(k, DHO.conditioned), rel_label, "sutta", cites(g, k), note,
+             group="conditions", inv="conditioned by" + (f" ({label(g, res)})" if res else ""))
 
     for d in g.subjects(RDF.type, DHO.Definition):
         edge(g.value(d, DHO.defines), g.value(d, DHO["as"]), "is defined as", "sutta", cites(g, d))

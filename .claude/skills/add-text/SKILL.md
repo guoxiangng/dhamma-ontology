@@ -36,12 +36,15 @@ For each teaching statement, list its segments and the pattern it fits:
 | Timing advice | `dho:TimingAdvice`: whenMind, develop, timing | ta-01 … ta-13 |
 | Attainment | `dho:Attainment`: givesUp / possesses a list | FirstJhana (mn43:20) |
 | Definition | `dho:Definition`: defines X as Y | def-01 (mn44:12.2) |
+| Outcome | `dho:Outcome`: of, effect (leads to / does not lead to / strengthens / weakens), to, **wording**, cite | o-02 (sn46.7:1.2) |
+| Condition | `dho:Condition`: condition, relation (basis / forerunner / root / gives rise to / supports / when-then), conditioned, result, **wording**, cite | c-02 (sn46.12:1.2) |
 | Word sense | OntoLex entry → sense → concept | lex-dhamma |
 | Commentary claim | own node, `layer CommentaryLayer`, cite or citationNote | op-01 … op-05 |
 
 Rules:
 
 - **Already in the ontology?** Compare wording segment by segment (`sc.show` both texts). If it's the same claim, add a citation to the existing node (D12) and record any wording difference in the data file's comments. Never create a duplicate node.
+- **Outcomes and conditions keep the text's own words** in `dho:wording`, copied verbatim from Sujato's English. S14 fails the build if they aren't in a cited passage.
 - **No pattern fits?** Don't force it. Leave the claim out, list it in the coverage record's `leftOut`, and propose a pattern to the user with a draft DECISIONS.md entry. Similes are already waiting (see "Patterns not modelled yet" in DECISIONS.md).
 - **Unsure what a passage means?** Leave it out or mark it contested (like mn10:36.2). Editor's links are only for the owner's own judgment, and are labelled as such.
 - **Contradicts an existing decision?** Fix the data and add a dated *Correction* note to the decision, as D4 has. Tell the user prominently.

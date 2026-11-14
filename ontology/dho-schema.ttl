@@ -105,11 +105,11 @@ dho:AttentionMode a owl:Class ;
     rdfs:label "Mode of attention"@en .
 
 dho:RationalAttention a dho:AttentionMode ;
-    rdfs:label "frequent rational application of mind"@en , "yonisomanasikārabahulīkāra"@pi , "如理作意"@zh .
+    rdfs:label "rational application of mind"@en , "yoniso manasikāra"@pi , "如理作意"@zh .
 dho:IrrationalAttention a dho:AttentionMode ;
-    rdfs:label "frequent irrational application of mind"@en , "ayonisomanasikārabahulīkāra"@pi , "不如理作意"@zh .
+    rdfs:label "irrational application of mind"@en , "ayoniso manasikāra"@pi , "不如理作意"@zh .
 dho:NonAttention a dho:AttentionMode ;
-    rdfs:label "not frequently applying the mind"@en , "amanasikārabahulīkāra"@pi , "不作意"@zh .
+    rdfs:label "not applying the mind"@en , "amanasikāra"@pi , "不作意"@zh .
 
 dho:Nutriment a owl:Class ;
     rdfs:label "Nutriment"@en , "āhāra"@pi , "食"@zh ;
@@ -275,3 +275,56 @@ dho:Definition a owl:Class ; rdfs:label "Definition"@en ;
     rdfs:comment "A sutta's own statement that one term is another. Cited, never merged into one concept."@en .
 dho:defines a owl:ObjectProperty , owl:FunctionalProperty ; rdfs:domain dho:Definition ; rdfs:range dho:Concept ; rdfs:label "defines"@en .
 dho:as      a owl:ObjectProperty , owl:FunctionalProperty ; rdfs:domain dho:Definition ; rdfs:range dho:Concept ; rdfs:label "as"@en .
+
+# ---------------------------------------------------------------------------
+# Pattern A, outcomes (D13): "the seven awakening factors, developed, lead to extinguishment";
+# "the hindrances weaken wisdom". One node per statement: subject, effect, target, the
+# text's own wording (checked to occur in a cited passage, S14) and citations.
+# ---------------------------------------------------------------------------
+
+dho:Outcome a owl:Class ; rdfs:label "Outcome"@en ;
+    rdfs:comment "A sutta's statement that something leads to, or works against, something else."@en .
+dho:Effect a owl:Class ; rdfs:label "Effect"@en .
+dho:LeadsTo       a dho:Effect ; rdfs:label "leads to"@en .
+dho:DoesNotLeadTo a dho:Effect ; rdfs:label "does not lead to"@en .
+dho:Strengthens   a dho:Effect ; rdfs:label "strengthens"@en .
+dho:Weakens       a dho:Effect ; rdfs:label "weakens"@en .
+
+dho:of     a owl:ObjectProperty , owl:FunctionalProperty ; rdfs:domain dho:Outcome ; rdfs:label "of"@en ;
+    rdfs:comment "What has the effect: a quality, a list, or a practice."@en .
+dho:effect a owl:ObjectProperty , owl:FunctionalProperty ; rdfs:domain dho:Outcome ; rdfs:range dho:Effect ; rdfs:label "effect"@en .
+dho:to     a owl:ObjectProperty , owl:FunctionalProperty ; rdfs:domain dho:Outcome ; rdfs:label "to"@en .
+
+# ---------------------------------------------------------------------------
+# Pattern B, conditions (D13): "good friendship is the forerunner of the arising of the
+# seven awakening factors"; "when you apply the mind irrationally, the hindrances arise".
+# ---------------------------------------------------------------------------
+
+dho:Condition a owl:Class ; rdfs:label "Condition"@en ;
+    rdfs:comment "A sutta's statement that one thing conditions another."@en .
+dho:ConditionRelation a owl:Class ; rdfs:label "Condition relation"@en .
+dho:BasisOf      a dho:ConditionRelation ; rdfs:label "is the basis of"@en ;
+    rdfs:comment "'depending on and grounded on', 'relies on' (nissāya, nissita)."@en .
+dho:ForerunnerOf a dho:ConditionRelation ; rdfs:label "is the forerunner of"@en ;
+    rdfs:comment "'the forerunner and harbinger of' (pubbaṅgama, pubbanimitta)."@en .
+dho:RootOf       a dho:ConditionRelation ; rdfs:label "is the root of"@en ;
+    rdfs:comment "'rooted in and meet at' (mūlaka, samosaraṇa)."@en .
+dho:GivesRiseTo  a dho:ConditionRelation ; rdfs:label "gives rise to"@en .
+dho:Supports     a dho:ConditionRelation ; rdfs:label "supports the development of"@en ;
+    rdfs:comment "'can expect to develop and cultivate' (pāṭikaṅkha)."@en .
+dho:WhenThen     a dho:ConditionRelation ; rdfs:label "when present, then"@en ;
+    rdfs:comment "'when you …, X …'; the result says what happens to the conditioned."@en .
+
+dho:Result a owl:Class ; rdfs:label "Result"@en .
+dho:Arises           a dho:Result ; rdfs:label "arise"@en .
+dho:DoesNotArise     a dho:Result ; rdfs:label "don't arise, or end if already arisen"@en .
+dho:IsAbsent         a dho:Result ; rdfs:label "are absent"@en .
+dho:IsFullyDeveloped a dho:Result ; rdfs:label "are fully developed"@en .
+
+dho:condition   a owl:ObjectProperty , owl:FunctionalProperty ; rdfs:domain dho:Condition ; rdfs:label "condition"@en .
+dho:conditioned a owl:ObjectProperty , owl:FunctionalProperty ; rdfs:domain dho:Condition ; rdfs:label "conditioned"@en .
+dho:relation    a owl:ObjectProperty , owl:FunctionalProperty ; rdfs:domain dho:Condition ; rdfs:range dho:ConditionRelation ; rdfs:label "relation"@en .
+dho:result      a owl:ObjectProperty , owl:FunctionalProperty ; rdfs:domain dho:Condition ; rdfs:range dho:Result ; rdfs:label "result"@en .
+
+dho:wording a owl:DatatypeProperty ; rdfs:label "wording"@en ;
+    rdfs:comment "The text's own words for the relation, verbatim from the cited English (Sujato). S14 checks it occurs in a cited passage."@en .

@@ -121,7 +121,7 @@ section.rel h3 { margin: 0 0 4px; font-size: 11px; text-transform: uppercase; le
 </style>
 
 <header>
-  <h1>Dhamma Ontology Graph <span>hindrances, awakening factors, first jhāna</span></h1>
+  <h1>Dhamma Ontology Graph <span>hindrances, awakening factors, first jhāna, and what SN 46 says about them</span></h1>
   <div class="stats" id="stats"></div>
 </header>
 
@@ -143,6 +143,7 @@ section.rel h3 { margin: 0 0 4px; font-size: 11px; text-transform: uppercase; le
       <em><span class="dot" style="background:var(--jhana)"></span>jhāna factor</em>
       <em><span class="dot" style="background:var(--mind)"></span>mind state</em>
       <em><span class="dot" style="background:var(--object);border-radius:2px"></span>object of attention</em>
+      <em><span class="dot" style="background:var(--surface);border:2px solid var(--accent)"></span>concept</em>
     </div>
   </div>
   <aside id="panel" aria-live="polite"></aside>
@@ -157,11 +158,13 @@ const GROUPS = [
   { id: "nutriment", label: "Fuel / starve", line: "solid", color: "--fuel", on: true },
   { id: "timing", label: "Timing", line: "solid", color: "--mind", on: true },
   { id: "derived", label: "Derived (R1)", line: "solid", color: "--derived", on: true },
+  { id: "conditions", label: "Conditions", line: "solid", color: "--accent", on: true },
+  { id: "outcomes", label: "Outcomes", line: "solid", color: "--jhana", on: true },
   { id: "commentary", label: "Commentary", line: "dotted", color: "--commentary", on: true },
   { id: "editor", label: "Editor", line: "dashed", color: "--editor", on: true },
   { id: "senses", label: "Word senses", line: "solid", color: "--muted", on: false },
 ];
-const groupOf = e => ({ "member of": "lists", "gives up": "lists", "has the factors": "lists", sense: "senses",
+const groupOf = e => e.group || ({ "member of": "lists", "gives up": "lists", "has the factors": "lists", sense: "senses",
   "is defined as": "lists",
   counters: "derived", opposes: "commentary", "see also": "editor" })[e.rel]
   || (e.timing ? "timing" : (e.rel === "fuels" || e.rel === "starves" || e.rel === "object") ? "nutriment" : "lists");
@@ -257,6 +260,8 @@ function style() {
     { selector: 'node[kind="attainment"]', style: { "background-color": c.accent, shape: "star", width: 34, height: 34, "font-weight": 600 } },
     { selector: 'node[kind="word"]', style: { "background-color": c.fg, shape: "round-rectangle", width: 40, height: 24, "font-weight": 700 } },
     { selector: 'node[kind="sense"]', style: { "background-color": c.surface, "border-width": 2, "border-color": c.muted, width: 18, height: 18, "font-size": 10 } },
+    { selector: 'node[kind="concept"]', style: { "background-color": c.surface, "border-width": 2, "border-color": c.accent, width: 20, height: 20, "font-size": 10.5 } },
+    { selector: 'node[kind="attention"]', style: { "background-color": c.accent, shape: "round-diamond", width: 22, height: 22, "font-size": 10.5 } },
     { selector: 'node[kind="nutriment"]', style: { shape: "diamond", width: 9, height: 9, "background-color": c.muted } },
     { selector: "edge", style: { width: 1.2, "line-color": c.line, "target-arrow-color": c.line, "target-arrow-shape": "triangle",
       "arrow-scale": 0.7, "curve-style": "bezier", opacity: 0.9 } },
@@ -270,6 +275,9 @@ function style() {
       label: "data(label)", "font-size": 10, color: c.derived, "text-outline-color": c.surface, "text-outline-width": 2, "font-weight": 700 } },
     { selector: 'edge[group="commentary"]', style: { "line-style": "dotted", width: 2, "line-color": c.commentary, "target-arrow-color": c.commentary } },
     { selector: 'edge[group="editor"]', style: { "line-style": "dashed", "line-color": c.editor, "target-arrow-shape": "none" } },
+    { selector: 'edge[group="conditions"]', style: { "line-color": c.accent, "target-arrow-color": c.accent, opacity: 0.6 } },
+    { selector: 'edge[group="outcomes"]', style: { "line-color": c.jhana, "target-arrow-color": c.jhana, opacity: 0.6 } },
+    { selector: 'edge[effect="Weakens"], edge[effect="DoesNotLeadTo"]', style: { "line-style": "dashed", "target-arrow-shape": "tee" } },
     { selector: 'edge[group="senses"]', style: { "line-color": c.muted, "target-arrow-color": c.muted } },
     { selector: ".dim", style: { opacity: 0.12 } },
     { selector: "node.focus", style: { "border-width": 3, "border-color": c.accent } },
@@ -359,7 +367,7 @@ function header(n) {
     const k = c.startsWith("Hindrance") ? "hindrance" : c.startsWith("Awakening") ? "factor" : "jhana";
     return `<span class="chip k-${k}">${esc(c)}</span>`;
   }).join("");
-  const other = { mindstate: "Mind state", object: "Object of attention", list: "Numbered list", attainment: "Attainment",
+  const other = { concept: "Concept", attention: "Kind of attention", mindstate: "Mind state", object: "Object of attention", list: "Numbered list", attainment: "Attainment",
     word: "Word (lexical entry)", sense: "Word sense" }[n.kind];
   return `<h2>${esc(n.en || n.pi)}</h2>
     <div class="names">${n.pi && n.pi !== n.en ? `<i>${esc(n.pi)}</i>` : ""}${n.zh ? ` · ${esc(n.zh)}` : ""}</div>
@@ -382,7 +390,7 @@ function showNode(id) {
     if ((!out && !inc) || e.rel === "object") continue;
     const other = out ? e.target : e.source;
     if (byId[other] === undefined && !e.nutriment) continue;
-    let title = out ? e.rel : (INVERSE[e.rel] || e.rel);
+    let title = out ? e.rel : (e.inv || INVERSE[e.rel] || e.rel);
     let what = link(other);
     if (e.nutriment) {
       const nu = DATA.nutriments.find(x => x.id === e.nutriment);

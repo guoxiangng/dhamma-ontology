@@ -77,12 +77,32 @@ SN 46.2 repeats SN 46.51's twelve "fuels" statements: identical English, and Pal
 
 Before merging, the wording of each pair is compared segment by segment, and any difference is recorded in the data file. Where the wording differs in substance, it's a different claim and gets its own node.
 
+## D13. Outcomes and conditions: controlled relation, verbatim wording
+
+Most of SN 46 says what the awakening factors lead to, or what conditions them. Two patterns, approved by the project owner on 2026-11-14:
+
+- **Outcome** (pattern A): *of* (a quality, list or practice), *effect*, *to*, *wording*, citations. Effects are a small controlled set: leads to, does not lead to, strengthens, weakens. Example: the seven awakening factors, developed, *lead to* extinguishment ("slants, slopes, and inclines to extinguishment", SN 46.7).
+- **Condition** (pattern B): *condition*, *relation*, *conditioned*, optional *result*, *wording*, citations. Relations: is the basis of ("depending on and grounded on", "relies on"), is the forerunner of ("the forerunner and harbinger of"), is the root of ("rooted in and meet at"), gives rise to, supports the development of ("can expect to develop"), and when-then, whose result says what happens (arise; don't arise, or end; are absent; are fully developed).
+
+Mapping the text's words onto a controlled relation is an editorial act. So every claim also keeps the text's own words in `dho:wording`, and **S14 fails the build if that wording isn't found verbatim in a passage the claim cites**. The controlled relation makes the graph queryable; the wording keeps it honest. SN 46.1 says "grounded on ethics" and SN 46.12 says "forerunner"; eval Q38 checks that a system keeps that difference.
+
+Choices made along the way:
+
+- **The stock formula** that ten suttas repeat for each factor ("relies on seclusion, fading away, and cessation, and ripens as letting go") is one outcome and three conditions, each cited by all ten suttas (D12).
+- **One Pali word, two English renderings** (*virāga*: "fading away" in the formula, "dispassion" in SN 46.20) is one concept, with the second rendering as an alternative label.
+- **One English word, two Pali words** (*bodhi* in SN 46.5/46.21, *sambodhi* in SN 46.20, both "awakening" in Sujato) are two concepts joined by an editor's link. Merging them would be our interpretation, not the text's (the D4 lesson).
+- **Phrases that don't map cleanly** onto a target are left out and logged, not forced. Example: SN 46.40's "making blind, sightless, ignorant".
+
+*Correction (2026-11-14).* v0.1 labelled the kinds of attention "frequent rational application of mind" (*yonisomanasikārabahulīkāra*). The frequency belongs to how SN 46.51 phrases its statements, not to the kind of attention; SN 46.24 says only "when you apply the mind rationally". The concepts are now *yoniso manasikāra*, *ayoniso manasikāra* and *amanasikāra*. SN 46.51's statements are still displayed with "frequent", in Sujato's words.
+
 ## Patterns not modelled yet
 
 These kinds of teaching have come up and been left out (each logged in `data/coverage.ttl`) until a pattern is agreed:
 
-- **A. Outcomes: "developing X leads to Y"**, and what a quality does (the hindrances weaken wisdom; the awakening factors lead to knowledge and freedom). The most common shape in SN 46. Draft: a node with the practice or quality, the outcome, and the citation, like a nutriment.
-- **B. Conditions: "X is the forerunner / root / basis of Y"; "when X, then Y"** (good friendship, rational attention, ethics, attentive listening). Needed again for dependent origination. Draft: a node with condition, conditioned, the kind of relation in the text's own words, and the citation.
-- **C. Similes** (SN 46.2 body and food; SN 46.33 gold; SN 46.53's four fire similes; SN 12.61's monkey). Probably a node linking the image, what it illustrates and the point it makes.
+- **Similes** (SN 46.1 dragons, 46.2 body and food, 46.7 rafters, 46.11 earth, 46.12/13/48 dawn, 46.33 gold, 46.53 four fire similes; SN 12.61 monkey). Probably a node linking the image, what it illustrates and the point it makes.
+- **What a quality is or isn't called:** the hindrances are "obstacles and corruptions of the heart"; the awakening factors are "not obstacles", "noble and emancipating" (SN 46.19, 46.34, 46.37).
+- **Ranking:** "diligence is said to be the best of them" (SN 46.31, 46.32).
+- **Release from the defilements** (āsava), which needs the three defilements as a list (SN 46.5).
+- **Correspondences:** "whoever has missed out on the seven awakening factors has missed out on the noble path" (SN 46.18).
 
 See `triage/sn46.md` for which suttas each pattern unlocks.

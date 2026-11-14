@@ -1,0 +1,54 @@
+@prefix dho:  <https://guoxiangng.github.io/dhamma-ontology/ns#> .
+
+# Pattern A, outcomes (D13). Each node keeps the sutta's own wording (S14 checks it is in a
+# cited passage). The same statement in several suttas is one node with several citations
+# (D12); a different wording is a different node.
+
+dho:o-01 a dho:Outcome ; dho:of dho:SevenAwakeningFactors ; dho:effect dho:LeadsTo ; dho:to dho:Bodhi ;
+    dho:wording "they lead to awakening" ;
+    dho:citedBy dho:p-sn46.5-1.5 , dho:p-sn46.5-1.11 , dho:p-sn46.21-2.3 , dho:p-sn46.21-2.6 .
+dho:o-02 a dho:Outcome ; dho:of dho:SevenAwakeningFactors ; dho:effect dho:LeadsTo ; dho:to dho:Extinguishment ;
+    dho:wording "slants, slopes, and inclines to extinguishment" ;
+    dho:citedBy dho:p-sn46.7-1.2 , dho:p-sn46.7-2.4 .
+dho:o-03 a dho:Outcome ; dho:of dho:SevenAwakeningFactors ; dho:effect dho:LeadsTo ; dho:to dho:FarShore ;
+    dho:wording "lead to going from the near shore to the far shore" ;
+    dho:citedBy dho:p-sn46.17-1.1 , dho:p-sn46.17-1.4 .
+dho:o-04 a dho:Outcome ; dho:of dho:SevenAwakeningFactors ; dho:effect dho:LeadsTo ; dho:to dho:EndingOfSuffering ;
+    dho:wording "bring one who practices them to the complete ending of suffering" ;
+    dho:citedBy dho:p-sn46.19-1.1 , dho:p-sn46.19-1.4 .
+
+# SN 46.20: "lead solely to" seven outcomes, one node each.
+dho:o-05 a dho:Outcome ; dho:of dho:SevenAwakeningFactors ; dho:effect dho:LeadsTo ; dho:to dho:Disillusionment ; dho:wording "lead solely to" ; dho:citedBy dho:p-sn46.20-1.1 , dho:p-sn46.20-1.4 .
+dho:o-06 a dho:Outcome ; dho:of dho:SevenAwakeningFactors ; dho:effect dho:LeadsTo ; dho:to dho:Virāga ;         dho:wording "lead solely to" ; dho:citedBy dho:p-sn46.20-1.1 , dho:p-sn46.20-1.4 .
+dho:o-07 a dho:Outcome ; dho:of dho:SevenAwakeningFactors ; dho:effect dho:LeadsTo ; dho:to dho:Cessation ;      dho:wording "lead solely to" ; dho:citedBy dho:p-sn46.20-1.1 , dho:p-sn46.20-1.4 .
+dho:o-08 a dho:Outcome ; dho:of dho:SevenAwakeningFactors ; dho:effect dho:LeadsTo ; dho:to dho:Peace ;          dho:wording "lead solely to" ; dho:citedBy dho:p-sn46.20-1.1 , dho:p-sn46.20-1.4 .
+dho:o-09 a dho:Outcome ; dho:of dho:SevenAwakeningFactors ; dho:effect dho:LeadsTo ; dho:to dho:Insight ;        dho:wording "lead solely to" ; dho:citedBy dho:p-sn46.20-1.1 , dho:p-sn46.20-1.4 .
+dho:o-10 a dho:Outcome ; dho:of dho:SevenAwakeningFactors ; dho:effect dho:LeadsTo ; dho:to dho:Sambodhi ;       dho:wording "lead solely to" ; dho:citedBy dho:p-sn46.20-1.1 , dho:p-sn46.20-1.4 .
+dho:o-11 a dho:Outcome ; dho:of dho:SevenAwakeningFactors ; dho:effect dho:LeadsTo ; dho:to dho:Extinguishment ; dho:wording "lead solely to" ; dho:citedBy dho:p-sn46.20-1.1 , dho:p-sn46.20-1.4 .
+
+dho:o-12 a dho:Outcome ; dho:of dho:SevenAwakeningFactors ; dho:effect dho:LeadsTo ; dho:to dho:FruitOfKnowledgeAndFreedom ;
+    dho:wording "lead to the realization of the fruit of knowledge and freedom" ;
+    dho:citedBy dho:p-sn46.34-1.1 , dho:p-sn46.34-1.4 , dho:p-sn46.37-2.1 , dho:p-sn46.37-2.4 .
+dho:o-13 a dho:Outcome ; dho:of dho:SevenAwakeningFactors ; dho:effect dho:LeadsTo ; dho:to dho:GrowthAndProgress ;
+    dho:wording "lead to growth and progress" ;
+    dho:citedBy dho:p-sn46.36-1.1 , dho:p-sn46.36-1.4 .
+
+dho:o-14 a dho:Outcome ; dho:of dho:FiveHindrances ; dho:effect dho:Weakens ; dho:to dho:Wisdom ;
+    dho:wording "weaken wisdom" ; dho:citedBy dho:p-sn46.37-1.1 , dho:p-sn46.37-1.8 .
+dho:o-15 a dho:Outcome ; dho:of dho:FiveHindrances ; dho:effect dho:Weakens ; dho:to dho:Wisdom ;
+    dho:wording "block wisdom" ; dho:citedBy dho:p-sn46.40-1.1 , dho:p-sn46.40-1.8 .
+dho:o-16 a dho:Outcome ; dho:of dho:FiveHindrances ; dho:effect dho:DoesNotLeadTo ; dho:to dho:Extinguishment ;
+    dho:wording "don’t lead to extinguishment" ; dho:citedBy dho:p-sn46.40-1.1 , dho:p-sn46.40-1.8 .
+dho:o-17 a dho:Outcome ; dho:of dho:SevenAwakeningFactors ; dho:effect dho:Strengthens ; dho:to dho:Wisdom ;
+    dho:wording "grow wisdom" ; dho:citedBy dho:p-sn46.40-2.1 , dho:p-sn46.40-2.4 .
+dho:o-18 a dho:Outcome ; dho:of dho:SevenAwakeningFactors ; dho:effect dho:LeadsTo ; dho:to dho:Extinguishment ;
+    dho:wording "lead to extinguishment" ; dho:citedBy dho:p-sn46.40-2.1 , dho:p-sn46.40-2.4 .
+
+# The stock formula in ten suttas: each factor "relies on seclusion, fading away, and
+# cessation, and ripens as letting go" (vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ
+# vossaggapariṇāmiṁ). The "relies on" half is in sn46-conditions.ttl (c-17 to c-19).
+dho:o-19 a dho:Outcome ; dho:of dho:SevenAwakeningFactors ; dho:effect dho:LeadsTo ; dho:to dho:LettingGo ;
+    dho:wording "as letting go" ;
+    dho:citedBy dho:p-sn46.1-1.6 , dho:p-sn46.1-1.12 , dho:p-sn46.5-1.7 , dho:p-sn46.7-2.3 , dho:p-sn46.11-2.3 ,
+                dho:p-sn46.12-2.3 , dho:p-sn46.13-2.3 , dho:p-sn46.21-2.5 , dho:p-sn46.31-2.3 , dho:p-sn46.32-2.3 ,
+                dho:p-sn46.48-1.6 .

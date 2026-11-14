@@ -112,21 +112,165 @@ dho:t-sn46.37
     dho:review dho:Unreviewed ;
     dho:modelledOn "2026-11-14"^^xsd:date ;
     dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
-    dho:encodes "Both lists, as citations on the existing lists (1.1, 1.3-1.7; 2.1, 2.3)." ;
-    dho:leftOut "What the sutta says about them: the hindrances are obstacles and corruptions of the heart that weaken wisdom; the awakening factors are not, and when developed lead to the realization of the fruit of knowledge and freedom (1.1, 1.8, 2.1, 2.4). Needs a pattern for what a quality does or leads to." .
+    dho:encodes "Both lists (1.1, 1.3-1.7; 2.1, 2.3); the hindrances weaken wisdom (1.1, 1.8); developing the awakening factors leads to the realization of the fruit of knowledge and freedom (2.1, 2.4)." ;
+    dho:leftOut "That the hindrances are obstacles and corruptions of the heart, and the awakening factors are not (1.1, 1.8, 2.1, 2.4). Needs a pattern for what a quality is or is not." .
 
 dho:t-sn46.38
-    dho:coverage dho:PartlyEncoded ;
+    dho:coverage dho:FullyEncoded ;
     dho:review dho:Unreviewed ;
     dho:modelledOn "2026-11-14"^^xsd:date ;
     dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
-    dho:encodes "Both lists, as citations on the existing lists (2.1, 2.2; 3.1, 3.2)." ;
-    dho:leftOut "The teaching itself: when a noble disciple pays attention, applies the mind, concentrates wholeheartedly and actively listens to the teaching, the five hindrances are absent and the seven awakening factors are fully developed (1.1, 3.4). Needs a pattern for conditions." .
+    dho:encodes "Both lists (2.1, 2.2; 3.1, 3.2), and the teaching: when a noble disciple pays attention, applies the mind, concentrates wholeheartedly and actively listens to the teaching, the five hindrances are absent and the seven awakening factors are fully developed (1.1, 3.4)." .
 
 dho:t-sn46.40
     dho:coverage dho:PartlyEncoded ;
     dho:review dho:Unreviewed ;
     dho:modelledOn "2026-11-14"^^xsd:date ;
     dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
-    dho:encodes "Both lists, as citations on the existing lists (1.1, 1.3; 2.1, 2.3)." ;
-    dho:leftOut "What the sutta says about them: the hindrances destroy sight, vision and knowledge, block wisdom, are on the side of distress and don't lead to extinguishment; the awakening factors are the opposite (1.1, 1.8, 2.1, 2.4). Also the chapter's summary verse (3.0-3.4). Needs a pattern for what a quality does or leads to." .
+    dho:encodes "Both lists (1.1, 1.3; 2.1, 2.3); the hindrances block wisdom and don't lead to extinguishment (1.1, 1.8); the awakening factors grow wisdom and lead to extinguishment (2.1, 2.4)." ;
+    dho:leftOut "The Pali compounds 'making blind, sightless, ignorant' and 'on the side of distress' for the hindrances, and their opposites for the awakening factors (1.1, 2.1), which don't map cleanly onto a target concept; and the chapter's summary verse (3.0-3.4)." .
+
+dho:t-sn46.1
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "The seven factors developed depending on and grounded on ethics (1.4), and the stock formula for each factor (relies on seclusion, fading away and cessation; ripens as letting go) (1.6, 1.12)." ;
+    dho:leftOut "The simile of dragons growing strong on the Himalayas and reaching the ocean (1.2-1.3), and the result 'acquiring great and abundant good qualities' (1.4, 1.13). No simile pattern yet." .
+
+dho:t-sn46.5
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "Why they are called awakening factors: they lead to awakening (bodhi) (1.5, 1.11); the list (1.6); the stock formula for each factor (relies on seclusion, fading away and cessation; ripens as letting go) (1.7)." ;
+    dho:leftOut "As they are developed the mind is freed from the defilements of sensuality, desire to be reborn and ignorance, and knows it is freed (1.8-1.10). Needs the three defilements (āsava) as a list and a pattern for release." .
+
+dho:t-sn46.7
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "Developing the seven factors slants, slopes and inclines to extinguishment (1.2, 2.4); the stock formula for each factor (relies on seclusion, fading away and cessation; ripens as letting go) (2.3)." ;
+    dho:leftOut "The simile of a bungalow's rafters inclining to the peak (1.1)." .
+
+dho:t-sn46.11
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "The seven factors developed depending on and grounded on ethics (1.3); the stock formula for each factor (relies on seclusion, fading away and cessation; ripens as letting go) (2.3)." ;
+    dho:leftOut "The simile of creatures in the four postures depending on the earth (1.1-1.2)." .
+
+dho:t-sn46.12
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "Good friendship is the forerunner of the arising of the seven factors (1.2), and one with good friends can expect to develop them (1.3); the stock formula for each factor (relies on seclusion, fading away and cessation; ripens as letting go) (2.3)." ;
+    dho:leftOut "The simile of the dawn as forerunner of the sunrise (1.1)." .
+
+dho:t-sn46.13
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "Rational application of mind is the forerunner of the arising of the seven factors (1.2), and one accomplished in it can expect to develop them (1.3); the stock formula for each factor (relies on seclusion, fading away and cessation; ripens as letting go) (2.3)." ;
+    dho:leftOut "The simile of the dawn (1.1)." .
+
+dho:t-sn46.17
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "Developing the seven factors leads to going from the near shore to the far shore (1.1, 1.4); the list (1.3)." ;
+    dho:leftOut "The verses (2.1-6.6): few cross to the far shore, the astute develop the bright, and those rightly developed in the awakening factors are quenched in this world." .
+
+dho:t-sn46.19
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "Developing the seven factors brings one who practices them to the complete ending of suffering (1.1, 1.4); the list (1.3)." ;
+    dho:leftOut "That the factors are 'noble and emancipating' (ariyā niyyānikā) (1.1, 1.4). Needs a pattern for what a quality is called." .
+
+dho:t-sn46.20
+    dho:coverage dho:FullyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "Developing the seven factors leads solely to disillusionment, dispassion, cessation, peace, insight, awakening (sambodhi) and extinguishment (1.1, 1.4); the list (1.3)." .
+
+dho:t-sn46.21
+    dho:coverage dho:FullyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "Why they are called awakening factors: they lead to awakening (bodhi) (2.3, 2.6); the list (2.4); the stock formula for each factor (relies on seclusion, fading away and cessation; ripens as letting go) (2.5)." .
+
+dho:t-sn46.24
+    dho:coverage dho:FullyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "Irrational application of mind: the hindrances arise and grow, the awakening factors don't arise or cease (1.1-1.6). Rational application of mind: the hindrances don't arise or are given up, the awakening factors arise and are fully developed (2.1-3.1)." .
+
+dho:t-sn46.31
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "Skillful qualities are rooted in diligence (1.1); a diligent mendicant can expect to develop the seven factors (1.2); the stock formula for each factor (relies on seclusion, fading away and cessation; ripens as letting go) (2.3)." ;
+    dho:leftOut "'Diligence is said to be the best of them' (1.1). Needs a pattern for ranking." .
+
+dho:t-sn46.32
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "Skillful qualities are rooted in rational application of mind (1.1); one accomplished in it can expect to develop the seven factors (1.2); the stock formula for each factor (relies on seclusion, fading away and cessation; ripens as letting go) (2.3)." ;
+    dho:leftOut "'Rational application of mind is said to be the best of them' (1.1). Needs a pattern for ranking." .
+
+dho:t-sn46.34
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "Developing the seven factors leads to the realization of the fruit of knowledge and freedom (1.1, 1.4); the list (1.3)." ;
+    dho:leftOut "That the factors are not obstacles, hindrances or corruptions of the mind (1.1, 1.4). Needs a pattern for what a quality is or is not." .
+
+dho:t-sn46.35
+    dho:coverage dho:FullyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "Irrational application of mind: the hindrances arise and grow (1.1). Rational application of mind: the awakening factors arise and are fully developed (2.1)." .
+
+dho:t-sn46.36
+    dho:coverage dho:FullyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "Developing the seven factors leads to growth and progress (1.1, 1.4); the list (1.3)." .
+
+dho:t-sn46.48
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "Good friendship is the forerunner of the arising of the seven factors (1.2), and one with good friends can expect to develop them (1.3); the stock formula for each factor (relies on seclusion, fading away and cessation; ripens as letting go) (1.6). Same statements as SN 46.12, added as citations." ;
+    dho:leftOut "The simile of the dawn (1.1)." .
+
+dho:t-sn46.49
+    dho:coverage dho:FullyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "Of interior factors, nothing gives rise to the seven awakening factors like rational application of mind (1.1). The rest of the sutta is abbreviated in the source." .
+
+dho:t-sn46.50
+    dho:coverage dho:FullyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "Of exterior factors, nothing gives rise to the seven awakening factors like good friendship (1.1). The rest of the sutta is abbreviated in the source." .

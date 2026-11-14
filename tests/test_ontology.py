@@ -62,6 +62,9 @@ def test_resolve_finds_hindrance_and_mind_state(graph):
     ("commentary-as-sutta.ttl", ["S7:"]),
     ("text-without-coverage.ttl", ["S10:"]),
     ("partial-without-left-out.ttl", ["S10:"]),
+    ("wording-not-in-text.ttl", ["S14:"]),
+    ("condition-incomplete.ttl", ["S13:"]),
+    ("outcome-bad-effect.ttl", ["S12:"]),
 ])
 def test_broken_data_is_caught(fixture, expected):
     g, *_ = dho.build([BROKEN / fixture])
@@ -70,3 +73,32 @@ def test_broken_data_is_caught(fixture, expected):
     messages = " | ".join(r["message"] for r in results if r["severity"] == "Violation")
     for code in expected:
         assert code in messages, f"{fixture}: expected {code} in {messages}"
+
+
+def test_pali_labels_appear_in_cited_pali(graph):
+    """Concepts reached by outcome and condition claims: each word of their Pali label
+    appears (case endings tolerated) in the Pali of the passages those claims cite."""
+    import unicodedata
+    from rdflib.namespace import SKOS
+
+    def fold(s):
+        s = unicodedata.normalize("NFKD", s.lower())
+        return "".join(c for c in s if not unicodedata.combining(c) and c.isalpha())
+
+    blob = {}
+    for cls, props in ((dho.DHO.Outcome, (dho.DHO.of, dho.DHO.to)),
+                       (dho.DHO.Condition, (dho.DHO.condition, dho.DHO.conditioned))):
+        for claim in graph.subjects(RDF.type, cls):
+            pali = fold(" ".join(str(graph.value(p, dho.DHO.textPi) or "") for p in graph.objects(claim, dho.DHO.citedBy)))
+            for prop in props:
+                for c in graph.objects(claim, prop):
+                    blob[c] = blob.get(c, "") + pali
+    missing = []
+    for c, text in blob.items():
+        for lab in graph.objects(c, SKOS.prefLabel):
+            if lab.language == "pi":
+                for word in str(lab).split():
+                    w = fold(word)
+                    if (w[:-1] if len(w) > 4 else w) not in text:
+                        missing.append(f"{dho.short(c)}: {word}")
+    assert blob and not missing, missing

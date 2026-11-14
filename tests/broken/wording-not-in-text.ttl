@@ -1,0 +1,4 @@
+@prefix dho: <https://guoxiangng.github.io/dhamma-ontology/ns#> .
+# The wording is not in the cited passage: S14 must catch it.
+dho:o-bad a dho:Outcome ; dho:of dho:SevenAwakeningFactors ; dho:effect dho:LeadsTo ; dho:to dho:Extinguishment ;
+    dho:wording "lead straight to nirvana" ; dho:citedBy dho:p-sn46.7-1.2 .

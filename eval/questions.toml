@@ -526,8 +526,8 @@ note = "Added with the SN 46 list texts by the add-text workflow."
 
 [[q]]
 id = "Q35"
-category = "partial"
-scope = "partial"
+category = "recall"
+scope = "covered"
 question = "According to SN 46.38, when are the five hindrances absent?"
 gold = [
   "When a noble disciple pays attention, applies the mind, concentrates wholeheartedly and actively listens to the teaching; at such a time the five hindrances are absent and the seven awakening factors are fully developed.",
@@ -537,4 +537,49 @@ also_ok = []
 must_not = []
 layer = "sutta"
 status = "draft"
-note = "This teaching is left out of the ontology until a pattern for conditions is agreed. A system using the ontology should say so."
+note = "Written as a gap test; the teaching was encoded on 2026-11-14 with the conditions pattern (D13), so it is now a recall question."
+
+[[q]]
+id = "Q36"
+category = "recall"
+scope = "covered"
+question = "According to SN 46.12, what is the forerunner of the arising of the seven awakening factors?"
+gold = ["Good friendship (kalyāṇamittatā), as the dawn is the forerunner of the sunrise."]
+segments = ["sn46.12:1.1", "sn46.12:1.2"]
+also_ok = ["SN 46.13 says the same of rational application of mind; fine if attributed to SN 46.13. SN 46.48 repeats SN 46.12."]
+must_not = ["SN 46.12 says rational application of mind is the forerunner. (That is SN 46.13.)"]
+layer = "sutta"
+status = "draft"
+note = "Added with patterns A and B (D13)."
+
+[[q]]
+id = "Q37"
+category = "recall"
+scope = "covered"
+question = "What does SN 46.24 say happens when you apply the mind irrationally, and when you apply it rationally?"
+gold = [
+  "Irrationally: the five hindrances arise and grow, and the awakening factors don't arise, or cease if they have arisen.",
+  "Rationally: the hindrances don't arise, or are given up if they have arisen, and the awakening factors arise and are fully developed.",
+]
+segments = ["sn46.24:1.1", "sn46.24:1.5", "sn46.24:1.6", "sn46.24:2.1", "sn46.24:2.5", "sn46.24:3.1"]
+also_ok = ["SN 46.35 gives a shorter version."]
+must_not = []
+layer = "sutta"
+status = "draft"
+note = "Added with patterns A and B (D13)."
+
+[[q]]
+id = "Q38"
+category = "trap"
+scope = "covered"
+question = "Does SN 46.1 say that ethics is the forerunner of the awakening factors?"
+gold = [
+  "No. SN 46.1 says the seven awakening factors are developed depending on and grounded on ethics (sīla): ethics as their basis.",
+  "'Forerunner' is SN 46.12's and SN 46.13's word, for good friendship and rational application of mind.",
+]
+segments = ["sn46.1:1.4", "sn46.12:1.2", "sn46.13:1.2"]
+also_ok = []
+must_not = ["Yes, SN 46.1 calls ethics the forerunner of the awakening factors."]
+layer = "sutta"
+status = "draft"
+note = "Tests whether a system keeps the text's own relation (basis vs forerunner) instead of a generic 'leads to'."

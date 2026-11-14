@@ -1,0 +1,38 @@
+@prefix dho:  <https://guoxiangng.github.io/dhamma-ontology/ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Concepts that SN 46's outcome and condition statements point to (D13).
+# English = Sujato's rendering; Pali = the term as it appears in the cited passages
+# (lemma form); Chinese only where there is a standard term (D9).
+# Where Sujato uses one English word for two Pali words, they stay separate concepts
+# (bodhi / sambodhi); where he uses two English words for one Pali word, it is one
+# concept with an alternative label (virāga: "fading away" / "dispassion").
+
+dho:Ethics a dho:Concept ; skos:prefLabel "ethics"@en , "sīla"@pi , "戒"@zh ; skos:altLabel "virtue"@en .
+dho:GoodFriendship a dho:Concept ; skos:prefLabel "good friendship"@en , "kalyāṇamittatā"@pi ;
+    skos:altLabel "spiritual friendship"@en .
+dho:Diligence a dho:Concept ; skos:prefLabel "diligence"@en , "appamāda"@pi , "不放逸"@zh ; skos:altLabel "heedfulness"@en .
+dho:SkillfulQualities a dho:Concept ; skos:prefLabel "skillful qualities"@en , "kusalā dhammā"@pi , "善法"@zh ;
+    skos:altLabel "wholesome states"@en .
+dho:ListeningToTeaching a dho:Concept ;
+    skos:prefLabel "actively listening to the teaching"@en , "ohitasoto dhammaṁ suṇāti"@pi .
+
+dho:Seclusion a dho:Concept ; skos:prefLabel "seclusion"@en , "viveka"@pi .
+dho:Virāga a dho:Concept ; skos:prefLabel "fading away"@en , "virāga"@pi ; skos:altLabel "dispassion"@en .
+dho:Cessation a dho:Concept ; skos:prefLabel "cessation"@en , "nirodha"@pi , "滅"@zh .
+dho:LettingGo a dho:Concept ; skos:prefLabel "letting go"@en , "vossagga"@pi .
+
+dho:Bodhi a dho:Concept ; skos:prefLabel "awakening"@en , "bodhi"@pi .
+dho:Sambodhi a dho:Concept ; skos:prefLabel "awakening"@en , "sambodhi"@pi ;
+    dho:editorialRelated dho:Bodhi .
+dho:Extinguishment a dho:Concept ; skos:prefLabel "extinguishment"@en , "nibbāna"@pi , "涅槃"@zh ;
+    skos:altLabel "nirvana"@en , "quenching"@en .
+dho:FarShore a dho:Concept ; skos:prefLabel "going from the near shore to the far shore"@en , "apārā pāraṁ gamana"@pi .
+dho:EndingOfSuffering a dho:Concept ; skos:prefLabel "the complete ending of suffering"@en , "sammā dukkhakkhaya"@pi .
+dho:Disillusionment a dho:Concept ; skos:prefLabel "disillusionment"@en , "nibbidā"@pi .
+dho:Peace a dho:Concept ; skos:prefLabel "peace"@en , "upasama"@pi .
+dho:Insight a dho:Concept ; skos:prefLabel "insight"@en , "abhiññā"@pi ; skos:altLabel "direct knowledge"@en .
+dho:FruitOfKnowledgeAndFreedom a dho:Concept ;
+    skos:prefLabel "the realization of the fruit of knowledge and freedom"@en , "vijjāvimuttiphalasacchikiriyā"@pi .
+dho:GrowthAndProgress a dho:Concept ; skos:prefLabel "growth and progress"@en , "buddhi aparihāna"@pi .
+dho:Wisdom a dho:Concept ; skos:prefLabel "wisdom"@en , "paññā"@pi , "慧"@zh .

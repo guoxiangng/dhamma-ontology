@@ -1,0 +1,3 @@
+@prefix dho: <https://guoxiangng.github.io/dhamma-ontology/ns#> .
+# An outcome with an effect outside the controlled set and no citation: S12 must catch it.
+dho:o-bad2 a dho:Outcome ; dho:of dho:FiveHindrances ; dho:effect dho:Destroys ; dho:to dho:Wisdom ; dho:wording "weaken wisdom" .

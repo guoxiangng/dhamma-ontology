@@ -145,15 +145,30 @@ def quote(g: Graph, passage, lang: str = "en") -> str:
     return str(v) if v else ""
 
 
+# SN 46.51 states every nutriment as *frequent* attention (bahulīkāra). That frequency belongs
+# to the statement, not to the kind of attention, so it is added here, in Sujato's words.
+NUTRIMENT_ATTENTION = {
+    "RationalAttention": "frequent rational application of mind",
+    "IrrationalAttention": "frequent irrational application of mind",
+    "NonAttention": "not frequently applying the mind",
+}
+
+
+def nutriment_attention(g: Graph, att) -> str:
+    return NUTRIMENT_ATTENTION.get(str(att).rsplit("#", 1)[-1], label(g, att))
+
+
 # --------------------------------------------------------------------------- resolve
 
 def resolve(g: Graph, text: str) -> list[URIRef]:
     """Map free text to concepts by matching any label (pref/alt/hidden, any language)."""
     q = fold(text)
-    candidates = set(g.subjects(RDF.type, DHO.MentalQuality)) | set(g.subjects(RDF.type, DHO.MindState))
+    candidates = (set(g.subjects(RDF.type, DHO.MentalQuality)) | set(g.subjects(RDF.type, DHO.MindState))
+                  | set(g.subjects(RDF.type, DHO.Concept)) | set(g.subjects(RDF.type, DHO.AttentionMode))
+                  | set(g.subjects(RDF.type, DHO.NumberedList)))
     exact, partial = [], []
     for c in candidates:
-        names = [fold(str(l)) for p in (SKOS.prefLabel, SKOS.altLabel, SKOS.hiddenLabel) for l in g.objects(c, p)]
+        names = [fold(str(l)) for p in (SKOS.prefLabel, SKOS.altLabel, SKOS.hiddenLabel, RDFS.label) for l in g.objects(c, p)]
         if q in names:
             exact.append(c)
         elif any(len(n) > 2 and (n in q or q in n) for n in names):
@@ -180,7 +195,7 @@ def card(g: Graph, c) -> list[str]:
         for n in g.subjects(prop, c):
             obj, att = g.value(n, DHO.object), g.value(n, DHO.attention)
             obj_passage = sorted(g.objects(n, DHO.citedBy), key=lambda p: str(g.value(p, DHO.segment)))[0]
-            rows.append(f"    - {label(g, att)} to {label(g, obj)}\n"
+            rows.append(f"    - {nutriment_attention(g, att)} to {label(g, obj)}\n"
                         f"        \"{quote(g, obj_passage)}\"  [sutta {cite(g, n)}]")
         return rows
 
@@ -215,6 +230,32 @@ def card(g: Graph, c) -> list[str]:
         out.append(f"  opposes: {label(g, g.value(op, DHO.target))}   "
                    f"[commentary, unverified: {g.value(op, DHO.citationNote)}]")
 
+    # Outcomes and conditions (D13) about this node, or about a list it belongs to.
+    subjects = [c] + sorted(g.objects(c, DHO.memberOf))
+
+    def via(node):
+        return "" if node == c else f" (as one of {label(g, node)})"
+
+    rows = []
+    for s in subjects:
+        for o in g.subjects(DHO.of, s):
+            rows.append(("outcomes", f"{label(g, g.value(o, DHO.effect))} {label(g, g.value(o, DHO.to))}{via(s)}", o))
+        for o in g.subjects(DHO.to, s):
+            rows.append(("outcomes", f"{label(g, g.value(o, DHO.of))} → {label(g, g.value(o, DHO.effect))}", o))
+        for k in g.subjects(DHO.conditioned, s):
+            res = g.value(k, DHO.result)
+            what = f"{label(g, res)}" if res else label(g, g.value(k, DHO.relation)).replace("is the ", "").replace("supports the development of", "supports their development")
+            rows.append(("conditions", f"{label(g, g.value(k, DHO.condition))}: {what}{via(s)}", k))
+        for k in g.subjects(DHO.condition, s):
+            rows.append(("conditions", f"{label(g, g.value(k, DHO.relation))} {label(g, g.value(k, DHO.conditioned))}"
+                         + (f": {label(g, g.value(k, DHO.result))}" if g.value(k, DHO.result) else ""), k))
+    for section in ("outcomes", "conditions"):
+        items = [r for r in rows if r[0] == section]
+        if items:
+            out.append(f"  {section}:")
+            for _, text, node in sorted(items, key=lambda r: r[1]):
+                out.append(f"    - {text}   \"{g.value(node, DHO.wording)}\"  [sutta {cite(g, node)}]")
+
     for d in g.subjects(DHO.defines, c):
         out.append(f"  is defined as: {label(g, g.value(d, DHO['as']))}   [sutta {cite(g, d)}]")
     for d in g.subjects(DHO['as'], c):
@@ -230,7 +271,8 @@ def cmd_ask(text: str) -> int:
     g, *_ = build()
     hits = resolve(g, text)
     if not hits:
-        print(f"No concept matches '{text}'. (v0.1 covers the hindrances, awakening factors, jhāna factors and mind states.)")
+        print(f"No concept matches '{text}'. The ontology covers only the texts in COVERAGE.md "
+              "(the hindrances, awakening factors and first-jhāna factors, and what SN 46 says about them).")
         return 1
     print(f"'{text}' resolves to {len(hits)} concept(s): " + ", ".join(label(g, h) for h in hits))
     for h in hits:

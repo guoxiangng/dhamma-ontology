@@ -12,10 +12,10 @@ This is how much of the canon the ontology actually draws on. It is small on pur
 |---|---:|---:|---:|---:|---:|
 | Long Discourses (DN) | 34 | 0 | 0 | 0 | 0.00% |
 | Middle Discourses (MN) | 152 | 0 | 2 | 2 | 2.63% |
-| Linked Discourses (SN) | 3,024 | 2 | 6 | 1 | 0.30% |
+| Linked Discourses (SN) | 3,024 | 10 | 17 | 1 | 0.93% |
 | Numbered Discourses (AN) | 8,122 | 0 | 0 | 0 | 0.00% |
 | Minor Collection (KN) | 2,748 | 0 | 0 | 1 | 0.04% |
-| **Total** | **14,080** | **2** | | | **0.10%** |
+| **Total** | **14,080** | **10** | | | **0.23%** |
 
 Counts follow SuttaCentral's numbering, with grouped ranges (e.g. `sn12.93-213`) counted as the suttas they number. Many of those are abbreviated repetitions, so this overstates the amount of distinct text. KN mixes early and late material (Dhammapada and Sutta Nipāta beside Jātaka and Apadāna) and Dhammapada is counted by verse.
 
@@ -23,16 +23,35 @@ Counts follow SuttaCentral's numbering, with grouped ranges (e.g. `sn12.93-213`)
 
 | Text | Layer | Coverage | Segments cited / in text | Claims citing it | Review |
 |---|---|---|---:|---:|---|
+| [SN 46.20 Nibbidāsutta — Disillusionment](https://suttacentral.net/sn46.20/en/sujato) | Sutta (early discourses) | fully encoded | 3 / 11 | 8 | not yet reviewed |
+| [SN 46.21 Bodhāyasutta — To Awakening](https://suttacentral.net/sn46.21/en/sujato) | Sutta (early discourses) | fully encoded | 4 / 8 | 6 | not yet reviewed |
 | [SN 46.22 Bojjhaṅgadesanāsutta — A Teaching on the Awakening Factors](https://suttacentral.net/sn46.22/en/sujato) | Sutta (early discourses) | fully encoded | 3 / 6 | 1 | not yet reviewed |
+| [SN 46.24 Ayonisomanasikārasutta — Irrational Application of Mind](https://suttacentral.net/sn46.24/en/sujato) | Sutta (early discourses) | fully encoded | 9 / 13 | 5 | not yet reviewed |
+| [SN 46.35 Ayonisomanasikārasutta — Irrational Application of Mind](https://suttacentral.net/sn46.35/en/sujato) | Sutta (early discourses) | fully encoded | 2 / 5 | 3 | not yet reviewed |
+| [SN 46.36 Buddhisutta — Growth](https://suttacentral.net/sn46.36/en/sujato) | Sutta (early discourses) | fully encoded | 3 / 5 | 2 | not yet reviewed |
+| [SN 46.38 Anīvaraṇasutta — Without Obstacles](https://suttacentral.net/sn46.38/en/sujato) | Sutta (early discourses) | fully encoded | 6 / 9 | 4 | not yet reviewed |
+| [SN 46.49 Ajjhattikaṅgasutta — Interior](https://suttacentral.net/sn46.49/en/sujato) | Sutta (early discourses) | fully encoded | 1 / 7 | 1 | not yet reviewed |
+| [SN 46.50 Bāhiraṅgasutta — Exterior](https://suttacentral.net/sn46.50/en/sujato) | Sutta (early discourses) | fully encoded | 1 / 13 | 1 | not yet reviewed |
 | [SN 46.51 Āhārasutta — Nourishing](https://suttacentral.net/sn46.51/en/sujato) | Sutta (early discourses) | fully encoded | 49 / 100 | 27 | not yet reviewed |
 | [MN 43 Mahāvedallasutta — The Great Elaboration](https://suttacentral.net/mn43/en/sujato) | Sutta (early discourses) | partly encoded | 5 / 181 | 3 | not yet reviewed |
 | [MN 44 Cūḷavedallasutta — The Shorter Elaboration](https://suttacentral.net/mn44/en/sujato) | Sutta (early discourses) | partly encoded | 1 / 136 | 1 | not yet reviewed |
+| [SN 46.1 Himavantasutta — The Himalaya](https://suttacentral.net/sn46.1/en/sujato) | Sutta (early discourses) | partly encoded | 3 / 14 | 5 | not yet reviewed |
+| [SN 46.11 Pāṇasutta — Living Creatures](https://suttacentral.net/sn46.11/en/sujato) | Sutta (early discourses) | partly encoded | 2 / 8 | 5 | not yet reviewed |
+| [SN 46.12 Paṭhamasūriyūpamasutta — The Simile of the Sun (1st)](https://suttacentral.net/sn46.12/en/sujato) | Sutta (early discourses) | partly encoded | 3 / 8 | 6 | not yet reviewed |
+| [SN 46.13 Dutiyasūriyūpamasutta — The Simile of the Sun (2nd)](https://suttacentral.net/sn46.13/en/sujato) | Sutta (early discourses) | partly encoded | 3 / 8 | 6 | not yet reviewed |
+| [SN 46.17 Pāraṅgamasutta — Going to the Far Shore](https://suttacentral.net/sn46.17/en/sujato) | Sutta (early discourses) | partly encoded | 3 / 27 | 2 | not yet reviewed |
+| [SN 46.19 Ariyasutta — Noble](https://suttacentral.net/sn46.19/en/sujato) | Sutta (early discourses) | partly encoded | 3 / 5 | 2 | not yet reviewed |
 | [SN 46.2 Kāyasutta — The Body](https://suttacentral.net/sn46.2/en/sujato) | Sutta (early discourses) | partly encoded | 24 / 58 | 12 | not yet reviewed |
+| [SN 46.31 Paṭhamakusalasutta — Skillful (1st)](https://suttacentral.net/sn46.31/en/sujato) | Sutta (early discourses) | partly encoded | 3 / 7 | 6 | not yet reviewed |
+| [SN 46.32 Dutiyakusalasutta — Skillful (2nd)](https://suttacentral.net/sn46.32/en/sujato) | Sutta (early discourses) | partly encoded | 3 / 7 | 6 | not yet reviewed |
 | [SN 46.33 Upakkilesasutta — Corruptions](https://suttacentral.net/sn46.33/en/sujato) | Sutta (early discourses) | partly encoded | 3 / 13 | 1 | not yet reviewed |
-| [SN 46.37 Āvaraṇanīvaraṇasutta — Obstacles](https://suttacentral.net/sn46.37/en/sujato) | Sutta (early discourses) | partly encoded | 8 / 12 | 2 | not yet reviewed |
-| [SN 46.38 Anīvaraṇasutta — Without Obstacles](https://suttacentral.net/sn46.38/en/sujato) | Sutta (early discourses) | partly encoded | 4 / 9 | 2 | not yet reviewed |
-| [SN 46.40 Nīvaraṇasutta — Hindrances](https://suttacentral.net/sn46.40/en/sujato) | Sutta (early discourses) | partly encoded | 4 / 19 | 2 | not yet reviewed |
+| [SN 46.34 Anupakkilesasutta — Not Corruptions](https://suttacentral.net/sn46.34/en/sujato) | Sutta (early discourses) | partly encoded | 3 / 5 | 2 | not yet reviewed |
+| [SN 46.37 Āvaraṇanīvaraṇasutta — Obstacles](https://suttacentral.net/sn46.37/en/sujato) | Sutta (early discourses) | partly encoded | 10 / 12 | 4 | not yet reviewed |
+| [SN 46.40 Nīvaraṇasutta — Hindrances](https://suttacentral.net/sn46.40/en/sujato) | Sutta (early discourses) | partly encoded | 6 / 19 | 6 | not yet reviewed |
+| [SN 46.48 Ādiccasutta — The Sun](https://suttacentral.net/sn46.48/en/sujato) | Sutta (early discourses) | partly encoded | 3 / 8 | 6 | not yet reviewed |
+| [SN 46.5 Bhikkhusutta — A Monk](https://suttacentral.net/sn46.5/en/sujato) | Sutta (early discourses) | partly encoded | 4 / 12 | 6 | not yet reviewed |
 | [SN 46.53 Aggisutta — Fire](https://suttacentral.net/sn46.53/en/sujato) | Sutta (early discourses) | partly encoded | 9 / 51 | 13 | not yet reviewed |
+| [SN 46.7 Kūṭāgārasutta — A Bungalow](https://suttacentral.net/sn46.7/en/sujato) | Sutta (early discourses) | partly encoded | 3 / 7 | 5 | not yet reviewed |
 | [Dhammapada 279](https://suttacentral.net/dhp279/en/sujato) | Sutta (early discourses) | cited only | 1 / 5 | 1 | not yet reviewed |
 | [MN 10 Satipaṭṭhānasutta — Mindfulness Meditation](https://suttacentral.net/mn10/en/sujato) | Sutta (early discourses) | cited only | 1 / 233 | 0 | not yet reviewed |
 | [MN 148 Chachakkasutta — Six By Six](https://suttacentral.net/mn148/en/sujato) | Sutta (early discourses) | cited only | 2 / 225 | 1 | not yet reviewed |
@@ -41,10 +60,50 @@ Counts follow SuttaCentral's numbering, with grouped ranges (e.g. `sn12.93-213`)
 
 Segments cited are the passages a claim points to. A fully encoded text can still cite fewer than all its segments, because headings, questions and restatements carry no new claim.
 
+### SN 46.20 Nibbidāsutta — Disillusionment
+
+- **Coverage:** fully encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** Developing the seven factors leads solely to disillusionment, dispassion, cessation, peace, insight, awakening (sambodhi) and extinguishment (1.1, 1.4); the list (1.3).
+
+### SN 46.21 Bodhāyasutta — To Awakening
+
+- **Coverage:** fully encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** Why they are called awakening factors: they lead to awakening (bodhi) (2.3, 2.6); the list (2.4); the stock formula for each factor (relies on seclusion, fading away and cessation; ripens as letting go) (2.5).
+
 ### SN 46.22 Bojjhaṅgadesanāsutta — A Teaching on the Awakening Factors
 
 - **Coverage:** fully encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
 - **Encodes:** Its whole teaching: the list of the seven awakening factors (1.1, 1.3, 1.4), as citations on the existing list.
+
+### SN 46.24 Ayonisomanasikārasutta — Irrational Application of Mind
+
+- **Coverage:** fully encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** Irrational application of mind: the hindrances arise and grow, the awakening factors don't arise or cease (1.1-1.6). Rational application of mind: the hindrances don't arise or are given up, the awakening factors arise and are fully developed (2.1-3.1).
+
+### SN 46.35 Ayonisomanasikārasutta — Irrational Application of Mind
+
+- **Coverage:** fully encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** Irrational application of mind: the hindrances arise and grow (1.1). Rational application of mind: the awakening factors arise and are fully developed (2.1).
+
+### SN 46.36 Buddhisutta — Growth
+
+- **Coverage:** fully encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** Developing the seven factors leads to growth and progress (1.1, 1.4); the list (1.3).
+
+### SN 46.38 Anīvaraṇasutta — Without Obstacles
+
+- **Coverage:** fully encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** Both lists (2.1, 2.2; 3.1, 3.2), and the teaching: when a noble disciple pays attention, applies the mind, concentrates wholeheartedly and actively listens to the teaching, the five hindrances are absent and the seven awakening factors are fully developed (1.1, 3.4).
+
+### SN 46.49 Ajjhattikaṅgasutta — Interior
+
+- **Coverage:** fully encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** Of interior factors, nothing gives rise to the seven awakening factors like rational application of mind (1.1). The rest of the sutta is abbreviated in the source.
+
+### SN 46.50 Bāhiraṅgasutta — Exterior
+
+- **Coverage:** fully encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** Of exterior factors, nothing gives rise to the seven awakening factors like good friendship (1.1). The rest of the sutta is abbreviated in the source.
 
 ### SN 46.51 Āhārasutta — Nourishing
 
@@ -64,11 +123,59 @@ Segments cited are the passages a claim points to. A fully encoded text can stil
 - **Encodes:** One definition: 'Unification of the mind is immersion' (12.2). Found while checking an eval answer; it corrected decision D4, which had wrongly called this equation an interpretation.
 - **Left out:** The rest of Dhammadinnā's answers: substantial reality, its origin, cessation and the practice leading there (2-5); grasping and the aggregates (6); substantialist view (7-8); the noble eightfold path and the three spectrums of practice (9-11); the bases, prerequisites and development of immersion (12.3-12.5); the three processes (13-15); the cessation of perception and feeling (16-21); the three feelings, their underlying tendencies and their counterparts (22-29).
 
+### SN 46.1 Himavantasutta — The Himalaya
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** The seven factors developed depending on and grounded on ethics (1.4), and the stock formula for each factor (relies on seclusion, fading away and cessation; ripens as letting go) (1.6, 1.12).
+- **Left out:** The simile of dragons growing strong on the Himalayas and reaching the ocean (1.2-1.3), and the result 'acquiring great and abundant good qualities' (1.4, 1.13). No simile pattern yet.
+
+### SN 46.11 Pāṇasutta — Living Creatures
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** The seven factors developed depending on and grounded on ethics (1.3); the stock formula for each factor (relies on seclusion, fading away and cessation; ripens as letting go) (2.3).
+- **Left out:** The simile of creatures in the four postures depending on the earth (1.1-1.2).
+
+### SN 46.12 Paṭhamasūriyūpamasutta — The Simile of the Sun (1st)
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** Good friendship is the forerunner of the arising of the seven factors (1.2), and one with good friends can expect to develop them (1.3); the stock formula for each factor (relies on seclusion, fading away and cessation; ripens as letting go) (2.3).
+- **Left out:** The simile of the dawn as forerunner of the sunrise (1.1).
+
+### SN 46.13 Dutiyasūriyūpamasutta — The Simile of the Sun (2nd)
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** Rational application of mind is the forerunner of the arising of the seven factors (1.2), and one accomplished in it can expect to develop them (1.3); the stock formula for each factor (relies on seclusion, fading away and cessation; ripens as letting go) (2.3).
+- **Left out:** The simile of the dawn (1.1).
+
+### SN 46.17 Pāraṅgamasutta — Going to the Far Shore
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** Developing the seven factors leads to going from the near shore to the far shore (1.1, 1.4); the list (1.3).
+- **Left out:** The verses (2.1-6.6): few cross to the far shore, the astute develop the bright, and those rightly developed in the awakening factors are quenched in this world.
+
+### SN 46.19 Ariyasutta — Noble
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** Developing the seven factors brings one who practices them to the complete ending of suffering (1.1, 1.4); the list (1.3).
+- **Left out:** That the factors are 'noble and emancipating' (ariyā niyyānikā) (1.1, 1.4). Needs a pattern for what a quality is called.
+
 ### SN 46.2 Kāyasutta — The Body
 
 - **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
 - **Encodes:** Its 12 statements of what fuels the five hindrances and seven awakening factors (2-6, 9-15). They match SN 46.51 sections 1-12 (identical English; Pali differs only in punctuation and one spelling variant), so they were added as a second citation on the same claims, not as new claims.
 - **Left out:** The simile framing the teaching: as the body is sustained by food, so the hindrances and the awakening factors are sustained by fuel (1.2-1.3, 7, 8, 16). There is no pattern for similes yet.
+
+### SN 46.31 Paṭhamakusalasutta — Skillful (1st)
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** Skillful qualities are rooted in diligence (1.1); a diligent mendicant can expect to develop the seven factors (1.2); the stock formula for each factor (relies on seclusion, fading away and cessation; ripens as letting go) (2.3).
+- **Left out:** 'Diligence is said to be the best of them' (1.1). Needs a pattern for ranking.
+
+### SN 46.32 Dutiyakusalasutta — Skillful (2nd)
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** Skillful qualities are rooted in rational application of mind (1.1); one accomplished in it can expect to develop the seven factors (1.2); the stock formula for each factor (relies on seclusion, fading away and cessation; ripens as letting go) (2.3).
+- **Left out:** 'Rational application of mind is said to be the best of them' (1.1). Needs a pattern for ranking.
 
 ### SN 46.33 Upakkilesasutta — Corruptions
 
@@ -76,29 +183,47 @@ Segments cited are the passages a claim points to. A fully encoded text can stil
 - **Encodes:** The five corruptions of the mind as a list whose members are the same five qualities as the hindrances (2.1, 2.3, 2.4).
 - **Left out:** The simile of the five corruptions of native gold (1.1-1.8), and what the corruptions do: the mind is not pliable, workable or radiant, is brittle, and is not rightly immersed for the ending of defilements (2.1, 2.4). No pattern yet for similes or for what a quality does.
 
+### SN 46.34 Anupakkilesasutta — Not Corruptions
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** Developing the seven factors leads to the realization of the fruit of knowledge and freedom (1.1, 1.4); the list (1.3).
+- **Left out:** That the factors are not obstacles, hindrances or corruptions of the mind (1.1, 1.4). Needs a pattern for what a quality is or is not.
+
 ### SN 46.37 Āvaraṇanīvaraṇasutta — Obstacles
 
 - **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
-- **Encodes:** Both lists, as citations on the existing lists (1.1, 1.3-1.7; 2.1, 2.3).
-- **Left out:** What the sutta says about them: the hindrances are obstacles and corruptions of the heart that weaken wisdom; the awakening factors are not, and when developed lead to the realization of the fruit of knowledge and freedom (1.1, 1.8, 2.1, 2.4). Needs a pattern for what a quality does or leads to.
-
-### SN 46.38 Anīvaraṇasutta — Without Obstacles
-
-- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
-- **Encodes:** Both lists, as citations on the existing lists (2.1, 2.2; 3.1, 3.2).
-- **Left out:** The teaching itself: when a noble disciple pays attention, applies the mind, concentrates wholeheartedly and actively listens to the teaching, the five hindrances are absent and the seven awakening factors are fully developed (1.1, 3.4). Needs a pattern for conditions.
+- **Encodes:** Both lists (1.1, 1.3-1.7; 2.1, 2.3); the hindrances weaken wisdom (1.1, 1.8); developing the awakening factors leads to the realization of the fruit of knowledge and freedom (2.1, 2.4).
+- **Left out:** That the hindrances are obstacles and corruptions of the heart, and the awakening factors are not (1.1, 1.8, 2.1, 2.4). Needs a pattern for what a quality is or is not.
 
 ### SN 46.40 Nīvaraṇasutta — Hindrances
 
 - **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
-- **Encodes:** Both lists, as citations on the existing lists (1.1, 1.3; 2.1, 2.3).
-- **Left out:** What the sutta says about them: the hindrances destroy sight, vision and knowledge, block wisdom, are on the side of distress and don't lead to extinguishment; the awakening factors are the opposite (1.1, 1.8, 2.1, 2.4). Also the chapter's summary verse (3.0-3.4). Needs a pattern for what a quality does or leads to.
+- **Encodes:** Both lists (1.1, 1.3; 2.1, 2.3); the hindrances block wisdom and don't lead to extinguishment (1.1, 1.8); the awakening factors grow wisdom and lead to extinguishment (2.1, 2.4).
+- **Left out:** The Pali compounds 'making blind, sightless, ignorant' and 'on the side of distress' for the hindrances, and their opposites for the awakening factors (1.1, 2.1), which don't map cleanly onto a target concept; and the chapter's summary verse (3.0-3.4).
+
+### SN 46.48 Ādiccasutta — The Sun
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** Good friendship is the forerunner of the arising of the seven factors (1.2), and one with good friends can expect to develop them (1.3); the stock formula for each factor (relies on seclusion, fading away and cessation; ripens as letting go) (1.6). Same statements as SN 46.12, added as citations.
+- **Left out:** The simile of the dawn (1.1).
+
+### SN 46.5 Bhikkhusutta — A Monk
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** Why they are called awakening factors: they lead to awakening (bodhi) (1.5, 1.11); the list (1.6); the stock formula for each factor (relies on seclusion, fading away and cessation; ripens as letting go) (1.7).
+- **Left out:** As they are developed the mind is freed from the defilements of sensuality, desire to be reborn and ignorance, and knows it is freed (1.8-1.10). Needs the three defilements (āsava) as a list and a pattern for release.
 
 ### SN 46.53 Aggisutta — Fire
 
 - **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-13 by project owner with Claude (AI assistant), from SuttaCentral's text
 - **Encodes:** The timing advice: which awakening factors it is the right or wrong time to develop when the mind is sluggish (4.1, 7.1) or restless (10.1, 13.1), the reason given for each, and 'mindfulness is always useful' (15.4).
 - **Left out:** The setting and the challenge from wanderers of other religions (1.1-3.1); the four fire similes (5, 8, 11, 14) that illustrate the advice; the repeated statements after each simile (6, 9, 12, 15.1-15.3).
+
+### SN 46.7 Kūṭāgārasutta — A Bungalow
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** Developing the seven factors slants, slopes and inclines to extinguishment (1.2, 2.4); the stock formula for each factor (relies on seclusion, fading away and cessation; ripens as letting go) (2.3).
+- **Left out:** The simile of a bungalow's rafters inclining to the peak (1.1).
 
 ### Dhammapada 279
 

@@ -2,9 +2,9 @@
 
 A small, **citation-first** ontology of Buddhist teachings, built from the Pali suttas. Every link points to the exact passage that states it, and a reasoner, rules and validation checks run over the whole thing.
 
-It starts with one well-defined topic: the **five hindrances**, the **seven awakening factors** and the **factors of the first jhāna**. The aim is to show what an ontology can do that a glossary, a graph of related terms or a plain LLM can't, on material that can be checked line by line.
+It starts with one well-defined topic: the **five hindrances**, the **seven awakening factors** and the **factors of the first jhāna**, and what the Linked Discourses on the Awakening Factors (SN 46) say about what conditions them and where they lead. The aim is to show what an ontology can do that a glossary, a graph of related terms or a plain LLM can't, on material that can be checked line by line.
 
-> **Status: v0.1, a personal learning project.** It draws on 14 texts out of SuttaCentral's 14,080 suttas ([COVERAGE.md](COVERAGE.md)). The modelling was done by a practitioner with an AI assistant, and **no qualified reader has reviewed it yet**. The quotes are the texts' own words; the structure is our interpretation, and every choice is written down in [DECISIONS.md](DECISIONS.md) so you can disagree with a specific one. Corrections are very welcome ([CONTRIBUTING.md](CONTRIBUTING.md)).
+> **Status: v0.1, a personal learning project.** It draws on 33 texts out of SuttaCentral's 14,080 suttas ([COVERAGE.md](COVERAGE.md)). The modelling was done by a practitioner with an AI assistant, and **no qualified reader has reviewed it yet**. The quotes are the texts' own words; the structure is our interpretation, and every choice is written down in [DECISIONS.md](DECISIONS.md) so you can disagree with a specific one. Corrections are very welcome ([CONTRIBUTING.md](CONTRIBUTING.md)).
 
 ## What it does
 
@@ -37,6 +37,7 @@ $ python scripts/dho.py ask "monkey mind"
 - **Classifies by reasoning.** Nothing is typed "hindrance" by hand; the OWL reasoner works it out from list membership. Rapture comes out as both an awakening factor and a jhāna factor.
 - **Derives what a sutta implies but never states.** Rule R1 finds which awakening factor counters which hindrance from objects they share in SN 46.51. It finds exactly two pairs. It does *not* produce "tranquility counters restlessness", which many teachers say but SN 46.51 doesn't support.
 - **Keeps layers apart.** Sutta, commentary and editor claims are always labelled, and the checks stop one being filed as another.
+- **Keeps the text's own words.** Outcome and condition claims ("good friendship is the forerunner of the awakening factors") use a small controlled set of relations for querying, plus the sutta's exact wording; a check fails if that wording isn't in the cited passage.
 - **Separates the meanings of one word.** `sense dhamma` shows four meanings of *dhamma*, each backed by a passage, and one contested use left unassigned.
 - **Checks itself.** SHACL rules verify that list counts match the text, every claim is cited, cited passages exist, derived links are never typed by hand, and every text has an honest coverage record. Deliberately broken files in `tests/broken/` prove each rule fires.
 
@@ -77,7 +78,7 @@ Rebuild `dist/` with `python scripts/release.py`.
 
 | | |
 |---|---|
-| [DECISIONS.md](DECISIONS.md) | Every modelling choice, why it was made, and corrections (D1–D12) |
+| [DECISIONS.md](DECISIONS.md) | Every modelling choice, why it was made, and corrections (D1–D13) |
 | [COVERAGE.md](COVERAGE.md) | Which texts are encoded, how much of each, what's left out, review status. Generated |
 | [triage/](triage/) | Collections sorted by the modelling pattern each sutta needs, before ingesting them |
 | [eval/](eval/) | A golden question set for testing whether the ontology helps an LLM answer more faithfully, and the method |
@@ -88,10 +89,10 @@ Rebuild `dist/` with `python scripts/release.py`.
 | Path | What |
 |---|---|
 | `ontology/dho-schema.ttl` | Schema: classes, and what each relation means |
-| `data/*.ttl` | Lists and qualities, SN 46.51 / 46.2 nutriments, SN 46.53 timing, MN 44 definition, commentary pairings, dhamma senses, coverage records |
+| `data/*.ttl` | Lists and qualities, SN 46.51 / 46.2 nutriments, SN 46.53 timing, SN 46 outcomes and conditions, MN 44 definition, commentary pairings, dhamma senses, coverage records |
 | `data/passages.ttl` | **Generated**: cited passages with exact English and Pali |
 | `rules/` | Rule R1 (SPARQL CONSTRUCT) |
-| `shapes/dho-shapes.ttl` | SHACL checks S1–S11 |
+| `shapes/dho-shapes.ttl` | SHACL checks S1–S14 |
 | `scripts/` | `dho.py` (check, ask, sense, query), `sc.py` (fetch and read SuttaCentral texts), `build_passages.py`, `coverage.py`, `export_graph.py`, `export_review.py`, `release.py` |
 | `queries/` | Example SPARQL queries |
 | `viz/` | Viewer templates; `export_graph.py` builds `viz/graph.html`, `export_review.py` builds `viz/review.html` |
