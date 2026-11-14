@@ -12,10 +12,10 @@ This is how much of the canon the ontology actually draws on. It is small on pur
 |---|---:|---:|---:|---:|---:|
 | Long Discourses (DN) | 34 | 0 | 0 | 0 | 0.00% |
 | Middle Discourses (MN) | 152 | 0 | 2 | 2 | 2.63% |
-| Linked Discourses (SN) | 3,024 | 1 | 2 | 1 | 0.13% |
+| Linked Discourses (SN) | 3,024 | 2 | 6 | 1 | 0.30% |
 | Numbered Discourses (AN) | 8,122 | 0 | 0 | 0 | 0.00% |
 | Minor Collection (KN) | 2,748 | 0 | 0 | 1 | 0.04% |
-| **Total** | **14,080** | **1** | | | **0.06%** |
+| **Total** | **14,080** | **2** | | | **0.10%** |
 
 Counts follow SuttaCentral's numbering, with grouped ranges (e.g. `sn12.93-213`) counted as the suttas they number. Many of those are abbreviated repetitions, so this overstates the amount of distinct text. KN mixes early and late material (Dhammapada and Sutta Nipāta beside Jātaka and Apadāna) and Dhammapada is counted by verse.
 
@@ -23,10 +23,15 @@ Counts follow SuttaCentral's numbering, with grouped ranges (e.g. `sn12.93-213`)
 
 | Text | Layer | Coverage | Segments cited / in text | Claims citing it | Review |
 |---|---|---|---:|---:|---|
+| [SN 46.22 Bojjhaṅgadesanāsutta — A Teaching on the Awakening Factors](https://suttacentral.net/sn46.22/en/sujato) | Sutta (early discourses) | fully encoded | 3 / 6 | 1 | not yet reviewed |
 | [SN 46.51 Āhārasutta — Nourishing](https://suttacentral.net/sn46.51/en/sujato) | Sutta (early discourses) | fully encoded | 49 / 100 | 27 | not yet reviewed |
 | [MN 43 Mahāvedallasutta — The Great Elaboration](https://suttacentral.net/mn43/en/sujato) | Sutta (early discourses) | partly encoded | 5 / 181 | 3 | not yet reviewed |
 | [MN 44 Cūḷavedallasutta — The Shorter Elaboration](https://suttacentral.net/mn44/en/sujato) | Sutta (early discourses) | partly encoded | 1 / 136 | 1 | not yet reviewed |
 | [SN 46.2 Kāyasutta — The Body](https://suttacentral.net/sn46.2/en/sujato) | Sutta (early discourses) | partly encoded | 24 / 58 | 12 | not yet reviewed |
+| [SN 46.33 Upakkilesasutta — Corruptions](https://suttacentral.net/sn46.33/en/sujato) | Sutta (early discourses) | partly encoded | 3 / 13 | 1 | not yet reviewed |
+| [SN 46.37 Āvaraṇanīvaraṇasutta — Obstacles](https://suttacentral.net/sn46.37/en/sujato) | Sutta (early discourses) | partly encoded | 8 / 12 | 2 | not yet reviewed |
+| [SN 46.38 Anīvaraṇasutta — Without Obstacles](https://suttacentral.net/sn46.38/en/sujato) | Sutta (early discourses) | partly encoded | 4 / 9 | 2 | not yet reviewed |
+| [SN 46.40 Nīvaraṇasutta — Hindrances](https://suttacentral.net/sn46.40/en/sujato) | Sutta (early discourses) | partly encoded | 4 / 19 | 2 | not yet reviewed |
 | [SN 46.53 Aggisutta — Fire](https://suttacentral.net/sn46.53/en/sujato) | Sutta (early discourses) | partly encoded | 9 / 51 | 13 | not yet reviewed |
 | [Dhammapada 279](https://suttacentral.net/dhp279/en/sujato) | Sutta (early discourses) | cited only | 1 / 5 | 1 | not yet reviewed |
 | [MN 10 Satipaṭṭhānasutta — Mindfulness Meditation](https://suttacentral.net/mn10/en/sujato) | Sutta (early discourses) | cited only | 1 / 233 | 0 | not yet reviewed |
@@ -35,6 +40,11 @@ Counts follow SuttaCentral's numbering, with grouped ranges (e.g. `sn12.93-213`)
 | Visuddhimagga IV.86 | Commentary / later treatise | referenced only | not held | 5 | not yet reviewed |
 
 Segments cited are the passages a claim points to. A fully encoded text can still cite fewer than all its segments, because headings, questions and restatements carry no new claim.
+
+### SN 46.22 Bojjhaṅgadesanāsutta — A Teaching on the Awakening Factors
+
+- **Coverage:** fully encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** Its whole teaching: the list of the seven awakening factors (1.1, 1.3, 1.4), as citations on the existing list.
 
 ### SN 46.51 Āhārasutta — Nourishing
 
@@ -59,6 +69,30 @@ Segments cited are the passages a claim points to. A fully encoded text can stil
 - **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
 - **Encodes:** Its 12 statements of what fuels the five hindrances and seven awakening factors (2-6, 9-15). They match SN 46.51 sections 1-12 (identical English; Pali differs only in punctuation and one spelling variant), so they were added as a second citation on the same claims, not as new claims.
 - **Left out:** The simile framing the teaching: as the body is sustained by food, so the hindrances and the awakening factors are sustained by fuel (1.2-1.3, 7, 8, 16). There is no pattern for similes yet.
+
+### SN 46.33 Upakkilesasutta — Corruptions
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** The five corruptions of the mind as a list whose members are the same five qualities as the hindrances (2.1, 2.3, 2.4).
+- **Left out:** The simile of the five corruptions of native gold (1.1-1.8), and what the corruptions do: the mind is not pliable, workable or radiant, is brittle, and is not rightly immersed for the ending of defilements (2.1, 2.4). No pattern yet for similes or for what a quality does.
+
+### SN 46.37 Āvaraṇanīvaraṇasutta — Obstacles
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** Both lists, as citations on the existing lists (1.1, 1.3-1.7; 2.1, 2.3).
+- **Left out:** What the sutta says about them: the hindrances are obstacles and corruptions of the heart that weaken wisdom; the awakening factors are not, and when developed lead to the realization of the fruit of knowledge and freedom (1.1, 1.8, 2.1, 2.4). Needs a pattern for what a quality does or leads to.
+
+### SN 46.38 Anīvaraṇasutta — Without Obstacles
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** Both lists, as citations on the existing lists (2.1, 2.2; 3.1, 3.2).
+- **Left out:** The teaching itself: when a noble disciple pays attention, applies the mind, concentrates wholeheartedly and actively listens to the teaching, the five hindrances are absent and the seven awakening factors are fully developed (1.1, 3.4). Needs a pattern for conditions.
+
+### SN 46.40 Nīvaraṇasutta — Hindrances
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** Both lists, as citations on the existing lists (1.1, 1.3; 2.1, 2.3).
+- **Left out:** What the sutta says about them: the hindrances destroy sight, vision and knowledge, block wisdom, are on the side of distress and don't lead to extinguishment; the awakening factors are the opposite (1.1, 1.8, 2.1, 2.4). Also the chapter's summary verse (3.0-3.4). Needs a pattern for what a quality does or leads to.
 
 ### SN 46.53 Aggisutta — Fire
 

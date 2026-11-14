@@ -4,7 +4,7 @@ A small, **citation-first** ontology of Buddhist teachings, built from the Pali 
 
 It starts with one well-defined topic: the **five hindrances**, the **seven awakening factors** and the **factors of the first jhāna**. The aim is to show what an ontology can do that a glossary, a graph of related terms or a plain LLM can't, on material that can be checked line by line.
 
-> **Status: v0.1, a personal learning project.** It covers 9 texts out of SuttaCentral's 14,080 suttas ([COVERAGE.md](COVERAGE.md)). The modelling was done by a practitioner with an AI assistant, and **no qualified reader has reviewed it yet**. The quotes are the texts' own words; the structure is our interpretation, and every choice is written down in [DECISIONS.md](DECISIONS.md) so you can disagree with a specific one. Corrections are very welcome ([CONTRIBUTING.md](CONTRIBUTING.md)).
+> **Status: v0.1, a personal learning project.** It draws on 14 texts out of SuttaCentral's 14,080 suttas ([COVERAGE.md](COVERAGE.md)). The modelling was done by a practitioner with an AI assistant, and **no qualified reader has reviewed it yet**. The quotes are the texts' own words; the structure is our interpretation, and every choice is written down in [DECISIONS.md](DECISIONS.md) so you can disagree with a specific one. Corrections are very welcome ([CONTRIBUTING.md](CONTRIBUTING.md)).
 
 ## What it does
 
@@ -14,21 +14,22 @@ $ python scripts/dho.py ask "monkey mind"
 
 === restlessness and remorse · uddhaccakukkucca · 掉舉惡作
   is a: Hindrance   (inferred by the reasoner from list membership)
-  member of: the five hindrances   [sutta mn43:20.3, sn46.51:1.2]
+  member of: the five corruptions of the mind   [sutta sn46.33:2.1, 2.3–2.4]
+  member of: the five hindrances   [sutta mn43:20.3; sn46.37:1.1, 1.3–1.7; sn46.38:2.1–2.2; sn46.40:1.1, 1.3; sn46.51:1.2]
   fuelled by:
     - frequent irrational application of mind to the unsettled mind
-        "There is the unsettled mind."  [sutta sn46.2:5.2, sn46.2:5.3, sn46.51:4.2, sn46.51:4.3]
+        "There is the unsettled mind."  [sutta sn46.2:5.2–5.3; sn46.51:4.2–4.3]
   starved by:
     - frequent rational application of mind to the settled mind
-        "There is the settled mind."  [sutta sn46.51:16.2, sn46.51:16.3]
+        "There is the settled mind."  [sutta sn46.51:16.2–16.3]
   opposed by: bliss   [commentary, unverified: Visuddhimagga IV.86 (citing the Peṭakopadesa)]
   see also: restless mind   [editor's link, not a textual claim]
 
 === restless mind · uddhataṁ cittaṁ
   is a: mind state
   timing (SN 46.53):
-    - when the mind is restless: right time to develop tranquility   [sutta sn46.53:13.1, sn46.53:13.3]
-    - when the mind is restless: wrong time to develop energy   [sutta sn46.53:10.1, sn46.53:10.3]
+    - when the mind is restless: right time to develop tranquility   [sutta sn46.53:13.1, 13.3]
+    - when the mind is restless: wrong time to develop energy   [sutta sn46.53:10.1, 10.3]
     ...
 ```
 
@@ -78,6 +79,7 @@ Rebuild `dist/` with `python scripts/release.py`.
 |---|---|
 | [DECISIONS.md](DECISIONS.md) | Every modelling choice, why it was made, and corrections (D1–D12) |
 | [COVERAGE.md](COVERAGE.md) | Which texts are encoded, how much of each, what's left out, review status. Generated |
+| [triage/](triage/) | Collections sorted by the modelling pattern each sutta needs, before ingesting them |
 | [eval/](eval/) | A golden question set for testing whether the ontology helps an LLM answer more faithfully, and the method |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | How to report an error or add a text |
 

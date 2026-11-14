@@ -508,3 +508,33 @@ must_not = ["SN 46.2 says the feature of ugliness (or anything else) starves a h
 layer = "sutta"
 status = "draft"
 note = "Added with SN 46.2 by the add-text workflow."
+
+[[q]]
+id = "Q34"
+category = "trap"
+scope = "covered"
+question = "According to SN 46.33, what are the five corruptions of the mind?"
+gold = [
+  "The same five qualities as the hindrances: sensual desire, ill will, dullness and drowsiness, restlessness and remorse, and doubt, called the five corruptions of the mind (cittassa upakkilesā).",
+]
+segments = ["sn46.33:2.1", "sn46.33:2.3", "sn46.33:2.4"]
+also_ok = ["Mentioning that the sutta compares them to the five corruptions of native gold (iron, copper, tin, lead, silver)."]
+must_not = ["Iron, copper, tin, lead and silver are the corruptions of the mind. (They are the corruptions of gold in the simile.)"]
+layer = "sutta"
+status = "draft"
+note = "Added with the SN 46 list texts by the add-text workflow."
+
+[[q]]
+id = "Q35"
+category = "partial"
+scope = "partial"
+question = "According to SN 46.38, when are the five hindrances absent?"
+gold = [
+  "When a noble disciple pays attention, applies the mind, concentrates wholeheartedly and actively listens to the teaching; at such a time the five hindrances are absent and the seven awakening factors are fully developed.",
+]
+segments = ["sn46.38:1.1", "sn46.38:3.4"]
+also_ok = []
+must_not = []
+layer = "sutta"
+status = "draft"
+note = "This teaching is left out of the ontology until a pattern for conditions is agreed. A system using the ontology should say so."

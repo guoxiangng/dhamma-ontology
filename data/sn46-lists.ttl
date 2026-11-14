@@ -1,0 +1,28 @@
+@prefix dho:  <https://guoxiangng.github.io/dhamma-ontology/ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# SN 46.22, 46.33, 46.37, 46.38, 46.40: suttas that state the lists (D12: extra citations,
+# not new nodes), plus SN 46.33's own list. Their other teachings (what the hindrances do,
+# what the awakening factors lead to, when the hindrances are absent) wait for new patterns;
+# see data/coverage.ttl and DECISIONS.md "Patterns not modelled yet".
+
+dho:FiveHindrances dho:citedBy
+    dho:p-sn46.37-1.1 , dho:p-sn46.37-1.3 , dho:p-sn46.37-1.4 , dho:p-sn46.37-1.5 , dho:p-sn46.37-1.6 , dho:p-sn46.37-1.7 ,
+    dho:p-sn46.38-2.1 , dho:p-sn46.38-2.2 ,
+    dho:p-sn46.40-1.1 , dho:p-sn46.40-1.3 .
+
+dho:SevenAwakeningFactors dho:citedBy
+    dho:p-sn46.22-1.1 , dho:p-sn46.22-1.3 , dho:p-sn46.22-1.4 ,
+    dho:p-sn46.37-2.1 , dho:p-sn46.37-2.3 ,
+    dho:p-sn46.38-3.1 , dho:p-sn46.38-3.2 ,
+    dho:p-sn46.40-2.1 , dho:p-sn46.40-2.3 .
+
+# SN 46.33 names the same five qualities as "the five corruptions of the mind". It is its own
+# list in the text, so it is its own list here. The hindrance class is defined only by the
+# list of five hindrances (D3), so this list adds no class.
+dho:FiveCorruptionsOfMind a dho:NumberedList ;
+    skos:prefLabel "the five corruptions of the mind"@en , "pañca cittassa upakkilesā"@pi ;
+    dho:expectedCount 5 ;
+    dho:hasMember dho:SensualDesire , dho:IllWill , dho:DullnessDrowsiness ,
+                  dho:RestlessnessRemorse , dho:Doubt ;
+    dho:citedBy dho:p-sn46.33-2.1 , dho:p-sn46.33-2.3 , dho:p-sn46.33-2.4 .

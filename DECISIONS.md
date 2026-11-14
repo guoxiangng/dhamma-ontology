@@ -81,4 +81,8 @@ Before merging, the wording of each pair is compared segment by segment, and any
 
 These kinds of teaching have come up and been left out (each logged in `data/coverage.ttl`) until a pattern is agreed:
 
-- **Similes** (SN 46.2 body and food; SN 46.53's four fire similes; SN 12.61's monkey). Probably a node linking the image, what it illustrates and the point it makes.
+- **A. Outcomes: "developing X leads to Y"**, and what a quality does (the hindrances weaken wisdom; the awakening factors lead to knowledge and freedom). The most common shape in SN 46. Draft: a node with the practice or quality, the outcome, and the citation, like a nutriment.
+- **B. Conditions: "X is the forerunner / root / basis of Y"; "when X, then Y"** (good friendship, rational attention, ethics, attentive listening). Needed again for dependent origination. Draft: a node with condition, conditioned, the kind of relation in the text's own words, and the citation.
+- **C. Similes** (SN 46.2 body and food; SN 46.33 gold; SN 46.53's four fire similes; SN 12.61's monkey). Probably a node linking the image, what it illustrates and the point it makes.
+
+See `triage/sn46.md` for which suttas each pattern unlocks.

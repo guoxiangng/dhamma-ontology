@@ -91,3 +91,42 @@ dho:t-sn46.2
     dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
     dho:encodes "Its 12 statements of what fuels the five hindrances and seven awakening factors (2-6, 9-15). They match SN 46.51 sections 1-12 (identical English; Pali differs only in punctuation and one spelling variant), so they were added as a second citation on the same claims, not as new claims." ;
     dho:leftOut "The simile framing the teaching: as the body is sustained by food, so the hindrances and the awakening factors are sustained by fuel (1.2-1.3, 7, 8, 16). There is no pattern for similes yet." .
+
+dho:t-sn46.22
+    dho:coverage dho:FullyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "Its whole teaching: the list of the seven awakening factors (1.1, 1.3, 1.4), as citations on the existing list." .
+
+dho:t-sn46.33
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "The five corruptions of the mind as a list whose members are the same five qualities as the hindrances (2.1, 2.3, 2.4)." ;
+    dho:leftOut "The simile of the five corruptions of native gold (1.1-1.8), and what the corruptions do: the mind is not pliable, workable or radiant, is brittle, and is not rightly immersed for the ending of defilements (2.1, 2.4). No pattern yet for similes or for what a quality does." .
+
+dho:t-sn46.37
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "Both lists, as citations on the existing lists (1.1, 1.3-1.7; 2.1, 2.3)." ;
+    dho:leftOut "What the sutta says about them: the hindrances are obstacles and corruptions of the heart that weaken wisdom; the awakening factors are not, and when developed lead to the realization of the fruit of knowledge and freedom (1.1, 1.8, 2.1, 2.4). Needs a pattern for what a quality does or leads to." .
+
+dho:t-sn46.38
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "Both lists, as citations on the existing lists (2.1, 2.2; 3.1, 3.2)." ;
+    dho:leftOut "The teaching itself: when a noble disciple pays attention, applies the mind, concentrates wholeheartedly and actively listens to the teaching, the five hindrances are absent and the seven awakening factors are fully developed (1.1, 3.4). Needs a pattern for conditions." .
+
+dho:t-sn46.40
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "Both lists, as citations on the existing lists (1.1, 1.3; 2.1, 2.3)." ;
+    dho:leftOut "What the sutta says about them: the hindrances destroy sight, vision and knowledge, block wisdom, are on the side of distress and don't lead to extinguishment; the awakening factors are the opposite (1.1, 1.8, 2.1, 2.4). Also the chapter's summary verse (3.0-3.4). Needs a pattern for what a quality does or leads to." .

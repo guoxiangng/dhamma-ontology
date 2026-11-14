@@ -118,8 +118,26 @@ def fold(text: str) -> str:
 
 
 def cite(g: Graph, claim) -> str:
-    segs = sorted(str(g.value(p, DHO.segment)) for p in g.objects(claim, DHO.citedBy))
-    return ", ".join(segs) if segs else "-"
+    """Citations grouped by text, consecutive segments collapsed: 'mn43:20.3; sn46.37:1.1, 1.3–1.7'."""
+    by_text: dict[str, list[tuple[int, ...]]] = {}
+    for p in g.objects(claim, DHO.citedBy):
+        uid, seg = str(g.value(p, DHO.segment)).split(":", 1)
+        by_text.setdefault(uid, []).append(tuple(int(x) for x in seg.split(".")))
+    if not by_text:
+        return "-"
+    parts = []
+    for uid in sorted(by_text):
+        segs = sorted(set(by_text[uid]))
+        runs: list[list[tuple[int, ...]]] = []
+        for s in segs:
+            prev = runs[-1][-1] if runs else None
+            if prev and len(s) == len(prev) == 2 and s[0] == prev[0] and s[1] == prev[1] + 1:
+                runs[-1].append(s)
+            else:
+                runs.append([s])
+        fmt = lambda s: ".".join(map(str, s))  # noqa: E731
+        parts.append(f"{uid}:" + ", ".join(fmt(r[0]) if len(r) == 1 else f"{fmt(r[0])}–{fmt(r[-1])}" for r in runs))
+    return "; ".join(parts)
 
 
 def quote(g: Graph, passage, lang: str = "en") -> str:
