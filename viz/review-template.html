@@ -1,0 +1,204 @@
+<title>Dhamma Ontology Review</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,600;1,400&display=swap">
+<style>
+/* Layout: a reading desk. The text runs down the page segment by segment; each segment carries
+   the claims that rest on it in a margin column, so what was encoded and what wasn't sit side by side.
+   Same palm-leaf palette as the graph viewer. */
+:root {
+  --bg: #f4f3ee;
+  --surface: #fbfaf6;
+  --fg: #22231f;
+  --muted: #6c6d63;
+  --line: #d9d7cc;
+  --accent: #8a5a12;
+  --sutta: #2c7a68;
+  --commentary: #8a5aa6;
+  --editor: #8f8f86;
+  --warn: #b04a35;
+  --font-ui: "Noto Sans", "Segoe UI", system-ui, sans-serif;
+  --font-text: "Noto Serif", Georgia, "Songti SC", serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #171815; --surface: #1f201c; --fg: #e8e6dc; --muted: #a2a294; --line: #35362f; --accent: #e0a94a;
+    --sutta: #5cbfa6; --commentary: #c69be0; --editor: #9a9a90; --warn: #e07a62; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #171815; --surface: #1f201c; --fg: #e8e6dc; --muted: #a2a294; --line: #35362f; --accent: #e0a94a;
+  --sutta: #5cbfa6; --commentary: #c69be0; --editor: #9a9a90; --warn: #e07a62; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--fg); font-family: var(--font-ui); font-size: 14px; line-height: 1.55; margin: 0;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 16px 40px;
+}
+.wrap { max-width: 1180px; margin: 0 auto; display: flex; flex-direction: column; gap: 14px; }
+header h1 { margin: 0; font-size: 1.3rem; letter-spacing: -0.01em; text-wrap: balance; }
+header p { margin: 2px 0 0; color: var(--muted); max-width: 70ch; }
+nav { display: flex; flex-wrap: wrap; gap: 6px; }
+nav a {
+  display: inline-flex; flex-direction: column; gap: 1px; text-decoration: none; color: var(--fg);
+  border: 1px solid var(--line); border-radius: 6px; padding: 5px 10px; background: transparent; min-width: 0;
+}
+nav a small { color: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums; }
+nav a[aria-current="page"] { background: var(--surface); border-color: var(--fg); }
+nav a:focus-visible, button:focus-visible, .seg a:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+.record { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; display: grid; gap: 8px; }
+.record h2 { margin: 0; font-size: 1.15rem; text-wrap: balance; }
+.record h2 a { color: inherit; text-decoration: none; border-bottom: 1px dotted var(--muted); }
+.pills { display: flex; flex-wrap: wrap; gap: 6px; }
+.pill { font-size: 11.5px; border-radius: 999px; padding: 1px 9px; border: 1px solid var(--line); color: var(--muted); }
+.pill.unreviewed { color: var(--warn); border-color: var(--warn); }
+.pill.full { color: var(--sutta); border-color: var(--sutta); }
+.record dl { margin: 0; display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 4px 14px; }
+.record dt { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; padding-top: 2px; }
+.record dd { margin: 0; max-width: 90ch; }
+.meter { height: 6px; background: var(--line); border-radius: 3px; overflow: hidden; max-width: 320px; }
+.meter i { display: block; height: 100%; background: var(--sutta); }
+
+.controls { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.controls span { font-size: 11px; text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted); margin-right: 4px; }
+button {
+  font: inherit; font-size: 12.5px; color: var(--muted); background: transparent; border: 1px solid var(--line);
+  border-radius: 999px; padding: 3px 11px; cursor: pointer;
+}
+button[aria-pressed="true"] { color: var(--fg); border-color: var(--fg); background: var(--surface); }
+
+.segs { display: flex; flex-direction: column; }
+.sec { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); padding: 14px 0 4px; border-bottom: 1px solid var(--line); }
+.seg { display: grid; grid-template-columns: 92px minmax(0, 1fr) minmax(0, 0.9fr); gap: 4px 16px; padding: 7px 0; border-bottom: 1px solid var(--line); }
+.seg .id { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; padding-top: 2px; display: flex; flex-direction: column; gap: 2px; }
+.seg .id a { color: var(--muted); font-size: 11px; text-decoration: none; opacity: 0; }
+.seg:hover .id a, .seg .id a:focus-visible { opacity: 1; text-decoration: underline; }
+.seg .txt { font-family: var(--font-text); min-width: 0; }
+.seg .txt .pi { display: block; color: var(--muted); font-style: italic; font-size: 13px; }
+.seg.uncited .txt { color: var(--muted); }
+.seg.head .txt { font-family: var(--font-ui); font-size: 12px; color: var(--muted); }
+.claims { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.claim { font-size: 12.5px; border-left: 3px solid var(--sutta); padding: 1px 0 1px 8px; }
+.claim.l-commentary { border-left-color: var(--commentary); }
+.claim.l-editor, .claim.l-lexicon { border-left-color: var(--editor); }
+.claim b { font-weight: 600; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin-right: 6px; }
+.evals { display: flex; flex-wrap: wrap; gap: 4px; }
+.evals span { font-size: 11px; color: var(--accent); border: 1px solid var(--accent); border-radius: 3px; padding: 0 5px; font-variant-numeric: tabular-nums; }
+.none { color: var(--muted); font-size: 12px; }
+.empty { color: var(--muted); padding: 14px 0; }
+
+@media (max-width: 760px) {
+  .seg { grid-template-columns: minmax(0, 1fr); }
+  .seg .id { flex-direction: row; gap: 10px; }
+  .seg .id a { opacity: 1; }
+  .record dl { grid-template-columns: minmax(0, 1fr); }
+}
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Dhamma Ontology Review</h1>
+    <p>Each text segment by segment, with the claims that rest on it. Segments with no claim are shown faded, so what was left out is as visible as what was encoded.</p>
+  </header>
+  <nav id="texts" aria-label="Texts"></nav>
+  <section class="record" id="record"></section>
+  <div class="controls">
+    <span>Show</span>
+    <button id="f-all" aria-pressed="true">All segments</button>
+    <button id="f-cited" aria-pressed="false">Encoded only</button>
+    <button id="f-uncited" aria-pressed="false">Not encoded</button>
+  </div>
+  <div class="segs" id="segs"></div>
+</div>
+
+<script>
+const DATA = /*__DATA__*/null;
+const REPO = "https://github.com/guoxiangng/dhamma-ontology";
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+const slug = uid => uid.replace(/\./g, "-");
+const bySlug = Object.fromEntries(DATA.texts.map(t => [slug(t.uid), t]));
+let filter = "all";
+
+document.getElementById("texts").innerHTML = DATA.texts.map(t =>
+  `<a href="#${slug(t.uid)}" data-slug="${slug(t.uid)}">${esc(t.title.split(" — ")[0])}
+     <small>${esc(t.coverage)}${t.segments.length ? ` · ${t.cited}/${t.segments.length}` : ""}</small></a>`).join("");
+
+function current() {
+  const s = location.hash.slice(1);
+  return bySlug[s] || DATA.texts[0];
+}
+
+function renderRecord(t) {
+  const pct = t.segments.length ? Math.round(100 * t.cited / t.segments.length) : 0;
+  const url = `https://suttacentral.net/${t.uid}/en/sujato`;
+  document.getElementById("record").innerHTML = `
+    <h2>${t.segments.length ? `<a href="${url}" target="_blank" rel="noopener">${esc(t.title)} ↗</a>` : esc(t.title)}</h2>
+    <div class="pills">
+      <span class="pill ${t.coverage === "fully encoded" ? "full" : ""}">${esc(t.coverage)}</span>
+      <span class="pill ${t.review === "not yet reviewed" ? "unreviewed" : ""}">${esc(t.review)}</span>
+      <span class="pill">${esc(t.layer)}</span>
+    </div>
+    ${t.segments.length ? `<div class="meter" title="${t.cited} of ${t.segments.length} segments carry a claim"><i style="width:${pct}%"></i></div>
+      <div class="none">${t.cited} of ${t.segments.length} segments carry a claim. Headings, questions and restatements usually don't.</div>` : ""}
+    <dl>
+      <dt>Encodes</dt><dd>${esc(t.encodes)}</dd>
+      ${t.leftOut ? `<dt>Left out</dt><dd>${esc(t.leftOut)}</dd>` : ""}
+      <dt>Modelled</dt><dd>${esc(t.modelledOn)} by ${esc(t.modelledBy)}</dd>
+    </dl>`;
+}
+
+function reportLink(seg) {
+  const title = encodeURIComponent(`Correction: ${seg.id}`);
+  const body = encodeURIComponent(`**What's wrong** (concept, claim id or file):\n\n**The text** (${seg.id}): "${seg.en}"\n\n**What it should be, and why:**\n`);
+  return `${REPO}/issues/new?labels=correction&title=${title}&body=${body}`;
+}
+
+function renderSegments(t) {
+  const box = document.getElementById("segs");
+  if (!t.segments.length) {
+    box.innerHTML = `<p class="empty">This text isn't held in the repository, so there are no segments to show. Its claims are cited by reference and flagged as unverified.</p>`;
+    return;
+  }
+  let lastSec = null;
+  const rows = [];
+  for (const s of t.segments) {
+    const cited = s.claims.length > 0;
+    if ((filter === "cited" && !cited) || (filter === "uncited" && cited)) continue;
+    const sec = s.id.split(":")[1].split(".")[0];
+    const head = sec === "0";
+    if (sec !== lastSec && !head) {
+      rows.push(`<div class="sec">Section ${esc(sec)}</div>`);
+      lastSec = sec;
+    }
+    if (!s.en && !s.pi) continue;
+    rows.push(`<div class="seg ${cited ? "" : "uncited"} ${head ? "head" : ""}">
+      <div class="id">${esc(s.id)}${head ? "" : `<a href="${reportLink(s)}" target="_blank" rel="noopener">report</a>`}</div>
+      <div class="txt">${esc(s.en)}<span class="pi">${esc(s.pi)}</span></div>
+      <div class="claims">${s.claims.map(c => `<div class="claim l-${esc(c.layer)}"><b>${esc(c.kind)}</b>${esc(c.text)}</div>`).join("")}
+        ${s.eval.length ? `<div class="evals" title="Eval questions whose gold answer cites this segment">${s.eval.map(q => `<span>${esc(q)}</span>`).join("")}</div>` : ""}
+      </div>
+    </div>`);
+  }
+  box.innerHTML = rows.join("") || `<p class="empty">No segments match this filter.</p>`;
+}
+
+function render() {
+  const t = current();
+  document.querySelectorAll("nav a").forEach(a => a.setAttribute("aria-current", a.dataset.slug === slug(t.uid) ? "page" : "false"));
+  renderRecord(t);
+  renderSegments(t);
+}
+
+for (const f of ["all", "cited", "uncited"]) {
+  document.getElementById("f-" + f).onclick = () => {
+    filter = f;
+    for (const g of ["all", "cited", "uncited"]) document.getElementById("f-" + g).setAttribute("aria-pressed", String(g === f));
+    renderSegments(current());
+  };
+}
+addEventListener("hashchange", render);
+render();
+</script>

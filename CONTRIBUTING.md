@@ -10,7 +10,7 @@ If a claim misrepresents a text, a link is in the wrong layer, a translation cho
 - the segment (e.g. `sn46.51:16.2`) and what it actually says;
 - what you think it should be, and why.
 
-Readers who know the texts well (monastics, scholars, long-term students) are especially welcome to review [DECISIONS.md](DECISIONS.md) and the gold answers in [eval/GOLD-REVIEW.md](eval/GOLD-REVIEW.md). A text's coverage record can be marked reviewed once a qualified reader has checked it.
+Readers who know the texts well (monastics, scholars, long-term students) are especially welcome to review [DECISIONS.md](DECISIONS.md) and the gold answers in [eval/GOLD-REVIEW.md](eval/GOLD-REVIEW.md). The review view (`viz/review.html`, built by `python scripts/export_review.py`) shows each text beside the claims resting on it, with a "report" link on every segment. A text's coverage record can be marked reviewed once a qualified reader has checked it.
 
 ## Add a text
 

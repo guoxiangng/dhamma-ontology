@@ -39,7 +39,10 @@ $ python scripts/dho.py ask "monkey mind"
 - **Separates the meanings of one word.** `sense dhamma` shows four meanings of *dhamma*, each backed by a passage, and one contested use left unassigned.
 - **Checks itself.** SHACL rules verify that list counts match the text, every claim is cited, cited passages exist, derived links are never typed by hand, and every text has an honest coverage record. Deliberately broken files in `tests/broken/` prove each rule fires.
 
-There's also an interactive graph viewer (`viz/graph.html`). Click a concept to see its links, each with its quote and a link to SuttaCentral.
+Two viewers, both single HTML files you can open locally:
+
+- **Graph** (`viz/graph.html`): click a concept to see its links, each with its quote and a link to SuttaCentral.
+- **Review** (`viz/review.html`): each text segment by segment, with the claims that rest on each segment, the coverage record, the eval questions that cite it, and a "report" link that opens a correction issue for that segment. Segments with no claim stay visible, so gaps are as easy to see as what was encoded.
 
 ## Quick start
 
@@ -87,9 +90,9 @@ Rebuild `dist/` with `python scripts/release.py`.
 | `data/passages.ttl` | **Generated**: cited passages with exact English and Pali |
 | `rules/` | Rule R1 (SPARQL CONSTRUCT) |
 | `shapes/dho-shapes.ttl` | SHACL checks S1–S11 |
-| `scripts/` | `dho.py` (check, ask, sense, query), `sc.py` (fetch and read SuttaCentral texts), `build_passages.py`, `coverage.py`, `export_graph.py`, `release.py` |
+| `scripts/` | `dho.py` (check, ask, sense, query), `sc.py` (fetch and read SuttaCentral texts), `build_passages.py`, `coverage.py`, `export_graph.py`, `export_review.py`, `release.py` |
 | `queries/` | Example SPARQL queries |
-| `viz/` | Graph viewer template; `export_graph.py` builds `viz/graph.html` |
+| `viz/` | Viewer templates; `export_graph.py` builds `viz/graph.html`, `export_review.py` builds `viz/review.html` |
 | `tests/` | Clean data passes; each file in `tests/broken/` is caught by the check it targets |
 | `sources/suttacentral/` | Cached SuttaCentral text (CC0) and the canon index |
 | `dist/` | Single-file downloads |
