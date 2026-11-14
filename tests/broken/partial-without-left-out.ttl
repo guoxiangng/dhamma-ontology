@@ -1,0 +1,6 @@
+@prefix dho:  <https://guoxiangng.github.io/dhamma-ontology/ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+# Partly encoded but silent about what is missing: S10 must catch it.
+dho:t-mn20 a dho:Text ; skos:prefLabel "MN 20 Removing Distracting Thoughts"@en ; dho:layer dho:SuttaLayer ;
+    dho:coverage dho:PartlyEncoded ; dho:review dho:Unreviewed ;
+    dho:encodes "The five methods." ; dho:modelledBy "test fixture" .

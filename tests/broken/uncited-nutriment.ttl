@@ -1,0 +1,5 @@
+# Error: a nutriment claim with no citation.
+# Expect S4.
+@prefix dho: <https://guoxiangng.github.io/dhamma-ontology/ns#> .
+dho:n-bad a dho:Nutriment ; dho:object dho:o-ugliness ; dho:attention dho:RationalAttention ;
+    dho:starves dho:SensualDesire .

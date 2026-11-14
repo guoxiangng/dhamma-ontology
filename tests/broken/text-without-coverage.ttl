@@ -1,0 +1,4 @@
+@prefix dho:  <https://guoxiangng.github.io/dhamma-ontology/ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+# A text added without a coverage record: S10 must catch it.
+dho:t-an7.61 a dho:Text ; skos:prefLabel "AN 7.61 Nodding Off"@en ; dho:layer dho:SuttaLayer .

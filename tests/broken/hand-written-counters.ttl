@@ -1,0 +1,4 @@
+# Error: types a "counters" link by hand that rule R1 cannot derive.
+# Expect S9.
+@prefix dho: <https://guoxiangng.github.io/dhamma-ontology/ns#> .
+dho:Rapture dho:counters dho:IllWill .

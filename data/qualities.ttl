@@ -1,0 +1,133 @@
+# The numbered lists and their members.
+# Note: nothing here says "a dho:Hindrance". The reasoner works that out from
+# list membership (see dho:Hindrance in the schema).
+#
+# Labels: prefLabel en = Sujato's rendering (the cited translation);
+# altLabel = other common English renderings and other spellings;
+# hiddenLabel = search-only everyday words (editor's choice, never shown as doctrine).
+
+@prefix dho:  <https://guoxiangng.github.io/dhamma-ontology/ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# ---------------------------------------------------------------- lists
+
+dho:FiveHindrances a dho:NumberedList ;
+    skos:prefLabel "the five hindrances"@en , "pañca nīvaraṇā"@pi , "五蓋"@zh ;
+    dho:expectedCount 5 ;
+    dho:hasMember dho:SensualDesire , dho:IllWill , dho:DullnessDrowsiness ,
+                  dho:RestlessnessRemorse , dho:Doubt ;
+    dho:citedBy dho:p-sn46.51-1.2 , dho:p-mn43-20.3 .
+
+dho:SevenAwakeningFactors a dho:NumberedList ;
+    skos:prefLabel "the seven awakening factors"@en , "satta bojjhaṅgā"@pi , "七覺支"@zh ;
+    skos:altLabel "the seven factors of enlightenment"@en ;
+    dho:expectedCount 7 ;
+    dho:hasMember dho:Mindfulness , dho:Investigation , dho:Energy , dho:Rapture ,
+                  dho:Tranquility , dho:Immersion , dho:Equanimity ;
+    dho:citedBy dho:p-sn46.51-1.2 .
+
+dho:FirstJhanaFactors a dho:NumberedList ;
+    skos:prefLabel "the five factors of the first absorption"@en , "paṭhamajjhānassa pañcaṅgāni"@pi , "初禪五支"@zh ;
+    dho:expectedCount 5 ;
+    dho:hasMember dho:PlacingTheMind , dho:KeepingConnected , dho:Rapture ,
+                  dho:Bliss , dho:Unification ;
+    dho:citedBy dho:p-mn43-19.2 , dho:p-mn43-19.3 .
+
+# ---------------------------------------------------------------- hindrances
+
+dho:SensualDesire a dho:MentalQuality ;
+    skos:prefLabel "sensual desire"@en , "kāmacchanda"@pi , "貪欲"@zh ;
+    skos:altLabel "欲貪"@zh ;
+    skos:hiddenLabel "lust"@en , "craving"@en , "wanting"@en , "desire"@en .
+
+dho:IllWill a dho:MentalQuality ;
+    skos:prefLabel "ill will"@en , "byāpāda"@pi , "瞋恚"@zh ;
+    skos:altLabel "瞋"@zh ;
+    skos:hiddenLabel "anger"@en , "aversion"@en , "irritation"@en , "resentment"@en , "annoyed"@en .
+
+dho:DullnessDrowsiness a dho:MentalQuality ;
+    skos:prefLabel "dullness and drowsiness"@en , "thinamiddha"@pi , "惛沈睡眠"@zh ;
+    skos:altLabel "sloth and torpor"@en , "thīnamiddha"@pi , "睡眠"@zh ;
+    skos:hiddenLabel "sleepy"@en , "drowsy"@en , "sluggish"@en , "lethargy"@en , "tired"@en .
+
+dho:RestlessnessRemorse a dho:MentalQuality ;
+    skos:prefLabel "restlessness and remorse"@en , "uddhaccakukkucca"@pi , "掉舉惡作"@zh ;
+    skos:altLabel "restlessness and worry"@en , "uddhacca-kukkucca"@pi , "掉悔"@zh ;
+    skos:hiddenLabel "restless"@en , "restlessness"@en , "agitation"@en , "worry"@en ,
+                     "anxious"@en , "regret"@en , "monkey mind"@en .
+
+dho:Doubt a dho:MentalQuality ;
+    skos:prefLabel "doubt"@en , "vicikicchā"@pi , "疑"@zh ;
+    skos:hiddenLabel "uncertainty"@en , "indecision"@en , "skepticism"@en .
+
+# ---------------------------------------------------------------- awakening factors
+
+dho:Mindfulness a dho:MentalQuality ;
+    skos:prefLabel "mindfulness"@en , "sati"@pi , "念"@zh ;
+    skos:altLabel "satisambojjhaṅga"@pi , "念覺支"@zh .
+
+dho:Investigation a dho:MentalQuality ;
+    skos:prefLabel "investigation of principles"@en , "dhammavicaya"@pi , "擇法"@zh ;
+    skos:altLabel "investigation of states"@en , "dhammavicayasambojjhaṅga"@pi , "擇法覺支"@zh .
+
+dho:Energy a dho:MentalQuality ;
+    skos:prefLabel "energy"@en , "vīriya"@pi , "精進"@zh ;
+    skos:altLabel "effort"@en , "vīriyasambojjhaṅga"@pi , "精進覺支"@zh .
+
+# Rapture sits in two lists (awakening factors AND first-jhāna factors).
+# One concept, two memberships: the reasoner will classify it as both.
+dho:Rapture a dho:MentalQuality ;
+    skos:prefLabel "rapture"@en , "pīti"@pi , "喜"@zh ;
+    skos:altLabel "joy"@en , "pītisambojjhaṅga"@pi , "喜覺支"@zh .
+
+dho:Tranquility a dho:MentalQuality ;
+    skos:prefLabel "tranquility"@en , "passaddhi"@pi , "輕安"@zh ;
+    skos:altLabel "calm"@en , "passaddhisambojjhaṅga"@pi , "猗"@zh , "輕安覺支"@zh .
+
+dho:Immersion a dho:MentalQuality ;
+    skos:prefLabel "immersion"@en , "samādhi"@pi , "定"@zh ;
+    skos:altLabel "concentration"@en , "samādhisambojjhaṅga"@pi , "定覺支"@zh .
+
+dho:Equanimity a dho:MentalQuality ;
+    skos:prefLabel "equanimity"@en , "upekkhā"@pi , "捨"@zh ;
+    skos:altLabel "upekkhāsambojjhaṅga"@pi , "捨覺支"@zh .
+
+# ---------------------------------------------------------------- first-jhāna factors
+
+dho:PlacingTheMind a dho:MentalQuality ;
+    skos:prefLabel "placing the mind"@en , "vitakka"@pi , "尋"@zh ;
+    skos:altLabel "applied thought"@en , "directed thought"@en , "覺"@zh .
+
+dho:KeepingConnected a dho:MentalQuality ;
+    skos:prefLabel "keeping it connected"@en , "vicāra"@pi , "伺"@zh ;
+    skos:altLabel "sustained thought"@en , "evaluation"@en , "觀"@zh .
+
+dho:Bliss a dho:MentalQuality ;
+    skos:prefLabel "bliss"@en , "sukha"@pi , "樂"@zh ;
+    skos:altLabel "happiness"@en , "pleasure"@en .
+
+dho:Unification a dho:MentalQuality ;
+    skos:prefLabel "unification of mind"@en , "cittekaggatā"@pi , "心一境性"@zh ;
+    skos:altLabel "one-pointedness"@en .
+
+# ---------------------------------------------------------------- mind states (SN 46.53)
+
+dho:SluggishMind a dho:MindState ;
+    skos:prefLabel "sluggish mind"@en , "līnaṁ cittaṁ"@pi ;
+    skos:hiddenLabel "sluggish"@en , "dull"@en , "sleepy"@en , "low energy"@en ;
+    dho:editorialRelated dho:DullnessDrowsiness .
+
+dho:RestlessMind a dho:MindState ;
+    skos:prefLabel "restless mind"@en , "uddhataṁ cittaṁ"@pi ;
+    skos:hiddenLabel "restless"@en , "agitated"@en , "monkey mind"@en , "scattered"@en ;
+    dho:editorialRelated dho:RestlessnessRemorse .
+
+# ---------------------------------------------------------------- attainment (MN 43)
+
+dho:FirstJhana a dho:Attainment ;
+    skos:prefLabel "first absorption"@en , "paṭhamaṁ jhānaṁ"@pi , "初禪"@zh ;
+    skos:altLabel "first jhāna"@en ;
+    dho:givesUp dho:FiveHindrances ;
+    dho:possesses dho:FirstJhanaFactors ;
+    dho:citedBy dho:p-mn43-20.2 , dho:p-mn43-20.3 , dho:p-mn43-20.4 .

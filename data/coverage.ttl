@@ -1,0 +1,93 @@
+@prefix dho:  <https://guoxiangng.github.io/dhamma-ontology/ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# Coverage log: one record per text this project draws on (see DECISIONS.md D11).
+# Hand-written. scripts/coverage.py combines it with the graph and the SuttaCentral
+# canon list to produce COVERAGE.md. SHACL S10 fails the build if a text has no record.
+#
+# "modelledBy" is stated plainly: the project owner is not a teacher, and the modelling
+# was drafted with an AI assistant. Nothing here has been reviewed by anyone qualified yet.
+
+dho:t-sn46.51
+    dho:coverage dho:FullyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-13"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "All 24 statements of what fuels and starves the five hindrances and seven awakening factors, each as a nutriment node (object + kind of attention + effect). The opening statement (1.2) anchors both lists." ;
+    dho:leftOut "Nothing doctrinal. The question (x.1) and conclusion (x.4) of each section restate the claim and are not cited separately." .
+
+dho:t-sn46.53
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-13"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "The timing advice: which awakening factors it is the right or wrong time to develop when the mind is sluggish (4.1, 7.1) or restless (10.1, 13.1), the reason given for each, and 'mindfulness is always useful' (15.4)." ;
+    dho:leftOut "The setting and the challenge from wanderers of other religions (1.1-3.1); the four fire similes (5, 8, 11, 14) that illustrate the advice; the repeated statements after each simile (6, 9, 12, 15.1-15.3)." .
+
+dho:t-mn43
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-13"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "Only the first absorption: its five factors (19.2-19.3), and that it gives up the five hindrances and possesses those five factors (20.2-20.4)." ;
+    dho:leftOut "Most of the dialogue: wisdom and consciousness (2-6), feeling and perception (7-11), the goal of wisdom and conditions for right view (12-14), states of existence (15-17), what the first absorption is (18), the five faculties (21-22), vital forces and death vs cessation (23-25), and the releases of the heart (26-37)." .
+
+dho:t-mn10
+    dho:coverage dho:CitedOnly ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-13"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "One segment (36.2), recorded as a contested use of the word 'dhamma' and deliberately left without a sense." ;
+    dho:leftOut "The whole teaching on the four kinds of mindfulness meditation. Its section on the five hindrances (knowing when each is present, how it arises, how it is given up) bears directly on this ontology and should come next." .
+
+dho:t-mn148
+    dho:coverage dho:CitedOnly ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-13"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "Two segments (5.3, 6.8) as evidence for 'dhamma' meaning an object of the mind." ;
+    dho:leftOut "The six sets of six (sense fields, objects, consciousnesses, contacts, feelings, cravings) and the not-self argument built on them." .
+
+dho:t-sn11.3
+    dho:coverage dho:CitedOnly ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-13"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "One segment (10.2) as evidence for 'dhamma' meaning the Buddha's teaching." ;
+    dho:leftOut "The banner simile and the recollection of the Buddha, the teaching and the Saṅgha as a remedy for fear." .
+
+dho:t-dhp279
+    dho:coverage dho:CitedOnly ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-13"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "The first line of the verse ('All things are not-self') as evidence for 'dhamma' meaning any phenomenon." ;
+    dho:leftOut "The rest of the verse, and the rest of the Path chapter (Dhp 273-289)." .
+
+# A text we cite by reference only: we do not hold it, so its claims stay flagged as unverified.
+dho:t-vism a dho:Text ;
+    skos:prefLabel "Visuddhimagga IV.86"@en ;
+    dho:layer dho:CommentaryLayer ;
+    dho:coverage dho:ReferencedOnly ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-13"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from memory of the text, not checked against it" ;
+    dho:encodes "Five pairings of a jhāna factor against a hindrance (citing the Peṭakopadesa)." ;
+    dho:leftOut "Everything else. The text is not held; the pairings need checking against an edition before they can be marked verified." .
+
+dho:t-mn44
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "One definition: 'Unification of the mind is immersion' (12.2). Found while checking an eval answer; it corrected decision D4, which had wrongly called this equation an interpretation." ;
+    dho:leftOut "The rest of Dhammadinnā's answers: substantial reality, its origin, cessation and the practice leading there (2-5); grasping and the aggregates (6); substantialist view (7-8); the noble eightfold path and the three spectrums of practice (9-11); the bases, prerequisites and development of immersion (12.3-12.5); the three processes (13-15); the cessation of perception and feeling (16-21); the three feelings, their underlying tendencies and their counterparts (22-29)." .
+
+dho:t-sn46.2
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "Its 12 statements of what fuels the five hindrances and seven awakening factors (2-6, 9-15). They match SN 46.51 sections 1-12 (identical English; Pali differs only in punctuation and one spelling variant), so they were added as a second citation on the same claims, not as new claims." ;
+    dho:leftOut "The simile framing the teaching: as the body is sustained by food, so the hindrances and the awakening factors are sustained by fuel (1.2-1.3, 7, 8, 16). There is no pattern for similes yet." .

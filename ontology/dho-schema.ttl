@@ -1,0 +1,277 @@
+# dhamma-ontology — schema (the "T-Box")
+# What kinds of things exist, and what each link means.
+# The instance data lives in ../data/. Design choices are explained in ../DECISIONS.md.
+
+@prefix dho:     <https://guoxiangng.github.io/dhamma-ontology/ns#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:     <http://purl.org/dc/terms/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+
+<https://guoxiangng.github.io/dhamma-ontology/ns>
+    a owl:Ontology ;
+    rdfs:label "Dhamma ontology (v0.1)"@en ;
+    rdfs:comment "A small, citation-first ontology of the hindrances, awakening factors and jhāna factors, built from the Pali suttas. Every doctrinal link points to the passage that states it."@en ;
+    owl:versionInfo "0.1" .
+
+# ---------------------------------------------------------------------------
+# Core concept classes
+# ---------------------------------------------------------------------------
+
+dho:Concept a owl:Class ;
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Concept"@en ;
+    rdfs:comment "Anything the teachings talk about."@en .
+
+dho:MentalQuality a owl:Class ;
+    rdfs:subClassOf dho:Concept ;
+    rdfs:label "Mental quality"@en ;
+    rdfs:comment "A quality of mind that can arise, grow, or be abandoned."@en .
+
+dho:MindState a owl:Class ;
+    rdfs:subClassOf dho:Concept ;
+    rdfs:label "Mind state"@en ;
+    rdfs:comment "A condition the mind is in at a given time, e.g. a sluggish mind (līnaṁ cittaṁ). Kept separate from the hindrances on purpose: see DECISIONS.md D6."@en .
+
+dho:AttentionObject a owl:Class ;
+    rdfs:subClassOf dho:Concept ;
+    rdfs:label "Object of attention"@en ;
+    rdfs:comment "What the mind is applied to, e.g. 'the feature of beauty' (subhanimitta)."@en .
+
+# ---------------------------------------------------------------------------
+# Numbered lists, and classes defined by list membership
+# ---------------------------------------------------------------------------
+
+dho:NumberedList a owl:Class ;
+    rdfs:subClassOf skos:Collection ;
+    rdfs:label "Numbered list"@en ;
+    rdfs:comment "One of the canon's numbered lists (the five hindrances, the seven awakening factors, ...)."@en .
+
+dho:hasMember a owl:ObjectProperty ;
+    rdfs:subPropertyOf skos:member ;
+    rdfs:domain dho:NumberedList ;
+    rdfs:range dho:Concept ;
+    rdfs:label "has member"@en .
+
+dho:memberOf a owl:ObjectProperty ;
+    owl:inverseOf dho:hasMember ;
+    rdfs:label "member of"@en ;
+    rdfs:comment "Never stated directly in the data: the reasoner derives it from dho:hasMember."@en .
+
+dho:expectedCount a owl:DatatypeProperty ;
+    rdfs:domain dho:NumberedList ;
+    rdfs:range xsd:integer ;
+    rdfs:label "expected count"@en ;
+    rdfs:comment "How many members the text says the list has. SHACL checks the data matches."@en .
+
+# A hindrance IS whatever is a member of the five hindrances. We never type
+# the qualities by hand; the reasoner classifies them from list membership.
+dho:Hindrance a owl:Class ;
+    rdfs:subClassOf dho:MentalQuality ;
+    owl:equivalentClass [ a owl:Restriction ;
+        owl:onProperty dho:memberOf ;
+        owl:hasValue dho:FiveHindrances ] ;
+    rdfs:label "Hindrance"@en , "nīvaraṇa"@pi , "蓋"@zh .
+
+dho:AwakeningFactor a owl:Class ;
+    rdfs:subClassOf dho:MentalQuality ;
+    owl:equivalentClass [ a owl:Restriction ;
+        owl:onProperty dho:memberOf ;
+        owl:hasValue dho:SevenAwakeningFactors ] ;
+    rdfs:label "Awakening factor"@en , "bojjhaṅga"@pi , "覺支"@zh .
+
+dho:JhanaFactor a owl:Class ;
+    rdfs:subClassOf dho:MentalQuality ;
+    owl:equivalentClass [ a owl:Restriction ;
+        owl:onProperty dho:memberOf ;
+        owl:hasValue dho:FirstJhanaFactors ] ;
+    rdfs:label "Factor of the first jhāna"@en , "jhānaṅga"@pi , "禪支"@zh .
+
+# Nothing can be both a hindrance and an awakening factor (or a jhāna factor).
+# SHACL enforces this too, with a readable message.
+dho:Hindrance owl:disjointWith dho:AwakeningFactor , dho:JhanaFactor .
+
+# ---------------------------------------------------------------------------
+# Nutriment (SN 46.51): an n-ary relation
+# "Frequent [rational|irrational|no] attention to OBJECT fuels|starves QUALITY."
+# One arrow cannot carry object + attention + effect + citation, so each
+# statement in the sutta becomes its own node.
+# ---------------------------------------------------------------------------
+
+dho:AttentionMode a owl:Class ;
+    rdfs:label "Mode of attention"@en .
+
+dho:RationalAttention a dho:AttentionMode ;
+    rdfs:label "frequent rational application of mind"@en , "yonisomanasikārabahulīkāra"@pi , "如理作意"@zh .
+dho:IrrationalAttention a dho:AttentionMode ;
+    rdfs:label "frequent irrational application of mind"@en , "ayonisomanasikārabahulīkāra"@pi , "不如理作意"@zh .
+dho:NonAttention a dho:AttentionMode ;
+    rdfs:label "not frequently applying the mind"@en , "amanasikārabahulīkāra"@pi , "不作意"@zh .
+
+dho:Nutriment a owl:Class ;
+    rdfs:label "Nutriment"@en , "āhāra"@pi , "食"@zh ;
+    rdfs:comment "One statement from SN 46.51: an object, a mode of attention, and the quality it fuels or starves."@en .
+
+dho:object a owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:domain dho:Nutriment ; rdfs:range dho:AttentionObject ;
+    rdfs:label "object"@en .
+dho:attention a owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:domain dho:Nutriment ; rdfs:range dho:AttentionMode ;
+    rdfs:label "attention"@en .
+dho:fuels a owl:ObjectProperty ;
+    rdfs:domain dho:Nutriment ; rdfs:range dho:MentalQuality ;
+    rdfs:label "fuels"@en ;
+    rdfs:comment "Makes the quality arise, or increase once arisen (āhāra)."@en .
+dho:starves a owl:ObjectProperty ;
+    rdfs:domain dho:Nutriment ; rdfs:range dho:MentalQuality ;
+    rdfs:label "starves"@en ;
+    rdfs:comment "Prevents the quality arising, or its growth once arisen (anāhāra)."@en .
+
+# ---------------------------------------------------------------------------
+# Timing advice (SN 46.53): which awakening factors suit which mind state
+# ---------------------------------------------------------------------------
+
+dho:Timing a owl:Class ; rdfs:label "Timing"@en .
+dho:RightTime    a dho:Timing ; rdfs:label "right time to develop"@en , "kāla"@pi .
+dho:WrongTime    a dho:Timing ; rdfs:label "wrong time to develop"@en , "akāla"@pi .
+dho:AlwaysUseful a dho:Timing ; rdfs:label "always useful"@en , "sabbatthika"@pi .
+
+dho:TimingAdvice a owl:Class ;
+    rdfs:label "Timing advice"@en ;
+    rdfs:comment "One statement from SN 46.53: when the mind is in STATE, it is the right/wrong time to develop FACTOR."@en .
+dho:whenMind a owl:ObjectProperty ; rdfs:domain dho:TimingAdvice ; rdfs:range dho:MindState ; rdfs:label "when the mind is"@en .
+dho:develop  a owl:ObjectProperty ; rdfs:domain dho:TimingAdvice ; rdfs:range dho:AwakeningFactor ; rdfs:label "develop"@en .
+dho:timing   a owl:ObjectProperty ; rdfs:domain dho:TimingAdvice ; rdfs:range dho:Timing ; rdfs:label "timing"@en .
+
+# ---------------------------------------------------------------------------
+# Attainments (MN 43)
+# ---------------------------------------------------------------------------
+
+dho:Attainment a owl:Class ; rdfs:subClassOf dho:Concept ; rdfs:label "Attainment"@en .
+dho:givesUp a owl:ObjectProperty ;
+    rdfs:domain dho:Attainment ; rdfs:range dho:NumberedList ;
+    rdfs:label "has given up"@en , "vippahīna"@pi .
+dho:possesses a owl:ObjectProperty ;
+    rdfs:domain dho:Attainment ; rdfs:range dho:NumberedList ;
+    rdfs:label "possesses"@en , "samannāgata"@pi .
+
+# ---------------------------------------------------------------------------
+# Opposition (commentary layer): factor X is incompatible with hindrance Y
+# ---------------------------------------------------------------------------
+
+dho:Opposition a owl:Class ;
+    rdfs:label "Opposition"@en ;
+    rdfs:comment "A one-to-one pairing of a quality against a hindrance. The suttas give the sets; the pairing comes from the commentaries."@en .
+dho:opponent a owl:ObjectProperty ; rdfs:domain dho:Opposition ; rdfs:range dho:MentalQuality ; rdfs:label "opponent"@en .
+dho:target   a owl:ObjectProperty ; rdfs:domain dho:Opposition ; rdfs:range dho:Hindrance ; rdfs:label "target"@en .
+
+# ---------------------------------------------------------------------------
+# Derived relation (written by rules/r1-counters.rq, never by hand)
+# ---------------------------------------------------------------------------
+
+dho:counters a owl:ObjectProperty ;
+    rdfs:domain dho:AwakeningFactor ; rdfs:range dho:Hindrance ;
+    rdfs:label "counters"@en ;
+    rdfs:comment "Derived by rule R1: the same object, attended to rationally, both fuels this awakening factor and starves that hindrance (SN 46.51). The sutta never states it directly."@en .
+
+dho:Derivation a owl:Class ;
+    rdfs:label "Derivation"@en ;
+    rdfs:comment "Records how a derived link was produced: which rule, which link, from what evidence."@en .
+dho:derivedBy a owl:DatatypeProperty ; rdfs:domain dho:Derivation ; rdfs:label "derived by rule"@en .
+dho:derivedSubject a owl:ObjectProperty ; rdfs:domain dho:Derivation ; rdfs:label "derived subject"@en .
+dho:derivedObject  a owl:ObjectProperty ; rdfs:domain dho:Derivation ; rdfs:label "derived object"@en .
+dho:via a owl:ObjectProperty ; rdfs:domain dho:Derivation ; rdfs:label "via"@en ;
+    rdfs:comment "The evidence a derived link was built from."@en .
+
+# ---------------------------------------------------------------------------
+# Provenance: every doctrinal claim cites passages; every passage sits in a
+# text; every text sits in a layer (sutta / commentary / editor).
+# ---------------------------------------------------------------------------
+
+dho:SourceLayer a owl:Class ; rdfs:label "Source layer"@en .
+dho:SuttaLayer      a dho:SourceLayer ; rdfs:label "Sutta (early discourses)"@en .
+dho:CommentaryLayer a dho:SourceLayer ; rdfs:label "Commentary / later treatise"@en .
+dho:EditorLayer     a dho:SourceLayer ; rdfs:label "Editor's judgment (this project)"@en .
+
+dho:Text a owl:Class ; rdfs:label "Text"@en .
+dho:layer a owl:ObjectProperty ; rdfs:label "layer"@en ;
+    rdfs:comment "Which source layer a text or claim belongs to."@en .
+dho:url a owl:DatatypeProperty ; rdfs:range xsd:anyURI ; rdfs:label "url"@en .
+
+dho:Passage a owl:Class ;
+    rdfs:label "Passage"@en ;
+    rdfs:comment "One segment of a text, identified by its SuttaCentral segment id (e.g. sn46.51:16.2)."@en .
+dho:inText  a owl:ObjectProperty ; rdfs:domain dho:Passage ; rdfs:range dho:Text ; rdfs:label "in text"@en .
+dho:segment a owl:DatatypeProperty ; rdfs:domain dho:Passage ; rdfs:label "segment id"@en .
+dho:textEn  a owl:DatatypeProperty ; rdfs:domain dho:Passage ; rdfs:label "English"@en .
+dho:textPi  a owl:DatatypeProperty ; rdfs:domain dho:Passage ; rdfs:label "Pali"@en .
+
+dho:citedBy a owl:ObjectProperty ;
+    rdfs:range dho:Passage ;
+    rdfs:label "cited by"@en ;
+    rdfs:comment "The passage(s) that state this claim."@en .
+dho:citationNote a owl:DatatypeProperty ;
+    rdfs:label "citation note"@en ;
+    rdfs:comment "Free-text reference for sources we do not hold verbatim (e.g. Visuddhimagga). Claims that only have this are flagged as unverified."@en .
+
+# ---------------------------------------------------------------------------
+# Words vs meanings (OntoLex-Lemon, the W3C lexicon model)
+# One Pali word (lexical entry) -> several senses -> one concept each.
+# ---------------------------------------------------------------------------
+
+dho:usesSense a owl:ObjectProperty ;
+    rdfs:domain dho:Passage ; rdfs:range ontolex:LexicalSense ;
+    rdfs:label "uses sense"@en ;
+    rdfs:comment "Which sense of an ambiguous word a passage uses. This is interpretation, so it records who made the call."@en .
+dho:senseAssignedBy a owl:DatatypeProperty ; rdfs:label "sense assigned by"@en .
+dho:translatorRendering a owl:DatatypeProperty ; rdfs:label "translator's rendering"@en .
+
+# Editor-made links are kept visibly separate from textual claims.
+dho:editorialRelated a owl:ObjectProperty ;
+    rdfs:subPropertyOf skos:related ;
+    rdfs:label "related (editor's judgment)"@en ;
+    rdfs:comment "A link this project draws that no text states outright. Always shown as the editor's view."@en .
+
+# ---------------------------------------------------------------------------
+# Coverage and review: what we have encoded from each text, what we left out,
+# and who has checked it. Lets the project be honest about its reach (D11).
+# ---------------------------------------------------------------------------
+
+dho:CoverageStatus a owl:Class ; rdfs:label "Coverage status"@en .
+dho:FullyEncoded   a dho:CoverageStatus ; rdfs:label "fully encoded"@en ;
+    rdfs:comment "Every teaching claim in the text is modelled."@en .
+dho:PartlyEncoded  a dho:CoverageStatus ; rdfs:label "partly encoded"@en ;
+    rdfs:comment "Some sections are modelled; dho:leftOut says what is not."@en .
+dho:CitedOnly      a dho:CoverageStatus ; rdfs:label "cited only"@en ;
+    rdfs:comment "Quoted as evidence (e.g. for a word sense); its teaching is not modelled."@en .
+dho:ReferencedOnly a dho:CoverageStatus ; rdfs:label "referenced only"@en ;
+    rdfs:comment "Cited by reference; we do not hold its text, so its claims are unverified."@en .
+
+dho:ReviewStatus a owl:Class ; rdfs:label "Review status"@en .
+dho:Unreviewed        a dho:ReviewStatus ; rdfs:label "not yet reviewed"@en ;
+    rdfs:comment "Modelled by the editor (with an AI assistant); nobody else has checked it."@en .
+dho:ReviewedByOwner   a dho:ReviewStatus ; rdfs:label "reviewed by the project owner"@en .
+dho:ReviewedExternally a dho:ReviewStatus ; rdfs:label "reviewed by a qualified outside reader"@en .
+
+dho:coverage   a owl:ObjectProperty , owl:FunctionalProperty ; rdfs:domain dho:Text ; rdfs:range dho:CoverageStatus ; rdfs:label "coverage"@en .
+dho:review     a owl:ObjectProperty , owl:FunctionalProperty ; rdfs:domain dho:Text ; rdfs:range dho:ReviewStatus ; rdfs:label "review"@en .
+dho:encodes    a owl:DatatypeProperty ; rdfs:domain dho:Text ; rdfs:label "encodes"@en ;
+    rdfs:comment "Plain description of what was modelled from this text."@en .
+dho:leftOut    a owl:DatatypeProperty ; rdfs:domain dho:Text ; rdfs:label "left out"@en ;
+    rdfs:comment "Plain description of what in this text is NOT modelled, so nobody mistakes partial for complete."@en .
+dho:modelledOn a owl:DatatypeProperty ; rdfs:domain dho:Text ; rdfs:range xsd:date ; rdfs:label "modelled on"@en .
+dho:modelledBy a owl:DatatypeProperty ; rdfs:domain dho:Text ; rdfs:label "modelled by"@en .
+dho:referencesText a owl:ObjectProperty ; rdfs:range dho:Text ; rdfs:label "references text"@en ;
+    rdfs:comment "For claims cited by reference only (dho:citationNote): the text referred to, which we do not hold."@en .
+
+# ---------------------------------------------------------------------------
+# Definitions stated in a sutta: "X is Y" (e.g. MN 44: unification of mind is immersion)
+# ---------------------------------------------------------------------------
+
+dho:Definition a owl:Class ; rdfs:label "Definition"@en ;
+    rdfs:comment "A sutta's own statement that one term is another. Cited, never merged into one concept."@en .
+dho:defines a owl:ObjectProperty , owl:FunctionalProperty ; rdfs:domain dho:Definition ; rdfs:range dho:Concept ; rdfs:label "defines"@en .
+dho:as      a owl:ObjectProperty , owl:FunctionalProperty ; rdfs:domain dho:Definition ; rdfs:range dho:Concept ; rdfs:label "as"@en .

@@ -1,0 +1,24 @@
+# Commentary layer: the one-to-one pairing of first-jhāna factors against the
+# five hindrances.
+#
+# The sutta (MN 43:20.2-20.4) only says the first jhāna has GIVEN UP the five
+# hindrances and POSSESSES five factors: set against set. Pairing them one to
+# one comes later, in the Visuddhimagga (IV.86), which credits the Peṭakopadesa.
+#
+# We do not hold the Visuddhimagga text verbatim, so these claims carry only a
+# citation note and are flagged "unverified" by SHACL (as a warning, not an
+# error). They are kept on the commentary layer so queries never present them
+# as the Buddha's words.
+
+@prefix dho: <https://guoxiangng.github.io/dhamma-ontology/ns#> .
+
+dho:op-01 a dho:Opposition ; dho:opponent dho:Unification ;      dho:target dho:SensualDesire ;
+    dho:layer dho:CommentaryLayer ; dho:referencesText dho:t-vism ; dho:citationNote "Visuddhimagga IV.86 (citing the Peṭakopadesa)" .
+dho:op-02 a dho:Opposition ; dho:opponent dho:Rapture ;          dho:target dho:IllWill ;
+    dho:layer dho:CommentaryLayer ; dho:referencesText dho:t-vism ; dho:citationNote "Visuddhimagga IV.86 (citing the Peṭakopadesa)" .
+dho:op-03 a dho:Opposition ; dho:opponent dho:PlacingTheMind ;   dho:target dho:DullnessDrowsiness ;
+    dho:layer dho:CommentaryLayer ; dho:referencesText dho:t-vism ; dho:citationNote "Visuddhimagga IV.86 (citing the Peṭakopadesa)" .
+dho:op-04 a dho:Opposition ; dho:opponent dho:Bliss ;            dho:target dho:RestlessnessRemorse ;
+    dho:layer dho:CommentaryLayer ; dho:referencesText dho:t-vism ; dho:citationNote "Visuddhimagga IV.86 (citing the Peṭakopadesa)" .
+dho:op-05 a dho:Opposition ; dho:opponent dho:KeepingConnected ; dho:target dho:Doubt ;
+    dho:layer dho:CommentaryLayer ; dho:referencesText dho:t-vism ; dho:citationNote "Visuddhimagga IV.86 (citing the Peṭakopadesa)" .

@@ -1,0 +1,5 @@
+# Error: files a commentary pairing on the sutta layer.
+# Expect S7.
+@prefix dho: <https://guoxiangng.github.io/dhamma-ontology/ns#> .
+dho:op-bad a dho:Opposition ; dho:opponent dho:Bliss ; dho:target dho:RestlessnessRemorse ;
+    dho:layer dho:SuttaLayer ; dho:citationNote "Visuddhimagga IV.86" .

@@ -1,0 +1,19 @@
+Ontology and data: CC0 1.0 Universal (public domain dedication)
+
+The ontology, data, rules, shapes, queries, eval questions and generated
+downloads in this repository (ontology/, data/, rules/, shapes/, queries/,
+eval/questions.toml, dist/, viz/graph.json) are dedicated to the public domain
+by Ng Guo Xiang under CC0 1.0 Universal:
+https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+To the extent possible under law, the author has waived all copyright and
+related or neighboring rights to this work.
+
+The sutta text in sources/suttacentral/ and the quotes in data/passages.ttl
+come from SuttaCentral (https://suttacentral.net): English translations by
+Bhikkhu Sujato and Pali from the Mahāsaṅgīti edition, which SuttaCentral
+dedicates to the public domain under CC0 1.0.
+
+Attribution is not required, but a link back is appreciated, and so is
+preserving the review and coverage notes so readers can see what has and
+hasn't been checked.

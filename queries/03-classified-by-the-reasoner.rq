@@ -1,0 +1,11 @@
+# Every quality and the classes the OWL reasoner gave it. None of these types is written in the data;
+# they follow from list membership. Rapture comes out as both an awakening factor and a jhana factor.
+PREFIX dho:  <https://guoxiangng.github.io/dhamma-ontology/ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT ?quality (GROUP_CONCAT(?cls; separator=" + ") AS ?classes) WHERE {
+  VALUES ?c { dho:Hindrance dho:AwakeningFactor dho:JhanaFactor }
+  ?quality a ?c . ?c rdfs:label ?cls . FILTER(lang(?cls) = "en")
+}
+GROUP BY ?quality
+ORDER BY ?classes ?quality

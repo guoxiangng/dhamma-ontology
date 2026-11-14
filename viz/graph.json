@@ -1,0 +1,2480 @@
+{
+ "stats": {
+  "asserted": 1528,
+  "inferred": 1783,
+  "derived": 16,
+  "concepts": 42,
+  "links": 69,
+  "passages": 93,
+  "shacl": "pass",
+  "warnings": 5
+ },
+ "nodes": [
+  {
+   "id": "Bliss",
+   "kind": "jhana",
+   "en": "bliss",
+   "pi": "sukha",
+   "zh": "樂",
+   "alt": [
+    "happiness",
+    "pleasure"
+   ],
+   "hidden": [],
+   "classes": [
+    "Jhāna factor"
+   ],
+   "inferred": true,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "DhammaMindObject",
+   "kind": "sense",
+   "en": "a dhamma (an object of the mind, an idea)",
+   "pi": "dhamma",
+   "zh": "法",
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": "What the mind knows, as the sixth sense field alongside sights, sounds, smells, tastes and touches (dhammāyatana).",
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "DhammaPhenomenon",
+   "kind": "sense",
+   "en": "a dhamma (any phenomenon, any thing)",
+   "pi": "dhamma",
+   "zh": "法",
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": "Any thing at all, as in 'all things are not-self' (sabbe dhammā anattā).",
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "DhammaQuality",
+   "kind": "sense",
+   "en": "a dhamma (a mental quality)",
+   "pi": "dhamma",
+   "zh": "法",
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": "A quality of mind, e.g. 'qualities that are skillful and unskillful' (kusalākusalā dhammā).",
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "DhammaTeaching",
+   "kind": "sense",
+   "en": "the Dhamma (the Buddha's teaching)",
+   "pi": "dhamma",
+   "zh": "法",
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": "The teaching the Buddha explained: 'the teaching is well explained by the Buddha' (svākkhāto bhagavatā dhammo).",
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "Doubt",
+   "kind": "hindrance",
+   "en": "doubt",
+   "pi": "vicikicchā",
+   "zh": "疑",
+   "alt": [],
+   "hidden": [
+    "indecision",
+    "skepticism",
+    "uncertainty"
+   ],
+   "classes": [
+    "Hindrance"
+   ],
+   "inferred": true,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "DullnessDrowsiness",
+   "kind": "hindrance",
+   "en": "dullness and drowsiness",
+   "pi": "thinamiddha",
+   "zh": "惛沈睡眠",
+   "alt": [
+    "sloth and torpor",
+    "thīnamiddha",
+    "睡眠"
+   ],
+   "hidden": [
+    "drowsy",
+    "lethargy",
+    "sleepy",
+    "sluggish",
+    "tired"
+   ],
+   "classes": [
+    "Hindrance"
+   ],
+   "inferred": true,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "Energy",
+   "kind": "factor",
+   "en": "energy",
+   "pi": "vīriya",
+   "zh": "精進",
+   "alt": [
+    "effort",
+    "vīriyasambojjhaṅga",
+    "精進覺支"
+   ],
+   "hidden": [],
+   "classes": [
+    "Awakening factor"
+   ],
+   "inferred": true,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "Equanimity",
+   "kind": "factor",
+   "en": "equanimity",
+   "pi": "upekkhā",
+   "zh": "捨",
+   "alt": [
+    "upekkhāsambojjhaṅga",
+    "捨覺支"
+   ],
+   "hidden": [],
+   "classes": [
+    "Awakening factor"
+   ],
+   "inferred": true,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "FirstJhana",
+   "kind": "attainment",
+   "en": "first absorption",
+   "pi": "paṭhamaṁ jhānaṁ",
+   "zh": "初禪",
+   "alt": [
+    "first jhāna"
+   ],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": [
+    "p-mn43-20.2",
+    "p-mn43-20.3",
+    "p-mn43-20.4"
+   ]
+  },
+  {
+   "id": "FirstJhanaFactors",
+   "kind": "list",
+   "en": "the five factors of the first absorption",
+   "pi": "paṭhamajjhānassa pañcaṅgāni",
+   "zh": "初禪五支",
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": [
+    "p-mn43-19.2",
+    "p-mn43-19.3"
+   ]
+  },
+  {
+   "id": "FiveHindrances",
+   "kind": "list",
+   "en": "the five hindrances",
+   "pi": "pañca nīvaraṇā",
+   "zh": "五蓋",
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": [
+    "p-mn43-20.3",
+    "p-sn46.51-1.2"
+   ]
+  },
+  {
+   "id": "IllWill",
+   "kind": "hindrance",
+   "en": "ill will",
+   "pi": "byāpāda",
+   "zh": "瞋恚",
+   "alt": [
+    "瞋"
+   ],
+   "hidden": [
+    "anger",
+    "annoyed",
+    "aversion",
+    "irritation",
+    "resentment"
+   ],
+   "classes": [
+    "Hindrance"
+   ],
+   "inferred": true,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "Immersion",
+   "kind": "factor",
+   "en": "immersion",
+   "pi": "samādhi",
+   "zh": "定",
+   "alt": [
+    "concentration",
+    "samādhisambojjhaṅga",
+    "定覺支"
+   ],
+   "hidden": [],
+   "classes": [
+    "Awakening factor"
+   ],
+   "inferred": true,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "Investigation",
+   "kind": "factor",
+   "en": "investigation of principles",
+   "pi": "dhammavicaya",
+   "zh": "擇法",
+   "alt": [
+    "dhammavicayasambojjhaṅga",
+    "investigation of states",
+    "擇法覺支"
+   ],
+   "hidden": [],
+   "classes": [
+    "Awakening factor"
+   ],
+   "inferred": true,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "KeepingConnected",
+   "kind": "jhana",
+   "en": "keeping it connected",
+   "pi": "vicāra",
+   "zh": "伺",
+   "alt": [
+    "evaluation",
+    "sustained thought",
+    "觀"
+   ],
+   "hidden": [],
+   "classes": [
+    "Jhāna factor"
+   ],
+   "inferred": true,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "Mindfulness",
+   "kind": "factor",
+   "en": "mindfulness",
+   "pi": "sati",
+   "zh": "念",
+   "alt": [
+    "satisambojjhaṅga",
+    "念覺支"
+   ],
+   "hidden": [],
+   "classes": [
+    "Awakening factor"
+   ],
+   "inferred": true,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "PlacingTheMind",
+   "kind": "jhana",
+   "en": "placing the mind",
+   "pi": "vitakka",
+   "zh": "尋",
+   "alt": [
+    "applied thought",
+    "directed thought",
+    "覺"
+   ],
+   "hidden": [],
+   "classes": [
+    "Jhāna factor"
+   ],
+   "inferred": true,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "Rapture",
+   "kind": "factor",
+   "en": "rapture",
+   "pi": "pīti",
+   "zh": "喜",
+   "alt": [
+    "joy",
+    "pītisambojjhaṅga",
+    "喜覺支"
+   ],
+   "hidden": [],
+   "classes": [
+    "Awakening factor",
+    "Jhāna factor"
+   ],
+   "inferred": true,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "RestlessMind",
+   "kind": "mindstate",
+   "en": "restless mind",
+   "pi": "uddhataṁ cittaṁ",
+   "zh": null,
+   "alt": [],
+   "hidden": [
+    "agitated",
+    "monkey mind",
+    "restless",
+    "scattered"
+   ],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "RestlessnessRemorse",
+   "kind": "hindrance",
+   "en": "restlessness and remorse",
+   "pi": "uddhaccakukkucca",
+   "zh": "掉舉惡作",
+   "alt": [
+    "restlessness and worry",
+    "uddhacca-kukkucca",
+    "掉悔"
+   ],
+   "hidden": [
+    "agitation",
+    "anxious",
+    "monkey mind",
+    "regret",
+    "restless",
+    "restlessness",
+    "worry"
+   ],
+   "classes": [
+    "Hindrance"
+   ],
+   "inferred": true,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "SensualDesire",
+   "kind": "hindrance",
+   "en": "sensual desire",
+   "pi": "kāmacchanda",
+   "zh": "貪欲",
+   "alt": [
+    "欲貪"
+   ],
+   "hidden": [
+    "craving",
+    "desire",
+    "lust",
+    "wanting"
+   ],
+   "classes": [
+    "Hindrance"
+   ],
+   "inferred": true,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "SevenAwakeningFactors",
+   "kind": "list",
+   "en": "the seven awakening factors",
+   "pi": "satta bojjhaṅgā",
+   "zh": "七覺支",
+   "alt": [
+    "the seven factors of enlightenment"
+   ],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": [
+    "p-sn46.51-1.2"
+   ]
+  },
+  {
+   "id": "SluggishMind",
+   "kind": "mindstate",
+   "en": "sluggish mind",
+   "pi": "līnaṁ cittaṁ",
+   "zh": null,
+   "alt": [],
+   "hidden": [
+    "dull",
+    "low energy",
+    "sleepy",
+    "sluggish"
+   ],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "Tranquility",
+   "kind": "factor",
+   "en": "tranquility",
+   "pi": "passaddhi",
+   "zh": "輕安",
+   "alt": [
+    "calm",
+    "passaddhisambojjhaṅga",
+    "猗",
+    "輕安覺支"
+   ],
+   "hidden": [],
+   "classes": [
+    "Awakening factor"
+   ],
+   "inferred": true,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "Unification",
+   "kind": "jhana",
+   "en": "unification of mind",
+   "pi": "cittekaggatā",
+   "zh": "心一境性",
+   "alt": [
+    "one-pointedness"
+   ],
+   "hidden": [],
+   "classes": [
+    "Jhāna factor"
+   ],
+   "inferred": true,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "lex-dhamma",
+   "kind": "word",
+   "en": null,
+   "pi": "dhamma",
+   "zh": null,
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": "Sanskrit dharma; Chinese 法. Kept as one Pali entry for v0.1.",
+   "cites": []
+  },
+  {
+   "id": "o-aversion",
+   "kind": "object",
+   "en": "the feature of aversion",
+   "pi": "paṭighanimitta",
+   "zh": null,
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "o-beauty",
+   "kind": "object",
+   "en": "the feature of beauty",
+   "pi": "subhanimitta",
+   "zh": null,
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "o-energy-elements",
+   "kind": "object",
+   "en": "the elements of initiative, persistence, and exertion",
+   "pi": "ārambhadhātu nikkamadhātu parakkamadhātu",
+   "zh": null,
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "o-grounds-doubt",
+   "kind": "object",
+   "en": "things that are grounds for doubt",
+   "pi": "vicikicchāṭṭhānīyā dhammā",
+   "zh": null,
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "o-grounds-equanimity",
+   "kind": "object",
+   "en": "things that are grounds for the awakening factor of equanimity",
+   "pi": "upekkhāsambojjhaṅgaṭṭhānīyā dhammā",
+   "zh": null,
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "o-grounds-mindfulness",
+   "kind": "object",
+   "en": "things that are grounds for the awakening factor of mindfulness",
+   "pi": "satisambojjhaṅgaṭṭhānīyā dhammā",
+   "zh": null,
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "o-grounds-rapture",
+   "kind": "object",
+   "en": "things that are grounds for the awakening factor of rapture",
+   "pi": "pītisambojjhaṅgaṭṭhānīyā dhammā",
+   "zh": null,
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "o-metta",
+   "kind": "object",
+   "en": "the heart's release by love",
+   "pi": "mettācetovimutti",
+   "zh": null,
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "o-qualities",
+   "kind": "object",
+   "en": "qualities that are skillful and unskillful, blameworthy and blameless, inferior and superior, and with a portion of dark or bright",
+   "pi": "kusalākusalā dhammā sāvajjānavajjā dhammā hīnapaṇītā dhammā kaṇhasukkasappaṭibhāgā dhammā",
+   "zh": null,
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "o-serenity",
+   "kind": "object",
+   "en": "the basis of serenity and freedom from distraction",
+   "pi": "samathanimittaṁ abyagganimittaṁ",
+   "zh": null,
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "o-settled-mind",
+   "kind": "object",
+   "en": "the settled mind",
+   "pi": "cetaso vūpasamo",
+   "zh": null,
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "o-sluggishness",
+   "kind": "object",
+   "en": "discontent, sloth, yawning, sleepiness after eating, and mental sluggishness",
+   "pi": "arati tandi vijambhitā bhattasammado cetaso ca līnattaṁ",
+   "zh": null,
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "o-tranquility",
+   "kind": "object",
+   "en": "tranquility of the body and of the mind",
+   "pi": "kāyappassaddhi cittappassaddhi",
+   "zh": null,
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "o-ugliness",
+   "kind": "object",
+   "en": "the feature of ugliness",
+   "pi": "asubhanimitta",
+   "zh": null,
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "o-unsettled-mind",
+   "kind": "object",
+   "en": "the unsettled mind",
+   "pi": "cetaso avūpasamo",
+   "zh": null,
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  }
+ ],
+ "edges": [
+  {
+   "id": "e0",
+   "source": "IllWill",
+   "target": "FiveHindrances",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-mn43-20.3",
+    "p-sn46.51-1.2"
+   ],
+   "note": null
+  },
+  {
+   "id": "e1",
+   "source": "RestlessnessRemorse",
+   "target": "FiveHindrances",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-mn43-20.3",
+    "p-sn46.51-1.2"
+   ],
+   "note": null
+  },
+  {
+   "id": "e2",
+   "source": "Doubt",
+   "target": "FiveHindrances",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-mn43-20.3",
+    "p-sn46.51-1.2"
+   ],
+   "note": null
+  },
+  {
+   "id": "e3",
+   "source": "SensualDesire",
+   "target": "FiveHindrances",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-mn43-20.3",
+    "p-sn46.51-1.2"
+   ],
+   "note": null
+  },
+  {
+   "id": "e4",
+   "source": "DullnessDrowsiness",
+   "target": "FiveHindrances",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-mn43-20.3",
+    "p-sn46.51-1.2"
+   ],
+   "note": null
+  },
+  {
+   "id": "e5",
+   "source": "Equanimity",
+   "target": "SevenAwakeningFactors",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.51-1.2"
+   ],
+   "note": null
+  },
+  {
+   "id": "e6",
+   "source": "Immersion",
+   "target": "SevenAwakeningFactors",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.51-1.2"
+   ],
+   "note": null
+  },
+  {
+   "id": "e7",
+   "source": "Tranquility",
+   "target": "SevenAwakeningFactors",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.51-1.2"
+   ],
+   "note": null
+  },
+  {
+   "id": "e8",
+   "source": "Mindfulness",
+   "target": "SevenAwakeningFactors",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.51-1.2"
+   ],
+   "note": null
+  },
+  {
+   "id": "e9",
+   "source": "Energy",
+   "target": "SevenAwakeningFactors",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.51-1.2"
+   ],
+   "note": null
+  },
+  {
+   "id": "e10",
+   "source": "Rapture",
+   "target": "SevenAwakeningFactors",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.51-1.2"
+   ],
+   "note": null
+  },
+  {
+   "id": "e11",
+   "source": "Investigation",
+   "target": "SevenAwakeningFactors",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.51-1.2"
+   ],
+   "note": null
+  },
+  {
+   "id": "e12",
+   "source": "Unification",
+   "target": "FirstJhanaFactors",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-mn43-19.2",
+    "p-mn43-19.3"
+   ],
+   "note": null
+  },
+  {
+   "id": "e13",
+   "source": "Bliss",
+   "target": "FirstJhanaFactors",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-mn43-19.2",
+    "p-mn43-19.3"
+   ],
+   "note": null
+  },
+  {
+   "id": "e14",
+   "source": "KeepingConnected",
+   "target": "FirstJhanaFactors",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-mn43-19.2",
+    "p-mn43-19.3"
+   ],
+   "note": null
+  },
+  {
+   "id": "e15",
+   "source": "Rapture",
+   "target": "FirstJhanaFactors",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-mn43-19.2",
+    "p-mn43-19.3"
+   ],
+   "note": null
+  },
+  {
+   "id": "e16",
+   "source": "PlacingTheMind",
+   "target": "FirstJhanaFactors",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-mn43-19.2",
+    "p-mn43-19.3"
+   ],
+   "note": null
+  },
+  {
+   "id": "e17",
+   "source": "FirstJhana",
+   "target": "FiveHindrances",
+   "rel": "gives up",
+   "layer": "sutta",
+   "cites": [
+    "p-mn43-20.2",
+    "p-mn43-20.3",
+    "p-mn43-20.4"
+   ],
+   "note": null
+  },
+  {
+   "id": "e18",
+   "source": "FirstJhana",
+   "target": "FirstJhanaFactors",
+   "rel": "has the factors",
+   "layer": "sutta",
+   "cites": [
+    "p-mn43-20.2",
+    "p-mn43-20.3",
+    "p-mn43-20.4"
+   ],
+   "note": null
+  },
+  {
+   "id": "e19",
+   "source": "Investigation",
+   "target": "Doubt",
+   "rel": "counters",
+   "layer": "derived",
+   "cites": [
+    "p-sn46.2-10.2",
+    "p-sn46.2-10.3",
+    "p-sn46.51-17.2",
+    "p-sn46.51-17.3",
+    "p-sn46.51-7.2",
+    "p-sn46.51-7.3"
+   ],
+   "note": "Rule R1: 'qualities that are skillful and unskillful, blameworthy and blameless, inferior and superior, and with a portion of dark or bright', attended to rationally, fuels investigation of principles and starves doubt.",
+   "via": "o-qualities"
+  },
+  {
+   "id": "e20",
+   "source": "Energy",
+   "target": "DullnessDrowsiness",
+   "rel": "counters",
+   "layer": "derived",
+   "cites": [
+    "p-sn46.2-11.2",
+    "p-sn46.2-11.3",
+    "p-sn46.51-15.2",
+    "p-sn46.51-15.3",
+    "p-sn46.51-8.2",
+    "p-sn46.51-8.3"
+   ],
+   "note": "Rule R1: 'the elements of initiative, persistence, and exertion', attended to rationally, fuels energy and starves dullness and drowsiness.",
+   "via": "o-energy-elements"
+  },
+  {
+   "id": "e21",
+   "source": "SluggishMind",
+   "target": "Tranquility",
+   "rel": "wrong time to develop",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.53-4.1",
+    "p-sn46.53-4.3"
+   ],
+   "note": null,
+   "timing": "WrongTime"
+  },
+  {
+   "id": "e22",
+   "source": "SluggishMind",
+   "target": "Immersion",
+   "rel": "wrong time to develop",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.53-4.1",
+    "p-sn46.53-4.3"
+   ],
+   "note": null,
+   "timing": "WrongTime"
+  },
+  {
+   "id": "e23",
+   "source": "SluggishMind",
+   "target": "Equanimity",
+   "rel": "wrong time to develop",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.53-4.1",
+    "p-sn46.53-4.3"
+   ],
+   "note": null,
+   "timing": "WrongTime"
+  },
+  {
+   "id": "e24",
+   "source": "SluggishMind",
+   "target": "Investigation",
+   "rel": "right time to develop",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.53-7.1",
+    "p-sn46.53-7.3"
+   ],
+   "note": null,
+   "timing": "RightTime"
+  },
+  {
+   "id": "e25",
+   "source": "SluggishMind",
+   "target": "Energy",
+   "rel": "right time to develop",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.53-7.1",
+    "p-sn46.53-7.3"
+   ],
+   "note": null,
+   "timing": "RightTime"
+  },
+  {
+   "id": "e26",
+   "source": "SluggishMind",
+   "target": "Rapture",
+   "rel": "right time to develop",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.53-7.1",
+    "p-sn46.53-7.3"
+   ],
+   "note": null,
+   "timing": "RightTime"
+  },
+  {
+   "id": "e27",
+   "source": "RestlessMind",
+   "target": "Investigation",
+   "rel": "wrong time to develop",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.53-10.1",
+    "p-sn46.53-10.3"
+   ],
+   "note": null,
+   "timing": "WrongTime"
+  },
+  {
+   "id": "e28",
+   "source": "RestlessMind",
+   "target": "Energy",
+   "rel": "wrong time to develop",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.53-10.1",
+    "p-sn46.53-10.3"
+   ],
+   "note": null,
+   "timing": "WrongTime"
+  },
+  {
+   "id": "e29",
+   "source": "RestlessMind",
+   "target": "Rapture",
+   "rel": "wrong time to develop",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.53-10.1",
+    "p-sn46.53-10.3"
+   ],
+   "note": null,
+   "timing": "WrongTime"
+  },
+  {
+   "id": "e30",
+   "source": "RestlessMind",
+   "target": "Tranquility",
+   "rel": "right time to develop",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.53-13.1",
+    "p-sn46.53-13.3"
+   ],
+   "note": null,
+   "timing": "RightTime"
+  },
+  {
+   "id": "e31",
+   "source": "RestlessMind",
+   "target": "Immersion",
+   "rel": "right time to develop",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.53-13.1",
+    "p-sn46.53-13.3"
+   ],
+   "note": null,
+   "timing": "RightTime"
+  },
+  {
+   "id": "e32",
+   "source": "RestlessMind",
+   "target": "Equanimity",
+   "rel": "right time to develop",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.53-13.1",
+    "p-sn46.53-13.3"
+   ],
+   "note": null,
+   "timing": "RightTime"
+  },
+  {
+   "id": "e33",
+   "source": "Unification",
+   "target": "SensualDesire",
+   "rel": "opposes",
+   "layer": "commentary",
+   "cites": [],
+   "note": "Visuddhimagga IV.86 (citing the Peṭakopadesa)"
+  },
+  {
+   "id": "e34",
+   "source": "Rapture",
+   "target": "IllWill",
+   "rel": "opposes",
+   "layer": "commentary",
+   "cites": [],
+   "note": "Visuddhimagga IV.86 (citing the Peṭakopadesa)"
+  },
+  {
+   "id": "e35",
+   "source": "PlacingTheMind",
+   "target": "DullnessDrowsiness",
+   "rel": "opposes",
+   "layer": "commentary",
+   "cites": [],
+   "note": "Visuddhimagga IV.86 (citing the Peṭakopadesa)"
+  },
+  {
+   "id": "e36",
+   "source": "Bliss",
+   "target": "RestlessnessRemorse",
+   "rel": "opposes",
+   "layer": "commentary",
+   "cites": [],
+   "note": "Visuddhimagga IV.86 (citing the Peṭakopadesa)"
+  },
+  {
+   "id": "e37",
+   "source": "KeepingConnected",
+   "target": "Doubt",
+   "rel": "opposes",
+   "layer": "commentary",
+   "cites": [],
+   "note": "Visuddhimagga IV.86 (citing the Peṭakopadesa)"
+  },
+  {
+   "id": "e38",
+   "source": "Unification",
+   "target": "Immersion",
+   "rel": "is defined as",
+   "layer": "sutta",
+   "cites": [
+    "p-mn44-12.2"
+   ],
+   "note": null
+  },
+  {
+   "id": "e39",
+   "source": "SluggishMind",
+   "target": "DullnessDrowsiness",
+   "rel": "see also",
+   "layer": "editor",
+   "cites": [],
+   "note": "Editor's link, not a textual claim."
+  },
+  {
+   "id": "e40",
+   "source": "RestlessMind",
+   "target": "RestlessnessRemorse",
+   "rel": "see also",
+   "layer": "editor",
+   "cites": [],
+   "note": "Editor's link, not a textual claim."
+  },
+  {
+   "id": "e41",
+   "source": "lex-dhamma",
+   "target": "DhammaTeaching",
+   "rel": "sense",
+   "layer": "lexicon",
+   "cites": [
+    "p-sn11.3-10.2"
+   ],
+   "note": null
+  },
+  {
+   "id": "e42",
+   "source": "lex-dhamma",
+   "target": "DhammaPhenomenon",
+   "rel": "sense",
+   "layer": "lexicon",
+   "cites": [
+    "p-dhp279-1"
+   ],
+   "note": null
+  },
+  {
+   "id": "e43",
+   "source": "lex-dhamma",
+   "target": "DhammaMindObject",
+   "rel": "sense",
+   "layer": "lexicon",
+   "cites": [
+    "p-mn148-5.3",
+    "p-mn148-6.8"
+   ],
+   "note": null
+  },
+  {
+   "id": "e44",
+   "source": "lex-dhamma",
+   "target": "DhammaQuality",
+   "rel": "sense",
+   "layer": "lexicon",
+   "cites": [
+    "p-sn46.51-7.2"
+   ],
+   "note": null
+  }
+ ],
+ "nutriments": [
+  {
+   "id": "n-01",
+   "object": "o-beauty",
+   "attention": "frequent irrational application of mind",
+   "attentionId": "IrrationalAttention",
+   "effect": "fuels",
+   "target": "SensualDesire",
+   "cites": [
+    "p-sn46.2-2.2",
+    "p-sn46.2-2.3",
+    "p-sn46.51-1.5",
+    "p-sn46.51-1.6"
+   ]
+  },
+  {
+   "id": "n-02",
+   "object": "o-aversion",
+   "attention": "frequent irrational application of mind",
+   "attentionId": "IrrationalAttention",
+   "effect": "fuels",
+   "target": "IllWill",
+   "cites": [
+    "p-sn46.2-3.2",
+    "p-sn46.2-3.3",
+    "p-sn46.51-2.2",
+    "p-sn46.51-2.3"
+   ]
+  },
+  {
+   "id": "n-03",
+   "object": "o-sluggishness",
+   "attention": "frequent irrational application of mind",
+   "attentionId": "IrrationalAttention",
+   "effect": "fuels",
+   "target": "DullnessDrowsiness",
+   "cites": [
+    "p-sn46.2-4.2",
+    "p-sn46.2-4.3",
+    "p-sn46.51-3.2",
+    "p-sn46.51-3.3"
+   ]
+  },
+  {
+   "id": "n-04",
+   "object": "o-unsettled-mind",
+   "attention": "frequent irrational application of mind",
+   "attentionId": "IrrationalAttention",
+   "effect": "fuels",
+   "target": "RestlessnessRemorse",
+   "cites": [
+    "p-sn46.2-5.2",
+    "p-sn46.2-5.3",
+    "p-sn46.51-4.2",
+    "p-sn46.51-4.3"
+   ]
+  },
+  {
+   "id": "n-05",
+   "object": "o-grounds-doubt",
+   "attention": "frequent irrational application of mind",
+   "attentionId": "IrrationalAttention",
+   "effect": "fuels",
+   "target": "Doubt",
+   "cites": [
+    "p-sn46.2-6.2",
+    "p-sn46.2-6.3",
+    "p-sn46.51-5.2",
+    "p-sn46.51-5.3"
+   ]
+  },
+  {
+   "id": "n-06",
+   "object": "o-grounds-mindfulness",
+   "attention": "frequent rational application of mind",
+   "attentionId": "RationalAttention",
+   "effect": "fuels",
+   "target": "Mindfulness",
+   "cites": [
+    "p-sn46.2-9.2",
+    "p-sn46.2-9.3",
+    "p-sn46.51-6.2",
+    "p-sn46.51-6.3"
+   ]
+  },
+  {
+   "id": "n-07",
+   "object": "o-qualities",
+   "attention": "frequent rational application of mind",
+   "attentionId": "RationalAttention",
+   "effect": "fuels",
+   "target": "Investigation",
+   "cites": [
+    "p-sn46.2-10.2",
+    "p-sn46.2-10.3",
+    "p-sn46.51-7.2",
+    "p-sn46.51-7.3"
+   ]
+  },
+  {
+   "id": "n-08",
+   "object": "o-energy-elements",
+   "attention": "frequent rational application of mind",
+   "attentionId": "RationalAttention",
+   "effect": "fuels",
+   "target": "Energy",
+   "cites": [
+    "p-sn46.2-11.2",
+    "p-sn46.2-11.3",
+    "p-sn46.51-8.2",
+    "p-sn46.51-8.3"
+   ]
+  },
+  {
+   "id": "n-09",
+   "object": "o-grounds-rapture",
+   "attention": "frequent rational application of mind",
+   "attentionId": "RationalAttention",
+   "effect": "fuels",
+   "target": "Rapture",
+   "cites": [
+    "p-sn46.2-12.2",
+    "p-sn46.2-12.3",
+    "p-sn46.51-9.2",
+    "p-sn46.51-9.3"
+   ]
+  },
+  {
+   "id": "n-10",
+   "object": "o-tranquility",
+   "attention": "frequent rational application of mind",
+   "attentionId": "RationalAttention",
+   "effect": "fuels",
+   "target": "Tranquility",
+   "cites": [
+    "p-sn46.2-13.2",
+    "p-sn46.2-13.3",
+    "p-sn46.51-10.2",
+    "p-sn46.51-10.3"
+   ]
+  },
+  {
+   "id": "n-11",
+   "object": "o-serenity",
+   "attention": "frequent rational application of mind",
+   "attentionId": "RationalAttention",
+   "effect": "fuels",
+   "target": "Immersion",
+   "cites": [
+    "p-sn46.2-14.2",
+    "p-sn46.2-14.3",
+    "p-sn46.51-11.2",
+    "p-sn46.51-11.3"
+   ]
+  },
+  {
+   "id": "n-12",
+   "object": "o-grounds-equanimity",
+   "attention": "frequent rational application of mind",
+   "attentionId": "RationalAttention",
+   "effect": "fuels",
+   "target": "Equanimity",
+   "cites": [
+    "p-sn46.2-15.2",
+    "p-sn46.2-15.3",
+    "p-sn46.51-12.2",
+    "p-sn46.51-12.3"
+   ]
+  },
+  {
+   "id": "n-13",
+   "object": "o-ugliness",
+   "attention": "frequent rational application of mind",
+   "attentionId": "RationalAttention",
+   "effect": "starves",
+   "target": "SensualDesire",
+   "cites": [
+    "p-sn46.51-13.2",
+    "p-sn46.51-13.3"
+   ]
+  },
+  {
+   "id": "n-14",
+   "object": "o-metta",
+   "attention": "frequent rational application of mind",
+   "attentionId": "RationalAttention",
+   "effect": "starves",
+   "target": "IllWill",
+   "cites": [
+    "p-sn46.51-14.2",
+    "p-sn46.51-14.3"
+   ]
+  },
+  {
+   "id": "n-15",
+   "object": "o-energy-elements",
+   "attention": "frequent rational application of mind",
+   "attentionId": "RationalAttention",
+   "effect": "starves",
+   "target": "DullnessDrowsiness",
+   "cites": [
+    "p-sn46.51-15.2",
+    "p-sn46.51-15.3"
+   ]
+  },
+  {
+   "id": "n-16",
+   "object": "o-settled-mind",
+   "attention": "frequent rational application of mind",
+   "attentionId": "RationalAttention",
+   "effect": "starves",
+   "target": "RestlessnessRemorse",
+   "cites": [
+    "p-sn46.51-16.2",
+    "p-sn46.51-16.3"
+   ]
+  },
+  {
+   "id": "n-17",
+   "object": "o-qualities",
+   "attention": "frequent rational application of mind",
+   "attentionId": "RationalAttention",
+   "effect": "starves",
+   "target": "Doubt",
+   "cites": [
+    "p-sn46.51-17.2",
+    "p-sn46.51-17.3"
+   ]
+  },
+  {
+   "id": "n-18",
+   "object": "o-grounds-mindfulness",
+   "attention": "not frequently applying the mind",
+   "attentionId": "NonAttention",
+   "effect": "starves",
+   "target": "Mindfulness",
+   "cites": [
+    "p-sn46.51-18.2",
+    "p-sn46.51-18.3"
+   ]
+  },
+  {
+   "id": "n-19",
+   "object": "o-qualities",
+   "attention": "not frequently applying the mind",
+   "attentionId": "NonAttention",
+   "effect": "starves",
+   "target": "Investigation",
+   "cites": [
+    "p-sn46.51-19.2",
+    "p-sn46.51-19.3"
+   ]
+  },
+  {
+   "id": "n-20",
+   "object": "o-energy-elements",
+   "attention": "not frequently applying the mind",
+   "attentionId": "NonAttention",
+   "effect": "starves",
+   "target": "Energy",
+   "cites": [
+    "p-sn46.51-20.2",
+    "p-sn46.51-20.3"
+   ]
+  },
+  {
+   "id": "n-21",
+   "object": "o-grounds-rapture",
+   "attention": "not frequently applying the mind",
+   "attentionId": "NonAttention",
+   "effect": "starves",
+   "target": "Rapture",
+   "cites": [
+    "p-sn46.51-21.2",
+    "p-sn46.51-21.3"
+   ]
+  },
+  {
+   "id": "n-22",
+   "object": "o-tranquility",
+   "attention": "not frequently applying the mind",
+   "attentionId": "NonAttention",
+   "effect": "starves",
+   "target": "Tranquility",
+   "cites": [
+    "p-sn46.51-22.2",
+    "p-sn46.51-22.3"
+   ]
+  },
+  {
+   "id": "n-23",
+   "object": "o-serenity",
+   "attention": "not frequently applying the mind",
+   "attentionId": "NonAttention",
+   "effect": "starves",
+   "target": "Immersion",
+   "cites": [
+    "p-sn46.51-23.2",
+    "p-sn46.51-23.3"
+   ]
+  },
+  {
+   "id": "n-24",
+   "object": "o-grounds-equanimity",
+   "attention": "not frequently applying the mind",
+   "attentionId": "NonAttention",
+   "effect": "starves",
+   "target": "Equanimity",
+   "cites": [
+    "p-sn46.51-24.2",
+    "p-sn46.51-24.3"
+   ]
+  }
+ ],
+ "timing": [
+  {
+   "id": "ta-01",
+   "state": "SluggishMind",
+   "factor": "Tranquility",
+   "timing": "wrong time to develop",
+   "timingId": "WrongTime",
+   "cites": [
+    "p-sn46.53-4.1",
+    "p-sn46.53-4.3"
+   ]
+  },
+  {
+   "id": "ta-02",
+   "state": "SluggishMind",
+   "factor": "Immersion",
+   "timing": "wrong time to develop",
+   "timingId": "WrongTime",
+   "cites": [
+    "p-sn46.53-4.1",
+    "p-sn46.53-4.3"
+   ]
+  },
+  {
+   "id": "ta-03",
+   "state": "SluggishMind",
+   "factor": "Equanimity",
+   "timing": "wrong time to develop",
+   "timingId": "WrongTime",
+   "cites": [
+    "p-sn46.53-4.1",
+    "p-sn46.53-4.3"
+   ]
+  },
+  {
+   "id": "ta-04",
+   "state": "SluggishMind",
+   "factor": "Investigation",
+   "timing": "right time to develop",
+   "timingId": "RightTime",
+   "cites": [
+    "p-sn46.53-7.1",
+    "p-sn46.53-7.3"
+   ]
+  },
+  {
+   "id": "ta-05",
+   "state": "SluggishMind",
+   "factor": "Energy",
+   "timing": "right time to develop",
+   "timingId": "RightTime",
+   "cites": [
+    "p-sn46.53-7.1",
+    "p-sn46.53-7.3"
+   ]
+  },
+  {
+   "id": "ta-06",
+   "state": "SluggishMind",
+   "factor": "Rapture",
+   "timing": "right time to develop",
+   "timingId": "RightTime",
+   "cites": [
+    "p-sn46.53-7.1",
+    "p-sn46.53-7.3"
+   ]
+  },
+  {
+   "id": "ta-07",
+   "state": "RestlessMind",
+   "factor": "Investigation",
+   "timing": "wrong time to develop",
+   "timingId": "WrongTime",
+   "cites": [
+    "p-sn46.53-10.1",
+    "p-sn46.53-10.3"
+   ]
+  },
+  {
+   "id": "ta-08",
+   "state": "RestlessMind",
+   "factor": "Energy",
+   "timing": "wrong time to develop",
+   "timingId": "WrongTime",
+   "cites": [
+    "p-sn46.53-10.1",
+    "p-sn46.53-10.3"
+   ]
+  },
+  {
+   "id": "ta-09",
+   "state": "RestlessMind",
+   "factor": "Rapture",
+   "timing": "wrong time to develop",
+   "timingId": "WrongTime",
+   "cites": [
+    "p-sn46.53-10.1",
+    "p-sn46.53-10.3"
+   ]
+  },
+  {
+   "id": "ta-10",
+   "state": "RestlessMind",
+   "factor": "Tranquility",
+   "timing": "right time to develop",
+   "timingId": "RightTime",
+   "cites": [
+    "p-sn46.53-13.1",
+    "p-sn46.53-13.3"
+   ]
+  },
+  {
+   "id": "ta-11",
+   "state": "RestlessMind",
+   "factor": "Immersion",
+   "timing": "right time to develop",
+   "timingId": "RightTime",
+   "cites": [
+    "p-sn46.53-13.1",
+    "p-sn46.53-13.3"
+   ]
+  },
+  {
+   "id": "ta-12",
+   "state": "RestlessMind",
+   "factor": "Equanimity",
+   "timing": "right time to develop",
+   "timingId": "RightTime",
+   "cites": [
+    "p-sn46.53-13.1",
+    "p-sn46.53-13.3"
+   ]
+  },
+  {
+   "id": "ta-13",
+   "state": null,
+   "factor": "Mindfulness",
+   "timing": "always useful",
+   "timingId": "AlwaysUseful",
+   "cites": [
+    "p-sn46.53-15.4"
+   ]
+  }
+ ],
+ "passages": {
+  "p-dhp279-1": {
+   "segment": "dhp279:1",
+   "en": "All things are not-self—",
+   "pi": "“Sabbe dhammā anattā”ti,",
+   "url": "https://suttacentral.net/dhp279/en/sujato#dhp279:1",
+   "contested": null,
+   "sense": null
+  },
+  "p-mn10-36.2": {
+   "segment": "mn10:36.2",
+   "en": "It’s when a mendicant meditates by observing an aspect of principles with respect to the five hindrances.",
+   "pi": "Idha, bhikkhave, bhikkhu dhammesu dhammānupassī viharati pañcasu nīvaraṇesu.",
+   "url": "https://suttacentral.net/mn10/en/sujato#mn10:36.2",
+   "contested": "principles (Sujato)",
+   "sense": null
+  },
+  "p-mn148-5.3": {
+   "segment": "mn148:5.3",
+   "en": "There are the sense fields of sights, sounds, smells, tastes, touches, and ideas.",
+   "pi": "Rūpāyatanaṁ, saddāyatanaṁ, gandhāyatanaṁ, rasāyatanaṁ, phoṭṭhabbāyatanaṁ, dhammāyatanaṁ.",
+   "url": "https://suttacentral.net/mn148/en/sujato#mn148:5.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-mn148-6.8": {
+   "segment": "mn148:6.8",
+   "en": "Mind consciousness arises dependent on the mind and ideas.",
+   "pi": "manañca paṭicca dhamme ca uppajjati manoviññāṇaṁ.",
+   "url": "https://suttacentral.net/mn148/en/sujato#mn148:6.8",
+   "contested": null,
+   "sense": null
+  },
+  "p-mn43-19.2": {
+   "segment": "mn43:19.2",
+   "en": "“The first absorption has five factors.",
+   "pi": "“Paṭhamaṁ kho, āvuso, jhānaṁ pañcaṅgikaṁ.",
+   "url": "https://suttacentral.net/mn43/en/sujato#mn43:19.2",
+   "contested": null,
+   "sense": null
+  },
+  "p-mn43-19.3": {
+   "segment": "mn43:19.3",
+   "en": "When a mendicant has entered the first absorption, placing the mind, keeping it connected, rapture, bliss, and unification of mind are present.",
+   "pi": "Idhāvuso, paṭhamaṁ jhānaṁ samāpannassa bhikkhuno vitakko ca vattati, vicāro ca pīti ca sukhañca cittekaggatā ca.",
+   "url": "https://suttacentral.net/mn43/en/sujato#mn43:19.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-mn43-20.2": {
+   "segment": "mn43:20.2",
+   "en": "“The first absorption has given up five factors and possesses five factors.",
+   "pi": "“Paṭhamaṁ kho, āvuso, jhānaṁ pañcaṅgavippahīnaṁ, pañcaṅgasamannāgataṁ.",
+   "url": "https://suttacentral.net/mn43/en/sujato#mn43:20.2",
+   "contested": null,
+   "sense": null
+  },
+  "p-mn43-20.3": {
+   "segment": "mn43:20.3",
+   "en": "When a mendicant has entered the first absorption, sensual desire, ill will, dullness and drowsiness, restlessness and remorse, and doubt are given up.",
+   "pi": "Idhāvuso, paṭhamaṁ jhānaṁ samāpannassa bhikkhuno kāmacchando pahīno hoti, byāpādo pahīno hoti, thinamiddhaṁ pahīnaṁ hoti, uddhaccakukkuccaṁ pahīnaṁ hoti, vicikicchā pahīnā hoti;",
+   "url": "https://suttacentral.net/mn43/en/sujato#mn43:20.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-mn43-20.4": {
+   "segment": "mn43:20.4",
+   "en": "Placing the mind, keeping it connected, rapture, bliss, and unification of mind are present.",
+   "pi": "vitakko ca vattati, vicāro ca pīti ca sukhañca cittekaggatā ca.",
+   "url": "https://suttacentral.net/mn43/en/sujato#mn43:20.4",
+   "contested": null,
+   "sense": null
+  },
+  "p-mn44-12.2": {
+   "segment": "mn44:12.2",
+   "en": "“Unification of the mind is immersion.",
+   "pi": "“Yā kho, āvuso visākha, cittassa ekaggatā ayaṁ samādhi;",
+   "url": "https://suttacentral.net/mn44/en/sujato#mn44:12.2",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn11.3-10.2": {
+   "segment": "sn11.3:10.2",
+   "en": "‘The teaching is well explained by the Buddha—apparent in the present life, immediately effective, inviting inspection, relevant, so that sensible people can know it for themselves.’",
+   "pi": "“svākkhāto bhagavatā dhammo sandiṭṭhiko akāliko ehipassiko opaneyyiko paccattaṁ veditabbo viññūhī”ti.",
+   "url": "https://suttacentral.net/sn11.3/en/sujato#sn11.3:10.2",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.2-10.2": {
+   "segment": "sn46.2:10.2",
+   "en": "There are qualities that are skillful and unskillful, blameworthy and blameless, inferior and superior, and those with a portion of dark or bright.",
+   "pi": "Atthi, bhikkhave, kusalākusalā dhammā, sāvajjānavajjā dhammā, hīnapaṇītā dhammā, kaṇhasukkasappaṭibhāgā dhammā.",
+   "url": "https://suttacentral.net/sn46.2/en/sujato#sn46.2:10.2",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.2-10.3": {
+   "segment": "sn46.2:10.3",
+   "en": "Frequent rational application of mind to them",
+   "pi": "Tattha yonisomanasikārabahulīkāro—",
+   "url": "https://suttacentral.net/sn46.2/en/sujato#sn46.2:10.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.2-11.2": {
+   "segment": "sn46.2:11.2",
+   "en": "There are the elements of initiative, persistence, and exertion.",
+   "pi": "Atthi, bhikkhave, ārambhadhātu nikkamadhātu parakkamadhātu.",
+   "url": "https://suttacentral.net/sn46.2/en/sujato#sn46.2:11.2",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.2-11.3": {
+   "segment": "sn46.2:11.3",
+   "en": "Frequent rational application of mind to them",
+   "pi": "Tattha yonisomanasikārabahulīkāro—",
+   "url": "https://suttacentral.net/sn46.2/en/sujato#sn46.2:11.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.2-12.2": {
+   "segment": "sn46.2:12.2",
+   "en": "There are things that are grounds for the awakening factor of rapture.",
+   "pi": "Atthi, bhikkhave, pītisambojjhaṅgaṭṭhānīyā dhammā.",
+   "url": "https://suttacentral.net/sn46.2/en/sujato#sn46.2:12.2",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.2-12.3": {
+   "segment": "sn46.2:12.3",
+   "en": "Frequent rational application of mind to them",
+   "pi": "Tattha yonisomanasikārabahulīkāro—",
+   "url": "https://suttacentral.net/sn46.2/en/sujato#sn46.2:12.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.2-13.2": {
+   "segment": "sn46.2:13.2",
+   "en": "There is tranquility of the body and of the mind.",
+   "pi": "Atthi, bhikkhave, kāyapassaddhi, cittapassaddhi.",
+   "url": "https://suttacentral.net/sn46.2/en/sujato#sn46.2:13.2",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.2-13.3": {
+   "segment": "sn46.2:13.3",
+   "en": "Frequent rational application of mind to that",
+   "pi": "Tattha yonisomanasikārabahulīkāro—",
+   "url": "https://suttacentral.net/sn46.2/en/sujato#sn46.2:13.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.2-14.2": {
+   "segment": "sn46.2:14.2",
+   "en": "There are things that are the basis of serenity and freedom from distraction.",
+   "pi": "Atthi, bhikkhave, samathanimittaṁ abyagganimittaṁ.",
+   "url": "https://suttacentral.net/sn46.2/en/sujato#sn46.2:14.2",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.2-14.3": {
+   "segment": "sn46.2:14.3",
+   "en": "Frequent rational application of mind to them",
+   "pi": "Tattha yonisomanasikārabahulīkāro—",
+   "url": "https://suttacentral.net/sn46.2/en/sujato#sn46.2:14.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.2-15.2": {
+   "segment": "sn46.2:15.2",
+   "en": "There are things that are grounds for the awakening factor of equanimity.",
+   "pi": "Atthi, bhikkhave, upekkhāsambojjhaṅgaṭṭhānīyā dhammā.",
+   "url": "https://suttacentral.net/sn46.2/en/sujato#sn46.2:15.2",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.2-15.3": {
+   "segment": "sn46.2:15.3",
+   "en": "Frequent rational application of mind to them",
+   "pi": "Tattha yonisomanasikārabahulīkāro—",
+   "url": "https://suttacentral.net/sn46.2/en/sujato#sn46.2:15.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.2-2.2": {
+   "segment": "sn46.2:2.2",
+   "en": "There is the feature of beauty.",
+   "pi": "Atthi, bhikkhave, subhanimittaṁ.",
+   "url": "https://suttacentral.net/sn46.2/en/sujato#sn46.2:2.2",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.2-2.3": {
+   "segment": "sn46.2:2.3",
+   "en": "Frequent irrational application of mind to that",
+   "pi": "Tattha ayonisomanasikārabahulīkāro—",
+   "url": "https://suttacentral.net/sn46.2/en/sujato#sn46.2:2.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.2-3.2": {
+   "segment": "sn46.2:3.2",
+   "en": "There is the feature of aversion.",
+   "pi": "Atthi, bhikkhave, paṭighanimittaṁ.",
+   "url": "https://suttacentral.net/sn46.2/en/sujato#sn46.2:3.2",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.2-3.3": {
+   "segment": "sn46.2:3.3",
+   "en": "Frequent irrational application of mind to that",
+   "pi": "Tattha ayonisomanasikārabahulīkāro—",
+   "url": "https://suttacentral.net/sn46.2/en/sujato#sn46.2:3.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.2-4.2": {
+   "segment": "sn46.2:4.2",
+   "en": "There is discontent, sloth, yawning, sleepiness after eating, and mental sluggishness.",
+   "pi": "Atthi, bhikkhave, arati tandi vijambhitā bhattasammado cetaso ca līnattaṁ.",
+   "url": "https://suttacentral.net/sn46.2/en/sujato#sn46.2:4.2",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.2-4.3": {
+   "segment": "sn46.2:4.3",
+   "en": "Frequent irrational application of mind to them",
+   "pi": "Tattha ayonisomanasikārabahulīkāro—",
+   "url": "https://suttacentral.net/sn46.2/en/sujato#sn46.2:4.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.2-5.2": {
+   "segment": "sn46.2:5.2",
+   "en": "There is the unsettled mind.",
+   "pi": "Atthi, bhikkhave, cetaso avūpasamo.",
+   "url": "https://suttacentral.net/sn46.2/en/sujato#sn46.2:5.2",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.2-5.3": {
+   "segment": "sn46.2:5.3",
+   "en": "Frequent irrational application of mind to that",
+   "pi": "Tattha ayonisomanasikārabahulīkāro—",
+   "url": "https://suttacentral.net/sn46.2/en/sujato#sn46.2:5.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.2-6.2": {
+   "segment": "sn46.2:6.2",
+   "en": "There are things that are grounds for doubt.",
+   "pi": "Atthi, bhikkhave, vicikicchāṭṭhānīyā dhammā.",
+   "url": "https://suttacentral.net/sn46.2/en/sujato#sn46.2:6.2",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.2-6.3": {
+   "segment": "sn46.2:6.3",
+   "en": "Frequent irrational application of mind to them",
+   "pi": "Tattha ayonisomanasikārabahulīkāro—",
+   "url": "https://suttacentral.net/sn46.2/en/sujato#sn46.2:6.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.2-9.2": {
+   "segment": "sn46.2:9.2",
+   "en": "There are things that are grounds for the awakening factor of mindfulness.",
+   "pi": "Atthi, bhikkhave, satisambojjhaṅgaṭṭhānīyā dhammā.",
+   "url": "https://suttacentral.net/sn46.2/en/sujato#sn46.2:9.2",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.2-9.3": {
+   "segment": "sn46.2:9.3",
+   "en": "Frequent rational application of mind to them",
+   "pi": "Tattha yonisomanasikārabahulīkāro—",
+   "url": "https://suttacentral.net/sn46.2/en/sujato#sn46.2:9.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-1.2": {
+   "segment": "sn46.51:1.2",
+   "en": "“Mendicants, I will teach you what fuels and what starves the five hindrances and the seven awakening factors.",
+   "pi": "“Pañcannañca, bhikkhave, nīvaraṇānaṁ sattannañca bojjhaṅgānaṁ āhārañca anāhārañca desessāmi;",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:1.2",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-1.5": {
+   "segment": "sn46.51:1.5",
+   "en": "There is the feature of beauty.",
+   "pi": "Atthi, bhikkhave, subhanimittaṁ.",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:1.5",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-1.6": {
+   "segment": "sn46.51:1.6",
+   "en": "Frequent irrational application of mind to that",
+   "pi": "Tattha ayonisomanasikārabahulīkāro—",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:1.6",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-10.2": {
+   "segment": "sn46.51:10.2",
+   "en": "There is tranquility of the body and of the mind.",
+   "pi": "Atthi, bhikkhave, kāyappassaddhi cittappassaddhi.",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:10.2",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-10.3": {
+   "segment": "sn46.51:10.3",
+   "en": "Frequent rational application of mind to that",
+   "pi": "Tattha yonisomanasikārabahulīkāro—",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:10.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-11.2": {
+   "segment": "sn46.51:11.2",
+   "en": "There are things that are the basis of serenity and freedom from distraction.",
+   "pi": "Atthi, bhikkhave, samathanimittaṁ abyagganimittaṁ.",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:11.2",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-11.3": {
+   "segment": "sn46.51:11.3",
+   "en": "Frequent rational application of mind to them",
+   "pi": "Tattha yonisomanasikārabahulīkāro—",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:11.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-12.2": {
+   "segment": "sn46.51:12.2",
+   "en": "There are things that are grounds for the awakening factor of equanimity.",
+   "pi": "Atthi, bhikkhave, upekkhāsambojjhaṅgaṭṭhānīyā dhammā.",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:12.2",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-12.3": {
+   "segment": "sn46.51:12.3",
+   "en": "Frequent rational application of mind to them",
+   "pi": "Tattha yonisomanasikārabahulīkāro—",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:12.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-13.2": {
+   "segment": "sn46.51:13.2",
+   "en": "There is the feature of ugliness.",
+   "pi": "Atthi, bhikkhave, asubhanimittaṁ.",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:13.2",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-13.3": {
+   "segment": "sn46.51:13.3",
+   "en": "Frequent rational application of mind to that",
+   "pi": "Tattha yonisomanasikārabahulīkāro—",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:13.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-14.2": {
+   "segment": "sn46.51:14.2",
+   "en": "There is the heart’s release by love.",
+   "pi": "Atthi, bhikkhave, mettācetovimutti.",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:14.2",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-14.3": {
+   "segment": "sn46.51:14.3",
+   "en": "Frequent rational application of mind to that",
+   "pi": "Tattha yonisomanasikārabahulīkāro—",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:14.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-15.2": {
+   "segment": "sn46.51:15.2",
+   "en": "There are the elements of initiative, persistence, and exertion.",
+   "pi": "Atthi, bhikkhave, ārambhadhātu nikkamadhātu parakkamadhātu.",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:15.2",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-15.3": {
+   "segment": "sn46.51:15.3",
+   "en": "Frequent rational application of mind to them",
+   "pi": "Tattha yonisomanasikārabahulīkāro—",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:15.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-16.2": {
+   "segment": "sn46.51:16.2",
+   "en": "There is the settled mind.",
+   "pi": "Atthi, bhikkhave, cetaso vūpasamo.",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:16.2",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-16.3": {
+   "segment": "sn46.51:16.3",
+   "en": "Frequent rational application of mind to that",
+   "pi": "Tattha yonisomanasikārabahulīkāro—",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:16.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-17.2": {
+   "segment": "sn46.51:17.2",
+   "en": "There are qualities that are skillful and unskillful, blameworthy and blameless, inferior and superior, and those with a portion of dark or bright.",
+   "pi": "Atthi, bhikkhave, kusalākusalā dhammā sāvajjānavajjā dhammā hīnapaṇītā dhammā kaṇhasukkasappaṭibhāgā dhammā.",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:17.2",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-17.3": {
+   "segment": "sn46.51:17.3",
+   "en": "Frequent rational application of mind to them",
+   "pi": "Tattha yonisomanasikārabahulīkāro—",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:17.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-18.2": {
+   "segment": "sn46.51:18.2",
+   "en": "There are things that are grounds for the awakening factor of mindfulness.",
+   "pi": "Atthi, bhikkhave, satisambojjhaṅgaṭṭhānīyā dhammā.",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:18.2",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-18.3": {
+   "segment": "sn46.51:18.3",
+   "en": "Not frequently applying the mind to that",
+   "pi": "Tattha amanasikārabahulīkāro—",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:18.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-19.2": {
+   "segment": "sn46.51:19.2",
+   "en": "There are qualities that are skillful and unskillful, blameworthy and blameless, inferior and superior, and those with a portion of dark or bright.",
+   "pi": "Atthi, bhikkhave, kusalākusalā dhammā sāvajjānavajjā dhammā hīnapaṇītā dhammā kaṇhasukkasappaṭibhāgā dhammā.",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:19.2",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-19.3": {
+   "segment": "sn46.51:19.3",
+   "en": "Not frequently applying the mind to that",
+   "pi": "Tattha amanasikārabahulīkāro—",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:19.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-2.2": {
+   "segment": "sn46.51:2.2",
+   "en": "There is the feature of aversion.",
+   "pi": "Atthi, bhikkhave, paṭighanimittaṁ.",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:2.2",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-2.3": {
+   "segment": "sn46.51:2.3",
+   "en": "Frequent irrational application of mind to that",
+   "pi": "Tattha ayonisomanasikārabahulīkāro—",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:2.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-20.2": {
+   "segment": "sn46.51:20.2",
+   "en": "There are the elements of initiative, persistence, and exertion.",
+   "pi": "Atthi, bhikkhave, ārambhadhātu nikkamadhātu parakkamadhātu.",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:20.2",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-20.3": {
+   "segment": "sn46.51:20.3",
+   "en": "Not frequently applying the mind to that",
+   "pi": "Tattha amanasikārabahulīkāro—",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:20.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-21.2": {
+   "segment": "sn46.51:21.2",
+   "en": "There are things that are grounds for the awakening factor of rapture.",
+   "pi": "Atthi, bhikkhave, pītisambojjhaṅgaṭṭhānīyā dhammā.",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:21.2",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-21.3": {
+   "segment": "sn46.51:21.3",
+   "en": "Not frequently applying the mind to that",
+   "pi": "Tattha amanasikārabahulīkāro—",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:21.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-22.2": {
+   "segment": "sn46.51:22.2",
+   "en": "There is tranquility of the body and of the mind.",
+   "pi": "Atthi, bhikkhave, kāyappassaddhi cittappassaddhi.",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:22.2",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-22.3": {
+   "segment": "sn46.51:22.3",
+   "en": "Not frequently applying the mind to that",
+   "pi": "Tattha amanasikārabahulīkāro—",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:22.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-23.2": {
+   "segment": "sn46.51:23.2",
+   "en": "There are things that are the basis of serenity and freedom from distraction.",
+   "pi": "Atthi, bhikkhave, samathanimittaṁ abyagganimittaṁ.",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:23.2",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-23.3": {
+   "segment": "sn46.51:23.3",
+   "en": "Not frequently applying the mind to that",
+   "pi": "Tattha amanasikārabahulīkāro—",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:23.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-24.2": {
+   "segment": "sn46.51:24.2",
+   "en": "There are things that are grounds for the awakening factor of equanimity.",
+   "pi": "Atthi, bhikkhave, upekkhāsambojjhaṅgaṭṭhānīyā dhammā.",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:24.2",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-24.3": {
+   "segment": "sn46.51:24.3",
+   "en": "Not frequently applying the mind to that",
+   "pi": "Tattha amanasikārabahulīkāro—",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:24.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-3.2": {
+   "segment": "sn46.51:3.2",
+   "en": "There is discontent, sloth, yawning, sleepiness after eating, and mental sluggishness.",
+   "pi": "Atthi, bhikkhave, arati tandi vijambhitā bhattasammado cetaso ca līnattaṁ.",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:3.2",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-3.3": {
+   "segment": "sn46.51:3.3",
+   "en": "Frequent irrational application of mind to that",
+   "pi": "Tattha ayonisomanasikārabahulīkāro—",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:3.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-4.2": {
+   "segment": "sn46.51:4.2",
+   "en": "There is the unsettled mind.",
+   "pi": "Atthi, bhikkhave, cetaso avūpasamo.",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:4.2",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-4.3": {
+   "segment": "sn46.51:4.3",
+   "en": "Frequent irrational application of mind to that",
+   "pi": "Tattha ayonisomanasikārabahulīkāro—",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:4.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-5.2": {
+   "segment": "sn46.51:5.2",
+   "en": "There are things that are grounds for doubt.",
+   "pi": "Atthi, bhikkhave, vicikicchāṭṭhānīyā dhammā.",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:5.2",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-5.3": {
+   "segment": "sn46.51:5.3",
+   "en": "Frequent irrational application of mind to them",
+   "pi": "Tattha ayonisomanasikārabahulīkāro—",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:5.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-6.2": {
+   "segment": "sn46.51:6.2",
+   "en": "There are things that are grounds for the awakening factor of mindfulness.",
+   "pi": "Atthi, bhikkhave, satisambojjhaṅgaṭṭhānīyā dhammā.",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:6.2",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-6.3": {
+   "segment": "sn46.51:6.3",
+   "en": "Frequent rational application of mind to them",
+   "pi": "Tattha yonisomanasikārabahulīkāro—",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:6.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-7.2": {
+   "segment": "sn46.51:7.2",
+   "en": "There are qualities that are skillful and unskillful, blameworthy and blameless, inferior and superior, and those with a portion of dark or bright.",
+   "pi": "Atthi, bhikkhave, kusalākusalā dhammā sāvajjānavajjā dhammā hīnapaṇītā dhammā kaṇhasukkasappaṭibhāgā dhammā.",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:7.2",
+   "contested": null,
+   "sense": "DhammaQuality"
+  },
+  "p-sn46.51-7.3": {
+   "segment": "sn46.51:7.3",
+   "en": "Frequent rational application of mind to them",
+   "pi": "Tattha yonisomanasikārabahulīkāro—",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:7.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-8.2": {
+   "segment": "sn46.51:8.2",
+   "en": "There are the elements of initiative, persistence, and exertion.",
+   "pi": "Atthi, bhikkhave, ārambhadhātu nikkamadhātu parakkamadhātu.",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:8.2",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-8.3": {
+   "segment": "sn46.51:8.3",
+   "en": "Frequent rational application of mind to them",
+   "pi": "Tattha yonisomanasikārabahulīkāro—",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:8.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-9.2": {
+   "segment": "sn46.51:9.2",
+   "en": "There are things that are grounds for the awakening factor of rapture.",
+   "pi": "Atthi, bhikkhave, pītisambojjhaṅgaṭṭhānīyā dhammā.",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:9.2",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.51-9.3": {
+   "segment": "sn46.51:9.3",
+   "en": "Frequent rational application of mind to them",
+   "pi": "Tattha yonisomanasikārabahulīkāro—",
+   "url": "https://suttacentral.net/sn46.51/en/sujato#sn46.51:9.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.53-10.1": {
+   "segment": "sn46.53:10.1",
+   "en": "When the mind is restless, it’s the wrong time to develop the awakening factors of investigation of principles, energy, and rapture.",
+   "pi": "Yasmiṁ, bhikkhave, samaye uddhataṁ cittaṁ hoti, akālo tasmiṁ samaye dhammavicayasambojjhaṅgassa bhāvanāya, akālo vīriyasambojjhaṅgassa bhāvanāya, akālo pītisambojjhaṅgassa bhāvanāya.",
+   "url": "https://suttacentral.net/sn46.53/en/sujato#sn46.53:10.1",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.53-10.3": {
+   "segment": "sn46.53:10.3",
+   "en": "Because it’s hard to settle a restless mind with these things.",
+   "pi": "Uddhataṁ, bhikkhave, cittaṁ taṁ etehi dhammehi duvūpasamayaṁ hoti.",
+   "url": "https://suttacentral.net/sn46.53/en/sujato#sn46.53:10.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.53-13.1": {
+   "segment": "sn46.53:13.1",
+   "en": "When the mind is restless, it’s the right time to develop the awakening factors of tranquility, immersion, and equanimity.",
+   "pi": "Yasmiñca kho, bhikkhave, samaye uddhataṁ cittaṁ hoti, kālo tasmiṁ samaye passaddhisambojjhaṅgassa bhāvanāya, kālo samādhisambojjhaṅgassa bhāvanāya, kālo upekkhāsambojjhaṅgassa bhāvanāya.",
+   "url": "https://suttacentral.net/sn46.53/en/sujato#sn46.53:13.1",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.53-13.3": {
+   "segment": "sn46.53:13.3",
+   "en": "Because it’s easy to settle a restless mind with these things.",
+   "pi": "Uddhataṁ, bhikkhave, cittaṁ taṁ etehi dhammehi suvūpasamayaṁ hoti.",
+   "url": "https://suttacentral.net/sn46.53/en/sujato#sn46.53:13.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.53-15.4": {
+   "segment": "sn46.53:15.4",
+   "en": "But mindfulness is always useful, I say.”",
+   "pi": "Satiñca khvāhaṁ, bhikkhave, sabbatthikaṁ vadāmī”ti.",
+   "url": "https://suttacentral.net/sn46.53/en/sujato#sn46.53:15.4",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.53-4.1": {
+   "segment": "sn46.53:4.1",
+   "en": "When the mind is sluggish, it’s the wrong time to develop the awakening factors of tranquility, immersion, and equanimity.",
+   "pi": "Yasmiṁ, bhikkhave, samaye līnaṁ cittaṁ hoti, akālo tasmiṁ samaye passaddhisambojjhaṅgassa bhāvanāya, akālo samādhisambojjhaṅgassa bhāvanāya, akālo upekkhāsambojjhaṅgassa bhāvanāya.",
+   "url": "https://suttacentral.net/sn46.53/en/sujato#sn46.53:4.1",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.53-4.3": {
+   "segment": "sn46.53:4.3",
+   "en": "Because it’s hard to stimulate a sluggish mind with these things.",
+   "pi": "Līnaṁ, bhikkhave, cittaṁ taṁ etehi dhammehi dussamuṭṭhāpayaṁ hoti.",
+   "url": "https://suttacentral.net/sn46.53/en/sujato#sn46.53:4.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.53-7.1": {
+   "segment": "sn46.53:7.1",
+   "en": "When the mind is sluggish, it’s the right time to develop the awakening factors of investigation of principles, energy, and rapture.",
+   "pi": "Yasmiñca kho, bhikkhave, samaye līnaṁ cittaṁ hoti, kālo tasmiṁ samaye dhammavicayasambojjhaṅgassa bhāvanāya, kālo vīriyasambojjhaṅgassa bhāvanāya, kālo pītisambojjhaṅgassa bhāvanāya.",
+   "url": "https://suttacentral.net/sn46.53/en/sujato#sn46.53:7.1",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.53-7.3": {
+   "segment": "sn46.53:7.3",
+   "en": "Because it’s easy to stimulate a sluggish mind with these things.",
+   "pi": "Līnaṁ, bhikkhave, cittaṁ taṁ etehi dhammehi susamuṭṭhāpayaṁ hoti.",
+   "url": "https://suttacentral.net/sn46.53/en/sujato#sn46.53:7.3",
+   "contested": null,
+   "sense": null
+  }
+ }
+}

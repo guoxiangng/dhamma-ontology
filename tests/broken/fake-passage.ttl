@@ -1,0 +1,5 @@
+# Error: cites a passage that does not exist in the sources.
+# Expect S8.
+@prefix dho: <https://guoxiangng.github.io/dhamma-ontology/ns#> .
+dho:n-bad a dho:Nutriment ; dho:object dho:o-ugliness ; dho:attention dho:RationalAttention ;
+    dho:starves dho:SensualDesire ; dho:citedBy dho:p-sn46.51-99.9 .

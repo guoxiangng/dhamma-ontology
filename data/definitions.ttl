@@ -1,0 +1,10 @@
+@prefix dho:  <https://guoxiangng.github.io/dhamma-ontology/ns#> .
+
+# Statements in a sutta that one term is another ("X is Y"). Kept as cited nodes
+# rather than merging the two concepts: a definition given in one discourse is
+# evidence, not licence to treat the words as identical everywhere (DECISIONS.md D4).
+
+dho:def-01 a dho:Definition ;
+    dho:defines dho:Unification ;
+    dho:as dho:Immersion ;
+    dho:citedBy dho:p-mn44-12.2 .

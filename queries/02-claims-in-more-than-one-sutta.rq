@@ -1,0 +1,9 @@
+# Claims attested in more than one discourse (decision D12: one claim, several citations).
+PREFIX dho:  <https://guoxiangng.github.io/dhamma-ontology/ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT ?claim (COUNT(DISTINCT ?text) AS ?suttas) (GROUP_CONCAT(DISTINCT ?seg; separator=", ") AS ?segments) WHERE {
+  ?claim dho:citedBy ?p . ?p dho:inText ?text ; dho:segment ?seg .
+}
+GROUP BY ?claim
+HAVING (COUNT(DISTINCT ?text) > 1)
+ORDER BY ?claim

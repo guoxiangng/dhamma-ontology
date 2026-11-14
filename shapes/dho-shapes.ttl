@@ -1,0 +1,182 @@
+# SHACL checks: the rules the data must obey.
+# Run against the graph AFTER reasoning and rules (see scripts/dho.py check).
+# Severity: Violation = the data is wrong. Warning = allowed, but flagged.
+
+@prefix dho:  <https://guoxiangng.github.io/dhamma-ontology/ns#> .
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# Lets the SPARQL constraints below use the dho: prefix.
+<https://guoxiangng.github.io/dhamma-ontology/shapes>
+    sh:declare [ sh:prefix "dho" ; sh:namespace "https://guoxiangng.github.io/dhamma-ontology/ns#"^^xsd:anyURI ] .
+
+# ---------------------------------------------------------------- S1: lists have the size the text says
+
+dho:ListCountShape a sh:NodeShape ;
+    sh:targetClass dho:NumberedList ;
+    sh:property [ sh:path dho:expectedCount ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:integer ] ;
+    sh:property [ sh:path dho:citedBy ; sh:minCount 1 ; sh:class dho:Passage ;
+                  sh:message "S1: a numbered list must cite the passage that states it." ] ;
+    sh:sparql [
+        sh:prefixes <https://guoxiangng.github.io/dhamma-ontology/shapes> ;
+        sh:message "S1: list has {?actual} members but the text says {?expected}." ;
+        sh:select """
+            SELECT $this ?actual ?expected WHERE {
+                $this dho:expectedCount ?expected .
+                { SELECT $this (COUNT(DISTINCT ?m) AS ?actual) WHERE { $this dho:hasMember ?m } GROUP BY $this }
+                FILTER (?actual != ?expected)
+            }""" ] .
+
+# ---------------------------------------------------------------- S2: nothing is both a hindrance and a wholesome factor
+
+dho:HindranceShape a sh:NodeShape ;
+    sh:targetClass dho:Hindrance ;
+    sh:not [ sh:class dho:AwakeningFactor ] ;
+    sh:message "S2: a hindrance cannot also be an awakening factor." .
+
+dho:HindranceNotJhanaShape a sh:NodeShape ;
+    sh:targetClass dho:Hindrance ;
+    sh:not [ sh:class dho:JhanaFactor ] ;
+    sh:message "S2: a hindrance cannot also be a jhāna factor." .
+
+# ---------------------------------------------------------------- S3: labels
+
+dho:QualityLabelShape a sh:NodeShape ;
+    sh:targetClass dho:MentalQuality ;
+    sh:property [ sh:path skos:prefLabel ;
+        sh:qualifiedValueShape [ sh:languageIn ( "en" ) ] ; sh:qualifiedMinCount 1 ; sh:qualifiedMaxCount 1 ;
+        sh:message "S3: needs exactly one English preferred label." ] ;
+    sh:property [ sh:path skos:prefLabel ;
+        sh:qualifiedValueShape [ sh:languageIn ( "pi" ) ] ; sh:qualifiedMinCount 1 ; sh:qualifiedMaxCount 1 ;
+        sh:message "S3: needs exactly one Pali preferred label." ] ;
+    sh:property [ sh:path skos:prefLabel ;
+        sh:qualifiedValueShape [ sh:languageIn ( "zh" ) ] ; sh:qualifiedMinCount 1 ;
+        sh:severity sh:Warning ;
+        sh:message "S3: no Chinese label yet." ] ;
+    sh:property [ sh:path dho:memberOf ; sh:minCount 1 ;
+        sh:message "S3: a mental quality must belong to at least one numbered list." ] .
+
+# ---------------------------------------------------------------- S4: nutriment statements are well formed and cited
+
+dho:NutrimentShape a sh:NodeShape ;
+    sh:targetClass dho:Nutriment ;
+    sh:property [ sh:path dho:object ;    sh:minCount 1 ; sh:maxCount 1 ; sh:class dho:AttentionObject ] ;
+    sh:property [ sh:path dho:attention ; sh:minCount 1 ; sh:maxCount 1 ;
+                  sh:in ( dho:RationalAttention dho:IrrationalAttention dho:NonAttention ) ] ;
+    sh:xone ( [ sh:path dho:fuels ; sh:minCount 1 ; sh:maxCount 1 ]
+              [ sh:path dho:starves ; sh:minCount 1 ; sh:maxCount 1 ] ) ;
+    sh:property [ sh:path dho:citedBy ; sh:minCount 1 ; sh:class dho:Passage ;
+                  sh:message "S4: every nutriment statement must cite a passage." ] .
+
+# ---------------------------------------------------------------- S5: the sutta's own grammar
+# SN 46.51 is strictly patterned:
+#   fuels a hindrance        <- irrational attention
+#   starves a hindrance      <- rational attention
+#   fuels an awakening factor <- rational attention
+#   starves an awakening factor <- not attending
+# Any statement that breaks the pattern is a data-entry error.
+
+dho:SuttaGrammarShape a sh:NodeShape ;
+    sh:targetClass dho:Nutriment ;
+    sh:sparql [
+        sh:prefixes <https://guoxiangng.github.io/dhamma-ontology/shapes> ;
+        sh:message "S5: breaks SN 46.51's pattern: {?effect} a {?kind} with {?att}." ;
+        sh:select """
+            SELECT $this ?effect ?kind ?att WHERE {
+                $this dho:attention ?att .
+                { $this dho:fuels ?q . BIND("fuels" AS ?effect) } UNION { $this dho:starves ?q . BIND("starves" AS ?effect) }
+                { ?q a dho:Hindrance . BIND("hindrance" AS ?kind) } UNION { ?q a dho:AwakeningFactor . BIND("awakening factor" AS ?kind) }
+                FILTER (!(
+                       (?effect = "fuels"   && ?kind = "hindrance"        && ?att = dho:IrrationalAttention)
+                    || (?effect = "starves" && ?kind = "hindrance"        && ?att = dho:RationalAttention)
+                    || (?effect = "fuels"   && ?kind = "awakening factor" && ?att = dho:RationalAttention)
+                    || (?effect = "starves" && ?kind = "awakening factor" && ?att = dho:NonAttention)
+                ))
+            }""" ] .
+
+# ---------------------------------------------------------------- S6: timing advice
+
+dho:TimingAdviceShape a sh:NodeShape ;
+    sh:targetClass dho:TimingAdvice ;
+    sh:property [ sh:path dho:develop ;  sh:minCount 1 ; sh:maxCount 1 ; sh:class dho:AwakeningFactor ] ;
+    sh:property [ sh:path dho:timing ;   sh:minCount 1 ; sh:maxCount 1 ; sh:class dho:Timing ] ;
+    sh:property [ sh:path dho:whenMind ; sh:maxCount 1 ; sh:class dho:MindState ] ;
+    sh:property [ sh:path dho:citedBy ;  sh:minCount 1 ; sh:class dho:Passage ;
+                  sh:message "S6: timing advice must cite a passage." ] .
+
+# ---------------------------------------------------------------- S7: commentary claims are layered and flagged
+
+dho:OppositionShape a sh:NodeShape ;
+    sh:targetClass dho:Opposition ;
+    sh:property [ sh:path dho:opponent ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path dho:target ;   sh:minCount 1 ; sh:maxCount 1 ; sh:class dho:Hindrance ] ;
+    sh:property [ sh:path dho:layer ;    sh:minCount 1 ; sh:maxCount 1 ;
+                  sh:in ( dho:CommentaryLayer dho:EditorLayer ) ;
+                  sh:message "S7: an opposition pairing is not stated in the suttas; it must sit on the commentary or editor layer." ] ;
+    sh:or ( [ sh:path dho:citedBy ; sh:minCount 1 ] [ sh:path dho:citationNote ; sh:minCount 1 ] ) .
+
+dho:OppositionVerifiedShape a sh:NodeShape ;
+    sh:targetClass dho:Opposition ;
+    sh:property [ sh:path dho:citedBy ; sh:minCount 1 ; sh:severity sh:Warning ;
+                  sh:message "S7: unverified: cites the commentary by reference only; we do not hold the text." ] .
+
+# ---------------------------------------------------------------- S8: passages are real
+
+dho:PassageShape a sh:NodeShape ;
+    sh:targetClass dho:Passage ;
+    sh:property [ sh:path dho:segment ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path dho:inText ;  sh:minCount 1 ; sh:maxCount 1 ; sh:class dho:Text ] ;
+    sh:property [ sh:path dho:textPi ;  sh:minCount 1 ;
+                  sh:message "S8: passage has no text: was it generated by build_passages.py?" ] .
+
+dho:CitationTargetShape a sh:NodeShape ;
+    sh:targetObjectsOf dho:citedBy ;
+    sh:class dho:Passage ;
+    sh:message "S8: cites something that is not a known passage (run scripts/build_passages.py?)." .
+
+# ---------------------------------------------------------------- S9: derived links are never written by hand
+
+dho:DerivedOnlyShape a sh:NodeShape ;
+    sh:targetSubjectsOf dho:counters ;
+    sh:sparql [
+        sh:prefixes <https://guoxiangng.github.io/dhamma-ontology/shapes> ;
+        sh:message "S9: '{?h}' counters link has no derivation record: dho:counters must come from rule R1, not be typed by hand." ;
+        sh:select """
+            SELECT $this ?h WHERE {
+                $this dho:counters ?h .
+                FILTER NOT EXISTS { ?d a dho:Derivation ; dho:derivedSubject $this ; dho:derivedObject ?h }
+            }""" ] .
+
+# ---------------------------------------------------------------- S10: every text has an honest coverage record
+
+dho:TextCoverageShape a sh:NodeShape ;
+    sh:targetClass dho:Text ;
+    sh:property [ sh:path dho:coverage ; sh:minCount 1 ; sh:maxCount 1 ; sh:class dho:CoverageStatus ;
+                  sh:message "S10: text has no coverage status in data/coverage.ttl." ] ;
+    sh:property [ sh:path dho:review ; sh:minCount 1 ; sh:maxCount 1 ; sh:class dho:ReviewStatus ;
+                  sh:message "S10: text has no review status in data/coverage.ttl." ] ;
+    sh:property [ sh:path dho:encodes ; sh:minCount 1 ;
+                  sh:message "S10: coverage record must say what was encoded." ] ;
+    sh:property [ sh:path dho:modelledBy ; sh:minCount 1 ;
+                  sh:message "S10: coverage record must say who modelled it." ] .
+
+dho:PartialSaysWhatsMissingShape a sh:NodeShape ;
+    sh:targetSubjectsOf dho:coverage ;
+    sh:sparql [
+        sh:prefixes <https://guoxiangng.github.io/dhamma-ontology/shapes> ;
+        sh:message "S10: a text that is not fully encoded must say what was left out (dho:leftOut)." ;
+        sh:select """
+            SELECT $this WHERE {
+                $this dho:coverage ?c . FILTER (?c != dho:FullyEncoded)
+                FILTER NOT EXISTS { $this dho:leftOut ?x }
+            }""" ] .
+
+# ---------------------------------------------------------------- S11: a definition names both terms and cites a passage
+
+dho:DefinitionShape a sh:NodeShape ;
+    sh:targetClass dho:Definition ;
+    sh:property [ sh:path dho:defines ; sh:minCount 1 ; sh:maxCount 1 ; sh:message "S11: definition must name the term it defines." ] ;
+    sh:property [ sh:path dho:as ;      sh:minCount 1 ; sh:maxCount 1 ; sh:message "S11: definition must name what the term is defined as." ] ;
+    sh:property [ sh:path dho:citedBy ; sh:minCount 1 ; sh:class dho:Passage ; sh:message "S11: definition must cite the passage that states it." ] .

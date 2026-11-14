@@ -1,0 +1,448 @@
+<title>Dhamma Ontology Graph</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,600;1,400&display=swap">
+<style>
+/* Layout: a working instrument. Graph canvas left, a reading panel right that cites the text for every link.
+   Palette: palm-leaf neutrals, with one colour per kind of quality (hindrance, awakening factor, jhāna factor). */
+:root {
+  --bg: #f4f3ee;
+  --surface: #fbfaf6;
+  --fg: #22231f;
+  --muted: #6c6d63;
+  --line: #d9d7cc;
+  --accent: #8a5a12;
+  --hindrance: #b04a35;
+  --factor: #2c7a68;
+  --jhana: #5a5aa6;
+  --mind: #7b7f8c;
+  --object: #9c9a8c;
+  --list: #3d3e37;
+  --derived: #c08a14;
+  --commentary: #8a5aa6;
+  --editor: #8f8f86;
+  --fuel: #b04a35;
+  --starve: #2c7a68;
+  --font-ui: "Noto Sans", "Segoe UI", system-ui, sans-serif;
+  --font-text: "Noto Serif", Georgia, "Songti SC", serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #171815; --surface: #1f201c; --fg: #e8e6dc; --muted: #a2a294; --line: #35362f; --accent: #e0a94a;
+    --hindrance: #e07a62; --factor: #5cbfa6; --jhana: #9d9df0; --mind: #a3a7b4; --object: #7d7c70; --list: #d6d4c8;
+    --derived: #f0bb3c; --commentary: #c69be0; --editor: #8a8a80; --fuel: #e07a62; --starve: #5cbfa6;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #171815; --surface: #1f201c; --fg: #e8e6dc; --muted: #a2a294; --line: #35362f; --accent: #e0a94a;
+  --hindrance: #e07a62; --factor: #5cbfa6; --jhana: #9d9df0; --mind: #a3a7b4; --object: #7d7c70; --list: #d6d4c8;
+  --derived: #f0bb3c; --commentary: #c69be0; --editor: #8a8a80; --fuel: #e07a62; --starve: #5cbfa6;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  background: var(--bg); color: var(--fg); font-family: var(--font-ui); font-size: 14px; line-height: 1.5;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 14px 16px; display: flex; flex-direction: column; gap: 10px;
+}
+header { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 20px; }
+h1 { margin: 0; font-size: 1.25rem; font-weight: 700; letter-spacing: -0.01em; text-wrap: balance; }
+h1 span { font-weight: 400; color: var(--muted); font-size: 0.95rem; margin-left: 6px; }
+.stats { display: flex; flex-wrap: wrap; gap: 4px 14px; color: var(--muted); font-size: 12.5px; font-variant-numeric: tabular-nums; }
+.stats b { color: var(--fg); font-weight: 600; }
+.stats .pass b { color: var(--factor); }
+
+.toolbar { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; }
+.search { position: relative; flex: 0 1 260px; min-width: 0; }
+.search input {
+  width: 100%; font: inherit; color: var(--fg); background: var(--surface); border: 1px solid var(--line);
+  border-radius: 6px; padding: 6px 10px;
+}
+.search input:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.group { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
+.group > span { font-size: 11px; text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted); margin-right: 2px; }
+button {
+  font: inherit; font-size: 12.5px; color: var(--fg); background: transparent; border: 1px solid var(--line);
+  border-radius: 999px; padding: 3px 10px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;
+}
+button:hover { border-color: var(--muted); }
+button[aria-pressed="true"] { background: var(--surface); border-color: var(--fg); }
+button[aria-pressed="false"] { color: var(--muted); }
+button[aria-pressed="false"] i { opacity: 0.35; }
+button i { display: inline-block; width: 16px; height: 0; border-top: 2px solid currentColor; }
+
+main { flex: 1; min-height: 0; display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: 12px; }
+#cy { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; min-height: 420px; position: relative; }
+.legend {
+  position: absolute; left: 10px; bottom: 8px; z-index: 2; display: flex; flex-wrap: wrap; gap: 4px 12px;
+  font-size: 11.5px; color: var(--muted); pointer-events: none; max-width: calc(100% - 20px);
+}
+.legend em { font-style: normal; display: inline-flex; align-items: center; gap: 5px; }
+.dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+
+aside { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; overflow-y: auto; padding: 14px 16px; min-width: 0; }
+aside h2 { margin: 0 0 2px; font-size: 1.15rem; line-height: 1.3; text-wrap: balance; }
+.names { font-family: var(--font-text); color: var(--muted); font-size: 0.95rem; }
+.names i { color: var(--fg); }
+.chips { display: flex; flex-wrap: wrap; gap: 4px; margin: 8px 0 4px; }
+.chip { font-size: 11.5px; border-radius: 4px; padding: 1px 7px; border: 1px solid var(--line); color: var(--muted); }
+.chip.k-hindrance { color: var(--hindrance); border-color: var(--hindrance); }
+.chip.k-factor { color: var(--factor); border-color: var(--factor); }
+.chip.k-jhana { color: var(--jhana); border-color: var(--jhana); }
+.small { font-size: 12.5px; color: var(--muted); }
+.def { font-family: var(--font-text); margin: 8px 0; }
+section.rel { margin-top: 14px; }
+section.rel h3 { margin: 0 0 4px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted); font-weight: 600; }
+.claim { padding: 6px 0; border-top: 1px solid var(--line); }
+.claim:first-of-type { border-top: 0; }
+.claim a.node { color: var(--fg); font-weight: 600; text-decoration: none; border-bottom: 1px dotted var(--muted); cursor: pointer; }
+.layer { font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; border-radius: 3px; padding: 0 5px; margin-left: 4px; white-space: nowrap; }
+.l-sutta { color: var(--fg); background: var(--line); }
+.l-derived { color: var(--surface); background: var(--derived); }
+.l-commentary { color: var(--surface); background: var(--commentary); }
+.l-editor { color: var(--surface); background: var(--editor); }
+.l-lexicon { color: var(--fg); background: var(--line); }
+.cites { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 3px; }
+.cite { font-size: 11.5px; font-variant-numeric: tabular-nums; padding: 0 6px; border-radius: 3px; }
+.quote { font-family: var(--font-text); font-size: 13px; margin: 6px 0 2px; padding-left: 10px; border-left: 2px solid var(--line); }
+.quote .pi { color: var(--muted); font-style: italic; display: block; margin-top: 2px; }
+.quote a { font-family: var(--font-ui); font-size: 11.5px; color: var(--accent); }
+.note { font-size: 12.5px; color: var(--muted); margin-top: 3px; }
+
+@media (max-width: 820px) {
+  main { grid-template-columns: minmax(0, 1fr); }
+  #cy { height: 62vh; min-height: 360px; }
+  aside { overflow: visible; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<header>
+  <h1>Dhamma Ontology Graph <span>hindrances, awakening factors, first jhāna</span></h1>
+  <div class="stats" id="stats"></div>
+</header>
+
+<div class="toolbar">
+  <div class="search"><input id="q" type="search" placeholder="Search: sleepy, uddhacca, 喜…" autocomplete="off" aria-label="Search concepts"></div>
+  <div class="group" id="groups"><span>Show</span></div>
+  <div class="group"><span>SN 46.51 as</span>
+    <button id="mode-arrow" aria-pressed="true" title="Collapse each nutriment into one arrow">arrows</button>
+    <button id="mode-node" aria-pressed="false" title="Show each nutriment as its own node, the way it is stored">n-ary nodes</button>
+  </div>
+  <div class="group"><button id="relayout" title="Run the layout again">Re-arrange</button></div>
+</div>
+
+<main>
+  <div id="cy">
+    <div class="legend">
+      <em><span class="dot" style="background:var(--hindrance)"></span>hindrance</em>
+      <em><span class="dot" style="background:var(--factor)"></span>awakening factor</em>
+      <em><span class="dot" style="background:var(--jhana)"></span>jhāna factor</em>
+      <em><span class="dot" style="background:var(--mind)"></span>mind state</em>
+      <em><span class="dot" style="background:var(--object);border-radius:2px"></span>object of attention</em>
+    </div>
+  </div>
+  <aside id="panel" aria-live="polite"></aside>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.28.1/cytoscape.min.js"></script>
+<script>
+const DATA = /*__DATA__*/null;
+
+const GROUPS = [
+  { id: "lists", label: "Lists", line: "solid", color: "--list", on: true },
+  { id: "nutriment", label: "Fuel / starve", line: "solid", color: "--fuel", on: true },
+  { id: "timing", label: "Timing", line: "solid", color: "--mind", on: true },
+  { id: "derived", label: "Derived (R1)", line: "solid", color: "--derived", on: true },
+  { id: "commentary", label: "Commentary", line: "dotted", color: "--commentary", on: true },
+  { id: "editor", label: "Editor", line: "dashed", color: "--editor", on: true },
+  { id: "senses", label: "Word senses", line: "solid", color: "--muted", on: false },
+];
+const groupOf = e => ({ "member of": "lists", "gives up": "lists", "has the factors": "lists", sense: "senses",
+  "is defined as": "lists",
+  counters: "derived", opposes: "commentary", "see also": "editor" })[e.rel]
+  || (e.timing ? "timing" : (e.rel === "fuels" || e.rel === "starves" || e.rel === "object") ? "nutriment" : "lists");
+const INVERSE = { "member of": "members", fuels: "fuelled by", starves: "starved by", counters: "countered by",
+  opposes: "opposed by", "gives up": "given up in", "is defined as": "defines", "has the factors": "factors of", "see also": "see also",
+  sense: "a sense of the word", "right time to develop": "right time to develop when the mind is",
+  "wrong time to develop": "wrong time to develop when the mind is" };
+const LAYER_NAME = { sutta: "sutta", derived: "derived · R1", commentary: "commentary · unverified", editor: "editor", lexicon: "lexicon" };
+
+const byId = Object.fromEntries(DATA.nodes.map(n => [n.id, n]));
+const state = { mode: "arrow", groups: Object.fromEntries(GROUPS.map(g => [g.id, g.on])), selected: "RestlessnessRemorse" };
+const css = name => getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+const fold = s => (s || "").normalize("NFKD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/-/g, " ").trim();
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+const name = id => byId[id]?.en || byId[id]?.pi || id;
+
+// ------------------------------------------------------------------ stats + toolbar
+const s = DATA.stats;
+document.getElementById("stats").innerHTML =
+  `<span><b>${s.concepts}</b> nodes</span><span><b>${s.links}</b> typed links</span><span><b>${s.passages}</b> cited passages</span>` +
+  `<span><b>${s.inferred}</b> triples inferred</span><span class="pass">SHACL <b>${s.shacl}</b> · ${s.warnings} warnings</span>`;
+
+const groupBox = document.getElementById("groups");
+for (const g of GROUPS) {
+  const b = document.createElement("button");
+  b.id = "g-" + g.id;
+  b.setAttribute("aria-pressed", String(g.on));
+  b.innerHTML = `<i style="border-top-style:${g.line};color:var(${g.color})"></i>${g.label}`;
+  b.onclick = () => { state.groups[g.id] = !state.groups[g.id]; b.setAttribute("aria-pressed", String(state.groups[g.id])); render(false); };
+  groupBox.appendChild(b);
+}
+const setMode = m => {
+  state.mode = m;
+  document.getElementById("mode-arrow").setAttribute("aria-pressed", String(m === "arrow"));
+  document.getElementById("mode-node").setAttribute("aria-pressed", String(m === "node"));
+  render(true);
+};
+document.getElementById("mode-arrow").onclick = () => setMode("arrow");
+document.getElementById("mode-node").onclick = () => setMode("node");
+document.getElementById("relayout").onclick = () => layout();
+
+// ------------------------------------------------------------------ elements
+function allEdges() {
+  const out = DATA.edges.map(e => ({ ...e, group: groupOf(e) }));
+  for (const n of DATA.nutriments) {
+    if (state.mode === "arrow") {
+      out.push({ id: n.id, source: n.object, target: n.target, rel: n.effect, layer: "sutta", cites: n.cites,
+        attention: n.attention, attentionId: n.attentionId, group: "nutriment", nutriment: n.id });
+    } else {
+      out.push({ id: n.id + "-o", source: n.object, target: n.id, rel: "object", layer: "sutta", cites: [], group: "nutriment", nutriment: n.id });
+      out.push({ id: n.id + "-t", source: n.id, target: n.target, rel: n.effect, layer: "sutta", cites: n.cites,
+        attention: n.attention, attentionId: n.attentionId, group: "nutriment", nutriment: n.id });
+    }
+  }
+  return out;
+}
+
+function elements() {
+  const edges = allEdges().filter(e => state.groups[e.group]);
+  const nodes = DATA.nodes.map(n => ({ ...n }));
+  if (state.mode === "node" && state.groups.nutriment) {
+    for (const n of DATA.nutriments) nodes.push({ id: n.id, kind: "nutriment", en: n.id, nutrimentOf: n });
+  }
+  // Hide nodes with nothing visible attached, except the core qualities.
+  const used = new Set(edges.flatMap(e => [e.source, e.target]));
+  const core = new Set(["hindrance", "factor", "jhana", "mindstate"]);
+  return [
+    ...nodes.filter(n => core.has(n.kind) || used.has(n.id)).map(n => ({ data: {
+      id: n.id, label: n.kind === "nutriment" ? "" : (n.en || n.pi), kind: n.kind,
+      both: (n.classes || []).length > 1 ? "yes" : "no" } })),
+    ...edges.map(e => ({ data: { ...e, label: e.rel === "counters" ? "counters" : "" } })),
+  ];
+}
+
+// ------------------------------------------------------------------ style (re-read tokens on theme change)
+function style() {
+  const c = Object.fromEntries(["fg", "muted", "line", "surface", "hindrance", "factor", "jhana", "mind", "object", "list",
+    "derived", "commentary", "editor", "fuel", "starve", "accent"].map(k => [k, css("--" + k)]));
+  return [
+    { selector: "node", style: { label: "data(label)", "font-family": "Noto Sans, Segoe UI, sans-serif", "font-size": 11,
+      color: c.fg, "text-wrap": "wrap", "text-max-width": 110, "text-valign": "bottom", "text-margin-y": 4,
+      "text-outline-color": c.surface, "text-outline-width": 2, width: 26, height: 26, "background-color": c.object,
+      "border-width": 0 } },
+    { selector: 'node[kind="hindrance"]', style: { "background-color": c.hindrance, width: 34, height: 34, "font-weight": 600, "font-size": 12 } },
+    { selector: 'node[kind="factor"]', style: { "background-color": c.factor, width: 34, height: 34, "font-weight": 600, "font-size": 12 } },
+    { selector: 'node[kind="jhana"]', style: { "background-color": c.jhana, shape: "round-hexagon", width: 30, height: 30, "font-weight": 600 } },
+    { selector: 'node[both="yes"]', style: { "border-width": 5, "border-color": c.jhana } },
+    { selector: 'node[kind="mindstate"]', style: { "background-color": c.mind, shape: "round-rectangle", width: 30, height: 22 } },
+    { selector: 'node[kind="object"]', style: { "background-color": c.object, shape: "round-rectangle", width: 12, height: 12,
+      "font-size": 9.5, color: c.muted, "text-max-width": 120 } },
+    { selector: 'node[kind="list"]', style: { "background-color": c.list, shape: "round-tag", width: 30, height: 30,
+      "font-weight": 700, "font-size": 12 } },
+    { selector: 'node[kind="attainment"]', style: { "background-color": c.accent, shape: "star", width: 34, height: 34, "font-weight": 600 } },
+    { selector: 'node[kind="word"]', style: { "background-color": c.fg, shape: "round-rectangle", width: 40, height: 24, "font-weight": 700 } },
+    { selector: 'node[kind="sense"]', style: { "background-color": c.surface, "border-width": 2, "border-color": c.muted, width: 18, height: 18, "font-size": 10 } },
+    { selector: 'node[kind="nutriment"]', style: { shape: "diamond", width: 9, height: 9, "background-color": c.muted } },
+    { selector: "edge", style: { width: 1.2, "line-color": c.line, "target-arrow-color": c.line, "target-arrow-shape": "triangle",
+      "arrow-scale": 0.7, "curve-style": "bezier", opacity: 0.9 } },
+    { selector: 'edge[group="lists"]', style: { "line-color": c.line, "target-arrow-color": c.line } },
+    { selector: 'edge[rel="fuels"]', style: { "line-color": c.fuel, "target-arrow-color": c.fuel, opacity: 0.55 } },
+    { selector: 'edge[rel="starves"]', style: { "line-color": c.starve, "target-arrow-color": c.starve, opacity: 0.55, "target-arrow-shape": "tee" } },
+    { selector: 'edge[rel="object"]', style: { "line-color": c.muted, "target-arrow-shape": "none", opacity: 0.4 } },
+    { selector: 'edge[group="timing"]', style: { "line-color": c.mind, "target-arrow-color": c.mind, opacity: 0.5 } },
+    { selector: 'edge[timing="WrongTime"]', style: { "line-style": "dashed", "target-arrow-shape": "tee" } },
+    { selector: 'edge[group="derived"]', style: { width: 3.5, "line-color": c.derived, "target-arrow-color": c.derived, opacity: 1,
+      label: "data(label)", "font-size": 10, color: c.derived, "text-outline-color": c.surface, "text-outline-width": 2, "font-weight": 700 } },
+    { selector: 'edge[group="commentary"]', style: { "line-style": "dotted", width: 2, "line-color": c.commentary, "target-arrow-color": c.commentary } },
+    { selector: 'edge[group="editor"]', style: { "line-style": "dashed", "line-color": c.editor, "target-arrow-shape": "none" } },
+    { selector: 'edge[group="senses"]', style: { "line-color": c.muted, "target-arrow-color": c.muted } },
+    { selector: ".dim", style: { opacity: 0.12 } },
+    { selector: "node.focus", style: { "border-width": 3, "border-color": c.accent } },
+    { selector: "node.match", style: { "border-width": 3, "border-color": c.accent } },
+    { selector: "edge.hot", style: { opacity: 1, width: 2.4 } },
+  ];
+}
+
+// ------------------------------------------------------------------ graph
+const cy = cytoscape({ container: document.getElementById("cy"), elements: elements(), style: style(),
+  wheelSensitivity: 0.25, minZoom: 0.2, maxZoom: 3 });
+
+function layout() {
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  cy.layout({ name: "cose", animate: !reduce, animationDuration: 600, nodeDimensionsIncludeLabels: true,
+    idealEdgeLength: e => e.data("group") === "lists" ? 140 : 90, nodeRepulsion: () => 14000,
+    edgeElasticity: e => e.data("group") === "lists" ? 40 : 100, gravity: 0.6, numIter: 2500, padding: 24,
+    randomize: true, componentSpacing: 90, stop: () => focus(state.selected, false) }).run();
+}
+
+function render(relayout) {
+  const pos = {};
+  cy.nodes().forEach(n => { pos[n.id()] = { ...n.position() }; });
+  cy.elements().remove();
+  cy.add(elements());
+  let missing = false;
+  cy.nodes().forEach(n => { if (pos[n.id()]) n.position(pos[n.id()]); else missing = true; });
+  if (relayout || missing) layout(); else focus(state.selected, false);
+}
+
+function focus(id, center = true) {
+  cy.elements().removeClass("dim focus hot");
+  const node = cy.getElementById(id);
+  if (!node.length) return;
+  const hood = node.closedNeighborhood();
+  cy.elements().not(hood).addClass("dim");
+  node.addClass("focus");
+  node.connectedEdges().addClass("hot");
+  if (center) cy.animate({ center: { eles: node }, duration: 300 });
+}
+
+cy.on("tap", "node", ev => {
+  const d = ev.target.data();
+  if (d.kind === "nutriment") return showNutriment(d.id);
+  select(d.id, false);
+});
+cy.on("tap", "edge", ev => showEdge(ev.target.data()));
+cy.on("tap", ev => { if (ev.target === cy) { cy.elements().removeClass("dim focus hot"); } });
+
+function select(id, center = true) {
+  state.selected = id;
+  focus(id, center);
+  showNode(id);
+}
+
+// ------------------------------------------------------------------ panel
+const panel = document.getElementById("panel");
+
+function citeHtml(ids) {
+  if (!ids || !ids.length) return "";
+  return `<div class="cites">${ids.map(p => `<button class="cite" data-p="${esc(p)}" aria-expanded="false">${esc(DATA.passages[p]?.segment || p)}</button>`).join("")}</div>
+    <div class="quotes"></div>`;
+}
+panel.addEventListener("click", ev => {
+  const b = ev.target.closest(".cite");
+  if (b) {
+    const box = b.closest(".claim, .block").querySelector(".quotes");
+    const p = DATA.passages[b.dataset.p];
+    const open = b.getAttribute("aria-expanded") === "true";
+    b.setAttribute("aria-expanded", String(!open));
+    b.setAttribute("aria-pressed", String(!open));
+    const existing = box.querySelector(`[data-q="${b.dataset.p}"]`);
+    if (open && existing) existing.remove();
+    else if (p && !existing) box.insertAdjacentHTML("beforeend",
+      `<div class="quote" data-q="${esc(b.dataset.p)}">“${esc(p.en)}”<span class="pi">${esc(p.pi)}</span>
+       <a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.segment)} on SuttaCentral ↗</a></div>`);
+    return;
+  }
+  const a = ev.target.closest("a.node");
+  if (a) { ev.preventDefault(); select(a.dataset.id); }
+});
+const link = id => `<a class="node" data-id="${esc(id)}" href="#">${esc(name(id))}</a>`;
+const layerTag = l => `<span class="layer l-${l}">${LAYER_NAME[l] || l}</span>`;
+
+function header(n) {
+  const kindChips = (n.classes || []).map(c => {
+    const k = c.startsWith("Hindrance") ? "hindrance" : c.startsWith("Awakening") ? "factor" : "jhana";
+    return `<span class="chip k-${k}">${esc(c)}</span>`;
+  }).join("");
+  const other = { mindstate: "Mind state", object: "Object of attention", list: "Numbered list", attainment: "Attainment",
+    word: "Word (lexical entry)", sense: "Word sense" }[n.kind];
+  return `<h2>${esc(n.en || n.pi)}</h2>
+    <div class="names">${n.pi && n.pi !== n.en ? `<i>${esc(n.pi)}</i>` : ""}${n.zh ? ` · ${esc(n.zh)}` : ""}</div>
+    <div class="chips">${kindChips}${other ? `<span class="chip">${other}</span>` : ""}</div>
+    ${n.inferred ? `<div class="small">Type inferred by the OWL reasoner from list membership, never written by hand.</div>` : ""}
+    ${n.alt?.length ? `<div class="small">Also: ${n.alt.map(esc).join(", ")}</div>` : ""}
+    ${n.hidden?.length ? `<div class="small">Search words: ${n.hidden.map(esc).join(", ")}</div>` : ""}
+    ${n.definition ? `<p class="def">${esc(n.definition)}</p>` : ""}
+    ${n.note ? `<p class="small">${esc(n.note)}</p>` : ""}
+    ${n.cites?.length ? `<div class="block"><div class="small">Stated in:</div>${citeHtml(n.cites)}</div>` : ""}`;
+}
+
+function showNode(id) {
+  const n = byId[id];
+  if (!n) return;
+  const groups = {};
+  const add = (title, html) => (groups[title] ||= []).push(html);
+  for (const e of allEdges()) {
+    const out = e.source === id, inc = e.target === id;
+    if ((!out && !inc) || e.rel === "object") continue;
+    const other = out ? e.target : e.source;
+    if (byId[other] === undefined && !e.nutriment) continue;
+    let title = out ? e.rel : (INVERSE[e.rel] || e.rel);
+    let what = link(other);
+    if (e.nutriment) {
+      const nu = DATA.nutriments.find(x => x.id === e.nutriment);
+      if (out && byId[id].kind === "object") what = `${link(nu.target)} <span class="small">with ${esc(nu.attention)}</span>`;
+      else what = `${esc(nu.attention)} to ${link(nu.object)}`;
+      title = out ? nu.effect : INVERSE[nu.effect];
+    }
+    add(title, `<div class="claim">${what}${layerTag(e.layer)}${e.note ? `<div class="note">${esc(e.note)}</div>` : ""}${citeHtml(e.cites)}</div>`);
+  }
+  for (const t of DATA.timing.filter(t => !t.state && t.factor === id)) {
+    add("timing", `<div class="claim">${esc(t.timing)}${layerTag("sutta")}${citeHtml(t.cites)}</div>`);
+  }
+  for (const [pid, p] of Object.entries(DATA.passages)) {
+    if (p.sense === id) add("passages using this sense", `<div class="claim">${esc(p.segment)}${citeHtml([pid])}</div>`);
+  }
+  if (n.kind === "word") {
+    for (const [pid, p] of Object.entries(DATA.passages)) if (p.contested)
+      add("contested, left unassigned", `<div class="claim">${esc(p.segment)} <span class="small">rendered “${esc(p.contested)}”</span>${citeHtml([pid])}</div>`);
+  }
+  panel.innerHTML = header(n) + Object.entries(groups).map(([t, rows]) =>
+    `<section class="rel"><h3>${esc(t)}</h3>${rows.join("")}</section>`).join("");
+}
+
+function showNutriment(id) {
+  const n = DATA.nutriments.find(x => x.id === id);
+  state.selected = id;
+  focus(id, false);
+  panel.innerHTML = `<h2>Nutriment ${esc(id)}</h2>
+    <p class="small">One of SN 46.51's 24 statements, stored as its own node (an n-ary relation) so the attention isn't lost.</p>
+    <div class="block claim">${esc(n.attention)} to ${link(n.object)} <b>${esc(n.effect)}</b> ${link(n.target)}${layerTag("sutta")}${citeHtml(n.cites)}</div>`;
+}
+
+function showEdge(e) {
+  if (e.nutriment) return showNutriment(e.nutriment);
+  panel.innerHTML = `<h2>${esc(name(e.source))} <span class="small">${esc(e.rel)}</span> ${esc(name(e.target))}</h2>
+    <div class="block claim">${link(e.source)} → ${link(e.target)}${layerTag(e.layer)}
+    ${e.note ? `<div class="note">${esc(e.note)}</div>` : ""}${citeHtml(e.cites)}</div>`;
+}
+
+// ------------------------------------------------------------------ search
+const q = document.getElementById("q");
+q.addEventListener("input", () => {
+  cy.nodes().removeClass("match");
+  const t = fold(q.value);
+  if (t.length < 2) return;
+  const hits = DATA.nodes.filter(n => [n.en, n.pi, n.zh, ...(n.alt || []), ...(n.hidden || [])]
+    .some(l => l && fold(l).includes(t)));
+  hits.forEach(h => cy.getElementById(h.id).addClass("match"));
+  if (hits.length) {
+    const best = hits.find(h => ["hindrance", "factor", "jhana", "mindstate"].includes(h.kind)) || hits[0];
+    select(best.id);
+  }
+});
+
+// ------------------------------------------------------------------ theme changes
+const restyle = () => cy.style(style());
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change", restyle);
+new MutationObserver(restyle).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+document.fonts?.ready.then(restyle);
+
+layout();
+showNode(state.selected);
+</script>

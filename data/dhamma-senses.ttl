@@ -1,0 +1,68 @@
+# One word, several meanings: "dhamma".
+#
+# Word layer (OntoLex-Lemon):  lexical entry -> senses -> one concept each.
+# Each sense is backed by a passage where the word clearly carries that meaning.
+# Passages that USE the word are tagged with the sense they use (dho:usesSense),
+# and the tag records who made the call, because that is interpretation.
+
+@prefix dho:     <https://guoxiangng.github.io/dhamma-ontology/ns#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+
+# ---------------------------------------------------------------- the word
+
+dho:lex-dhamma a ontolex:LexicalEntry , ontolex:Word ;
+    ontolex:canonicalForm [ a ontolex:Form ; ontolex:writtenRep "dhamma"@pi ] ;
+    ontolex:sense dho:sense-dhamma-teaching , dho:sense-dhamma-phenomenon ,
+                  dho:sense-dhamma-mind-object , dho:sense-dhamma-quality ;
+    skos:note "Sanskrit dharma; Chinese 法. Kept as one Pali entry for v0.1."@en .
+
+# ---------------------------------------------------------------- the senses
+
+dho:sense-dhamma-teaching a ontolex:LexicalSense ;
+    ontolex:reference dho:DhammaTeaching ;
+    dho:citedBy dho:p-sn11.3-10.2 .
+
+dho:sense-dhamma-phenomenon a ontolex:LexicalSense ;
+    ontolex:reference dho:DhammaPhenomenon ;
+    dho:citedBy dho:p-dhp279-1 .
+
+dho:sense-dhamma-mind-object a ontolex:LexicalSense ;
+    ontolex:reference dho:DhammaMindObject ;
+    dho:citedBy dho:p-mn148-5.3 , dho:p-mn148-6.8 .
+
+dho:sense-dhamma-quality a ontolex:LexicalSense ;
+    ontolex:reference dho:DhammaQuality ;
+    dho:citedBy dho:p-sn46.51-7.2 .
+
+# ---------------------------------------------------------------- the concepts
+
+dho:DhammaTeaching a dho:Concept ;
+    skos:prefLabel "the Dhamma (the Buddha's teaching)"@en , "dhamma"@pi , "法"@zh ;
+    skos:definition "The teaching the Buddha explained: 'the teaching is well explained by the Buddha' (svākkhāto bhagavatā dhammo)."@en .
+
+dho:DhammaPhenomenon a dho:Concept ;
+    skos:prefLabel "a dhamma (any phenomenon, any thing)"@en , "dhamma"@pi , "法"@zh ;
+    skos:definition "Any thing at all, as in 'all things are not-self' (sabbe dhammā anattā)."@en .
+
+dho:DhammaMindObject a dho:Concept ;
+    skos:prefLabel "a dhamma (an object of the mind, an idea)"@en , "dhamma"@pi , "法"@zh ;
+    skos:definition "What the mind knows, as the sixth sense field alongside sights, sounds, smells, tastes and touches (dhammāyatana)."@en .
+
+dho:DhammaQuality a dho:Concept ;
+    skos:prefLabel "a dhamma (a mental quality)"@en , "dhamma"@pi , "法"@zh ;
+    skos:definition "A quality of mind, e.g. 'qualities that are skillful and unskillful' (kusalākusalā dhammā)."@en .
+
+# ---------------------------------------------------------------- passages tagged with a sense
+
+# Clear cases.
+dho:p-sn46.51-7.2 dho:usesSense dho:sense-dhamma-quality ;
+    dho:senseAssignedBy "editor; matches Sujato's rendering 'qualities'" .
+
+# A contested case, recorded as contested rather than decided.
+# MN 10's fourth foundation, dhammesu dhammānupassī: translators differ
+# (Sujato renders it "principles"; others use "mind-objects", "phenomena" or
+# leave "dhammas" untranslated). We record Sujato's rendering, which we hold
+# verbatim, and do not assign a sense.
+dho:p-mn10-36.2 dho:translatorRendering "principles (Sujato)" ;
+    skos:note "Sense of dhamma here is contested; deliberately left unassigned in v0.1."@en .

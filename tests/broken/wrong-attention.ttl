@@ -1,0 +1,5 @@
+# Error: says RATIONAL attention fuels a hindrance. SN 46.51 never says that.
+# Expect S5 (breaks the sutta's grammar).
+@prefix dho: <https://guoxiangng.github.io/dhamma-ontology/ns#> .
+dho:n-bad a dho:Nutriment ; dho:object dho:o-beauty ; dho:attention dho:RationalAttention ;
+    dho:fuels dho:SensualDesire ; dho:citedBy dho:p-sn46.51-1.5 .

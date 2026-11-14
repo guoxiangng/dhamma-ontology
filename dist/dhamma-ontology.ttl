@@ -1,0 +1,1807 @@
+# dhamma-ontology: https://github.com/guoxiangng/dhamma-ontology
+# Asserted: schema and data as written.
+# Sutta text from SuttaCentral (CC0): English by Bhikkhu Sujato, Pali from the Mahāsaṅgīti edition.
+# Personal learning project; modelling unreviewed. See COVERAGE.md and DECISIONS.md.
+
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dho: <https://guoxiangng.github.io/dhamma-ontology/ns#> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://guoxiangng.github.io/dhamma-ontology/ns> a owl:Ontology ;
+    rdfs:label "Dhamma ontology (v0.1)"@en ;
+    rdfs:comment "A small, citation-first ontology of the hindrances, awakening factors and jhāna factors, built from the Pali suttas. Every doctrinal link points to the passage that states it."@en ;
+    owl:versionInfo "0.1" .
+
+dho:EditorLayer a dho:SourceLayer ;
+    rdfs:label "Editor's judgment (this project)"@en .
+
+dho:FirstJhana a dho:Attainment ;
+    skos:altLabel "first jhāna"@en ;
+    skos:prefLabel "first absorption"@en,
+        "paṭhamaṁ jhānaṁ"@pi,
+        "初禪"@zh ;
+    dho:citedBy dho:p-mn43-20.2,
+        dho:p-mn43-20.3,
+        dho:p-mn43-20.4 ;
+    dho:givesUp dho:FiveHindrances ;
+    dho:possesses dho:FirstJhanaFactors .
+
+dho:ReviewedByOwner a dho:ReviewStatus ;
+    rdfs:label "reviewed by the project owner"@en .
+
+dho:ReviewedExternally a dho:ReviewStatus ;
+    rdfs:label "reviewed by a qualified outside reader"@en .
+
+dho:as a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "as"@en ;
+    rdfs:domain dho:Definition ;
+    rdfs:range dho:Concept .
+
+dho:attention a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "attention"@en ;
+    rdfs:domain dho:Nutriment ;
+    rdfs:range dho:AttentionMode .
+
+dho:citationNote a owl:DatatypeProperty ;
+    rdfs:label "citation note"@en ;
+    rdfs:comment "Free-text reference for sources we do not hold verbatim (e.g. Visuddhimagga). Claims that only have this are flagged as unverified."@en .
+
+dho:citedBy a owl:ObjectProperty ;
+    rdfs:label "cited by"@en ;
+    rdfs:comment "The passage(s) that state this claim."@en ;
+    rdfs:range dho:Passage .
+
+dho:counters a owl:ObjectProperty ;
+    rdfs:label "counters"@en ;
+    rdfs:comment "Derived by rule R1: the same object, attended to rationally, both fuels this awakening factor and starves that hindrance (SN 46.51). The sutta never states it directly."@en ;
+    rdfs:domain dho:AwakeningFactor ;
+    rdfs:range dho:Hindrance .
+
+dho:coverage a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "coverage"@en ;
+    rdfs:domain dho:Text ;
+    rdfs:range dho:CoverageStatus .
+
+dho:def-01 a dho:Definition ;
+    dho:as dho:Immersion ;
+    dho:citedBy dho:p-mn44-12.2 ;
+    dho:defines dho:Unification .
+
+dho:defines a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "defines"@en ;
+    rdfs:domain dho:Definition ;
+    rdfs:range dho:Concept .
+
+dho:derivedBy a owl:DatatypeProperty ;
+    rdfs:label "derived by rule"@en ;
+    rdfs:domain dho:Derivation .
+
+dho:derivedObject a owl:ObjectProperty ;
+    rdfs:label "derived object"@en ;
+    rdfs:domain dho:Derivation .
+
+dho:derivedSubject a owl:ObjectProperty ;
+    rdfs:label "derived subject"@en ;
+    rdfs:domain dho:Derivation .
+
+dho:develop a owl:ObjectProperty ;
+    rdfs:label "develop"@en ;
+    rdfs:domain dho:TimingAdvice ;
+    rdfs:range dho:AwakeningFactor .
+
+dho:editorialRelated a owl:ObjectProperty ;
+    rdfs:label "related (editor's judgment)"@en ;
+    rdfs:comment "A link this project draws that no text states outright. Always shown as the editor's view."@en ;
+    rdfs:subPropertyOf skos:related .
+
+dho:encodes a owl:DatatypeProperty ;
+    rdfs:label "encodes"@en ;
+    rdfs:comment "Plain description of what was modelled from this text."@en ;
+    rdfs:domain dho:Text .
+
+dho:expectedCount a owl:DatatypeProperty ;
+    rdfs:label "expected count"@en ;
+    rdfs:comment "How many members the text says the list has. SHACL checks the data matches."@en ;
+    rdfs:domain dho:NumberedList ;
+    rdfs:range xsd:integer .
+
+dho:fuels a owl:ObjectProperty ;
+    rdfs:label "fuels"@en ;
+    rdfs:comment "Makes the quality arise, or increase once arisen (āhāra)."@en ;
+    rdfs:domain dho:Nutriment ;
+    rdfs:range dho:MentalQuality .
+
+dho:givesUp a owl:ObjectProperty ;
+    rdfs:label "has given up"@en,
+        "vippahīna"@pi ;
+    rdfs:domain dho:Attainment ;
+    rdfs:range dho:NumberedList .
+
+dho:inText a owl:ObjectProperty ;
+    rdfs:label "in text"@en ;
+    rdfs:domain dho:Passage ;
+    rdfs:range dho:Text .
+
+dho:layer a owl:ObjectProperty ;
+    rdfs:label "layer"@en ;
+    rdfs:comment "Which source layer a text or claim belongs to."@en .
+
+dho:leftOut a owl:DatatypeProperty ;
+    rdfs:label "left out"@en ;
+    rdfs:comment "Plain description of what in this text is NOT modelled, so nobody mistakes partial for complete."@en ;
+    rdfs:domain dho:Text .
+
+dho:lex-dhamma a ontolex:LexicalEntry,
+        ontolex:Word ;
+    skos:note "Sanskrit dharma; Chinese 法. Kept as one Pali entry for v0.1."@en ;
+    ontolex:canonicalForm [ a ontolex:Form ;
+            ontolex:writtenRep "dhamma"@pi ] ;
+    ontolex:sense dho:sense-dhamma-mind-object,
+        dho:sense-dhamma-phenomenon,
+        dho:sense-dhamma-quality,
+        dho:sense-dhamma-teaching .
+
+dho:modelledBy a owl:DatatypeProperty ;
+    rdfs:label "modelled by"@en ;
+    rdfs:domain dho:Text .
+
+dho:modelledOn a owl:DatatypeProperty ;
+    rdfs:label "modelled on"@en ;
+    rdfs:domain dho:Text ;
+    rdfs:range xsd:date .
+
+dho:n-01 a dho:Nutriment ;
+    dho:attention dho:IrrationalAttention ;
+    dho:citedBy dho:p-sn46.2-2.2,
+        dho:p-sn46.2-2.3,
+        dho:p-sn46.51-1.5,
+        dho:p-sn46.51-1.6 ;
+    dho:fuels dho:SensualDesire ;
+    dho:object dho:o-beauty .
+
+dho:n-02 a dho:Nutriment ;
+    dho:attention dho:IrrationalAttention ;
+    dho:citedBy dho:p-sn46.2-3.2,
+        dho:p-sn46.2-3.3,
+        dho:p-sn46.51-2.2,
+        dho:p-sn46.51-2.3 ;
+    dho:fuels dho:IllWill ;
+    dho:object dho:o-aversion .
+
+dho:n-03 a dho:Nutriment ;
+    dho:attention dho:IrrationalAttention ;
+    dho:citedBy dho:p-sn46.2-4.2,
+        dho:p-sn46.2-4.3,
+        dho:p-sn46.51-3.2,
+        dho:p-sn46.51-3.3 ;
+    dho:fuels dho:DullnessDrowsiness ;
+    dho:object dho:o-sluggishness .
+
+dho:n-04 a dho:Nutriment ;
+    dho:attention dho:IrrationalAttention ;
+    dho:citedBy dho:p-sn46.2-5.2,
+        dho:p-sn46.2-5.3,
+        dho:p-sn46.51-4.2,
+        dho:p-sn46.51-4.3 ;
+    dho:fuels dho:RestlessnessRemorse ;
+    dho:object dho:o-unsettled-mind .
+
+dho:n-05 a dho:Nutriment ;
+    dho:attention dho:IrrationalAttention ;
+    dho:citedBy dho:p-sn46.2-6.2,
+        dho:p-sn46.2-6.3,
+        dho:p-sn46.51-5.2,
+        dho:p-sn46.51-5.3 ;
+    dho:fuels dho:Doubt ;
+    dho:object dho:o-grounds-doubt .
+
+dho:n-06 a dho:Nutriment ;
+    dho:attention dho:RationalAttention ;
+    dho:citedBy dho:p-sn46.2-9.2,
+        dho:p-sn46.2-9.3,
+        dho:p-sn46.51-6.2,
+        dho:p-sn46.51-6.3 ;
+    dho:fuels dho:Mindfulness ;
+    dho:object dho:o-grounds-mindfulness .
+
+dho:n-07 a dho:Nutriment ;
+    dho:attention dho:RationalAttention ;
+    dho:citedBy dho:p-sn46.2-10.2,
+        dho:p-sn46.2-10.3,
+        dho:p-sn46.51-7.2,
+        dho:p-sn46.51-7.3 ;
+    dho:fuels dho:Investigation ;
+    dho:object dho:o-qualities .
+
+dho:n-08 a dho:Nutriment ;
+    dho:attention dho:RationalAttention ;
+    dho:citedBy dho:p-sn46.2-11.2,
+        dho:p-sn46.2-11.3,
+        dho:p-sn46.51-8.2,
+        dho:p-sn46.51-8.3 ;
+    dho:fuels dho:Energy ;
+    dho:object dho:o-energy-elements .
+
+dho:n-09 a dho:Nutriment ;
+    dho:attention dho:RationalAttention ;
+    dho:citedBy dho:p-sn46.2-12.2,
+        dho:p-sn46.2-12.3,
+        dho:p-sn46.51-9.2,
+        dho:p-sn46.51-9.3 ;
+    dho:fuels dho:Rapture ;
+    dho:object dho:o-grounds-rapture .
+
+dho:n-10 a dho:Nutriment ;
+    dho:attention dho:RationalAttention ;
+    dho:citedBy dho:p-sn46.2-13.2,
+        dho:p-sn46.2-13.3,
+        dho:p-sn46.51-10.2,
+        dho:p-sn46.51-10.3 ;
+    dho:fuels dho:Tranquility ;
+    dho:object dho:o-tranquility .
+
+dho:n-11 a dho:Nutriment ;
+    dho:attention dho:RationalAttention ;
+    dho:citedBy dho:p-sn46.2-14.2,
+        dho:p-sn46.2-14.3,
+        dho:p-sn46.51-11.2,
+        dho:p-sn46.51-11.3 ;
+    dho:fuels dho:Immersion ;
+    dho:object dho:o-serenity .
+
+dho:n-12 a dho:Nutriment ;
+    dho:attention dho:RationalAttention ;
+    dho:citedBy dho:p-sn46.2-15.2,
+        dho:p-sn46.2-15.3,
+        dho:p-sn46.51-12.2,
+        dho:p-sn46.51-12.3 ;
+    dho:fuels dho:Equanimity ;
+    dho:object dho:o-grounds-equanimity .
+
+dho:n-13 a dho:Nutriment ;
+    dho:attention dho:RationalAttention ;
+    dho:citedBy dho:p-sn46.51-13.2,
+        dho:p-sn46.51-13.3 ;
+    dho:object dho:o-ugliness ;
+    dho:starves dho:SensualDesire .
+
+dho:n-14 a dho:Nutriment ;
+    dho:attention dho:RationalAttention ;
+    dho:citedBy dho:p-sn46.51-14.2,
+        dho:p-sn46.51-14.3 ;
+    dho:object dho:o-metta ;
+    dho:starves dho:IllWill .
+
+dho:n-15 a dho:Nutriment ;
+    dho:attention dho:RationalAttention ;
+    dho:citedBy dho:p-sn46.51-15.2,
+        dho:p-sn46.51-15.3 ;
+    dho:object dho:o-energy-elements ;
+    dho:starves dho:DullnessDrowsiness .
+
+dho:n-16 a dho:Nutriment ;
+    dho:attention dho:RationalAttention ;
+    dho:citedBy dho:p-sn46.51-16.2,
+        dho:p-sn46.51-16.3 ;
+    dho:object dho:o-settled-mind ;
+    dho:starves dho:RestlessnessRemorse .
+
+dho:n-17 a dho:Nutriment ;
+    dho:attention dho:RationalAttention ;
+    dho:citedBy dho:p-sn46.51-17.2,
+        dho:p-sn46.51-17.3 ;
+    dho:object dho:o-qualities ;
+    dho:starves dho:Doubt .
+
+dho:n-18 a dho:Nutriment ;
+    dho:attention dho:NonAttention ;
+    dho:citedBy dho:p-sn46.51-18.2,
+        dho:p-sn46.51-18.3 ;
+    dho:object dho:o-grounds-mindfulness ;
+    dho:starves dho:Mindfulness .
+
+dho:n-19 a dho:Nutriment ;
+    dho:attention dho:NonAttention ;
+    dho:citedBy dho:p-sn46.51-19.2,
+        dho:p-sn46.51-19.3 ;
+    dho:object dho:o-qualities ;
+    dho:starves dho:Investigation .
+
+dho:n-20 a dho:Nutriment ;
+    dho:attention dho:NonAttention ;
+    dho:citedBy dho:p-sn46.51-20.2,
+        dho:p-sn46.51-20.3 ;
+    dho:object dho:o-energy-elements ;
+    dho:starves dho:Energy .
+
+dho:n-21 a dho:Nutriment ;
+    dho:attention dho:NonAttention ;
+    dho:citedBy dho:p-sn46.51-21.2,
+        dho:p-sn46.51-21.3 ;
+    dho:object dho:o-grounds-rapture ;
+    dho:starves dho:Rapture .
+
+dho:n-22 a dho:Nutriment ;
+    dho:attention dho:NonAttention ;
+    dho:citedBy dho:p-sn46.51-22.2,
+        dho:p-sn46.51-22.3 ;
+    dho:object dho:o-tranquility ;
+    dho:starves dho:Tranquility .
+
+dho:n-23 a dho:Nutriment ;
+    dho:attention dho:NonAttention ;
+    dho:citedBy dho:p-sn46.51-23.2,
+        dho:p-sn46.51-23.3 ;
+    dho:object dho:o-serenity ;
+    dho:starves dho:Immersion .
+
+dho:n-24 a dho:Nutriment ;
+    dho:attention dho:NonAttention ;
+    dho:citedBy dho:p-sn46.51-24.2,
+        dho:p-sn46.51-24.3 ;
+    dho:object dho:o-grounds-equanimity ;
+    dho:starves dho:Equanimity .
+
+dho:object a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "object"@en ;
+    rdfs:domain dho:Nutriment ;
+    rdfs:range dho:AttentionObject .
+
+dho:op-01 a dho:Opposition ;
+    dho:citationNote "Visuddhimagga IV.86 (citing the Peṭakopadesa)" ;
+    dho:layer dho:CommentaryLayer ;
+    dho:opponent dho:Unification ;
+    dho:referencesText dho:t-vism ;
+    dho:target dho:SensualDesire .
+
+dho:op-02 a dho:Opposition ;
+    dho:citationNote "Visuddhimagga IV.86 (citing the Peṭakopadesa)" ;
+    dho:layer dho:CommentaryLayer ;
+    dho:opponent dho:Rapture ;
+    dho:referencesText dho:t-vism ;
+    dho:target dho:IllWill .
+
+dho:op-03 a dho:Opposition ;
+    dho:citationNote "Visuddhimagga IV.86 (citing the Peṭakopadesa)" ;
+    dho:layer dho:CommentaryLayer ;
+    dho:opponent dho:PlacingTheMind ;
+    dho:referencesText dho:t-vism ;
+    dho:target dho:DullnessDrowsiness .
+
+dho:op-04 a dho:Opposition ;
+    dho:citationNote "Visuddhimagga IV.86 (citing the Peṭakopadesa)" ;
+    dho:layer dho:CommentaryLayer ;
+    dho:opponent dho:Bliss ;
+    dho:referencesText dho:t-vism ;
+    dho:target dho:RestlessnessRemorse .
+
+dho:op-05 a dho:Opposition ;
+    dho:citationNote "Visuddhimagga IV.86 (citing the Peṭakopadesa)" ;
+    dho:layer dho:CommentaryLayer ;
+    dho:opponent dho:KeepingConnected ;
+    dho:referencesText dho:t-vism ;
+    dho:target dho:Doubt .
+
+dho:opponent a owl:ObjectProperty ;
+    rdfs:label "opponent"@en ;
+    rdfs:domain dho:Opposition ;
+    rdfs:range dho:MentalQuality .
+
+dho:p-mn10-36.2 a dho:Passage ;
+    skos:note "Sense of dhamma here is contested; deliberately left unassigned in v0.1."@en ;
+    dho:inText dho:t-mn10 ;
+    dho:segment "mn10:36.2" ;
+    dho:textEn "It’s when a mendicant meditates by observing an aspect of principles with respect to the five hindrances."@en ;
+    dho:textPi "Idha, bhikkhave, bhikkhu dhammesu dhammānupassī viharati pañcasu nīvaraṇesu."@pi ;
+    dho:translatorRendering "principles (Sujato)" ;
+    dho:url "https://suttacentral.net/mn10/en/sujato#mn10:36.2"^^xsd:anyURI .
+
+dho:possesses a owl:ObjectProperty ;
+    rdfs:label "possesses"@en,
+        "samannāgata"@pi ;
+    rdfs:domain dho:Attainment ;
+    rdfs:range dho:NumberedList .
+
+dho:referencesText a owl:ObjectProperty ;
+    rdfs:label "references text"@en ;
+    rdfs:comment "For claims cited by reference only (dho:citationNote): the text referred to, which we do not hold."@en ;
+    rdfs:range dho:Text .
+
+dho:review a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "review"@en ;
+    rdfs:domain dho:Text ;
+    rdfs:range dho:ReviewStatus .
+
+dho:segment a owl:DatatypeProperty ;
+    rdfs:label "segment id"@en ;
+    rdfs:domain dho:Passage .
+
+dho:senseAssignedBy a owl:DatatypeProperty ;
+    rdfs:label "sense assigned by"@en .
+
+dho:starves a owl:ObjectProperty ;
+    rdfs:label "starves"@en ;
+    rdfs:comment "Prevents the quality arising, or its growth once arisen (anāhāra)."@en ;
+    rdfs:domain dho:Nutriment ;
+    rdfs:range dho:MentalQuality .
+
+dho:ta-01 a dho:TimingAdvice ;
+    dho:citedBy dho:p-sn46.53-4.1,
+        dho:p-sn46.53-4.3 ;
+    dho:develop dho:Tranquility ;
+    dho:timing dho:WrongTime ;
+    dho:whenMind dho:SluggishMind .
+
+dho:ta-02 a dho:TimingAdvice ;
+    dho:citedBy dho:p-sn46.53-4.1,
+        dho:p-sn46.53-4.3 ;
+    dho:develop dho:Immersion ;
+    dho:timing dho:WrongTime ;
+    dho:whenMind dho:SluggishMind .
+
+dho:ta-03 a dho:TimingAdvice ;
+    dho:citedBy dho:p-sn46.53-4.1,
+        dho:p-sn46.53-4.3 ;
+    dho:develop dho:Equanimity ;
+    dho:timing dho:WrongTime ;
+    dho:whenMind dho:SluggishMind .
+
+dho:ta-04 a dho:TimingAdvice ;
+    dho:citedBy dho:p-sn46.53-7.1,
+        dho:p-sn46.53-7.3 ;
+    dho:develop dho:Investigation ;
+    dho:timing dho:RightTime ;
+    dho:whenMind dho:SluggishMind .
+
+dho:ta-05 a dho:TimingAdvice ;
+    dho:citedBy dho:p-sn46.53-7.1,
+        dho:p-sn46.53-7.3 ;
+    dho:develop dho:Energy ;
+    dho:timing dho:RightTime ;
+    dho:whenMind dho:SluggishMind .
+
+dho:ta-06 a dho:TimingAdvice ;
+    dho:citedBy dho:p-sn46.53-7.1,
+        dho:p-sn46.53-7.3 ;
+    dho:develop dho:Rapture ;
+    dho:timing dho:RightTime ;
+    dho:whenMind dho:SluggishMind .
+
+dho:ta-07 a dho:TimingAdvice ;
+    dho:citedBy dho:p-sn46.53-10.1,
+        dho:p-sn46.53-10.3 ;
+    dho:develop dho:Investigation ;
+    dho:timing dho:WrongTime ;
+    dho:whenMind dho:RestlessMind .
+
+dho:ta-08 a dho:TimingAdvice ;
+    dho:citedBy dho:p-sn46.53-10.1,
+        dho:p-sn46.53-10.3 ;
+    dho:develop dho:Energy ;
+    dho:timing dho:WrongTime ;
+    dho:whenMind dho:RestlessMind .
+
+dho:ta-09 a dho:TimingAdvice ;
+    dho:citedBy dho:p-sn46.53-10.1,
+        dho:p-sn46.53-10.3 ;
+    dho:develop dho:Rapture ;
+    dho:timing dho:WrongTime ;
+    dho:whenMind dho:RestlessMind .
+
+dho:ta-10 a dho:TimingAdvice ;
+    dho:citedBy dho:p-sn46.53-13.1,
+        dho:p-sn46.53-13.3 ;
+    dho:develop dho:Tranquility ;
+    dho:timing dho:RightTime ;
+    dho:whenMind dho:RestlessMind .
+
+dho:ta-11 a dho:TimingAdvice ;
+    dho:citedBy dho:p-sn46.53-13.1,
+        dho:p-sn46.53-13.3 ;
+    dho:develop dho:Immersion ;
+    dho:timing dho:RightTime ;
+    dho:whenMind dho:RestlessMind .
+
+dho:ta-12 a dho:TimingAdvice ;
+    dho:citedBy dho:p-sn46.53-13.1,
+        dho:p-sn46.53-13.3 ;
+    dho:develop dho:Equanimity ;
+    dho:timing dho:RightTime ;
+    dho:whenMind dho:RestlessMind .
+
+dho:ta-13 a dho:TimingAdvice ;
+    dho:citedBy dho:p-sn46.53-15.4 ;
+    dho:develop dho:Mindfulness ;
+    dho:timing dho:AlwaysUseful .
+
+dho:target a owl:ObjectProperty ;
+    rdfs:label "target"@en ;
+    rdfs:domain dho:Opposition ;
+    rdfs:range dho:Hindrance .
+
+dho:textEn a owl:DatatypeProperty ;
+    rdfs:label "English"@en ;
+    rdfs:domain dho:Passage .
+
+dho:textPi a owl:DatatypeProperty ;
+    rdfs:label "Pali"@en ;
+    rdfs:domain dho:Passage .
+
+dho:timing a owl:ObjectProperty ;
+    rdfs:label "timing"@en ;
+    rdfs:domain dho:TimingAdvice ;
+    rdfs:range dho:Timing .
+
+dho:translatorRendering a owl:DatatypeProperty ;
+    rdfs:label "translator's rendering"@en .
+
+dho:url a owl:DatatypeProperty ;
+    rdfs:label "url"@en ;
+    rdfs:range xsd:anyURI .
+
+dho:usesSense a owl:ObjectProperty ;
+    rdfs:label "uses sense"@en ;
+    rdfs:comment "Which sense of an ambiguous word a passage uses. This is interpretation, so it records who made the call."@en ;
+    rdfs:domain dho:Passage ;
+    rdfs:range ontolex:LexicalSense .
+
+dho:via a owl:ObjectProperty ;
+    rdfs:label "via"@en ;
+    rdfs:comment "The evidence a derived link was built from."@en ;
+    rdfs:domain dho:Derivation .
+
+dho:whenMind a owl:ObjectProperty ;
+    rdfs:label "when the mind is"@en ;
+    rdfs:domain dho:TimingAdvice ;
+    rdfs:range dho:MindState .
+
+dho:AlwaysUseful a dho:Timing ;
+    rdfs:label "always useful"@en,
+        "sabbatthika"@pi .
+
+dho:DhammaMindObject a dho:Concept ;
+    skos:definition "What the mind knows, as the sixth sense field alongside sights, sounds, smells, tastes and touches (dhammāyatana)."@en ;
+    skos:prefLabel "a dhamma (an object of the mind, an idea)"@en,
+        "dhamma"@pi,
+        "法"@zh .
+
+dho:DhammaPhenomenon a dho:Concept ;
+    skos:definition "Any thing at all, as in 'all things are not-self' (sabbe dhammā anattā)."@en ;
+    skos:prefLabel "a dhamma (any phenomenon, any thing)"@en,
+        "dhamma"@pi,
+        "法"@zh .
+
+dho:DhammaQuality a dho:Concept ;
+    skos:definition "A quality of mind, e.g. 'qualities that are skillful and unskillful' (kusalākusalā dhammā)."@en ;
+    skos:prefLabel "a dhamma (a mental quality)"@en,
+        "dhamma"@pi,
+        "法"@zh .
+
+dho:DhammaTeaching a dho:Concept ;
+    skos:definition "The teaching the Buddha explained: 'the teaching is well explained by the Buddha' (svākkhāto bhagavatā dhammo)."@en ;
+    skos:prefLabel "the Dhamma (the Buddha's teaching)"@en,
+        "dhamma"@pi,
+        "法"@zh .
+
+dho:FullyEncoded a dho:CoverageStatus ;
+    rdfs:label "fully encoded"@en ;
+    rdfs:comment "Every teaching claim in the text is modelled."@en .
+
+dho:JhanaFactor a owl:Class ;
+    rdfs:label "Factor of the first jhāna"@en,
+        "jhānaṅga"@pi,
+        "禪支"@zh ;
+    rdfs:subClassOf dho:MentalQuality ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:hasValue dho:FirstJhanaFactors ;
+            owl:onProperty dho:memberOf ] .
+
+dho:ReferencedOnly a dho:CoverageStatus ;
+    rdfs:label "referenced only"@en ;
+    rdfs:comment "Cited by reference; we do not hold its text, so its claims are unverified."@en .
+
+dho:SevenAwakeningFactors a dho:NumberedList ;
+    skos:altLabel "the seven factors of enlightenment"@en ;
+    skos:prefLabel "the seven awakening factors"@en,
+        "satta bojjhaṅgā"@pi,
+        "七覺支"@zh ;
+    dho:citedBy dho:p-sn46.51-1.2 ;
+    dho:expectedCount 7 ;
+    dho:hasMember dho:Energy,
+        dho:Equanimity,
+        dho:Immersion,
+        dho:Investigation,
+        dho:Mindfulness,
+        dho:Rapture,
+        dho:Tranquility .
+
+dho:hasMember a owl:ObjectProperty ;
+    rdfs:label "has member"@en ;
+    rdfs:domain dho:NumberedList ;
+    rdfs:range dho:Concept ;
+    rdfs:subPropertyOf skos:member .
+
+dho:o-aversion a dho:AttentionObject ;
+    skos:prefLabel "the feature of aversion"@en,
+        "paṭighanimitta"@pi .
+
+dho:o-beauty a dho:AttentionObject ;
+    skos:prefLabel "the feature of beauty"@en,
+        "subhanimitta"@pi .
+
+dho:o-grounds-doubt a dho:AttentionObject ;
+    skos:prefLabel "things that are grounds for doubt"@en,
+        "vicikicchāṭṭhānīyā dhammā"@pi .
+
+dho:o-metta a dho:AttentionObject ;
+    skos:prefLabel "the heart's release by love"@en,
+        "mettācetovimutti"@pi .
+
+dho:o-settled-mind a dho:AttentionObject ;
+    skos:prefLabel "the settled mind"@en,
+        "cetaso vūpasamo"@pi .
+
+dho:o-sluggishness a dho:AttentionObject ;
+    skos:prefLabel "discontent, sloth, yawning, sleepiness after eating, and mental sluggishness"@en,
+        "arati tandi vijambhitā bhattasammado cetaso ca līnattaṁ"@pi .
+
+dho:o-ugliness a dho:AttentionObject ;
+    skos:prefLabel "the feature of ugliness"@en,
+        "asubhanimitta"@pi .
+
+dho:o-unsettled-mind a dho:AttentionObject ;
+    skos:prefLabel "the unsettled mind"@en,
+        "cetaso avūpasamo"@pi .
+
+dho:p-dhp279-1 a dho:Passage ;
+    dho:inText dho:t-dhp279 ;
+    dho:segment "dhp279:1" ;
+    dho:textEn "All things are not-self—"@en ;
+    dho:textPi "“Sabbe dhammā anattā”ti,"@pi ;
+    dho:url "https://suttacentral.net/dhp279/en/sujato#dhp279:1"^^xsd:anyURI .
+
+dho:p-mn148-5.3 a dho:Passage ;
+    dho:inText dho:t-mn148 ;
+    dho:segment "mn148:5.3" ;
+    dho:textEn "There are the sense fields of sights, sounds, smells, tastes, touches, and ideas."@en ;
+    dho:textPi "Rūpāyatanaṁ, saddāyatanaṁ, gandhāyatanaṁ, rasāyatanaṁ, phoṭṭhabbāyatanaṁ, dhammāyatanaṁ."@pi ;
+    dho:url "https://suttacentral.net/mn148/en/sujato#mn148:5.3"^^xsd:anyURI .
+
+dho:p-mn148-6.8 a dho:Passage ;
+    dho:inText dho:t-mn148 ;
+    dho:segment "mn148:6.8" ;
+    dho:textEn "Mind consciousness arises dependent on the mind and ideas."@en ;
+    dho:textPi "manañca paṭicca dhamme ca uppajjati manoviññāṇaṁ."@pi ;
+    dho:url "https://suttacentral.net/mn148/en/sujato#mn148:6.8"^^xsd:anyURI .
+
+dho:p-mn43-19.2 a dho:Passage ;
+    dho:inText dho:t-mn43 ;
+    dho:segment "mn43:19.2" ;
+    dho:textEn "“The first absorption has five factors."@en ;
+    dho:textPi "“Paṭhamaṁ kho, āvuso, jhānaṁ pañcaṅgikaṁ."@pi ;
+    dho:url "https://suttacentral.net/mn43/en/sujato#mn43:19.2"^^xsd:anyURI .
+
+dho:p-mn43-19.3 a dho:Passage ;
+    dho:inText dho:t-mn43 ;
+    dho:segment "mn43:19.3" ;
+    dho:textEn "When a mendicant has entered the first absorption, placing the mind, keeping it connected, rapture, bliss, and unification of mind are present."@en ;
+    dho:textPi "Idhāvuso, paṭhamaṁ jhānaṁ samāpannassa bhikkhuno vitakko ca vattati, vicāro ca pīti ca sukhañca cittekaggatā ca."@pi ;
+    dho:url "https://suttacentral.net/mn43/en/sujato#mn43:19.3"^^xsd:anyURI .
+
+dho:p-mn43-20.2 a dho:Passage ;
+    dho:inText dho:t-mn43 ;
+    dho:segment "mn43:20.2" ;
+    dho:textEn "“The first absorption has given up five factors and possesses five factors."@en ;
+    dho:textPi "“Paṭhamaṁ kho, āvuso, jhānaṁ pañcaṅgavippahīnaṁ, pañcaṅgasamannāgataṁ."@pi ;
+    dho:url "https://suttacentral.net/mn43/en/sujato#mn43:20.2"^^xsd:anyURI .
+
+dho:p-mn43-20.4 a dho:Passage ;
+    dho:inText dho:t-mn43 ;
+    dho:segment "mn43:20.4" ;
+    dho:textEn "Placing the mind, keeping it connected, rapture, bliss, and unification of mind are present."@en ;
+    dho:textPi "vitakko ca vattati, vicāro ca pīti ca sukhañca cittekaggatā ca."@pi ;
+    dho:url "https://suttacentral.net/mn43/en/sujato#mn43:20.4"^^xsd:anyURI .
+
+dho:p-mn44-12.2 a dho:Passage ;
+    dho:inText dho:t-mn44 ;
+    dho:segment "mn44:12.2" ;
+    dho:textEn "“Unification of the mind is immersion."@en ;
+    dho:textPi "“Yā kho, āvuso visākha, cittassa ekaggatā ayaṁ samādhi;"@pi ;
+    dho:url "https://suttacentral.net/mn44/en/sujato#mn44:12.2"^^xsd:anyURI .
+
+dho:p-sn11.3-10.2 a dho:Passage ;
+    dho:inText dho:t-sn11.3 ;
+    dho:segment "sn11.3:10.2" ;
+    dho:textEn "‘The teaching is well explained by the Buddha—apparent in the present life, immediately effective, inviting inspection, relevant, so that sensible people can know it for themselves.’"@en ;
+    dho:textPi "“svākkhāto bhagavatā dhammo sandiṭṭhiko akāliko ehipassiko opaneyyiko paccattaṁ veditabbo viññūhī”ti."@pi ;
+    dho:url "https://suttacentral.net/sn11.3/en/sujato#sn11.3:10.2"^^xsd:anyURI .
+
+dho:p-sn46.2-10.2 a dho:Passage ;
+    dho:inText dho:t-sn46.2 ;
+    dho:segment "sn46.2:10.2" ;
+    dho:textEn "There are qualities that are skillful and unskillful, blameworthy and blameless, inferior and superior, and those with a portion of dark or bright."@en ;
+    dho:textPi "Atthi, bhikkhave, kusalākusalā dhammā, sāvajjānavajjā dhammā, hīnapaṇītā dhammā, kaṇhasukkasappaṭibhāgā dhammā."@pi ;
+    dho:url "https://suttacentral.net/sn46.2/en/sujato#sn46.2:10.2"^^xsd:anyURI .
+
+dho:p-sn46.2-10.3 a dho:Passage ;
+    dho:inText dho:t-sn46.2 ;
+    dho:segment "sn46.2:10.3" ;
+    dho:textEn "Frequent rational application of mind to them"@en ;
+    dho:textPi "Tattha yonisomanasikārabahulīkāro—"@pi ;
+    dho:url "https://suttacentral.net/sn46.2/en/sujato#sn46.2:10.3"^^xsd:anyURI .
+
+dho:p-sn46.2-11.2 a dho:Passage ;
+    dho:inText dho:t-sn46.2 ;
+    dho:segment "sn46.2:11.2" ;
+    dho:textEn "There are the elements of initiative, persistence, and exertion."@en ;
+    dho:textPi "Atthi, bhikkhave, ārambhadhātu nikkamadhātu parakkamadhātu."@pi ;
+    dho:url "https://suttacentral.net/sn46.2/en/sujato#sn46.2:11.2"^^xsd:anyURI .
+
+dho:p-sn46.2-11.3 a dho:Passage ;
+    dho:inText dho:t-sn46.2 ;
+    dho:segment "sn46.2:11.3" ;
+    dho:textEn "Frequent rational application of mind to them"@en ;
+    dho:textPi "Tattha yonisomanasikārabahulīkāro—"@pi ;
+    dho:url "https://suttacentral.net/sn46.2/en/sujato#sn46.2:11.3"^^xsd:anyURI .
+
+dho:p-sn46.2-12.2 a dho:Passage ;
+    dho:inText dho:t-sn46.2 ;
+    dho:segment "sn46.2:12.2" ;
+    dho:textEn "There are things that are grounds for the awakening factor of rapture."@en ;
+    dho:textPi "Atthi, bhikkhave, pītisambojjhaṅgaṭṭhānīyā dhammā."@pi ;
+    dho:url "https://suttacentral.net/sn46.2/en/sujato#sn46.2:12.2"^^xsd:anyURI .
+
+dho:p-sn46.2-12.3 a dho:Passage ;
+    dho:inText dho:t-sn46.2 ;
+    dho:segment "sn46.2:12.3" ;
+    dho:textEn "Frequent rational application of mind to them"@en ;
+    dho:textPi "Tattha yonisomanasikārabahulīkāro—"@pi ;
+    dho:url "https://suttacentral.net/sn46.2/en/sujato#sn46.2:12.3"^^xsd:anyURI .
+
+dho:p-sn46.2-13.2 a dho:Passage ;
+    dho:inText dho:t-sn46.2 ;
+    dho:segment "sn46.2:13.2" ;
+    dho:textEn "There is tranquility of the body and of the mind."@en ;
+    dho:textPi "Atthi, bhikkhave, kāyapassaddhi, cittapassaddhi."@pi ;
+    dho:url "https://suttacentral.net/sn46.2/en/sujato#sn46.2:13.2"^^xsd:anyURI .
+
+dho:p-sn46.2-13.3 a dho:Passage ;
+    dho:inText dho:t-sn46.2 ;
+    dho:segment "sn46.2:13.3" ;
+    dho:textEn "Frequent rational application of mind to that"@en ;
+    dho:textPi "Tattha yonisomanasikārabahulīkāro—"@pi ;
+    dho:url "https://suttacentral.net/sn46.2/en/sujato#sn46.2:13.3"^^xsd:anyURI .
+
+dho:p-sn46.2-14.2 a dho:Passage ;
+    dho:inText dho:t-sn46.2 ;
+    dho:segment "sn46.2:14.2" ;
+    dho:textEn "There are things that are the basis of serenity and freedom from distraction."@en ;
+    dho:textPi "Atthi, bhikkhave, samathanimittaṁ abyagganimittaṁ."@pi ;
+    dho:url "https://suttacentral.net/sn46.2/en/sujato#sn46.2:14.2"^^xsd:anyURI .
+
+dho:p-sn46.2-14.3 a dho:Passage ;
+    dho:inText dho:t-sn46.2 ;
+    dho:segment "sn46.2:14.3" ;
+    dho:textEn "Frequent rational application of mind to them"@en ;
+    dho:textPi "Tattha yonisomanasikārabahulīkāro—"@pi ;
+    dho:url "https://suttacentral.net/sn46.2/en/sujato#sn46.2:14.3"^^xsd:anyURI .
+
+dho:p-sn46.2-15.2 a dho:Passage ;
+    dho:inText dho:t-sn46.2 ;
+    dho:segment "sn46.2:15.2" ;
+    dho:textEn "There are things that are grounds for the awakening factor of equanimity."@en ;
+    dho:textPi "Atthi, bhikkhave, upekkhāsambojjhaṅgaṭṭhānīyā dhammā."@pi ;
+    dho:url "https://suttacentral.net/sn46.2/en/sujato#sn46.2:15.2"^^xsd:anyURI .
+
+dho:p-sn46.2-15.3 a dho:Passage ;
+    dho:inText dho:t-sn46.2 ;
+    dho:segment "sn46.2:15.3" ;
+    dho:textEn "Frequent rational application of mind to them"@en ;
+    dho:textPi "Tattha yonisomanasikārabahulīkāro—"@pi ;
+    dho:url "https://suttacentral.net/sn46.2/en/sujato#sn46.2:15.3"^^xsd:anyURI .
+
+dho:p-sn46.2-2.2 a dho:Passage ;
+    dho:inText dho:t-sn46.2 ;
+    dho:segment "sn46.2:2.2" ;
+    dho:textEn "There is the feature of beauty."@en ;
+    dho:textPi "Atthi, bhikkhave, subhanimittaṁ."@pi ;
+    dho:url "https://suttacentral.net/sn46.2/en/sujato#sn46.2:2.2"^^xsd:anyURI .
+
+dho:p-sn46.2-2.3 a dho:Passage ;
+    dho:inText dho:t-sn46.2 ;
+    dho:segment "sn46.2:2.3" ;
+    dho:textEn "Frequent irrational application of mind to that"@en ;
+    dho:textPi "Tattha ayonisomanasikārabahulīkāro—"@pi ;
+    dho:url "https://suttacentral.net/sn46.2/en/sujato#sn46.2:2.3"^^xsd:anyURI .
+
+dho:p-sn46.2-3.2 a dho:Passage ;
+    dho:inText dho:t-sn46.2 ;
+    dho:segment "sn46.2:3.2" ;
+    dho:textEn "There is the feature of aversion."@en ;
+    dho:textPi "Atthi, bhikkhave, paṭighanimittaṁ."@pi ;
+    dho:url "https://suttacentral.net/sn46.2/en/sujato#sn46.2:3.2"^^xsd:anyURI .
+
+dho:p-sn46.2-3.3 a dho:Passage ;
+    dho:inText dho:t-sn46.2 ;
+    dho:segment "sn46.2:3.3" ;
+    dho:textEn "Frequent irrational application of mind to that"@en ;
+    dho:textPi "Tattha ayonisomanasikārabahulīkāro—"@pi ;
+    dho:url "https://suttacentral.net/sn46.2/en/sujato#sn46.2:3.3"^^xsd:anyURI .
+
+dho:p-sn46.2-4.2 a dho:Passage ;
+    dho:inText dho:t-sn46.2 ;
+    dho:segment "sn46.2:4.2" ;
+    dho:textEn "There is discontent, sloth, yawning, sleepiness after eating, and mental sluggishness."@en ;
+    dho:textPi "Atthi, bhikkhave, arati tandi vijambhitā bhattasammado cetaso ca līnattaṁ."@pi ;
+    dho:url "https://suttacentral.net/sn46.2/en/sujato#sn46.2:4.2"^^xsd:anyURI .
+
+dho:p-sn46.2-4.3 a dho:Passage ;
+    dho:inText dho:t-sn46.2 ;
+    dho:segment "sn46.2:4.3" ;
+    dho:textEn "Frequent irrational application of mind to them"@en ;
+    dho:textPi "Tattha ayonisomanasikārabahulīkāro—"@pi ;
+    dho:url "https://suttacentral.net/sn46.2/en/sujato#sn46.2:4.3"^^xsd:anyURI .
+
+dho:p-sn46.2-5.2 a dho:Passage ;
+    dho:inText dho:t-sn46.2 ;
+    dho:segment "sn46.2:5.2" ;
+    dho:textEn "There is the unsettled mind."@en ;
+    dho:textPi "Atthi, bhikkhave, cetaso avūpasamo."@pi ;
+    dho:url "https://suttacentral.net/sn46.2/en/sujato#sn46.2:5.2"^^xsd:anyURI .
+
+dho:p-sn46.2-5.3 a dho:Passage ;
+    dho:inText dho:t-sn46.2 ;
+    dho:segment "sn46.2:5.3" ;
+    dho:textEn "Frequent irrational application of mind to that"@en ;
+    dho:textPi "Tattha ayonisomanasikārabahulīkāro—"@pi ;
+    dho:url "https://suttacentral.net/sn46.2/en/sujato#sn46.2:5.3"^^xsd:anyURI .
+
+dho:p-sn46.2-6.2 a dho:Passage ;
+    dho:inText dho:t-sn46.2 ;
+    dho:segment "sn46.2:6.2" ;
+    dho:textEn "There are things that are grounds for doubt."@en ;
+    dho:textPi "Atthi, bhikkhave, vicikicchāṭṭhānīyā dhammā."@pi ;
+    dho:url "https://suttacentral.net/sn46.2/en/sujato#sn46.2:6.2"^^xsd:anyURI .
+
+dho:p-sn46.2-6.3 a dho:Passage ;
+    dho:inText dho:t-sn46.2 ;
+    dho:segment "sn46.2:6.3" ;
+    dho:textEn "Frequent irrational application of mind to them"@en ;
+    dho:textPi "Tattha ayonisomanasikārabahulīkāro—"@pi ;
+    dho:url "https://suttacentral.net/sn46.2/en/sujato#sn46.2:6.3"^^xsd:anyURI .
+
+dho:p-sn46.2-9.2 a dho:Passage ;
+    dho:inText dho:t-sn46.2 ;
+    dho:segment "sn46.2:9.2" ;
+    dho:textEn "There are things that are grounds for the awakening factor of mindfulness."@en ;
+    dho:textPi "Atthi, bhikkhave, satisambojjhaṅgaṭṭhānīyā dhammā."@pi ;
+    dho:url "https://suttacentral.net/sn46.2/en/sujato#sn46.2:9.2"^^xsd:anyURI .
+
+dho:p-sn46.2-9.3 a dho:Passage ;
+    dho:inText dho:t-sn46.2 ;
+    dho:segment "sn46.2:9.3" ;
+    dho:textEn "Frequent rational application of mind to them"@en ;
+    dho:textPi "Tattha yonisomanasikārabahulīkāro—"@pi ;
+    dho:url "https://suttacentral.net/sn46.2/en/sujato#sn46.2:9.3"^^xsd:anyURI .
+
+dho:p-sn46.51-1.5 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:1.5" ;
+    dho:textEn "There is the feature of beauty."@en ;
+    dho:textPi "Atthi, bhikkhave, subhanimittaṁ."@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:1.5"^^xsd:anyURI .
+
+dho:p-sn46.51-1.6 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:1.6" ;
+    dho:textEn "Frequent irrational application of mind to that"@en ;
+    dho:textPi "Tattha ayonisomanasikārabahulīkāro—"@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:1.6"^^xsd:anyURI .
+
+dho:p-sn46.51-10.2 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:10.2" ;
+    dho:textEn "There is tranquility of the body and of the mind."@en ;
+    dho:textPi "Atthi, bhikkhave, kāyappassaddhi cittappassaddhi."@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:10.2"^^xsd:anyURI .
+
+dho:p-sn46.51-10.3 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:10.3" ;
+    dho:textEn "Frequent rational application of mind to that"@en ;
+    dho:textPi "Tattha yonisomanasikārabahulīkāro—"@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:10.3"^^xsd:anyURI .
+
+dho:p-sn46.51-11.2 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:11.2" ;
+    dho:textEn "There are things that are the basis of serenity and freedom from distraction."@en ;
+    dho:textPi "Atthi, bhikkhave, samathanimittaṁ abyagganimittaṁ."@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:11.2"^^xsd:anyURI .
+
+dho:p-sn46.51-11.3 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:11.3" ;
+    dho:textEn "Frequent rational application of mind to them"@en ;
+    dho:textPi "Tattha yonisomanasikārabahulīkāro—"@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:11.3"^^xsd:anyURI .
+
+dho:p-sn46.51-12.2 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:12.2" ;
+    dho:textEn "There are things that are grounds for the awakening factor of equanimity."@en ;
+    dho:textPi "Atthi, bhikkhave, upekkhāsambojjhaṅgaṭṭhānīyā dhammā."@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:12.2"^^xsd:anyURI .
+
+dho:p-sn46.51-12.3 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:12.3" ;
+    dho:textEn "Frequent rational application of mind to them"@en ;
+    dho:textPi "Tattha yonisomanasikārabahulīkāro—"@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:12.3"^^xsd:anyURI .
+
+dho:p-sn46.51-13.2 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:13.2" ;
+    dho:textEn "There is the feature of ugliness."@en ;
+    dho:textPi "Atthi, bhikkhave, asubhanimittaṁ."@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:13.2"^^xsd:anyURI .
+
+dho:p-sn46.51-13.3 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:13.3" ;
+    dho:textEn "Frequent rational application of mind to that"@en ;
+    dho:textPi "Tattha yonisomanasikārabahulīkāro—"@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:13.3"^^xsd:anyURI .
+
+dho:p-sn46.51-14.2 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:14.2" ;
+    dho:textEn "There is the heart’s release by love."@en ;
+    dho:textPi "Atthi, bhikkhave, mettācetovimutti."@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:14.2"^^xsd:anyURI .
+
+dho:p-sn46.51-14.3 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:14.3" ;
+    dho:textEn "Frequent rational application of mind to that"@en ;
+    dho:textPi "Tattha yonisomanasikārabahulīkāro—"@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:14.3"^^xsd:anyURI .
+
+dho:p-sn46.51-15.2 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:15.2" ;
+    dho:textEn "There are the elements of initiative, persistence, and exertion."@en ;
+    dho:textPi "Atthi, bhikkhave, ārambhadhātu nikkamadhātu parakkamadhātu."@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:15.2"^^xsd:anyURI .
+
+dho:p-sn46.51-15.3 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:15.3" ;
+    dho:textEn "Frequent rational application of mind to them"@en ;
+    dho:textPi "Tattha yonisomanasikārabahulīkāro—"@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:15.3"^^xsd:anyURI .
+
+dho:p-sn46.51-16.2 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:16.2" ;
+    dho:textEn "There is the settled mind."@en ;
+    dho:textPi "Atthi, bhikkhave, cetaso vūpasamo."@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:16.2"^^xsd:anyURI .
+
+dho:p-sn46.51-16.3 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:16.3" ;
+    dho:textEn "Frequent rational application of mind to that"@en ;
+    dho:textPi "Tattha yonisomanasikārabahulīkāro—"@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:16.3"^^xsd:anyURI .
+
+dho:p-sn46.51-17.2 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:17.2" ;
+    dho:textEn "There are qualities that are skillful and unskillful, blameworthy and blameless, inferior and superior, and those with a portion of dark or bright."@en ;
+    dho:textPi "Atthi, bhikkhave, kusalākusalā dhammā sāvajjānavajjā dhammā hīnapaṇītā dhammā kaṇhasukkasappaṭibhāgā dhammā."@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:17.2"^^xsd:anyURI .
+
+dho:p-sn46.51-17.3 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:17.3" ;
+    dho:textEn "Frequent rational application of mind to them"@en ;
+    dho:textPi "Tattha yonisomanasikārabahulīkāro—"@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:17.3"^^xsd:anyURI .
+
+dho:p-sn46.51-18.2 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:18.2" ;
+    dho:textEn "There are things that are grounds for the awakening factor of mindfulness."@en ;
+    dho:textPi "Atthi, bhikkhave, satisambojjhaṅgaṭṭhānīyā dhammā."@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:18.2"^^xsd:anyURI .
+
+dho:p-sn46.51-18.3 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:18.3" ;
+    dho:textEn "Not frequently applying the mind to that"@en ;
+    dho:textPi "Tattha amanasikārabahulīkāro—"@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:18.3"^^xsd:anyURI .
+
+dho:p-sn46.51-19.2 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:19.2" ;
+    dho:textEn "There are qualities that are skillful and unskillful, blameworthy and blameless, inferior and superior, and those with a portion of dark or bright."@en ;
+    dho:textPi "Atthi, bhikkhave, kusalākusalā dhammā sāvajjānavajjā dhammā hīnapaṇītā dhammā kaṇhasukkasappaṭibhāgā dhammā."@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:19.2"^^xsd:anyURI .
+
+dho:p-sn46.51-19.3 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:19.3" ;
+    dho:textEn "Not frequently applying the mind to that"@en ;
+    dho:textPi "Tattha amanasikārabahulīkāro—"@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:19.3"^^xsd:anyURI .
+
+dho:p-sn46.51-2.2 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:2.2" ;
+    dho:textEn "There is the feature of aversion."@en ;
+    dho:textPi "Atthi, bhikkhave, paṭighanimittaṁ."@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:2.2"^^xsd:anyURI .
+
+dho:p-sn46.51-2.3 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:2.3" ;
+    dho:textEn "Frequent irrational application of mind to that"@en ;
+    dho:textPi "Tattha ayonisomanasikārabahulīkāro—"@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:2.3"^^xsd:anyURI .
+
+dho:p-sn46.51-20.2 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:20.2" ;
+    dho:textEn "There are the elements of initiative, persistence, and exertion."@en ;
+    dho:textPi "Atthi, bhikkhave, ārambhadhātu nikkamadhātu parakkamadhātu."@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:20.2"^^xsd:anyURI .
+
+dho:p-sn46.51-20.3 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:20.3" ;
+    dho:textEn "Not frequently applying the mind to that"@en ;
+    dho:textPi "Tattha amanasikārabahulīkāro—"@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:20.3"^^xsd:anyURI .
+
+dho:p-sn46.51-21.2 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:21.2" ;
+    dho:textEn "There are things that are grounds for the awakening factor of rapture."@en ;
+    dho:textPi "Atthi, bhikkhave, pītisambojjhaṅgaṭṭhānīyā dhammā."@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:21.2"^^xsd:anyURI .
+
+dho:p-sn46.51-21.3 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:21.3" ;
+    dho:textEn "Not frequently applying the mind to that"@en ;
+    dho:textPi "Tattha amanasikārabahulīkāro—"@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:21.3"^^xsd:anyURI .
+
+dho:p-sn46.51-22.2 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:22.2" ;
+    dho:textEn "There is tranquility of the body and of the mind."@en ;
+    dho:textPi "Atthi, bhikkhave, kāyappassaddhi cittappassaddhi."@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:22.2"^^xsd:anyURI .
+
+dho:p-sn46.51-22.3 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:22.3" ;
+    dho:textEn "Not frequently applying the mind to that"@en ;
+    dho:textPi "Tattha amanasikārabahulīkāro—"@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:22.3"^^xsd:anyURI .
+
+dho:p-sn46.51-23.2 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:23.2" ;
+    dho:textEn "There are things that are the basis of serenity and freedom from distraction."@en ;
+    dho:textPi "Atthi, bhikkhave, samathanimittaṁ abyagganimittaṁ."@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:23.2"^^xsd:anyURI .
+
+dho:p-sn46.51-23.3 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:23.3" ;
+    dho:textEn "Not frequently applying the mind to that"@en ;
+    dho:textPi "Tattha amanasikārabahulīkāro—"@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:23.3"^^xsd:anyURI .
+
+dho:p-sn46.51-24.2 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:24.2" ;
+    dho:textEn "There are things that are grounds for the awakening factor of equanimity."@en ;
+    dho:textPi "Atthi, bhikkhave, upekkhāsambojjhaṅgaṭṭhānīyā dhammā."@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:24.2"^^xsd:anyURI .
+
+dho:p-sn46.51-24.3 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:24.3" ;
+    dho:textEn "Not frequently applying the mind to that"@en ;
+    dho:textPi "Tattha amanasikārabahulīkāro—"@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:24.3"^^xsd:anyURI .
+
+dho:p-sn46.51-3.2 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:3.2" ;
+    dho:textEn "There is discontent, sloth, yawning, sleepiness after eating, and mental sluggishness."@en ;
+    dho:textPi "Atthi, bhikkhave, arati tandi vijambhitā bhattasammado cetaso ca līnattaṁ."@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:3.2"^^xsd:anyURI .
+
+dho:p-sn46.51-3.3 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:3.3" ;
+    dho:textEn "Frequent irrational application of mind to that"@en ;
+    dho:textPi "Tattha ayonisomanasikārabahulīkāro—"@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:3.3"^^xsd:anyURI .
+
+dho:p-sn46.51-4.2 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:4.2" ;
+    dho:textEn "There is the unsettled mind."@en ;
+    dho:textPi "Atthi, bhikkhave, cetaso avūpasamo."@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:4.2"^^xsd:anyURI .
+
+dho:p-sn46.51-4.3 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:4.3" ;
+    dho:textEn "Frequent irrational application of mind to that"@en ;
+    dho:textPi "Tattha ayonisomanasikārabahulīkāro—"@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:4.3"^^xsd:anyURI .
+
+dho:p-sn46.51-5.2 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:5.2" ;
+    dho:textEn "There are things that are grounds for doubt."@en ;
+    dho:textPi "Atthi, bhikkhave, vicikicchāṭṭhānīyā dhammā."@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:5.2"^^xsd:anyURI .
+
+dho:p-sn46.51-5.3 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:5.3" ;
+    dho:textEn "Frequent irrational application of mind to them"@en ;
+    dho:textPi "Tattha ayonisomanasikārabahulīkāro—"@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:5.3"^^xsd:anyURI .
+
+dho:p-sn46.51-6.2 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:6.2" ;
+    dho:textEn "There are things that are grounds for the awakening factor of mindfulness."@en ;
+    dho:textPi "Atthi, bhikkhave, satisambojjhaṅgaṭṭhānīyā dhammā."@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:6.2"^^xsd:anyURI .
+
+dho:p-sn46.51-6.3 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:6.3" ;
+    dho:textEn "Frequent rational application of mind to them"@en ;
+    dho:textPi "Tattha yonisomanasikārabahulīkāro—"@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:6.3"^^xsd:anyURI .
+
+dho:p-sn46.51-7.3 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:7.3" ;
+    dho:textEn "Frequent rational application of mind to them"@en ;
+    dho:textPi "Tattha yonisomanasikārabahulīkāro—"@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:7.3"^^xsd:anyURI .
+
+dho:p-sn46.51-8.2 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:8.2" ;
+    dho:textEn "There are the elements of initiative, persistence, and exertion."@en ;
+    dho:textPi "Atthi, bhikkhave, ārambhadhātu nikkamadhātu parakkamadhātu."@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:8.2"^^xsd:anyURI .
+
+dho:p-sn46.51-8.3 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:8.3" ;
+    dho:textEn "Frequent rational application of mind to them"@en ;
+    dho:textPi "Tattha yonisomanasikārabahulīkāro—"@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:8.3"^^xsd:anyURI .
+
+dho:p-sn46.51-9.2 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:9.2" ;
+    dho:textEn "There are things that are grounds for the awakening factor of rapture."@en ;
+    dho:textPi "Atthi, bhikkhave, pītisambojjhaṅgaṭṭhānīyā dhammā."@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:9.2"^^xsd:anyURI .
+
+dho:p-sn46.51-9.3 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:9.3" ;
+    dho:textEn "Frequent rational application of mind to them"@en ;
+    dho:textPi "Tattha yonisomanasikārabahulīkāro—"@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:9.3"^^xsd:anyURI .
+
+dho:p-sn46.53-15.4 a dho:Passage ;
+    dho:inText dho:t-sn46.53 ;
+    dho:segment "sn46.53:15.4" ;
+    dho:textEn "But mindfulness is always useful, I say.”"@en ;
+    dho:textPi "Satiñca khvāhaṁ, bhikkhave, sabbatthikaṁ vadāmī”ti."@pi ;
+    dho:url "https://suttacentral.net/sn46.53/en/sujato#sn46.53:15.4"^^xsd:anyURI .
+
+dho:sense-dhamma-mind-object a ontolex:LexicalSense ;
+    ontolex:reference dho:DhammaMindObject ;
+    dho:citedBy dho:p-mn148-5.3,
+        dho:p-mn148-6.8 .
+
+dho:sense-dhamma-phenomenon a ontolex:LexicalSense ;
+    ontolex:reference dho:DhammaPhenomenon ;
+    dho:citedBy dho:p-dhp279-1 .
+
+dho:sense-dhamma-teaching a ontolex:LexicalSense ;
+    ontolex:reference dho:DhammaTeaching ;
+    dho:citedBy dho:p-sn11.3-10.2 .
+
+dho:t-dhp279 a dho:Text ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
+    skos:prefLabel "Dhammapada 279"@en ;
+    dho:coverage dho:CitedOnly ;
+    dho:encodes "The first line of the verse ('All things are not-self') as evidence for 'dhamma' meaning any phenomenon." ;
+    dho:layer dho:SuttaLayer ;
+    dho:leftOut "The rest of the verse, and the rest of the Path chapter (Dhp 273-289)." ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:modelledOn "2026-11-13"^^xsd:date ;
+    dho:review dho:Unreviewed ;
+    dho:url "https://suttacentral.net/dhp279/en/sujato"^^xsd:anyURI .
+
+dho:t-mn10 a dho:Text ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
+    skos:prefLabel "MN 10 Satipaṭṭhānasutta — Mindfulness Meditation"@en ;
+    dho:coverage dho:CitedOnly ;
+    dho:encodes "One segment (36.2), recorded as a contested use of the word 'dhamma' and deliberately left without a sense." ;
+    dho:layer dho:SuttaLayer ;
+    dho:leftOut "The whole teaching on the four kinds of mindfulness meditation. Its section on the five hindrances (knowing when each is present, how it arises, how it is given up) bears directly on this ontology and should come next." ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:modelledOn "2026-11-13"^^xsd:date ;
+    dho:review dho:Unreviewed ;
+    dho:url "https://suttacentral.net/mn10/en/sujato"^^xsd:anyURI .
+
+dho:t-mn44 a dho:Text ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
+    skos:prefLabel "MN 44 Cūḷavedallasutta — The Shorter Elaboration"@en ;
+    dho:coverage dho:PartlyEncoded ;
+    dho:encodes "One definition: 'Unification of the mind is immersion' (12.2). Found while checking an eval answer; it corrected decision D4, which had wrongly called this equation an interpretation." ;
+    dho:layer dho:SuttaLayer ;
+    dho:leftOut "The rest of Dhammadinnā's answers: substantial reality, its origin, cessation and the practice leading there (2-5); grasping and the aggregates (6); substantialist view (7-8); the noble eightfold path and the three spectrums of practice (9-11); the bases, prerequisites and development of immersion (12.3-12.5); the three processes (13-15); the cessation of perception and feeling (16-21); the three feelings, their underlying tendencies and their counterparts (22-29)." ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:review dho:Unreviewed ;
+    dho:url "https://suttacentral.net/mn44/en/sujato"^^xsd:anyURI .
+
+dho:t-sn11.3 a dho:Text ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
+    skos:prefLabel "SN 11.3 Dhajaggasutta — The Banner’s Crest"@en ;
+    dho:coverage dho:CitedOnly ;
+    dho:encodes "One segment (10.2) as evidence for 'dhamma' meaning the Buddha's teaching." ;
+    dho:layer dho:SuttaLayer ;
+    dho:leftOut "The banner simile and the recollection of the Buddha, the teaching and the Saṅgha as a remedy for fear." ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:modelledOn "2026-11-13"^^xsd:date ;
+    dho:review dho:Unreviewed ;
+    dho:url "https://suttacentral.net/sn11.3/en/sujato"^^xsd:anyURI .
+
+dho:Bliss a dho:MentalQuality ;
+    skos:altLabel "happiness"@en,
+        "pleasure"@en ;
+    skos:prefLabel "bliss"@en,
+        "sukha"@pi,
+        "樂"@zh .
+
+dho:FirstJhanaFactors a dho:NumberedList ;
+    skos:prefLabel "the five factors of the first absorption"@en,
+        "paṭhamajjhānassa pañcaṅgāni"@pi,
+        "初禪五支"@zh ;
+    dho:citedBy dho:p-mn43-19.2,
+        dho:p-mn43-19.3 ;
+    dho:expectedCount 5 ;
+    dho:hasMember dho:Bliss,
+        dho:KeepingConnected,
+        dho:PlacingTheMind,
+        dho:Rapture,
+        dho:Unification .
+
+dho:FiveHindrances a dho:NumberedList ;
+    skos:prefLabel "the five hindrances"@en,
+        "pañca nīvaraṇā"@pi,
+        "五蓋"@zh ;
+    dho:citedBy dho:p-mn43-20.3,
+        dho:p-sn46.51-1.2 ;
+    dho:expectedCount 5 ;
+    dho:hasMember dho:Doubt,
+        dho:DullnessDrowsiness,
+        dho:IllWill,
+        dho:RestlessnessRemorse,
+        dho:SensualDesire .
+
+dho:Hindrance a owl:Class ;
+    rdfs:label "Hindrance"@en,
+        "nīvaraṇa"@pi,
+        "蓋"@zh ;
+    rdfs:subClassOf dho:MentalQuality ;
+    owl:disjointWith dho:AwakeningFactor,
+        dho:JhanaFactor ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:hasValue dho:FiveHindrances ;
+            owl:onProperty dho:memberOf ] .
+
+dho:KeepingConnected a dho:MentalQuality ;
+    skos:altLabel "evaluation"@en,
+        "sustained thought"@en,
+        "觀"@zh ;
+    skos:prefLabel "keeping it connected"@en,
+        "vicāra"@pi,
+        "伺"@zh .
+
+dho:PlacingTheMind a dho:MentalQuality ;
+    skos:altLabel "applied thought"@en,
+        "directed thought"@en,
+        "覺"@zh ;
+    skos:prefLabel "placing the mind"@en,
+        "vitakka"@pi,
+        "尋"@zh .
+
+dho:o-grounds-equanimity a dho:AttentionObject ;
+    skos:prefLabel "things that are grounds for the awakening factor of equanimity"@en,
+        "upekkhāsambojjhaṅgaṭṭhānīyā dhammā"@pi .
+
+dho:o-grounds-mindfulness a dho:AttentionObject ;
+    skos:prefLabel "things that are grounds for the awakening factor of mindfulness"@en,
+        "satisambojjhaṅgaṭṭhānīyā dhammā"@pi .
+
+dho:o-grounds-rapture a dho:AttentionObject ;
+    skos:prefLabel "things that are grounds for the awakening factor of rapture"@en,
+        "pītisambojjhaṅgaṭṭhānīyā dhammā"@pi .
+
+dho:o-serenity a dho:AttentionObject ;
+    skos:prefLabel "the basis of serenity and freedom from distraction"@en,
+        "samathanimittaṁ abyagganimittaṁ"@pi .
+
+dho:o-tranquility a dho:AttentionObject ;
+    skos:prefLabel "tranquility of the body and of the mind"@en,
+        "kāyappassaddhi cittappassaddhi"@pi .
+
+dho:p-mn43-20.3 a dho:Passage ;
+    dho:inText dho:t-mn43 ;
+    dho:segment "mn43:20.3" ;
+    dho:textEn "When a mendicant has entered the first absorption, sensual desire, ill will, dullness and drowsiness, restlessness and remorse, and doubt are given up."@en ;
+    dho:textPi "Idhāvuso, paṭhamaṁ jhānaṁ samāpannassa bhikkhuno kāmacchando pahīno hoti, byāpādo pahīno hoti, thinamiddhaṁ pahīnaṁ hoti, uddhaccakukkuccaṁ pahīnaṁ hoti, vicikicchā pahīnā hoti;"@pi ;
+    dho:url "https://suttacentral.net/mn43/en/sujato#mn43:20.3"^^xsd:anyURI .
+
+dho:p-sn46.51-1.2 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:1.2" ;
+    dho:textEn "“Mendicants, I will teach you what fuels and what starves the five hindrances and the seven awakening factors."@en ;
+    dho:textPi "“Pañcannañca, bhikkhave, nīvaraṇānaṁ sattannañca bojjhaṅgānaṁ āhārañca anāhārañca desessāmi;"@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:1.2"^^xsd:anyURI .
+
+dho:p-sn46.51-7.2 a dho:Passage ;
+    dho:inText dho:t-sn46.51 ;
+    dho:segment "sn46.51:7.2" ;
+    dho:senseAssignedBy "editor; matches Sujato's rendering 'qualities'" ;
+    dho:textEn "There are qualities that are skillful and unskillful, blameworthy and blameless, inferior and superior, and those with a portion of dark or bright."@en ;
+    dho:textPi "Atthi, bhikkhave, kusalākusalā dhammā sāvajjānavajjā dhammā hīnapaṇītā dhammā kaṇhasukkasappaṭibhāgā dhammā."@pi ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:7.2"^^xsd:anyURI ;
+    dho:usesSense dho:sense-dhamma-quality .
+
+dho:sense-dhamma-quality a ontolex:LexicalSense ;
+    ontolex:reference dho:DhammaQuality ;
+    dho:citedBy dho:p-sn46.51-7.2 .
+
+dho:t-mn148 a dho:Text ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
+    skos:prefLabel "MN 148 Chachakkasutta — Six By Six"@en ;
+    dho:coverage dho:CitedOnly ;
+    dho:encodes "Two segments (5.3, 6.8) as evidence for 'dhamma' meaning an object of the mind." ;
+    dho:layer dho:SuttaLayer ;
+    dho:leftOut "The six sets of six (sense fields, objects, consciousnesses, contacts, feelings, cravings) and the not-self argument built on them." ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:modelledOn "2026-11-13"^^xsd:date ;
+    dho:review dho:Unreviewed ;
+    dho:url "https://suttacentral.net/mn148/en/sujato"^^xsd:anyURI .
+
+dho:Attainment a owl:Class ;
+    rdfs:label "Attainment"@en ;
+    rdfs:subClassOf dho:Concept .
+
+dho:AwakeningFactor a owl:Class ;
+    rdfs:label "Awakening factor"@en,
+        "bojjhaṅga"@pi,
+        "覺支"@zh ;
+    rdfs:subClassOf dho:MentalQuality ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:hasValue dho:SevenAwakeningFactors ;
+            owl:onProperty dho:memberOf ] .
+
+dho:Definition a owl:Class ;
+    rdfs:label "Definition"@en ;
+    rdfs:comment "A sutta's own statement that one term is another. Cited, never merged into one concept."@en .
+
+dho:MindState a owl:Class ;
+    rdfs:label "Mind state"@en ;
+    rdfs:comment "A condition the mind is in at a given time, e.g. a sluggish mind (līnaṁ cittaṁ). Kept separate from the hindrances on purpose: see DECISIONS.md D6."@en ;
+    rdfs:subClassOf dho:Concept .
+
+dho:SourceLayer a owl:Class ;
+    rdfs:label "Source layer"@en .
+
+dho:Unification a dho:MentalQuality ;
+    skos:altLabel "one-pointedness"@en ;
+    skos:prefLabel "unification of mind"@en,
+        "cittekaggatā"@pi,
+        "心一境性"@zh .
+
+dho:memberOf a owl:ObjectProperty ;
+    rdfs:label "member of"@en ;
+    rdfs:comment "Never stated directly in the data: the reasoner derives it from dho:hasMember."@en ;
+    owl:inverseOf dho:hasMember .
+
+dho:o-energy-elements a dho:AttentionObject ;
+    skos:prefLabel "the elements of initiative, persistence, and exertion"@en,
+        "ārambhadhātu nikkamadhātu parakkamadhātu"@pi .
+
+dho:o-qualities a dho:AttentionObject ;
+    skos:prefLabel "qualities that are skillful and unskillful, blameworthy and blameless, inferior and superior, and with a portion of dark or bright"@en,
+        "kusalākusalā dhammā sāvajjānavajjā dhammā hīnapaṇītā dhammā kaṇhasukkasappaṭibhāgā dhammā"@pi .
+
+dho:p-sn46.53-10.1 a dho:Passage ;
+    dho:inText dho:t-sn46.53 ;
+    dho:segment "sn46.53:10.1" ;
+    dho:textEn "When the mind is restless, it’s the wrong time to develop the awakening factors of investigation of principles, energy, and rapture."@en ;
+    dho:textPi "Yasmiṁ, bhikkhave, samaye uddhataṁ cittaṁ hoti, akālo tasmiṁ samaye dhammavicayasambojjhaṅgassa bhāvanāya, akālo vīriyasambojjhaṅgassa bhāvanāya, akālo pītisambojjhaṅgassa bhāvanāya."@pi ;
+    dho:url "https://suttacentral.net/sn46.53/en/sujato#sn46.53:10.1"^^xsd:anyURI .
+
+dho:p-sn46.53-10.3 a dho:Passage ;
+    dho:inText dho:t-sn46.53 ;
+    dho:segment "sn46.53:10.3" ;
+    dho:textEn "Because it’s hard to settle a restless mind with these things."@en ;
+    dho:textPi "Uddhataṁ, bhikkhave, cittaṁ taṁ etehi dhammehi duvūpasamayaṁ hoti."@pi ;
+    dho:url "https://suttacentral.net/sn46.53/en/sujato#sn46.53:10.3"^^xsd:anyURI .
+
+dho:p-sn46.53-13.1 a dho:Passage ;
+    dho:inText dho:t-sn46.53 ;
+    dho:segment "sn46.53:13.1" ;
+    dho:textEn "When the mind is restless, it’s the right time to develop the awakening factors of tranquility, immersion, and equanimity."@en ;
+    dho:textPi "Yasmiñca kho, bhikkhave, samaye uddhataṁ cittaṁ hoti, kālo tasmiṁ samaye passaddhisambojjhaṅgassa bhāvanāya, kālo samādhisambojjhaṅgassa bhāvanāya, kālo upekkhāsambojjhaṅgassa bhāvanāya."@pi ;
+    dho:url "https://suttacentral.net/sn46.53/en/sujato#sn46.53:13.1"^^xsd:anyURI .
+
+dho:p-sn46.53-13.3 a dho:Passage ;
+    dho:inText dho:t-sn46.53 ;
+    dho:segment "sn46.53:13.3" ;
+    dho:textEn "Because it’s easy to settle a restless mind with these things."@en ;
+    dho:textPi "Uddhataṁ, bhikkhave, cittaṁ taṁ etehi dhammehi suvūpasamayaṁ hoti."@pi ;
+    dho:url "https://suttacentral.net/sn46.53/en/sujato#sn46.53:13.3"^^xsd:anyURI .
+
+dho:p-sn46.53-4.1 a dho:Passage ;
+    dho:inText dho:t-sn46.53 ;
+    dho:segment "sn46.53:4.1" ;
+    dho:textEn "When the mind is sluggish, it’s the wrong time to develop the awakening factors of tranquility, immersion, and equanimity."@en ;
+    dho:textPi "Yasmiṁ, bhikkhave, samaye līnaṁ cittaṁ hoti, akālo tasmiṁ samaye passaddhisambojjhaṅgassa bhāvanāya, akālo samādhisambojjhaṅgassa bhāvanāya, akālo upekkhāsambojjhaṅgassa bhāvanāya."@pi ;
+    dho:url "https://suttacentral.net/sn46.53/en/sujato#sn46.53:4.1"^^xsd:anyURI .
+
+dho:p-sn46.53-4.3 a dho:Passage ;
+    dho:inText dho:t-sn46.53 ;
+    dho:segment "sn46.53:4.3" ;
+    dho:textEn "Because it’s hard to stimulate a sluggish mind with these things."@en ;
+    dho:textPi "Līnaṁ, bhikkhave, cittaṁ taṁ etehi dhammehi dussamuṭṭhāpayaṁ hoti."@pi ;
+    dho:url "https://suttacentral.net/sn46.53/en/sujato#sn46.53:4.3"^^xsd:anyURI .
+
+dho:p-sn46.53-7.1 a dho:Passage ;
+    dho:inText dho:t-sn46.53 ;
+    dho:segment "sn46.53:7.1" ;
+    dho:textEn "When the mind is sluggish, it’s the right time to develop the awakening factors of investigation of principles, energy, and rapture."@en ;
+    dho:textPi "Yasmiñca kho, bhikkhave, samaye līnaṁ cittaṁ hoti, kālo tasmiṁ samaye dhammavicayasambojjhaṅgassa bhāvanāya, kālo vīriyasambojjhaṅgassa bhāvanāya, kālo pītisambojjhaṅgassa bhāvanāya."@pi ;
+    dho:url "https://suttacentral.net/sn46.53/en/sujato#sn46.53:7.1"^^xsd:anyURI .
+
+dho:p-sn46.53-7.3 a dho:Passage ;
+    dho:inText dho:t-sn46.53 ;
+    dho:segment "sn46.53:7.3" ;
+    dho:textEn "Because it’s easy to stimulate a sluggish mind with these things."@en ;
+    dho:textPi "Līnaṁ, bhikkhave, cittaṁ taṁ etehi dhammehi susamuṭṭhāpayaṁ hoti."@pi ;
+    dho:url "https://suttacentral.net/sn46.53/en/sujato#sn46.53:7.3"^^xsd:anyURI .
+
+dho:AttentionMode a owl:Class ;
+    rdfs:label "Mode of attention"@en .
+
+dho:CitedOnly a dho:CoverageStatus ;
+    rdfs:label "cited only"@en ;
+    rdfs:comment "Quoted as evidence (e.g. for a word sense); its teaching is not modelled."@en .
+
+dho:Derivation a owl:Class ;
+    rdfs:label "Derivation"@en ;
+    rdfs:comment "Records how a derived link was produced: which rule, which link, from what evidence."@en .
+
+dho:Doubt a dho:MentalQuality ;
+    skos:hiddenLabel "indecision"@en,
+        "skepticism"@en,
+        "uncertainty"@en ;
+    skos:prefLabel "doubt"@en,
+        "vicikicchā"@pi,
+        "疑"@zh .
+
+dho:IllWill a dho:MentalQuality ;
+    skos:altLabel "瞋"@zh ;
+    skos:hiddenLabel "anger"@en,
+        "annoyed"@en,
+        "aversion"@en,
+        "irritation"@en,
+        "resentment"@en ;
+    skos:prefLabel "ill will"@en,
+        "byāpāda"@pi,
+        "瞋恚"@zh .
+
+dho:Mindfulness a dho:MentalQuality ;
+    skos:altLabel "satisambojjhaṅga"@pi,
+        "念覺支"@zh ;
+    skos:prefLabel "mindfulness"@en,
+        "sati"@pi,
+        "念"@zh .
+
+dho:PartlyEncoded a dho:CoverageStatus ;
+    rdfs:label "partly encoded"@en ;
+    rdfs:comment "Some sections are modelled; dho:leftOut says what is not."@en .
+
+dho:ReviewStatus a owl:Class ;
+    rdfs:label "Review status"@en .
+
+dho:SensualDesire a dho:MentalQuality ;
+    skos:altLabel "欲貪"@zh ;
+    skos:hiddenLabel "craving"@en,
+        "desire"@en,
+        "lust"@en,
+        "wanting"@en ;
+    skos:prefLabel "sensual desire"@en,
+        "kāmacchanda"@pi,
+        "貪欲"@zh .
+
+dho:Timing a owl:Class ;
+    rdfs:label "Timing"@en .
+
+dho:CoverageStatus a owl:Class ;
+    rdfs:label "Coverage status"@en .
+
+dho:DullnessDrowsiness a dho:MentalQuality ;
+    skos:altLabel "sloth and torpor"@en,
+        "thīnamiddha"@pi,
+        "睡眠"@zh ;
+    skos:hiddenLabel "drowsy"@en,
+        "lethargy"@en,
+        "sleepy"@en,
+        "sluggish"@en,
+        "tired"@en ;
+    skos:prefLabel "dullness and drowsiness"@en,
+        "thinamiddha"@pi,
+        "惛沈睡眠"@zh .
+
+dho:Energy a dho:MentalQuality ;
+    skos:altLabel "effort"@en,
+        "vīriyasambojjhaṅga"@pi,
+        "精進覺支"@zh ;
+    skos:prefLabel "energy"@en,
+        "vīriya"@pi,
+        "精進"@zh .
+
+dho:Equanimity a dho:MentalQuality ;
+    skos:altLabel "upekkhāsambojjhaṅga"@pi,
+        "捨覺支"@zh ;
+    skos:prefLabel "equanimity"@en,
+        "upekkhā"@pi,
+        "捨"@zh .
+
+dho:Investigation a dho:MentalQuality ;
+    skos:altLabel "investigation of states"@en,
+        "dhammavicayasambojjhaṅga"@pi,
+        "擇法覺支"@zh ;
+    skos:prefLabel "investigation of principles"@en,
+        "dhammavicaya"@pi,
+        "擇法"@zh .
+
+dho:IrrationalAttention a dho:AttentionMode ;
+    rdfs:label "frequent irrational application of mind"@en,
+        "ayonisomanasikārabahulīkāra"@pi,
+        "不如理作意"@zh .
+
+dho:RestlessnessRemorse a dho:MentalQuality ;
+    skos:altLabel "restlessness and worry"@en,
+        "uddhacca-kukkucca"@pi,
+        "掉悔"@zh ;
+    skos:hiddenLabel "agitation"@en,
+        "anxious"@en,
+        "monkey mind"@en,
+        "regret"@en,
+        "restless"@en,
+        "restlessness"@en,
+        "worry"@en ;
+    skos:prefLabel "restlessness and remorse"@en,
+        "uddhaccakukkucca"@pi,
+        "掉舉惡作"@zh .
+
+dho:Tranquility a dho:MentalQuality ;
+    skos:altLabel "calm"@en,
+        "passaddhisambojjhaṅga"@pi,
+        "猗"@zh,
+        "輕安覺支"@zh ;
+    skos:prefLabel "tranquility"@en,
+        "passaddhi"@pi,
+        "輕安"@zh .
+
+dho:t-mn43 a dho:Text ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
+    skos:prefLabel "MN 43 Mahāvedallasutta — The Great Elaboration"@en ;
+    dho:coverage dho:PartlyEncoded ;
+    dho:encodes "Only the first absorption: its five factors (19.2-19.3), and that it gives up the five hindrances and possesses those five factors (20.2-20.4)." ;
+    dho:layer dho:SuttaLayer ;
+    dho:leftOut "Most of the dialogue: wisdom and consciousness (2-6), feeling and perception (7-11), the goal of wisdom and conditions for right view (12-14), states of existence (15-17), what the first absorption is (18), the five faculties (21-22), vital forces and death vs cessation (23-25), and the releases of the heart (26-37)." ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:modelledOn "2026-11-13"^^xsd:date ;
+    dho:review dho:Unreviewed ;
+    dho:url "https://suttacentral.net/mn43/en/sujato"^^xsd:anyURI .
+
+dho:t-vism a dho:Text ;
+    skos:prefLabel "Visuddhimagga IV.86"@en ;
+    dho:coverage dho:ReferencedOnly ;
+    dho:encodes "Five pairings of a jhāna factor against a hindrance (citing the Peṭakopadesa)." ;
+    dho:layer dho:CommentaryLayer ;
+    dho:leftOut "Everything else. The text is not held; the pairings need checking against an edition before they can be marked verified." ;
+    dho:modelledBy "project owner with Claude (AI assistant), from memory of the text, not checked against it" ;
+    dho:modelledOn "2026-11-13"^^xsd:date ;
+    dho:review dho:Unreviewed .
+
+dho:CommentaryLayer a dho:SourceLayer ;
+    rdfs:label "Commentary / later treatise"@en .
+
+dho:Immersion a dho:MentalQuality ;
+    skos:altLabel "concentration"@en,
+        "samādhisambojjhaṅga"@pi,
+        "定覺支"@zh ;
+    skos:prefLabel "immersion"@en,
+        "samādhi"@pi,
+        "定"@zh .
+
+dho:RestlessMind a dho:MindState ;
+    skos:hiddenLabel "agitated"@en,
+        "monkey mind"@en,
+        "restless"@en,
+        "scattered"@en ;
+    skos:prefLabel "restless mind"@en,
+        "uddhataṁ cittaṁ"@pi ;
+    dho:editorialRelated dho:RestlessnessRemorse .
+
+dho:RightTime a dho:Timing ;
+    rdfs:label "right time to develop"@en,
+        "kāla"@pi .
+
+dho:SluggishMind a dho:MindState ;
+    skos:hiddenLabel "dull"@en,
+        "low energy"@en,
+        "sleepy"@en,
+        "sluggish"@en ;
+    skos:prefLabel "sluggish mind"@en,
+        "līnaṁ cittaṁ"@pi ;
+    dho:editorialRelated dho:DullnessDrowsiness .
+
+dho:WrongTime a dho:Timing ;
+    rdfs:label "wrong time to develop"@en,
+        "akāla"@pi .
+
+dho:NonAttention a dho:AttentionMode ;
+    rdfs:label "not frequently applying the mind"@en,
+        "amanasikārabahulīkāra"@pi,
+        "不作意"@zh .
+
+dho:NumberedList a owl:Class ;
+    rdfs:label "Numbered list"@en ;
+    rdfs:comment "One of the canon's numbered lists (the five hindrances, the seven awakening factors, ...)."@en ;
+    rdfs:subClassOf skos:Collection .
+
+dho:Opposition a owl:Class ;
+    rdfs:label "Opposition"@en ;
+    rdfs:comment "A one-to-one pairing of a quality against a hindrance. The suttas give the sets; the pairing comes from the commentaries."@en .
+
+dho:Rapture a dho:MentalQuality ;
+    skos:altLabel "joy"@en,
+        "pītisambojjhaṅga"@pi,
+        "喜覺支"@zh ;
+    skos:prefLabel "rapture"@en,
+        "pīti"@pi,
+        "喜"@zh .
+
+dho:SuttaLayer a dho:SourceLayer ;
+    rdfs:label "Sutta (early discourses)"@en .
+
+dho:t-sn46.53 a dho:Text ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
+    skos:prefLabel "SN 46.53 Aggisutta — Fire"@en ;
+    dho:coverage dho:PartlyEncoded ;
+    dho:encodes "The timing advice: which awakening factors it is the right or wrong time to develop when the mind is sluggish (4.1, 7.1) or restless (10.1, 13.1), the reason given for each, and 'mindfulness is always useful' (15.4)." ;
+    dho:layer dho:SuttaLayer ;
+    dho:leftOut "The setting and the challenge from wanderers of other religions (1.1-3.1); the four fire similes (5, 8, 11, 14) that illustrate the advice; the repeated statements after each simile (6, 9, 12, 15.1-15.3)." ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:modelledOn "2026-11-13"^^xsd:date ;
+    dho:review dho:Unreviewed ;
+    dho:url "https://suttacentral.net/sn46.53/en/sujato"^^xsd:anyURI .
+
+dho:Unreviewed a dho:ReviewStatus ;
+    rdfs:label "not yet reviewed"@en ;
+    rdfs:comment "Modelled by the editor (with an AI assistant); nobody else has checked it."@en .
+
+dho:Concept a owl:Class ;
+    rdfs:label "Concept"@en ;
+    rdfs:comment "Anything the teachings talk about."@en ;
+    rdfs:subClassOf skos:Concept .
+
+dho:RationalAttention a dho:AttentionMode ;
+    rdfs:label "frequent rational application of mind"@en,
+        "yonisomanasikārabahulīkāra"@pi,
+        "如理作意"@zh .
+
+dho:AttentionObject a owl:Class ;
+    rdfs:label "Object of attention"@en ;
+    rdfs:comment "What the mind is applied to, e.g. 'the feature of beauty' (subhanimitta)."@en ;
+    rdfs:subClassOf dho:Concept .
+
+dho:TimingAdvice a owl:Class ;
+    rdfs:label "Timing advice"@en ;
+    rdfs:comment "One statement from SN 46.53: when the mind is in STATE, it is the right/wrong time to develop FACTOR."@en .
+
+dho:Text a owl:Class ;
+    rdfs:label "Text"@en .
+
+dho:MentalQuality a owl:Class ;
+    rdfs:label "Mental quality"@en ;
+    rdfs:comment "A quality of mind that can arise, grow, or be abandoned."@en ;
+    rdfs:subClassOf dho:Concept .
+
+dho:t-sn46.2 a dho:Text ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
+    skos:prefLabel "SN 46.2 Kāyasutta — The Body"@en ;
+    dho:coverage dho:PartlyEncoded ;
+    dho:encodes "Its 12 statements of what fuels the five hindrances and seven awakening factors (2-6, 9-15). They match SN 46.51 sections 1-12 (identical English; Pali differs only in punctuation and one spelling variant), so they were added as a second citation on the same claims, not as new claims." ;
+    dho:layer dho:SuttaLayer ;
+    dho:leftOut "The simile framing the teaching: as the body is sustained by food, so the hindrances and the awakening factors are sustained by fuel (1.2-1.3, 7, 8, 16). There is no pattern for similes yet." ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:review dho:Unreviewed ;
+    dho:url "https://suttacentral.net/sn46.2/en/sujato"^^xsd:anyURI .
+
+dho:Nutriment a owl:Class ;
+    rdfs:label "Nutriment"@en,
+        "āhāra"@pi,
+        "食"@zh ;
+    rdfs:comment "One statement from SN 46.51: an object, a mode of attention, and the quality it fuels or starves."@en .
+
+dho:t-sn46.51 a dho:Text ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
+    skos:prefLabel "SN 46.51 Āhārasutta — Nourishing"@en ;
+    dho:coverage dho:FullyEncoded ;
+    dho:encodes "All 24 statements of what fuels and starves the five hindrances and seven awakening factors, each as a nutriment node (object + kind of attention + effect). The opening statement (1.2) anchors both lists." ;
+    dho:layer dho:SuttaLayer ;
+    dho:leftOut "Nothing doctrinal. The question (x.1) and conclusion (x.4) of each section restate the claim and are not cited separately." ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:modelledOn "2026-11-13"^^xsd:date ;
+    dho:review dho:Unreviewed ;
+    dho:url "https://suttacentral.net/sn46.51/en/sujato"^^xsd:anyURI .
+
+dho:Passage a owl:Class ;
+    rdfs:label "Passage"@en ;
+    rdfs:comment "One segment of a text, identified by its SuttaCentral segment id (e.g. sn46.51:16.2)."@en .
+

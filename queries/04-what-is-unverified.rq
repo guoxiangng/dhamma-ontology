@@ -1,0 +1,10 @@
+# Everything the project can't yet stand behind: commentary claims cited by reference only,
+# editor's links, and texts nobody has reviewed.
+PREFIX dho:  <https://guoxiangng.github.io/dhamma-ontology/ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT ?kind ?item ?note WHERE {
+  { ?item dho:citationNote ?note . FILTER NOT EXISTS { ?item dho:citedBy ?p } BIND("commentary, not held" AS ?kind) }
+  UNION { ?item dho:editorialRelated ?other . BIND("editor's link" AS ?kind) BIND(?other AS ?note) }
+  UNION { ?item dho:review dho:Unreviewed . BIND("text not reviewed" AS ?kind) BIND("" AS ?note) }
+}
+ORDER BY ?kind ?item

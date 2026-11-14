@@ -1,0 +1,108 @@
+# SN 46.51 Āhārasutta ("Nourishing"): what fuels and what starves the five
+# hindrances and the seven awakening factors.
+#
+# Each of the sutta's 24 statements becomes one dho:Nutriment node:
+#   object  +  mode of attention  ->  fuels | starves  ->  quality
+# cited by the segment naming the object (x.2) and the attention (x.3).
+#
+# Objects are shared where the sutta repeats the same wording. That sharing is
+# what lets rule R1 find which awakening factor counters which hindrance.
+
+@prefix dho:  <https://guoxiangng.github.io/dhamma-ontology/ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# ---------------------------------------------------------------- objects of attention
+
+dho:o-beauty a dho:AttentionObject ;
+    skos:prefLabel "the feature of beauty"@en , "subhanimitta"@pi .
+dho:o-ugliness a dho:AttentionObject ;
+    skos:prefLabel "the feature of ugliness"@en , "asubhanimitta"@pi .
+dho:o-aversion a dho:AttentionObject ;
+    skos:prefLabel "the feature of aversion"@en , "paṭighanimitta"@pi .
+dho:o-metta a dho:AttentionObject ;
+    skos:prefLabel "the heart's release by love"@en , "mettācetovimutti"@pi .
+dho:o-sluggishness a dho:AttentionObject ;
+    skos:prefLabel "discontent, sloth, yawning, sleepiness after eating, and mental sluggishness"@en ,
+                   "arati tandi vijambhitā bhattasammado cetaso ca līnattaṁ"@pi .
+dho:o-energy-elements a dho:AttentionObject ;
+    skos:prefLabel "the elements of initiative, persistence, and exertion"@en ,
+                   "ārambhadhātu nikkamadhātu parakkamadhātu"@pi .
+dho:o-unsettled-mind a dho:AttentionObject ;
+    skos:prefLabel "the unsettled mind"@en , "cetaso avūpasamo"@pi .
+dho:o-settled-mind a dho:AttentionObject ;
+    skos:prefLabel "the settled mind"@en , "cetaso vūpasamo"@pi .
+dho:o-grounds-doubt a dho:AttentionObject ;
+    skos:prefLabel "things that are grounds for doubt"@en , "vicikicchāṭṭhānīyā dhammā"@pi .
+dho:o-qualities a dho:AttentionObject ;
+    skos:prefLabel "qualities that are skillful and unskillful, blameworthy and blameless, inferior and superior, and with a portion of dark or bright"@en ,
+                   "kusalākusalā dhammā sāvajjānavajjā dhammā hīnapaṇītā dhammā kaṇhasukkasappaṭibhāgā dhammā"@pi .
+dho:o-grounds-mindfulness a dho:AttentionObject ;
+    skos:prefLabel "things that are grounds for the awakening factor of mindfulness"@en , "satisambojjhaṅgaṭṭhānīyā dhammā"@pi .
+dho:o-grounds-rapture a dho:AttentionObject ;
+    skos:prefLabel "things that are grounds for the awakening factor of rapture"@en , "pītisambojjhaṅgaṭṭhānīyā dhammā"@pi .
+dho:o-tranquility a dho:AttentionObject ;
+    skos:prefLabel "tranquility of the body and of the mind"@en , "kāyappassaddhi cittappassaddhi"@pi .
+dho:o-serenity a dho:AttentionObject ;
+    skos:prefLabel "the basis of serenity and freedom from distraction"@en , "samathanimittaṁ abyagganimittaṁ"@pi .
+dho:o-grounds-equanimity a dho:AttentionObject ;
+    skos:prefLabel "things that are grounds for the awakening factor of equanimity"@en , "upekkhāsambojjhaṅgaṭṭhānīyā dhammā"@pi .
+
+# ---------------------------------------------------------------- what fuels the hindrances (irrational attention)
+
+dho:n-01 a dho:Nutriment ; dho:object dho:o-beauty ;        dho:attention dho:IrrationalAttention ; dho:fuels dho:SensualDesire ;
+    dho:citedBy dho:p-sn46.51-1.5 , dho:p-sn46.51-1.6 .
+dho:n-02 a dho:Nutriment ; dho:object dho:o-aversion ;      dho:attention dho:IrrationalAttention ; dho:fuels dho:IllWill ;
+    dho:citedBy dho:p-sn46.51-2.2 , dho:p-sn46.51-2.3 .
+dho:n-03 a dho:Nutriment ; dho:object dho:o-sluggishness ;  dho:attention dho:IrrationalAttention ; dho:fuels dho:DullnessDrowsiness ;
+    dho:citedBy dho:p-sn46.51-3.2 , dho:p-sn46.51-3.3 .
+dho:n-04 a dho:Nutriment ; dho:object dho:o-unsettled-mind ; dho:attention dho:IrrationalAttention ; dho:fuels dho:RestlessnessRemorse ;
+    dho:citedBy dho:p-sn46.51-4.2 , dho:p-sn46.51-4.3 .
+dho:n-05 a dho:Nutriment ; dho:object dho:o-grounds-doubt ; dho:attention dho:IrrationalAttention ; dho:fuels dho:Doubt ;
+    dho:citedBy dho:p-sn46.51-5.2 , dho:p-sn46.51-5.3 .
+
+# ---------------------------------------------------------------- what fuels the awakening factors (rational attention)
+
+dho:n-06 a dho:Nutriment ; dho:object dho:o-grounds-mindfulness ; dho:attention dho:RationalAttention ; dho:fuels dho:Mindfulness ;
+    dho:citedBy dho:p-sn46.51-6.2 , dho:p-sn46.51-6.3 .
+dho:n-07 a dho:Nutriment ; dho:object dho:o-qualities ;           dho:attention dho:RationalAttention ; dho:fuels dho:Investigation ;
+    dho:citedBy dho:p-sn46.51-7.2 , dho:p-sn46.51-7.3 .
+dho:n-08 a dho:Nutriment ; dho:object dho:o-energy-elements ;     dho:attention dho:RationalAttention ; dho:fuels dho:Energy ;
+    dho:citedBy dho:p-sn46.51-8.2 , dho:p-sn46.51-8.3 .
+dho:n-09 a dho:Nutriment ; dho:object dho:o-grounds-rapture ;     dho:attention dho:RationalAttention ; dho:fuels dho:Rapture ;
+    dho:citedBy dho:p-sn46.51-9.2 , dho:p-sn46.51-9.3 .
+dho:n-10 a dho:Nutriment ; dho:object dho:o-tranquility ;         dho:attention dho:RationalAttention ; dho:fuels dho:Tranquility ;
+    dho:citedBy dho:p-sn46.51-10.2 , dho:p-sn46.51-10.3 .
+dho:n-11 a dho:Nutriment ; dho:object dho:o-serenity ;            dho:attention dho:RationalAttention ; dho:fuels dho:Immersion ;
+    dho:citedBy dho:p-sn46.51-11.2 , dho:p-sn46.51-11.3 .
+dho:n-12 a dho:Nutriment ; dho:object dho:o-grounds-equanimity ;  dho:attention dho:RationalAttention ; dho:fuels dho:Equanimity ;
+    dho:citedBy dho:p-sn46.51-12.2 , dho:p-sn46.51-12.3 .
+
+# ---------------------------------------------------------------- what starves the hindrances (rational attention)
+
+dho:n-13 a dho:Nutriment ; dho:object dho:o-ugliness ;        dho:attention dho:RationalAttention ; dho:starves dho:SensualDesire ;
+    dho:citedBy dho:p-sn46.51-13.2 , dho:p-sn46.51-13.3 .
+dho:n-14 a dho:Nutriment ; dho:object dho:o-metta ;           dho:attention dho:RationalAttention ; dho:starves dho:IllWill ;
+    dho:citedBy dho:p-sn46.51-14.2 , dho:p-sn46.51-14.3 .
+dho:n-15 a dho:Nutriment ; dho:object dho:o-energy-elements ; dho:attention dho:RationalAttention ; dho:starves dho:DullnessDrowsiness ;
+    dho:citedBy dho:p-sn46.51-15.2 , dho:p-sn46.51-15.3 .
+dho:n-16 a dho:Nutriment ; dho:object dho:o-settled-mind ;    dho:attention dho:RationalAttention ; dho:starves dho:RestlessnessRemorse ;
+    dho:citedBy dho:p-sn46.51-16.2 , dho:p-sn46.51-16.3 .
+dho:n-17 a dho:Nutriment ; dho:object dho:o-qualities ;       dho:attention dho:RationalAttention ; dho:starves dho:Doubt ;
+    dho:citedBy dho:p-sn46.51-17.2 , dho:p-sn46.51-17.3 .
+
+# ---------------------------------------------------------------- what starves the awakening factors (not attending)
+
+dho:n-18 a dho:Nutriment ; dho:object dho:o-grounds-mindfulness ; dho:attention dho:NonAttention ; dho:starves dho:Mindfulness ;
+    dho:citedBy dho:p-sn46.51-18.2 , dho:p-sn46.51-18.3 .
+dho:n-19 a dho:Nutriment ; dho:object dho:o-qualities ;           dho:attention dho:NonAttention ; dho:starves dho:Investigation ;
+    dho:citedBy dho:p-sn46.51-19.2 , dho:p-sn46.51-19.3 .
+dho:n-20 a dho:Nutriment ; dho:object dho:o-energy-elements ;     dho:attention dho:NonAttention ; dho:starves dho:Energy ;
+    dho:citedBy dho:p-sn46.51-20.2 , dho:p-sn46.51-20.3 .
+dho:n-21 a dho:Nutriment ; dho:object dho:o-grounds-rapture ;     dho:attention dho:NonAttention ; dho:starves dho:Rapture ;
+    dho:citedBy dho:p-sn46.51-21.2 , dho:p-sn46.51-21.3 .
+dho:n-22 a dho:Nutriment ; dho:object dho:o-tranquility ;         dho:attention dho:NonAttention ; dho:starves dho:Tranquility ;
+    dho:citedBy dho:p-sn46.51-22.2 , dho:p-sn46.51-22.3 .
+dho:n-23 a dho:Nutriment ; dho:object dho:o-serenity ;            dho:attention dho:NonAttention ; dho:starves dho:Immersion ;
+    dho:citedBy dho:p-sn46.51-23.2 , dho:p-sn46.51-23.3 .
+dho:n-24 a dho:Nutriment ; dho:object dho:o-grounds-equanimity ;  dho:attention dho:NonAttention ; dho:starves dho:Equanimity ;
+    dho:citedBy dho:p-sn46.51-24.2 , dho:p-sn46.51-24.3 .

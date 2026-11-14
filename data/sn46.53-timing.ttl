@@ -1,0 +1,29 @@
+# SN 46.53 Aggisutta ("Fire"): which awakening factors to develop when the
+# mind is sluggish, and which when it is restless. Mindfulness is always useful.
+# Cited by the Buddha's own statements (4.1, 7.1, 10.1, 13.1, 15.4), not the
+# simile repetitions.
+
+@prefix dho: <https://guoxiangng.github.io/dhamma-ontology/ns#> .
+
+# --- sluggish mind: wrong time for tranquility, immersion, equanimity (4.1)
+dho:ta-01 a dho:TimingAdvice ; dho:whenMind dho:SluggishMind ; dho:develop dho:Tranquility ; dho:timing dho:WrongTime ; dho:citedBy dho:p-sn46.53-4.1 , dho:p-sn46.53-4.3 .
+dho:ta-02 a dho:TimingAdvice ; dho:whenMind dho:SluggishMind ; dho:develop dho:Immersion ;   dho:timing dho:WrongTime ; dho:citedBy dho:p-sn46.53-4.1 , dho:p-sn46.53-4.3 .
+dho:ta-03 a dho:TimingAdvice ; dho:whenMind dho:SluggishMind ; dho:develop dho:Equanimity ;  dho:timing dho:WrongTime ; dho:citedBy dho:p-sn46.53-4.1 , dho:p-sn46.53-4.3 .
+
+# --- sluggish mind: right time for investigation, energy, rapture (7.1)
+dho:ta-04 a dho:TimingAdvice ; dho:whenMind dho:SluggishMind ; dho:develop dho:Investigation ; dho:timing dho:RightTime ; dho:citedBy dho:p-sn46.53-7.1 , dho:p-sn46.53-7.3 .
+dho:ta-05 a dho:TimingAdvice ; dho:whenMind dho:SluggishMind ; dho:develop dho:Energy ;        dho:timing dho:RightTime ; dho:citedBy dho:p-sn46.53-7.1 , dho:p-sn46.53-7.3 .
+dho:ta-06 a dho:TimingAdvice ; dho:whenMind dho:SluggishMind ; dho:develop dho:Rapture ;       dho:timing dho:RightTime ; dho:citedBy dho:p-sn46.53-7.1 , dho:p-sn46.53-7.3 .
+
+# --- restless mind: wrong time for investigation, energy, rapture (10.1)
+dho:ta-07 a dho:TimingAdvice ; dho:whenMind dho:RestlessMind ; dho:develop dho:Investigation ; dho:timing dho:WrongTime ; dho:citedBy dho:p-sn46.53-10.1 , dho:p-sn46.53-10.3 .
+dho:ta-08 a dho:TimingAdvice ; dho:whenMind dho:RestlessMind ; dho:develop dho:Energy ;        dho:timing dho:WrongTime ; dho:citedBy dho:p-sn46.53-10.1 , dho:p-sn46.53-10.3 .
+dho:ta-09 a dho:TimingAdvice ; dho:whenMind dho:RestlessMind ; dho:develop dho:Rapture ;       dho:timing dho:WrongTime ; dho:citedBy dho:p-sn46.53-10.1 , dho:p-sn46.53-10.3 .
+
+# --- restless mind: right time for tranquility, immersion, equanimity (13.1)
+dho:ta-10 a dho:TimingAdvice ; dho:whenMind dho:RestlessMind ; dho:develop dho:Tranquility ; dho:timing dho:RightTime ; dho:citedBy dho:p-sn46.53-13.1 , dho:p-sn46.53-13.3 .
+dho:ta-11 a dho:TimingAdvice ; dho:whenMind dho:RestlessMind ; dho:develop dho:Immersion ;   dho:timing dho:RightTime ; dho:citedBy dho:p-sn46.53-13.1 , dho:p-sn46.53-13.3 .
+dho:ta-12 a dho:TimingAdvice ; dho:whenMind dho:RestlessMind ; dho:develop dho:Equanimity ;  dho:timing dho:RightTime ; dho:citedBy dho:p-sn46.53-13.1 , dho:p-sn46.53-13.3 .
+
+# --- mindfulness: always useful, no particular mind state (15.4)
+dho:ta-13 a dho:TimingAdvice ; dho:develop dho:Mindfulness ; dho:timing dho:AlwaysUseful ; dho:citedBy dho:p-sn46.53-15.4 .

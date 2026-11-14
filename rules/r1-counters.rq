@@ -1,0 +1,27 @@
+# Rule R1: which awakening factor counters which hindrance?
+#
+# SN 46.51 never pairs them directly. But if the SAME object, attended to
+# rationally, both FUELS an awakening factor and STARVES a hindrance, then
+# developing that factor works against that hindrance.
+#
+# Runs after OWL reasoning (so dho:Hindrance / dho:AwakeningFactor are already
+# inferred from list membership). Writes the link AND a Derivation record
+# pointing at the two nutriment statements it came from.
+
+PREFIX dho: <https://guoxiangng.github.io/dhamma-ontology/ns#>
+
+CONSTRUCT {
+    ?factor dho:counters ?hindrance .
+    ?d a dho:Derivation ;
+       dho:derivedBy "R1" ;
+       dho:derivedSubject ?factor ;
+       dho:derivedObject ?hindrance ;
+       dho:via ?fuel , ?starve , ?object .
+}
+WHERE {
+    ?fuel   dho:object ?object ; dho:attention dho:RationalAttention ; dho:fuels   ?factor .
+    ?starve dho:object ?object ; dho:attention dho:RationalAttention ; dho:starves ?hindrance .
+    ?factor    a dho:AwakeningFactor .
+    ?hindrance a dho:Hindrance .
+    BIND(IRI(CONCAT(STR(dho:), "d-r1-", STRAFTER(STR(?factor), "#"), "-", STRAFTER(STR(?hindrance), "#"))) AS ?d)
+}

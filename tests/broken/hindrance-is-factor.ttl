@@ -1,0 +1,4 @@
+# Error: puts mindfulness into the five hindrances.
+# Expect S1 (list now has 6, text says 5) and S2 (hindrance + awakening factor).
+@prefix dho: <https://guoxiangng.github.io/dhamma-ontology/ns#> .
+dho:FiveHindrances dho:hasMember dho:Mindfulness .

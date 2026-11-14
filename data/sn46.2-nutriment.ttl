@@ -1,0 +1,21 @@
+@prefix dho: <https://guoxiangng.github.io/dhamma-ontology/ns#> .
+
+# SN 46.2 (Kāya, "The Body") states the same 12 "fuels" claims as SN 46.51 sections 1-12. A claim stated twice is ONE claim with two citations, not two
+# nodes, so these lines only add citations to the existing nutriments (see DECISIONS.md D12).
+# Checked pair by pair (2026-11-14): the English is identical for all 12. The Pali is identical
+# for 10; n-07 differs only in commas, n-10 in commas and one spelling variant
+# (kāyappassaddhi in SN 46.51, kāyapassaddhi in SN 46.2).
+# SN 46.2 has no "starves" side; its body-and-food simile is not modelled (see coverage.ttl).
+
+dho:n-01 dho:citedBy dho:p-sn46.2-2.2 , dho:p-sn46.2-2.3 .
+dho:n-02 dho:citedBy dho:p-sn46.2-3.2 , dho:p-sn46.2-3.3 .
+dho:n-03 dho:citedBy dho:p-sn46.2-4.2 , dho:p-sn46.2-4.3 .
+dho:n-04 dho:citedBy dho:p-sn46.2-5.2 , dho:p-sn46.2-5.3 .
+dho:n-05 dho:citedBy dho:p-sn46.2-6.2 , dho:p-sn46.2-6.3 .
+dho:n-06 dho:citedBy dho:p-sn46.2-9.2 , dho:p-sn46.2-9.3 .
+dho:n-07 dho:citedBy dho:p-sn46.2-10.2 , dho:p-sn46.2-10.3 .
+dho:n-08 dho:citedBy dho:p-sn46.2-11.2 , dho:p-sn46.2-11.3 .
+dho:n-09 dho:citedBy dho:p-sn46.2-12.2 , dho:p-sn46.2-12.3 .
+dho:n-10 dho:citedBy dho:p-sn46.2-13.2 , dho:p-sn46.2-13.3 .
+dho:n-11 dho:citedBy dho:p-sn46.2-14.2 , dho:p-sn46.2-14.3 .
+dho:n-12 dho:citedBy dho:p-sn46.2-15.2 , dho:p-sn46.2-15.3 .

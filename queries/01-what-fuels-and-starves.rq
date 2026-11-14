@@ -1,0 +1,9 @@
+# What fuels and what starves each hindrance and awakening factor (SN 46.51),
+# with the kind of attention and the object it is applied to.
+PREFIX dho:  <https://guoxiangng.github.io/dhamma-ontology/ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT ?quality ?effect ?attention ?object WHERE {
+  ?n a dho:Nutriment ; dho:object ?object ; dho:attention ?attention .
+  { ?n dho:fuels ?quality . BIND("fuels" AS ?effect) } UNION { ?n dho:starves ?quality . BIND("starves" AS ?effect) }
+}
+ORDER BY ?quality ?effect

@@ -1,0 +1,4 @@
+rdflib>=7.6
+owlrl>=7.1
+pyshacl>=0.40
+pytest>=8
