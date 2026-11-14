@@ -12,10 +12,10 @@ This is how much of the canon the ontology actually draws on. It is small on pur
 |---|---:|---:|---:|---:|---:|
 | Long Discourses (DN) | 34 | 0 | 0 | 0 | 0.00% |
 | Middle Discourses (MN) | 152 | 0 | 2 | 2 | 2.63% |
-| Linked Discourses (SN) | 3,024 | 14 | 21 | 1 | 1.19% |
+| Linked Discourses (SN) | 3,024 | 16 | 39 | 1 | 1.85% |
 | Numbered Discourses (AN) | 8,122 | 0 | 0 | 0 | 0.00% |
 | Minor Collection (KN) | 2,748 | 0 | 0 | 1 | 0.04% |
-| **Total** | **14,080** | **14** | | | **0.29%** |
+| **Total** | **14,080** | **16** | | | **0.43%** |
 
 Counts follow SuttaCentral's numbering, with grouped ranges (e.g. `sn12.93-213`) counted as the suttas they number. Many of those are abbreviated repetitions, so this overstates the amount of distinct text. KN mixes early and late material (Dhammapada and Sutta Nipāta beside Jātaka and Apadāna) and Dhammapada is counted by verse.
 
@@ -37,6 +37,8 @@ Counts follow SuttaCentral's numbering, with grouped ranges (e.g. `sn12.93-213`)
 | [SN 46.49 Ajjhattikaṅgasutta — Interior](https://suttacentral.net/sn46.49/en/sujato) | Sutta (early discourses) | fully encoded | 1 / 7 | 1 | not yet reviewed |
 | [SN 46.50 Bāhiraṅgasutta — Exterior](https://suttacentral.net/sn46.50/en/sujato) | Sutta (early discourses) | fully encoded | 1 / 13 | 1 | not yet reviewed |
 | [SN 46.51 Āhārasutta — Nourishing](https://suttacentral.net/sn46.51/en/sujato) | Sutta (early discourses) | fully encoded | 49 / 100 | 27 | not yet reviewed |
+| [SN 46.57 Aṭṭhikamahapphalasutta — A Skeleton](https://suttacentral.net/sn46.57/en/sujato) | Sutta (early discourses) | fully encoded | 9 / 37 | 13 | not yet reviewed |
+| [SN 46.76 Nirodhasutta — Cessation](https://suttacentral.net/sn46.76/en/sujato) | Sutta (early discourses) | fully encoded | 12 / 25 | 13 | not yet reviewed |
 | [MN 43 Mahāvedallasutta — The Great Elaboration](https://suttacentral.net/mn43/en/sujato) | Sutta (early discourses) | partly encoded | 5 / 181 | 3 | not yet reviewed |
 | [MN 44 Cūḷavedallasutta — The Shorter Elaboration](https://suttacentral.net/mn44/en/sujato) | Sutta (early discourses) | partly encoded | 1 / 136 | 1 | not yet reviewed |
 | [SN 46.1 Himavantasutta — The Himalaya](https://suttacentral.net/sn46.1/en/sujato) | Sutta (early discourses) | partly encoded | 3 / 14 | 5 | not yet reviewed |
@@ -59,7 +61,25 @@ Counts follow SuttaCentral's numbering, with grouped ranges (e.g. `sn12.93-213`)
 | [SN 46.48 Ādiccasutta — The Sun](https://suttacentral.net/sn46.48/en/sujato) | Sutta (early discourses) | partly encoded | 3 / 8 | 6 | not yet reviewed |
 | [SN 46.5 Bhikkhusutta — A Monk](https://suttacentral.net/sn46.5/en/sujato) | Sutta (early discourses) | partly encoded | 4 / 12 | 6 | not yet reviewed |
 | [SN 46.53 Aggisutta — Fire](https://suttacentral.net/sn46.53/en/sujato) | Sutta (early discourses) | partly encoded | 9 / 51 | 13 | not yet reviewed |
+| [SN 46.58 Puḷavakasutta — Worm-Infested](https://suttacentral.net/sn46.58/en/sujato) | Sutta (early discourses) | partly encoded | 1 / 2 | 1 | not yet reviewed |
+| [SN 46.59 Vinīlakasutta — Livid](https://suttacentral.net/sn46.59/en/sujato) | Sutta (early discourses) | partly encoded | 1 / 2 | 1 | not yet reviewed |
+| [SN 46.60 Vicchiddakasutta — Split Open](https://suttacentral.net/sn46.60/en/sujato) | Sutta (early discourses) | partly encoded | 1 / 2 | 1 | not yet reviewed |
+| [SN 46.61 Uddhumātakasutta — Bloated](https://suttacentral.net/sn46.61/en/sujato) | Sutta (early discourses) | partly encoded | 1 / 2 | 1 | not yet reviewed |
+| [SN 46.62 Mettāsutta — Love](https://suttacentral.net/sn46.62/en/sujato) | Sutta (early discourses) | partly encoded | 1 / 2 | 1 | not yet reviewed |
+| [SN 46.63 Karuṇāsutta — Compassion](https://suttacentral.net/sn46.63/en/sujato) | Sutta (early discourses) | partly encoded | 1 / 2 | 1 | not yet reviewed |
+| [SN 46.64 Muditāsutta — Rejoicing](https://suttacentral.net/sn46.64/en/sujato) | Sutta (early discourses) | partly encoded | 1 / 2 | 1 | not yet reviewed |
+| [SN 46.65 Upekkhāsutta — Equanimity](https://suttacentral.net/sn46.65/en/sujato) | Sutta (early discourses) | partly encoded | 1 / 2 | 1 | not yet reviewed |
+| [SN 46.66 Ānāpānasutta — Breathing](https://suttacentral.net/sn46.66/en/sujato) | Sutta (early discourses) | partly encoded | 1 / 8 | 1 | not yet reviewed |
+| [SN 46.67 Asubhasutta — Ugliness](https://suttacentral.net/sn46.67/en/sujato) | Sutta (early discourses) | partly encoded | 1 / 2 | 1 | not yet reviewed |
+| [SN 46.68 Maraṇasutta — Death](https://suttacentral.net/sn46.68/en/sujato) | Sutta (early discourses) | partly encoded | 1 / 2 | 1 | not yet reviewed |
+| [SN 46.69 Āhārepaṭikūlasutta — Repulsiveness of Food](https://suttacentral.net/sn46.69/en/sujato) | Sutta (early discourses) | partly encoded | 1 / 2 | 1 | not yet reviewed |
 | [SN 46.7 Kūṭāgārasutta — A Bungalow](https://suttacentral.net/sn46.7/en/sujato) | Sutta (early discourses) | partly encoded | 3 / 7 | 5 | not yet reviewed |
+| [SN 46.70 Anabhiratisutta — Dissatisfaction](https://suttacentral.net/sn46.70/en/sujato) | Sutta (early discourses) | partly encoded | 1 / 2 | 1 | not yet reviewed |
+| [SN 46.71 Aniccasutta — Impermanence](https://suttacentral.net/sn46.71/en/sujato) | Sutta (early discourses) | partly encoded | 1 / 2 | 1 | not yet reviewed |
+| [SN 46.72 Dukkhasutta — Suffering in Impermanence](https://suttacentral.net/sn46.72/en/sujato) | Sutta (early discourses) | partly encoded | 1 / 2 | 1 | not yet reviewed |
+| [SN 46.73 Anattasutta — Not-Self in Suffering](https://suttacentral.net/sn46.73/en/sujato) | Sutta (early discourses) | partly encoded | 1 / 2 | 1 | not yet reviewed |
+| [SN 46.74 Pahānasutta — Giving Up](https://suttacentral.net/sn46.74/en/sujato) | Sutta (early discourses) | partly encoded | 1 / 2 | 1 | not yet reviewed |
+| [SN 46.75 Virāgasutta — Dispassion](https://suttacentral.net/sn46.75/en/sujato) | Sutta (early discourses) | partly encoded | 1 / 2 | 1 | not yet reviewed |
 | [Dhammapada 279](https://suttacentral.net/dhp279/en/sujato) | Sutta (early discourses) | cited only | 1 / 5 | 1 | not yet reviewed |
 | [MN 10 Satipaṭṭhānasutta — Mindfulness Meditation](https://suttacentral.net/mn10/en/sujato) | Sutta (early discourses) | cited only | 1 / 233 | 0 | not yet reviewed |
 | [MN 148 Chachakkasutta — Six By Six](https://suttacentral.net/mn148/en/sujato) | Sutta (early discourses) | cited only | 2 / 225 | 1 | not yet reviewed |
@@ -138,6 +158,16 @@ Segments cited are the passages a claim points to. A fully encoded text can stil
 - **Coverage:** fully encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-13 by project owner with Claude (AI assistant), from SuttaCentral's text
 - **Encodes:** All 24 statements of what fuels and starves the five hindrances and seven awakening factors, each as a nutriment node (object + kind of attention + effect). The opening statement (1.2) anchors both lists.
 - **Left out:** Nothing doctrinal. The question (x.1) and conclusion (x.4) of each section restate the claim and are not cited separately.
+
+### SN 46.57 Aṭṭhikamahapphalasutta — A Skeleton
+
+- **Coverage:** fully encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** The perception of a skeleton is very fruitful and beneficial (1.2, 1.6), developed together with the awakening factors (1.4), with the stock formula (1.5); one of two results, enlightenment in this very life or non-return; great benefit, great sanctuary from the yoke, great inspiration and great ease.
+
+### SN 46.76 Nirodhasutta — Cessation
+
+- **Coverage:** fully encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** The perception of cessation is very fruitful and beneficial (1.2, 1.6), developed together with the awakening factors (1.4), with the stock formula (1.5); one of two results, enlightenment in this very life or non-return; great benefit, great sanctuary from the yoke, great inspiration and great ease.
 
 ### MN 43 Mahāvedallasutta — The Great Elaboration
 
@@ -271,11 +301,119 @@ Segments cited are the passages a claim points to. A fully encoded text can stil
 - **Encodes:** The timing advice: which awakening factors it is the right or wrong time to develop when the mind is sluggish (4.1, 7.1) or restless (10.1, 13.1), the reason given for each, and 'mindfulness is always useful' (15.4).
 - **Left out:** The setting and the challenge from wanderers of other religions (1.1-3.1); the four fire similes (5, 8, 11, 14) that illustrate the advice; the repeated statements after each simile (6, 9, 12, 15.1-15.3).
 
+### SN 46.58 Puḷavakasutta — Worm-Infested
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** The one line given: the perception of a worm-infested corpse (Pali: puḷavakasaññā), developed and cultivated, is very fruitful and beneficial (1.1).
+- **Left out:** The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14).
+
+### SN 46.59 Vinīlakasutta — Livid
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** The one line given: the perception of a livid corpse (Pali: vinīlakasaññā), developed and cultivated, is very fruitful and beneficial (1.1).
+- **Left out:** The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14).
+
+### SN 46.60 Vicchiddakasutta — Split Open
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** The one line given: the perception of a split open corpse (Pali: vicchiddakasaññā), developed and cultivated, is very fruitful and beneficial (1.1).
+- **Left out:** The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14).
+
+### SN 46.61 Uddhumātakasutta — Bloated
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** The one line given: the perception of a bloated corpse (Pali: uddhumātakasaññā), developed and cultivated, is very fruitful and beneficial (1.1).
+- **Left out:** The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14).
+
+### SN 46.62 Mettāsutta — Love
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** The one line given: love (Pali: mettā), developed and cultivated, is very fruitful and beneficial (1.1).
+- **Left out:** The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14).
+
+### SN 46.63 Karuṇāsutta — Compassion
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** The one line given: compassion (Pali: karuṇā), developed and cultivated, is very fruitful and beneficial (1.1).
+- **Left out:** The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14).
+
+### SN 46.64 Muditāsutta — Rejoicing
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** The one line given: rejoicing (Pali: muditā), developed and cultivated, is very fruitful and beneficial (1.1).
+- **Left out:** The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14).
+
+### SN 46.65 Upekkhāsutta — Equanimity
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** The one line given: equanimity (Pali: upekkhā), developed and cultivated, is very fruitful and beneficial (1.1).
+- **Left out:** The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14).
+
+### SN 46.66 Ānāpānasutta — Breathing
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** The one line given: mindfulness of breathing (Pali: ānāpānassati), developed and cultivated, is very fruitful and beneficial (1.1).
+- **Left out:** The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14).
+
+### SN 46.67 Asubhasutta — Ugliness
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** The one line given: the perception of ugliness (Pali: asubhasaññā), developed and cultivated, is very fruitful and beneficial (1.1).
+- **Left out:** The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14).
+
+### SN 46.68 Maraṇasutta — Death
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** The one line given: the perception of death (Pali: maraṇasaññā), developed and cultivated, is very fruitful and beneficial (1.1).
+- **Left out:** The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14).
+
+### SN 46.69 Āhārepaṭikūlasutta — Repulsiveness of Food
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** The one line given: the perception of repulsiveness of food (Pali: āhāre paṭikūlasaññā), developed and cultivated, is very fruitful and beneficial (1.1).
+- **Left out:** The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14).
+
 ### SN 46.7 Kūṭāgārasutta — A Bungalow
 
 - **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
 - **Encodes:** Developing the seven factors slants, slopes and inclines to extinguishment (1.2, 2.4); the stock formula for each factor (relies on seclusion, fading away and cessation; ripens as letting go) (2.3).
 - **Left out:** The simile of a bungalow's rafters inclining to the peak (1.1).
+
+### SN 46.70 Anabhiratisutta — Dissatisfaction
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** The one line given: the perception of dissatisfaction with the whole world (Pali: sabbaloke anabhiratisaññā), developed and cultivated, is very fruitful and beneficial (1.1).
+- **Left out:** The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14).
+
+### SN 46.71 Aniccasutta — Impermanence
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** The one line given: the perception of impermanence (Pali: aniccasaññā), developed and cultivated, is very fruitful and beneficial (1.1).
+- **Left out:** The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14).
+
+### SN 46.72 Dukkhasutta — Suffering in Impermanence
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** The one line given: the perception of suffering in impermanence (Pali: anicce dukkhasaññā), developed and cultivated, is very fruitful and beneficial (1.1).
+- **Left out:** The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14).
+
+### SN 46.73 Anattasutta — Not-Self in Suffering
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** The one line given: the perception of not-self in suffering (Pali: dukkhe anattasaññā), developed and cultivated, is very fruitful and beneficial (1.1).
+- **Left out:** The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14).
+
+### SN 46.74 Pahānasutta — Giving Up
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** The one line given: the perception of giving up (Pali: pahānasaññā), developed and cultivated, is very fruitful and beneficial (1.1).
+- **Left out:** The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14).
+
+### SN 46.75 Virāgasutta — Dispassion
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** The one line given: the perception of dispassion (Pali: virāgasaññā), developed and cultivated, is very fruitful and beneficial (1.1).
+- **Left out:** The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14).
 
 ### Dhammapada 279
 

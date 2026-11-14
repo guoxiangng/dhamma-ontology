@@ -247,8 +247,12 @@ def card(g: Graph, c) -> list[str]:
             rows.append(("outcomes", f"{label(g, g.value(o, DHO.of))} → {label(g, g.value(o, DHO.effect))}", o))
         for k in g.subjects(DHO.conditioned, s):
             res = g.value(k, DHO.result)
-            what = f"{label(g, res)}" if res else label(g, g.value(k, DHO.relation)).replace("is the ", "").replace("supports the development of", "supports their development")
-            rows.append(("conditions", f"{label(g, g.value(k, DHO.condition))}: {what}{via(s)}", k))
+            cond = label(g, g.value(k, DHO.condition))
+            if res:
+                text = f"when {cond} is present, these {label(g, res)}{via(s)}"
+            else:
+                text = f"{cond} → {label(g, g.value(k, DHO.relation))} this{via(s)}"
+            rows.append(("conditions", text, k))
         for k in g.subjects(DHO.condition, s):
             rows.append(("conditions", f"{label(g, g.value(k, DHO.relation))} {label(g, g.value(k, DHO.conditioned))}"
                          + (f": {label(g, g.value(k, DHO.result))}" if g.value(k, DHO.result) else ""), k))
@@ -258,6 +262,9 @@ def card(g: Graph, c) -> list[str]:
             out.append(f"  {section}:")
             for _, text, node in sorted(items, key=lambda r: r[1]):
                 out.append(f"    - {text}   \"{g.value(node, DHO.wording)}\"  [sutta {cite(g, node)}]")
+                note = g.value(node, SKOS.note)
+                if note:
+                    out.append(f"        note: {note}")
 
     for d in g.subjects(DHO.defines, c):
         out.append(f"  is defined as: {label(g, g.value(d, DHO['as']))}   [sutta {cite(g, d)}]")

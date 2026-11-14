@@ -314,6 +314,8 @@ dho:RootOf       a dho:ConditionRelation ; rdfs:label "is the root of"@en ;
 dho:GivesRiseTo  a dho:ConditionRelation ; rdfs:label "gives rise to"@en .
 dho:Supports     a dho:ConditionRelation ; rdfs:label "supports the development of"@en ;
     rdfs:comment "'can expect to develop and cultivate' (pāṭikaṅkha)."@en .
+dho:Accompanies  a dho:ConditionRelation ; rdfs:label "accompany the development of"@en ;
+    rdfs:comment "'develops X together with the awakening factors' (sahagata), SN 46.57-76 (D15)."@en .
 dho:WhenThen     a dho:ConditionRelation ; rdfs:label "when present, then"@en ;
     rdfs:comment "'when you …, X …'; the result says what happens to the conditioned."@en .
 
@@ -330,3 +332,7 @@ dho:result      a owl:ObjectProperty , owl:FunctionalProperty ; rdfs:domain dho:
 
 dho:wording a owl:DatatypeProperty ; rdfs:label "wording"@en ;
     rdfs:comment "The text's own words for the relation, verbatim from the cited English (Sujato). S14 checks it occurs in a cited passage."@en .
+
+# A meditation practice the suttas say is developed (e.g. the perception of a skeleton,
+# mindfulness of breathing). Kept distinct from the qualities it shares a word with (D15).
+dho:Practice a owl:Class ; rdfs:subClassOf dho:Concept ; rdfs:label "Practice"@en .

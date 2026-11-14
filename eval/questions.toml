@@ -612,3 +612,35 @@ must_not = []
 layer = "sutta"
 status = "draft"
 note = "This chain is left out of the ontology until a pattern for chains is agreed (see COVERAGE.md). A system using the ontology should say so, not invent an answer."
+
+[[q]]
+id = "Q41"
+category = "recall"
+scope = "covered"
+question = "According to SN 46.57, what results can one expect from developing the perception of a skeleton (aṭṭhikasaññā)?"
+gold = [
+  "One of two results: enlightenment in this very life (aññā) or, if there is residue left behind, non-return (anāgāmitā).",
+  "It is developed together with the seven awakening factors, and is very fruitful and beneficial; it also leads to great benefit, great sanctuary from the yoke, great inspiration and dwelling in great ease.",
+]
+segments = ["sn46.57:1.2", "sn46.57:1.4", "sn46.57:2.1", "sn46.57:3.1", "sn46.57:4.1", "sn46.57:5.1", "sn46.57:6.1"]
+also_ok = []
+must_not = ["Arahantship is guaranteed. (The text says one of two results: enlightenment in this life or non-return.)"]
+layer = "sutta"
+status = "draft"
+note = "Added with the perception series (D15)."
+
+[[q]]
+id = "Q42"
+category = "partial"
+scope = "partial"
+question = "Does SN 46.71 itself say that the perception of impermanence leads to non-return?"
+gold = [
+  "Not in so many words. SN 46.71 is abbreviated in the Pali (…pe…); the visible line says only that the perception of impermanence, developed and cultivated, is very fruitful and beneficial.",
+  "The fuller statement of results is given for SN 46.57 and 46.76, which the abbreviated suttas are understood to repeat.",
+]
+segments = ["sn46.71:1.1", "sn46.57:2.1", "sn46.76:2.1"]
+also_ok = ["Explaining that the abbreviation is meant to be expanded from SN 46.57."]
+must_not = ["SN 46.71 explicitly states that the perception of impermanence leads to non-return."]
+layer = "sutta"
+status = "draft"
+note = "Tests honesty about abbreviated texts (D14)."

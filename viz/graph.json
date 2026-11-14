@@ -1,11 +1,11 @@
 {
  "stats": {
-  "asserted": 3319,
-  "inferred": 3279,
+  "asserted": 4137,
+  "inferred": 3912,
   "derived": 16,
-  "concepts": 80,
-  "links": 128,
-  "passages": 218,
+  "concepts": 107,
+  "links": 165,
+  "passages": 257,
   "shacl": "pass",
   "warnings": 5
  },
@@ -25,6 +25,20 @@
     "Jhāna factor"
    ],
    "inferred": true,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "BloatedPerception",
+   "kind": "concept",
+   "en": "the perception of a bloated corpse",
+   "pi": "uddhumātakasaññā",
+   "zh": null,
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
    "definition": null,
    "note": null,
    "cites": []
@@ -72,6 +86,34 @@
    "cites": []
   },
   {
+   "id": "CessationPerception",
+   "kind": "concept",
+   "en": "the perception of cessation",
+   "pi": "nirodhasaññā",
+   "zh": null,
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "Compassion",
+   "kind": "concept",
+   "en": "compassion",
+   "pi": "karuṇā",
+   "zh": null,
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
    "id": "Conceit",
    "kind": "concept",
    "en": "conceit",
@@ -90,6 +132,20 @@
    "kind": "concept",
    "en": "crushing Māra’s army",
    "pi": "mārasenappamaddana",
+   "zh": null,
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "DeathPerception",
+   "kind": "concept",
+   "en": "the perception of death",
+   "pi": "maraṇasaññā",
    "zh": null,
    "alt": [],
    "hidden": [],
@@ -230,6 +286,20 @@
    "cites": []
   },
   {
+   "id": "DispassionPerception",
+   "kind": "concept",
+   "en": "the perception of dispassion",
+   "pi": "virāgasaññā",
+   "zh": null,
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
    "id": "Doubt",
    "kind": "hindrance",
    "en": "doubt",
@@ -324,6 +394,20 @@
    "cites": []
   },
   {
+   "id": "Enlightenment",
+   "kind": "concept",
+   "en": "enlightenment in this very life",
+   "pi": "aññā",
+   "zh": null,
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
    "id": "Equanimity",
    "kind": "factor",
    "en": "equanimity",
@@ -338,6 +422,20 @@
     "Awakening factor"
    ],
    "inferred": true,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "EquanimityImmeasurable",
+   "kind": "concept",
+   "en": "equanimity",
+   "pi": "upekkhā",
+   "zh": null,
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
    "definition": null,
    "note": null,
    "cites": []
@@ -495,10 +593,38 @@
    ]
   },
   {
+   "id": "FoodRepulsivenessPerception",
+   "kind": "concept",
+   "en": "the perception of repulsiveness of food",
+   "pi": "āhāre paṭikūlasaññā",
+   "zh": null,
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
    "id": "FruitOfKnowledgeAndFreedom",
    "kind": "concept",
    "en": "the realization of the fruit of knowledge and freedom",
    "pi": "vijjāvimuttiphalasacchikiriyā",
+   "zh": null,
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "GivingUpPerception",
+   "kind": "concept",
+   "en": "the perception of giving up",
+   "pi": "pahānasaññā",
    "zh": null,
    "alt": [],
    "hidden": [],
@@ -517,6 +643,48 @@
    "alt": [
     "spiritual friendship"
    ],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "GreatBenefit",
+   "kind": "concept",
+   "en": "great benefit",
+   "pi": "attha",
+   "zh": null,
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "GreatEase",
+   "kind": "concept",
+   "en": "great ease",
+   "pi": "phāsuvihāra",
+   "zh": null,
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "GreatFruit",
+   "kind": "concept",
+   "en": "great fruit and benefit",
+   "pi": "mahapphala mahānisaṁsa",
+   "zh": null,
+   "alt": [],
    "hidden": [],
    "classes": [],
    "inferred": false,
@@ -597,6 +765,20 @@
    "cites": []
   },
   {
+   "id": "ImpermanencePerception",
+   "kind": "concept",
+   "en": "the perception of impermanence",
+   "pi": "aniccasaññā",
+   "zh": null,
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
    "id": "Insight",
    "kind": "concept",
    "en": "insight",
@@ -605,6 +787,20 @@
    "alt": [
     "direct knowledge"
    ],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "Inspiration",
+   "kind": "concept",
+   "en": "great inspiration",
+   "pi": "saṁvega",
+   "zh": null,
+   "alt": [],
    "hidden": [],
    "classes": [],
    "inferred": false,
@@ -695,6 +891,34 @@
    "cites": []
   },
   {
+   "id": "LividPerception",
+   "kind": "concept",
+   "en": "the perception of a livid corpse",
+   "pi": "vinīlakasaññā",
+   "zh": null,
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "Love",
+   "kind": "concept",
+   "en": "love",
+   "pi": "mettā",
+   "zh": null,
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
    "id": "Mindfulness",
    "kind": "factor",
    "en": "mindfulness",
@@ -714,11 +938,53 @@
    "cites": []
   },
   {
+   "id": "MindfulnessOfBreathing",
+   "kind": "concept",
+   "en": "mindfulness of breathing",
+   "pi": "ānāpānassati",
+   "zh": null,
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
    "id": "NonAttention",
    "kind": "attention",
    "en": "not applying the mind",
    "pi": "amanasikāra",
    "zh": "不作意",
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "NonReturn",
+   "kind": "concept",
+   "en": "non-return",
+   "pi": "anāgāmitā",
+   "zh": null,
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "NotSelfInSufferingPerception",
+   "kind": "concept",
+   "en": "the perception of not-self in suffering",
+   "pi": "dukkhe anattasaññā",
+   "zh": null,
    "alt": [],
    "hidden": [],
    "classes": [],
@@ -802,6 +1068,20 @@
    "en": "rational application of mind",
    "pi": "yoniso manasikāra",
    "zh": "如理作意",
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "Rejoicing",
+   "kind": "concept",
+   "en": "rejoicing",
+   "pi": "muditā",
+   "zh": null,
    "alt": [],
    "hidden": [],
    "classes": [],
@@ -900,6 +1180,20 @@
    "cites": []
   },
   {
+   "id": "SanctuaryFromYoke",
+   "kind": "concept",
+   "en": "great sanctuary from the yoke",
+   "pi": "yogakkhema",
+   "zh": null,
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
    "id": "Seclusion",
    "kind": "concept",
    "en": "seclusion",
@@ -973,8 +1267,24 @@
     "p-sn46.41-1.6",
     "p-sn46.43-1.7",
     "p-sn46.51-1.2",
-    "p-sn46.5-1.6"
+    "p-sn46.57-1.4",
+    "p-sn46.5-1.6",
+    "p-sn46.76-1.3"
    ]
+  },
+  {
+   "id": "SkeletonPerception",
+   "kind": "concept",
+   "en": "the perception of a skeleton",
+   "pi": "aṭṭhikasaññā",
+   "zh": null,
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
   },
   {
    "id": "SkillfulQualities",
@@ -1005,6 +1315,34 @@
     "sleepy",
     "sluggish"
    ],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "SplitOpenPerception",
+   "kind": "concept",
+   "en": "the perception of a split open corpse",
+   "pi": "vicchiddakasaññā",
+   "zh": null,
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "SufferingInImpermanencePerception",
+   "kind": "concept",
+   "en": "the perception of suffering in impermanence",
+   "pi": "anicce dukkhasaññā",
+   "zh": null,
+   "alt": [],
+   "hidden": [],
    "classes": [],
    "inferred": false,
    "definition": null,
@@ -1061,6 +1399,20 @@
    "cites": []
   },
   {
+   "id": "UglinessPerception",
+   "kind": "concept",
+   "en": "the perception of ugliness",
+   "pi": "asubhasaññā",
+   "zh": null,
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
    "id": "Unification",
    "kind": "jhana",
    "en": "unification of mind",
@@ -1100,6 +1452,34 @@
    "en": "wisdom",
    "pi": "paññā",
    "zh": "慧",
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "WorldDissatisfactionPerception",
+   "kind": "concept",
+   "en": "the perception of dissatisfaction with the whole world",
+   "pi": "sabbaloke anabhiratisaññā",
+   "zh": null,
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "WormInfestedPerception",
+   "kind": "concept",
+   "en": "the perception of a worm-infested corpse",
+   "pi": "puḷavakasaññā",
+   "zh": null,
    "alt": [],
    "hidden": [],
    "classes": [],
@@ -1336,211 +1716,66 @@
  "edges": [
   {
    "id": "e0",
-   "source": "IllWill",
-   "target": "FiveCorruptionsOfMind",
+   "source": "Bliss",
+   "target": "FirstJhanaFactors",
    "rel": "member of",
    "layer": "sutta",
    "cites": [
-    "p-sn46.33-2.1",
-    "p-sn46.33-2.3",
-    "p-sn46.33-2.4"
+    "p-mn43-19.2",
+    "p-mn43-19.3"
    ],
    "note": null
   },
   {
    "id": "e1",
-   "source": "DullnessDrowsiness",
-   "target": "FiveCorruptionsOfMind",
+   "source": "KeepingConnected",
+   "target": "FirstJhanaFactors",
    "rel": "member of",
    "layer": "sutta",
    "cites": [
-    "p-sn46.33-2.1",
-    "p-sn46.33-2.3",
-    "p-sn46.33-2.4"
+    "p-mn43-19.2",
+    "p-mn43-19.3"
    ],
    "note": null
   },
   {
    "id": "e2",
-   "source": "RestlessnessRemorse",
-   "target": "FiveCorruptionsOfMind",
+   "source": "Rapture",
+   "target": "FirstJhanaFactors",
    "rel": "member of",
    "layer": "sutta",
    "cites": [
-    "p-sn46.33-2.1",
-    "p-sn46.33-2.3",
-    "p-sn46.33-2.4"
+    "p-mn43-19.2",
+    "p-mn43-19.3"
    ],
    "note": null
   },
   {
    "id": "e3",
-   "source": "Doubt",
-   "target": "FiveCorruptionsOfMind",
+   "source": "Unification",
+   "target": "FirstJhanaFactors",
    "rel": "member of",
    "layer": "sutta",
    "cites": [
-    "p-sn46.33-2.1",
-    "p-sn46.33-2.3",
-    "p-sn46.33-2.4"
+    "p-mn43-19.2",
+    "p-mn43-19.3"
    ],
    "note": null
   },
   {
    "id": "e4",
-   "source": "SensualDesire",
-   "target": "FiveCorruptionsOfMind",
+   "source": "PlacingTheMind",
+   "target": "FirstJhanaFactors",
    "rel": "member of",
    "layer": "sutta",
    "cites": [
-    "p-sn46.33-2.1",
-    "p-sn46.33-2.3",
-    "p-sn46.33-2.4"
+    "p-mn43-19.2",
+    "p-mn43-19.3"
    ],
    "note": null
   },
   {
    "id": "e5",
-   "source": "Doubt",
-   "target": "FiveHindrances",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-mn43-20.3",
-    "p-sn46.24-1.1",
-    "p-sn46.24-1.2",
-    "p-sn46.24-1.3",
-    "p-sn46.24-1.4",
-    "p-sn46.24-1.5",
-    "p-sn46.35-1.1",
-    "p-sn46.37-1.1",
-    "p-sn46.37-1.3",
-    "p-sn46.37-1.4",
-    "p-sn46.37-1.5",
-    "p-sn46.37-1.6",
-    "p-sn46.37-1.7",
-    "p-sn46.38-2.1",
-    "p-sn46.38-2.2",
-    "p-sn46.40-1.1",
-    "p-sn46.40-1.3",
-    "p-sn46.51-1.2"
-   ],
-   "note": null
-  },
-  {
-   "id": "e6",
-   "source": "DullnessDrowsiness",
-   "target": "FiveHindrances",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-mn43-20.3",
-    "p-sn46.24-1.1",
-    "p-sn46.24-1.2",
-    "p-sn46.24-1.3",
-    "p-sn46.24-1.4",
-    "p-sn46.24-1.5",
-    "p-sn46.35-1.1",
-    "p-sn46.37-1.1",
-    "p-sn46.37-1.3",
-    "p-sn46.37-1.4",
-    "p-sn46.37-1.5",
-    "p-sn46.37-1.6",
-    "p-sn46.37-1.7",
-    "p-sn46.38-2.1",
-    "p-sn46.38-2.2",
-    "p-sn46.40-1.1",
-    "p-sn46.40-1.3",
-    "p-sn46.51-1.2"
-   ],
-   "note": null
-  },
-  {
-   "id": "e7",
-   "source": "IllWill",
-   "target": "FiveHindrances",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-mn43-20.3",
-    "p-sn46.24-1.1",
-    "p-sn46.24-1.2",
-    "p-sn46.24-1.3",
-    "p-sn46.24-1.4",
-    "p-sn46.24-1.5",
-    "p-sn46.35-1.1",
-    "p-sn46.37-1.1",
-    "p-sn46.37-1.3",
-    "p-sn46.37-1.4",
-    "p-sn46.37-1.5",
-    "p-sn46.37-1.6",
-    "p-sn46.37-1.7",
-    "p-sn46.38-2.1",
-    "p-sn46.38-2.2",
-    "p-sn46.40-1.1",
-    "p-sn46.40-1.3",
-    "p-sn46.51-1.2"
-   ],
-   "note": null
-  },
-  {
-   "id": "e8",
-   "source": "RestlessnessRemorse",
-   "target": "FiveHindrances",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-mn43-20.3",
-    "p-sn46.24-1.1",
-    "p-sn46.24-1.2",
-    "p-sn46.24-1.3",
-    "p-sn46.24-1.4",
-    "p-sn46.24-1.5",
-    "p-sn46.35-1.1",
-    "p-sn46.37-1.1",
-    "p-sn46.37-1.3",
-    "p-sn46.37-1.4",
-    "p-sn46.37-1.5",
-    "p-sn46.37-1.6",
-    "p-sn46.37-1.7",
-    "p-sn46.38-2.1",
-    "p-sn46.38-2.2",
-    "p-sn46.40-1.1",
-    "p-sn46.40-1.3",
-    "p-sn46.51-1.2"
-   ],
-   "note": null
-  },
-  {
-   "id": "e9",
-   "source": "SensualDesire",
-   "target": "FiveHindrances",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-mn43-20.3",
-    "p-sn46.24-1.1",
-    "p-sn46.24-1.2",
-    "p-sn46.24-1.3",
-    "p-sn46.24-1.4",
-    "p-sn46.24-1.5",
-    "p-sn46.35-1.1",
-    "p-sn46.37-1.1",
-    "p-sn46.37-1.3",
-    "p-sn46.37-1.4",
-    "p-sn46.37-1.5",
-    "p-sn46.37-1.6",
-    "p-sn46.37-1.7",
-    "p-sn46.38-2.1",
-    "p-sn46.38-2.2",
-    "p-sn46.40-1.1",
-    "p-sn46.40-1.3",
-    "p-sn46.51-1.2"
-   ],
-   "note": null
-  },
-  {
-   "id": "e10",
    "source": "Equanimity",
    "target": "SevenAwakeningFactors",
    "rel": "member of",
@@ -1569,80 +1804,14 @@
     "p-sn46.41-1.6",
     "p-sn46.43-1.7",
     "p-sn46.51-1.2",
-    "p-sn46.5-1.6"
+    "p-sn46.57-1.4",
+    "p-sn46.5-1.6",
+    "p-sn46.76-1.3"
    ],
    "note": null
   },
   {
-   "id": "e11",
-   "source": "Mindfulness",
-   "target": "SevenAwakeningFactors",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-sn46.17-1.3",
-    "p-sn46.19-1.3",
-    "p-sn46.20-1.3",
-    "p-sn46.21-2.4",
-    "p-sn46.22-1.1",
-    "p-sn46.22-1.3",
-    "p-sn46.22-1.4",
-    "p-sn46.25-1.7",
-    "p-sn46.26-1.6",
-    "p-sn46.27-1.6",
-    "p-sn46.28-1.7",
-    "p-sn46.29-1.3",
-    "p-sn46.34-1.3",
-    "p-sn46.36-1.3",
-    "p-sn46.37-2.1",
-    "p-sn46.37-2.3",
-    "p-sn46.38-3.1",
-    "p-sn46.38-3.2",
-    "p-sn46.40-2.1",
-    "p-sn46.40-2.3",
-    "p-sn46.41-1.6",
-    "p-sn46.43-1.7",
-    "p-sn46.51-1.2",
-    "p-sn46.5-1.6"
-   ],
-   "note": null
-  },
-  {
-   "id": "e12",
-   "source": "Energy",
-   "target": "SevenAwakeningFactors",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-sn46.17-1.3",
-    "p-sn46.19-1.3",
-    "p-sn46.20-1.3",
-    "p-sn46.21-2.4",
-    "p-sn46.22-1.1",
-    "p-sn46.22-1.3",
-    "p-sn46.22-1.4",
-    "p-sn46.25-1.7",
-    "p-sn46.26-1.6",
-    "p-sn46.27-1.6",
-    "p-sn46.28-1.7",
-    "p-sn46.29-1.3",
-    "p-sn46.34-1.3",
-    "p-sn46.36-1.3",
-    "p-sn46.37-2.1",
-    "p-sn46.37-2.3",
-    "p-sn46.38-3.1",
-    "p-sn46.38-3.2",
-    "p-sn46.40-2.1",
-    "p-sn46.40-2.3",
-    "p-sn46.41-1.6",
-    "p-sn46.43-1.7",
-    "p-sn46.51-1.2",
-    "p-sn46.5-1.6"
-   ],
-   "note": null
-  },
-  {
-   "id": "e13",
+   "id": "e6",
    "source": "Tranquility",
    "target": "SevenAwakeningFactors",
    "rel": "member of",
@@ -1671,13 +1840,15 @@
     "p-sn46.41-1.6",
     "p-sn46.43-1.7",
     "p-sn46.51-1.2",
-    "p-sn46.5-1.6"
+    "p-sn46.57-1.4",
+    "p-sn46.5-1.6",
+    "p-sn46.76-1.3"
    ],
    "note": null
   },
   {
-   "id": "e14",
-   "source": "Rapture",
+   "id": "e7",
+   "source": "Energy",
    "target": "SevenAwakeningFactors",
    "rel": "member of",
    "layer": "sutta",
@@ -1705,46 +1876,14 @@
     "p-sn46.41-1.6",
     "p-sn46.43-1.7",
     "p-sn46.51-1.2",
-    "p-sn46.5-1.6"
+    "p-sn46.57-1.4",
+    "p-sn46.5-1.6",
+    "p-sn46.76-1.3"
    ],
    "note": null
   },
   {
-   "id": "e15",
-   "source": "Immersion",
-   "target": "SevenAwakeningFactors",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-sn46.17-1.3",
-    "p-sn46.19-1.3",
-    "p-sn46.20-1.3",
-    "p-sn46.21-2.4",
-    "p-sn46.22-1.1",
-    "p-sn46.22-1.3",
-    "p-sn46.22-1.4",
-    "p-sn46.25-1.7",
-    "p-sn46.26-1.6",
-    "p-sn46.27-1.6",
-    "p-sn46.28-1.7",
-    "p-sn46.29-1.3",
-    "p-sn46.34-1.3",
-    "p-sn46.36-1.3",
-    "p-sn46.37-2.1",
-    "p-sn46.37-2.3",
-    "p-sn46.38-3.1",
-    "p-sn46.38-3.2",
-    "p-sn46.40-2.1",
-    "p-sn46.40-2.3",
-    "p-sn46.41-1.6",
-    "p-sn46.43-1.7",
-    "p-sn46.51-1.2",
-    "p-sn46.5-1.6"
-   ],
-   "note": null
-  },
-  {
-   "id": "e16",
+   "id": "e8",
    "source": "Investigation",
    "target": "SevenAwakeningFactors",
    "rel": "member of",
@@ -1773,72 +1912,122 @@
     "p-sn46.41-1.6",
     "p-sn46.43-1.7",
     "p-sn46.51-1.2",
-    "p-sn46.5-1.6"
+    "p-sn46.57-1.4",
+    "p-sn46.5-1.6",
+    "p-sn46.76-1.3"
    ],
    "note": null
   },
   {
-   "id": "e17",
+   "id": "e9",
+   "source": "Mindfulness",
+   "target": "SevenAwakeningFactors",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.17-1.3",
+    "p-sn46.19-1.3",
+    "p-sn46.20-1.3",
+    "p-sn46.21-2.4",
+    "p-sn46.22-1.1",
+    "p-sn46.22-1.3",
+    "p-sn46.22-1.4",
+    "p-sn46.25-1.7",
+    "p-sn46.26-1.6",
+    "p-sn46.27-1.6",
+    "p-sn46.28-1.7",
+    "p-sn46.29-1.3",
+    "p-sn46.34-1.3",
+    "p-sn46.36-1.3",
+    "p-sn46.37-2.1",
+    "p-sn46.37-2.3",
+    "p-sn46.38-3.1",
+    "p-sn46.38-3.2",
+    "p-sn46.40-2.1",
+    "p-sn46.40-2.3",
+    "p-sn46.41-1.6",
+    "p-sn46.43-1.7",
+    "p-sn46.51-1.2",
+    "p-sn46.57-1.4",
+    "p-sn46.5-1.6",
+    "p-sn46.76-1.3"
+   ],
+   "note": null
+  },
+  {
+   "id": "e10",
+   "source": "Immersion",
+   "target": "SevenAwakeningFactors",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.17-1.3",
+    "p-sn46.19-1.3",
+    "p-sn46.20-1.3",
+    "p-sn46.21-2.4",
+    "p-sn46.22-1.1",
+    "p-sn46.22-1.3",
+    "p-sn46.22-1.4",
+    "p-sn46.25-1.7",
+    "p-sn46.26-1.6",
+    "p-sn46.27-1.6",
+    "p-sn46.28-1.7",
+    "p-sn46.29-1.3",
+    "p-sn46.34-1.3",
+    "p-sn46.36-1.3",
+    "p-sn46.37-2.1",
+    "p-sn46.37-2.3",
+    "p-sn46.38-3.1",
+    "p-sn46.38-3.2",
+    "p-sn46.40-2.1",
+    "p-sn46.40-2.3",
+    "p-sn46.41-1.6",
+    "p-sn46.43-1.7",
+    "p-sn46.51-1.2",
+    "p-sn46.57-1.4",
+    "p-sn46.5-1.6",
+    "p-sn46.76-1.3"
+   ],
+   "note": null
+  },
+  {
+   "id": "e11",
    "source": "Rapture",
-   "target": "FirstJhanaFactors",
+   "target": "SevenAwakeningFactors",
    "rel": "member of",
    "layer": "sutta",
    "cites": [
-    "p-mn43-19.2",
-    "p-mn43-19.3"
+    "p-sn46.17-1.3",
+    "p-sn46.19-1.3",
+    "p-sn46.20-1.3",
+    "p-sn46.21-2.4",
+    "p-sn46.22-1.1",
+    "p-sn46.22-1.3",
+    "p-sn46.22-1.4",
+    "p-sn46.25-1.7",
+    "p-sn46.26-1.6",
+    "p-sn46.27-1.6",
+    "p-sn46.28-1.7",
+    "p-sn46.29-1.3",
+    "p-sn46.34-1.3",
+    "p-sn46.36-1.3",
+    "p-sn46.37-2.1",
+    "p-sn46.37-2.3",
+    "p-sn46.38-3.1",
+    "p-sn46.38-3.2",
+    "p-sn46.40-2.1",
+    "p-sn46.40-2.3",
+    "p-sn46.41-1.6",
+    "p-sn46.43-1.7",
+    "p-sn46.51-1.2",
+    "p-sn46.57-1.4",
+    "p-sn46.5-1.6",
+    "p-sn46.76-1.3"
    ],
    "note": null
   },
   {
-   "id": "e18",
-   "source": "Unification",
-   "target": "FirstJhanaFactors",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-mn43-19.2",
-    "p-mn43-19.3"
-   ],
-   "note": null
-  },
-  {
-   "id": "e19",
-   "source": "KeepingConnected",
-   "target": "FirstJhanaFactors",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-mn43-19.2",
-    "p-mn43-19.3"
-   ],
-   "note": null
-  },
-  {
-   "id": "e20",
-   "source": "Bliss",
-   "target": "FirstJhanaFactors",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-mn43-19.2",
-    "p-mn43-19.3"
-   ],
-   "note": null
-  },
-  {
-   "id": "e21",
-   "source": "PlacingTheMind",
-   "target": "FirstJhanaFactors",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-mn43-19.2",
-    "p-mn43-19.3"
-   ],
-   "note": null
-  },
-  {
-   "id": "e22",
+   "id": "e12",
    "source": "Conceit",
    "target": "FiveHigherFetters",
    "rel": "member of",
@@ -1850,7 +2039,7 @@
    "note": null
   },
   {
-   "id": "e23",
+   "id": "e13",
    "source": "DesireForFormRebirth",
    "target": "FiveHigherFetters",
    "rel": "member of",
@@ -1862,7 +2051,7 @@
    "note": null
   },
   {
-   "id": "e24",
+   "id": "e14",
    "source": "Ignorance",
    "target": "FiveHigherFetters",
    "rel": "member of",
@@ -1874,7 +2063,7 @@
    "note": null
   },
   {
-   "id": "e25",
+   "id": "e15",
    "source": "DesireForFormlessRebirth",
    "target": "FiveHigherFetters",
    "rel": "member of",
@@ -1886,7 +2075,7 @@
    "note": null
   },
   {
-   "id": "e26",
+   "id": "e16",
    "source": "Restlessness",
    "target": "FiveHigherFetters",
    "rel": "member of",
@@ -1894,6 +2083,211 @@
    "cites": [
     "p-sn46.130-1.2",
     "p-sn46.130-1.4"
+   ],
+   "note": null
+  },
+  {
+   "id": "e17",
+   "source": "DullnessDrowsiness",
+   "target": "FiveHindrances",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-mn43-20.3",
+    "p-sn46.24-1.1",
+    "p-sn46.24-1.2",
+    "p-sn46.24-1.3",
+    "p-sn46.24-1.4",
+    "p-sn46.24-1.5",
+    "p-sn46.35-1.1",
+    "p-sn46.37-1.1",
+    "p-sn46.37-1.3",
+    "p-sn46.37-1.4",
+    "p-sn46.37-1.5",
+    "p-sn46.37-1.6",
+    "p-sn46.37-1.7",
+    "p-sn46.38-2.1",
+    "p-sn46.38-2.2",
+    "p-sn46.40-1.1",
+    "p-sn46.40-1.3",
+    "p-sn46.51-1.2"
+   ],
+   "note": null
+  },
+  {
+   "id": "e18",
+   "source": "SensualDesire",
+   "target": "FiveHindrances",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-mn43-20.3",
+    "p-sn46.24-1.1",
+    "p-sn46.24-1.2",
+    "p-sn46.24-1.3",
+    "p-sn46.24-1.4",
+    "p-sn46.24-1.5",
+    "p-sn46.35-1.1",
+    "p-sn46.37-1.1",
+    "p-sn46.37-1.3",
+    "p-sn46.37-1.4",
+    "p-sn46.37-1.5",
+    "p-sn46.37-1.6",
+    "p-sn46.37-1.7",
+    "p-sn46.38-2.1",
+    "p-sn46.38-2.2",
+    "p-sn46.40-1.1",
+    "p-sn46.40-1.3",
+    "p-sn46.51-1.2"
+   ],
+   "note": null
+  },
+  {
+   "id": "e19",
+   "source": "IllWill",
+   "target": "FiveHindrances",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-mn43-20.3",
+    "p-sn46.24-1.1",
+    "p-sn46.24-1.2",
+    "p-sn46.24-1.3",
+    "p-sn46.24-1.4",
+    "p-sn46.24-1.5",
+    "p-sn46.35-1.1",
+    "p-sn46.37-1.1",
+    "p-sn46.37-1.3",
+    "p-sn46.37-1.4",
+    "p-sn46.37-1.5",
+    "p-sn46.37-1.6",
+    "p-sn46.37-1.7",
+    "p-sn46.38-2.1",
+    "p-sn46.38-2.2",
+    "p-sn46.40-1.1",
+    "p-sn46.40-1.3",
+    "p-sn46.51-1.2"
+   ],
+   "note": null
+  },
+  {
+   "id": "e20",
+   "source": "RestlessnessRemorse",
+   "target": "FiveHindrances",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-mn43-20.3",
+    "p-sn46.24-1.1",
+    "p-sn46.24-1.2",
+    "p-sn46.24-1.3",
+    "p-sn46.24-1.4",
+    "p-sn46.24-1.5",
+    "p-sn46.35-1.1",
+    "p-sn46.37-1.1",
+    "p-sn46.37-1.3",
+    "p-sn46.37-1.4",
+    "p-sn46.37-1.5",
+    "p-sn46.37-1.6",
+    "p-sn46.37-1.7",
+    "p-sn46.38-2.1",
+    "p-sn46.38-2.2",
+    "p-sn46.40-1.1",
+    "p-sn46.40-1.3",
+    "p-sn46.51-1.2"
+   ],
+   "note": null
+  },
+  {
+   "id": "e21",
+   "source": "Doubt",
+   "target": "FiveHindrances",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-mn43-20.3",
+    "p-sn46.24-1.1",
+    "p-sn46.24-1.2",
+    "p-sn46.24-1.3",
+    "p-sn46.24-1.4",
+    "p-sn46.24-1.5",
+    "p-sn46.35-1.1",
+    "p-sn46.37-1.1",
+    "p-sn46.37-1.3",
+    "p-sn46.37-1.4",
+    "p-sn46.37-1.5",
+    "p-sn46.37-1.6",
+    "p-sn46.37-1.7",
+    "p-sn46.38-2.1",
+    "p-sn46.38-2.2",
+    "p-sn46.40-1.1",
+    "p-sn46.40-1.3",
+    "p-sn46.51-1.2"
+   ],
+   "note": null
+  },
+  {
+   "id": "e22",
+   "source": "Doubt",
+   "target": "FiveCorruptionsOfMind",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.33-2.1",
+    "p-sn46.33-2.3",
+    "p-sn46.33-2.4"
+   ],
+   "note": null
+  },
+  {
+   "id": "e23",
+   "source": "IllWill",
+   "target": "FiveCorruptionsOfMind",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.33-2.1",
+    "p-sn46.33-2.3",
+    "p-sn46.33-2.4"
+   ],
+   "note": null
+  },
+  {
+   "id": "e24",
+   "source": "DullnessDrowsiness",
+   "target": "FiveCorruptionsOfMind",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.33-2.1",
+    "p-sn46.33-2.3",
+    "p-sn46.33-2.4"
+   ],
+   "note": null
+  },
+  {
+   "id": "e25",
+   "source": "RestlessnessRemorse",
+   "target": "FiveCorruptionsOfMind",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.33-2.1",
+    "p-sn46.33-2.3",
+    "p-sn46.33-2.4"
+   ],
+   "note": null
+  },
+  {
+   "id": "e26",
+   "source": "SensualDesire",
+   "target": "FiveCorruptionsOfMind",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.33-2.1",
+    "p-sn46.33-2.3",
+    "p-sn46.33-2.4"
    ],
    "note": null
   },
@@ -2594,7 +2988,11 @@
     "p-sn46.31-2.3",
     "p-sn46.32-2.3",
     "p-sn46.48-1.6",
+    "p-sn46.57-1.5",
     "p-sn46.5-1.7",
+    "p-sn46.76-1.4",
+    "p-sn46.76-2.6",
+    "p-sn46.76-3.4",
     "p-sn46.7-2.3"
    ],
    "note": "“as letting go”",
@@ -2604,6 +3002,466 @@
   },
   {
    "id": "e76",
+   "source": "SkeletonPerception",
+   "target": "GreatFruit",
+   "rel": "leads to",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.57-1.2",
+    "p-sn46.57-1.6"
+   ],
+   "note": "“very fruitful and beneficial”",
+   "group": "outcomes",
+   "effect": "LeadsTo",
+   "inv": "reached through"
+  },
+  {
+   "id": "e77",
+   "source": "WormInfestedPerception",
+   "target": "GreatFruit",
+   "rel": "leads to",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.58-1.1"
+   ],
+   "note": "“very fruitful and beneficial”",
+   "group": "outcomes",
+   "effect": "LeadsTo",
+   "inv": "reached through"
+  },
+  {
+   "id": "e78",
+   "source": "LividPerception",
+   "target": "GreatFruit",
+   "rel": "leads to",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.59-1.1"
+   ],
+   "note": "“very fruitful and beneficial”",
+   "group": "outcomes",
+   "effect": "LeadsTo",
+   "inv": "reached through"
+  },
+  {
+   "id": "e79",
+   "source": "SplitOpenPerception",
+   "target": "GreatFruit",
+   "rel": "leads to",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.60-1.1"
+   ],
+   "note": "“very fruitful and beneficial”",
+   "group": "outcomes",
+   "effect": "LeadsTo",
+   "inv": "reached through"
+  },
+  {
+   "id": "e80",
+   "source": "BloatedPerception",
+   "target": "GreatFruit",
+   "rel": "leads to",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.61-1.1"
+   ],
+   "note": "“very fruitful and beneficial”",
+   "group": "outcomes",
+   "effect": "LeadsTo",
+   "inv": "reached through"
+  },
+  {
+   "id": "e81",
+   "source": "Love",
+   "target": "GreatFruit",
+   "rel": "leads to",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.62-1.1"
+   ],
+   "note": "“very fruitful and beneficial”",
+   "group": "outcomes",
+   "effect": "LeadsTo",
+   "inv": "reached through"
+  },
+  {
+   "id": "e82",
+   "source": "Compassion",
+   "target": "GreatFruit",
+   "rel": "leads to",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.63-1.1"
+   ],
+   "note": "“very fruitful and beneficial”",
+   "group": "outcomes",
+   "effect": "LeadsTo",
+   "inv": "reached through"
+  },
+  {
+   "id": "e83",
+   "source": "Rejoicing",
+   "target": "GreatFruit",
+   "rel": "leads to",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.64-1.1"
+   ],
+   "note": "“very fruitful and beneficial”",
+   "group": "outcomes",
+   "effect": "LeadsTo",
+   "inv": "reached through"
+  },
+  {
+   "id": "e84",
+   "source": "EquanimityImmeasurable",
+   "target": "GreatFruit",
+   "rel": "leads to",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.65-1.1"
+   ],
+   "note": "“very fruitful and beneficial”",
+   "group": "outcomes",
+   "effect": "LeadsTo",
+   "inv": "reached through"
+  },
+  {
+   "id": "e85",
+   "source": "MindfulnessOfBreathing",
+   "target": "GreatFruit",
+   "rel": "leads to",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.66-1.1"
+   ],
+   "note": "“very fruitful and beneficial”",
+   "group": "outcomes",
+   "effect": "LeadsTo",
+   "inv": "reached through"
+  },
+  {
+   "id": "e86",
+   "source": "UglinessPerception",
+   "target": "GreatFruit",
+   "rel": "leads to",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.67-1.1"
+   ],
+   "note": "“very fruitful and beneficial”",
+   "group": "outcomes",
+   "effect": "LeadsTo",
+   "inv": "reached through"
+  },
+  {
+   "id": "e87",
+   "source": "DeathPerception",
+   "target": "GreatFruit",
+   "rel": "leads to",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.68-1.1"
+   ],
+   "note": "“very fruitful and beneficial”",
+   "group": "outcomes",
+   "effect": "LeadsTo",
+   "inv": "reached through"
+  },
+  {
+   "id": "e88",
+   "source": "FoodRepulsivenessPerception",
+   "target": "GreatFruit",
+   "rel": "leads to",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.69-1.1"
+   ],
+   "note": "“very fruitful and beneficial”",
+   "group": "outcomes",
+   "effect": "LeadsTo",
+   "inv": "reached through"
+  },
+  {
+   "id": "e89",
+   "source": "WorldDissatisfactionPerception",
+   "target": "GreatFruit",
+   "rel": "leads to",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.70-1.1"
+   ],
+   "note": "“very fruitful and beneficial”",
+   "group": "outcomes",
+   "effect": "LeadsTo",
+   "inv": "reached through"
+  },
+  {
+   "id": "e90",
+   "source": "ImpermanencePerception",
+   "target": "GreatFruit",
+   "rel": "leads to",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.71-1.1"
+   ],
+   "note": "“very fruitful and beneficial”",
+   "group": "outcomes",
+   "effect": "LeadsTo",
+   "inv": "reached through"
+  },
+  {
+   "id": "e91",
+   "source": "SufferingInImpermanencePerception",
+   "target": "GreatFruit",
+   "rel": "leads to",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.72-1.1"
+   ],
+   "note": "“very fruitful and beneficial”",
+   "group": "outcomes",
+   "effect": "LeadsTo",
+   "inv": "reached through"
+  },
+  {
+   "id": "e92",
+   "source": "NotSelfInSufferingPerception",
+   "target": "GreatFruit",
+   "rel": "leads to",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.73-1.1"
+   ],
+   "note": "“very fruitful and beneficial”",
+   "group": "outcomes",
+   "effect": "LeadsTo",
+   "inv": "reached through"
+  },
+  {
+   "id": "e93",
+   "source": "GivingUpPerception",
+   "target": "GreatFruit",
+   "rel": "leads to",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.74-1.1"
+   ],
+   "note": "“very fruitful and beneficial”",
+   "group": "outcomes",
+   "effect": "LeadsTo",
+   "inv": "reached through"
+  },
+  {
+   "id": "e94",
+   "source": "DispassionPerception",
+   "target": "GreatFruit",
+   "rel": "leads to",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.75-1.1"
+   ],
+   "note": "“very fruitful and beneficial”",
+   "group": "outcomes",
+   "effect": "LeadsTo",
+   "inv": "reached through"
+  },
+  {
+   "id": "e95",
+   "source": "CessationPerception",
+   "target": "GreatFruit",
+   "rel": "leads to",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.76-1.1",
+    "p-sn46.76-1.5"
+   ],
+   "note": "“very fruitful and beneficial”",
+   "group": "outcomes",
+   "effect": "LeadsTo",
+   "inv": "reached through"
+  },
+  {
+   "id": "e96",
+   "source": "SkeletonPerception",
+   "target": "Enlightenment",
+   "rel": "leads to",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.57-2.1"
+   ],
+   "note": "“enlightenment in this very life”",
+   "group": "outcomes",
+   "effect": "LeadsTo",
+   "inv": "reached through"
+  },
+  {
+   "id": "e97",
+   "source": "SkeletonPerception",
+   "target": "NonReturn",
+   "rel": "leads to",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.57-2.1"
+   ],
+   "note": "“non-return”",
+   "group": "outcomes",
+   "effect": "LeadsTo",
+   "inv": "reached through"
+  },
+  {
+   "id": "e98",
+   "source": "SkeletonPerception",
+   "target": "GreatBenefit",
+   "rel": "leads to",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.57-3.1"
+   ],
+   "note": "“great benefit”",
+   "group": "outcomes",
+   "effect": "LeadsTo",
+   "inv": "reached through"
+  },
+  {
+   "id": "e99",
+   "source": "SkeletonPerception",
+   "target": "SanctuaryFromYoke",
+   "rel": "leads to",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.57-4.1"
+   ],
+   "note": "“great sanctuary from the yoke”",
+   "group": "outcomes",
+   "effect": "LeadsTo",
+   "inv": "reached through"
+  },
+  {
+   "id": "e100",
+   "source": "SkeletonPerception",
+   "target": "Inspiration",
+   "rel": "leads to",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.57-5.1"
+   ],
+   "note": "“great inspiration”",
+   "group": "outcomes",
+   "effect": "LeadsTo",
+   "inv": "reached through"
+  },
+  {
+   "id": "e101",
+   "source": "SkeletonPerception",
+   "target": "GreatEase",
+   "rel": "leads to",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.57-6.1"
+   ],
+   "note": "“great ease”",
+   "group": "outcomes",
+   "effect": "LeadsTo",
+   "inv": "reached through"
+  },
+  {
+   "id": "e102",
+   "source": "CessationPerception",
+   "target": "Enlightenment",
+   "rel": "leads to",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.76-2.1",
+    "p-sn46.76-2.2",
+    "p-sn46.76-2.7",
+    "p-sn46.76-2.8"
+   ],
+   "note": "“enlightenment in this very life”",
+   "group": "outcomes",
+   "effect": "LeadsTo",
+   "inv": "reached through"
+  },
+  {
+   "id": "e103",
+   "source": "CessationPerception",
+   "target": "NonReturn",
+   "rel": "leads to",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.76-2.1",
+    "p-sn46.76-2.2",
+    "p-sn46.76-2.7",
+    "p-sn46.76-2.8"
+   ],
+   "note": "“non-return”",
+   "group": "outcomes",
+   "effect": "LeadsTo",
+   "inv": "reached through"
+  },
+  {
+   "id": "e104",
+   "source": "CessationPerception",
+   "target": "GreatBenefit",
+   "rel": "leads to",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.76-3.1",
+    "p-sn46.76-3.5"
+   ],
+   "note": "“great benefit”",
+   "group": "outcomes",
+   "effect": "LeadsTo",
+   "inv": "reached through"
+  },
+  {
+   "id": "e105",
+   "source": "CessationPerception",
+   "target": "SanctuaryFromYoke",
+   "rel": "leads to",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.76-3.1",
+    "p-sn46.76-3.5"
+   ],
+   "note": "“great sanctuary from the yoke”",
+   "group": "outcomes",
+   "effect": "LeadsTo",
+   "inv": "reached through"
+  },
+  {
+   "id": "e106",
+   "source": "CessationPerception",
+   "target": "Inspiration",
+   "rel": "leads to",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.76-3.1",
+    "p-sn46.76-3.5"
+   ],
+   "note": "“great inspiration”",
+   "group": "outcomes",
+   "effect": "LeadsTo",
+   "inv": "reached through"
+  },
+  {
+   "id": "e107",
+   "source": "CessationPerception",
+   "target": "GreatEase",
+   "rel": "leads to",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.76-3.1",
+    "p-sn46.76-3.5"
+   ],
+   "note": "“great ease”",
+   "group": "outcomes",
+   "effect": "LeadsTo",
+   "inv": "reached through"
+  },
+  {
+   "id": "e108",
    "source": "Ethics",
    "target": "SevenAwakeningFactors",
    "rel": "is the basis of",
@@ -2617,7 +3475,7 @@
    "inv": "conditioned by"
   },
   {
-   "id": "e77",
+   "id": "e109",
    "source": "GoodFriendship",
    "target": "SevenAwakeningFactors",
    "rel": "is the forerunner of",
@@ -2631,7 +3489,7 @@
    "inv": "conditioned by"
   },
   {
-   "id": "e78",
+   "id": "e110",
    "source": "GoodFriendship",
    "target": "SevenAwakeningFactors",
    "rel": "supports the development of",
@@ -2645,7 +3503,7 @@
    "inv": "conditioned by"
   },
   {
-   "id": "e79",
+   "id": "e111",
    "source": "RationalAttention",
    "target": "SevenAwakeningFactors",
    "rel": "is the forerunner of",
@@ -2658,7 +3516,7 @@
    "inv": "conditioned by"
   },
   {
-   "id": "e80",
+   "id": "e112",
    "source": "RationalAttention",
    "target": "SevenAwakeningFactors",
    "rel": "supports the development of",
@@ -2672,7 +3530,7 @@
    "inv": "conditioned by"
   },
   {
-   "id": "e81",
+   "id": "e113",
    "source": "Diligence",
    "target": "SkillfulQualities",
    "rel": "is the root of",
@@ -2685,7 +3543,7 @@
    "inv": "conditioned by"
   },
   {
-   "id": "e82",
+   "id": "e114",
    "source": "Diligence",
    "target": "SevenAwakeningFactors",
    "rel": "supports the development of",
@@ -2698,7 +3556,7 @@
    "inv": "conditioned by"
   },
   {
-   "id": "e83",
+   "id": "e115",
    "source": "RationalAttention",
    "target": "SkillfulQualities",
    "rel": "is the root of",
@@ -2711,7 +3569,7 @@
    "inv": "conditioned by"
   },
   {
-   "id": "e84",
+   "id": "e116",
    "source": "RationalAttention",
    "target": "SevenAwakeningFactors",
    "rel": "gives rise to",
@@ -2724,7 +3582,7 @@
    "inv": "conditioned by"
   },
   {
-   "id": "e85",
+   "id": "e117",
    "source": "GoodFriendship",
    "target": "SevenAwakeningFactors",
    "rel": "gives rise to",
@@ -2737,7 +3595,7 @@
    "inv": "conditioned by"
   },
   {
-   "id": "e86",
+   "id": "e118",
    "source": "IrrationalAttention",
    "target": "FiveHindrances",
    "rel": "when present, then (arise)",
@@ -2752,7 +3610,7 @@
    "inv": "conditioned by (arise)"
   },
   {
-   "id": "e87",
+   "id": "e119",
    "source": "IrrationalAttention",
    "target": "SevenAwakeningFactors",
    "rel": "when present, then (don't arise, or end if already arisen)",
@@ -2766,7 +3624,7 @@
    "inv": "conditioned by (don't arise, or end if already arisen)"
   },
   {
-   "id": "e88",
+   "id": "e120",
    "source": "RationalAttention",
    "target": "FiveHindrances",
    "rel": "when present, then (don't arise, or end if already arisen)",
@@ -2780,7 +3638,7 @@
    "inv": "conditioned by (don't arise, or end if already arisen)"
   },
   {
-   "id": "e89",
+   "id": "e121",
    "source": "RationalAttention",
    "target": "SevenAwakeningFactors",
    "rel": "when present, then (arise)",
@@ -2795,7 +3653,7 @@
    "inv": "conditioned by (arise)"
   },
   {
-   "id": "e90",
+   "id": "e122",
    "source": "ListeningToTeaching",
    "target": "FiveHindrances",
    "rel": "when present, then (are absent)",
@@ -2809,7 +3667,7 @@
    "inv": "conditioned by (are absent)"
   },
   {
-   "id": "e91",
+   "id": "e123",
    "source": "ListeningToTeaching",
    "target": "SevenAwakeningFactors",
    "rel": "when present, then (are fully developed)",
@@ -2823,7 +3681,7 @@
    "inv": "conditioned by (are fully developed)"
   },
   {
-   "id": "e92",
+   "id": "e124",
    "source": "Seclusion",
    "target": "SevenAwakeningFactors",
    "rel": "is the basis of",
@@ -2844,7 +3702,11 @@
     "p-sn46.31-2.3",
     "p-sn46.32-2.3",
     "p-sn46.48-1.6",
+    "p-sn46.57-1.5",
     "p-sn46.5-1.7",
+    "p-sn46.76-1.4",
+    "p-sn46.76-2.6",
+    "p-sn46.76-3.4",
     "p-sn46.7-2.3"
    ],
    "note": "“on seclusion, fading away, and cessation”",
@@ -2852,7 +3714,7 @@
    "inv": "conditioned by"
   },
   {
-   "id": "e93",
+   "id": "e125",
    "source": "Virāga",
    "target": "SevenAwakeningFactors",
    "rel": "is the basis of",
@@ -2873,7 +3735,11 @@
     "p-sn46.31-2.3",
     "p-sn46.32-2.3",
     "p-sn46.48-1.6",
+    "p-sn46.57-1.5",
     "p-sn46.5-1.7",
+    "p-sn46.76-1.4",
+    "p-sn46.76-2.6",
+    "p-sn46.76-3.4",
     "p-sn46.7-2.3"
    ],
    "note": "“on seclusion, fading away, and cessation”",
@@ -2881,7 +3747,7 @@
    "inv": "conditioned by"
   },
   {
-   "id": "e94",
+   "id": "e126",
    "source": "Cessation",
    "target": "SevenAwakeningFactors",
    "rel": "is the basis of",
@@ -2902,7 +3768,11 @@
     "p-sn46.31-2.3",
     "p-sn46.32-2.3",
     "p-sn46.48-1.6",
+    "p-sn46.57-1.5",
     "p-sn46.5-1.7",
+    "p-sn46.76-1.4",
+    "p-sn46.76-2.6",
+    "p-sn46.76-3.4",
     "p-sn46.7-2.3"
    ],
    "note": "“on seclusion, fading away, and cessation”",
@@ -2910,7 +3780,33 @@
    "inv": "conditioned by"
   },
   {
-   "id": "e95",
+   "id": "e127",
+   "source": "SevenAwakeningFactors",
+   "target": "SkeletonPerception",
+   "rel": "accompany the development of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.57-1.4"
+   ],
+   "note": "“together with the awakening factors”",
+   "group": "conditions",
+   "inv": "conditioned by"
+  },
+  {
+   "id": "e128",
+   "source": "SevenAwakeningFactors",
+   "target": "CessationPerception",
+   "rel": "accompany the development of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.76-1.3"
+   ],
+   "note": "“together with the awakening factors”",
+   "group": "conditions",
+   "inv": "conditioned by"
+  },
+  {
+   "id": "e129",
    "source": "Unification",
    "target": "Immersion",
    "rel": "is defined as",
@@ -2921,7 +3817,7 @@
    "note": null
   },
   {
-   "id": "e96",
+   "id": "e130",
    "source": "SluggishMind",
    "target": "DullnessDrowsiness",
    "rel": "see also",
@@ -2930,7 +3826,7 @@
    "note": "Editor's link, not a textual claim."
   },
   {
-   "id": "e97",
+   "id": "e131",
    "source": "RestlessMind",
    "target": "RestlessnessRemorse",
    "rel": "see also",
@@ -2939,7 +3835,7 @@
    "note": "Editor's link, not a textual claim."
   },
   {
-   "id": "e98",
+   "id": "e132",
    "source": "Restlessness",
    "target": "RestlessnessRemorse",
    "rel": "see also",
@@ -2948,7 +3844,7 @@
    "note": "Editor's link, not a textual claim."
   },
   {
-   "id": "e99",
+   "id": "e133",
    "source": "Sambodhi",
    "target": "Bodhi",
    "rel": "see also",
@@ -2957,7 +3853,34 @@
    "note": "Editor's link, not a textual claim."
   },
   {
-   "id": "e100",
+   "id": "e134",
+   "source": "Love",
+   "target": "o-metta",
+   "rel": "see also",
+   "layer": "editor",
+   "cites": [],
+   "note": "Editor's link, not a textual claim."
+  },
+  {
+   "id": "e135",
+   "source": "EquanimityImmeasurable",
+   "target": "Equanimity",
+   "rel": "see also",
+   "layer": "editor",
+   "cites": [],
+   "note": "Editor's link, not a textual claim."
+  },
+  {
+   "id": "e136",
+   "source": "UglinessPerception",
+   "target": "o-ugliness",
+   "rel": "see also",
+   "layer": "editor",
+   "cites": [],
+   "note": "Editor's link, not a textual claim."
+  },
+  {
+   "id": "e137",
    "source": "lex-dhamma",
    "target": "DhammaTeaching",
    "rel": "sense",
@@ -2968,7 +3891,7 @@
    "note": null
   },
   {
-   "id": "e101",
+   "id": "e138",
    "source": "lex-dhamma",
    "target": "DhammaPhenomenon",
    "rel": "sense",
@@ -2979,7 +3902,7 @@
    "note": null
   },
   {
-   "id": "e102",
+   "id": "e139",
    "source": "lex-dhamma",
    "target": "DhammaMindObject",
    "rel": "sense",
@@ -2991,7 +3914,7 @@
    "note": null
   },
   {
-   "id": "e103",
+   "id": "e140",
    "source": "lex-dhamma",
    "target": "DhammaQuality",
    "rel": "sense",
@@ -5181,6 +6104,174 @@
    "contested": null,
    "sense": null
   },
+  "p-sn46.57-1.2": {
+   "segment": "sn46.57:1.2",
+   "en": "“Mendicants, when the perception of a skeleton is developed and cultivated it’s very fruitful and beneficial.",
+   "pi": "“Aṭṭhikasaññā, bhikkhave, bhāvitā bahulīkatā mahapphalā hoti mahānisaṁsā.",
+   "url": "https://suttacentral.net/sn46.57/en/sujato#sn46.57:1.2",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.57-1.4": {
+   "segment": "sn46.57:1.4",
+   "en": "It’s when a mendicant develops the perception of a skeleton together with the awakening factors of mindfulness, investigation of principles, energy, rapture, tranquility, immersion,",
+   "pi": "Idha, bhikkhave, bhikkhu aṭṭhikasaññāsahagataṁ satisambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ …pe…",
+   "url": "https://suttacentral.net/sn46.57/en/sujato#sn46.57:1.4",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.57-1.5": {
+   "segment": "sn46.57:1.5",
+   "en": "and equanimity, which rely on seclusion, fading away, and cessation, and ripen as letting go.",
+   "pi": "aṭṭhikasaññāsahagataṁ upekkhāsambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ.",
+   "url": "https://suttacentral.net/sn46.57/en/sujato#sn46.57:1.5",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.57-1.6": {
+   "segment": "sn46.57:1.6",
+   "en": "That’s how the perception of a skeleton, when developed and cultivated, is very fruitful and beneficial.”",
+   "pi": "Evaṁ bhāvitā kho, bhikkhave, aṭṭhikasaññā evaṁ bahulīkatā mahapphalā hoti mahānisaṁsā”ti.",
+   "url": "https://suttacentral.net/sn46.57/en/sujato#sn46.57:1.6",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.57-2.1": {
+   "segment": "sn46.57:2.1",
+   "en": "“When the perception of a skeleton is developed and cultivated you can expect one of two results: enlightenment in this very life, or if there’s residue left behind, non-return.",
+   "pi": "“Aṭṭhikasaññāya, bhikkhave, bhāvitāya bahulīkatāya dvinnaṁ phalānaṁ aññataraṁ phalaṁ pāṭikaṅkhaṁ—diṭṭheva dhamme aññā, sati vā upādisese anāgāmitā.",
+   "url": "https://suttacentral.net/sn46.57/en/sujato#sn46.57:2.1",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.57-3.1": {
+   "segment": "sn46.57:3.1",
+   "en": "“Mendicants, when the perception of a skeleton is developed and cultivated it leads to great benefit.",
+   "pi": "“Aṭṭhikasaññā, bhikkhave, bhāvitā bahulīkatā mahato atthāya saṁvattati.",
+   "url": "https://suttacentral.net/sn46.57/en/sujato#sn46.57:3.1",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.57-4.1": {
+   "segment": "sn46.57:4.1",
+   "en": "“Mendicants, when the perception of a skeleton is developed and cultivated it leads to great sanctuary from the yoke.",
+   "pi": "“Aṭṭhikasaññā, bhikkhave, bhāvitā bahulīkatā mahato yogakkhemāya saṁvattati.",
+   "url": "https://suttacentral.net/sn46.57/en/sujato#sn46.57:4.1",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.57-5.1": {
+   "segment": "sn46.57:5.1",
+   "en": "“Mendicants, when the perception of a skeleton is developed and cultivated it leads to great inspiration.",
+   "pi": "“Aṭṭhikasaññā, bhikkhave, bhāvitā bahulīkatā mahato saṁvegāya saṁvattati.",
+   "url": "https://suttacentral.net/sn46.57/en/sujato#sn46.57:5.1",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.57-6.1": {
+   "segment": "sn46.57:6.1",
+   "en": "“Mendicants, when the perception of a skeleton is developed and cultivated it leads to dwelling in great ease.",
+   "pi": "“Aṭṭhikasaññā, bhikkhave, bhāvitā bahulīkatā mahato phāsuvihārāya saṁvattati.",
+   "url": "https://suttacentral.net/sn46.57/en/sujato#sn46.57:6.1",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.58-1.1": {
+   "segment": "sn46.58:1.1",
+   "en": "“Mendicants, when the perception of a worm-infested corpse is developed and cultivated it’s very fruitful and beneficial. …”",
+   "pi": "“Puḷavakasaññā, bhikkhave, bhāvitā …pe…”",
+   "url": "https://suttacentral.net/sn46.58/en/sujato#sn46.58:1.1",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.59-1.1": {
+   "segment": "sn46.59:1.1",
+   "en": "“Mendicants, when the perception of a livid corpse is developed and cultivated it’s very fruitful and beneficial. …”",
+   "pi": "“Vinīlakasaññā, bhikkhave …pe…”",
+   "url": "https://suttacentral.net/sn46.59/en/sujato#sn46.59:1.1",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.60-1.1": {
+   "segment": "sn46.60:1.1",
+   "en": "“Mendicants, when the perception of a split open corpse is developed and cultivated it’s very fruitful and beneficial. …”",
+   "pi": "“Vicchiddakasaññā, bhikkhave …pe…”",
+   "url": "https://suttacentral.net/sn46.60/en/sujato#sn46.60:1.1",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.61-1.1": {
+   "segment": "sn46.61:1.1",
+   "en": "“Mendicants, when the perception of a bloated corpse is developed and cultivated it’s very fruitful and beneficial. …”",
+   "pi": "“Uddhumātakasaññā, bhikkhave …pe…”",
+   "url": "https://suttacentral.net/sn46.61/en/sujato#sn46.61:1.1",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.62-1.1": {
+   "segment": "sn46.62:1.1",
+   "en": "“Mendicants, when love is developed and cultivated it’s very fruitful and beneficial. …”",
+   "pi": "“Mettā, bhikkhave, bhāvitā …pe…”",
+   "url": "https://suttacentral.net/sn46.62/en/sujato#sn46.62:1.1",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.63-1.1": {
+   "segment": "sn46.63:1.1",
+   "en": "“Mendicants, when compassion is developed and cultivated it’s very fruitful and beneficial. …”",
+   "pi": "“Karuṇā, bhikkhave, bhāvitā …pe…”",
+   "url": "https://suttacentral.net/sn46.63/en/sujato#sn46.63:1.1",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.64-1.1": {
+   "segment": "sn46.64:1.1",
+   "en": "“Mendicants, when rejoicing is developed and cultivated it’s very fruitful and beneficial. …”",
+   "pi": "“Muditā, bhikkhave, bhāvitā …pe…”",
+   "url": "https://suttacentral.net/sn46.64/en/sujato#sn46.64:1.1",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.65-1.1": {
+   "segment": "sn46.65:1.1",
+   "en": "“Mendicants, when equanimity is developed and cultivated it’s very fruitful and beneficial. …”",
+   "pi": "“Upekkhā, bhikkhave, bhāvitā …pe…”",
+   "url": "https://suttacentral.net/sn46.65/en/sujato#sn46.65:1.1",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.66-1.1": {
+   "segment": "sn46.66:1.1",
+   "en": "“Mendicants, when mindfulness of breathing is developed and cultivated it’s very fruitful and beneficial. …”",
+   "pi": "“Ānāpānassati, bhikkhave, bhāvitā …pe…”",
+   "url": "https://suttacentral.net/sn46.66/en/sujato#sn46.66:1.1",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.67-1.1": {
+   "segment": "sn46.67:1.1",
+   "en": "“Mendicants, when the perception of ugliness is developed and cultivated it’s very fruitful and beneficial. …”",
+   "pi": "“Asubhasaññā, bhikkhave …pe…”",
+   "url": "https://suttacentral.net/sn46.67/en/sujato#sn46.67:1.1",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.68-1.1": {
+   "segment": "sn46.68:1.1",
+   "en": "“Mendicants, when the perception of death is developed and cultivated it’s very fruitful and beneficial. …”",
+   "pi": "“Maraṇasaññā, bhikkhave …pe…”",
+   "url": "https://suttacentral.net/sn46.68/en/sujato#sn46.68:1.1",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.69-1.1": {
+   "segment": "sn46.69:1.1",
+   "en": "“Mendicants, when the perception of repulsiveness of food is developed and cultivated it’s very fruitful and beneficial. …”",
+   "pi": "“Āhāre paṭikūlasaññā, bhikkhave …pe…”",
+   "url": "https://suttacentral.net/sn46.69/en/sujato#sn46.69:1.1",
+   "contested": null,
+   "sense": null
+  },
   "p-sn46.7-1.2": {
    "segment": "sn46.7:1.2",
    "en": "In the same way, a mendicant who develops and cultivates the seven awakening factors slants, slopes, and inclines to extinguishment.",
@@ -5202,6 +6293,150 @@
    "en": "That’s how a mendicant who develops and cultivates the seven awakening factors slants, slopes, and inclines to extinguishment.”",
    "pi": "Evaṁ kho, bhikkhave, bhikkhu satta bojjhaṅge bhāvento satta bojjhaṅge bahulīkaronto nibbānaninno hoti nibbānapoṇo nibbānapabbhāro”ti.",
    "url": "https://suttacentral.net/sn46.7/en/sujato#sn46.7:2.4",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.70-1.1": {
+   "segment": "sn46.70:1.1",
+   "en": "“Mendicants, when the perception of dissatisfaction with the whole world is developed and cultivated it’s very fruitful and beneficial. …”",
+   "pi": "“Sabbaloke anabhiratisaññā, bhikkhave …pe…”",
+   "url": "https://suttacentral.net/sn46.70/en/sujato#sn46.70:1.1",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.71-1.1": {
+   "segment": "sn46.71:1.1",
+   "en": "“Mendicants, when the perception of impermanence is developed and cultivated it’s very fruitful and beneficial. …”",
+   "pi": "“Aniccasaññā, bhikkhave …pe…”",
+   "url": "https://suttacentral.net/sn46.71/en/sujato#sn46.71:1.1",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.72-1.1": {
+   "segment": "sn46.72:1.1",
+   "en": "“Mendicants, when the perception of suffering in impermanence is developed and cultivated it’s very fruitful and beneficial. …”",
+   "pi": "“Anicce dukkhasaññā, bhikkhave …pe…”",
+   "url": "https://suttacentral.net/sn46.72/en/sujato#sn46.72:1.1",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.73-1.1": {
+   "segment": "sn46.73:1.1",
+   "en": "“Mendicants, when the perception of not-self in suffering is developed and cultivated it’s very fruitful and beneficial. …”",
+   "pi": "“Dukkhe anattasaññā, bhikkhave …pe…”",
+   "url": "https://suttacentral.net/sn46.73/en/sujato#sn46.73:1.1",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.74-1.1": {
+   "segment": "sn46.74:1.1",
+   "en": "“Mendicants, when the perception of giving up is developed and cultivated it’s very fruitful and beneficial. …”",
+   "pi": "“Pahānasaññā, bhikkhave …pe…”",
+   "url": "https://suttacentral.net/sn46.74/en/sujato#sn46.74:1.1",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.75-1.1": {
+   "segment": "sn46.75:1.1",
+   "en": "“Mendicants, when the perception of dispassion is developed and cultivated it’s very fruitful and beneficial. …”",
+   "pi": "“Virāgasaññā, bhikkhave …pe…”",
+   "url": "https://suttacentral.net/sn46.75/en/sujato#sn46.75:1.1",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.76-1.1": {
+   "segment": "sn46.76:1.1",
+   "en": "“Mendicants, when the perception of cessation is developed and cultivated it’s very fruitful and beneficial.",
+   "pi": "“Nirodhasaññā, bhikkhave, bhāvitā bahulīkatā mahapphalā hoti mahānisaṁsā.",
+   "url": "https://suttacentral.net/sn46.76/en/sujato#sn46.76:1.1",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.76-1.3": {
+   "segment": "sn46.76:1.3",
+   "en": "It’s when a mendicant develops the perception of cessation together with the awakening factors of mindfulness, investigation of principles, energy, rapture, tranquility, immersion,",
+   "pi": "Idha, bhikkhave, bhikkhu nirodhasaññāsahagataṁ satisambojjhaṅgaṁ bhāveti …pe…",
+   "url": "https://suttacentral.net/sn46.76/en/sujato#sn46.76:1.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.76-1.4": {
+   "segment": "sn46.76:1.4",
+   "en": "and equanimity, which rely on seclusion, fading away, and cessation, and ripen as letting go.",
+   "pi": "nirodhasaññāsahagataṁ upekkhāsambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ.",
+   "url": "https://suttacentral.net/sn46.76/en/sujato#sn46.76:1.4",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.76-1.5": {
+   "segment": "sn46.76:1.5",
+   "en": "That’s how, when the perception of cessation is developed and cultivated, it’s very fruitful and beneficial.",
+   "pi": "Evaṁ bhāvitā kho, bhikkhave, nirodhasaññā evaṁ bahulīkatā mahapphalā hoti mahānisaṁsāti.",
+   "url": "https://suttacentral.net/sn46.76/en/sujato#sn46.76:1.5",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.76-2.1": {
+   "segment": "sn46.76:2.1",
+   "en": "When the perception of cessation is developed and cultivated you can expect one of two results:",
+   "pi": "Nirodhasaññāya, bhikkhave, bhāvitāya bahulīkatāya dvinnaṁ phalānaṁ aññataraṁ phalaṁ pāṭikaṅkhaṁ—",
+   "url": "https://suttacentral.net/sn46.76/en/sujato#sn46.76:2.1",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.76-2.2": {
+   "segment": "sn46.76:2.2",
+   "en": "enlightenment in this very life, or if there’s residue left behind, non-return.",
+   "pi": "diṭṭheva dhamme aññā, sati vā upādisese anāgāmitā.",
+   "url": "https://suttacentral.net/sn46.76/en/sujato#sn46.76:2.2",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.76-2.6": {
+   "segment": "sn46.76:2.6",
+   "en": "and equanimity, which rely on seclusion, fading away, and cessation, and ripen as letting go.",
+   "pi": "nirodhasaññāsahagataṁ upekkhāsambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ.",
+   "url": "https://suttacentral.net/sn46.76/en/sujato#sn46.76:2.6",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.76-2.7": {
+   "segment": "sn46.76:2.7",
+   "en": "When the perception of cessation is developed and cultivated in this way you can expect one of two results:",
+   "pi": "Evaṁ bhāvitāya kho, bhikkhave, nirodhasaññāya evaṁ bahulīkatāya dvinnaṁ phalānaṁ aññataraṁ phalaṁ pāṭikaṅkhaṁ—",
+   "url": "https://suttacentral.net/sn46.76/en/sujato#sn46.76:2.7",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.76-2.8": {
+   "segment": "sn46.76:2.8",
+   "en": "enlightenment in this very life, or if there’s residue left behind, non-return.”",
+   "pi": "diṭṭheva dhamme aññā, sati vā upādisese anāgāmitāti.",
+   "url": "https://suttacentral.net/sn46.76/en/sujato#sn46.76:2.8",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.76-3.1": {
+   "segment": "sn46.76:3.1",
+   "en": "“The perception of cessation, when developed and cultivated, leads to great benefit … great sanctuary from the yoke … great inspiration … great ease.",
+   "pi": "Nirodhasaññā, bhikkhave, bhāvitā bahulīkatā mahato atthāya saṁvattati, mahato yogakkhemāya saṁvattati, mahato saṁvegāya saṁvattati, mahato phāsuvihārāya saṁvattati.",
+   "url": "https://suttacentral.net/sn46.76/en/sujato#sn46.76:3.1",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.76-3.4": {
+   "segment": "sn46.76:3.4",
+   "en": "and equanimity, which rely on seclusion, fading away, and cessation, and ripen as letting go.",
+   "pi": "nirodhasaññāsahagataṁ upekkhāsambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ.",
+   "url": "https://suttacentral.net/sn46.76/en/sujato#sn46.76:3.4",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.76-3.5": {
+   "segment": "sn46.76:3.5",
+   "en": "That’s how the perception of cessation, when developed and cultivated, leads to great benefit … great sanctuary from the yoke … great inspiration … great ease.”",
+   "pi": "Evaṁ bhāvitā kho, bhikkhave, nirodhasaññā evaṁ bahulīkatā mahato atthāya saṁvattati, mahato yogakkhemāya saṁvattati, mahato saṁvegāya saṁvattati, mahato phāsuvihārāya saṁvattatī”ti.",
+   "url": "https://suttacentral.net/sn46.76/en/sujato#sn46.76:3.5",
    "contested": null,
    "sense": null
   }

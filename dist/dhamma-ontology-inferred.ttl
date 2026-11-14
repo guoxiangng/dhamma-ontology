@@ -1,5 +1,5 @@
 # dhamma-ontology: https://github.com/guoxiangng/dhamma-ontology
-# Inferred: after OWL RL reasoning (+3279 triples) and rule R1 (+16).
+# Inferred: after OWL RL reasoning (+3912 triples) and rule R1 (+16).
 # Sutta text from SuttaCentral (CC0): English by Bhikkhu Sujato, Pali from the Mahāsaṅgīti edition.
 # Personal learning project; modelling unreviewed. See COVERAGE.md and DECISIONS.md.
 
@@ -416,7 +416,11 @@ dho:c-17 a owl:Thing,
         dho:p-sn46.32-2.3,
         dho:p-sn46.48-1.6,
         dho:p-sn46.5-1.7,
-        dho:p-sn46.7-2.3 ;
+        dho:p-sn46.57-1.5,
+        dho:p-sn46.7-2.3,
+        dho:p-sn46.76-1.4,
+        dho:p-sn46.76-2.6,
+        dho:p-sn46.76-3.4 ;
     dho:condition dho:Seclusion ;
     dho:conditioned dho:SevenAwakeningFactors ;
     dho:relation dho:BasisOf ;
@@ -441,7 +445,11 @@ dho:c-18 a owl:Thing,
         dho:p-sn46.32-2.3,
         dho:p-sn46.48-1.6,
         dho:p-sn46.5-1.7,
-        dho:p-sn46.7-2.3 ;
+        dho:p-sn46.57-1.5,
+        dho:p-sn46.7-2.3,
+        dho:p-sn46.76-1.4,
+        dho:p-sn46.76-2.6,
+        dho:p-sn46.76-3.4 ;
     dho:condition dho:Virāga ;
     dho:conditioned dho:SevenAwakeningFactors ;
     dho:relation dho:BasisOf ;
@@ -466,11 +474,33 @@ dho:c-19 a owl:Thing,
         dho:p-sn46.32-2.3,
         dho:p-sn46.48-1.6,
         dho:p-sn46.5-1.7,
-        dho:p-sn46.7-2.3 ;
+        dho:p-sn46.57-1.5,
+        dho:p-sn46.7-2.3,
+        dho:p-sn46.76-1.4,
+        dho:p-sn46.76-2.6,
+        dho:p-sn46.76-3.4 ;
     dho:condition dho:Cessation ;
     dho:conditioned dho:SevenAwakeningFactors ;
     dho:relation dho:BasisOf ;
     dho:wording "on seclusion, fading away, and cessation" .
+
+dho:c-p57 a owl:Thing,
+        dho:Condition ;
+    owl:sameAs dho:c-p57 ;
+    dho:citedBy dho:p-sn46.57-1.4 ;
+    dho:condition dho:SevenAwakeningFactors ;
+    dho:conditioned dho:SkeletonPerception ;
+    dho:relation dho:Accompanies ;
+    dho:wording "together with the awakening factors" .
+
+dho:c-p76 a owl:Thing,
+        dho:Condition ;
+    owl:sameAs dho:c-p76 ;
+    dho:citedBy dho:p-sn46.76-1.3 ;
+    dho:condition dho:SevenAwakeningFactors ;
+    dho:conditioned dho:CessationPerception ;
+    dho:relation dho:Accompanies ;
+    dho:wording "together with the awakening factors" .
 
 dho:def-01 a owl:Thing,
         dho:Definition ;
@@ -483,7 +513,7 @@ dho:lex-dhamma a ontolex:LexicalEntry,
         ontolex:Word ;
     owl:sameAs dho:lex-dhamma ;
     skos:note "Sanskrit dharma; Chinese 法. Kept as one Pali entry for v0.1."@en ;
-    ontolex:canonicalForm _:n991a834f180f4fe2b950624cac747cd7b1 ;
+    ontolex:canonicalForm _:nb63e3c45a95843178b3dcfb834416567b1 ;
     ontolex:sense dho:sense-dhamma-mind-object,
         dho:sense-dhamma-phenomenon,
         dho:sense-dhamma-quality,
@@ -893,7 +923,11 @@ dho:o-19 a owl:Thing,
         dho:p-sn46.32-2.3,
         dho:p-sn46.48-1.6,
         dho:p-sn46.5-1.7,
-        dho:p-sn46.7-2.3 ;
+        dho:p-sn46.57-1.5,
+        dho:p-sn46.7-2.3,
+        dho:p-sn46.76-1.4,
+        dho:p-sn46.76-2.6,
+        dho:p-sn46.76-3.4 ;
     dho:effect dho:LeadsTo ;
     dho:of dho:SevenAwakeningFactors ;
     dho:to dho:LettingGo ;
@@ -994,6 +1028,328 @@ dho:o-28 a owl:Thing,
     dho:of dho:SevenAwakeningFactors ;
     dho:to dho:Deathless ;
     dho:wording "freedom from death as their objective, destination, and culmination" .
+
+dho:o-p57 a owl:Thing,
+        dho:Outcome ;
+    owl:sameAs dho:o-p57 ;
+    dho:citedBy dho:p-sn46.57-1.2,
+        dho:p-sn46.57-1.6 ;
+    dho:effect dho:LeadsTo ;
+    dho:of dho:SkeletonPerception ;
+    dho:to dho:GreatFruit ;
+    dho:wording "very fruitful and beneficial" .
+
+dho:o-p57-a a owl:Thing,
+        dho:Outcome ;
+    owl:sameAs dho:o-p57-a ;
+    skos:note "One of two results: enlightenment in this very life or, if there is residue left behind, non-return."@en ;
+    dho:citedBy dho:p-sn46.57-2.1 ;
+    dho:effect dho:LeadsTo ;
+    dho:of dho:SkeletonPerception ;
+    dho:to dho:Enlightenment ;
+    dho:wording "enlightenment in this very life" .
+
+dho:o-p57-b a owl:Thing,
+        dho:Outcome ;
+    owl:sameAs dho:o-p57-b ;
+    skos:note "One of two results: enlightenment in this very life or, if there is residue left behind, non-return."@en ;
+    dho:citedBy dho:p-sn46.57-2.1 ;
+    dho:effect dho:LeadsTo ;
+    dho:of dho:SkeletonPerception ;
+    dho:to dho:NonReturn ;
+    dho:wording "non-return" .
+
+dho:o-p57-c a owl:Thing,
+        dho:Outcome ;
+    owl:sameAs dho:o-p57-c ;
+    dho:citedBy dho:p-sn46.57-3.1 ;
+    dho:effect dho:LeadsTo ;
+    dho:of dho:SkeletonPerception ;
+    dho:to dho:GreatBenefit ;
+    dho:wording "great benefit" .
+
+dho:o-p57-d a owl:Thing,
+        dho:Outcome ;
+    owl:sameAs dho:o-p57-d ;
+    dho:citedBy dho:p-sn46.57-4.1 ;
+    dho:effect dho:LeadsTo ;
+    dho:of dho:SkeletonPerception ;
+    dho:to dho:SanctuaryFromYoke ;
+    dho:wording "great sanctuary from the yoke" .
+
+dho:o-p57-e a owl:Thing,
+        dho:Outcome ;
+    owl:sameAs dho:o-p57-e ;
+    dho:citedBy dho:p-sn46.57-5.1 ;
+    dho:effect dho:LeadsTo ;
+    dho:of dho:SkeletonPerception ;
+    dho:to dho:Inspiration ;
+    dho:wording "great inspiration" .
+
+dho:o-p57-f a owl:Thing,
+        dho:Outcome ;
+    owl:sameAs dho:o-p57-f ;
+    dho:citedBy dho:p-sn46.57-6.1 ;
+    dho:effect dho:LeadsTo ;
+    dho:of dho:SkeletonPerception ;
+    dho:to dho:GreatEase ;
+    dho:wording "great ease" .
+
+dho:o-p58 a owl:Thing,
+        dho:Outcome ;
+    owl:sameAs dho:o-p58 ;
+    skos:note "Abbreviated in the Pali (…pe…), which names only the practice; 'very fruitful and beneficial' is the translation's expansion, following SN 46.57. Recorded as stated, not expanded further (D14)."@en ;
+    dho:citedBy dho:p-sn46.58-1.1 ;
+    dho:effect dho:LeadsTo ;
+    dho:of dho:WormInfestedPerception ;
+    dho:to dho:GreatFruit ;
+    dho:wording "very fruitful and beneficial" .
+
+dho:o-p59 a owl:Thing,
+        dho:Outcome ;
+    owl:sameAs dho:o-p59 ;
+    skos:note "Abbreviated in the Pali (…pe…), which names only the practice; 'very fruitful and beneficial' is the translation's expansion, following SN 46.57. Recorded as stated, not expanded further (D14)."@en ;
+    dho:citedBy dho:p-sn46.59-1.1 ;
+    dho:effect dho:LeadsTo ;
+    dho:of dho:LividPerception ;
+    dho:to dho:GreatFruit ;
+    dho:wording "very fruitful and beneficial" .
+
+dho:o-p60 a owl:Thing,
+        dho:Outcome ;
+    owl:sameAs dho:o-p60 ;
+    skos:note "Abbreviated in the Pali (…pe…), which names only the practice; 'very fruitful and beneficial' is the translation's expansion, following SN 46.57. Recorded as stated, not expanded further (D14)."@en ;
+    dho:citedBy dho:p-sn46.60-1.1 ;
+    dho:effect dho:LeadsTo ;
+    dho:of dho:SplitOpenPerception ;
+    dho:to dho:GreatFruit ;
+    dho:wording "very fruitful and beneficial" .
+
+dho:o-p61 a owl:Thing,
+        dho:Outcome ;
+    owl:sameAs dho:o-p61 ;
+    skos:note "Abbreviated in the Pali (…pe…), which names only the practice; 'very fruitful and beneficial' is the translation's expansion, following SN 46.57. Recorded as stated, not expanded further (D14)."@en ;
+    dho:citedBy dho:p-sn46.61-1.1 ;
+    dho:effect dho:LeadsTo ;
+    dho:of dho:BloatedPerception ;
+    dho:to dho:GreatFruit ;
+    dho:wording "very fruitful and beneficial" .
+
+dho:o-p62 a owl:Thing,
+        dho:Outcome ;
+    owl:sameAs dho:o-p62 ;
+    skos:note "Abbreviated in the Pali (…pe…), which names only the practice; 'very fruitful and beneficial' is the translation's expansion, following SN 46.57. Recorded as stated, not expanded further (D14)."@en ;
+    dho:citedBy dho:p-sn46.62-1.1 ;
+    dho:effect dho:LeadsTo ;
+    dho:of dho:Love ;
+    dho:to dho:GreatFruit ;
+    dho:wording "very fruitful and beneficial" .
+
+dho:o-p63 a owl:Thing,
+        dho:Outcome ;
+    owl:sameAs dho:o-p63 ;
+    skos:note "Abbreviated in the Pali (…pe…), which names only the practice; 'very fruitful and beneficial' is the translation's expansion, following SN 46.57. Recorded as stated, not expanded further (D14)."@en ;
+    dho:citedBy dho:p-sn46.63-1.1 ;
+    dho:effect dho:LeadsTo ;
+    dho:of dho:Compassion ;
+    dho:to dho:GreatFruit ;
+    dho:wording "very fruitful and beneficial" .
+
+dho:o-p64 a owl:Thing,
+        dho:Outcome ;
+    owl:sameAs dho:o-p64 ;
+    skos:note "Abbreviated in the Pali (…pe…), which names only the practice; 'very fruitful and beneficial' is the translation's expansion, following SN 46.57. Recorded as stated, not expanded further (D14)."@en ;
+    dho:citedBy dho:p-sn46.64-1.1 ;
+    dho:effect dho:LeadsTo ;
+    dho:of dho:Rejoicing ;
+    dho:to dho:GreatFruit ;
+    dho:wording "very fruitful and beneficial" .
+
+dho:o-p65 a owl:Thing,
+        dho:Outcome ;
+    owl:sameAs dho:o-p65 ;
+    skos:note "Abbreviated in the Pali (…pe…), which names only the practice; 'very fruitful and beneficial' is the translation's expansion, following SN 46.57. Recorded as stated, not expanded further (D14)."@en ;
+    dho:citedBy dho:p-sn46.65-1.1 ;
+    dho:effect dho:LeadsTo ;
+    dho:of dho:EquanimityImmeasurable ;
+    dho:to dho:GreatFruit ;
+    dho:wording "very fruitful and beneficial" .
+
+dho:o-p66 a owl:Thing,
+        dho:Outcome ;
+    owl:sameAs dho:o-p66 ;
+    skos:note "Abbreviated in the Pali (…pe…), which names only the practice; 'very fruitful and beneficial' is the translation's expansion, following SN 46.57. Recorded as stated, not expanded further (D14)."@en ;
+    dho:citedBy dho:p-sn46.66-1.1 ;
+    dho:effect dho:LeadsTo ;
+    dho:of dho:MindfulnessOfBreathing ;
+    dho:to dho:GreatFruit ;
+    dho:wording "very fruitful and beneficial" .
+
+dho:o-p67 a owl:Thing,
+        dho:Outcome ;
+    owl:sameAs dho:o-p67 ;
+    skos:note "Abbreviated in the Pali (…pe…), which names only the practice; 'very fruitful and beneficial' is the translation's expansion, following SN 46.57. Recorded as stated, not expanded further (D14)."@en ;
+    dho:citedBy dho:p-sn46.67-1.1 ;
+    dho:effect dho:LeadsTo ;
+    dho:of dho:UglinessPerception ;
+    dho:to dho:GreatFruit ;
+    dho:wording "very fruitful and beneficial" .
+
+dho:o-p68 a owl:Thing,
+        dho:Outcome ;
+    owl:sameAs dho:o-p68 ;
+    skos:note "Abbreviated in the Pali (…pe…), which names only the practice; 'very fruitful and beneficial' is the translation's expansion, following SN 46.57. Recorded as stated, not expanded further (D14)."@en ;
+    dho:citedBy dho:p-sn46.68-1.1 ;
+    dho:effect dho:LeadsTo ;
+    dho:of dho:DeathPerception ;
+    dho:to dho:GreatFruit ;
+    dho:wording "very fruitful and beneficial" .
+
+dho:o-p69 a owl:Thing,
+        dho:Outcome ;
+    owl:sameAs dho:o-p69 ;
+    skos:note "Abbreviated in the Pali (…pe…), which names only the practice; 'very fruitful and beneficial' is the translation's expansion, following SN 46.57. Recorded as stated, not expanded further (D14)."@en ;
+    dho:citedBy dho:p-sn46.69-1.1 ;
+    dho:effect dho:LeadsTo ;
+    dho:of dho:FoodRepulsivenessPerception ;
+    dho:to dho:GreatFruit ;
+    dho:wording "very fruitful and beneficial" .
+
+dho:o-p70 a owl:Thing,
+        dho:Outcome ;
+    owl:sameAs dho:o-p70 ;
+    skos:note "Abbreviated in the Pali (…pe…), which names only the practice; 'very fruitful and beneficial' is the translation's expansion, following SN 46.57. Recorded as stated, not expanded further (D14)."@en ;
+    dho:citedBy dho:p-sn46.70-1.1 ;
+    dho:effect dho:LeadsTo ;
+    dho:of dho:WorldDissatisfactionPerception ;
+    dho:to dho:GreatFruit ;
+    dho:wording "very fruitful and beneficial" .
+
+dho:o-p71 a owl:Thing,
+        dho:Outcome ;
+    owl:sameAs dho:o-p71 ;
+    skos:note "Abbreviated in the Pali (…pe…), which names only the practice; 'very fruitful and beneficial' is the translation's expansion, following SN 46.57. Recorded as stated, not expanded further (D14)."@en ;
+    dho:citedBy dho:p-sn46.71-1.1 ;
+    dho:effect dho:LeadsTo ;
+    dho:of dho:ImpermanencePerception ;
+    dho:to dho:GreatFruit ;
+    dho:wording "very fruitful and beneficial" .
+
+dho:o-p72 a owl:Thing,
+        dho:Outcome ;
+    owl:sameAs dho:o-p72 ;
+    skos:note "Abbreviated in the Pali (…pe…), which names only the practice; 'very fruitful and beneficial' is the translation's expansion, following SN 46.57. Recorded as stated, not expanded further (D14)."@en ;
+    dho:citedBy dho:p-sn46.72-1.1 ;
+    dho:effect dho:LeadsTo ;
+    dho:of dho:SufferingInImpermanencePerception ;
+    dho:to dho:GreatFruit ;
+    dho:wording "very fruitful and beneficial" .
+
+dho:o-p73 a owl:Thing,
+        dho:Outcome ;
+    owl:sameAs dho:o-p73 ;
+    skos:note "Abbreviated in the Pali (…pe…), which names only the practice; 'very fruitful and beneficial' is the translation's expansion, following SN 46.57. Recorded as stated, not expanded further (D14)."@en ;
+    dho:citedBy dho:p-sn46.73-1.1 ;
+    dho:effect dho:LeadsTo ;
+    dho:of dho:NotSelfInSufferingPerception ;
+    dho:to dho:GreatFruit ;
+    dho:wording "very fruitful and beneficial" .
+
+dho:o-p74 a owl:Thing,
+        dho:Outcome ;
+    owl:sameAs dho:o-p74 ;
+    skos:note "Abbreviated in the Pali (…pe…), which names only the practice; 'very fruitful and beneficial' is the translation's expansion, following SN 46.57. Recorded as stated, not expanded further (D14)."@en ;
+    dho:citedBy dho:p-sn46.74-1.1 ;
+    dho:effect dho:LeadsTo ;
+    dho:of dho:GivingUpPerception ;
+    dho:to dho:GreatFruit ;
+    dho:wording "very fruitful and beneficial" .
+
+dho:o-p75 a owl:Thing,
+        dho:Outcome ;
+    owl:sameAs dho:o-p75 ;
+    skos:note "Abbreviated in the Pali (…pe…), which names only the practice; 'very fruitful and beneficial' is the translation's expansion, following SN 46.57. Recorded as stated, not expanded further (D14)."@en ;
+    dho:citedBy dho:p-sn46.75-1.1 ;
+    dho:effect dho:LeadsTo ;
+    dho:of dho:DispassionPerception ;
+    dho:to dho:GreatFruit ;
+    dho:wording "very fruitful and beneficial" .
+
+dho:o-p76 a owl:Thing,
+        dho:Outcome ;
+    owl:sameAs dho:o-p76 ;
+    dho:citedBy dho:p-sn46.76-1.1,
+        dho:p-sn46.76-1.5 ;
+    dho:effect dho:LeadsTo ;
+    dho:of dho:CessationPerception ;
+    dho:to dho:GreatFruit ;
+    dho:wording "very fruitful and beneficial" .
+
+dho:o-p76-a a owl:Thing,
+        dho:Outcome ;
+    owl:sameAs dho:o-p76-a ;
+    skos:note "One of two results: enlightenment in this very life or, if there is residue left behind, non-return."@en ;
+    dho:citedBy dho:p-sn46.76-2.1,
+        dho:p-sn46.76-2.2,
+        dho:p-sn46.76-2.7,
+        dho:p-sn46.76-2.8 ;
+    dho:effect dho:LeadsTo ;
+    dho:of dho:CessationPerception ;
+    dho:to dho:Enlightenment ;
+    dho:wording "enlightenment in this very life" .
+
+dho:o-p76-b a owl:Thing,
+        dho:Outcome ;
+    owl:sameAs dho:o-p76-b ;
+    skos:note "One of two results: enlightenment in this very life or, if there is residue left behind, non-return."@en ;
+    dho:citedBy dho:p-sn46.76-2.1,
+        dho:p-sn46.76-2.2,
+        dho:p-sn46.76-2.7,
+        dho:p-sn46.76-2.8 ;
+    dho:effect dho:LeadsTo ;
+    dho:of dho:CessationPerception ;
+    dho:to dho:NonReturn ;
+    dho:wording "non-return" .
+
+dho:o-p76-c a owl:Thing,
+        dho:Outcome ;
+    owl:sameAs dho:o-p76-c ;
+    dho:citedBy dho:p-sn46.76-3.1,
+        dho:p-sn46.76-3.5 ;
+    dho:effect dho:LeadsTo ;
+    dho:of dho:CessationPerception ;
+    dho:to dho:GreatBenefit ;
+    dho:wording "great benefit" .
+
+dho:o-p76-d a owl:Thing,
+        dho:Outcome ;
+    owl:sameAs dho:o-p76-d ;
+    dho:citedBy dho:p-sn46.76-3.1,
+        dho:p-sn46.76-3.5 ;
+    dho:effect dho:LeadsTo ;
+    dho:of dho:CessationPerception ;
+    dho:to dho:SanctuaryFromYoke ;
+    dho:wording "great sanctuary from the yoke" .
+
+dho:o-p76-e a owl:Thing,
+        dho:Outcome ;
+    owl:sameAs dho:o-p76-e ;
+    dho:citedBy dho:p-sn46.76-3.1,
+        dho:p-sn46.76-3.5 ;
+    dho:effect dho:LeadsTo ;
+    dho:of dho:CessationPerception ;
+    dho:to dho:Inspiration ;
+    dho:wording "great inspiration" .
+
+dho:o-p76-f a owl:Thing,
+        dho:Outcome ;
+    owl:sameAs dho:o-p76-f ;
+    dho:citedBy dho:p-sn46.76-3.1,
+        dho:p-sn46.76-3.5 ;
+    dho:effect dho:LeadsTo ;
+    dho:of dho:CessationPerception ;
+    dho:to dho:GreatEase ;
+    dho:wording "great ease" .
 
 dho:op-01 a owl:Thing,
         dho:Opposition ;
@@ -1184,6 +1540,14 @@ dho:AlwaysUseful a owl:Thing,
         "sabbatthika"@pi ;
     owl:sameAs dho:AlwaysUseful .
 
+dho:BloatedPerception a owl:Thing,
+        skos:Concept,
+        dho:Concept,
+        dho:Practice ;
+    owl:sameAs dho:BloatedPerception ;
+    skos:prefLabel "the perception of a bloated corpse"@en,
+        "uddhumātakasaññā"@pi .
+
 dho:CessationOfCraving a owl:Thing,
         skos:Concept,
         dho:Concept ;
@@ -1191,12 +1555,28 @@ dho:CessationOfCraving a owl:Thing,
     skos:prefLabel "the cessation of craving"@en,
         "taṇhānirodha"@pi .
 
+dho:Compassion a owl:Thing,
+        skos:Concept,
+        dho:Concept,
+        dho:Practice ;
+    owl:sameAs dho:Compassion ;
+    skos:prefLabel "compassion"@en,
+        "karuṇā"@pi .
+
 dho:CrushingMarasArmy a owl:Thing,
         skos:Concept,
         dho:Concept ;
     owl:sameAs dho:CrushingMarasArmy ;
     skos:prefLabel "crushing Māra’s army"@en,
         "mārasenappamaddana"@pi .
+
+dho:DeathPerception a owl:Thing,
+        skos:Concept,
+        dho:Concept,
+        dho:Practice ;
+    owl:sameAs dho:DeathPerception ;
+    skos:prefLabel "the perception of death"@en,
+        "maraṇasaññā"@pi .
 
 dho:Deathless a owl:Thing,
         skos:Concept,
@@ -1249,6 +1629,14 @@ dho:Disillusionment a owl:Thing,
     skos:prefLabel "disillusionment"@en,
         "nibbidā"@pi .
 
+dho:DispassionPerception a owl:Thing,
+        skos:Concept,
+        dho:Concept,
+        dho:Practice ;
+    owl:sameAs dho:DispassionPerception ;
+    skos:prefLabel "the perception of dispassion"@en,
+        "virāgasaññā"@pi .
+
 dho:DoesNotLeadTo a owl:Thing,
         dho:Effect ;
     rdfs:label "does not lead to"@en ;
@@ -1268,6 +1656,16 @@ dho:EndingOfSuffering a owl:Thing,
     skos:prefLabel "the complete ending of suffering"@en,
         "sammā dukkhakkhaya"@pi .
 
+dho:EquanimityImmeasurable a owl:Thing,
+        skos:Concept,
+        dho:Concept,
+        dho:Practice ;
+    owl:sameAs dho:EquanimityImmeasurable ;
+    skos:prefLabel "equanimity"@en,
+        "upekkhā"@pi ;
+    skos:related dho:Equanimity ;
+    dho:editorialRelated dho:Equanimity .
+
 dho:Ethics a owl:Thing,
         skos:Concept,
         dho:Concept ;
@@ -1284,6 +1682,14 @@ dho:FarShore a owl:Thing,
     skos:prefLabel "going from the near shore to the far shore"@en,
         "apārā pāraṁ gamana"@pi .
 
+dho:FoodRepulsivenessPerception a owl:Thing,
+        skos:Concept,
+        dho:Concept,
+        dho:Practice ;
+    owl:sameAs dho:FoodRepulsivenessPerception ;
+    skos:prefLabel "the perception of repulsiveness of food"@en,
+        "āhāre paṭikūlasaññā"@pi .
+
 dho:FruitOfKnowledgeAndFreedom a owl:Thing,
         skos:Concept,
         dho:Concept ;
@@ -1291,12 +1697,28 @@ dho:FruitOfKnowledgeAndFreedom a owl:Thing,
     skos:prefLabel "the realization of the fruit of knowledge and freedom"@en,
         "vijjāvimuttiphalasacchikiriyā"@pi .
 
+dho:GivingUpPerception a owl:Thing,
+        skos:Concept,
+        dho:Concept,
+        dho:Practice ;
+    owl:sameAs dho:GivingUpPerception ;
+    skos:prefLabel "the perception of giving up"@en,
+        "pahānasaññā"@pi .
+
 dho:GrowthAndProgress a owl:Thing,
         skos:Concept,
         dho:Concept ;
     owl:sameAs dho:GrowthAndProgress ;
     skos:prefLabel "growth and progress"@en,
         "buddhi aparihāna"@pi .
+
+dho:ImpermanencePerception a owl:Thing,
+        skos:Concept,
+        dho:Concept,
+        dho:Practice ;
+    owl:sameAs dho:ImpermanencePerception ;
+    skos:prefLabel "the perception of impermanence"@en,
+        "aniccasaññā"@pi .
 
 dho:Insight a owl:Thing,
         skos:Concept,
@@ -1323,6 +1745,40 @@ dho:LettingGo a owl:Thing,
     skos:prefLabel "letting go"@en,
         "vossagga"@pi .
 
+dho:LividPerception a owl:Thing,
+        skos:Concept,
+        dho:Concept,
+        dho:Practice ;
+    owl:sameAs dho:LividPerception ;
+    skos:prefLabel "the perception of a livid corpse"@en,
+        "vinīlakasaññā"@pi .
+
+dho:Love a owl:Thing,
+        skos:Concept,
+        dho:Concept,
+        dho:Practice ;
+    owl:sameAs dho:Love ;
+    skos:prefLabel "love"@en,
+        "mettā"@pi ;
+    skos:related dho:o-metta ;
+    dho:editorialRelated dho:o-metta .
+
+dho:MindfulnessOfBreathing a owl:Thing,
+        skos:Concept,
+        dho:Concept,
+        dho:Practice ;
+    owl:sameAs dho:MindfulnessOfBreathing ;
+    skos:prefLabel "mindfulness of breathing"@en,
+        "ānāpānassati"@pi .
+
+dho:NotSelfInSufferingPerception a owl:Thing,
+        skos:Concept,
+        dho:Concept,
+        dho:Practice ;
+    owl:sameAs dho:NotSelfInSufferingPerception ;
+    skos:prefLabel "the perception of not-self in suffering"@en,
+        "dukkhe anattasaññā"@pi .
+
 dho:Peace a owl:Thing,
         skos:Concept,
         dho:Concept ;
@@ -1342,6 +1798,14 @@ dho:ReferencedOnly a owl:Thing,
     rdfs:label "referenced only"@en ;
     rdfs:comment "Cited by reference; we do not hold its text, so its claims are unverified."@en ;
     owl:sameAs dho:ReferencedOnly .
+
+dho:Rejoicing a owl:Thing,
+        skos:Concept,
+        dho:Concept,
+        dho:Practice ;
+    owl:sameAs dho:Rejoicing ;
+    skos:prefLabel "rejoicing"@en,
+        "muditā"@pi .
 
 dho:RemovalOfGreedHateDelusion a owl:Thing,
         skos:Concept,
@@ -1366,10 +1830,26 @@ dho:Seclusion a owl:Thing,
     skos:prefLabel "seclusion"@en,
         "viveka"@pi .
 
+dho:SplitOpenPerception a owl:Thing,
+        skos:Concept,
+        dho:Concept,
+        dho:Practice ;
+    owl:sameAs dho:SplitOpenPerception ;
+    skos:prefLabel "the perception of a split open corpse"@en,
+        "vicchiddakasaññā"@pi .
+
 dho:Strengthens a owl:Thing,
         dho:Effect ;
     rdfs:label "strengthens"@en ;
     owl:sameAs dho:Strengthens .
+
+dho:SufferingInImpermanencePerception a owl:Thing,
+        skos:Concept,
+        dho:Concept,
+        dho:Practice ;
+    owl:sameAs dho:SufferingInImpermanencePerception ;
+    skos:prefLabel "the perception of suffering in impermanence"@en,
+        "anicce dukkhasaññā"@pi .
 
 dho:ThingsThatTightenFetters a owl:Thing,
         skos:Concept,
@@ -1384,6 +1864,32 @@ dho:ThreeDiscriminations a owl:Thing,
     owl:sameAs dho:ThreeDiscriminations ;
     skos:prefLabel "the three discriminations"@en,
         "tisso vidhā"@pi .
+
+dho:UglinessPerception a owl:Thing,
+        skos:Concept,
+        dho:Concept,
+        dho:Practice ;
+    owl:sameAs dho:UglinessPerception ;
+    skos:prefLabel "the perception of ugliness"@en,
+        "asubhasaññā"@pi ;
+    skos:related dho:o-ugliness ;
+    dho:editorialRelated dho:o-ugliness .
+
+dho:WorldDissatisfactionPerception a owl:Thing,
+        skos:Concept,
+        dho:Concept,
+        dho:Practice ;
+    owl:sameAs dho:WorldDissatisfactionPerception ;
+    skos:prefLabel "the perception of dissatisfaction with the whole world"@en,
+        "sabbaloke anabhiratisaññā"@pi .
+
+dho:WormInfestedPerception a owl:Thing,
+        skos:Concept,
+        dho:Concept,
+        dho:Practice ;
+    owl:sameAs dho:WormInfestedPerception ;
+    skos:prefLabel "the perception of a worm-infested corpse"@en,
+        "puḷavakasaññā"@pi .
 
 dho:n-07 a owl:Thing,
         dho:Nutriment ;
@@ -1449,14 +1955,6 @@ dho:o-grounds-doubt a owl:Thing,
     skos:prefLabel "things that are grounds for doubt"@en,
         "vicikicchāṭṭhānīyā dhammā"@pi .
 
-dho:o-metta a owl:Thing,
-        skos:Concept,
-        dho:AttentionObject,
-        dho:Concept ;
-    owl:sameAs dho:o-metta ;
-    skos:prefLabel "the heart's release by love"@en,
-        "mettācetovimutti"@pi .
-
 dho:o-settled-mind a owl:Thing,
         skos:Concept,
         dho:AttentionObject,
@@ -1472,14 +1970,6 @@ dho:o-sluggishness a owl:Thing,
     owl:sameAs dho:o-sluggishness ;
     skos:prefLabel "discontent, sloth, yawning, sleepiness after eating, and mental sluggishness"@en,
         "arati tandi vijambhitā bhattasammado cetaso ca līnattaṁ"@pi .
-
-dho:o-ugliness a owl:Thing,
-        skos:Concept,
-        dho:AttentionObject,
-        dho:Concept ;
-    owl:sameAs dho:o-ugliness ;
-    skos:prefLabel "the feature of ugliness"@en,
-        "asubhanimitta"@pi .
 
 dho:o-unsettled-mind a owl:Thing,
         skos:Concept,
@@ -3046,6 +3536,168 @@ dho:p-sn46.53-15.4 a owl:Thing,
     dho:textPi "Satiñca khvāhaṁ, bhikkhave, sabbatthikaṁ vadāmī”ti."@pi ;
     dho:url "https://suttacentral.net/sn46.53/en/sujato#sn46.53:15.4"^^xsd:anyURI .
 
+dho:p-sn46.57-1.2 a owl:Thing,
+        dho:Passage ;
+    owl:sameAs dho:p-sn46.57-1.2 ;
+    dho:inText dho:t-sn46.57 ;
+    dho:segment "sn46.57:1.2" ;
+    dho:textEn "“Mendicants, when the perception of a skeleton is developed and cultivated it’s very fruitful and beneficial."@en ;
+    dho:textPi "“Aṭṭhikasaññā, bhikkhave, bhāvitā bahulīkatā mahapphalā hoti mahānisaṁsā."@pi ;
+    dho:url "https://suttacentral.net/sn46.57/en/sujato#sn46.57:1.2"^^xsd:anyURI .
+
+dho:p-sn46.57-1.6 a owl:Thing,
+        dho:Passage ;
+    owl:sameAs dho:p-sn46.57-1.6 ;
+    dho:inText dho:t-sn46.57 ;
+    dho:segment "sn46.57:1.6" ;
+    dho:textEn "That’s how the perception of a skeleton, when developed and cultivated, is very fruitful and beneficial.”"@en ;
+    dho:textPi "Evaṁ bhāvitā kho, bhikkhave, aṭṭhikasaññā evaṁ bahulīkatā mahapphalā hoti mahānisaṁsā”ti."@pi ;
+    dho:url "https://suttacentral.net/sn46.57/en/sujato#sn46.57:1.6"^^xsd:anyURI .
+
+dho:p-sn46.57-3.1 a owl:Thing,
+        dho:Passage ;
+    owl:sameAs dho:p-sn46.57-3.1 ;
+    dho:inText dho:t-sn46.57 ;
+    dho:segment "sn46.57:3.1" ;
+    dho:textEn "“Mendicants, when the perception of a skeleton is developed and cultivated it leads to great benefit."@en ;
+    dho:textPi "“Aṭṭhikasaññā, bhikkhave, bhāvitā bahulīkatā mahato atthāya saṁvattati."@pi ;
+    dho:url "https://suttacentral.net/sn46.57/en/sujato#sn46.57:3.1"^^xsd:anyURI .
+
+dho:p-sn46.57-4.1 a owl:Thing,
+        dho:Passage ;
+    owl:sameAs dho:p-sn46.57-4.1 ;
+    dho:inText dho:t-sn46.57 ;
+    dho:segment "sn46.57:4.1" ;
+    dho:textEn "“Mendicants, when the perception of a skeleton is developed and cultivated it leads to great sanctuary from the yoke."@en ;
+    dho:textPi "“Aṭṭhikasaññā, bhikkhave, bhāvitā bahulīkatā mahato yogakkhemāya saṁvattati."@pi ;
+    dho:url "https://suttacentral.net/sn46.57/en/sujato#sn46.57:4.1"^^xsd:anyURI .
+
+dho:p-sn46.57-5.1 a owl:Thing,
+        dho:Passage ;
+    owl:sameAs dho:p-sn46.57-5.1 ;
+    dho:inText dho:t-sn46.57 ;
+    dho:segment "sn46.57:5.1" ;
+    dho:textEn "“Mendicants, when the perception of a skeleton is developed and cultivated it leads to great inspiration."@en ;
+    dho:textPi "“Aṭṭhikasaññā, bhikkhave, bhāvitā bahulīkatā mahato saṁvegāya saṁvattati."@pi ;
+    dho:url "https://suttacentral.net/sn46.57/en/sujato#sn46.57:5.1"^^xsd:anyURI .
+
+dho:p-sn46.57-6.1 a owl:Thing,
+        dho:Passage ;
+    owl:sameAs dho:p-sn46.57-6.1 ;
+    dho:inText dho:t-sn46.57 ;
+    dho:segment "sn46.57:6.1" ;
+    dho:textEn "“Mendicants, when the perception of a skeleton is developed and cultivated it leads to dwelling in great ease."@en ;
+    dho:textPi "“Aṭṭhikasaññā, bhikkhave, bhāvitā bahulīkatā mahato phāsuvihārāya saṁvattati."@pi ;
+    dho:url "https://suttacentral.net/sn46.57/en/sujato#sn46.57:6.1"^^xsd:anyURI .
+
+dho:p-sn46.58-1.1 a owl:Thing,
+        dho:Passage ;
+    owl:sameAs dho:p-sn46.58-1.1 ;
+    dho:inText dho:t-sn46.58 ;
+    dho:segment "sn46.58:1.1" ;
+    dho:textEn "“Mendicants, when the perception of a worm-infested corpse is developed and cultivated it’s very fruitful and beneficial. …”"@en ;
+    dho:textPi "“Puḷavakasaññā, bhikkhave, bhāvitā …pe…”"@pi ;
+    dho:url "https://suttacentral.net/sn46.58/en/sujato#sn46.58:1.1"^^xsd:anyURI .
+
+dho:p-sn46.59-1.1 a owl:Thing,
+        dho:Passage ;
+    owl:sameAs dho:p-sn46.59-1.1 ;
+    dho:inText dho:t-sn46.59 ;
+    dho:segment "sn46.59:1.1" ;
+    dho:textEn "“Mendicants, when the perception of a livid corpse is developed and cultivated it’s very fruitful and beneficial. …”"@en ;
+    dho:textPi "“Vinīlakasaññā, bhikkhave …pe…”"@pi ;
+    dho:url "https://suttacentral.net/sn46.59/en/sujato#sn46.59:1.1"^^xsd:anyURI .
+
+dho:p-sn46.60-1.1 a owl:Thing,
+        dho:Passage ;
+    owl:sameAs dho:p-sn46.60-1.1 ;
+    dho:inText dho:t-sn46.60 ;
+    dho:segment "sn46.60:1.1" ;
+    dho:textEn "“Mendicants, when the perception of a split open corpse is developed and cultivated it’s very fruitful and beneficial. …”"@en ;
+    dho:textPi "“Vicchiddakasaññā, bhikkhave …pe…”"@pi ;
+    dho:url "https://suttacentral.net/sn46.60/en/sujato#sn46.60:1.1"^^xsd:anyURI .
+
+dho:p-sn46.61-1.1 a owl:Thing,
+        dho:Passage ;
+    owl:sameAs dho:p-sn46.61-1.1 ;
+    dho:inText dho:t-sn46.61 ;
+    dho:segment "sn46.61:1.1" ;
+    dho:textEn "“Mendicants, when the perception of a bloated corpse is developed and cultivated it’s very fruitful and beneficial. …”"@en ;
+    dho:textPi "“Uddhumātakasaññā, bhikkhave …pe…”"@pi ;
+    dho:url "https://suttacentral.net/sn46.61/en/sujato#sn46.61:1.1"^^xsd:anyURI .
+
+dho:p-sn46.62-1.1 a owl:Thing,
+        dho:Passage ;
+    owl:sameAs dho:p-sn46.62-1.1 ;
+    dho:inText dho:t-sn46.62 ;
+    dho:segment "sn46.62:1.1" ;
+    dho:textEn "“Mendicants, when love is developed and cultivated it’s very fruitful and beneficial. …”"@en ;
+    dho:textPi "“Mettā, bhikkhave, bhāvitā …pe…”"@pi ;
+    dho:url "https://suttacentral.net/sn46.62/en/sujato#sn46.62:1.1"^^xsd:anyURI .
+
+dho:p-sn46.63-1.1 a owl:Thing,
+        dho:Passage ;
+    owl:sameAs dho:p-sn46.63-1.1 ;
+    dho:inText dho:t-sn46.63 ;
+    dho:segment "sn46.63:1.1" ;
+    dho:textEn "“Mendicants, when compassion is developed and cultivated it’s very fruitful and beneficial. …”"@en ;
+    dho:textPi "“Karuṇā, bhikkhave, bhāvitā …pe…”"@pi ;
+    dho:url "https://suttacentral.net/sn46.63/en/sujato#sn46.63:1.1"^^xsd:anyURI .
+
+dho:p-sn46.64-1.1 a owl:Thing,
+        dho:Passage ;
+    owl:sameAs dho:p-sn46.64-1.1 ;
+    dho:inText dho:t-sn46.64 ;
+    dho:segment "sn46.64:1.1" ;
+    dho:textEn "“Mendicants, when rejoicing is developed and cultivated it’s very fruitful and beneficial. …”"@en ;
+    dho:textPi "“Muditā, bhikkhave, bhāvitā …pe…”"@pi ;
+    dho:url "https://suttacentral.net/sn46.64/en/sujato#sn46.64:1.1"^^xsd:anyURI .
+
+dho:p-sn46.65-1.1 a owl:Thing,
+        dho:Passage ;
+    owl:sameAs dho:p-sn46.65-1.1 ;
+    dho:inText dho:t-sn46.65 ;
+    dho:segment "sn46.65:1.1" ;
+    dho:textEn "“Mendicants, when equanimity is developed and cultivated it’s very fruitful and beneficial. …”"@en ;
+    dho:textPi "“Upekkhā, bhikkhave, bhāvitā …pe…”"@pi ;
+    dho:url "https://suttacentral.net/sn46.65/en/sujato#sn46.65:1.1"^^xsd:anyURI .
+
+dho:p-sn46.66-1.1 a owl:Thing,
+        dho:Passage ;
+    owl:sameAs dho:p-sn46.66-1.1 ;
+    dho:inText dho:t-sn46.66 ;
+    dho:segment "sn46.66:1.1" ;
+    dho:textEn "“Mendicants, when mindfulness of breathing is developed and cultivated it’s very fruitful and beneficial. …”"@en ;
+    dho:textPi "“Ānāpānassati, bhikkhave, bhāvitā …pe…”"@pi ;
+    dho:url "https://suttacentral.net/sn46.66/en/sujato#sn46.66:1.1"^^xsd:anyURI .
+
+dho:p-sn46.67-1.1 a owl:Thing,
+        dho:Passage ;
+    owl:sameAs dho:p-sn46.67-1.1 ;
+    dho:inText dho:t-sn46.67 ;
+    dho:segment "sn46.67:1.1" ;
+    dho:textEn "“Mendicants, when the perception of ugliness is developed and cultivated it’s very fruitful and beneficial. …”"@en ;
+    dho:textPi "“Asubhasaññā, bhikkhave …pe…”"@pi ;
+    dho:url "https://suttacentral.net/sn46.67/en/sujato#sn46.67:1.1"^^xsd:anyURI .
+
+dho:p-sn46.68-1.1 a owl:Thing,
+        dho:Passage ;
+    owl:sameAs dho:p-sn46.68-1.1 ;
+    dho:inText dho:t-sn46.68 ;
+    dho:segment "sn46.68:1.1" ;
+    dho:textEn "“Mendicants, when the perception of death is developed and cultivated it’s very fruitful and beneficial. …”"@en ;
+    dho:textPi "“Maraṇasaññā, bhikkhave …pe…”"@pi ;
+    dho:url "https://suttacentral.net/sn46.68/en/sujato#sn46.68:1.1"^^xsd:anyURI .
+
+dho:p-sn46.69-1.1 a owl:Thing,
+        dho:Passage ;
+    owl:sameAs dho:p-sn46.69-1.1 ;
+    dho:inText dho:t-sn46.69 ;
+    dho:segment "sn46.69:1.1" ;
+    dho:textEn "“Mendicants, when the perception of repulsiveness of food is developed and cultivated it’s very fruitful and beneficial. …”"@en ;
+    dho:textPi "“Āhāre paṭikūlasaññā, bhikkhave …pe…”"@pi ;
+    dho:url "https://suttacentral.net/sn46.69/en/sujato#sn46.69:1.1"^^xsd:anyURI .
+
 dho:p-sn46.7-1.2 a owl:Thing,
         dho:Passage ;
     owl:sameAs dho:p-sn46.7-1.2 ;
@@ -3063,6 +3715,78 @@ dho:p-sn46.7-2.4 a owl:Thing,
     dho:textEn "That’s how a mendicant who develops and cultivates the seven awakening factors slants, slopes, and inclines to extinguishment.”"@en ;
     dho:textPi "Evaṁ kho, bhikkhave, bhikkhu satta bojjhaṅge bhāvento satta bojjhaṅge bahulīkaronto nibbānaninno hoti nibbānapoṇo nibbānapabbhāro”ti."@pi ;
     dho:url "https://suttacentral.net/sn46.7/en/sujato#sn46.7:2.4"^^xsd:anyURI .
+
+dho:p-sn46.70-1.1 a owl:Thing,
+        dho:Passage ;
+    owl:sameAs dho:p-sn46.70-1.1 ;
+    dho:inText dho:t-sn46.70 ;
+    dho:segment "sn46.70:1.1" ;
+    dho:textEn "“Mendicants, when the perception of dissatisfaction with the whole world is developed and cultivated it’s very fruitful and beneficial. …”"@en ;
+    dho:textPi "“Sabbaloke anabhiratisaññā, bhikkhave …pe…”"@pi ;
+    dho:url "https://suttacentral.net/sn46.70/en/sujato#sn46.70:1.1"^^xsd:anyURI .
+
+dho:p-sn46.71-1.1 a owl:Thing,
+        dho:Passage ;
+    owl:sameAs dho:p-sn46.71-1.1 ;
+    dho:inText dho:t-sn46.71 ;
+    dho:segment "sn46.71:1.1" ;
+    dho:textEn "“Mendicants, when the perception of impermanence is developed and cultivated it’s very fruitful and beneficial. …”"@en ;
+    dho:textPi "“Aniccasaññā, bhikkhave …pe…”"@pi ;
+    dho:url "https://suttacentral.net/sn46.71/en/sujato#sn46.71:1.1"^^xsd:anyURI .
+
+dho:p-sn46.72-1.1 a owl:Thing,
+        dho:Passage ;
+    owl:sameAs dho:p-sn46.72-1.1 ;
+    dho:inText dho:t-sn46.72 ;
+    dho:segment "sn46.72:1.1" ;
+    dho:textEn "“Mendicants, when the perception of suffering in impermanence is developed and cultivated it’s very fruitful and beneficial. …”"@en ;
+    dho:textPi "“Anicce dukkhasaññā, bhikkhave …pe…”"@pi ;
+    dho:url "https://suttacentral.net/sn46.72/en/sujato#sn46.72:1.1"^^xsd:anyURI .
+
+dho:p-sn46.73-1.1 a owl:Thing,
+        dho:Passage ;
+    owl:sameAs dho:p-sn46.73-1.1 ;
+    dho:inText dho:t-sn46.73 ;
+    dho:segment "sn46.73:1.1" ;
+    dho:textEn "“Mendicants, when the perception of not-self in suffering is developed and cultivated it’s very fruitful and beneficial. …”"@en ;
+    dho:textPi "“Dukkhe anattasaññā, bhikkhave …pe…”"@pi ;
+    dho:url "https://suttacentral.net/sn46.73/en/sujato#sn46.73:1.1"^^xsd:anyURI .
+
+dho:p-sn46.74-1.1 a owl:Thing,
+        dho:Passage ;
+    owl:sameAs dho:p-sn46.74-1.1 ;
+    dho:inText dho:t-sn46.74 ;
+    dho:segment "sn46.74:1.1" ;
+    dho:textEn "“Mendicants, when the perception of giving up is developed and cultivated it’s very fruitful and beneficial. …”"@en ;
+    dho:textPi "“Pahānasaññā, bhikkhave …pe…”"@pi ;
+    dho:url "https://suttacentral.net/sn46.74/en/sujato#sn46.74:1.1"^^xsd:anyURI .
+
+dho:p-sn46.75-1.1 a owl:Thing,
+        dho:Passage ;
+    owl:sameAs dho:p-sn46.75-1.1 ;
+    dho:inText dho:t-sn46.75 ;
+    dho:segment "sn46.75:1.1" ;
+    dho:textEn "“Mendicants, when the perception of dispassion is developed and cultivated it’s very fruitful and beneficial. …”"@en ;
+    dho:textPi "“Virāgasaññā, bhikkhave …pe…”"@pi ;
+    dho:url "https://suttacentral.net/sn46.75/en/sujato#sn46.75:1.1"^^xsd:anyURI .
+
+dho:p-sn46.76-1.1 a owl:Thing,
+        dho:Passage ;
+    owl:sameAs dho:p-sn46.76-1.1 ;
+    dho:inText dho:t-sn46.76 ;
+    dho:segment "sn46.76:1.1" ;
+    dho:textEn "“Mendicants, when the perception of cessation is developed and cultivated it’s very fruitful and beneficial."@en ;
+    dho:textPi "“Nirodhasaññā, bhikkhave, bhāvitā bahulīkatā mahapphalā hoti mahānisaṁsā."@pi ;
+    dho:url "https://suttacentral.net/sn46.76/en/sujato#sn46.76:1.1"^^xsd:anyURI .
+
+dho:p-sn46.76-1.5 a owl:Thing,
+        dho:Passage ;
+    owl:sameAs dho:p-sn46.76-1.5 ;
+    dho:inText dho:t-sn46.76 ;
+    dho:segment "sn46.76:1.5" ;
+    dho:textEn "That’s how, when the perception of cessation is developed and cultivated, it’s very fruitful and beneficial."@en ;
+    dho:textPi "Evaṁ bhāvitā kho, bhikkhave, nirodhasaññā evaṁ bahulīkatā mahapphalā hoti mahānisaṁsāti."@pi ;
+    dho:url "https://suttacentral.net/sn46.76/en/sujato#sn46.76:1.5"^^xsd:anyURI .
 
 dho:sense-dhamma-mind-object a ontolex:LexicalSense ;
     owl:sameAs dho:sense-dhamma-mind-object ;
@@ -3182,6 +3906,276 @@ dho:t-sn46.50 a owl:Thing,
     dho:modelledOn "2026-11-14"^^xsd:date ;
     dho:review dho:Unreviewed ;
     dho:url "https://suttacentral.net/sn46.50/en/sujato"^^xsd:anyURI .
+
+dho:t-sn46.58 a owl:Thing,
+        dho:Text ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
+    owl:sameAs dho:t-sn46.58 ;
+    skos:prefLabel "SN 46.58 Puḷavakasutta — Worm-Infested"@en ;
+    dho:coverage dho:PartlyEncoded ;
+    dho:encodes "The one line given: the perception of a worm-infested corpse (Pali: puḷavakasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." ;
+    dho:layer dho:SuttaLayer ;
+    dho:leftOut "The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14)." ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:review dho:Unreviewed ;
+    dho:url "https://suttacentral.net/sn46.58/en/sujato"^^xsd:anyURI .
+
+dho:t-sn46.59 a owl:Thing,
+        dho:Text ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
+    owl:sameAs dho:t-sn46.59 ;
+    skos:prefLabel "SN 46.59 Vinīlakasutta — Livid"@en ;
+    dho:coverage dho:PartlyEncoded ;
+    dho:encodes "The one line given: the perception of a livid corpse (Pali: vinīlakasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." ;
+    dho:layer dho:SuttaLayer ;
+    dho:leftOut "The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14)." ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:review dho:Unreviewed ;
+    dho:url "https://suttacentral.net/sn46.59/en/sujato"^^xsd:anyURI .
+
+dho:t-sn46.60 a owl:Thing,
+        dho:Text ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
+    owl:sameAs dho:t-sn46.60 ;
+    skos:prefLabel "SN 46.60 Vicchiddakasutta — Split Open"@en ;
+    dho:coverage dho:PartlyEncoded ;
+    dho:encodes "The one line given: the perception of a split open corpse (Pali: vicchiddakasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." ;
+    dho:layer dho:SuttaLayer ;
+    dho:leftOut "The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14)." ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:review dho:Unreviewed ;
+    dho:url "https://suttacentral.net/sn46.60/en/sujato"^^xsd:anyURI .
+
+dho:t-sn46.61 a owl:Thing,
+        dho:Text ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
+    owl:sameAs dho:t-sn46.61 ;
+    skos:prefLabel "SN 46.61 Uddhumātakasutta — Bloated"@en ;
+    dho:coverage dho:PartlyEncoded ;
+    dho:encodes "The one line given: the perception of a bloated corpse (Pali: uddhumātakasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." ;
+    dho:layer dho:SuttaLayer ;
+    dho:leftOut "The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14)." ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:review dho:Unreviewed ;
+    dho:url "https://suttacentral.net/sn46.61/en/sujato"^^xsd:anyURI .
+
+dho:t-sn46.62 a owl:Thing,
+        dho:Text ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
+    owl:sameAs dho:t-sn46.62 ;
+    skos:prefLabel "SN 46.62 Mettāsutta — Love"@en ;
+    dho:coverage dho:PartlyEncoded ;
+    dho:encodes "The one line given: love (Pali: mettā), developed and cultivated, is very fruitful and beneficial (1.1)." ;
+    dho:layer dho:SuttaLayer ;
+    dho:leftOut "The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14)." ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:review dho:Unreviewed ;
+    dho:url "https://suttacentral.net/sn46.62/en/sujato"^^xsd:anyURI .
+
+dho:t-sn46.63 a owl:Thing,
+        dho:Text ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
+    owl:sameAs dho:t-sn46.63 ;
+    skos:prefLabel "SN 46.63 Karuṇāsutta — Compassion"@en ;
+    dho:coverage dho:PartlyEncoded ;
+    dho:encodes "The one line given: compassion (Pali: karuṇā), developed and cultivated, is very fruitful and beneficial (1.1)." ;
+    dho:layer dho:SuttaLayer ;
+    dho:leftOut "The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14)." ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:review dho:Unreviewed ;
+    dho:url "https://suttacentral.net/sn46.63/en/sujato"^^xsd:anyURI .
+
+dho:t-sn46.64 a owl:Thing,
+        dho:Text ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
+    owl:sameAs dho:t-sn46.64 ;
+    skos:prefLabel "SN 46.64 Muditāsutta — Rejoicing"@en ;
+    dho:coverage dho:PartlyEncoded ;
+    dho:encodes "The one line given: rejoicing (Pali: muditā), developed and cultivated, is very fruitful and beneficial (1.1)." ;
+    dho:layer dho:SuttaLayer ;
+    dho:leftOut "The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14)." ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:review dho:Unreviewed ;
+    dho:url "https://suttacentral.net/sn46.64/en/sujato"^^xsd:anyURI .
+
+dho:t-sn46.65 a owl:Thing,
+        dho:Text ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
+    owl:sameAs dho:t-sn46.65 ;
+    skos:prefLabel "SN 46.65 Upekkhāsutta — Equanimity"@en ;
+    dho:coverage dho:PartlyEncoded ;
+    dho:encodes "The one line given: equanimity (Pali: upekkhā), developed and cultivated, is very fruitful and beneficial (1.1)." ;
+    dho:layer dho:SuttaLayer ;
+    dho:leftOut "The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14)." ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:review dho:Unreviewed ;
+    dho:url "https://suttacentral.net/sn46.65/en/sujato"^^xsd:anyURI .
+
+dho:t-sn46.66 a owl:Thing,
+        dho:Text ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
+    owl:sameAs dho:t-sn46.66 ;
+    skos:prefLabel "SN 46.66 Ānāpānasutta — Breathing"@en ;
+    dho:coverage dho:PartlyEncoded ;
+    dho:encodes "The one line given: mindfulness of breathing (Pali: ānāpānassati), developed and cultivated, is very fruitful and beneficial (1.1)." ;
+    dho:layer dho:SuttaLayer ;
+    dho:leftOut "The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14)." ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:review dho:Unreviewed ;
+    dho:url "https://suttacentral.net/sn46.66/en/sujato"^^xsd:anyURI .
+
+dho:t-sn46.67 a owl:Thing,
+        dho:Text ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
+    owl:sameAs dho:t-sn46.67 ;
+    skos:prefLabel "SN 46.67 Asubhasutta — Ugliness"@en ;
+    dho:coverage dho:PartlyEncoded ;
+    dho:encodes "The one line given: the perception of ugliness (Pali: asubhasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." ;
+    dho:layer dho:SuttaLayer ;
+    dho:leftOut "The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14)." ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:review dho:Unreviewed ;
+    dho:url "https://suttacentral.net/sn46.67/en/sujato"^^xsd:anyURI .
+
+dho:t-sn46.68 a owl:Thing,
+        dho:Text ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
+    owl:sameAs dho:t-sn46.68 ;
+    skos:prefLabel "SN 46.68 Maraṇasutta — Death"@en ;
+    dho:coverage dho:PartlyEncoded ;
+    dho:encodes "The one line given: the perception of death (Pali: maraṇasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." ;
+    dho:layer dho:SuttaLayer ;
+    dho:leftOut "The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14)." ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:review dho:Unreviewed ;
+    dho:url "https://suttacentral.net/sn46.68/en/sujato"^^xsd:anyURI .
+
+dho:t-sn46.69 a owl:Thing,
+        dho:Text ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
+    owl:sameAs dho:t-sn46.69 ;
+    skos:prefLabel "SN 46.69 Āhārepaṭikūlasutta — Repulsiveness of Food"@en ;
+    dho:coverage dho:PartlyEncoded ;
+    dho:encodes "The one line given: the perception of repulsiveness of food (Pali: āhāre paṭikūlasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." ;
+    dho:layer dho:SuttaLayer ;
+    dho:leftOut "The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14)." ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:review dho:Unreviewed ;
+    dho:url "https://suttacentral.net/sn46.69/en/sujato"^^xsd:anyURI .
+
+dho:t-sn46.70 a owl:Thing,
+        dho:Text ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
+    owl:sameAs dho:t-sn46.70 ;
+    skos:prefLabel "SN 46.70 Anabhiratisutta — Dissatisfaction"@en ;
+    dho:coverage dho:PartlyEncoded ;
+    dho:encodes "The one line given: the perception of dissatisfaction with the whole world (Pali: sabbaloke anabhiratisaññā), developed and cultivated, is very fruitful and beneficial (1.1)." ;
+    dho:layer dho:SuttaLayer ;
+    dho:leftOut "The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14)." ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:review dho:Unreviewed ;
+    dho:url "https://suttacentral.net/sn46.70/en/sujato"^^xsd:anyURI .
+
+dho:t-sn46.71 a owl:Thing,
+        dho:Text ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
+    owl:sameAs dho:t-sn46.71 ;
+    skos:prefLabel "SN 46.71 Aniccasutta — Impermanence"@en ;
+    dho:coverage dho:PartlyEncoded ;
+    dho:encodes "The one line given: the perception of impermanence (Pali: aniccasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." ;
+    dho:layer dho:SuttaLayer ;
+    dho:leftOut "The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14)." ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:review dho:Unreviewed ;
+    dho:url "https://suttacentral.net/sn46.71/en/sujato"^^xsd:anyURI .
+
+dho:t-sn46.72 a owl:Thing,
+        dho:Text ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
+    owl:sameAs dho:t-sn46.72 ;
+    skos:prefLabel "SN 46.72 Dukkhasutta — Suffering in Impermanence"@en ;
+    dho:coverage dho:PartlyEncoded ;
+    dho:encodes "The one line given: the perception of suffering in impermanence (Pali: anicce dukkhasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." ;
+    dho:layer dho:SuttaLayer ;
+    dho:leftOut "The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14)." ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:review dho:Unreviewed ;
+    dho:url "https://suttacentral.net/sn46.72/en/sujato"^^xsd:anyURI .
+
+dho:t-sn46.73 a owl:Thing,
+        dho:Text ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
+    owl:sameAs dho:t-sn46.73 ;
+    skos:prefLabel "SN 46.73 Anattasutta — Not-Self in Suffering"@en ;
+    dho:coverage dho:PartlyEncoded ;
+    dho:encodes "The one line given: the perception of not-self in suffering (Pali: dukkhe anattasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." ;
+    dho:layer dho:SuttaLayer ;
+    dho:leftOut "The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14)." ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:review dho:Unreviewed ;
+    dho:url "https://suttacentral.net/sn46.73/en/sujato"^^xsd:anyURI .
+
+dho:t-sn46.74 a owl:Thing,
+        dho:Text ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
+    owl:sameAs dho:t-sn46.74 ;
+    skos:prefLabel "SN 46.74 Pahānasutta — Giving Up"@en ;
+    dho:coverage dho:PartlyEncoded ;
+    dho:encodes "The one line given: the perception of giving up (Pali: pahānasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." ;
+    dho:layer dho:SuttaLayer ;
+    dho:leftOut "The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14)." ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:review dho:Unreviewed ;
+    dho:url "https://suttacentral.net/sn46.74/en/sujato"^^xsd:anyURI .
+
+dho:t-sn46.75 a owl:Thing,
+        dho:Text ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
+    owl:sameAs dho:t-sn46.75 ;
+    skos:prefLabel "SN 46.75 Virāgasutta — Dispassion"@en ;
+    dho:coverage dho:PartlyEncoded ;
+    dho:encodes "The one line given: the perception of dispassion (Pali: virāgasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." ;
+    dho:layer dho:SuttaLayer ;
+    dho:leftOut "The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14)." ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:review dho:Unreviewed ;
+    dho:url "https://suttacentral.net/sn46.75/en/sujato"^^xsd:anyURI .
 
 "https://suttacentral.net/dhp279/en/sujato"^^xsd:anyURI a xsd:anyURI ;
     owl:sameAs "https://suttacentral.net/dhp279/en/sujato"^^xsd:anyURI .
@@ -3948,6 +4942,108 @@ dho:t-sn46.50 a owl:Thing,
 "https://suttacentral.net/sn46.53/en/sujato#sn46.53:7.3"^^xsd:anyURI a xsd:anyURI ;
     owl:sameAs "https://suttacentral.net/sn46.53/en/sujato#sn46.53:7.3"^^xsd:anyURI .
 
+"https://suttacentral.net/sn46.57/en/sujato"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.57/en/sujato"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.57/en/sujato#sn46.57:1.2"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.57/en/sujato#sn46.57:1.2"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.57/en/sujato#sn46.57:1.4"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.57/en/sujato#sn46.57:1.4"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.57/en/sujato#sn46.57:1.5"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.57/en/sujato#sn46.57:1.5"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.57/en/sujato#sn46.57:1.6"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.57/en/sujato#sn46.57:1.6"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.57/en/sujato#sn46.57:2.1"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.57/en/sujato#sn46.57:2.1"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.57/en/sujato#sn46.57:3.1"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.57/en/sujato#sn46.57:3.1"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.57/en/sujato#sn46.57:4.1"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.57/en/sujato#sn46.57:4.1"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.57/en/sujato#sn46.57:5.1"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.57/en/sujato#sn46.57:5.1"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.57/en/sujato#sn46.57:6.1"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.57/en/sujato#sn46.57:6.1"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.58/en/sujato"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.58/en/sujato"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.58/en/sujato#sn46.58:1.1"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.58/en/sujato#sn46.58:1.1"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.59/en/sujato"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.59/en/sujato"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.59/en/sujato#sn46.59:1.1"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.59/en/sujato#sn46.59:1.1"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.60/en/sujato"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.60/en/sujato"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.60/en/sujato#sn46.60:1.1"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.60/en/sujato#sn46.60:1.1"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.61/en/sujato"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.61/en/sujato"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.61/en/sujato#sn46.61:1.1"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.61/en/sujato#sn46.61:1.1"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.62/en/sujato"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.62/en/sujato"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.62/en/sujato#sn46.62:1.1"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.62/en/sujato#sn46.62:1.1"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.63/en/sujato"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.63/en/sujato"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.63/en/sujato#sn46.63:1.1"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.63/en/sujato#sn46.63:1.1"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.64/en/sujato"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.64/en/sujato"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.64/en/sujato#sn46.64:1.1"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.64/en/sujato#sn46.64:1.1"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.65/en/sujato"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.65/en/sujato"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.65/en/sujato#sn46.65:1.1"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.65/en/sujato#sn46.65:1.1"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.66/en/sujato"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.66/en/sujato"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.66/en/sujato#sn46.66:1.1"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.66/en/sujato#sn46.66:1.1"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.67/en/sujato"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.67/en/sujato"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.67/en/sujato#sn46.67:1.1"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.67/en/sujato#sn46.67:1.1"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.68/en/sujato"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.68/en/sujato"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.68/en/sujato#sn46.68:1.1"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.68/en/sujato#sn46.68:1.1"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.69/en/sujato"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.69/en/sujato"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.69/en/sujato#sn46.69:1.1"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.69/en/sujato#sn46.69:1.1"^^xsd:anyURI .
+
 "https://suttacentral.net/sn46.7/en/sujato"^^xsd:anyURI a xsd:anyURI ;
     owl:sameAs "https://suttacentral.net/sn46.7/en/sujato"^^xsd:anyURI .
 
@@ -3959,6 +5055,81 @@ dho:t-sn46.50 a owl:Thing,
 
 "https://suttacentral.net/sn46.7/en/sujato#sn46.7:2.4"^^xsd:anyURI a xsd:anyURI ;
     owl:sameAs "https://suttacentral.net/sn46.7/en/sujato#sn46.7:2.4"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.70/en/sujato"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.70/en/sujato"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.70/en/sujato#sn46.70:1.1"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.70/en/sujato#sn46.70:1.1"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.71/en/sujato"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.71/en/sujato"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.71/en/sujato#sn46.71:1.1"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.71/en/sujato#sn46.71:1.1"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.72/en/sujato"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.72/en/sujato"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.72/en/sujato#sn46.72:1.1"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.72/en/sujato#sn46.72:1.1"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.73/en/sujato"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.73/en/sujato"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.73/en/sujato#sn46.73:1.1"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.73/en/sujato#sn46.73:1.1"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.74/en/sujato"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.74/en/sujato"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.74/en/sujato#sn46.74:1.1"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.74/en/sujato#sn46.74:1.1"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.75/en/sujato"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.75/en/sujato"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.75/en/sujato#sn46.75:1.1"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.75/en/sujato#sn46.75:1.1"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.76/en/sujato"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.76/en/sujato"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.76/en/sujato#sn46.76:1.1"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.76/en/sujato#sn46.76:1.1"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.76/en/sujato#sn46.76:1.3"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.76/en/sujato#sn46.76:1.3"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.76/en/sujato#sn46.76:1.4"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.76/en/sujato#sn46.76:1.4"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.76/en/sujato#sn46.76:1.5"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.76/en/sujato#sn46.76:1.5"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.76/en/sujato#sn46.76:2.1"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.76/en/sujato#sn46.76:2.1"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.76/en/sujato#sn46.76:2.2"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.76/en/sujato#sn46.76:2.2"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.76/en/sujato#sn46.76:2.6"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.76/en/sujato#sn46.76:2.6"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.76/en/sujato#sn46.76:2.7"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.76/en/sujato#sn46.76:2.7"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.76/en/sujato#sn46.76:2.8"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.76/en/sujato#sn46.76:2.8"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.76/en/sujato#sn46.76:3.1"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.76/en/sujato#sn46.76:3.1"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.76/en/sujato#sn46.76:3.4"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.76/en/sujato#sn46.76:3.4"^^xsd:anyURI .
+
+"https://suttacentral.net/sn46.76/en/sujato#sn46.76:3.5"^^xsd:anyURI a xsd:anyURI ;
+    owl:sameAs "https://suttacentral.net/sn46.76/en/sujato#sn46.76:3.5"^^xsd:anyURI .
 
 7 a xsd:decimal,
         xsd:integer ;
@@ -4055,6 +5226,46 @@ dho:t-sn46.50 a owl:Thing,
 "The list of the seven awakening factors (1.7)." owl:sameAs "The list of the seven awakening factors (1.7)." .
 
 "The naming: the seven awakening factors are 'the seven principles that prevent decline' (aparihāniyā dhammā) (1.1, 1.3, 1.5, 1.8). Needs a pattern for what a quality is called." owl:sameAs "The naming: the seven awakening factors are 'the seven principles that prevent decline' (aparihāniyā dhammā) (1.1, 1.3, 1.5, 1.8). Needs a pattern for what a quality is called." .
+
+"The one line given: compassion (Pali: karuṇā), developed and cultivated, is very fruitful and beneficial (1.1)." owl:sameAs "The one line given: compassion (Pali: karuṇā), developed and cultivated, is very fruitful and beneficial (1.1)." .
+
+"The one line given: equanimity (Pali: upekkhā), developed and cultivated, is very fruitful and beneficial (1.1)." owl:sameAs "The one line given: equanimity (Pali: upekkhā), developed and cultivated, is very fruitful and beneficial (1.1)." .
+
+"The one line given: love (Pali: mettā), developed and cultivated, is very fruitful and beneficial (1.1)." owl:sameAs "The one line given: love (Pali: mettā), developed and cultivated, is very fruitful and beneficial (1.1)." .
+
+"The one line given: mindfulness of breathing (Pali: ānāpānassati), developed and cultivated, is very fruitful and beneficial (1.1)." owl:sameAs "The one line given: mindfulness of breathing (Pali: ānāpānassati), developed and cultivated, is very fruitful and beneficial (1.1)." .
+
+"The one line given: rejoicing (Pali: muditā), developed and cultivated, is very fruitful and beneficial (1.1)." owl:sameAs "The one line given: rejoicing (Pali: muditā), developed and cultivated, is very fruitful and beneficial (1.1)." .
+
+"The one line given: the perception of a bloated corpse (Pali: uddhumātakasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." owl:sameAs "The one line given: the perception of a bloated corpse (Pali: uddhumātakasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." .
+
+"The one line given: the perception of a livid corpse (Pali: vinīlakasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." owl:sameAs "The one line given: the perception of a livid corpse (Pali: vinīlakasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." .
+
+"The one line given: the perception of a split open corpse (Pali: vicchiddakasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." owl:sameAs "The one line given: the perception of a split open corpse (Pali: vicchiddakasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." .
+
+"The one line given: the perception of a worm-infested corpse (Pali: puḷavakasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." owl:sameAs "The one line given: the perception of a worm-infested corpse (Pali: puḷavakasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." .
+
+"The one line given: the perception of death (Pali: maraṇasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." owl:sameAs "The one line given: the perception of death (Pali: maraṇasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." .
+
+"The one line given: the perception of dispassion (Pali: virāgasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." owl:sameAs "The one line given: the perception of dispassion (Pali: virāgasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." .
+
+"The one line given: the perception of dissatisfaction with the whole world (Pali: sabbaloke anabhiratisaññā), developed and cultivated, is very fruitful and beneficial (1.1)." owl:sameAs "The one line given: the perception of dissatisfaction with the whole world (Pali: sabbaloke anabhiratisaññā), developed and cultivated, is very fruitful and beneficial (1.1)." .
+
+"The one line given: the perception of giving up (Pali: pahānasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." owl:sameAs "The one line given: the perception of giving up (Pali: pahānasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." .
+
+"The one line given: the perception of impermanence (Pali: aniccasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." owl:sameAs "The one line given: the perception of impermanence (Pali: aniccasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." .
+
+"The one line given: the perception of not-self in suffering (Pali: dukkhe anattasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." owl:sameAs "The one line given: the perception of not-self in suffering (Pali: dukkhe anattasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." .
+
+"The one line given: the perception of repulsiveness of food (Pali: āhāre paṭikūlasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." owl:sameAs "The one line given: the perception of repulsiveness of food (Pali: āhāre paṭikūlasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." .
+
+"The one line given: the perception of suffering in impermanence (Pali: anicce dukkhasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." owl:sameAs "The one line given: the perception of suffering in impermanence (Pali: anicce dukkhasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." .
+
+"The one line given: the perception of ugliness (Pali: asubhasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." owl:sameAs "The one line given: the perception of ugliness (Pali: asubhasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." .
+
+"The perception of a skeleton is very fruitful and beneficial (1.2, 1.6), developed together with the awakening factors (1.4), with the stock formula (1.5); one of two results, enlightenment in this very life or non-return; great benefit, great sanctuary from the yoke, great inspiration and great ease." owl:sameAs "The perception of a skeleton is very fruitful and beneficial (1.2, 1.6), developed together with the awakening factors (1.4), with the stock formula (1.5); one of two results, enlightenment in this very life or non-return; great benefit, great sanctuary from the yoke, great inspiration and great ease." .
+
+"The perception of cessation is very fruitful and beneficial (1.2, 1.6), developed together with the awakening factors (1.4), with the stock formula (1.5); one of two results, enlightenment in this very life or non-return; great benefit, great sanctuary from the yoke, great inspiration and great ease." owl:sameAs "The perception of cessation is very fruitful and beneficial (1.2, 1.6), developed together with the awakening factors (1.4), with the stock formula (1.5); one of two results, enlightenment in this very life or non-return; great benefit, great sanctuary from the yoke, great inspiration and great ease." .
 
 "The rest of Dhammadinnā's answers: substantial reality, its origin, cessation and the practice leading there (2-5); grasping and the aggregates (6); substantialist view (7-8); the noble eightfold path and the three spectrums of practice (9-11); the bases, prerequisites and development of immersion (12.3-12.5); the three processes (13-15); the cessation of perception and feeling (16-21); the three feelings, their underlying tendencies and their counterparts (22-29)." owl:sameAs "The rest of Dhammadinnā's answers: substantial reality, its origin, cessation and the practice leading there (2-5); grasping and the aggregates (6); substantialist view (7-8); the noble eightfold path and the three spectrums of practice (9-11); the bases, prerequisites and development of immersion (12.3-12.5); the three processes (13-15); the cessation of perception and feeling (16-21); the three feelings, their underlying tendencies and their counterparts (22-29)." .
 
@@ -4584,6 +5795,28 @@ dho:t-sn46.50 a owl:Thing,
 
 "sn46.53:7.3" owl:sameAs "sn46.53:7.3" .
 
+"sn46.57:1.2" owl:sameAs "sn46.57:1.2" .
+
+"sn46.57:1.4" owl:sameAs "sn46.57:1.4" .
+
+"sn46.57:1.5" owl:sameAs "sn46.57:1.5" .
+
+"sn46.57:1.6" owl:sameAs "sn46.57:1.6" .
+
+"sn46.57:2.1" owl:sameAs "sn46.57:2.1" .
+
+"sn46.57:3.1" owl:sameAs "sn46.57:3.1" .
+
+"sn46.57:4.1" owl:sameAs "sn46.57:4.1" .
+
+"sn46.57:5.1" owl:sameAs "sn46.57:5.1" .
+
+"sn46.57:6.1" owl:sameAs "sn46.57:6.1" .
+
+"sn46.58:1.1" owl:sameAs "sn46.58:1.1" .
+
+"sn46.59:1.1" owl:sameAs "sn46.59:1.1" .
+
 "sn46.5:1.11" owl:sameAs "sn46.5:1.11" .
 
 "sn46.5:1.5" owl:sameAs "sn46.5:1.5" .
@@ -4591,6 +5824,62 @@ dho:t-sn46.50 a owl:Thing,
 "sn46.5:1.6" owl:sameAs "sn46.5:1.6" .
 
 "sn46.5:1.7" owl:sameAs "sn46.5:1.7" .
+
+"sn46.60:1.1" owl:sameAs "sn46.60:1.1" .
+
+"sn46.61:1.1" owl:sameAs "sn46.61:1.1" .
+
+"sn46.62:1.1" owl:sameAs "sn46.62:1.1" .
+
+"sn46.63:1.1" owl:sameAs "sn46.63:1.1" .
+
+"sn46.64:1.1" owl:sameAs "sn46.64:1.1" .
+
+"sn46.65:1.1" owl:sameAs "sn46.65:1.1" .
+
+"sn46.66:1.1" owl:sameAs "sn46.66:1.1" .
+
+"sn46.67:1.1" owl:sameAs "sn46.67:1.1" .
+
+"sn46.68:1.1" owl:sameAs "sn46.68:1.1" .
+
+"sn46.69:1.1" owl:sameAs "sn46.69:1.1" .
+
+"sn46.70:1.1" owl:sameAs "sn46.70:1.1" .
+
+"sn46.71:1.1" owl:sameAs "sn46.71:1.1" .
+
+"sn46.72:1.1" owl:sameAs "sn46.72:1.1" .
+
+"sn46.73:1.1" owl:sameAs "sn46.73:1.1" .
+
+"sn46.74:1.1" owl:sameAs "sn46.74:1.1" .
+
+"sn46.75:1.1" owl:sameAs "sn46.75:1.1" .
+
+"sn46.76:1.1" owl:sameAs "sn46.76:1.1" .
+
+"sn46.76:1.3" owl:sameAs "sn46.76:1.3" .
+
+"sn46.76:1.4" owl:sameAs "sn46.76:1.4" .
+
+"sn46.76:1.5" owl:sameAs "sn46.76:1.5" .
+
+"sn46.76:2.1" owl:sameAs "sn46.76:2.1" .
+
+"sn46.76:2.2" owl:sameAs "sn46.76:2.2" .
+
+"sn46.76:2.6" owl:sameAs "sn46.76:2.6" .
+
+"sn46.76:2.7" owl:sameAs "sn46.76:2.7" .
+
+"sn46.76:2.8" owl:sameAs "sn46.76:2.8" .
+
+"sn46.76:3.1" owl:sameAs "sn46.76:3.1" .
+
+"sn46.76:3.4" owl:sameAs "sn46.76:3.4" .
+
+"sn46.76:3.5" owl:sameAs "sn46.76:3.5" .
 
 "sn46.7:1.2" owl:sameAs "sn46.7:1.2" .
 
@@ -4605,6 +5894,8 @@ dho:t-sn46.50 a owl:Thing,
 "'can expect to develop and cultivate' (pāṭikaṅkha)."@en owl:sameAs "'can expect to develop and cultivate' (pāṭikaṅkha)."@en .
 
 "'depending on and grounded on', 'relies on' (nissāya, nissita)."@en owl:sameAs "'depending on and grounded on', 'relies on' (nissāya, nissita)."@en .
+
+"'develops X together with the awakening factors' (sahagata), SN 46.57-76 (D15)."@en owl:sameAs "'develops X together with the awakening factors' (sahagata), SN 46.57-76 (D15)."@en .
 
 "'rooted in and meet at' (mūlaka, samosaraṇa)."@en owl:sameAs "'rooted in and meet at' (mūlaka, samosaraṇa)."@en .
 
@@ -4718,6 +6009,10 @@ dho:t-sn46.50 a owl:Thing,
 
 "It’s when a mendicant develops the awakening factor of mindfulness, which relies on seclusion, fading away, and cessation, and ripens as letting go."@en owl:sameAs "It’s when a mendicant develops the awakening factor of mindfulness, which relies on seclusion, fading away, and cessation, and ripens as letting go."@en .
 
+"It’s when a mendicant develops the perception of a skeleton together with the awakening factors of mindfulness, investigation of principles, energy, rapture, tranquility, immersion,"@en owl:sameAs "It’s when a mendicant develops the perception of a skeleton together with the awakening factors of mindfulness, investigation of principles, energy, rapture, tranquility, immersion,"@en .
+
+"It’s when a mendicant develops the perception of cessation together with the awakening factors of mindfulness, investigation of principles, energy, rapture, tranquility, immersion,"@en owl:sameAs "It’s when a mendicant develops the perception of cessation together with the awakening factors of mindfulness, investigation of principles, energy, rapture, tranquility, immersion,"@en .
+
 "It’s when a mendicant meditates by observing an aspect of principles with respect to the five hindrances."@en owl:sameAs "It’s when a mendicant meditates by observing an aspect of principles with respect to the five hindrances."@en .
 
 "MN 10 Satipaṭṭhānasutta — Mindfulness Meditation"@en owl:sameAs "MN 10 Satipaṭṭhānasutta — Mindfulness Meditation"@en .
@@ -4771,6 +6066,8 @@ dho:t-sn46.50 a owl:Thing,
 "Plain description of what in this text is NOT modelled, so nobody mistakes partial for complete."@en owl:sameAs "Plain description of what in this text is NOT modelled, so nobody mistakes partial for complete."@en .
 
 "Plain description of what was modelled from this text."@en owl:sameAs "Plain description of what was modelled from this text."@en .
+
+"Practice"@en owl:sameAs "Practice"@en .
 
 "Prevents the quality arising, or its growth once arisen (anāhāra)."@en owl:sameAs "Prevents the quality arising, or its growth once arisen (anāhāra)."@en .
 
@@ -4852,7 +6149,47 @@ dho:t-sn46.50 a owl:Thing,
 
 "SN 46.53 Aggisutta — Fire"@en owl:sameAs "SN 46.53 Aggisutta — Fire"@en .
 
+"SN 46.57 Aṭṭhikamahapphalasutta — A Skeleton"@en owl:sameAs "SN 46.57 Aṭṭhikamahapphalasutta — A Skeleton"@en .
+
+"SN 46.58 Puḷavakasutta — Worm-Infested"@en owl:sameAs "SN 46.58 Puḷavakasutta — Worm-Infested"@en .
+
+"SN 46.59 Vinīlakasutta — Livid"@en owl:sameAs "SN 46.59 Vinīlakasutta — Livid"@en .
+
+"SN 46.60 Vicchiddakasutta — Split Open"@en owl:sameAs "SN 46.60 Vicchiddakasutta — Split Open"@en .
+
+"SN 46.61 Uddhumātakasutta — Bloated"@en owl:sameAs "SN 46.61 Uddhumātakasutta — Bloated"@en .
+
+"SN 46.62 Mettāsutta — Love"@en owl:sameAs "SN 46.62 Mettāsutta — Love"@en .
+
+"SN 46.63 Karuṇāsutta — Compassion"@en owl:sameAs "SN 46.63 Karuṇāsutta — Compassion"@en .
+
+"SN 46.64 Muditāsutta — Rejoicing"@en owl:sameAs "SN 46.64 Muditāsutta — Rejoicing"@en .
+
+"SN 46.65 Upekkhāsutta — Equanimity"@en owl:sameAs "SN 46.65 Upekkhāsutta — Equanimity"@en .
+
+"SN 46.66 Ānāpānasutta — Breathing"@en owl:sameAs "SN 46.66 Ānāpānasutta — Breathing"@en .
+
+"SN 46.67 Asubhasutta — Ugliness"@en owl:sameAs "SN 46.67 Asubhasutta — Ugliness"@en .
+
+"SN 46.68 Maraṇasutta — Death"@en owl:sameAs "SN 46.68 Maraṇasutta — Death"@en .
+
+"SN 46.69 Āhārepaṭikūlasutta — Repulsiveness of Food"@en owl:sameAs "SN 46.69 Āhārepaṭikūlasutta — Repulsiveness of Food"@en .
+
 "SN 46.7 Kūṭāgārasutta — A Bungalow"@en owl:sameAs "SN 46.7 Kūṭāgārasutta — A Bungalow"@en .
+
+"SN 46.70 Anabhiratisutta — Dissatisfaction"@en owl:sameAs "SN 46.70 Anabhiratisutta — Dissatisfaction"@en .
+
+"SN 46.71 Aniccasutta — Impermanence"@en owl:sameAs "SN 46.71 Aniccasutta — Impermanence"@en .
+
+"SN 46.72 Dukkhasutta — Suffering in Impermanence"@en owl:sameAs "SN 46.72 Dukkhasutta — Suffering in Impermanence"@en .
+
+"SN 46.73 Anattasutta — Not-Self in Suffering"@en owl:sameAs "SN 46.73 Anattasutta — Not-Self in Suffering"@en .
+
+"SN 46.74 Pahānasutta — Giving Up"@en owl:sameAs "SN 46.74 Pahānasutta — Giving Up"@en .
+
+"SN 46.75 Virāgasutta — Dispassion"@en owl:sameAs "SN 46.75 Virāgasutta — Dispassion"@en .
+
+"SN 46.76 Nirodhasutta — Cessation"@en owl:sameAs "SN 46.76 Nirodhasutta — Cessation"@en .
 
 "Said of all ascetics and brahmins, past, future and present, who give them up."@en owl:sameAs "Said of all ascetics and brahmins, past, future and present, who give them up."@en .
 
@@ -4880,7 +6217,13 @@ dho:t-sn46.50 a owl:Thing,
 
 "That’s how a mendicant who develops and cultivates the seven awakening factors slants, slopes, and inclines to extinguishment.”"@en owl:sameAs "That’s how a mendicant who develops and cultivates the seven awakening factors slants, slopes, and inclines to extinguishment.”"@en .
 
+"That’s how the perception of a skeleton, when developed and cultivated, is very fruitful and beneficial.”"@en owl:sameAs "That’s how the perception of a skeleton, when developed and cultivated, is very fruitful and beneficial.”"@en .
+
+"That’s how the perception of cessation, when developed and cultivated, leads to great benefit … great sanctuary from the yoke … great inspiration … great ease.”"@en owl:sameAs "That’s how the perception of cessation, when developed and cultivated, leads to great benefit … great sanctuary from the yoke … great inspiration … great ease.”"@en .
+
 "That’s how the seven awakening factors are developed and cultivated so as to lead to giving up the things that tighten the fetters."@en owl:sameAs "That’s how the seven awakening factors are developed and cultivated so as to lead to giving up the things that tighten the fetters."@en .
+
+"That’s how, when the perception of cessation is developed and cultivated, it’s very fruitful and beneficial."@en owl:sameAs "That’s how, when the perception of cessation is developed and cultivated, it’s very fruitful and beneficial."@en .
 
 "The evidence a derived link was built from."@en owl:sameAs "The evidence a derived link was built from."@en .
 
@@ -4952,6 +6295,10 @@ dho:t-sn46.50 a owl:Thing,
 
 "When the mind is sluggish, it’s the wrong time to develop the awakening factors of tranquility, immersion, and equanimity."@en owl:sameAs "When the mind is sluggish, it’s the wrong time to develop the awakening factors of tranquility, immersion, and equanimity."@en .
 
+"When the perception of cessation is developed and cultivated in this way you can expect one of two results:"@en owl:sameAs "When the perception of cessation is developed and cultivated in this way you can expect one of two results:"@en .
+
+"When the perception of cessation is developed and cultivated you can expect one of two results:"@en owl:sameAs "When the perception of cessation is developed and cultivated you can expect one of two results:"@en .
+
 "When these seven awakening factors are developed and cultivated they are noble and emancipating, and bring one who practices them to the complete ending of suffering.”"@en owl:sameAs "When these seven awakening factors are developed and cultivated they are noble and emancipating, and bring one who practices them to the complete ending of suffering.”"@en .
 
 "When these seven awakening factors are developed and cultivated they lead to growth and progress.”"@en owl:sameAs "When these seven awakening factors are developed and cultivated they lead to growth and progress.”"@en .
@@ -4967,6 +6314,8 @@ dho:t-sn46.50 a owl:Thing,
 "a dhamma (an object of the mind, an idea)"@en owl:sameAs "a dhamma (an object of the mind, an idea)"@en .
 
 "a dhamma (any phenomenon, any thing)"@en owl:sameAs "a dhamma (any phenomenon, any thing)"@en .
+
+"accompany the development of"@en owl:sameAs "accompany the development of"@en .
 
 "actively listening to the teaching"@en owl:sameAs "actively listening to the teaching"@en .
 
@@ -5017,6 +6366,8 @@ dho:t-sn46.50 a owl:Thing,
 "cited by"@en owl:sameAs "cited by"@en .
 
 "cited only"@en owl:sameAs "cited only"@en .
+
+"compassion"@en owl:sameAs "compassion"@en .
 
 "conceit"@en owl:sameAs "conceit"@en .
 
@@ -5080,7 +6431,11 @@ dho:t-sn46.50 a owl:Thing,
 
 "energy"@en owl:sameAs "energy"@en .
 
-"equanimity"@en owl:sameAs "equanimity"@en .
+"enlightenment in this very life"@en owl:sameAs "enlightenment in this very life"@en .
+
+"enlightenment in this very life, or if there’s residue left behind, non-return."@en owl:sameAs "enlightenment in this very life, or if there’s residue left behind, non-return."@en .
+
+"enlightenment in this very life, or if there’s residue left behind, non-return.”"@en owl:sameAs "enlightenment in this very life, or if there’s residue left behind, non-return.”"@en .
 
 "ethics"@en owl:sameAs "ethics"@en .
 
@@ -5107,6 +6462,16 @@ dho:t-sn46.50 a owl:Thing,
 "going from the near shore to the far shore"@en owl:sameAs "going from the near shore to the far shore"@en .
 
 "good friendship"@en owl:sameAs "good friendship"@en .
+
+"great benefit"@en owl:sameAs "great benefit"@en .
+
+"great ease"@en owl:sameAs "great ease"@en .
+
+"great fruit and benefit"@en owl:sameAs "great fruit and benefit"@en .
+
+"great inspiration"@en owl:sameAs "great inspiration"@en .
+
+"great sanctuary from the yoke"@en owl:sameAs "great sanctuary from the yoke"@en .
 
 "growth and progress"@en owl:sameAs "growth and progress"@en .
 
@@ -5160,6 +6525,8 @@ dho:t-sn46.50 a owl:Thing,
 
 "letting go"@en owl:sameAs "letting go"@en .
 
+"love"@en owl:sameAs "love"@en .
+
 "low energy"@en owl:sameAs "low energy"@en .
 
 "lust"@en owl:sameAs "lust"@en .
@@ -5168,11 +6535,15 @@ dho:t-sn46.50 a owl:Thing,
 
 "mindfulness"@en owl:sameAs "mindfulness"@en .
 
+"mindfulness of breathing"@en owl:sameAs "mindfulness of breathing"@en .
+
 "modelled by"@en owl:sameAs "modelled by"@en .
 
 "modelled on"@en owl:sameAs "modelled on"@en .
 
 "nirvana"@en owl:sameAs "nirvana"@en .
+
+"non-return"@en owl:sameAs "non-return"@en .
 
 "not applying the mind"@en owl:sameAs "not applying the mind"@en .
 
@@ -5211,6 +6582,8 @@ dho:t-sn46.50 a owl:Thing,
 "references text"@en owl:sameAs "references text"@en .
 
 "regret"@en owl:sameAs "regret"@en .
+
+"rejoicing"@en owl:sameAs "rejoicing"@en .
 
 "related (editor's judgment)"@en owl:sameAs "related (editor's judgment)"@en .
 
@@ -5293,6 +6666,36 @@ dho:t-sn46.50 a owl:Thing,
 "the five hindrances"@en owl:sameAs "the five hindrances"@en .
 
 "the heart's release by love"@en owl:sameAs "the heart's release by love"@en .
+
+"the perception of a bloated corpse"@en owl:sameAs "the perception of a bloated corpse"@en .
+
+"the perception of a livid corpse"@en owl:sameAs "the perception of a livid corpse"@en .
+
+"the perception of a skeleton"@en owl:sameAs "the perception of a skeleton"@en .
+
+"the perception of a split open corpse"@en owl:sameAs "the perception of a split open corpse"@en .
+
+"the perception of a worm-infested corpse"@en owl:sameAs "the perception of a worm-infested corpse"@en .
+
+"the perception of cessation"@en owl:sameAs "the perception of cessation"@en .
+
+"the perception of death"@en owl:sameAs "the perception of death"@en .
+
+"the perception of dispassion"@en owl:sameAs "the perception of dispassion"@en .
+
+"the perception of dissatisfaction with the whole world"@en owl:sameAs "the perception of dissatisfaction with the whole world"@en .
+
+"the perception of giving up"@en owl:sameAs "the perception of giving up"@en .
+
+"the perception of impermanence"@en owl:sameAs "the perception of impermanence"@en .
+
+"the perception of not-self in suffering"@en owl:sameAs "the perception of not-self in suffering"@en .
+
+"the perception of repulsiveness of food"@en owl:sameAs "the perception of repulsiveness of food"@en .
+
+"the perception of suffering in impermanence"@en owl:sameAs "the perception of suffering in impermanence"@en .
+
+"the perception of ugliness"@en owl:sameAs "the perception of ugliness"@en .
 
 "the realization of the fruit of knowledge and freedom"@en owl:sameAs "the realization of the fruit of knowledge and freedom"@en .
 
@@ -5390,6 +6793,54 @@ dho:t-sn46.50 a owl:Thing,
 
 "“Mendicants, whatever qualities are skillful, part of the skillful, on the side of the skillful, all of them are rooted in rational application of mind and meet at rational application of mind, and rational application of mind is said to be the best of them."@en owl:sameAs "“Mendicants, whatever qualities are skillful, part of the skillful, on the side of the skillful, all of them are rooted in rational application of mind and meet at rational application of mind, and rational application of mind is said to be the best of them."@en .
 
+"“Mendicants, when compassion is developed and cultivated it’s very fruitful and beneficial. …”"@en owl:sameAs "“Mendicants, when compassion is developed and cultivated it’s very fruitful and beneficial. …”"@en .
+
+"“Mendicants, when equanimity is developed and cultivated it’s very fruitful and beneficial. …”"@en owl:sameAs "“Mendicants, when equanimity is developed and cultivated it’s very fruitful and beneficial. …”"@en .
+
+"“Mendicants, when love is developed and cultivated it’s very fruitful and beneficial. …”"@en owl:sameAs "“Mendicants, when love is developed and cultivated it’s very fruitful and beneficial. …”"@en .
+
+"“Mendicants, when mindfulness of breathing is developed and cultivated it’s very fruitful and beneficial. …”"@en owl:sameAs "“Mendicants, when mindfulness of breathing is developed and cultivated it’s very fruitful and beneficial. …”"@en .
+
+"“Mendicants, when rejoicing is developed and cultivated it’s very fruitful and beneficial. …”"@en owl:sameAs "“Mendicants, when rejoicing is developed and cultivated it’s very fruitful and beneficial. …”"@en .
+
+"“Mendicants, when the perception of a bloated corpse is developed and cultivated it’s very fruitful and beneficial. …”"@en owl:sameAs "“Mendicants, when the perception of a bloated corpse is developed and cultivated it’s very fruitful and beneficial. …”"@en .
+
+"“Mendicants, when the perception of a livid corpse is developed and cultivated it’s very fruitful and beneficial. …”"@en owl:sameAs "“Mendicants, when the perception of a livid corpse is developed and cultivated it’s very fruitful and beneficial. …”"@en .
+
+"“Mendicants, when the perception of a skeleton is developed and cultivated it leads to dwelling in great ease."@en owl:sameAs "“Mendicants, when the perception of a skeleton is developed and cultivated it leads to dwelling in great ease."@en .
+
+"“Mendicants, when the perception of a skeleton is developed and cultivated it leads to great benefit."@en owl:sameAs "“Mendicants, when the perception of a skeleton is developed and cultivated it leads to great benefit."@en .
+
+"“Mendicants, when the perception of a skeleton is developed and cultivated it leads to great inspiration."@en owl:sameAs "“Mendicants, when the perception of a skeleton is developed and cultivated it leads to great inspiration."@en .
+
+"“Mendicants, when the perception of a skeleton is developed and cultivated it leads to great sanctuary from the yoke."@en owl:sameAs "“Mendicants, when the perception of a skeleton is developed and cultivated it leads to great sanctuary from the yoke."@en .
+
+"“Mendicants, when the perception of a skeleton is developed and cultivated it’s very fruitful and beneficial."@en owl:sameAs "“Mendicants, when the perception of a skeleton is developed and cultivated it’s very fruitful and beneficial."@en .
+
+"“Mendicants, when the perception of a split open corpse is developed and cultivated it’s very fruitful and beneficial. …”"@en owl:sameAs "“Mendicants, when the perception of a split open corpse is developed and cultivated it’s very fruitful and beneficial. …”"@en .
+
+"“Mendicants, when the perception of a worm-infested corpse is developed and cultivated it’s very fruitful and beneficial. …”"@en owl:sameAs "“Mendicants, when the perception of a worm-infested corpse is developed and cultivated it’s very fruitful and beneficial. …”"@en .
+
+"“Mendicants, when the perception of cessation is developed and cultivated it’s very fruitful and beneficial."@en owl:sameAs "“Mendicants, when the perception of cessation is developed and cultivated it’s very fruitful and beneficial."@en .
+
+"“Mendicants, when the perception of death is developed and cultivated it’s very fruitful and beneficial. …”"@en owl:sameAs "“Mendicants, when the perception of death is developed and cultivated it’s very fruitful and beneficial. …”"@en .
+
+"“Mendicants, when the perception of dispassion is developed and cultivated it’s very fruitful and beneficial. …”"@en owl:sameAs "“Mendicants, when the perception of dispassion is developed and cultivated it’s very fruitful and beneficial. …”"@en .
+
+"“Mendicants, when the perception of dissatisfaction with the whole world is developed and cultivated it’s very fruitful and beneficial. …”"@en owl:sameAs "“Mendicants, when the perception of dissatisfaction with the whole world is developed and cultivated it’s very fruitful and beneficial. …”"@en .
+
+"“Mendicants, when the perception of giving up is developed and cultivated it’s very fruitful and beneficial. …”"@en owl:sameAs "“Mendicants, when the perception of giving up is developed and cultivated it’s very fruitful and beneficial. …”"@en .
+
+"“Mendicants, when the perception of impermanence is developed and cultivated it’s very fruitful and beneficial. …”"@en owl:sameAs "“Mendicants, when the perception of impermanence is developed and cultivated it’s very fruitful and beneficial. …”"@en .
+
+"“Mendicants, when the perception of not-self in suffering is developed and cultivated it’s very fruitful and beneficial. …”"@en owl:sameAs "“Mendicants, when the perception of not-self in suffering is developed and cultivated it’s very fruitful and beneficial. …”"@en .
+
+"“Mendicants, when the perception of repulsiveness of food is developed and cultivated it’s very fruitful and beneficial. …”"@en owl:sameAs "“Mendicants, when the perception of repulsiveness of food is developed and cultivated it’s very fruitful and beneficial. …”"@en .
+
+"“Mendicants, when the perception of suffering in impermanence is developed and cultivated it’s very fruitful and beneficial. …”"@en owl:sameAs "“Mendicants, when the perception of suffering in impermanence is developed and cultivated it’s very fruitful and beneficial. …”"@en .
+
+"“Mendicants, when the perception of ugliness is developed and cultivated it’s very fruitful and beneficial. …”"@en owl:sameAs "“Mendicants, when the perception of ugliness is developed and cultivated it’s very fruitful and beneficial. …”"@en .
+
 "“Mendicants, when the seven awakening factors are developed and cultivated they lead to growth and progress."@en owl:sameAs "“Mendicants, when the seven awakening factors are developed and cultivated they lead to growth and progress."@en .
 
 "“Mendicants, when these seven awakening factors are developed and cultivated they are noble and emancipating, and bring one who practices them to the complete ending of suffering."@en owl:sameAs "“Mendicants, when these seven awakening factors are developed and cultivated they are noble and emancipating, and bring one who practices them to the complete ending of suffering."@en .
@@ -5416,7 +6867,11 @@ dho:t-sn46.50 a owl:Thing,
 
 "“The first absorption has given up five factors and possesses five factors."@en owl:sameAs "“The first absorption has given up five factors and possesses five factors."@en .
 
+"“The perception of cessation, when developed and cultivated, leads to great benefit … great sanctuary from the yoke … great inspiration … great ease."@en owl:sameAs "“The perception of cessation, when developed and cultivated, leads to great benefit … great sanctuary from the yoke … great inspiration … great ease."@en .
+
 "“Unification of the mind is immersion."@en owl:sameAs "“Unification of the mind is immersion."@en .
+
+"“When the perception of a skeleton is developed and cultivated you can expect one of two results: enlightenment in this very life, or if there’s residue left behind, non-return."@en owl:sameAs "“When the perception of a skeleton is developed and cultivated you can expect one of two results: enlightenment in this very life, or if there’s residue left behind, non-return."@en .
 
 "“… which have freedom from death as their objective, destination, and culmination …”"@en owl:sameAs "“… which have freedom from death as their objective, destination, and culmination …”"@en .
 
@@ -5444,15 +6899,27 @@ dho:t-sn46.50 a owl:Thing,
 
 "Evameva kho, bhikkhave, pañcime cittassa upakkilesā, yehi upakkilesehi upakkiliṭṭhaṁ cittaṁ na ceva mudu hoti na ca kammaniyaṁ, na ca pabhassaraṁ pabhaṅgu ca, na ca sammā samādhiyati āsavānaṁ khayāya."@pi owl:sameAs "Evameva kho, bhikkhave, pañcime cittassa upakkilesā, yehi upakkilesehi upakkiliṭṭhaṁ cittaṁ na ceva mudu hoti na ca kammaniyaṁ, na ca pabhassaraṁ pabhaṅgu ca, na ca sammā samādhiyati āsavānaṁ khayāya."@pi .
 
+"Evaṁ bhāvitā kho, bhikkhave, aṭṭhikasaññā evaṁ bahulīkatā mahapphalā hoti mahānisaṁsā”ti."@pi owl:sameAs "Evaṁ bhāvitā kho, bhikkhave, aṭṭhikasaññā evaṁ bahulīkatā mahapphalā hoti mahānisaṁsā”ti."@pi .
+
+"Evaṁ bhāvitā kho, bhikkhave, nirodhasaññā evaṁ bahulīkatā mahapphalā hoti mahānisaṁsāti."@pi owl:sameAs "Evaṁ bhāvitā kho, bhikkhave, nirodhasaññā evaṁ bahulīkatā mahapphalā hoti mahānisaṁsāti."@pi .
+
+"Evaṁ bhāvitā kho, bhikkhave, nirodhasaññā evaṁ bahulīkatā mahato atthāya saṁvattati, mahato yogakkhemāya saṁvattati, mahato saṁvegāya saṁvattati, mahato phāsuvihārāya saṁvattatī”ti."@pi owl:sameAs "Evaṁ bhāvitā kho, bhikkhave, nirodhasaññā evaṁ bahulīkatā mahato atthāya saṁvattati, mahato yogakkhemāya saṁvattati, mahato saṁvegāya saṁvattati, mahato phāsuvihārāya saṁvattatī”ti."@pi .
+
 "Evaṁ bhāvitā kho, bhikkhave, satta bojjhaṅgā evaṁ bahulīkatā saṁyojanīyānaṁ dhammānaṁ pahānāya saṁvattanti."@pi owl:sameAs "Evaṁ bhāvitā kho, bhikkhave, satta bojjhaṅgā evaṁ bahulīkatā saṁyojanīyānaṁ dhammānaṁ pahānāya saṁvattanti."@pi .
 
 "Evaṁ bhāvitā kho, bhikkhave, satta bojjhaṅgā evaṁ bahulīkatā taṇhānirodhāya saṁvattantī”ti."@pi owl:sameAs "Evaṁ bhāvitā kho, bhikkhave, satta bojjhaṅgā evaṁ bahulīkatā taṇhānirodhāya saṁvattantī”ti."@pi .
 
 "Evaṁ bhāvitā kho, udāyi, satta bojjhaṅgā evaṁ bahulīkatā nibbedhāya saṁvattantī”ti."@pi owl:sameAs "Evaṁ bhāvitā kho, udāyi, satta bojjhaṅgā evaṁ bahulīkatā nibbedhāya saṁvattantī”ti."@pi .
 
+"Evaṁ bhāvitāya kho, bhikkhave, nirodhasaññāya evaṁ bahulīkatāya dvinnaṁ phalānaṁ aññataraṁ phalaṁ pāṭikaṅkhaṁ—"@pi owl:sameAs "Evaṁ bhāvitāya kho, bhikkhave, nirodhasaññāya evaṁ bahulīkatāya dvinnaṁ phalānaṁ aññataraṁ phalaṁ pāṭikaṅkhaṁ—"@pi .
+
 "Evaṁ kho, bhikkhave, bhikkhu satta bojjhaṅge bhāvento satta bojjhaṅge bahulīkaronto nibbānaninno hoti nibbānapoṇo nibbānapabbhāro”ti."@pi owl:sameAs "Evaṁ kho, bhikkhave, bhikkhu satta bojjhaṅge bhāvento satta bojjhaṅge bahulīkaronto nibbānaninno hoti nibbānapoṇo nibbānapabbhāro”ti."@pi .
 
+"Idha, bhikkhave, bhikkhu aṭṭhikasaññāsahagataṁ satisambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ …pe…"@pi owl:sameAs "Idha, bhikkhave, bhikkhu aṭṭhikasaññāsahagataṁ satisambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ …pe…"@pi .
+
 "Idha, bhikkhave, bhikkhu dhammesu dhammānupassī viharati pañcasu nīvaraṇesu."@pi owl:sameAs "Idha, bhikkhave, bhikkhu dhammesu dhammānupassī viharati pañcasu nīvaraṇesu."@pi .
+
+"Idha, bhikkhave, bhikkhu nirodhasaññāsahagataṁ satisambojjhaṅgaṁ bhāveti …pe…"@pi owl:sameAs "Idha, bhikkhave, bhikkhu nirodhasaññāsahagataṁ satisambojjhaṅgaṁ bhāveti …pe…"@pi .
 
 "Idha, bhikkhave, bhikkhu satisambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ;"@pi owl:sameAs "Idha, bhikkhave, bhikkhu satisambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ;"@pi .
 
@@ -5497,6 +6964,10 @@ dho:t-sn46.50 a owl:Thing,
 "Līnaṁ, bhikkhave, cittaṁ taṁ etehi dhammehi dussamuṭṭhāpayaṁ hoti."@pi owl:sameAs "Līnaṁ, bhikkhave, cittaṁ taṁ etehi dhammehi dussamuṭṭhāpayaṁ hoti."@pi .
 
 "Līnaṁ, bhikkhave, cittaṁ taṁ etehi dhammehi susamuṭṭhāpayaṁ hoti."@pi owl:sameAs "Līnaṁ, bhikkhave, cittaṁ taṁ etehi dhammehi susamuṭṭhāpayaṁ hoti."@pi .
+
+"Nirodhasaññā, bhikkhave, bhāvitā bahulīkatā mahato atthāya saṁvattati, mahato yogakkhemāya saṁvattati, mahato saṁvegāya saṁvattati, mahato phāsuvihārāya saṁvattati."@pi owl:sameAs "Nirodhasaññā, bhikkhave, bhāvitā bahulīkatā mahato atthāya saṁvattati, mahato yogakkhemāya saṁvattati, mahato saṁvegāya saṁvattati, mahato phāsuvihārāya saṁvattati."@pi .
+
+"Nirodhasaññāya, bhikkhave, bhāvitāya bahulīkatāya dvinnaṁ phalānaṁ aññataraṁ phalaṁ pāṭikaṅkhaṁ—"@pi owl:sameAs "Nirodhasaññāya, bhikkhave, bhāvitāya bahulīkatāya dvinnaṁ phalānaṁ aññataraṁ phalaṁ pāṭikaṅkhaṁ—"@pi .
 
 "Rūparāgo, arūparāgo, māno, uddhaccaṁ, avijjā—"@pi owl:sameAs "Rūparāgo, arūparāgo, māno, uddhaccaṁ, avijjā—"@pi .
 
@@ -5552,6 +7023,10 @@ dho:t-sn46.50 a owl:Thing,
 
 "amatogadhaṁ amataparāyanaṁ amatapariyosānaṁ …"@pi owl:sameAs "amatogadhaṁ amataparāyanaṁ amatapariyosānaṁ …"@pi .
 
+"aniccasaññā"@pi owl:sameAs "aniccasaññā"@pi .
+
+"anicce dukkhasaññā"@pi owl:sameAs "anicce dukkhasaññā"@pi .
+
 "anuppannañceva thinamiddhaṁ uppajjati, uppannañca thinamiddhaṁ bhiyyobhāvāya vepullāya saṁvattati;"@pi owl:sameAs "anuppannañceva thinamiddhaṁ uppajjati, uppannañca thinamiddhaṁ bhiyyobhāvāya vepullāya saṁvattati;"@pi .
 
 "anuppannañceva uddhaccakukkuccaṁ uppajjati, uppannañca uddhaccakukkuccaṁ bhiyyobhāvāya vepullāya saṁvattati;"@pi owl:sameAs "anuppannañceva uddhaccakukkuccaṁ uppajjati, uppannañca uddhaccakukkuccaṁ bhiyyobhāvāya vepullāya saṁvattati;"@pi .
@@ -5564,6 +7039,8 @@ dho:t-sn46.50 a owl:Thing,
 
 "anuppannā ceva vicikicchā uppajjati, uppannā ca vicikicchā bhiyyobhāvāya vepullāya saṁvattati;"@pi owl:sameAs "anuppannā ceva vicikicchā uppajjati, uppannā ca vicikicchā bhiyyobhāvāya vepullāya saṁvattati;"@pi .
 
+"anāgāmitā"@pi owl:sameAs "anāgāmitā"@pi .
+
 "appamāda"@pi owl:sameAs "appamāda"@pi .
 
 "apārā pāraṁ gamana"@pi owl:sameAs "apārā pāraṁ gamana"@pi .
@@ -5574,11 +7051,21 @@ dho:t-sn46.50 a owl:Thing,
 
 "asubhanimitta"@pi owl:sameAs "asubhanimitta"@pi .
 
+"asubhasaññā"@pi owl:sameAs "asubhasaññā"@pi .
+
+"attha"@pi owl:sameAs "attha"@pi .
+
 "avijjā"@pi owl:sameAs "avijjā"@pi .
 
 "ayaṁ kho, bhikkhave, mārasenappamaddano maggo”ti."@pi owl:sameAs "ayaṁ kho, bhikkhave, mārasenappamaddano maggo”ti."@pi .
 
 "ayoniso manasikāra"@pi owl:sameAs "ayoniso manasikāra"@pi .
+
+"aññā"@pi owl:sameAs "aññā"@pi .
+
+"aṭṭhikasaññā"@pi owl:sameAs "aṭṭhikasaññā"@pi .
+
+"aṭṭhikasaññāsahagataṁ upekkhāsambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ."@pi owl:sameAs "aṭṭhikasaññāsahagataṁ upekkhāsambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ."@pi .
 
 "bodhi"@pi owl:sameAs "bodhi"@pi .
 
@@ -5597,6 +7084,12 @@ dho:t-sn46.50 a owl:Thing,
 "dhammavicaya"@pi owl:sameAs "dhammavicaya"@pi .
 
 "dhammavicayasambojjhaṅga"@pi owl:sameAs "dhammavicayasambojjhaṅga"@pi .
+
+"diṭṭheva dhamme aññā, sati vā upādisese anāgāmitā."@pi owl:sameAs "diṭṭheva dhamme aññā, sati vā upādisese anāgāmitā."@pi .
+
+"diṭṭheva dhamme aññā, sati vā upādisese anāgāmitāti."@pi owl:sameAs "diṭṭheva dhamme aññā, sati vā upādisese anāgāmitāti."@pi .
+
+"dukkhe anattasaññā"@pi owl:sameAs "dukkhe anattasaññā"@pi .
 
 "evameva kho, bhikkhave, bhikkhu satta bojjhaṅge bhāvento satta bojjhaṅge bahulīkaronto nibbānaninno hoti nibbānapoṇo nibbānapabbhāro."@pi owl:sameAs "evameva kho, bhikkhave, bhikkhu satta bojjhaṅge bhāvento satta bojjhaṅge bahulīkaronto nibbānaninno hoti nibbānapoṇo nibbānapabbhāro."@pi .
 
@@ -5620,6 +7113,8 @@ dho:t-sn46.50 a owl:Thing,
 
 "kalyāṇamittatā"@pi owl:sameAs "kalyāṇamittatā"@pi .
 
+"karuṇā"@pi owl:sameAs "karuṇā"@pi .
+
 "kusalā dhammā"@pi owl:sameAs "kusalā dhammā"@pi .
 
 "kusalākusalā dhammā sāvajjānavajjā dhammā hīnapaṇītā dhammā kaṇhasukkasappaṭibhāgā dhammā"@pi owl:sameAs "kusalākusalā dhammā sāvajjānavajjā dhammā hīnapaṇītā dhammā kaṇhasukkasappaṭibhāgā dhammā"@pi .
@@ -5632,9 +7127,17 @@ dho:t-sn46.50 a owl:Thing,
 
 "līnaṁ cittaṁ"@pi owl:sameAs "līnaṁ cittaṁ"@pi .
 
+"mahapphala mahānisaṁsa"@pi owl:sameAs "mahapphala mahānisaṁsa"@pi .
+
 "manañca paṭicca dhamme ca uppajjati manoviññāṇaṁ."@pi owl:sameAs "manañca paṭicca dhamme ca uppajjati manoviññāṇaṁ."@pi .
 
+"maraṇasaññā"@pi owl:sameAs "maraṇasaññā"@pi .
+
+"mettā"@pi owl:sameAs "mettā"@pi .
+
 "mettācetovimutti"@pi owl:sameAs "mettācetovimutti"@pi .
+
+"muditā"@pi owl:sameAs "muditā"@pi .
 
 "māna"@pi owl:sameAs "māna"@pi .
 
@@ -5650,9 +7153,13 @@ dho:t-sn46.50 a owl:Thing,
 
 "nirodha"@pi owl:sameAs "nirodha"@pi .
 
+"nirodhasaññā"@pi owl:sameAs "nirodhasaññā"@pi .
+
 "nīvaraṇa"@pi owl:sameAs "nīvaraṇa"@pi .
 
 "ohitasoto dhammaṁ suṇāti"@pi owl:sameAs "ohitasoto dhammaṁ suṇāti"@pi .
+
+"pahānasaññā"@pi owl:sameAs "pahānasaññā"@pi .
 
 "pajahanti, sabbe te imesaṁyeva sattannaṁ bojjhaṅgānaṁ bhāvitattā bahulīkatattā”ti."@pi owl:sameAs "pajahanti, sabbe te imesaṁyeva sattannaṁ bojjhaṅgānaṁ bhāvitattā bahulīkatattā”ti."@pi .
 
@@ -5674,6 +7181,10 @@ dho:t-sn46.50 a owl:Thing,
 
 "paṭighanimitta"@pi owl:sameAs "paṭighanimitta"@pi .
 
+"phāsuvihāra"@pi owl:sameAs "phāsuvihāra"@pi .
+
+"puḷavakasaññā"@pi owl:sameAs "puḷavakasaññā"@pi .
+
 "pīti"@pi owl:sameAs "pīti"@pi .
 
 "pītisambojjhaṅga"@pi owl:sameAs "pītisambojjhaṅga"@pi .
@@ -5683,6 +7194,8 @@ dho:t-sn46.50 a owl:Thing,
 "rāgavinaya dosavinaya mohavinaya"@pi owl:sameAs "rāgavinaya dosavinaya mohavinaya"@pi .
 
 "rūparāga"@pi owl:sameAs "rūparāga"@pi .
+
+"sabbaloke anabhiratisaññā"@pi owl:sameAs "sabbaloke anabhiratisaññā"@pi .
 
 "sabbatthika"@pi owl:sameAs "sabbatthika"@pi .
 
@@ -5705,6 +7218,8 @@ dho:t-sn46.50 a owl:Thing,
 "satisambojjhaṅgaṭṭhānīyā dhammā"@pi owl:sameAs "satisambojjhaṅgaṭṭhānīyā dhammā"@pi .
 
 "satta bojjhaṅgā"@pi owl:sameAs "satta bojjhaṅgā"@pi .
+
+"saṁvega"@pi owl:sameAs "saṁvega"@pi .
 
 "saṁyojanīyā dhammā"@pi owl:sameAs "saṁyojanīyā dhammā"@pi .
 
@@ -5732,15 +7247,17 @@ dho:t-sn46.50 a owl:Thing,
 
 "uddhataṁ cittaṁ"@pi owl:sameAs "uddhataṁ cittaṁ"@pi .
 
-"upasama"@pi owl:sameAs "upasama"@pi .
+"uddhumātakasaññā"@pi owl:sameAs "uddhumātakasaññā"@pi .
 
-"upekkhā"@pi owl:sameAs "upekkhā"@pi .
+"upasama"@pi owl:sameAs "upasama"@pi .
 
 "upekkhāsambojjhaṅga"@pi owl:sameAs "upekkhāsambojjhaṅga"@pi .
 
 "upekkhāsambojjhaṅgaṁ bhāveti rāgavinayapariyosānaṁ dosavinayapariyosānaṁ mohavinayapariyosānaṁ …"@pi owl:sameAs "upekkhāsambojjhaṅgaṁ bhāveti rāgavinayapariyosānaṁ dosavinayapariyosānaṁ mohavinayapariyosānaṁ …"@pi .
 
 "upekkhāsambojjhaṅgaṭṭhānīyā dhammā"@pi owl:sameAs "upekkhāsambojjhaṅgaṭṭhānīyā dhammā"@pi .
+
+"vicchiddakasaññā"@pi owl:sameAs "vicchiddakasaññā"@pi .
 
 "vicikicchā"@pi owl:sameAs "vicikicchā"@pi .
 
@@ -5750,9 +7267,13 @@ dho:t-sn46.50 a owl:Thing,
 
 "vijjāvimuttiphalasacchikiriyā"@pi owl:sameAs "vijjāvimuttiphalasacchikiriyā"@pi .
 
+"vinīlakasaññā"@pi owl:sameAs "vinīlakasaññā"@pi .
+
 "vippahīna"@pi owl:sameAs "vippahīna"@pi .
 
 "virāga"@pi owl:sameAs "virāga"@pi .
+
+"virāgasaññā"@pi owl:sameAs "virāgasaññā"@pi .
 
 "vitakka"@pi owl:sameAs "vitakka"@pi .
 
@@ -5766,9 +7287,15 @@ dho:t-sn46.50 a owl:Thing,
 
 "vīriyasambojjhaṅga"@pi owl:sameAs "vīriyasambojjhaṅga"@pi .
 
+"yogakkhema"@pi owl:sameAs "yogakkhema"@pi .
+
 "yoniso manasikāra"@pi owl:sameAs "yoniso manasikāra"@pi .
 
 "āhāra"@pi owl:sameAs "āhāra"@pi .
+
+"āhāre paṭikūlasaññā"@pi owl:sameAs "āhāre paṭikūlasaññā"@pi .
+
+"ānāpānassati"@pi owl:sameAs "ānāpānassati"@pi .
 
 "ārambhadhātu nikkamadhātu parakkamadhātu"@pi owl:sameAs "ārambhadhātu nikkamadhātu parakkamadhātu"@pi .
 
@@ -5776,19 +7303,51 @@ dho:t-sn46.50 a owl:Thing,
 
 "“Ajjhattikaṁ, bhikkhave, aṅganti karitvā nāññaṁ ekaṅgampi samanupassāmi sattannaṁ bojjhaṅgānaṁ uppādāya, yathayidaṁ—bhikkhave, yonisomanasikāro."@pi owl:sameAs "“Ajjhattikaṁ, bhikkhave, aṅganti karitvā nāññaṁ ekaṅgampi samanupassāmi sattannaṁ bojjhaṅgānaṁ uppādāya, yathayidaṁ—bhikkhave, yonisomanasikāro."@pi .
 
+"“Aniccasaññā, bhikkhave …pe…”"@pi owl:sameAs "“Aniccasaññā, bhikkhave …pe…”"@pi .
+
+"“Anicce dukkhasaññā, bhikkhave …pe…”"@pi owl:sameAs "“Anicce dukkhasaññā, bhikkhave …pe…”"@pi .
+
+"“Asubhasaññā, bhikkhave …pe…”"@pi owl:sameAs "“Asubhasaññā, bhikkhave …pe…”"@pi .
+
 "“Ayoniso, bhikkhave, manasikaroto anuppanno ceva kāmacchando uppajjati, uppanno ca kāmacchando bhiyyobhāvāya vepullāya saṁvattati;"@pi owl:sameAs "“Ayoniso, bhikkhave, manasikaroto anuppanno ceva kāmacchando uppajjati, uppanno ca kāmacchando bhiyyobhāvāya vepullāya saṁvattati;"@pi .
 
 "“Ayoniso, bhikkhave, manasikaroto anuppanno ceva kāmacchando uppajjati, uppanno ca kāmacchando bhiyyobhāvāya vepullāya saṁvattati; anuppanno ceva byāpādo uppajjati, uppanno ca byāpādo bhiyyobhāvāya vepullāya saṁvattati; anuppannañceva thinamiddhaṁ uppajjati, uppannañca thinamiddhaṁ bhiyyobhāvāya vepullāya saṁvattati; anuppannañceva uddhaccakukkuccaṁ uppajjati, uppannañca uddhaccakukkuccaṁ bhiyyobhāvāya vepullāya saṁvattati; anuppannā ceva vicikicchā uppajjati, uppannā ca vicikicchā bhiyyobhāvāya vepullāya saṁvattatī”ti."@pi owl:sameAs "“Ayoniso, bhikkhave, manasikaroto anuppanno ceva kāmacchando uppajjati, uppanno ca kāmacchando bhiyyobhāvāya vepullāya saṁvattati; anuppanno ceva byāpādo uppajjati, uppanno ca byāpādo bhiyyobhāvāya vepullāya saṁvattati; anuppannañceva thinamiddhaṁ uppajjati, uppannañca thinamiddhaṁ bhiyyobhāvāya vepullāya saṁvattati; anuppannañceva uddhaccakukkuccaṁ uppajjati, uppannañca uddhaccakukkuccaṁ bhiyyobhāvāya vepullāya saṁvattati; anuppannā ceva vicikicchā uppajjati, uppannā ca vicikicchā bhiyyobhāvāya vepullāya saṁvattatī”ti."@pi .
+
+"“Aṭṭhikasaññā, bhikkhave, bhāvitā bahulīkatā mahapphalā hoti mahānisaṁsā."@pi owl:sameAs "“Aṭṭhikasaññā, bhikkhave, bhāvitā bahulīkatā mahapphalā hoti mahānisaṁsā."@pi .
+
+"“Aṭṭhikasaññā, bhikkhave, bhāvitā bahulīkatā mahato atthāya saṁvattati."@pi owl:sameAs "“Aṭṭhikasaññā, bhikkhave, bhāvitā bahulīkatā mahato atthāya saṁvattati."@pi .
+
+"“Aṭṭhikasaññā, bhikkhave, bhāvitā bahulīkatā mahato phāsuvihārāya saṁvattati."@pi owl:sameAs "“Aṭṭhikasaññā, bhikkhave, bhāvitā bahulīkatā mahato phāsuvihārāya saṁvattati."@pi .
+
+"“Aṭṭhikasaññā, bhikkhave, bhāvitā bahulīkatā mahato saṁvegāya saṁvattati."@pi owl:sameAs "“Aṭṭhikasaññā, bhikkhave, bhāvitā bahulīkatā mahato saṁvegāya saṁvattati."@pi .
+
+"“Aṭṭhikasaññā, bhikkhave, bhāvitā bahulīkatā mahato yogakkhemāya saṁvattati."@pi owl:sameAs "“Aṭṭhikasaññā, bhikkhave, bhāvitā bahulīkatā mahato yogakkhemāya saṁvattati."@pi .
+
+"“Aṭṭhikasaññāya, bhikkhave, bhāvitāya bahulīkatāya dvinnaṁ phalānaṁ aññataraṁ phalaṁ pāṭikaṅkhaṁ—diṭṭheva dhamme aññā, sati vā upādisese anāgāmitā."@pi owl:sameAs "“Aṭṭhikasaññāya, bhikkhave, bhāvitāya bahulīkatāya dvinnaṁ phalānaṁ aññataraṁ phalaṁ pāṭikaṅkhaṁ—diṭṭheva dhamme aññā, sati vā upādisese anāgāmitā."@pi .
 
 "“Bodhāya saṁvattantīti kho, bhikkhu, tasmā ‘bojjhaṅgā’ti vuccanti."@pi owl:sameAs "“Bodhāya saṁvattantīti kho, bhikkhu, tasmā ‘bojjhaṅgā’ti vuccanti."@pi .
 
 "“Bāhiraṁ, bhikkhave, aṅganti karitvā nāññaṁ ekaṅgampi samanupassāmi sattannaṁ bojjhaṅgānaṁ uppādāya, yathayidaṁ—bhikkhave, kalyāṇamittatā."@pi owl:sameAs "“Bāhiraṁ, bhikkhave, aṅganti karitvā nāññaṁ ekaṅgampi samanupassāmi sattannaṁ bojjhaṅgānaṁ uppādāya, yathayidaṁ—bhikkhave, kalyāṇamittatā."@pi .
 
+"“Dukkhe anattasaññā, bhikkhave …pe…”"@pi owl:sameAs "“Dukkhe anattasaññā, bhikkhave …pe…”"@pi .
+
+"“Karuṇā, bhikkhave, bhāvitā …pe…”"@pi owl:sameAs "“Karuṇā, bhikkhave, bhāvitā …pe…”"@pi .
+
+"“Maraṇasaññā, bhikkhave …pe…”"@pi owl:sameAs "“Maraṇasaññā, bhikkhave …pe…”"@pi .
+
+"“Mettā, bhikkhave, bhāvitā …pe…”"@pi owl:sameAs "“Mettā, bhikkhave, bhāvitā …pe…”"@pi .
+
+"“Muditā, bhikkhave, bhāvitā …pe…”"@pi owl:sameAs "“Muditā, bhikkhave, bhāvitā …pe…”"@pi .
+
 "“Mārasenappamaddanaṁ vo, bhikkhave, maggaṁ desessāmi;"@pi owl:sameAs "“Mārasenappamaddanaṁ vo, bhikkhave, maggaṁ desessāmi;"@pi .
 
 "“Nibbedhabhāgiyaṁ vo, bhikkhave, maggaṁ desessāmi;"@pi owl:sameAs "“Nibbedhabhāgiyaṁ vo, bhikkhave, maggaṁ desessāmi;"@pi .
 
+"“Nirodhasaññā, bhikkhave, bhāvitā bahulīkatā mahapphalā hoti mahānisaṁsā."@pi owl:sameAs "“Nirodhasaññā, bhikkhave, bhāvitā bahulīkatā mahapphalā hoti mahānisaṁsā."@pi .
+
 "“Nāhaṁ, bhikkhave, aññaṁ ekadhammampi samanupassāmi, yo evaṁ bhāvito bahulīkato saṁyojanīyānaṁ dhammānaṁ pahānāya saṁvattati, yathayidaṁ, bhikkhave, satta bojjhaṅgā."@pi owl:sameAs "“Nāhaṁ, bhikkhave, aññaṁ ekadhammampi samanupassāmi, yo evaṁ bhāvito bahulīkato saṁyojanīyānaṁ dhammānaṁ pahānāya saṁvattati, yathayidaṁ, bhikkhave, satta bojjhaṅgā."@pi .
+
+"“Pahānasaññā, bhikkhave …pe…”"@pi owl:sameAs "“Pahānasaññā, bhikkhave …pe…”"@pi .
 
 "“Pañcannañca, bhikkhave, nīvaraṇānaṁ sattannañca bojjhaṅgānaṁ āhārañca anāhārañca desessāmi;"@pi owl:sameAs "“Pañcannañca, bhikkhave, nīvaraṇānaṁ sattannañca bojjhaṅgānaṁ āhārañca anāhārañca desessāmi;"@pi .
 
@@ -5801,6 +7360,10 @@ dho:t-sn46.50 a owl:Thing,
 "“Paṭhamaṁ kho, āvuso, jhānaṁ pañcaṅgavippahīnaṁ, pañcaṅgasamannāgataṁ."@pi owl:sameAs "“Paṭhamaṁ kho, āvuso, jhānaṁ pañcaṅgavippahīnaṁ, pañcaṅgasamannāgataṁ."@pi .
 
 "“Paṭhamaṁ kho, āvuso, jhānaṁ pañcaṅgikaṁ."@pi owl:sameAs "“Paṭhamaṁ kho, āvuso, jhānaṁ pañcaṅgikaṁ."@pi .
+
+"“Puḷavakasaññā, bhikkhave, bhāvitā …pe…”"@pi owl:sameAs "“Puḷavakasaññā, bhikkhave, bhāvitā …pe…”"@pi .
+
+"“Sabbaloke anabhiratisaññā, bhikkhave …pe…”"@pi owl:sameAs "“Sabbaloke anabhiratisaññā, bhikkhave …pe…”"@pi .
 
 "“Sabbe dhammā anattā”ti,"@pi owl:sameAs "“Sabbe dhammā anattā”ti,"@pi .
 
@@ -5815,6 +7378,16 @@ dho:t-sn46.50 a owl:Thing,
 "“Sattime, bhikkhave, bojjhaṅgā bhāvitā bahulīkatā buddhiyā aparihānāya saṁvattanti."@pi owl:sameAs "“Sattime, bhikkhave, bojjhaṅgā bhāvitā bahulīkatā buddhiyā aparihānāya saṁvattanti."@pi .
 
 "“Sattime, bhikkhave, bojjhaṅgā bhāvitā bahulīkatā ekantanibbidāya virāgāya nirodhāya upasamāya abhiññāya sambodhāya nibbānāya saṁvattanti."@pi owl:sameAs "“Sattime, bhikkhave, bojjhaṅgā bhāvitā bahulīkatā ekantanibbidāya virāgāya nirodhāya upasamāya abhiññāya sambodhāya nibbānāya saṁvattanti."@pi .
+
+"“Uddhumātakasaññā, bhikkhave …pe…”"@pi owl:sameAs "“Uddhumātakasaññā, bhikkhave …pe…”"@pi .
+
+"“Upekkhā, bhikkhave, bhāvitā …pe…”"@pi owl:sameAs "“Upekkhā, bhikkhave, bhāvitā …pe…”"@pi .
+
+"“Vicchiddakasaññā, bhikkhave …pe…”"@pi owl:sameAs "“Vicchiddakasaññā, bhikkhave …pe…”"@pi .
+
+"“Vinīlakasaññā, bhikkhave …pe…”"@pi owl:sameAs "“Vinīlakasaññā, bhikkhave …pe…”"@pi .
+
+"“Virāgasaññā, bhikkhave …pe…”"@pi owl:sameAs "“Virāgasaññā, bhikkhave …pe…”"@pi .
 
 "“Ye hi keci, bhikkhave, atītamaddhānaṁ samaṇā vā brāhmaṇā vā tisso vidhā pajahiṁsu, sabbe te sattannaṁ bojjhaṅgānaṁ bhāvitattā bahulīkatattā."@pi owl:sameAs "“Ye hi keci, bhikkhave, atītamaddhānaṁ samaṇā vā brāhmaṇā vā tisso vidhā pajahiṁsu, sabbe te sattannaṁ bojjhaṅgānaṁ bhāvitattā bahulīkatattā."@pi .
 
@@ -5833,6 +7406,10 @@ dho:t-sn46.50 a owl:Thing,
 "“kathaṁ bhāvitā nu kho, bhante, satta bojjhaṅgā kathaṁ bahulīkatā nibbedhāya saṁvattantī”ti?"@pi owl:sameAs "“kathaṁ bhāvitā nu kho, bhante, satta bojjhaṅgā kathaṁ bahulīkatā nibbedhāya saṁvattantī”ti?"@pi .
 
 "“svākkhāto bhagavatā dhammo sandiṭṭhiko akāliko ehipassiko opaneyyiko paccattaṁ veditabbo viññūhī”ti."@pi owl:sameAs "“svākkhāto bhagavatā dhammo sandiṭṭhiko akāliko ehipassiko opaneyyiko paccattaṁ veditabbo viññūhī”ti."@pi .
+
+"“Āhāre paṭikūlasaññā, bhikkhave …pe…”"@pi owl:sameAs "“Āhāre paṭikūlasaññā, bhikkhave …pe…”"@pi .
+
+"“Ānāpānassati, bhikkhave, bhāvitā …pe…”"@pi owl:sameAs "“Ānāpānassati, bhikkhave, bhāvitā …pe…”"@pi .
 
 "“‘Bodhāya saṁvattantī’ti kho, bhikkhu, tasmā bojjhaṅgāti vuccanti."@pi owl:sameAs "“‘Bodhāya saṁvattantī’ti kho, bhikkhu, tasmā bojjhaṅgāti vuccanti."@pi .
 
@@ -5943,9 +7520,9 @@ dho:t-sn46.50 a owl:Thing,
 "食"@zh owl:sameAs "食"@zh .
 
 owl:Nothing a owl:Class ;
-    rdfs:subClassOf _:n84898a60b0564218b5ef94022101919fb1,
-        _:n84898a60b0564218b5ef94022101919fb2,
-        _:n84898a60b0564218b5ef94022101919fb3,
+    rdfs:subClassOf _:n81de2727617a4bc09e99816c9fd0f9d7b1,
+        _:n81de2727617a4bc09e99816c9fd0f9d7b2,
+        _:n81de2727617a4bc09e99816c9fd0f9d7b3,
         owl:Nothing,
         owl:Thing,
         skos:Collection,
@@ -5970,6 +7547,7 @@ owl:Nothing a owl:Class ;
         dho:Opposition,
         dho:Outcome,
         dho:Passage,
+        dho:Practice,
         dho:Result,
         dho:ReviewStatus,
         dho:SourceLayer,
@@ -5978,6 +7556,12 @@ owl:Nothing a owl:Class ;
         dho:TimingAdvice ;
     owl:equivalentClass owl:Nothing ;
     owl:sameAs owl:Nothing .
+
+dho:Accompanies a owl:Thing,
+        dho:ConditionRelation ;
+    rdfs:label "accompany the development of"@en ;
+    rdfs:comment "'develops X together with the awakening factors' (sahagata), SN 46.57-76 (D15)."@en ;
+    owl:sameAs dho:Accompanies .
 
 dho:Arises a owl:Thing,
         dho:Result ;
@@ -6036,6 +7620,13 @@ dho:DoesNotArise a owl:Thing,
     rdfs:label "don't arise, or end if already arisen"@en ;
     owl:sameAs dho:DoesNotArise .
 
+dho:Enlightenment a owl:Thing,
+        skos:Concept,
+        dho:Concept ;
+    owl:sameAs dho:Enlightenment ;
+    skos:prefLabel "enlightenment in this very life"@en,
+        "aññā"@pi .
+
 dho:ForerunnerOf a owl:Thing,
         dho:ConditionRelation ;
     rdfs:label "is the forerunner of"@en ;
@@ -6047,6 +7638,20 @@ dho:GivesRiseTo a owl:Thing,
     rdfs:label "gives rise to"@en ;
     owl:sameAs dho:GivesRiseTo .
 
+dho:GreatBenefit a owl:Thing,
+        skos:Concept,
+        dho:Concept ;
+    owl:sameAs dho:GreatBenefit ;
+    skos:prefLabel "great benefit"@en,
+        "attha"@pi .
+
+dho:GreatEase a owl:Thing,
+        skos:Concept,
+        dho:Concept ;
+    owl:sameAs dho:GreatEase ;
+    skos:prefLabel "great ease"@en,
+        "phāsuvihāra"@pi .
+
 dho:Ignorance a owl:Thing,
         skos:Concept,
         dho:Concept,
@@ -6057,12 +7662,26 @@ dho:Ignorance a owl:Thing,
         "無明"@zh ;
     dho:memberOf dho:FiveHigherFetters .
 
+dho:Inspiration a owl:Thing,
+        skos:Concept,
+        dho:Concept ;
+    owl:sameAs dho:Inspiration ;
+    skos:prefLabel "great inspiration"@en,
+        "saṁvega"@pi .
+
 dho:ListeningToTeaching a owl:Thing,
         skos:Concept,
         dho:Concept ;
     owl:sameAs dho:ListeningToTeaching ;
     skos:prefLabel "actively listening to the teaching"@en,
         "ohitasoto dhammaṁ suṇāti"@pi .
+
+dho:NonReturn a owl:Thing,
+        skos:Concept,
+        dho:Concept ;
+    owl:sameAs dho:NonReturn ;
+    skos:prefLabel "non-return"@en,
+        "anāgāmitā"@pi .
 
 dho:Restlessness a owl:Thing,
         skos:Concept,
@@ -6081,6 +7700,13 @@ dho:RootOf a owl:Thing,
     rdfs:label "is the root of"@en ;
     rdfs:comment "'rooted in and meet at' (mūlaka, samosaraṇa)."@en ;
     owl:sameAs dho:RootOf .
+
+dho:SanctuaryFromYoke a owl:Thing,
+        skos:Concept,
+        dho:Concept ;
+    owl:sameAs dho:SanctuaryFromYoke ;
+    skos:prefLabel "great sanctuary from the yoke"@en,
+        "yogakkhema"@pi .
 
 dho:SkillfulQualities a owl:Thing,
         skos:Concept,
@@ -6164,13 +7790,13 @@ dho:conditioned a owl:FunctionalProperty,
 dho:counters a owl:ObjectProperty ;
     rdfs:label "counters"@en ;
     rdfs:comment "Derived by rule R1: the same object, attended to rationally, both fuels this awakening factor and starves that hindrance (SN 46.51). The sutta never states it directly."@en ;
-    rdfs:domain _:n84898a60b0564218b5ef94022101919fb2,
+    rdfs:domain _:n81de2727617a4bc09e99816c9fd0f9d7b2,
         owl:Thing,
         skos:Concept,
         dho:AwakeningFactor,
         dho:Concept,
         dho:MentalQuality ;
-    rdfs:range _:n84898a60b0564218b5ef94022101919fb1,
+    rdfs:range _:n81de2727617a4bc09e99816c9fd0f9d7b1,
         owl:Thing,
         skos:Concept,
         dho:Concept,
@@ -6231,7 +7857,7 @@ dho:develop a owl:ObjectProperty ;
     rdfs:label "develop"@en ;
     rdfs:domain owl:Thing,
         dho:TimingAdvice ;
-    rdfs:range _:n84898a60b0564218b5ef94022101919fb2,
+    rdfs:range _:n81de2727617a4bc09e99816c9fd0f9d7b2,
         owl:Thing,
         skos:Concept,
         dho:AwakeningFactor,
@@ -6535,6 +8161,69 @@ dho:p-sn46.51-7.2 a owl:Thing,
     dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:7.2"^^xsd:anyURI ;
     dho:usesSense dho:sense-dhamma-quality .
 
+dho:p-sn46.57-1.4 a owl:Thing,
+        dho:Passage ;
+    owl:sameAs dho:p-sn46.57-1.4 ;
+    dho:inText dho:t-sn46.57 ;
+    dho:segment "sn46.57:1.4" ;
+    dho:textEn "It’s when a mendicant develops the perception of a skeleton together with the awakening factors of mindfulness, investigation of principles, energy, rapture, tranquility, immersion,"@en ;
+    dho:textPi "Idha, bhikkhave, bhikkhu aṭṭhikasaññāsahagataṁ satisambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ …pe…"@pi ;
+    dho:url "https://suttacentral.net/sn46.57/en/sujato#sn46.57:1.4"^^xsd:anyURI .
+
+dho:p-sn46.57-2.1 a owl:Thing,
+        dho:Passage ;
+    owl:sameAs dho:p-sn46.57-2.1 ;
+    dho:inText dho:t-sn46.57 ;
+    dho:segment "sn46.57:2.1" ;
+    dho:textEn "“When the perception of a skeleton is developed and cultivated you can expect one of two results: enlightenment in this very life, or if there’s residue left behind, non-return."@en ;
+    dho:textPi "“Aṭṭhikasaññāya, bhikkhave, bhāvitāya bahulīkatāya dvinnaṁ phalānaṁ aññataraṁ phalaṁ pāṭikaṅkhaṁ—diṭṭheva dhamme aññā, sati vā upādisese anāgāmitā."@pi ;
+    dho:url "https://suttacentral.net/sn46.57/en/sujato#sn46.57:2.1"^^xsd:anyURI .
+
+dho:p-sn46.76-1.3 a owl:Thing,
+        dho:Passage ;
+    owl:sameAs dho:p-sn46.76-1.3 ;
+    dho:inText dho:t-sn46.76 ;
+    dho:segment "sn46.76:1.3" ;
+    dho:textEn "It’s when a mendicant develops the perception of cessation together with the awakening factors of mindfulness, investigation of principles, energy, rapture, tranquility, immersion,"@en ;
+    dho:textPi "Idha, bhikkhave, bhikkhu nirodhasaññāsahagataṁ satisambojjhaṅgaṁ bhāveti …pe…"@pi ;
+    dho:url "https://suttacentral.net/sn46.76/en/sujato#sn46.76:1.3"^^xsd:anyURI .
+
+dho:p-sn46.76-2.1 a owl:Thing,
+        dho:Passage ;
+    owl:sameAs dho:p-sn46.76-2.1 ;
+    dho:inText dho:t-sn46.76 ;
+    dho:segment "sn46.76:2.1" ;
+    dho:textEn "When the perception of cessation is developed and cultivated you can expect one of two results:"@en ;
+    dho:textPi "Nirodhasaññāya, bhikkhave, bhāvitāya bahulīkatāya dvinnaṁ phalānaṁ aññataraṁ phalaṁ pāṭikaṅkhaṁ—"@pi ;
+    dho:url "https://suttacentral.net/sn46.76/en/sujato#sn46.76:2.1"^^xsd:anyURI .
+
+dho:p-sn46.76-2.2 a owl:Thing,
+        dho:Passage ;
+    owl:sameAs dho:p-sn46.76-2.2 ;
+    dho:inText dho:t-sn46.76 ;
+    dho:segment "sn46.76:2.2" ;
+    dho:textEn "enlightenment in this very life, or if there’s residue left behind, non-return."@en ;
+    dho:textPi "diṭṭheva dhamme aññā, sati vā upādisese anāgāmitā."@pi ;
+    dho:url "https://suttacentral.net/sn46.76/en/sujato#sn46.76:2.2"^^xsd:anyURI .
+
+dho:p-sn46.76-2.7 a owl:Thing,
+        dho:Passage ;
+    owl:sameAs dho:p-sn46.76-2.7 ;
+    dho:inText dho:t-sn46.76 ;
+    dho:segment "sn46.76:2.7" ;
+    dho:textEn "When the perception of cessation is developed and cultivated in this way you can expect one of two results:"@en ;
+    dho:textPi "Evaṁ bhāvitāya kho, bhikkhave, nirodhasaññāya evaṁ bahulīkatāya dvinnaṁ phalānaṁ aññataraṁ phalaṁ pāṭikaṅkhaṁ—"@pi ;
+    dho:url "https://suttacentral.net/sn46.76/en/sujato#sn46.76:2.7"^^xsd:anyURI .
+
+dho:p-sn46.76-2.8 a owl:Thing,
+        dho:Passage ;
+    owl:sameAs dho:p-sn46.76-2.8 ;
+    dho:inText dho:t-sn46.76 ;
+    dho:segment "sn46.76:2.8" ;
+    dho:textEn "enlightenment in this very life, or if there’s residue left behind, non-return.”"@en ;
+    dho:textPi "diṭṭheva dhamme aññā, sati vā upādisese anāgāmitāti."@pi ;
+    dho:url "https://suttacentral.net/sn46.76/en/sujato#sn46.76:2.8"^^xsd:anyURI .
+
 dho:possesses a owl:ObjectProperty ;
     rdfs:label "possesses"@en,
         "samannāgata"@pi ;
@@ -6671,7 +8360,7 @@ dho:target a owl:ObjectProperty ;
     rdfs:label "target"@en ;
     rdfs:domain owl:Thing,
         dho:Opposition ;
-    rdfs:range _:n84898a60b0564218b5ef94022101919fb1,
+    rdfs:range _:n81de2727617a4bc09e99816c9fd0f9d7b1,
         owl:Thing,
         skos:Concept,
         dho:Concept,
@@ -6771,6 +8460,20 @@ dho:wording a owl:DatatypeProperty ;
 
 "actively listens to the teaching" owl:sameAs "actively listens to the teaching" .
 
+"enlightenment in this very life" owl:sameAs "enlightenment in this very life" .
+
+"great benefit" owl:sameAs "great benefit" .
+
+"great ease" owl:sameAs "great ease" .
+
+"great inspiration" owl:sameAs "great inspiration" .
+
+"great sanctuary from the yoke" owl:sameAs "great sanctuary from the yoke" .
+
+"non-return" owl:sameAs "non-return" .
+
+"together with the awakening factors" owl:sameAs "together with the awakening factors" .
+
 "when you apply the mind irrationally" owl:sameAs "when you apply the mind irrationally" .
 
 "when you apply the mind rationally" owl:sameAs "when you apply the mind rationally" .
@@ -6804,6 +8507,8 @@ dho:wording a owl:DatatypeProperty ;
 "awakening"@en owl:sameAs "awakening"@en .
 
 "dullness and drowsiness,"@en owl:sameAs "dullness and drowsiness,"@en .
+
+"equanimity"@en owl:sameAs "equanimity"@en .
 
 "ill will,"@en owl:sameAs "ill will,"@en .
 
@@ -6843,6 +8548,8 @@ dho:wording a owl:DatatypeProperty ;
 
 "Yonisomanasikārasampannassetaṁ, bhikkhave, bhikkhuno pāṭikaṅkhaṁ—satta bojjhaṅge bhāvessati, satta bojjhaṅge bahulīkarissati."@pi owl:sameAs "Yonisomanasikārasampannassetaṁ, bhikkhave, bhikkhuno pāṭikaṅkhaṁ—satta bojjhaṅge bhāvessati, satta bojjhaṅge bahulīkarissati."@pi .
 
+"upekkhā"@pi owl:sameAs "upekkhā"@pi .
+
 "upekkhāsambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ vipulaṁ mahaggataṁ appamāṇaṁ abyāpajjaṁ."@pi owl:sameAs "upekkhāsambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ vipulaṁ mahaggataṁ appamāṇaṁ abyāpajjaṁ."@pi .
 
 "“Idha, udāyi, bhikkhu satisambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ vipulaṁ mahaggataṁ appamāṇaṁ abyāpajjaṁ."@pi owl:sameAs "“Idha, udāyi, bhikkhu satisambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ vipulaṁ mahaggataṁ appamāṇaṁ abyāpajjaṁ."@pi .
@@ -6858,7 +8565,7 @@ xsd:integer a rdfs:Datatype ;
 
 owl:Restriction owl:sameAs owl:Restriction .
 
-dho:Bliss a _:n84898a60b0564218b5ef94022101919fb3,
+dho:Bliss a _:n81de2727617a4bc09e99816c9fd0f9d7b3,
         owl:Thing,
         skos:Concept,
         dho:Concept,
@@ -6893,7 +8600,7 @@ dho:GoodFriendship a owl:Thing,
     skos:prefLabel "good friendship"@en,
         "kalyāṇamittatā"@pi .
 
-dho:KeepingConnected a _:n84898a60b0564218b5ef94022101919fb3,
+dho:KeepingConnected a _:n81de2727617a4bc09e99816c9fd0f9d7b3,
         owl:Thing,
         skos:Concept,
         dho:Concept,
@@ -6908,7 +8615,7 @@ dho:KeepingConnected a _:n84898a60b0564218b5ef94022101919fb3,
         "伺"@zh ;
     dho:memberOf dho:FirstJhanaFactors .
 
-dho:PlacingTheMind a _:n84898a60b0564218b5ef94022101919fb3,
+dho:PlacingTheMind a _:n81de2727617a4bc09e99816c9fd0f9d7b3,
         owl:Thing,
         skos:Concept,
         dho:Concept,
@@ -6949,6 +8656,22 @@ dho:hasMember a owl:ObjectProperty ;
         dho:hasMember ;
     owl:equivalentProperty dho:hasMember ;
     owl:sameAs dho:hasMember .
+
+dho:o-metta a owl:Thing,
+        skos:Concept,
+        dho:AttentionObject,
+        dho:Concept ;
+    owl:sameAs dho:o-metta ;
+    skos:prefLabel "the heart's release by love"@en,
+        "mettācetovimutti"@pi .
+
+dho:o-ugliness a owl:Thing,
+        skos:Concept,
+        dho:AttentionObject,
+        dho:Concept ;
+    owl:sameAs dho:o-ugliness ;
+    skos:prefLabel "the feature of ugliness"@en,
+        "asubhanimitta"@pi .
 
 dho:p-sn46.24-1.1 a owl:Thing,
         dho:Passage ;
@@ -7286,6 +9009,8 @@ dho:t-sn46.7 a owl:Thing,
 
 "Satisambojjhaṅgo …pe… upekkhāsambojjhaṅgo."@pi owl:sameAs "Satisambojjhaṅgo …pe… upekkhāsambojjhaṅgo."@pi .
 
+"nirodhasaññāsahagataṁ upekkhāsambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ."@pi owl:sameAs "nirodhasaññāsahagataṁ upekkhāsambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ."@pi .
+
 dho:BasisOf a owl:Thing,
         dho:ConditionRelation ;
     rdfs:label "is the basis of"@en ;
@@ -7308,7 +9033,7 @@ dho:Extinguishment a owl:Thing,
         "nibbāna"@pi,
         "涅槃"@zh .
 
-dho:Unification a _:n84898a60b0564218b5ef94022101919fb3,
+dho:Unification a _:n81de2727617a4bc09e99816c9fd0f9d7b3,
         owl:Thing,
         skos:Concept,
         dho:Concept,
@@ -7481,6 +9206,15 @@ dho:p-sn46.5-1.7 a owl:Thing,
     dho:textPi "upekkhāsambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ."@pi ;
     dho:url "https://suttacentral.net/sn46.5/en/sujato#sn46.5:1.7"^^xsd:anyURI .
 
+dho:p-sn46.57-1.5 a owl:Thing,
+        dho:Passage ;
+    owl:sameAs dho:p-sn46.57-1.5 ;
+    dho:inText dho:t-sn46.57 ;
+    dho:segment "sn46.57:1.5" ;
+    dho:textEn "and equanimity, which rely on seclusion, fading away, and cessation, and ripen as letting go."@en ;
+    dho:textPi "aṭṭhikasaññāsahagataṁ upekkhāsambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ."@pi ;
+    dho:url "https://suttacentral.net/sn46.57/en/sujato#sn46.57:1.5"^^xsd:anyURI .
+
 dho:p-sn46.7-2.3 a owl:Thing,
         dho:Passage ;
     owl:sameAs dho:p-sn46.7-2.3 ;
@@ -7489,6 +9223,51 @@ dho:p-sn46.7-2.3 a owl:Thing,
     dho:textEn "and equanimity, which rely on seclusion, fading away, and cessation, and ripen as letting go."@en ;
     dho:textPi "upekkhāsambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ."@pi ;
     dho:url "https://suttacentral.net/sn46.7/en/sujato#sn46.7:2.3"^^xsd:anyURI .
+
+dho:p-sn46.76-1.4 a owl:Thing,
+        dho:Passage ;
+    owl:sameAs dho:p-sn46.76-1.4 ;
+    dho:inText dho:t-sn46.76 ;
+    dho:segment "sn46.76:1.4" ;
+    dho:textEn "and equanimity, which rely on seclusion, fading away, and cessation, and ripen as letting go."@en ;
+    dho:textPi "nirodhasaññāsahagataṁ upekkhāsambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ."@pi ;
+    dho:url "https://suttacentral.net/sn46.76/en/sujato#sn46.76:1.4"^^xsd:anyURI .
+
+dho:p-sn46.76-2.6 a owl:Thing,
+        dho:Passage ;
+    owl:sameAs dho:p-sn46.76-2.6 ;
+    dho:inText dho:t-sn46.76 ;
+    dho:segment "sn46.76:2.6" ;
+    dho:textEn "and equanimity, which rely on seclusion, fading away, and cessation, and ripen as letting go."@en ;
+    dho:textPi "nirodhasaññāsahagataṁ upekkhāsambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ."@pi ;
+    dho:url "https://suttacentral.net/sn46.76/en/sujato#sn46.76:2.6"^^xsd:anyURI .
+
+dho:p-sn46.76-3.1 a owl:Thing,
+        dho:Passage ;
+    owl:sameAs dho:p-sn46.76-3.1 ;
+    dho:inText dho:t-sn46.76 ;
+    dho:segment "sn46.76:3.1" ;
+    dho:textEn "“The perception of cessation, when developed and cultivated, leads to great benefit … great sanctuary from the yoke … great inspiration … great ease."@en ;
+    dho:textPi "Nirodhasaññā, bhikkhave, bhāvitā bahulīkatā mahato atthāya saṁvattati, mahato yogakkhemāya saṁvattati, mahato saṁvegāya saṁvattati, mahato phāsuvihārāya saṁvattati."@pi ;
+    dho:url "https://suttacentral.net/sn46.76/en/sujato#sn46.76:3.1"^^xsd:anyURI .
+
+dho:p-sn46.76-3.4 a owl:Thing,
+        dho:Passage ;
+    owl:sameAs dho:p-sn46.76-3.4 ;
+    dho:inText dho:t-sn46.76 ;
+    dho:segment "sn46.76:3.4" ;
+    dho:textEn "and equanimity, which rely on seclusion, fading away, and cessation, and ripen as letting go."@en ;
+    dho:textPi "nirodhasaññāsahagataṁ upekkhāsambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ."@pi ;
+    dho:url "https://suttacentral.net/sn46.76/en/sujato#sn46.76:3.4"^^xsd:anyURI .
+
+dho:p-sn46.76-3.5 a owl:Thing,
+        dho:Passage ;
+    owl:sameAs dho:p-sn46.76-3.5 ;
+    dho:inText dho:t-sn46.76 ;
+    dho:segment "sn46.76:3.5" ;
+    dho:textEn "That’s how the perception of cessation, when developed and cultivated, leads to great benefit … great sanctuary from the yoke … great inspiration … great ease.”"@en ;
+    dho:textPi "Evaṁ bhāvitā kho, bhikkhave, nirodhasaññā evaṁ bahulīkatā mahato atthāya saṁvattati, mahato yogakkhemāya saṁvattati, mahato saṁvegāya saṁvattati, mahato phāsuvihārāya saṁvattatī”ti."@pi ;
+    dho:url "https://suttacentral.net/sn46.76/en/sujato#sn46.76:3.5"^^xsd:anyURI .
 
 dho:t-sn46.21 a owl:Thing,
         dho:Text ;
@@ -7554,6 +9333,8 @@ dho:t-sn46.5 a owl:Thing,
 
 "It is the seven awakening factors."@en owl:sameAs "It is the seven awakening factors."@en .
 
+"One of two results: enlightenment in this very life or, if there is residue left behind, non-return."@en owl:sameAs "One of two results: enlightenment in this very life or, if there is residue left behind, non-return."@en .
+
 "There are qualities that are skillful and unskillful, blameworthy and blameless, inferior and superior, and those with a portion of dark or bright."@en owl:sameAs "There are qualities that are skillful and unskillful, blameworthy and blameless, inferior and superior, and those with a portion of dark or bright."@en .
 
 "There are the elements of initiative, persistence, and exertion."@en owl:sameAs "There are the elements of initiative, persistence, and exertion."@en .
@@ -7587,7 +9368,7 @@ dho:FiveCorruptionsOfMind a owl:Thing,
         dho:RestlessnessRemorse,
         dho:SensualDesire .
 
-dho:Mindfulness a _:n84898a60b0564218b5ef94022101919fb2,
+dho:Mindfulness a _:n81de2727617a4bc09e99816c9fd0f9d7b2,
         owl:Thing,
         skos:Concept,
         dho:AwakeningFactor,
@@ -7707,20 +9488,6 @@ dho:Definition a owl:Class ;
     owl:equivalentClass dho:Definition ;
     owl:sameAs dho:Definition .
 
-dho:Equanimity a _:n84898a60b0564218b5ef94022101919fb2,
-        owl:Thing,
-        skos:Concept,
-        dho:AwakeningFactor,
-        dho:Concept,
-        dho:MentalQuality ;
-    owl:sameAs dho:Equanimity ;
-    skos:altLabel "upekkhāsambojjhaṅga"@pi,
-        "捨覺支"@zh ;
-    skos:prefLabel "equanimity"@en,
-        "upekkhā"@pi,
-        "捨"@zh ;
-    dho:memberOf dho:SevenAwakeningFactors .
-
 dho:FiveHigherFetters a owl:Thing,
         skos:Collection,
         dho:NumberedList ;
@@ -7793,7 +9560,7 @@ dho:SourceLayer a owl:Class ;
     owl:equivalentClass dho:SourceLayer ;
     owl:sameAs dho:SourceLayer .
 
-dho:Tranquility a _:n84898a60b0564218b5ef94022101919fb2,
+dho:Tranquility a _:n81de2727617a4bc09e99816c9fd0f9d7b2,
         owl:Thing,
         skos:Concept,
         dho:AwakeningFactor,
@@ -7859,7 +9626,7 @@ dho:AttentionMode a owl:Class ;
     owl:equivalentClass dho:AttentionMode ;
     owl:sameAs dho:AttentionMode .
 
-dho:Energy a _:n84898a60b0564218b5ef94022101919fb2,
+dho:Energy a _:n81de2727617a4bc09e99816c9fd0f9d7b2,
         owl:Thing,
         skos:Concept,
         dho:AwakeningFactor,
@@ -7896,7 +9663,7 @@ dho:FirstJhanaFactors a owl:Thing,
         dho:Rapture,
         dho:Unification .
 
-dho:IllWill a _:n84898a60b0564218b5ef94022101919fb1,
+dho:IllWill a _:n81de2727617a4bc09e99816c9fd0f9d7b1,
         owl:Thing,
         skos:Concept,
         dho:Concept,
@@ -7915,7 +9682,7 @@ dho:IllWill a _:n84898a60b0564218b5ef94022101919fb1,
     dho:memberOf dho:FiveCorruptionsOfMind,
         dho:FiveHindrances .
 
-dho:Immersion a _:n84898a60b0564218b5ef94022101919fb2,
+dho:Immersion a _:n81de2727617a4bc09e99816c9fd0f9d7b2,
         owl:Thing,
         skos:Concept,
         dho:AwakeningFactor,
@@ -7930,7 +9697,7 @@ dho:Immersion a _:n84898a60b0564218b5ef94022101919fb2,
         "定"@zh ;
     dho:memberOf dho:SevenAwakeningFactors .
 
-dho:Investigation a _:n84898a60b0564218b5ef94022101919fb2,
+dho:Investigation a _:n81de2727617a4bc09e99816c9fd0f9d7b2,
         owl:Thing,
         skos:Concept,
         dho:AwakeningFactor,
@@ -7967,7 +9734,7 @@ dho:ReviewStatus a owl:Class ;
     owl:equivalentClass dho:ReviewStatus ;
     owl:sameAs dho:ReviewStatus .
 
-dho:SensualDesire a _:n84898a60b0564218b5ef94022101919fb1,
+dho:SensualDesire a _:n81de2727617a4bc09e99816c9fd0f9d7b1,
         owl:Thing,
         skos:Concept,
         dho:Concept,
@@ -8046,6 +9813,14 @@ dho:t-sn46.28 a owl:Thing,
 
 "Tattha amanasikārabahulīkāro—"@pi owl:sameAs "Tattha amanasikārabahulīkāro—"@pi .
 
+dho:CessationPerception a owl:Thing,
+        skos:Concept,
+        dho:Concept,
+        dho:Practice ;
+    owl:sameAs dho:CessationPerception ;
+    skos:prefLabel "the perception of cessation"@en,
+        "nirodhasaññā"@pi .
+
 dho:CoverageStatus a owl:Class ;
     rdfs:label "Coverage status"@en ;
     rdfs:subClassOf owl:Thing,
@@ -8053,12 +9828,34 @@ dho:CoverageStatus a owl:Class ;
     owl:equivalentClass dho:CoverageStatus ;
     owl:sameAs dho:CoverageStatus .
 
+dho:Equanimity a _:n81de2727617a4bc09e99816c9fd0f9d7b2,
+        owl:Thing,
+        skos:Concept,
+        dho:AwakeningFactor,
+        dho:Concept,
+        dho:MentalQuality ;
+    owl:sameAs dho:Equanimity ;
+    skos:altLabel "upekkhāsambojjhaṅga"@pi,
+        "捨覺支"@zh ;
+    skos:prefLabel "equanimity"@en,
+        "upekkhā"@pi,
+        "捨"@zh ;
+    dho:memberOf dho:SevenAwakeningFactors .
+
 dho:Result a owl:Class ;
     rdfs:label "Result"@en ;
     rdfs:subClassOf owl:Thing,
         dho:Result ;
     owl:equivalentClass dho:Result ;
     owl:sameAs dho:Result .
+
+dho:SkeletonPerception a owl:Thing,
+        skos:Concept,
+        dho:Concept,
+        dho:Practice ;
+    owl:sameAs dho:SkeletonPerception ;
+    skos:prefLabel "the perception of a skeleton"@en,
+        "aṭṭhikasaññā"@pi .
 
 "2026-11-13"^^xsd:date a xsd:date ;
     owl:sameAs "2026-11-13"^^xsd:date .
@@ -8073,7 +9870,7 @@ dho:Derivation a owl:Class ;
     owl:equivalentClass dho:Derivation ;
     owl:sameAs dho:Derivation .
 
-dho:Doubt a _:n84898a60b0564218b5ef94022101919fb1,
+dho:Doubt a _:n81de2727617a4bc09e99816c9fd0f9d7b1,
         owl:Thing,
         skos:Concept,
         dho:Concept,
@@ -8096,8 +9893,8 @@ dho:Effect a owl:Class ;
     owl:equivalentClass dho:Effect ;
     owl:sameAs dho:Effect .
 
-dho:Rapture a _:n84898a60b0564218b5ef94022101919fb2,
-        _:n84898a60b0564218b5ef94022101919fb3,
+dho:Rapture a _:n81de2727617a4bc09e99816c9fd0f9d7b2,
+        _:n81de2727617a4bc09e99816c9fd0f9d7b3,
         owl:Thing,
         skos:Concept,
         dho:AwakeningFactor,
@@ -8143,12 +9940,19 @@ dho:t-sn46.53 a owl:Thing,
     dho:review dho:Unreviewed ;
     dho:url "https://suttacentral.net/sn46.53/en/sujato"^^xsd:anyURI .
 
-dho:ConditionRelation a owl:Class ;
-    rdfs:label "Condition relation"@en ;
-    rdfs:subClassOf owl:Thing,
-        dho:ConditionRelation ;
-    owl:equivalentClass dho:ConditionRelation ;
-    owl:sameAs dho:ConditionRelation .
+dho:t-sn46.57 a owl:Thing,
+        dho:Text ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
+    owl:sameAs dho:t-sn46.57 ;
+    skos:prefLabel "SN 46.57 Aṭṭhikamahapphalasutta — A Skeleton"@en ;
+    dho:coverage dho:FullyEncoded ;
+    dho:encodes "The perception of a skeleton is very fruitful and beneficial (1.2, 1.6), developed together with the awakening factors (1.4), with the stock formula (1.5); one of two results, enlightenment in this very life or non-return; great benefit, great sanctuary from the yoke, great inspiration and great ease." ;
+    dho:layer dho:SuttaLayer ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:review dho:Unreviewed ;
+    dho:url "https://suttacentral.net/sn46.57/en/sujato"^^xsd:anyURI .
 
 dho:Opposition a owl:Class ;
     rdfs:label "Opposition"@en ;
@@ -8177,7 +9981,14 @@ dho:t-sn46.37 a owl:Thing,
 
 skos:Collection owl:sameAs skos:Collection .
 
-dho:DullnessDrowsiness a _:n84898a60b0564218b5ef94022101919fb1,
+dho:ConditionRelation a owl:Class ;
+    rdfs:label "Condition relation"@en ;
+    rdfs:subClassOf owl:Thing,
+        dho:ConditionRelation ;
+    owl:equivalentClass dho:ConditionRelation ;
+    owl:sameAs dho:ConditionRelation .
+
+dho:DullnessDrowsiness a _:n81de2727617a4bc09e99816c9fd0f9d7b1,
         owl:Thing,
         skos:Concept,
         dho:Concept,
@@ -8202,17 +10013,17 @@ dho:JhanaFactor a owl:Class ;
     rdfs:label "Factor of the first jhāna"@en,
         "jhānaṅga"@pi,
         "禪支"@zh ;
-    rdfs:subClassOf _:n84898a60b0564218b5ef94022101919fb3,
+    rdfs:subClassOf _:n81de2727617a4bc09e99816c9fd0f9d7b3,
         owl:Thing,
         skos:Concept,
         dho:Concept,
         dho:JhanaFactor,
         dho:MentalQuality ;
-    owl:equivalentClass _:n84898a60b0564218b5ef94022101919fb3,
+    owl:equivalentClass _:n81de2727617a4bc09e99816c9fd0f9d7b3,
         dho:JhanaFactor ;
     owl:sameAs dho:JhanaFactor .
 
-dho:RestlessnessRemorse a _:n84898a60b0564218b5ef94022101919fb1,
+dho:RestlessnessRemorse a _:n81de2727617a4bc09e99816c9fd0f9d7b1,
         owl:Thing,
         skos:Concept,
         dho:Concept,
@@ -8235,13 +10046,11 @@ dho:RestlessnessRemorse a _:n84898a60b0564218b5ef94022101919fb1,
     dho:memberOf dho:FiveCorruptionsOfMind,
         dho:FiveHindrances .
 
-"and equanimity, which rely on seclusion, fading away, and cessation, and ripen as letting go."@en owl:sameAs "and equanimity, which rely on seclusion, fading away, and cessation, and ripen as letting go."@en .
-
 dho:Hindrance a owl:Class ;
     rdfs:label "Hindrance"@en,
         "nīvaraṇa"@pi,
         "蓋"@zh ;
-    rdfs:subClassOf _:n84898a60b0564218b5ef94022101919fb1,
+    rdfs:subClassOf _:n81de2727617a4bc09e99816c9fd0f9d7b1,
         owl:Thing,
         skos:Concept,
         dho:Concept,
@@ -8249,7 +10058,7 @@ dho:Hindrance a owl:Class ;
         dho:MentalQuality ;
     owl:disjointWith dho:AwakeningFactor,
         dho:JhanaFactor ;
-    owl:equivalentClass _:n84898a60b0564218b5ef94022101919fb1,
+    owl:equivalentClass _:n81de2727617a4bc09e99816c9fd0f9d7b1,
         dho:Hindrance ;
     owl:sameAs dho:Hindrance .
 
@@ -8261,6 +10070,20 @@ dho:NumberedList a owl:Class ;
         dho:NumberedList ;
     owl:equivalentClass dho:NumberedList ;
     owl:sameAs dho:NumberedList .
+
+dho:t-sn46.76 a owl:Thing,
+        dho:Text ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
+    owl:sameAs dho:t-sn46.76 ;
+    skos:prefLabel "SN 46.76 Nirodhasutta — Cessation"@en ;
+    dho:coverage dho:FullyEncoded ;
+    dho:encodes "The perception of cessation is very fruitful and beneficial (1.2, 1.6), developed together with the awakening factors (1.4), with the stock formula (1.5); one of two results, enlightenment in this very life or non-return; great benefit, great sanctuary from the yoke, great inspiration and great ease." ;
+    dho:layer dho:SuttaLayer ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:review dho:Unreviewed ;
+    dho:url "https://suttacentral.net/sn46.76/en/sujato"^^xsd:anyURI .
 
 "upekkhāsambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ."@pi owl:sameAs "upekkhāsambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ."@pi .
 
@@ -8305,12 +10128,6 @@ dho:FiveHindrances a owl:Thing,
 
 owl:DatatypeProperty owl:sameAs owl:DatatypeProperty .
 
-dho:FullyEncoded a owl:Thing,
-        dho:CoverageStatus ;
-    rdfs:label "fully encoded"@en ;
-    rdfs:comment "Every teaching claim in the text is modelled."@en ;
-    owl:sameAs dho:FullyEncoded .
-
 "Frequent rational application of mind to them"@en owl:sameAs "Frequent rational application of mind to them"@en .
 
 "The awakening factors of mindfulness, investigation of principles, energy, rapture, tranquility, immersion, and equanimity."@en owl:sameAs "The awakening factors of mindfulness, investigation of principles, energy, rapture, tranquility, immersion, and equanimity."@en .
@@ -8319,15 +10136,23 @@ dho:AwakeningFactor a owl:Class ;
     rdfs:label "Awakening factor"@en,
         "bojjhaṅga"@pi,
         "覺支"@zh ;
-    rdfs:subClassOf _:n84898a60b0564218b5ef94022101919fb2,
+    rdfs:subClassOf _:n81de2727617a4bc09e99816c9fd0f9d7b2,
         owl:Thing,
         skos:Concept,
         dho:AwakeningFactor,
         dho:Concept,
         dho:MentalQuality ;
-    owl:equivalentClass _:n84898a60b0564218b5ef94022101919fb2,
+    owl:equivalentClass _:n81de2727617a4bc09e99816c9fd0f9d7b2,
         dho:AwakeningFactor ;
     owl:sameAs dho:AwakeningFactor .
+
+"and equanimity, which rely on seclusion, fading away, and cessation, and ripen as letting go."@en owl:sameAs "and equanimity, which rely on seclusion, fading away, and cessation, and ripen as letting go."@en .
+
+dho:FullyEncoded a owl:Thing,
+        dho:CoverageStatus ;
+    rdfs:label "fully encoded"@en ;
+    rdfs:comment "Every teaching claim in the text is modelled."@en ;
+    owl:sameAs dho:FullyEncoded .
 
 dho:RationalAttention a owl:Thing,
         dho:AttentionMode ;
@@ -8335,6 +10160,10 @@ dho:RationalAttention a owl:Thing,
         "yoniso manasikāra"@pi,
         "如理作意"@zh ;
     owl:sameAs dho:RationalAttention .
+
+"The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14)." owl:sameAs "The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14)." .
+
+"Abbreviated in the Pali (…pe…), which names only the practice; 'very fruitful and beneficial' is the translation's expansion, following SN 46.57. Recorded as stated, not expanded further (D14)."@en owl:sameAs "Abbreviated in the Pali (…pe…), which names only the practice; 'very fruitful and beneficial' is the translation's expansion, following SN 46.57. Recorded as stated, not expanded further (D14)."@en .
 
 dho:AttentionObject a owl:Class ;
     rdfs:label "Object of attention"@en ;
@@ -8356,16 +10185,23 @@ dho:TimingAdvice a owl:Class ;
 
 "Tattha yonisomanasikārabahulīkāro—"@pi owl:sameAs "Tattha yonisomanasikārabahulīkāro—"@pi .
 
-dho:LeadsTo a owl:Thing,
-        dho:Effect ;
-    rdfs:label "leads to"@en ;
-    owl:sameAs dho:LeadsTo .
+dho:GreatFruit a owl:Thing,
+        skos:Concept,
+        dho:Concept ;
+    owl:sameAs dho:GreatFruit ;
+    skos:prefLabel "great fruit and benefit"@en,
+        "mahapphala mahānisaṁsa"@pi .
 
-dho:PartlyEncoded a owl:Thing,
-        dho:CoverageStatus ;
-    rdfs:label "partly encoded"@en ;
-    rdfs:comment "Some sections are modelled; dho:leftOut says what is not."@en ;
-    owl:sameAs dho:PartlyEncoded .
+"very fruitful and beneficial" owl:sameAs "very fruitful and beneficial" .
+
+dho:Practice a owl:Class ;
+    rdfs:label "Practice"@en ;
+    rdfs:subClassOf owl:Thing,
+        skos:Concept,
+        dho:Concept,
+        dho:Practice ;
+    owl:equivalentClass dho:Practice ;
+    owl:sameAs dho:Practice .
 
 dho:t-sn46.2 a owl:Thing,
         dho:Text ;
@@ -8404,17 +10240,6 @@ dho:Nutriment a owl:Class ;
 
 owl:ObjectProperty owl:sameAs owl:ObjectProperty .
 
-dho:Outcome a owl:Class ;
-    rdfs:label "Outcome"@en ;
-    rdfs:comment "A sutta's statement that something leads to, or works against, something else."@en ;
-    rdfs:subClassOf owl:Thing,
-        dho:Outcome ;
-    owl:equivalentClass dho:Outcome ;
-    owl:sameAs dho:Outcome .
-
-"2026-11-14"^^xsd:date a xsd:date ;
-    owl:sameAs "2026-11-14"^^xsd:date .
-
 rdfs:Datatype owl:sameAs rdfs:Datatype .
 
 dho:MentalQuality a owl:Class ;
@@ -8427,22 +10252,11 @@ dho:MentalQuality a owl:Class ;
     owl:equivalentClass dho:MentalQuality ;
     owl:sameAs dho:MentalQuality .
 
-<https://creativecommons.org/publicdomain/zero/1.0/> owl:sameAs <https://creativecommons.org/publicdomain/zero/1.0/> .
-
-dho:SuttaLayer a owl:Thing,
-        dho:SourceLayer ;
-    rdfs:label "Sutta (early discourses)"@en ;
-    owl:sameAs dho:SuttaLayer .
-
-"SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" owl:sameAs "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" .
-
-"project owner with Claude (AI assistant), from SuttaCentral's text" owl:sameAs "project owner with Claude (AI assistant), from SuttaCentral's text" .
-
-dho:Unreviewed a owl:Thing,
-        dho:ReviewStatus ;
-    rdfs:label "not yet reviewed"@en ;
-    rdfs:comment "Modelled by the editor (with an AI assistant); nobody else has checked it."@en ;
-    owl:sameAs dho:Unreviewed .
+dho:PartlyEncoded a owl:Thing,
+        dho:CoverageStatus ;
+    rdfs:label "partly encoded"@en ;
+    rdfs:comment "Some sections are modelled; dho:leftOut says what is not."@en ;
+    owl:sameAs dho:PartlyEncoded .
 
 dho:SevenAwakeningFactors a owl:Thing,
         skos:Collection,
@@ -8482,7 +10296,9 @@ dho:SevenAwakeningFactors a owl:Thing,
         dho:p-sn46.41-1.6,
         dho:p-sn46.43-1.7,
         dho:p-sn46.5-1.6,
-        dho:p-sn46.51-1.2 ;
+        dho:p-sn46.51-1.2,
+        dho:p-sn46.57-1.4,
+        dho:p-sn46.76-1.3 ;
     dho:expectedCount 7 ;
     dho:hasMember dho:Energy,
         dho:Equanimity,
@@ -8506,6 +10322,39 @@ dho:t-sn46.51 a owl:Thing,
     dho:modelledOn "2026-11-13"^^xsd:date ;
     dho:review dho:Unreviewed ;
     dho:url "https://suttacentral.net/sn46.51/en/sujato"^^xsd:anyURI .
+
+dho:LeadsTo a owl:Thing,
+        dho:Effect ;
+    rdfs:label "leads to"@en ;
+    owl:sameAs dho:LeadsTo .
+
+"2026-11-14"^^xsd:date a xsd:date ;
+    owl:sameAs "2026-11-14"^^xsd:date .
+
+<https://creativecommons.org/publicdomain/zero/1.0/> owl:sameAs <https://creativecommons.org/publicdomain/zero/1.0/> .
+
+dho:SuttaLayer a owl:Thing,
+        dho:SourceLayer ;
+    rdfs:label "Sutta (early discourses)"@en ;
+    owl:sameAs dho:SuttaLayer .
+
+"SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" owl:sameAs "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" .
+
+"project owner with Claude (AI assistant), from SuttaCentral's text" owl:sameAs "project owner with Claude (AI assistant), from SuttaCentral's text" .
+
+dho:Unreviewed a owl:Thing,
+        dho:ReviewStatus ;
+    rdfs:label "not yet reviewed"@en ;
+    rdfs:comment "Modelled by the editor (with an AI assistant); nobody else has checked it."@en ;
+    owl:sameAs dho:Unreviewed .
+
+dho:Outcome a owl:Class ;
+    rdfs:label "Outcome"@en ;
+    rdfs:comment "A sutta's statement that something leads to, or works against, something else."@en ;
+    rdfs:subClassOf owl:Thing,
+        dho:Outcome ;
+    owl:equivalentClass dho:Outcome ;
+    owl:sameAs dho:Outcome .
 
 dho:Text a owl:Class ;
     rdfs:label "Text"@en ;
@@ -8542,46 +10391,46 @@ owl:Thing a owl:Class ;
     owl:equivalentClass owl:Thing ;
     owl:sameAs owl:Thing .
 
-_:n991a834f180f4fe2b950624cac747cd7b1 a ontolex:Form ;
-    owl:sameAs _:n991a834f180f4fe2b950624cac747cd7b1 ;
+_:nb63e3c45a95843178b3dcfb834416567b1 a ontolex:Form ;
+    owl:sameAs _:nb63e3c45a95843178b3dcfb834416567b1 ;
     ontolex:writtenRep "dhamma"@pi .
 
-_:n84898a60b0564218b5ef94022101919fb3 a owl:Restriction ;
-    rdfs:subClassOf _:n84898a60b0564218b5ef94022101919fb3,
+_:n81de2727617a4bc09e99816c9fd0f9d7b3 a owl:Restriction ;
+    rdfs:subClassOf _:n81de2727617a4bc09e99816c9fd0f9d7b3,
         owl:Thing,
         skos:Concept,
         dho:Concept,
         dho:JhanaFactor,
         dho:MentalQuality ;
-    owl:equivalentClass _:n84898a60b0564218b5ef94022101919fb3,
+    owl:equivalentClass _:n81de2727617a4bc09e99816c9fd0f9d7b3,
         dho:JhanaFactor ;
     owl:hasValue dho:FirstJhanaFactors ;
     owl:onProperty dho:memberOf ;
-    owl:sameAs _:n84898a60b0564218b5ef94022101919fb3 .
+    owl:sameAs _:n81de2727617a4bc09e99816c9fd0f9d7b3 .
 
-_:n84898a60b0564218b5ef94022101919fb1 a owl:Restriction ;
-    rdfs:subClassOf _:n84898a60b0564218b5ef94022101919fb1,
+_:n81de2727617a4bc09e99816c9fd0f9d7b1 a owl:Restriction ;
+    rdfs:subClassOf _:n81de2727617a4bc09e99816c9fd0f9d7b1,
         owl:Thing,
         skos:Concept,
         dho:Concept,
         dho:Hindrance,
         dho:MentalQuality ;
-    owl:equivalentClass _:n84898a60b0564218b5ef94022101919fb1,
+    owl:equivalentClass _:n81de2727617a4bc09e99816c9fd0f9d7b1,
         dho:Hindrance ;
     owl:hasValue dho:FiveHindrances ;
     owl:onProperty dho:memberOf ;
-    owl:sameAs _:n84898a60b0564218b5ef94022101919fb1 .
+    owl:sameAs _:n81de2727617a4bc09e99816c9fd0f9d7b1 .
 
-_:n84898a60b0564218b5ef94022101919fb2 a owl:Restriction ;
-    rdfs:subClassOf _:n84898a60b0564218b5ef94022101919fb2,
+_:n81de2727617a4bc09e99816c9fd0f9d7b2 a owl:Restriction ;
+    rdfs:subClassOf _:n81de2727617a4bc09e99816c9fd0f9d7b2,
         owl:Thing,
         skos:Concept,
         dho:AwakeningFactor,
         dho:Concept,
         dho:MentalQuality ;
-    owl:equivalentClass _:n84898a60b0564218b5ef94022101919fb2,
+    owl:equivalentClass _:n81de2727617a4bc09e99816c9fd0f9d7b2,
         dho:AwakeningFactor ;
     owl:hasValue dho:SevenAwakeningFactors ;
     owl:onProperty dho:memberOf ;
-    owl:sameAs _:n84898a60b0564218b5ef94022101919fb2 .
+    owl:sameAs _:n81de2727617a4bc09e99816c9fd0f9d7b2 .
 

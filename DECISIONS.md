@@ -4,6 +4,8 @@ An ontology can't be neutral: every structural choice is a position. This file r
 
 This is a personal project with no institutional vetting. The ground rule follows from that.
 
+**Who decided.** D1–D12 were proposed by Claude (the AI assistant) and accepted by the project owner in conversation; D13 was approved explicitly by the owner. From D14 on, the owner asked Claude to decide and log, and to revisit everything in a later pass, because the owner doesn't claim more expertise than the assistant. Each of those entries says so. **The [revisit list](#revisit-list) at the end collects every judgment call worth a second look.**
+
 ## D1. Citation first: the text makes the claims, not us
 
 Every doctrinal link cites the passage that states it, down to the SuttaCentral segment (e.g. `sn46.51:16.2`). Quotes are generated from SuttaCentral's CC0 data by `scripts/build_passages.py` and never typed by hand. SHACL fails the build if a claim has no citation (S4, S6) or cites a passage that doesn't exist (S8).
@@ -95,6 +97,28 @@ Choices made along the way:
 
 *Correction (2026-11-14).* v0.1 labelled the kinds of attention "frequent rational application of mind" (*yonisomanasikārabahulīkāra*). The frequency belongs to how SN 46.51 phrases its statements, not to the kind of attention; SN 46.24 says only "when you apply the mind rationally". The concepts are now *yoniso manasikāra*, *ayoniso manasikāra* and *amanasikāra*. SN 46.51's statements are still displayed with "frequent", in Sujato's words.
 
+## D14. Abbreviated suttas: record what is stated, don't expand
+
+*Decided by Claude; the owner deferred. Revisit.*
+
+Many suttas are abbreviated in the Pali itself (*peyyāla*, marked …pe…): SN 46.58–75 give only the practice, "*Puḷavakasaññā, bhikkhave, bhāvitā …pe…*", and leave the rest to be filled in from SN 46.57. The tradition expects the reader to expand them, and the translation fills in "very fruitful and beneficial".
+
+The ontology records only what the translation's visible line states. Each such claim carries a note saying the Pali is abbreviated and the outcome is the translation's expansion. The rest of the expansion (developing the practice together with the awakening factors, the two results, great benefit and so on) is not added, and each coverage record says so. Expanding elisions is reconstruction, and reconstruction is where an editor's mistakes would hide.
+
+## D15. Practices are their own concepts, even when they share a word
+
+*Decided by Claude; the owner deferred. Revisit.*
+
+The twenty meditation subjects of SN 46.57–76 (the perception of a skeleton, love, mindfulness of breathing, the perception of impermanence, …) are `dho:Practice` concepts. Each is "very fruitful and beneficial" when developed, an outcome (D13). SN 46.57 and 46.76, given in full, add that the practice is developed *together with* the awakening factors (*sahagata*, a new condition relation "accompany the development of") and lists further results: one of two, enlightenment in this very life or non-return; great benefit, sanctuary from the yoke, inspiration and ease.
+
+Where a practice shares a word with something already in the ontology, it stays a separate concept with an editor's link, not a merge:
+
+- *upekkhā* in SN 46.65 sits in the run love, compassion, rejoicing, equanimity (SN 46.62–65), a different role from the awakening factor of equanimity;
+- *mettā* in SN 46.62 vs SN 46.51's object "the heart's release by love" (*mettācetovimutti*);
+- *asubhasaññā* in SN 46.67 vs SN 46.51's object "the feature of ugliness" (*asubhanimitta*).
+
+Chinese labels for the practices are left out for now: the standard term for *muditā* (喜) is already the label for rapture (*pīti*), and a wrong guess would mislead search.
+
 ## Patterns not modelled yet
 
 These kinds of teaching have come up and been left out (each logged in `data/coverage.ttl`) until a pattern is agreed:
@@ -108,3 +132,24 @@ These kinds of teaching have come up and been left out (each logged in `data/cov
 - **Correspondences:** "whoever has missed out on the seven awakening factors has missed out on the noble path" (SN 46.18).
 
 See `triage/sn46.md` for which suttas each pattern unlocks.
+
+## Revisit list
+
+Judgment calls a second pass should look at first. Each was made deliberately and logged, but each is where a qualified reader would most likely disagree.
+
+| # | Call | Where | Why it might be wrong |
+|---|---|---|---|
+| 1 | Immersion (*samādhi*) and unification (*cittekaggatā*) are separate concepts joined by MN 44's definition, not merged | D4 | MN 44 states they are the same; some would merge |
+| 2 | *bodhi* and *sambodhi* are separate concepts, editor-linked | D13 | Sujato renders both "awakening"; the difference may not matter |
+| 3 | *virāga* is one concept for "fading away" and "dispassion" | D13 | The two contexts may intend different senses |
+| 4 | Mapping wordings onto controlled effects and relations ("bring … to" → leads to; "block wisdom" → weakens) | D13 | Each mapping is editorial; the verbatim wording is kept, but queries use the mapping |
+| 5 | The fetter *uddhacca* is separate from the hindrance *uddhaccakukkucca* | D13 | Commentaries may treat them as one quality in different lists |
+| 6 | Abbreviated suttas are not expanded | D14 | The tradition expects expansion; we may under-represent SN 46.58–75 |
+| 7 | *upekkhā*, *mettā* and *asubha* as practices are separate from the same words elsewhere | D15 | They may be the same qualities in different settings |
+| 8 | Mind states (*līnaṁ cittaṁ*, *uddhataṁ cittaṁ*) are separate from the hindrances | D6 | The link may be closer than an editor's link suggests |
+| 9 | Search words (hidden labels) such as "monkey mind", "sleepy" | D9 | Everyday words are guesses at what people mean |
+| 10 | The Visuddhimagga pairings of jhāna factors and hindrances, cited from memory | D5, `data/commentary-vism.ttl` | Not checked against an edition |
+| 11 | What each coverage record says was left out | `data/coverage.ttl` | Written by Claude after reading each text; a reader may see claims we missed |
+
+A revisit pass can work text by text: every claim cites its segments, every text has a coverage record with the date it was modelled, and the review view (`viz/review.html`) shows each text beside the claims resting on it.
+

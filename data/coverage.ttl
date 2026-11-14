@@ -334,3 +334,161 @@ dho:t-sn46.130
     dho:modelledOn "2026-11-14"^^xsd:date ;
     dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
     dho:encodes "The five higher fetters as a list (1.2, 1.4); the seven factors should be developed for their direct knowledge, complete understanding, finishing and giving up (1.6, 1.12); and the formula variants: culminating in the removal of greed, hate and delusion (1.9), having freedom from death as their culmination (1.10), and inclining to extinguishment (1.11). The rest of the sutta is abbreviated in the source." .
+
+dho:t-sn46.57
+    dho:coverage dho:FullyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "The perception of a skeleton is very fruitful and beneficial (1.2, 1.6), developed together with the awakening factors (1.4), with the stock formula (1.5); one of two results, enlightenment in this very life or non-return; great benefit, great sanctuary from the yoke, great inspiration and great ease." .
+
+dho:t-sn46.58
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "The one line given: the perception of a worm-infested corpse (Pali: puḷavakasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." ;
+    dho:leftOut "The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14)." .
+
+dho:t-sn46.59
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "The one line given: the perception of a livid corpse (Pali: vinīlakasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." ;
+    dho:leftOut "The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14)." .
+
+dho:t-sn46.60
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "The one line given: the perception of a split open corpse (Pali: vicchiddakasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." ;
+    dho:leftOut "The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14)." .
+
+dho:t-sn46.61
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "The one line given: the perception of a bloated corpse (Pali: uddhumātakasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." ;
+    dho:leftOut "The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14)." .
+
+dho:t-sn46.62
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "The one line given: love (Pali: mettā), developed and cultivated, is very fruitful and beneficial (1.1)." ;
+    dho:leftOut "The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14)." .
+
+dho:t-sn46.63
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "The one line given: compassion (Pali: karuṇā), developed and cultivated, is very fruitful and beneficial (1.1)." ;
+    dho:leftOut "The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14)." .
+
+dho:t-sn46.64
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "The one line given: rejoicing (Pali: muditā), developed and cultivated, is very fruitful and beneficial (1.1)." ;
+    dho:leftOut "The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14)." .
+
+dho:t-sn46.65
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "The one line given: equanimity (Pali: upekkhā), developed and cultivated, is very fruitful and beneficial (1.1)." ;
+    dho:leftOut "The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14)." .
+
+dho:t-sn46.66
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "The one line given: mindfulness of breathing (Pali: ānāpānassati), developed and cultivated, is very fruitful and beneficial (1.1)." ;
+    dho:leftOut "The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14)." .
+
+dho:t-sn46.67
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "The one line given: the perception of ugliness (Pali: asubhasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." ;
+    dho:leftOut "The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14)." .
+
+dho:t-sn46.68
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "The one line given: the perception of death (Pali: maraṇasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." ;
+    dho:leftOut "The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14)." .
+
+dho:t-sn46.69
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "The one line given: the perception of repulsiveness of food (Pali: āhāre paṭikūlasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." ;
+    dho:leftOut "The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14)." .
+
+dho:t-sn46.70
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "The one line given: the perception of dissatisfaction with the whole world (Pali: sabbaloke anabhiratisaññā), developed and cultivated, is very fruitful and beneficial (1.1)." ;
+    dho:leftOut "The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14)." .
+
+dho:t-sn46.71
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "The one line given: the perception of impermanence (Pali: aniccasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." ;
+    dho:leftOut "The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14)." .
+
+dho:t-sn46.72
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "The one line given: the perception of suffering in impermanence (Pali: anicce dukkhasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." ;
+    dho:leftOut "The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14)." .
+
+dho:t-sn46.73
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "The one line given: the perception of not-self in suffering (Pali: dukkhe anattasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." ;
+    dho:leftOut "The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14)." .
+
+dho:t-sn46.74
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "The one line given: the perception of giving up (Pali: pahānasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." ;
+    dho:leftOut "The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14)." .
+
+dho:t-sn46.75
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "The one line given: the perception of dispassion (Pali: virāgasaññā), developed and cultivated, is very fruitful and beneficial (1.1)." ;
+    dho:leftOut "The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14)." .
+
+dho:t-sn46.76
+    dho:coverage dho:FullyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "The perception of cessation is very fruitful and beneficial (1.2, 1.6), developed together with the awakening factors (1.4), with the stock formula (1.5); one of two results, enlightenment in this very life or non-return; great benefit, great sanctuary from the yoke, great inspiration and great ease." .
