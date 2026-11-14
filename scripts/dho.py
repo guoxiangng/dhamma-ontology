@@ -158,6 +158,28 @@ def nutriment_attention(g: Graph, att) -> str:
     return NUTRIMENT_ATTENTION.get(str(att).rsplit("#", 1)[-1], label(g, att))
 
 
+RESULT_VERBS = {"Arises": ("arises", "arise"), "DoesNotArise": ("doesn't arise, or ends", "don't arise, or end"),
+                "IsAbsent": ("is absent", "are absent"), "IsFullyDeveloped": ("is fully developed", "are fully developed")}
+
+
+def result_phrase(g: Graph, node, res) -> str:
+    """'rapture arises' / 'the five hindrances arise': a when-then result as a sentence."""
+    one, many = RESULT_VERBS.get(str(res).rsplit("#", 1)[-1], (label(g, res), label(g, res)))
+    return f"{label(g, node)} {many if DHO.NumberedList in set(g.objects(node, RDF.type)) else one}"
+
+
+def claim_sentences(g: Graph, claim) -> tuple[str, str]:
+    """For an outcome or condition: (as read from its subject, as read from its target)."""
+    if (claim, RDF.type, DHO.Outcome) in g:
+        eff, of, to = g.value(claim, DHO.effect), g.value(claim, DHO.of), g.value(claim, DHO.to)
+        return f"{label(g, eff)} {label(g, to)}", f"{label(g, of)} → {label(g, eff)} this"
+    cond, target = g.value(claim, DHO.condition), g.value(claim, DHO.conditioned)
+    rel, res = g.value(claim, DHO.relation), g.value(claim, DHO.result)
+    if res is not None:
+        return f"when this is present, {result_phrase(g, target, res)}", f"when {label(g, cond)} is present, {result_phrase(g, target, res)}"
+    return f"{label(g, rel)} {label(g, target)}", f"{label(g, cond)} → {label(g, rel)} this"
+
+
 # --------------------------------------------------------------------------- resolve
 
 def resolve(g: Graph, text: str) -> list[URIRef]:
@@ -237,12 +259,9 @@ def card(g: Graph, c) -> list[str]:
     subjects = [c] + sorted(g.objects(c, DHO.memberOf))
 
     rows = []  # (subject the claim is about: this node or one of its lists, section, text, claim)
-    verbs = {"Arises": ("arises", "arise"), "DoesNotArise": ("doesn't arise, or ends", "don't arise, or end"),
-             "IsAbsent": ("is absent", "are absent"), "IsFullyDeveloped": ("is fully developed", "are fully developed")}
 
     def happens(node, res):
-        one, many = verbs.get(str(res).rsplit("#", 1)[-1], (label(g, res), label(g, res)))
-        return f"{label(g, node)} {many if DHO.NumberedList in set(g.objects(node, RDF.type)) else one}"
+        return result_phrase(g, node, res)
 
     for s in subjects:
         for o in g.subjects(DHO.of, s):

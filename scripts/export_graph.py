@@ -128,17 +128,21 @@ def export() -> dict:
 
     for o in g.subjects(RDF.type, DHO.Outcome):
         eff = g.value(o, DHO.effect)
+        say_out, say_in = dho.claim_sentences(g, o)
         edge(g.value(o, DHO.of), g.value(o, DHO.to), label(g, eff), "sutta", cites(g, o),
              f"“{g.value(o, DHO.wording)}”", group="outcomes", effect=lid(eff),
              inv={"LeadsTo": "reached through", "DoesNotLeadTo": "not reached through",
-                  "Strengthens": "strengthened by", "Weakens": "weakened by"}.get(lid(eff), "from"))
+                  "Strengthens": "strengthened by", "Weakens": "weakened by"}.get(lid(eff), "from"),
+             say_out=say_out, say_in=say_in)
 
     for k in g.subjects(RDF.type, DHO.Condition):
         rel, res = g.value(k, DHO.relation), g.value(k, DHO.result)
         rel_label = label(g, rel) + (f" ({label(g, res)})" if res else "")
         note = f"“{g.value(k, DHO.wording)}”" + (f" {g.value(k, SKOS.note)}" if g.value(k, SKOS.note) else "")
+        say_out, say_in = dho.claim_sentences(g, k)
         edge(g.value(k, DHO.condition), g.value(k, DHO.conditioned), rel_label, "sutta", cites(g, k), note,
-             group="conditions", inv="conditioned by" + (f" ({label(g, res)})" if res else ""))
+             group="conditions", inv="conditioned by" + (f" ({label(g, res)})" if res else ""),
+             say_out=say_out, say_in=say_in)
 
     for d in g.subjects(RDF.type, DHO.Definition):
         edge(g.value(d, DHO.defines), g.value(d, DHO["as"]), "is defined as", "sutta", cites(g, d))

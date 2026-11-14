@@ -1888,84 +1888,131 @@
  "edges": [
   {
    "id": "e0",
-   "source": "ExtinguishedWithoutEffort",
-   "target": "SevenFruits",
+   "source": "Unification",
+   "target": "FirstJhanaFactors",
    "rel": "member of",
    "layer": "sutta",
    "cites": [
-    "p-sn46.3-9.1",
-    "p-sn46.3-9.10",
-    "p-sn46.3-9.2"
+    "p-mn43-19.2",
+    "p-mn43-19.3"
    ],
    "note": null
   },
   {
    "id": "e1",
-   "source": "EarlyEnlightenment",
-   "target": "SevenFruits",
+   "source": "PlacingTheMind",
+   "target": "FirstJhanaFactors",
    "rel": "member of",
    "layer": "sutta",
    "cites": [
-    "p-sn46.3-9.1",
-    "p-sn46.3-9.10",
-    "p-sn46.3-9.2"
+    "p-mn43-19.2",
+    "p-mn43-19.3"
    ],
    "note": null
   },
   {
    "id": "e2",
-   "source": "ExtinguishedWithEffort",
-   "target": "SevenFruits",
+   "source": "Rapture",
+   "target": "FirstJhanaFactors",
    "rel": "member of",
    "layer": "sutta",
    "cites": [
-    "p-sn46.3-9.1",
-    "p-sn46.3-9.10",
-    "p-sn46.3-9.2"
+    "p-mn43-19.2",
+    "p-mn43-19.3"
    ],
    "note": null
   },
   {
    "id": "e3",
-   "source": "EnlightenmentAtDeath",
-   "target": "SevenFruits",
+   "source": "Bliss",
+   "target": "FirstJhanaFactors",
    "rel": "member of",
    "layer": "sutta",
    "cites": [
-    "p-sn46.3-9.1",
-    "p-sn46.3-9.10",
-    "p-sn46.3-9.2"
+    "p-mn43-19.2",
+    "p-mn43-19.3"
    ],
    "note": null
   },
   {
    "id": "e4",
-   "source": "ExtinguishedBetweenLives",
-   "target": "SevenFruits",
+   "source": "KeepingConnected",
+   "target": "FirstJhanaFactors",
    "rel": "member of",
    "layer": "sutta",
    "cites": [
-    "p-sn46.3-9.1",
-    "p-sn46.3-9.10",
-    "p-sn46.3-9.2"
+    "p-mn43-19.2",
+    "p-mn43-19.3"
    ],
    "note": null
   },
   {
    "id": "e5",
-   "source": "ExtinguishedUponLanding",
-   "target": "SevenFruits",
+   "source": "SensualDesire",
+   "target": "FiveCorruptionsOfMind",
    "rel": "member of",
    "layer": "sutta",
    "cites": [
-    "p-sn46.3-9.1",
-    "p-sn46.3-9.10",
-    "p-sn46.3-9.2"
+    "p-sn46.33-2.1",
+    "p-sn46.33-2.3",
+    "p-sn46.33-2.4"
    ],
    "note": null
   },
   {
    "id": "e6",
+   "source": "RestlessnessRemorse",
+   "target": "FiveCorruptionsOfMind",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.33-2.1",
+    "p-sn46.33-2.3",
+    "p-sn46.33-2.4"
+   ],
+   "note": null
+  },
+  {
+   "id": "e7",
+   "source": "IllWill",
+   "target": "FiveCorruptionsOfMind",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.33-2.1",
+    "p-sn46.33-2.3",
+    "p-sn46.33-2.4"
+   ],
+   "note": null
+  },
+  {
+   "id": "e8",
+   "source": "Doubt",
+   "target": "FiveCorruptionsOfMind",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.33-2.1",
+    "p-sn46.33-2.3",
+    "p-sn46.33-2.4"
+   ],
+   "note": null
+  },
+  {
+   "id": "e9",
+   "source": "DullnessDrowsiness",
+   "target": "FiveCorruptionsOfMind",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.33-2.1",
+    "p-sn46.33-2.3",
+    "p-sn46.33-2.4"
+   ],
+   "note": null
+  },
+  {
+   "id": "e10",
    "source": "HeadingUpstream",
    "target": "SevenFruits",
    "rel": "member of",
@@ -1978,35 +2025,85 @@
    "note": null
   },
   {
-   "id": "e7",
-   "source": "IllWill",
-   "target": "FiveHindrances",
+   "id": "e11",
+   "source": "ExtinguishedWithoutEffort",
+   "target": "SevenFruits",
    "rel": "member of",
    "layer": "sutta",
    "cites": [
-    "p-mn43-20.3",
-    "p-sn46.24-1.1",
-    "p-sn46.24-1.2",
-    "p-sn46.24-1.3",
-    "p-sn46.24-1.4",
-    "p-sn46.24-1.5",
-    "p-sn46.35-1.1",
-    "p-sn46.37-1.1",
-    "p-sn46.37-1.3",
-    "p-sn46.37-1.4",
-    "p-sn46.37-1.5",
-    "p-sn46.37-1.6",
-    "p-sn46.37-1.7",
-    "p-sn46.38-2.1",
-    "p-sn46.38-2.2",
-    "p-sn46.40-1.1",
-    "p-sn46.40-1.3",
-    "p-sn46.51-1.2"
+    "p-sn46.3-9.1",
+    "p-sn46.3-9.10",
+    "p-sn46.3-9.2"
    ],
    "note": null
   },
   {
-   "id": "e8",
+   "id": "e12",
+   "source": "ExtinguishedWithEffort",
+   "target": "SevenFruits",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.3-9.1",
+    "p-sn46.3-9.10",
+    "p-sn46.3-9.2"
+   ],
+   "note": null
+  },
+  {
+   "id": "e13",
+   "source": "ExtinguishedBetweenLives",
+   "target": "SevenFruits",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.3-9.1",
+    "p-sn46.3-9.10",
+    "p-sn46.3-9.2"
+   ],
+   "note": null
+  },
+  {
+   "id": "e14",
+   "source": "EarlyEnlightenment",
+   "target": "SevenFruits",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.3-9.1",
+    "p-sn46.3-9.10",
+    "p-sn46.3-9.2"
+   ],
+   "note": null
+  },
+  {
+   "id": "e15",
+   "source": "ExtinguishedUponLanding",
+   "target": "SevenFruits",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.3-9.1",
+    "p-sn46.3-9.10",
+    "p-sn46.3-9.2"
+   ],
+   "note": null
+  },
+  {
+   "id": "e16",
+   "source": "EnlightenmentAtDeath",
+   "target": "SevenFruits",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.3-9.1",
+    "p-sn46.3-9.10",
+    "p-sn46.3-9.2"
+   ],
+   "note": null
+  },
+  {
+   "id": "e17",
    "source": "Doubt",
    "target": "FiveHindrances",
    "rel": "member of",
@@ -2034,7 +2131,7 @@
    "note": null
   },
   {
-   "id": "e9",
+   "id": "e18",
    "source": "RestlessnessRemorse",
    "target": "FiveHindrances",
    "rel": "member of",
@@ -2062,7 +2159,35 @@
    "note": null
   },
   {
-   "id": "e10",
+   "id": "e19",
+   "source": "IllWill",
+   "target": "FiveHindrances",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-mn43-20.3",
+    "p-sn46.24-1.1",
+    "p-sn46.24-1.2",
+    "p-sn46.24-1.3",
+    "p-sn46.24-1.4",
+    "p-sn46.24-1.5",
+    "p-sn46.35-1.1",
+    "p-sn46.37-1.1",
+    "p-sn46.37-1.3",
+    "p-sn46.37-1.4",
+    "p-sn46.37-1.5",
+    "p-sn46.37-1.6",
+    "p-sn46.37-1.7",
+    "p-sn46.38-2.1",
+    "p-sn46.38-2.2",
+    "p-sn46.40-1.1",
+    "p-sn46.40-1.3",
+    "p-sn46.51-1.2"
+   ],
+   "note": null
+  },
+  {
+   "id": "e20",
    "source": "SensualDesire",
    "target": "FiveHindrances",
    "rel": "member of",
@@ -2090,7 +2215,7 @@
    "note": null
   },
   {
-   "id": "e11",
+   "id": "e21",
    "source": "DullnessDrowsiness",
    "target": "FiveHindrances",
    "rel": "member of",
@@ -2118,8 +2243,68 @@
    "note": null
   },
   {
-   "id": "e12",
-   "source": "Mindfulness",
+   "id": "e22",
+   "source": "Restlessness",
+   "target": "FiveHigherFetters",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.130-1.2",
+    "p-sn46.130-1.4"
+   ],
+   "note": null
+  },
+  {
+   "id": "e23",
+   "source": "Ignorance",
+   "target": "FiveHigherFetters",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.130-1.2",
+    "p-sn46.130-1.4"
+   ],
+   "note": null
+  },
+  {
+   "id": "e24",
+   "source": "DesireForFormRebirth",
+   "target": "FiveHigherFetters",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.130-1.2",
+    "p-sn46.130-1.4"
+   ],
+   "note": null
+  },
+  {
+   "id": "e25",
+   "source": "Conceit",
+   "target": "FiveHigherFetters",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.130-1.2",
+    "p-sn46.130-1.4"
+   ],
+   "note": null
+  },
+  {
+   "id": "e26",
+   "source": "DesireForFormlessRebirth",
+   "target": "FiveHigherFetters",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.130-1.2",
+    "p-sn46.130-1.4"
+   ],
+   "note": null
+  },
+  {
+   "id": "e27",
+   "source": "Rapture",
    "target": "SevenAwakeningFactors",
    "rel": "member of",
    "layer": "sutta",
@@ -2154,79 +2339,7 @@
    "note": null
   },
   {
-   "id": "e13",
-   "source": "Immersion",
-   "target": "SevenAwakeningFactors",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-sn46.17-1.3",
-    "p-sn46.19-1.3",
-    "p-sn46.20-1.3",
-    "p-sn46.21-2.4",
-    "p-sn46.22-1.1",
-    "p-sn46.22-1.3",
-    "p-sn46.22-1.4",
-    "p-sn46.25-1.7",
-    "p-sn46.26-1.6",
-    "p-sn46.27-1.6",
-    "p-sn46.28-1.7",
-    "p-sn46.29-1.3",
-    "p-sn46.34-1.3",
-    "p-sn46.36-1.3",
-    "p-sn46.37-2.1",
-    "p-sn46.37-2.3",
-    "p-sn46.38-3.1",
-    "p-sn46.38-3.2",
-    "p-sn46.40-2.1",
-    "p-sn46.40-2.3",
-    "p-sn46.41-1.6",
-    "p-sn46.43-1.7",
-    "p-sn46.51-1.2",
-    "p-sn46.57-1.4",
-    "p-sn46.5-1.6",
-    "p-sn46.76-1.3"
-   ],
-   "note": null
-  },
-  {
-   "id": "e14",
-   "source": "Energy",
-   "target": "SevenAwakeningFactors",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-sn46.17-1.3",
-    "p-sn46.19-1.3",
-    "p-sn46.20-1.3",
-    "p-sn46.21-2.4",
-    "p-sn46.22-1.1",
-    "p-sn46.22-1.3",
-    "p-sn46.22-1.4",
-    "p-sn46.25-1.7",
-    "p-sn46.26-1.6",
-    "p-sn46.27-1.6",
-    "p-sn46.28-1.7",
-    "p-sn46.29-1.3",
-    "p-sn46.34-1.3",
-    "p-sn46.36-1.3",
-    "p-sn46.37-2.1",
-    "p-sn46.37-2.3",
-    "p-sn46.38-3.1",
-    "p-sn46.38-3.2",
-    "p-sn46.40-2.1",
-    "p-sn46.40-2.3",
-    "p-sn46.41-1.6",
-    "p-sn46.43-1.7",
-    "p-sn46.51-1.2",
-    "p-sn46.57-1.4",
-    "p-sn46.5-1.6",
-    "p-sn46.76-1.3"
-   ],
-   "note": null
-  },
-  {
-   "id": "e15",
+   "id": "e28",
    "source": "Tranquility",
    "target": "SevenAwakeningFactors",
    "rel": "member of",
@@ -2262,8 +2375,8 @@
    "note": null
   },
   {
-   "id": "e16",
-   "source": "Equanimity",
+   "id": "e29",
+   "source": "Immersion",
    "target": "SevenAwakeningFactors",
    "rel": "member of",
    "layer": "sutta",
@@ -2298,7 +2411,79 @@
    "note": null
   },
   {
-   "id": "e17",
+   "id": "e30",
+   "source": "Mindfulness",
+   "target": "SevenAwakeningFactors",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.17-1.3",
+    "p-sn46.19-1.3",
+    "p-sn46.20-1.3",
+    "p-sn46.21-2.4",
+    "p-sn46.22-1.1",
+    "p-sn46.22-1.3",
+    "p-sn46.22-1.4",
+    "p-sn46.25-1.7",
+    "p-sn46.26-1.6",
+    "p-sn46.27-1.6",
+    "p-sn46.28-1.7",
+    "p-sn46.29-1.3",
+    "p-sn46.34-1.3",
+    "p-sn46.36-1.3",
+    "p-sn46.37-2.1",
+    "p-sn46.37-2.3",
+    "p-sn46.38-3.1",
+    "p-sn46.38-3.2",
+    "p-sn46.40-2.1",
+    "p-sn46.40-2.3",
+    "p-sn46.41-1.6",
+    "p-sn46.43-1.7",
+    "p-sn46.51-1.2",
+    "p-sn46.57-1.4",
+    "p-sn46.5-1.6",
+    "p-sn46.76-1.3"
+   ],
+   "note": null
+  },
+  {
+   "id": "e31",
+   "source": "Energy",
+   "target": "SevenAwakeningFactors",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.17-1.3",
+    "p-sn46.19-1.3",
+    "p-sn46.20-1.3",
+    "p-sn46.21-2.4",
+    "p-sn46.22-1.1",
+    "p-sn46.22-1.3",
+    "p-sn46.22-1.4",
+    "p-sn46.25-1.7",
+    "p-sn46.26-1.6",
+    "p-sn46.27-1.6",
+    "p-sn46.28-1.7",
+    "p-sn46.29-1.3",
+    "p-sn46.34-1.3",
+    "p-sn46.36-1.3",
+    "p-sn46.37-2.1",
+    "p-sn46.37-2.3",
+    "p-sn46.38-3.1",
+    "p-sn46.38-3.2",
+    "p-sn46.40-2.1",
+    "p-sn46.40-2.3",
+    "p-sn46.41-1.6",
+    "p-sn46.43-1.7",
+    "p-sn46.51-1.2",
+    "p-sn46.57-1.4",
+    "p-sn46.5-1.6",
+    "p-sn46.76-1.3"
+   ],
+   "note": null
+  },
+  {
+   "id": "e32",
    "source": "Investigation",
    "target": "SevenAwakeningFactors",
    "rel": "member of",
@@ -2334,8 +2519,8 @@
    "note": null
   },
   {
-   "id": "e18",
-   "source": "Rapture",
+   "id": "e33",
+   "source": "Equanimity",
    "target": "SevenAwakeningFactors",
    "rel": "member of",
    "layer": "sutta",
@@ -2366,191 +2551,6 @@
     "p-sn46.57-1.4",
     "p-sn46.5-1.6",
     "p-sn46.76-1.3"
-   ],
-   "note": null
-  },
-  {
-   "id": "e19",
-   "source": "Unification",
-   "target": "FirstJhanaFactors",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-mn43-19.2",
-    "p-mn43-19.3"
-   ],
-   "note": null
-  },
-  {
-   "id": "e20",
-   "source": "KeepingConnected",
-   "target": "FirstJhanaFactors",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-mn43-19.2",
-    "p-mn43-19.3"
-   ],
-   "note": null
-  },
-  {
-   "id": "e21",
-   "source": "Rapture",
-   "target": "FirstJhanaFactors",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-mn43-19.2",
-    "p-mn43-19.3"
-   ],
-   "note": null
-  },
-  {
-   "id": "e22",
-   "source": "Bliss",
-   "target": "FirstJhanaFactors",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-mn43-19.2",
-    "p-mn43-19.3"
-   ],
-   "note": null
-  },
-  {
-   "id": "e23",
-   "source": "PlacingTheMind",
-   "target": "FirstJhanaFactors",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-mn43-19.2",
-    "p-mn43-19.3"
-   ],
-   "note": null
-  },
-  {
-   "id": "e24",
-   "source": "DesireForFormlessRebirth",
-   "target": "FiveHigherFetters",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-sn46.130-1.2",
-    "p-sn46.130-1.4"
-   ],
-   "note": null
-  },
-  {
-   "id": "e25",
-   "source": "DesireForFormRebirth",
-   "target": "FiveHigherFetters",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-sn46.130-1.2",
-    "p-sn46.130-1.4"
-   ],
-   "note": null
-  },
-  {
-   "id": "e26",
-   "source": "Ignorance",
-   "target": "FiveHigherFetters",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-sn46.130-1.2",
-    "p-sn46.130-1.4"
-   ],
-   "note": null
-  },
-  {
-   "id": "e27",
-   "source": "Restlessness",
-   "target": "FiveHigherFetters",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-sn46.130-1.2",
-    "p-sn46.130-1.4"
-   ],
-   "note": null
-  },
-  {
-   "id": "e28",
-   "source": "Conceit",
-   "target": "FiveHigherFetters",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-sn46.130-1.2",
-    "p-sn46.130-1.4"
-   ],
-   "note": null
-  },
-  {
-   "id": "e29",
-   "source": "Doubt",
-   "target": "FiveCorruptionsOfMind",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-sn46.33-2.1",
-    "p-sn46.33-2.3",
-    "p-sn46.33-2.4"
-   ],
-   "note": null
-  },
-  {
-   "id": "e30",
-   "source": "IllWill",
-   "target": "FiveCorruptionsOfMind",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-sn46.33-2.1",
-    "p-sn46.33-2.3",
-    "p-sn46.33-2.4"
-   ],
-   "note": null
-  },
-  {
-   "id": "e31",
-   "source": "SensualDesire",
-   "target": "FiveCorruptionsOfMind",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-sn46.33-2.1",
-    "p-sn46.33-2.3",
-    "p-sn46.33-2.4"
-   ],
-   "note": null
-  },
-  {
-   "id": "e32",
-   "source": "RestlessnessRemorse",
-   "target": "FiveCorruptionsOfMind",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-sn46.33-2.1",
-    "p-sn46.33-2.3",
-    "p-sn46.33-2.4"
-   ],
-   "note": null
-  },
-  {
-   "id": "e33",
-   "source": "DullnessDrowsiness",
-   "target": "FiveCorruptionsOfMind",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-sn46.33-2.1",
-    "p-sn46.33-2.3",
-    "p-sn46.33-2.4"
    ],
    "note": null
   },
@@ -2828,7 +2828,9 @@
    "note": "“leads to the ending of craving”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to the ending of craving",
+   "say_in": "the seven awakening factors → leads to this"
   },
   {
    "id": "e56",
@@ -2844,7 +2846,9 @@
    "note": "“leads to the cessation of craving”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to the cessation of craving",
+   "say_in": "the seven awakening factors → leads to this"
   },
   {
    "id": "e57",
@@ -2861,7 +2865,9 @@
    "note": "“lead to penetration”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to penetration",
+   "say_in": "the seven awakening factors → leads to this"
   },
   {
    "id": "e58",
@@ -2876,7 +2882,9 @@
    "note": "“leads to giving up the things that tighten the fetters”",
    "group": "outcomes",
    "effect": "GivesUp",
-   "inv": "from"
+   "inv": "from",
+   "say_out": "leads to giving up the things that tighten the fetters",
+   "say_in": "the seven awakening factors → leads to giving up this"
   },
   {
    "id": "e59",
@@ -2893,7 +2901,9 @@
    "note": "“give up the three discriminations”",
    "group": "outcomes",
    "effect": "GivesUp",
-   "inv": "from"
+   "inv": "from",
+   "say_out": "leads to giving up the three discriminations",
+   "say_in": "the seven awakening factors → leads to giving up this"
   },
   {
    "id": "e60",
@@ -2909,7 +2919,9 @@
    "note": "“path for crushing Māra’s army”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to crushing Māra’s army",
+   "say_in": "the seven awakening factors → leads to this"
   },
   {
    "id": "e61",
@@ -2924,7 +2936,9 @@
    "note": "“for the direct knowledge, complete understanding, finishing, and giving up of these five higher fetters”",
    "group": "outcomes",
    "effect": "GivesUp",
-   "inv": "from"
+   "inv": "from",
+   "say_out": "leads to giving up the five higher fetters",
+   "say_in": "the seven awakening factors → leads to giving up this"
   },
   {
    "id": "e62",
@@ -2938,7 +2952,9 @@
    "note": "“culminate in the removal of greed, hate, and delusion”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to the removal of greed, hate, and delusion",
+   "say_in": "the seven awakening factors → leads to this"
   },
   {
    "id": "e63",
@@ -2952,7 +2968,9 @@
    "note": "“freedom from death as their objective, destination, and culmination”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to freedom from death",
+   "say_in": "the seven awakening factors → leads to this"
   },
   {
    "id": "e64",
@@ -2967,7 +2985,9 @@
    "note": "“they can expect seven fruits and benefits”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to the seven fruits and benefits of the awakening factors",
+   "say_in": "the seven awakening factors → leads to this"
   },
   {
    "id": "e65",
@@ -2984,7 +3004,9 @@
    "note": "“they lead to awakening”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to awakening",
+   "say_in": "the seven awakening factors → leads to this"
   },
   {
    "id": "e66",
@@ -3000,7 +3022,9 @@
    "note": "“slants, slopes, and inclines to extinguishment”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to extinguishment",
+   "say_in": "the seven awakening factors → leads to this"
   },
   {
    "id": "e67",
@@ -3015,7 +3039,9 @@
    "note": "“lead to going from the near shore to the far shore”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to going from the near shore to the far shore",
+   "say_in": "the seven awakening factors → leads to this"
   },
   {
    "id": "e68",
@@ -3030,7 +3056,9 @@
    "note": "“bring one who practices them to the complete ending of suffering”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to the complete ending of suffering",
+   "say_in": "the seven awakening factors → leads to this"
   },
   {
    "id": "e69",
@@ -3045,7 +3073,9 @@
    "note": "“lead solely to”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to disillusionment",
+   "say_in": "the seven awakening factors → leads to this"
   },
   {
    "id": "e70",
@@ -3060,7 +3090,9 @@
    "note": "“lead solely to”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to fading away",
+   "say_in": "the seven awakening factors → leads to this"
   },
   {
    "id": "e71",
@@ -3075,7 +3107,9 @@
    "note": "“lead solely to”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to cessation",
+   "say_in": "the seven awakening factors → leads to this"
   },
   {
    "id": "e72",
@@ -3090,7 +3124,9 @@
    "note": "“lead solely to”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to peace",
+   "say_in": "the seven awakening factors → leads to this"
   },
   {
    "id": "e73",
@@ -3105,7 +3141,9 @@
    "note": "“lead solely to”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to insight",
+   "say_in": "the seven awakening factors → leads to this"
   },
   {
    "id": "e74",
@@ -3120,7 +3158,9 @@
    "note": "“lead solely to”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to awakening",
+   "say_in": "the seven awakening factors → leads to this"
   },
   {
    "id": "e75",
@@ -3135,7 +3175,9 @@
    "note": "“lead solely to”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to extinguishment",
+   "say_in": "the seven awakening factors → leads to this"
   },
   {
    "id": "e76",
@@ -3152,7 +3194,9 @@
    "note": "“lead to the realization of the fruit of knowledge and freedom”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to the realization of the fruit of knowledge and freedom",
+   "say_in": "the seven awakening factors → leads to this"
   },
   {
    "id": "e77",
@@ -3167,7 +3211,9 @@
    "note": "“lead to growth and progress”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to growth and progress",
+   "say_in": "the seven awakening factors → leads to this"
   },
   {
    "id": "e78",
@@ -3182,7 +3228,9 @@
    "note": "“weaken wisdom”",
    "group": "outcomes",
    "effect": "Weakens",
-   "inv": "weakened by"
+   "inv": "weakened by",
+   "say_out": "weakens wisdom",
+   "say_in": "the five hindrances → weakens this"
   },
   {
    "id": "e79",
@@ -3197,7 +3245,9 @@
    "note": "“block wisdom”",
    "group": "outcomes",
    "effect": "Weakens",
-   "inv": "weakened by"
+   "inv": "weakened by",
+   "say_out": "weakens wisdom",
+   "say_in": "the five hindrances → weakens this"
   },
   {
    "id": "e80",
@@ -3212,7 +3262,9 @@
    "note": "“don’t lead to extinguishment”",
    "group": "outcomes",
    "effect": "DoesNotLeadTo",
-   "inv": "not reached through"
+   "inv": "not reached through",
+   "say_out": "does not lead to extinguishment",
+   "say_in": "the five hindrances → does not lead to this"
   },
   {
    "id": "e81",
@@ -3227,7 +3279,9 @@
    "note": "“grow wisdom”",
    "group": "outcomes",
    "effect": "Strengthens",
-   "inv": "strengthened by"
+   "inv": "strengthened by",
+   "say_out": "strengthens wisdom",
+   "say_in": "the seven awakening factors → strengthens this"
   },
   {
    "id": "e82",
@@ -3242,7 +3296,9 @@
    "note": "“lead to extinguishment”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to extinguishment",
+   "say_in": "the seven awakening factors → leads to this"
   },
   {
    "id": "e83",
@@ -3278,7 +3334,9 @@
    "note": "“as letting go”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to letting go",
+   "say_in": "the seven awakening factors → leads to this"
   },
   {
    "id": "e84",
@@ -3293,7 +3351,9 @@
    "note": "“very fruitful and beneficial”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to great fruit and benefit",
+   "say_in": "the perception of a skeleton → leads to this"
   },
   {
    "id": "e85",
@@ -3307,7 +3367,9 @@
    "note": "“very fruitful and beneficial”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to great fruit and benefit",
+   "say_in": "the perception of a worm-infested corpse → leads to this"
   },
   {
    "id": "e86",
@@ -3321,7 +3383,9 @@
    "note": "“very fruitful and beneficial”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to great fruit and benefit",
+   "say_in": "the perception of a livid corpse → leads to this"
   },
   {
    "id": "e87",
@@ -3335,7 +3399,9 @@
    "note": "“very fruitful and beneficial”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to great fruit and benefit",
+   "say_in": "the perception of a split open corpse → leads to this"
   },
   {
    "id": "e88",
@@ -3349,7 +3415,9 @@
    "note": "“very fruitful and beneficial”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to great fruit and benefit",
+   "say_in": "the perception of a bloated corpse → leads to this"
   },
   {
    "id": "e89",
@@ -3363,7 +3431,9 @@
    "note": "“very fruitful and beneficial”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to great fruit and benefit",
+   "say_in": "love → leads to this"
   },
   {
    "id": "e90",
@@ -3377,7 +3447,9 @@
    "note": "“very fruitful and beneficial”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to great fruit and benefit",
+   "say_in": "compassion → leads to this"
   },
   {
    "id": "e91",
@@ -3391,7 +3463,9 @@
    "note": "“very fruitful and beneficial”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to great fruit and benefit",
+   "say_in": "rejoicing → leads to this"
   },
   {
    "id": "e92",
@@ -3405,7 +3479,9 @@
    "note": "“very fruitful and beneficial”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to great fruit and benefit",
+   "say_in": "equanimity → leads to this"
   },
   {
    "id": "e93",
@@ -3419,7 +3495,9 @@
    "note": "“very fruitful and beneficial”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to great fruit and benefit",
+   "say_in": "mindfulness of breathing → leads to this"
   },
   {
    "id": "e94",
@@ -3433,7 +3511,9 @@
    "note": "“very fruitful and beneficial”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to great fruit and benefit",
+   "say_in": "the perception of ugliness → leads to this"
   },
   {
    "id": "e95",
@@ -3447,7 +3527,9 @@
    "note": "“very fruitful and beneficial”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to great fruit and benefit",
+   "say_in": "the perception of death → leads to this"
   },
   {
    "id": "e96",
@@ -3461,7 +3543,9 @@
    "note": "“very fruitful and beneficial”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to great fruit and benefit",
+   "say_in": "the perception of repulsiveness of food → leads to this"
   },
   {
    "id": "e97",
@@ -3475,7 +3559,9 @@
    "note": "“very fruitful and beneficial”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to great fruit and benefit",
+   "say_in": "the perception of dissatisfaction with the whole world → leads to this"
   },
   {
    "id": "e98",
@@ -3489,7 +3575,9 @@
    "note": "“very fruitful and beneficial”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to great fruit and benefit",
+   "say_in": "the perception of impermanence → leads to this"
   },
   {
    "id": "e99",
@@ -3503,7 +3591,9 @@
    "note": "“very fruitful and beneficial”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to great fruit and benefit",
+   "say_in": "the perception of suffering in impermanence → leads to this"
   },
   {
    "id": "e100",
@@ -3517,7 +3607,9 @@
    "note": "“very fruitful and beneficial”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to great fruit and benefit",
+   "say_in": "the perception of not-self in suffering → leads to this"
   },
   {
    "id": "e101",
@@ -3531,7 +3623,9 @@
    "note": "“very fruitful and beneficial”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to great fruit and benefit",
+   "say_in": "the perception of giving up → leads to this"
   },
   {
    "id": "e102",
@@ -3545,7 +3639,9 @@
    "note": "“very fruitful and beneficial”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to great fruit and benefit",
+   "say_in": "the perception of dispassion → leads to this"
   },
   {
    "id": "e103",
@@ -3560,7 +3656,9 @@
    "note": "“very fruitful and beneficial”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to great fruit and benefit",
+   "say_in": "the perception of cessation → leads to this"
   },
   {
    "id": "e104",
@@ -3574,7 +3672,9 @@
    "note": "“enlightenment in this very life”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to enlightenment in this very life",
+   "say_in": "the perception of a skeleton → leads to this"
   },
   {
    "id": "e105",
@@ -3588,7 +3688,9 @@
    "note": "“non-return”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to non-return",
+   "say_in": "the perception of a skeleton → leads to this"
   },
   {
    "id": "e106",
@@ -3602,7 +3704,9 @@
    "note": "“great benefit”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to great benefit",
+   "say_in": "the perception of a skeleton → leads to this"
   },
   {
    "id": "e107",
@@ -3616,7 +3720,9 @@
    "note": "“great sanctuary from the yoke”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to great sanctuary from the yoke",
+   "say_in": "the perception of a skeleton → leads to this"
   },
   {
    "id": "e108",
@@ -3630,7 +3736,9 @@
    "note": "“great inspiration”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to great inspiration",
+   "say_in": "the perception of a skeleton → leads to this"
   },
   {
    "id": "e109",
@@ -3644,7 +3752,9 @@
    "note": "“great ease”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to great ease",
+   "say_in": "the perception of a skeleton → leads to this"
   },
   {
    "id": "e110",
@@ -3661,7 +3771,9 @@
    "note": "“enlightenment in this very life”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to enlightenment in this very life",
+   "say_in": "the perception of cessation → leads to this"
   },
   {
    "id": "e111",
@@ -3678,7 +3790,9 @@
    "note": "“non-return”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to non-return",
+   "say_in": "the perception of cessation → leads to this"
   },
   {
    "id": "e112",
@@ -3693,7 +3807,9 @@
    "note": "“great benefit”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to great benefit",
+   "say_in": "the perception of cessation → leads to this"
   },
   {
    "id": "e113",
@@ -3708,7 +3824,9 @@
    "note": "“great sanctuary from the yoke”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to great sanctuary from the yoke",
+   "say_in": "the perception of cessation → leads to this"
   },
   {
    "id": "e114",
@@ -3723,7 +3841,9 @@
    "note": "“great inspiration”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to great inspiration",
+   "say_in": "the perception of cessation → leads to this"
   },
   {
    "id": "e115",
@@ -3738,7 +3858,9 @@
    "note": "“great ease”",
    "group": "outcomes",
    "effect": "LeadsTo",
-   "inv": "reached through"
+   "inv": "reached through",
+   "say_out": "leads to great ease",
+   "say_in": "the perception of cessation → leads to this"
   },
   {
    "id": "e116",
@@ -3752,7 +3874,9 @@
    ],
    "note": "“as they recollect and think about that teaching”",
    "group": "conditions",
-   "inv": "conditioned by (arise)"
+   "inv": "conditioned by (arise)",
+   "say_out": "when this is present, mindfulness arises",
+   "say_in": "when recollecting and thinking about the teaching is present, mindfulness arises"
   },
   {
    "id": "e117",
@@ -3766,7 +3890,9 @@
    ],
    "note": "“As they live mindfully in this way they investigate, explore, and inquire into that teaching with wisdom”",
    "group": "conditions",
-   "inv": "conditioned by (arise)"
+   "inv": "conditioned by (arise)",
+   "say_out": "when this is present, investigation of principles arises",
+   "say_in": "when mindfulness is present, investigation of principles arises"
   },
   {
    "id": "e118",
@@ -3780,7 +3906,9 @@
    ],
    "note": "“As they investigate principles with wisdom in this way their energy is roused up and unflagging”",
    "group": "conditions",
-   "inv": "conditioned by (arise)"
+   "inv": "conditioned by (arise)",
+   "say_out": "when this is present, energy arises",
+   "say_in": "when investigation of principles is present, energy arises"
   },
   {
    "id": "e119",
@@ -3794,7 +3922,9 @@
    ],
    "note": "“rapture not of the flesh arises”",
    "group": "conditions",
-   "inv": "conditioned by (arise)"
+   "inv": "conditioned by (arise)",
+   "say_out": "when this is present, rapture arises",
+   "say_in": "when energy is present, rapture arises"
   },
   {
    "id": "e120",
@@ -3808,7 +3938,9 @@
    ],
    "note": "“When the mind is full of rapture, the body and mind become tranquil”",
    "group": "conditions",
-   "inv": "conditioned by (arise)"
+   "inv": "conditioned by (arise)",
+   "say_out": "when this is present, tranquility arises",
+   "say_in": "when rapture is present, tranquility arises"
   },
   {
    "id": "e121",
@@ -3822,7 +3954,9 @@
    ],
    "note": "“When the body is tranquil and one feels bliss, the mind becomes immersed in samādhi” Together with bliss: 'when the body is tranquil and one feels bliss'.",
    "group": "conditions",
-   "inv": "conditioned by (arise)"
+   "inv": "conditioned by (arise)",
+   "say_out": "when this is present, immersion arises",
+   "say_in": "when tranquility is present, immersion arises"
   },
   {
    "id": "e122",
@@ -3836,7 +3970,9 @@
    ],
    "note": "“They closely watch over that mind immersed in samādhi”",
    "group": "conditions",
-   "inv": "conditioned by (arise)"
+   "inv": "conditioned by (arise)",
+   "say_out": "when this is present, equanimity arises",
+   "say_in": "when immersion is present, equanimity arises"
   },
   {
    "id": "e123",
@@ -3852,7 +3988,9 @@
    ],
    "note": "“a cause and reason for not knowing and not seeing” When the heart is overcome and mired in each hindrance, without truly knowing and seeing the escape from it. Given in full for sensual desire, abbreviated for the others.",
    "group": "conditions",
-   "inv": "conditioned by"
+   "inv": "conditioned by",
+   "say_out": "is a cause and reason for not knowing and not seeing",
+   "say_in": "the five hindrances → is a cause and reason for this"
   },
   {
    "id": "e124",
@@ -3868,7 +4006,9 @@
    ],
    "note": "“a cause and reason for knowing and seeing” They truly know and see with a mind that has developed each awakening factor. Given in full for mindfulness, abbreviated for the others.",
    "group": "conditions",
-   "inv": "conditioned by"
+   "inv": "conditioned by",
+   "say_out": "is a cause and reason for knowing and seeing",
+   "say_in": "the seven awakening factors → is a cause and reason for this"
   },
   {
    "id": "e125",
@@ -3882,7 +4022,9 @@
    ],
    "note": "“depending on and grounded on ethics”",
    "group": "conditions",
-   "inv": "conditioned by"
+   "inv": "conditioned by",
+   "say_out": "is the basis of the seven awakening factors",
+   "say_in": "ethics → is the basis of this"
   },
   {
    "id": "e126",
@@ -3896,7 +4038,9 @@
    ],
    "note": "“good friendship is the forerunner and harbinger of the arising of the seven awakening factors”",
    "group": "conditions",
-   "inv": "conditioned by"
+   "inv": "conditioned by",
+   "say_out": "is the forerunner of the seven awakening factors",
+   "say_in": "good friendship → is the forerunner of this"
   },
   {
    "id": "e127",
@@ -3910,7 +4054,9 @@
    ],
    "note": "“can expect to develop and cultivate the seven awakening factors”",
    "group": "conditions",
-   "inv": "conditioned by"
+   "inv": "conditioned by",
+   "say_out": "supports the development of the seven awakening factors",
+   "say_in": "good friendship → supports the development of this"
   },
   {
    "id": "e128",
@@ -3923,7 +4069,9 @@
    ],
    "note": "“rational application of mind is the forerunner and harbinger of the arising of the seven awakening factors”",
    "group": "conditions",
-   "inv": "conditioned by"
+   "inv": "conditioned by",
+   "say_out": "is the forerunner of the seven awakening factors",
+   "say_in": "rational application of mind → is the forerunner of this"
   },
   {
    "id": "e129",
@@ -3937,7 +4085,9 @@
    ],
    "note": "“can expect to develop and cultivate the seven awakening factors”",
    "group": "conditions",
-   "inv": "conditioned by"
+   "inv": "conditioned by",
+   "say_out": "supports the development of the seven awakening factors",
+   "say_in": "rational application of mind → supports the development of this"
   },
   {
    "id": "e130",
@@ -3950,7 +4100,9 @@
    ],
    "note": "“rooted in diligence and meet at diligence”",
    "group": "conditions",
-   "inv": "conditioned by"
+   "inv": "conditioned by",
+   "say_out": "is the root of skillful qualities",
+   "say_in": "diligence → is the root of this"
   },
   {
    "id": "e131",
@@ -3963,7 +4115,9 @@
    ],
    "note": "“can expect to develop and cultivate the seven awakening factors”",
    "group": "conditions",
-   "inv": "conditioned by"
+   "inv": "conditioned by",
+   "say_out": "supports the development of the seven awakening factors",
+   "say_in": "diligence → supports the development of this"
   },
   {
    "id": "e132",
@@ -3976,7 +4130,9 @@
    ],
    "note": "“rooted in rational application of mind and meet at rational application of mind”",
    "group": "conditions",
-   "inv": "conditioned by"
+   "inv": "conditioned by",
+   "say_out": "is the root of skillful qualities",
+   "say_in": "rational application of mind → is the root of this"
   },
   {
    "id": "e133",
@@ -3989,7 +4145,9 @@
    ],
    "note": "“gives rise to the seven awakening factors like rational application of mind” Said of interior factors: nothing interior gives rise to them like rational application of mind.",
    "group": "conditions",
-   "inv": "conditioned by"
+   "inv": "conditioned by",
+   "say_out": "gives rise to the seven awakening factors",
+   "say_in": "rational application of mind → gives rise to this"
   },
   {
    "id": "e134",
@@ -4002,7 +4160,9 @@
    ],
    "note": "“gives rise to the seven awakening factors like good friendship” Said of exterior factors: nothing exterior gives rise to them like good friendship.",
    "group": "conditions",
-   "inv": "conditioned by"
+   "inv": "conditioned by",
+   "say_out": "gives rise to the seven awakening factors",
+   "say_in": "good friendship → gives rise to this"
   },
   {
    "id": "e135",
@@ -4017,7 +4177,9 @@
    ],
    "note": "“when you apply the mind irrationally”",
    "group": "conditions",
-   "inv": "conditioned by (arise)"
+   "inv": "conditioned by (arise)",
+   "say_out": "when this is present, the five hindrances arise",
+   "say_in": "when irrational application of mind is present, the five hindrances arise"
   },
   {
    "id": "e136",
@@ -4031,7 +4193,9 @@
    ],
    "note": "“when you apply the mind irrationally”",
    "group": "conditions",
-   "inv": "conditioned by (don't arise, or end if already arisen)"
+   "inv": "conditioned by (don't arise, or end if already arisen)",
+   "say_out": "when this is present, the seven awakening factors don't arise, or end",
+   "say_in": "when irrational application of mind is present, the seven awakening factors don't arise, or end"
   },
   {
    "id": "e137",
@@ -4045,7 +4209,9 @@
    ],
    "note": "“when you apply the mind rationally”",
    "group": "conditions",
-   "inv": "conditioned by (don't arise, or end if already arisen)"
+   "inv": "conditioned by (don't arise, or end if already arisen)",
+   "say_out": "when this is present, the five hindrances don't arise, or end",
+   "say_in": "when rational application of mind is present, the five hindrances don't arise, or end"
   },
   {
    "id": "e138",
@@ -4060,7 +4226,9 @@
    ],
    "note": "“when you apply the mind rationally”",
    "group": "conditions",
-   "inv": "conditioned by (arise)"
+   "inv": "conditioned by (arise)",
+   "say_out": "when this is present, the seven awakening factors arise",
+   "say_in": "when rational application of mind is present, the seven awakening factors arise"
   },
   {
    "id": "e139",
@@ -4074,7 +4242,9 @@
    ],
    "note": "“actively listens to the teaching”",
    "group": "conditions",
-   "inv": "conditioned by (are absent)"
+   "inv": "conditioned by (are absent)",
+   "say_out": "when this is present, the five hindrances are absent",
+   "say_in": "when actively listening to the teaching is present, the five hindrances are absent"
   },
   {
    "id": "e140",
@@ -4088,7 +4258,9 @@
    ],
    "note": "“actively listens to the teaching”",
    "group": "conditions",
-   "inv": "conditioned by (are fully developed)"
+   "inv": "conditioned by (are fully developed)",
+   "say_out": "when this is present, the seven awakening factors are fully developed",
+   "say_in": "when actively listening to the teaching is present, the seven awakening factors are fully developed"
   },
   {
    "id": "e141",
@@ -4123,7 +4295,9 @@
    ],
    "note": "“on seclusion, fading away, and cessation”",
    "group": "conditions",
-   "inv": "conditioned by"
+   "inv": "conditioned by",
+   "say_out": "is the basis of the seven awakening factors",
+   "say_in": "seclusion → is the basis of this"
   },
   {
    "id": "e142",
@@ -4158,7 +4332,9 @@
    ],
    "note": "“on seclusion, fading away, and cessation”",
    "group": "conditions",
-   "inv": "conditioned by"
+   "inv": "conditioned by",
+   "say_out": "is the basis of the seven awakening factors",
+   "say_in": "fading away → is the basis of this"
   },
   {
    "id": "e143",
@@ -4193,7 +4369,9 @@
    ],
    "note": "“on seclusion, fading away, and cessation”",
    "group": "conditions",
-   "inv": "conditioned by"
+   "inv": "conditioned by",
+   "say_out": "is the basis of the seven awakening factors",
+   "say_in": "cessation → is the basis of this"
   },
   {
    "id": "e144",
@@ -4206,7 +4384,9 @@
    ],
    "note": "“together with the awakening factors”",
    "group": "conditions",
-   "inv": "conditioned by"
+   "inv": "conditioned by",
+   "say_out": "accompany the development of the perception of a skeleton",
+   "say_in": "the seven awakening factors → accompany the development of this"
   },
   {
    "id": "e145",
@@ -4219,7 +4399,9 @@
    ],
    "note": "“together with the awakening factors”",
    "group": "conditions",
-   "inv": "conditioned by"
+   "inv": "conditioned by",
+   "say_out": "accompany the development of the perception of cessation",
+   "say_in": "the seven awakening factors → accompany the development of this"
   },
   {
    "id": "e146",

@@ -1,0 +1,248 @@
+<title>Ask the Suttas</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,600;1,400&display=swap">
+<style>
+/* Layout: a single reading column, like a page of a sutta reader. Search sits at the top; each answer
+   is a card whose every line carries its layer and its citation, and every citation opens the text.
+   Same palm-leaf palette as the graph and review views. */
+:root {
+  --bg: #f4f3ee;
+  --surface: #fbfaf6;
+  --fg: #22231f;
+  --muted: #6c6d63;
+  --line: #d9d7cc;
+  --accent: #8a5a12;
+  --hindrance: #b04a35;
+  --factor: #2c7a68;
+  --jhana: #5a5aa6;
+  --derived: #c08a14;
+  --commentary: #8a5aa6;
+  --editor: #8f8f86;
+  --font-ui: "Noto Sans", "Segoe UI", system-ui, sans-serif;
+  --font-text: "Noto Serif", Georgia, "Songti SC", serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #171815; --surface: #1f201c; --fg: #e8e6dc; --muted: #a2a294; --line: #35362f; --accent: #e0a94a;
+    --hindrance: #e07a62; --factor: #5cbfa6; --jhana: #9d9df0; --derived: #f0bb3c; --commentary: #c69be0; --editor: #9a9a90;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #171815; --surface: #1f201c; --fg: #e8e6dc; --muted: #a2a294; --line: #35362f; --accent: #e0a94a;
+  --hindrance: #e07a62; --factor: #5cbfa6; --jhana: #9d9df0; --derived: #f0bb3c; --commentary: #c69be0; --editor: #9a9a90;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg); font-family: var(--font-ui); font-size: 15px; line-height: 1.55;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 28px 48px;
+}
+.wrap { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 18px; }
+header h1 { margin: 0; font-family: var(--font-text); font-weight: 600; font-size: 1.9rem; letter-spacing: -0.01em; text-wrap: balance; }
+header p { margin: 6px 0 0; color: var(--muted); max-width: 62ch; }
+form { display: flex; gap: 8px; }
+#q {
+  flex: 1; min-width: 0; font: inherit; font-size: 1.05rem; color: var(--fg); background: var(--surface);
+  border: 1px solid var(--line); border-radius: 8px; padding: 10px 14px;
+}
+#q:focus-visible, button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+button { font: inherit; cursor: pointer; }
+.go { background: var(--fg); color: var(--bg); border: 0; border-radius: 8px; padding: 0 18px; font-weight: 600; }
+.try { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: 13px; color: var(--muted); }
+.try button { background: transparent; color: var(--fg); border: 1px solid var(--line); border-radius: 999px; padding: 2px 11px; font-size: 13px; }
+.try button:hover { border-color: var(--muted); }
+#status { color: var(--muted); font-size: 14px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; display: flex; flex-direction: column; gap: 10px; }
+.card h2 { margin: 0; font-size: 1.3rem; line-height: 1.3; text-wrap: balance; }
+.names { font-family: var(--font-text); color: var(--muted); }
+.names i { color: var(--fg); }
+.chips { display: flex; flex-wrap: wrap; gap: 5px; }
+.chip { font-size: 12px; border: 1px solid var(--line); color: var(--muted); border-radius: 4px; padding: 0 7px; }
+.chip.k-hindrance { color: var(--hindrance); border-color: var(--hindrance); }
+.chip.k-factor { color: var(--factor); border-color: var(--factor); }
+.chip.k-jhana { color: var(--jhana); border-color: var(--jhana); }
+.small { font-size: 13px; color: var(--muted); }
+h3 { margin: 6px 0 0; font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); font-weight: 600; }
+.claim { border-top: 1px solid var(--line); padding: 7px 0 3px; }
+.claim:first-of-type { border-top: 0; }
+.claim a.node { color: var(--fg); font-weight: 600; text-decoration: none; border-bottom: 1px dotted var(--muted); cursor: pointer; }
+.wording { font-family: var(--font-text); color: var(--muted); font-size: 14px; }
+.layer { font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; border-radius: 3px; padding: 0 5px; margin-left: 6px; white-space: nowrap; }
+.l-sutta { color: var(--fg); background: var(--line); }
+.l-derived { color: var(--surface); background: var(--derived); }
+.l-commentary { color: var(--surface); background: var(--commentary); }
+.l-editor, .l-lexicon { color: var(--surface); background: var(--editor); }
+.cites { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px; }
+.cite { font-size: 12px; font-variant-numeric: tabular-nums; background: transparent; color: var(--accent); border: 1px solid var(--line); border-radius: 3px; padding: 0 6px; }
+.cite[aria-expanded="true"] { border-color: var(--accent); }
+.quote { font-family: var(--font-text); font-size: 14px; margin: 6px 0 2px; padding-left: 10px; border-left: 2px solid var(--line); }
+.quote .pi { display: block; color: var(--muted); font-style: italic; margin-top: 2px; }
+.quote a { font-family: var(--font-ui); font-size: 12px; color: var(--accent); }
+.note { font-size: 13px; color: var(--muted); margin-top: 2px; }
+details { border-top: 1px solid var(--line); padding-top: 6px; }
+summary { cursor: pointer; color: var(--muted); font-size: 13.5px; }
+footer { color: var(--muted); font-size: 13px; border-top: 1px solid var(--line); padding-top: 14px; display: flex; flex-direction: column; gap: 6px; }
+footer a { color: var(--accent); }
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Ask the Suttas</h1>
+    <p>Type a word in English, Pali or Chinese. Every answer comes from the dhamma-ontology and cites the passage that says it. Nothing is generated.</p>
+  </header>
+  <form id="f" role="search">
+    <input id="q" type="search" placeholder="sleepy, monkey mind, nibbāna, 喜 …" autocomplete="off" aria-label="Search the suttas">
+    <button class="go" type="submit">Ask</button>
+  </form>
+  <div class="try" id="try"><span>Try:</span></div>
+  <div id="status" aria-live="polite"></div>
+  <div id="results"></div>
+  <footer>
+    <span id="stats"></span>
+    <span>A personal learning project, modelled with an AI assistant and <b>not yet reviewed</b> by a qualified reader. The quotes are the texts' own words; the structure is our interpretation. For guidance in practice, a teacher and a community remain the place to go.</span>
+    <span><a href="https://github.com/guoxiangng/dhamma-ontology" target="_blank" rel="noopener">Source and method</a> · <a href="graph.html">Graph</a> · <a href="review.html">Review each text</a> · Sutta text: SuttaCentral, Bhikkhu Sujato (CC0)</span>
+  </footer>
+</div>
+
+<script>
+const DATA = /*__DATA__*/null;
+const byId = Object.fromEntries(DATA.nodes.map(n => [n.id, n]));
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+const fold = s => (s || "").normalize("NFKD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/-/g, " ").trim();
+const name = id => byId[id]?.en || byId[id]?.pi || id;
+const LAYER = { sutta: "sutta", derived: "derived · R1", commentary: "commentary · unverified", editor: "editor's link", lexicon: "word sense" };
+const INVERSE = { "member of": "members", counters: "countered by", opposes: "opposed by", "gives up": "given up in",
+  "has the factors": "factors of", "see also": "see also", sense: "a sense of the word", "is defined as": "defines" };
+const ORDER = ["hindrance", "factor", "jhana", "mindstate", "attention", "practice", "concept", "list", "attainment", "word", "sense", "object"];
+const s = DATA.stats;
+document.getElementById("stats").textContent =
+  `${s.concepts} concepts · ${s.links} cited links · ${s.passages} passages · checks: ${s.shacl}`;
+
+// ------------------------------------------------------------------ search
+function search(text) {
+  const q = fold(text);
+  if (q.length < 1) return [];
+  const exact = [], partial = [];
+  for (const n of DATA.nodes) {
+    const names = [n.en, n.pi, n.zh, ...(n.alt || []), ...(n.hidden || [])].filter(Boolean).map(fold);
+    if (names.includes(q)) exact.push(n);
+    else if (q.length > 2 && names.some(x => x.length > 2 && (x.includes(q) || q.includes(x)))) partial.push(n);
+  }
+  const rank = n => { const i = ORDER.indexOf(n.kind); return i < 0 ? 99 : i; };
+  return (exact.length ? exact : partial).sort((a, b) => rank(a) - rank(b) || (a.en || "").localeCompare(b.en || "")).slice(0, 6);
+}
+
+// ------------------------------------------------------------------ claims for one node
+const citeHtml = ids => {
+  if (!ids?.length) return "";
+  const btn = (p, hidden) => `<button class="cite" data-p="${esc(p)}" aria-expanded="false"${hidden ? " hidden" : ""}>${esc(DATA.passages[p]?.segment || p)}</button>`;
+  const more = ids.length > 5 ? `<button class="cite more" type="button">+${ids.length - 4} more</button>` : "";
+  return `<div class="cites">${ids.map((p, i) => btn(p, ids.length > 5 && i >= 4)).join("")}${more}</div><div class="quotes"></div>`;
+};
+const link = id => `<a class="node" data-id="${esc(id)}" href="#">${esc(name(id))}</a>`;
+const tag = l => `<span class="layer l-${esc(l)}">${esc(LAYER[l] || l)}</span>`;
+const row = (html, layer, cites, note) =>
+  `<div class="claim">${html}${tag(layer)}${note ? `<div class="wording">${esc(note)}</div>` : ""}${citeHtml(cites)}</div>`;
+
+function claimsFor(id) {
+  const groups = {};
+  const add = (title, html) => (groups[title] ||= []).push(html);
+  for (const e of DATA.edges) {
+    const out = e.source === id, inc = e.target === id;
+    if (!out && !inc) continue;
+    if (e.group === "outcomes" || e.group === "conditions") {
+      const title = e.group === "outcomes" ? "Outcomes" : "Conditions";
+      add(title, row(esc(out ? e.say_out : e.say_in).replace(/\bthis\b/, "this"), e.layer, e.cites, e.note));
+    } else if (e.timing) {
+      add("Timing (SN 46.53)", row(out ? `${esc(e.rel)} ${link(e.target)}` : `when the mind is ${link(e.source)}: ${esc(e.rel)} this`, e.layer, e.cites));
+    } else {
+      const title = out ? e.rel : (INVERSE[e.rel] || e.rel);
+      add(title, row(link(out ? e.target : e.source), e.layer, e.cites, e.note));
+    }
+  }
+  for (const n of DATA.nutriments) {
+    if (n.target === id) add(n.effect === "fuels" ? "Fuelled by" : "Starved by",
+      row(`${esc(n.attention)} to ${link(n.object)}`, "sutta", n.cites));
+    if (n.object === id) add("As an object of attention",
+      row(`${esc(n.attention)} to this ${esc(n.effect)} ${link(n.target)}`, "sutta", n.cites));
+  }
+  for (const t of DATA.timing) if (!t.state && t.factor === id) add("Timing (SN 46.53)", row(esc(t.timing), "sutta", t.cites));
+  return groups;
+}
+
+function listClaims(listId) {
+  const rows = DATA.edges.filter(e => (e.source === listId || e.target === listId) && (e.group === "outcomes" || e.group === "conditions"));
+  return rows.map(e => row(esc(e.source === listId ? e.say_out : e.say_in), e.layer, e.cites, e.note));
+}
+
+function card(id) {
+  const n = byId[id];
+  const kinds = (n.classes || []).map(c => {
+    const k = c.startsWith("Hindrance") ? "hindrance" : c.startsWith("Awakening") ? "factor" : "jhana";
+    return `<span class="chip k-${k}">${esc(c)}</span>`;
+  }).join("");
+  const other = { mindstate: "mind state", object: "object of attention", list: "numbered list", attainment: "attainment",
+    word: "word", sense: "word sense", concept: "concept", attention: "kind of attention", practice: "practice" }[n.kind];
+  const groups = claimsFor(id);
+  const memberOf = DATA.edges.filter(e => e.rel === "member of" && e.source === id).map(e => e.target);
+  const order = ["member of", "members", "Fuelled by", "Starved by", "Conditions", "Outcomes", "Timing (SN 46.53)", "counters", "countered by", "opposes", "opposed by"];
+  const titles = Object.keys(groups).sort((a, b) => ((order.indexOf(a) + 1) || 99) - ((order.indexOf(b) + 1) || 99));
+  const listParts = memberOf.map(l => {
+    const r = listClaims(l);
+    return r.length ? `<details><summary>${r.length} more claims about ${esc(name(l))} as a whole</summary>${r.join("")}</details>` : "";
+  }).join("");
+  return `<article class="card">
+    <div><h2>${esc(n.en || n.pi)}</h2>
+      <div class="names">${n.pi && n.pi !== n.en ? `<i>${esc(n.pi)}</i>` : ""}${n.zh ? ` · ${esc(n.zh)}` : ""}</div></div>
+    <div class="chips">${kinds}${other ? `<span class="chip">${esc(other)}</span>` : ""}</div>
+    ${n.inferred ? `<div class="small">Its type is worked out by the reasoner from list membership; it is never written by hand.</div>` : ""}
+    ${n.definition ? `<div class="wording">${esc(n.definition)}</div>` : ""}
+    ${titles.map(t => `<div><h3>${esc(t)}</h3>${groups[t].join("")}</div>`).join("") || `<div class="small">No claims yet beyond its labels.</div>`}
+    ${listParts}
+  </article>`;
+}
+
+// ------------------------------------------------------------------ wiring
+const results = document.getElementById("results"), status = document.getElementById("status"), q = document.getElementById("q");
+function ask(text) {
+  q.value = text;
+  const hits = search(text);
+  if (!hits.length) {
+    status.textContent = "";
+    results.innerHTML = `<article class="card"><h2>Not covered yet</h2><div>Nothing in the ontology matches “${esc(text)}”. It covers the hindrances, the awakening factors, the first jhāna and what the Linked Discourses on the Awakening Factors (SN 46) say about them. That is a few dozen suttas, not the whole canon, and anything outside them is left unanswered rather than guessed.</div><div class="small"><a href="https://github.com/guoxiangng/dhamma-ontology/blob/main/COVERAGE.md" target="_blank" rel="noopener">See what is covered</a></div></article>`;
+    return;
+  }
+  status.textContent = `“${text}” matches ${hits.length} concept${hits.length > 1 ? "s" : ""}: ${hits.map(h => h.en || h.pi).join(", ")}`;
+  results.innerHTML = hits.map(h => card(h.id)).join("");
+}
+document.getElementById("f").addEventListener("submit", ev => { ev.preventDefault(); if (q.value.trim()) ask(q.value.trim()); });
+const examples = ["sleepy", "monkey mind", "nibbāna", "good friendship", "rational application", "喜", "skeleton"];
+for (const x of examples) {
+  const b = document.createElement("button"); b.type = "button"; b.textContent = x; b.onclick = () => ask(x);
+  document.getElementById("try").appendChild(b);
+}
+results.addEventListener("click", ev => {
+  const m = ev.target.closest(".cite.more");
+  if (m) { m.parentElement.querySelectorAll(".cite[hidden]").forEach(x => { x.hidden = false; }); m.remove(); return; }
+  const b = ev.target.closest(".cite");
+  if (b) {
+    const box = b.closest(".claim").querySelector(".quotes");
+    const p = DATA.passages[b.dataset.p];
+    const open = b.getAttribute("aria-expanded") === "true";
+    b.setAttribute("aria-expanded", String(!open));
+    const existing = box.querySelector(`[data-q="${b.dataset.p}"]`);
+    if (open && existing) existing.remove();
+    else if (p && !existing) box.insertAdjacentHTML("beforeend",
+      `<div class="quote" data-q="${esc(b.dataset.p)}">“${esc(p.en)}”<span class="pi">${esc(p.pi)}</span>
+       <a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.segment)} on SuttaCentral ↗</a></div>`);
+    return;
+  }
+  const a = ev.target.closest("a.node");
+  if (a) { ev.preventDefault(); ask(name(a.dataset.id)); window.scrollTo({ top: 0, behavior: "smooth" }); }
+});
+ask("monkey mind");
+</script>

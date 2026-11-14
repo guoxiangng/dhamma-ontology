@@ -26,6 +26,7 @@ python eval/check_gold.py                      # gold answers: segments exist, P
 python scripts/coverage.py                     # regenerate COVERAGE.md
 python scripts/export_graph.py                 # rebuild viz/graph.html
 python scripts/export_review.py                # rebuild viz/review.html (segment-by-segment review)
+python scripts/export_ask.py                   # rebuild viz/ask.html (the public ask page)
 python scripts/release.py                      # rebuild dist/
 python scripts/sc.py fetch|show <uid>          # cache / read a SuttaCentral text
 ```
@@ -39,5 +40,5 @@ Behind a TLS-inspecting proxy, set `SSL_CERT_FILE` to your CA bundle before `sc.
 - **Classes like Hindrance are defined by list membership (D3).** Never type them by hand. `dho:counters` comes only from rule R1 (S9).
 - **One claim stated in several suttas is one node with several citations (D12).**
 - **New checks:** a new SHACL shape gets a broken fixture in `tests/broken/` and a line in `tests/test_ontology.py`.
-- **Generated files:** don't edit `data/passages.ttl`, `COVERAGE.md`, `eval/GOLD-REVIEW.md`, `viz/graph.html`, `viz/review.html` or `dist/`. Regenerate them.
+- **Generated files:** don't edit `data/passages.ttl`, `COVERAGE.md`, `eval/GOLD-REVIEW.md`, `viz/ask.html`, `viz/graph.html`, `viz/review.html` or `dist/`. Regenerate them.
 - **Eval:** new questions start `status = "draft"`. Only the maintainer marks them `checked`.

@@ -6,6 +6,8 @@ It starts with one well-defined topic: the **five hindrances**, the **seven awak
 
 > **Status: v0.1, a personal learning project.** It draws on 63 texts out of SuttaCentral's 14,080 suttas ([COVERAGE.md](COVERAGE.md)). The modelling was done by a practitioner with an AI assistant, and **no qualified reader has reviewed it yet**. The quotes are the texts' own words; the structure is our interpretation, and every choice is written down in [DECISIONS.md](DECISIONS.md) so you can disagree with a specific one. Corrections are very welcome ([CONTRIBUTING.md](CONTRIBUTING.md)).
 
+**Try it:** [Ask the Suttas](https://guoxiangng.github.io/dhamma-ontology/) · [Graph](https://guoxiangng.github.io/dhamma-ontology/graph.html) · [Review each text](https://guoxiangng.github.io/dhamma-ontology/review.html)
+
 ## What it does
 
 ```text
@@ -41,7 +43,9 @@ $ python scripts/dho.py ask "monkey mind"
 - **Separates the meanings of one word.** `sense dhamma` shows four meanings of *dhamma*, each backed by a passage, and one contested use left unassigned.
 - **Checks itself.** SHACL rules verify that list counts match the text, every claim is cited, cited passages exist, derived links are never typed by hand, and every text has an honest coverage record. Deliberately broken files in `tests/broken/` prove each rule fires.
 
-Two viewers, both single HTML files you can open locally:
+Three pages, each a single HTML file that runs in the browser with no server and no model, published to GitHub Pages on every push:
+
+- **Ask** (`viz/ask.html`, the site's home page): type a word in English, Pali or Chinese and get every cited claim about it, with the passage one click away. Words outside the ontology get an honest "not covered yet".
 
 - **Graph** (`viz/graph.html`): click a concept to see its links, each with its quote and a link to SuttaCentral.
 - **Review** (`viz/review.html`): each text segment by segment, with the claims that rest on each segment, the coverage record, the eval questions that cite it, and a "report" link that opens a correction issue for that segment. Segments with no claim stay visible, so gaps are as easy to see as what was encoded.
@@ -95,7 +99,7 @@ Rebuild `dist/` with `python scripts/release.py`.
 | `shapes/dho-shapes.ttl` | SHACL checks S1–S14 |
 | `scripts/` | `dho.py` (check, ask, sense, query), `sc.py` (fetch and read SuttaCentral texts), `build_passages.py`, `coverage.py`, `export_graph.py`, `export_review.py`, `release.py` |
 | `queries/` | Example SPARQL queries |
-| `viz/` | Viewer templates; `export_graph.py` builds `viz/graph.html`, `export_review.py` builds `viz/review.html` |
+| `viz/` | Page templates; `export_ask.py`, `export_graph.py` and `export_review.py` build `ask.html`, `graph.html` and `review.html` |
 | `tests/` | Clean data passes; each file in `tests/broken/` is caught by the check it targets |
 | `sources/suttacentral/` | Cached SuttaCentral text (CC0) and the canon index |
 | `dist/` | Single-file downloads |

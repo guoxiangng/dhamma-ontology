@@ -80,6 +80,7 @@ $PY -m pytest -q -p no:cacheprovider tests
 $PY scripts/coverage.py
 $PY scripts/export_graph.py
 $PY scripts/export_review.py      # then look at the new text in viz/review.html
+$PY scripts/export_ask.py
 ```
 
 Adding a new shape means adding a broken fixture in `tests/broken/` that it catches. 
