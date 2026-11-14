@@ -314,6 +314,8 @@ dho:RootOf       a dho:ConditionRelation ; rdfs:label "is the root of"@en ;
 dho:GivesRiseTo  a dho:ConditionRelation ; rdfs:label "gives rise to"@en .
 dho:Supports     a dho:ConditionRelation ; rdfs:label "supports the development of"@en ;
     rdfs:comment "'can expect to develop and cultivate' (pāṭikaṅkha)."@en .
+dho:CauseOf      a dho:ConditionRelation ; rdfs:label "is a cause and reason for"@en ;
+    rdfs:comment "'a cause and reason for' (hetu, paccaya), SN 46.56 (D16)."@en .
 dho:Accompanies  a dho:ConditionRelation ; rdfs:label "accompany the development of"@en ;
     rdfs:comment "'develops X together with the awakening factors' (sahagata), SN 46.57-76 (D15)."@en .
 dho:WhenThen     a dho:ConditionRelation ; rdfs:label "when present, then"@en ;

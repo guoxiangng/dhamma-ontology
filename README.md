@@ -4,7 +4,7 @@ A small, **citation-first** ontology of Buddhist teachings, built from the Pali 
 
 It starts with one well-defined topic: the **five hindrances**, the **seven awakening factors** and the **factors of the first jhāna**, and what the Linked Discourses on the Awakening Factors (SN 46) say about what conditions them and where they lead. The aim is to show what an ontology can do that a glossary, a graph of related terms or a plain LLM can't, on material that can be checked line by line.
 
-> **Status: v0.1, a personal learning project.** It draws on 61 texts out of SuttaCentral's 14,080 suttas ([COVERAGE.md](COVERAGE.md)). The modelling was done by a practitioner with an AI assistant, and **no qualified reader has reviewed it yet**. The quotes are the texts' own words; the structure is our interpretation, and every choice is written down in [DECISIONS.md](DECISIONS.md) so you can disagree with a specific one. Corrections are very welcome ([CONTRIBUTING.md](CONTRIBUTING.md)).
+> **Status: v0.1, a personal learning project.** It draws on 63 texts out of SuttaCentral's 14,080 suttas ([COVERAGE.md](COVERAGE.md)). The modelling was done by a practitioner with an AI assistant, and **no qualified reader has reviewed it yet**. The quotes are the texts' own words; the structure is our interpretation, and every choice is written down in [DECISIONS.md](DECISIONS.md) so you can disagree with a specific one. Corrections are very welcome ([CONTRIBUTING.md](CONTRIBUTING.md)).
 
 ## What it does
 
@@ -78,7 +78,7 @@ Rebuild `dist/` with `python scripts/release.py`.
 
 | | |
 |---|---|
-| [DECISIONS.md](DECISIONS.md) | Every modelling choice, who decided it, corrections (D1–D15), and a revisit list for a second pass |
+| [DECISIONS.md](DECISIONS.md) | Every modelling choice, who decided it, corrections (D1–D17), and a revisit list for a second pass |
 | [COVERAGE.md](COVERAGE.md) | Which texts are encoded, how much of each, what's left out, review status. Generated |
 | [triage/](triage/) | Collections sorted by the modelling pattern each sutta needs, before ingesting them |
 | [eval/](eval/) | A golden question set for testing whether the ontology helps an LLM answer more faithfully, and the method |

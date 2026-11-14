@@ -119,6 +119,24 @@ Where a practice shares a word with something already in the ontology, it stays 
 
 Chinese labels for the practices are left out for now: the standard term for *muditā* (喜) is already the label for rapture (*pīti*), and a wrong guess would mislead search.
 
+## D16. Sequences are links, not a separate chain
+
+*Decided by Claude; the owner deferred. Revisit.*
+
+SN 46.3 describes the awakening factors arising in order: recollecting the teaching → mindfulness → investigation → energy → rapture → tranquility → immersion → equanimity. Each step is stated as its own sentence ("When they're energetic, rapture not of the flesh arises"), so each becomes its own condition (D13, when-then, "arise") with its own wording and citations. The sequence is what you get by following the links; no extra "chain" node is added. Where the text adds something to a step (bliss alongside tranquility), it goes in a note.
+
+This does not settle SN 46.26's chain (craving given up → deeds given up → suffering given up), where the condition is the *giving up* of something, not a quality. That is still left out; dependent origination will need the same decision.
+
+The same batch adds the relation "is a cause and reason for" (*hetu, paccaya*), SN 46.56.
+
+## D17. Encode what is taught, not what interlocutors say
+
+*Decided by Claude; the owner deferred. Revisit.*
+
+Suttas mix teaching with framing: questions, other teachers' views, and listeners' responses. The ontology encodes what is taught, whether by the Buddha or by a disciple teaching (MN 43's Sāriputta, MN 44's Dhammadinnā). It leaves out a listener's approving restatement. In SN 46.56 the line "overcome by even a single hindrance you wouldn't truly know or see" is Prince Abhaya's response, not the Buddha's teaching, so it is not encoded, and the coverage record says so. Eval Q44 checks that a system attributes it correctly.
+
+The ontology does not yet record who speaks each claim. That is on the revisit list.
+
 ## Patterns not modelled yet
 
 These kinds of teaching have come up and been left out (each logged in `data/coverage.ttl`) until a pattern is agreed:
@@ -149,6 +167,8 @@ Judgment calls a second pass should look at first. Each was made deliberately an
 | 8 | Mind states (*līnaṁ cittaṁ*, *uddhataṁ cittaṁ*) are separate from the hindrances | D6 | The link may be closer than an editor's link suggests |
 | 9 | Search words (hidden labels) such as "monkey mind", "sleepy" | D9 | Everyday words are guesses at what people mean |
 | 10 | The Visuddhimagga pairings of jhāna factors and hindrances, cited from memory | D5, `data/commentary-vism.ttl` | Not checked against an edition |
+| 12 | Sequences modelled as pairwise links (SN 46.3) | D16 | A chain may deserve to be one object, e.g. for the order of the seven fruits |
+| 13 | Interlocutors' lines left out; speakers not recorded (MN 43, MN 44 claims are disciples' teaching) | D17 | Some responses add content; a speaker field may be needed |
 | 11 | What each coverage record says was left out | `data/coverage.ttl` | Written by Claude after reading each text; a reader may see claims we missed |
 
 A revisit pass can work text by text: every claim cites its segments, every text has a coverage record with the date it was modelled, and the review view (`viz/review.html`) shows each text beside the claims resting on it.

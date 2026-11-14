@@ -12,10 +12,10 @@ This is how much of the canon the ontology actually draws on. It is small on pur
 |---|---:|---:|---:|---:|---:|
 | Long Discourses (DN) | 34 | 0 | 0 | 0 | 0.00% |
 | Middle Discourses (MN) | 152 | 0 | 2 | 2 | 2.63% |
-| Linked Discourses (SN) | 3,024 | 16 | 39 | 1 | 1.85% |
+| Linked Discourses (SN) | 3,024 | 16 | 41 | 1 | 1.92% |
 | Numbered Discourses (AN) | 8,122 | 0 | 0 | 0 | 0.00% |
 | Minor Collection (KN) | 2,748 | 0 | 0 | 1 | 0.04% |
-| **Total** | **14,080** | **16** | | | **0.43%** |
+| **Total** | **14,080** | **16** | | | **0.45%** |
 
 Counts follow SuttaCentral's numbering, with grouped ranges (e.g. `sn12.93-213`) counted as the suttas they number. Many of those are abbreviated repetitions, so this overstates the amount of distinct text. KN mixes early and late material (Dhammapada and Sutta Nipāta beside Jātaka and Apadāna) and Dhammapada is counted by verse.
 
@@ -52,6 +52,7 @@ Counts follow SuttaCentral's numbering, with grouped ranges (e.g. `sn12.93-213`)
 | [SN 46.26 Taṇhakkhayasutta — The Ending of Craving](https://suttacentral.net/sn46.26/en/sujato) | Sutta (early discourses) | partly encoded | 5 / 18 | 6 | not yet reviewed |
 | [SN 46.28 Nibbedhabhāgiyasutta — Helping Penetration](https://suttacentral.net/sn46.28/en/sujato) | Sutta (early discourses) | partly encoded | 7 / 19 | 6 | not yet reviewed |
 | [SN 46.29 Ekadhammasutta — One Thing](https://suttacentral.net/sn46.29/en/sujato) | Sutta (early discourses) | partly encoded | 4 / 16 | 6 | not yet reviewed |
+| [SN 46.3 Sīlasutta — Ethics](https://suttacentral.net/sn46.3/en/sujato) | Sutta (early discourses) | partly encoded | 24 / 37 | 16 | not yet reviewed |
 | [SN 46.31 Paṭhamakusalasutta — Skillful (1st)](https://suttacentral.net/sn46.31/en/sujato) | Sutta (early discourses) | partly encoded | 3 / 7 | 6 | not yet reviewed |
 | [SN 46.32 Dutiyakusalasutta — Skillful (2nd)](https://suttacentral.net/sn46.32/en/sujato) | Sutta (early discourses) | partly encoded | 3 / 7 | 6 | not yet reviewed |
 | [SN 46.33 Upakkilesasutta — Corruptions](https://suttacentral.net/sn46.33/en/sujato) | Sutta (early discourses) | partly encoded | 3 / 13 | 1 | not yet reviewed |
@@ -61,6 +62,7 @@ Counts follow SuttaCentral's numbering, with grouped ranges (e.g. `sn12.93-213`)
 | [SN 46.48 Ādiccasutta — The Sun](https://suttacentral.net/sn46.48/en/sujato) | Sutta (early discourses) | partly encoded | 3 / 8 | 6 | not yet reviewed |
 | [SN 46.5 Bhikkhusutta — A Monk](https://suttacentral.net/sn46.5/en/sujato) | Sutta (early discourses) | partly encoded | 4 / 12 | 6 | not yet reviewed |
 | [SN 46.53 Aggisutta — Fire](https://suttacentral.net/sn46.53/en/sujato) | Sutta (early discourses) | partly encoded | 9 / 51 | 13 | not yet reviewed |
+| [SN 46.56 Abhayasutta — With Prince Abhaya](https://suttacentral.net/sn46.56/en/sujato) | Sutta (early discourses) | partly encoded | 10 / 53 | 6 | not yet reviewed |
 | [SN 46.58 Puḷavakasutta — Worm-Infested](https://suttacentral.net/sn46.58/en/sujato) | Sutta (early discourses) | partly encoded | 1 / 2 | 1 | not yet reviewed |
 | [SN 46.59 Vinīlakasutta — Livid](https://suttacentral.net/sn46.59/en/sujato) | Sutta (early discourses) | partly encoded | 1 / 2 | 1 | not yet reviewed |
 | [SN 46.60 Vicchiddakasutta — Split Open](https://suttacentral.net/sn46.60/en/sujato) | Sutta (early discourses) | partly encoded | 1 / 2 | 1 | not yet reviewed |
@@ -247,6 +249,12 @@ Segments cited are the passages a claim points to. A fully encoded text can stil
 - **Encodes:** Nothing else, developed like this, leads to giving up the things that tighten the fetters like the seven factors (1.1, 2.3); the list (1.3); the stock formula for each factor (relies on seclusion, fading away and cessation; ripens as letting go) (2.2).
 - **Left out:** What the things that tighten the fetters are: the eye, ear, nose, tongue, body and mind, where the fetters, shackles and attachments arise (3.1-3.8). Needs the six sense fields as a list and a pattern for 'X is where Y arises'.
 
+### SN 46.3 Sīlasutta — Ethics
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** The awakening factors arising in sequence, each step a condition with its own words: recollecting and thinking about the teaching gives rise to mindfulness, then investigation, energy, rapture (not of the flesh), tranquility, immersion (with bliss) and equanimity (1.9-8.1); and the seven fruits and benefits they lead to, from enlightenment early in this life to heading upstream to the Akaniṭṭha realm (9.1-9.10).
+- **Left out:** Why it matters to see, hear, approach, pay homage to, recollect and go forth following mendicants accomplished in ethics, immersion, knowledge and freedom: 'very helpful' (1.1-1.6); and living withdrawn in body and mind after hearing their teaching (1.8). Needs a pattern for what is called helpful, and the link from hearing to withdrawal is not modelled.
+
 ### SN 46.31 Paṭhamakusalasutta — Skillful (1st)
 
 - **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
@@ -300,6 +308,12 @@ Segments cited are the passages a claim points to. A fully encoded text can stil
 - **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-13 by project owner with Claude (AI assistant), from SuttaCentral's text
 - **Encodes:** The timing advice: which awakening factors it is the right or wrong time to develop when the mind is sluggish (4.1, 7.1) or restless (10.1, 13.1), the reason given for each, and 'mindfulness is always useful' (15.4).
 - **Left out:** The setting and the challenge from wanderers of other religions (1.1-3.1); the four fire similes (5, 8, 11, 14) that illustrate the advice; the repeated statements after each simile (6, 9, 12, 15.1-15.3).
+
+### SN 46.56 Abhayasutta — With Prince Abhaya
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** The hindrances are a cause and reason for not knowing and not seeing, when the heart is overcome by them (2.3-3.5); the awakening factors are a cause and reason for knowing and seeing (5.3-6.4); the stock formula (5.3, 6.2).
+- **Left out:** The framing: Pūraṇa Kassapa's view that knowing and not knowing have no cause (1.4-1.13). The naming 'these are called the hindrances / awakening factors' (4.2, 7.2). Prince Abhaya's responses, including 'overcome by even a single hindrance you wouldn't truly know or see' and 'endowed with even a single awakening factor you would' (4.3-4.5, 7.3-7.6): said by the interlocutor, not taught, so not encoded (D17).
 
 ### SN 46.58 Puḷavakasutta — Worm-Infested
 

@@ -492,3 +492,19 @@ dho:t-sn46.76
     dho:modelledOn "2026-11-14"^^xsd:date ;
     dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
     dho:encodes "The perception of cessation is very fruitful and beneficial (1.2, 1.6), developed together with the awakening factors (1.4), with the stock formula (1.5); one of two results, enlightenment in this very life or non-return; great benefit, great sanctuary from the yoke, great inspiration and great ease." .
+
+dho:t-sn46.3
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "The awakening factors arising in sequence, each step a condition with its own words: recollecting and thinking about the teaching gives rise to mindfulness, then investigation, energy, rapture (not of the flesh), tranquility, immersion (with bliss) and equanimity (1.9-8.1); and the seven fruits and benefits they lead to, from enlightenment early in this life to heading upstream to the Akaniṭṭha realm (9.1-9.10)." ;
+    dho:leftOut "Why it matters to see, hear, approach, pay homage to, recollect and go forth following mendicants accomplished in ethics, immersion, knowledge and freedom: 'very helpful' (1.1-1.6); and living withdrawn in body and mind after hearing their teaching (1.8). Needs a pattern for what is called helpful, and the link from hearing to withdrawal is not modelled." .
+
+dho:t-sn46.56
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "The hindrances are a cause and reason for not knowing and not seeing, when the heart is overcome by them (2.3-3.5); the awakening factors are a cause and reason for knowing and seeing (5.3-6.4); the stock formula (5.3, 6.2)." ;
+    dho:leftOut "The framing: Pūraṇa Kassapa's view that knowing and not knowing have no cause (1.4-1.13). The naming 'these are called the hindrances / awakening factors' (4.2, 7.2). Prince Abhaya's responses, including 'overcome by even a single hindrance you wouldn't truly know or see' and 'endowed with even a single awakening factor you would' (4.3-4.5, 7.3-7.6): said by the interlocutor, not taught, so not encoded (D17)." .

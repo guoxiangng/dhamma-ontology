@@ -1,0 +1,83 @@
+@prefix dho:  <https://guoxiangng.github.io/dhamma-ontology/ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# SN 46.3 (Ethics) and SN 46.56 (With Prince Abhaya), each read in full (D16, D17).
+
+# ---------------------------------------------------------------- SN 46.3: the factors arising in sequence
+# Each step is its own condition with the text's own words (D16); the sequence is what you get by
+# following the links: recollecting the teaching -> mindfulness -> investigation -> energy ->
+# rapture -> tranquility -> immersion -> equanimity.
+
+dho:RecollectingTeaching a dho:Concept ;
+    skos:prefLabel "recollecting and thinking about the teaching"@en , "dhammaṁ anussarati anuvitakketi"@pi .
+
+dho:c-s1 a dho:Condition ; dho:condition dho:RecollectingTeaching ; dho:relation dho:WhenThen ; dho:conditioned dho:Mindfulness ; dho:result dho:Arises ;
+    dho:wording "as they recollect and think about that teaching" ;
+    dho:citedBy dho:p-sn46.3-1.9 , dho:p-sn46.3-2.1 .
+dho:c-s2 a dho:Condition ; dho:condition dho:Mindfulness ; dho:relation dho:WhenThen ; dho:conditioned dho:Investigation ; dho:result dho:Arises ;
+    dho:wording "As they live mindfully in this way they investigate, explore, and inquire into that teaching with wisdom" ;
+    dho:citedBy dho:p-sn46.3-2.4 , dho:p-sn46.3-3.1 .
+dho:c-s3 a dho:Condition ; dho:condition dho:Investigation ; dho:relation dho:WhenThen ; dho:conditioned dho:Energy ; dho:result dho:Arises ;
+    dho:wording "As they investigate principles with wisdom in this way their energy is roused up and unflagging" ;
+    dho:citedBy dho:p-sn46.3-3.4 , dho:p-sn46.3-4.1 .
+dho:c-s4 a dho:Condition ; dho:condition dho:Energy ; dho:relation dho:WhenThen ; dho:conditioned dho:Rapture ; dho:result dho:Arises ;
+    dho:wording "rapture not of the flesh arises" ;
+    dho:citedBy dho:p-sn46.3-4.2 , dho:p-sn46.3-5.1 .
+dho:c-s5 a dho:Condition ; dho:condition dho:Rapture ; dho:relation dho:WhenThen ; dho:conditioned dho:Tranquility ; dho:result dho:Arises ;
+    dho:wording "When the mind is full of rapture, the body and mind become tranquil" ;
+    dho:citedBy dho:p-sn46.3-5.2 , dho:p-sn46.3-6.1 .
+dho:c-s6 a dho:Condition ; dho:condition dho:Tranquility ; dho:relation dho:WhenThen ; dho:conditioned dho:Immersion ; dho:result dho:Arises ;
+    dho:wording "When the body is tranquil and one feels bliss, the mind becomes immersed in samādhi" ;
+    skos:note "Together with bliss: 'when the body is tranquil and one feels bliss'."@en ;
+    dho:citedBy dho:p-sn46.3-6.2 , dho:p-sn46.3-7.1 .
+dho:c-s7 a dho:Condition ; dho:condition dho:Immersion ; dho:relation dho:WhenThen ; dho:conditioned dho:Equanimity ; dho:result dho:Arises ;
+    dho:wording "They closely watch over that mind immersed in samādhi" ;
+    dho:citedBy dho:p-sn46.3-7.2 , dho:p-sn46.3-8.1 .
+
+# The seven fruits and benefits (9.1-9.10): a list the sutta numbers itself.
+dho:SevenFruits a dho:NumberedList ;
+    skos:prefLabel "the seven fruits and benefits of the awakening factors"@en , "satta phalā sattānisaṁsā"@pi ;
+    dho:expectedCount 7 ;
+    dho:hasMember dho:EarlyEnlightenment , dho:EnlightenmentAtDeath , dho:ExtinguishedBetweenLives ,
+                  dho:ExtinguishedUponLanding , dho:ExtinguishedWithoutEffort , dho:ExtinguishedWithEffort ,
+                  dho:HeadingUpstream ;
+    dho:citedBy dho:p-sn46.3-9.1 , dho:p-sn46.3-9.2 , dho:p-sn46.3-9.10 .
+dho:EarlyEnlightenment a dho:Concept ;
+    skos:prefLabel "enlightenment early on in this very life"@en , "diṭṭheva dhamme paṭikacca aññā"@pi ; dho:citedBy dho:p-sn46.3-9.3 .
+dho:EnlightenmentAtDeath a dho:Concept ;
+    skos:prefLabel "enlightenment at the time of death"@en , "maraṇakāle aññā"@pi ; dho:citedBy dho:p-sn46.3-9.4 .
+dho:ExtinguishedBetweenLives a dho:Concept ;
+    skos:prefLabel "extinguished between one life and the next"@en , "antarāparinibbāyī"@pi ; dho:citedBy dho:p-sn46.3-9.5 .
+dho:ExtinguishedUponLanding a dho:Concept ;
+    skos:prefLabel "extinguished upon landing"@en , "upahaccaparinibbāyī"@pi ; dho:citedBy dho:p-sn46.3-9.6 .
+dho:ExtinguishedWithoutEffort a dho:Concept ;
+    skos:prefLabel "extinguished without extra effort"@en , "asaṅkhāraparinibbāyī"@pi ; dho:citedBy dho:p-sn46.3-9.7 .
+dho:ExtinguishedWithEffort a dho:Concept ;
+    skos:prefLabel "extinguished with extra effort"@en , "sasaṅkhāraparinibbāyī"@pi ; dho:citedBy dho:p-sn46.3-9.8 .
+dho:HeadingUpstream a dho:Concept ;
+    skos:prefLabel "heading upstream, going to the Akaniṭṭha realm"@en , "uddhaṁsoto akaniṭṭhagāmī"@pi ; dho:citedBy dho:p-sn46.3-9.9 .
+
+dho:o-29 a dho:Outcome ; dho:of dho:SevenAwakeningFactors ; dho:effect dho:LeadsTo ; dho:to dho:SevenFruits ;
+    dho:wording "they can expect seven fruits and benefits" ;
+    skos:note "In order: each later fruit applies 'if not' the earlier one."@en ;
+    dho:citedBy dho:p-sn46.3-9.1 , dho:p-sn46.3-9.10 .
+
+# ---------------------------------------------------------------- SN 46.56: causes of not knowing and of knowing
+
+dho:NotKnowingSeeing a dho:Concept ; skos:prefLabel "not knowing and not seeing"@en , "aññāṇa adassana"@pi .
+dho:KnowingSeeing a dho:Concept ; skos:prefLabel "knowing and seeing"@en , "ñāṇa dassana"@pi .
+
+dho:c-a1 a dho:Condition ; dho:condition dho:FiveHindrances ; dho:relation dho:CauseOf ; dho:conditioned dho:NotKnowingSeeing ;
+    dho:wording "a cause and reason for not knowing and not seeing" ;
+    skos:note "When the heart is overcome and mired in each hindrance, without truly knowing and seeing the escape from it. Given in full for sensual desire, abbreviated for the others."@en ;
+    dho:citedBy dho:p-sn46.56-2.3 , dho:p-sn46.56-2.4 , dho:p-sn46.56-3.4 , dho:p-sn46.56-3.5 .
+dho:c-a2 a dho:Condition ; dho:condition dho:SevenAwakeningFactors ; dho:relation dho:CauseOf ; dho:conditioned dho:KnowingSeeing ;
+    dho:wording "a cause and reason for knowing and seeing" ;
+    skos:note "They truly know and see with a mind that has developed each awakening factor. Given in full for mindfulness, abbreviated for the others."@en ;
+    dho:citedBy dho:p-sn46.56-5.4 , dho:p-sn46.56-5.5 , dho:p-sn46.56-6.3 , dho:p-sn46.56-6.4 .
+
+# The stock formula, restated in SN 46.56.
+dho:o-19 dho:citedBy dho:p-sn46.56-5.3 , dho:p-sn46.56-6.2 .
+dho:c-17 dho:citedBy dho:p-sn46.56-5.3 , dho:p-sn46.56-6.2 .
+dho:c-18 dho:citedBy dho:p-sn46.56-5.3 , dho:p-sn46.56-6.2 .
+dho:c-19 dho:citedBy dho:p-sn46.56-5.3 , dho:p-sn46.56-6.2 .

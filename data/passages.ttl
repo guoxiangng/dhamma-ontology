@@ -706,6 +706,174 @@ dho:p-sn46.29-2.3 a dho:Passage ;
     dho:textPi "Evaṁ bhāvitā kho, bhikkhave, satta bojjhaṅgā evaṁ bahulīkatā saṁyojanīyānaṁ dhammānaṁ pahānāya saṁvattanti."@pi ;
     dho:url "https://suttacentral.net/sn46.29/en/sujato#sn46.29:2.3"^^xsd:anyURI .
 
+dho:p-sn46.3-1.9 a dho:Passage ;
+    dho:inText dho:t-sn46.3 ;
+    dho:segment "sn46.3:1.9" ;
+    dho:textEn "as they recollect and think about that teaching."@en ;
+    dho:textPi "So tathā vūpakaṭṭho viharanto taṁ dhammaṁ anussarati anuvitakketi."@pi ;
+    dho:url "https://suttacentral.net/sn46.3/en/sujato#sn46.3:1.9"^^xsd:anyURI .
+
+dho:p-sn46.3-2.1 a dho:Passage ;
+    dho:inText dho:t-sn46.3 ;
+    dho:segment "sn46.3:2.1" ;
+    dho:textEn "At such a time, a mendicant has initiated the awakening factor of mindfulness;"@en ;
+    dho:textPi "Yasmiṁ samaye, bhikkhave, bhikkhu tathā vūpakaṭṭho viharanto taṁ dhammaṁ anussarati anuvitakketi, satisambojjhaṅgo tasmiṁ samaye bhikkhuno āraddho hoti;"@pi ;
+    dho:url "https://suttacentral.net/sn46.3/en/sujato#sn46.3:2.1"^^xsd:anyURI .
+
+dho:p-sn46.3-2.4 a dho:Passage ;
+    dho:inText dho:t-sn46.3 ;
+    dho:segment "sn46.3:2.4" ;
+    dho:textEn "As they live mindfully in this way they investigate, explore, and inquire into that teaching with wisdom."@en ;
+    dho:textPi "So tathā sato viharanto taṁ dhammaṁ paññāya pavicinati pavicarati parivīmaṁsamāpajjati."@pi ;
+    dho:url "https://suttacentral.net/sn46.3/en/sujato#sn46.3:2.4"^^xsd:anyURI .
+
+dho:p-sn46.3-3.1 a dho:Passage ;
+    dho:inText dho:t-sn46.3 ;
+    dho:segment "sn46.3:3.1" ;
+    dho:textEn "At such a time, a mendicant has initiated the awakening factor of investigation of principles;"@en ;
+    dho:textPi "Yasmiṁ samaye, bhikkhave, bhikkhu tathā sato viharanto taṁ dhammaṁ paññāya pavicinati pavicarati parivīmaṁsamāpajjati, dhammavicayasambojjhaṅgo tasmiṁ samaye bhikkhuno āraddho hoti;"@pi ;
+    dho:url "https://suttacentral.net/sn46.3/en/sujato#sn46.3:3.1"^^xsd:anyURI .
+
+dho:p-sn46.3-3.4 a dho:Passage ;
+    dho:inText dho:t-sn46.3 ;
+    dho:segment "sn46.3:3.4" ;
+    dho:textEn "As they investigate principles with wisdom in this way their energy is roused up and unflagging."@en ;
+    dho:textPi "Tassa taṁ dhammaṁ paññāya pavicinato pavicarato parivīmaṁsamāpajjato āraddhaṁ hoti vīriyaṁ asallīnaṁ."@pi ;
+    dho:url "https://suttacentral.net/sn46.3/en/sujato#sn46.3:3.4"^^xsd:anyURI .
+
+dho:p-sn46.3-4.1 a dho:Passage ;
+    dho:inText dho:t-sn46.3 ;
+    dho:segment "sn46.3:4.1" ;
+    dho:textEn "At such a time, a mendicant has initiated the awakening factor of energy; they develop it and perfect it."@en ;
+    dho:textPi "Yasmiṁ samaye, bhikkhave, bhikkhuno taṁ dhammaṁ paññāya pavicinato pavicarato parivīmaṁsamāpajjato āraddhaṁ hoti vīriyaṁ asallīnaṁ, vīriyasambojjhaṅgo tasmiṁ samaye bhikkhuno āraddho hoti; vīriyasambojjhaṅgaṁ tasmiṁ samaye bhikkhu bhāveti; vīriyasambojjhaṅgo tasmiṁ samaye bhikkhuno bhāvanāpāripūriṁ gacchati."@pi ;
+    dho:url "https://suttacentral.net/sn46.3/en/sujato#sn46.3:4.1"^^xsd:anyURI .
+
+dho:p-sn46.3-4.2 a dho:Passage ;
+    dho:inText dho:t-sn46.3 ;
+    dho:segment "sn46.3:4.2" ;
+    dho:textEn "When they’re energetic, rapture not of the flesh arises."@en ;
+    dho:textPi "Āraddhavīriyassa uppajjati pīti nirāmisā."@pi ;
+    dho:url "https://suttacentral.net/sn46.3/en/sujato#sn46.3:4.2"^^xsd:anyURI .
+
+dho:p-sn46.3-5.1 a dho:Passage ;
+    dho:inText dho:t-sn46.3 ;
+    dho:segment "sn46.3:5.1" ;
+    dho:textEn "At such a time, a mendicant has initiated the awakening factor of rapture; they develop it and perfect it."@en ;
+    dho:textPi "Yasmiṁ samaye, bhikkhave, bhikkhuno āraddhavīriyassa uppajjati pīti nirāmisā, pītisambojjhaṅgo tasmiṁ samaye bhikkhuno āraddho hoti; pītisambojjhaṅgaṁ tasmiṁ samaye bhikkhu bhāveti; pītisambojjhaṅgo tasmiṁ samaye bhikkhuno bhāvanāpāripūriṁ gacchati."@pi ;
+    dho:url "https://suttacentral.net/sn46.3/en/sujato#sn46.3:5.1"^^xsd:anyURI .
+
+dho:p-sn46.3-5.2 a dho:Passage ;
+    dho:inText dho:t-sn46.3 ;
+    dho:segment "sn46.3:5.2" ;
+    dho:textEn "When the mind is full of rapture, the body and mind become tranquil."@en ;
+    dho:textPi "Pītimanassa kāyopi passambhati, cittampi passambhati."@pi ;
+    dho:url "https://suttacentral.net/sn46.3/en/sujato#sn46.3:5.2"^^xsd:anyURI .
+
+dho:p-sn46.3-6.1 a dho:Passage ;
+    dho:inText dho:t-sn46.3 ;
+    dho:segment "sn46.3:6.1" ;
+    dho:textEn "At such a time, a mendicant has initiated the awakening factor of tranquility; they develop it and perfect it."@en ;
+    dho:textPi "Yasmiṁ samaye, bhikkhave, bhikkhuno pītimanassa kāyopi passambhati cittampi passambhati, passaddhisambojjhaṅgo tasmiṁ samaye bhikkhuno āraddho hoti; passaddhisambojjhaṅgaṁ tasmiṁ samaye bhikkhu bhāveti; passaddhisambojjhaṅgo tasmiṁ samaye bhikkhuno bhāvanāpāripūriṁ gacchati."@pi ;
+    dho:url "https://suttacentral.net/sn46.3/en/sujato#sn46.3:6.1"^^xsd:anyURI .
+
+dho:p-sn46.3-6.2 a dho:Passage ;
+    dho:inText dho:t-sn46.3 ;
+    dho:segment "sn46.3:6.2" ;
+    dho:textEn "When the body is tranquil and one feels bliss, the mind becomes immersed in samādhi."@en ;
+    dho:textPi "Passaddhakāyassa sukhino cittaṁ samādhiyati."@pi ;
+    dho:url "https://suttacentral.net/sn46.3/en/sujato#sn46.3:6.2"^^xsd:anyURI .
+
+dho:p-sn46.3-7.1 a dho:Passage ;
+    dho:inText dho:t-sn46.3 ;
+    dho:segment "sn46.3:7.1" ;
+    dho:textEn "At such a time, a mendicant has initiated the awakening factor of immersion; they develop it and perfect it."@en ;
+    dho:textPi "Yasmiṁ samaye, bhikkhave, bhikkhuno passaddhakāyassa sukhino cittaṁ samādhiyati, samādhisambojjhaṅgo tasmiṁ samaye bhikkhuno āraddho hoti; samādhisambojjhaṅgaṁ tasmiṁ samaye bhikkhu bhāveti; samādhisambojjhaṅgo tasmiṁ samaye bhikkhuno bhāvanāpāripūriṁ gacchati."@pi ;
+    dho:url "https://suttacentral.net/sn46.3/en/sujato#sn46.3:7.1"^^xsd:anyURI .
+
+dho:p-sn46.3-7.2 a dho:Passage ;
+    dho:inText dho:t-sn46.3 ;
+    dho:segment "sn46.3:7.2" ;
+    dho:textEn "They closely watch over that mind immersed in samādhi."@en ;
+    dho:textPi "So tathāsamāhitaṁ cittaṁ sādhukaṁ ajjhupekkhitā hoti."@pi ;
+    dho:url "https://suttacentral.net/sn46.3/en/sujato#sn46.3:7.2"^^xsd:anyURI .
+
+dho:p-sn46.3-8.1 a dho:Passage ;
+    dho:inText dho:t-sn46.3 ;
+    dho:segment "sn46.3:8.1" ;
+    dho:textEn "At such a time, a mendicant has initiated the awakening factor of equanimity; they develop it and perfect it."@en ;
+    dho:textPi "Yasmiṁ samaye, bhikkhave, bhikkhu tathāsamāhitaṁ cittaṁ sādhukaṁ ajjhupekkhitā hoti, upekkhāsambojjhaṅgo tasmiṁ samaye bhikkhuno āraddho hoti; upekkhāsambojjhaṅgaṁ tasmiṁ samaye bhikkhu bhāveti; upekkhāsambojjhaṅgo tasmiṁ samaye bhikkhuno bhāvanāpāripūriṁ gacchati."@pi ;
+    dho:url "https://suttacentral.net/sn46.3/en/sujato#sn46.3:8.1"^^xsd:anyURI .
+
+dho:p-sn46.3-9.1 a dho:Passage ;
+    dho:inText dho:t-sn46.3 ;
+    dho:segment "sn46.3:9.1" ;
+    dho:textEn "When the seven awakening factors are developed and cultivated in this way they can expect seven fruits and benefits."@en ;
+    dho:textPi "Evaṁ bhāvitesu kho, bhikkhave, sattasu sambojjhaṅgesu evaṁ bahulīkatesu satta phalā sattānisaṁsā pāṭikaṅkhā."@pi ;
+    dho:url "https://suttacentral.net/sn46.3/en/sujato#sn46.3:9.1"^^xsd:anyURI .
+
+dho:p-sn46.3-9.10 a dho:Passage ;
+    dho:inText dho:t-sn46.3 ;
+    dho:segment "sn46.3:9.10" ;
+    dho:textEn "When the seven awakening factors are developed and cultivated in this way these are the seven fruits and benefits they can expect.”"@en ;
+    dho:textPi "Evaṁ bhāvitesu kho, bhikkhave, sattasu bojjhaṅgesu evaṁ bahulīkatesu ime satta phalā sattānisaṁsā pāṭikaṅkhā”ti."@pi ;
+    dho:url "https://suttacentral.net/sn46.3/en/sujato#sn46.3:9.10"^^xsd:anyURI .
+
+dho:p-sn46.3-9.2 a dho:Passage ;
+    dho:inText dho:t-sn46.3 ;
+    dho:segment "sn46.3:9.2" ;
+    dho:textEn "What seven?"@en ;
+    dho:textPi "Katame satta phalā sattānisaṁsā?"@pi ;
+    dho:url "https://suttacentral.net/sn46.3/en/sujato#sn46.3:9.2"^^xsd:anyURI .
+
+dho:p-sn46.3-9.3 a dho:Passage ;
+    dho:inText dho:t-sn46.3 ;
+    dho:segment "sn46.3:9.3" ;
+    dho:textEn "They attain enlightenment early on in this very life."@en ;
+    dho:textPi "Diṭṭheva dhamme paṭikacca aññaṁ ārādheti."@pi ;
+    dho:url "https://suttacentral.net/sn46.3/en/sujato#sn46.3:9.3"^^xsd:anyURI .
+
+dho:p-sn46.3-9.4 a dho:Passage ;
+    dho:inText dho:t-sn46.3 ;
+    dho:segment "sn46.3:9.4" ;
+    dho:textEn "If not, they attain enlightenment at the time of death."@en ;
+    dho:textPi "No ce diṭṭheva dhamme paṭikacca aññaṁ ārādheti, atha maraṇakāle aññaṁ ārādheti."@pi ;
+    dho:url "https://suttacentral.net/sn46.3/en/sujato#sn46.3:9.4"^^xsd:anyURI .
+
+dho:p-sn46.3-9.5 a dho:Passage ;
+    dho:inText dho:t-sn46.3 ;
+    dho:segment "sn46.3:9.5" ;
+    dho:textEn "If not, with the ending of the five lower fetters, they’re extinguished between one life and the next."@en ;
+    dho:textPi "No ce diṭṭheva dhamme paṭikacca aññaṁ ārādheti, no ce maraṇakāle aññaṁ ārādheti, atha pañcannaṁ orambhāgiyānaṁ saṁyojanānaṁ parikkhayā antarāparinibbāyī hoti."@pi ;
+    dho:url "https://suttacentral.net/sn46.3/en/sujato#sn46.3:9.5"^^xsd:anyURI .
+
+dho:p-sn46.3-9.6 a dho:Passage ;
+    dho:inText dho:t-sn46.3 ;
+    dho:segment "sn46.3:9.6" ;
+    dho:textEn "If not, with the ending of the five lower fetters they’re extinguished upon landing."@en ;
+    dho:textPi "No ce diṭṭheva dhamme paṭikacca aññaṁ ārādheti, no ce maraṇakāle aññaṁ ārādheti, no ce pañcannaṁ orambhāgiyānaṁ saṁyojanānaṁ parikkhayā antarāparinibbāyī hoti, atha pañcannaṁ orambhāgiyānaṁ saṁyojanānaṁ parikkhayā upahaccaparinibbāyī hoti."@pi ;
+    dho:url "https://suttacentral.net/sn46.3/en/sujato#sn46.3:9.6"^^xsd:anyURI .
+
+dho:p-sn46.3-9.7 a dho:Passage ;
+    dho:inText dho:t-sn46.3 ;
+    dho:segment "sn46.3:9.7" ;
+    dho:textEn "If not, with the ending of the five lower fetters they’re extinguished without extra effort."@en ;
+    dho:textPi "No ce diṭṭheva dhamme paṭikacca aññaṁ ārādheti, no ce maraṇakāle aññaṁ ārādheti, no ce pañcannaṁ orambhāgiyānaṁ saṁyojanānaṁ parikkhayā antarāparinibbāyī hoti, no ce pañcannaṁ orambhāgiyānaṁ saṁyojanānaṁ parikkhayā upahaccaparinibbāyī hoti, atha pañcannaṁ orambhāgiyānaṁ saṁyojanānaṁ parikkhayā asaṅkhāraparinibbāyī hoti."@pi ;
+    dho:url "https://suttacentral.net/sn46.3/en/sujato#sn46.3:9.7"^^xsd:anyURI .
+
+dho:p-sn46.3-9.8 a dho:Passage ;
+    dho:inText dho:t-sn46.3 ;
+    dho:segment "sn46.3:9.8" ;
+    dho:textEn "If not, with the ending of the five lower fetters they’re extinguished with extra effort."@en ;
+    dho:textPi "No ce diṭṭheva dhamme paṭikacca aññaṁ ārādheti, no ce maraṇakāle aññaṁ ārādheti, no ce pañcannaṁ orambhāgiyānaṁ saṁyojanānaṁ parikkhayā antarāparinibbāyī hoti, no ce pañcannaṁ orambhāgiyānaṁ saṁyojanānaṁ parikkhayā upahaccaparinibbāyī hoti, no ce pañcannaṁ orambhāgiyānaṁ saṁyojanānaṁ parikkhayā asaṅkhāraparinibbāyī hoti, atha pañcannaṁ orambhāgiyānaṁ saṁyojanānaṁ parikkhayā sasaṅkhāraparinibbāyī hoti."@pi ;
+    dho:url "https://suttacentral.net/sn46.3/en/sujato#sn46.3:9.8"^^xsd:anyURI .
+
+dho:p-sn46.3-9.9 a dho:Passage ;
+    dho:inText dho:t-sn46.3 ;
+    dho:segment "sn46.3:9.9" ;
+    dho:textEn "If not, with the ending of the five lower fetters they head upstream, going to the Akaniṭṭha realm."@en ;
+    dho:textPi "No ce diṭṭheva dhamme paṭikacca aññaṁ ārādheti, no ce maraṇakāle aññaṁ ārādheti, no ce pañcannaṁ orambhāgiyānaṁ saṁyojanānaṁ parikkhayā antarāparinibbāyī hoti, no ce pañcannaṁ orambhāgiyānaṁ saṁyojanānaṁ parikkhayā upahaccaparinibbāyī hoti, no ce pañcannaṁ orambhāgiyānaṁ saṁyojanānaṁ parikkhayā asaṅkhāraparinibbāyī hoti, no ce pañcannaṁ orambhāgiyānaṁ saṁyojanānaṁ parikkhayā sasaṅkhāraparinibbāyī hoti, atha pañcannaṁ orambhāgiyānaṁ saṁyojanānaṁ parikkhayā uddhaṁsoto hoti akaniṭṭhagāmī."@pi ;
+    dho:url "https://suttacentral.net/sn46.3/en/sujato#sn46.3:9.9"^^xsd:anyURI .
+
 dho:p-sn46.31-1.1 a dho:Passage ;
     dho:inText dho:t-sn46.31 ;
     dho:segment "sn46.31:1.1" ;
@@ -1511,6 +1679,76 @@ dho:p-sn46.53-7.3 a dho:Passage ;
     dho:textPi "Līnaṁ, bhikkhave, cittaṁ taṁ etehi dhammehi susamuṭṭhāpayaṁ hoti."@pi ;
     dho:url "https://suttacentral.net/sn46.53/en/sujato#sn46.53:7.3"^^xsd:anyURI .
 
+dho:p-sn46.56-2.3 a dho:Passage ;
+    dho:inText dho:t-sn46.56 ;
+    dho:segment "sn46.56:2.3" ;
+    dho:textEn "“There’s a time when the heart is overcome and mired in sensual desire, without truly knowing and seeing the escape from sensual desire that has arisen."@en ;
+    dho:textPi "“Yasmiṁ kho, rājakumāra, samaye kāmarāgapariyuṭṭhitena cetasā viharati kāmarāgaparetena, uppannassa ca kāmarāgassa nissaraṇaṁ yathābhūtaṁ na jānāti na passati—"@pi ;
+    dho:url "https://suttacentral.net/sn46.56/en/sujato#sn46.56:2.3"^^xsd:anyURI .
+
+dho:p-sn46.56-2.4 a dho:Passage ;
+    dho:inText dho:t-sn46.56 ;
+    dho:segment "sn46.56:2.4" ;
+    dho:textEn "This is a cause and reason for not knowing and not seeing."@en ;
+    dho:textPi "ayampi kho, rājakumāra, hetu, ayaṁ paccayo aññāṇāya adassanāya."@pi ;
+    dho:url "https://suttacentral.net/sn46.56/en/sujato#sn46.56:2.4"^^xsd:anyURI .
+
+dho:p-sn46.56-3.4 a dho:Passage ;
+    dho:inText dho:t-sn46.56 ;
+    dho:segment "sn46.56:3.4" ;
+    dho:textEn "doubt, without truly knowing and seeing the escape from doubt that has arisen."@en ;
+    dho:textPi "vicikicchāpariyuṭṭhitena cetasā viharati vicikicchāparetena, uppannāya ca vicikicchāya nissaraṇaṁ yathābhūtaṁ na jānāti na passati—"@pi ;
+    dho:url "https://suttacentral.net/sn46.56/en/sujato#sn46.56:3.4"^^xsd:anyURI .
+
+dho:p-sn46.56-3.5 a dho:Passage ;
+    dho:inText dho:t-sn46.56 ;
+    dho:segment "sn46.56:3.5" ;
+    dho:textEn "This is a cause and reason for not knowing and not seeing."@en ;
+    dho:textPi "ayampi kho, rājakumāra, hetu, ayaṁ paccayo aññāṇāya adassanāya."@pi ;
+    dho:url "https://suttacentral.net/sn46.56/en/sujato#sn46.56:3.5"^^xsd:anyURI .
+
+dho:p-sn46.56-5.3 a dho:Passage ;
+    dho:inText dho:t-sn46.56 ;
+    dho:segment "sn46.56:5.3" ;
+    dho:textEn "“It’s when a mendicant develops the awakening factor of mindfulness, which relies on seclusion, fading away, and cessation, and ripens as letting go."@en ;
+    dho:textPi "“Idha, rājakumāra, bhikkhu satisambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ."@pi ;
+    dho:url "https://suttacentral.net/sn46.56/en/sujato#sn46.56:5.3"^^xsd:anyURI .
+
+dho:p-sn46.56-5.4 a dho:Passage ;
+    dho:inText dho:t-sn46.56 ;
+    dho:segment "sn46.56:5.4" ;
+    dho:textEn "They truly know and see with a mind that has developed the awakening factor of mindfulness."@en ;
+    dho:textPi "So satisambojjhaṅgaṁ bhāvitena cittena yathābhūtaṁ jānāti passati—"@pi ;
+    dho:url "https://suttacentral.net/sn46.56/en/sujato#sn46.56:5.4"^^xsd:anyURI .
+
+dho:p-sn46.56-5.5 a dho:Passage ;
+    dho:inText dho:t-sn46.56 ;
+    dho:segment "sn46.56:5.5" ;
+    dho:textEn "This is a cause and reason for knowing and seeing."@en ;
+    dho:textPi "ayampi kho, rājakumāra, hetu, ayaṁ paccayo ñāṇāya dassanāya."@pi ;
+    dho:url "https://suttacentral.net/sn46.56/en/sujato#sn46.56:5.5"^^xsd:anyURI .
+
+dho:p-sn46.56-6.2 a dho:Passage ;
+    dho:inText dho:t-sn46.56 ;
+    dho:segment "sn46.56:6.2" ;
+    dho:textEn "equanimity, which rely on seclusion, fading away, and cessation, and ripen as letting go."@en ;
+    dho:textPi "upekkhāsambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ."@pi ;
+    dho:url "https://suttacentral.net/sn46.56/en/sujato#sn46.56:6.2"^^xsd:anyURI .
+
+dho:p-sn46.56-6.3 a dho:Passage ;
+    dho:inText dho:t-sn46.56 ;
+    dho:segment "sn46.56:6.3" ;
+    dho:textEn "They truly know and see with a mind that has developed the awakening factor of equanimity."@en ;
+    dho:textPi "So upekkhāsambojjhaṅgaṁ bhāvitena cittena yathābhūtaṁ jānāti passati—"@pi ;
+    dho:url "https://suttacentral.net/sn46.56/en/sujato#sn46.56:6.3"^^xsd:anyURI .
+
+dho:p-sn46.56-6.4 a dho:Passage ;
+    dho:inText dho:t-sn46.56 ;
+    dho:segment "sn46.56:6.4" ;
+    dho:textEn "This is a cause and reason for knowing and seeing."@en ;
+    dho:textPi "ayampi kho, rājakumāra, hetu, ayaṁ paccayo ñāṇāya dassanāya."@pi ;
+    dho:url "https://suttacentral.net/sn46.56/en/sujato#sn46.56:6.4"^^xsd:anyURI .
+
 dho:p-sn46.57-1.2 a dho:Passage ;
     dho:inText dho:t-sn46.57 ;
     dho:segment "sn46.57:1.2" ;
@@ -2211,6 +2449,13 @@ dho:t-sn46.37 a dho:Text ;
     dho:layer dho:SuttaLayer ;
     dho:url "https://suttacentral.net/sn46.37/en/sujato"^^xsd:anyURI .
 
+dho:t-sn46.56 a dho:Text ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
+    skos:prefLabel "SN 46.56 Abhayasutta — With Prince Abhaya"@en ;
+    dho:layer dho:SuttaLayer ;
+    dho:url "https://suttacentral.net/sn46.56/en/sujato"^^xsd:anyURI .
+
 dho:t-sn46.76 a dho:Text ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
@@ -2224,6 +2469,13 @@ dho:t-sn46.2 a dho:Text ;
     skos:prefLabel "SN 46.2 Kāyasutta — The Body"@en ;
     dho:layer dho:SuttaLayer ;
     dho:url "https://suttacentral.net/sn46.2/en/sujato"^^xsd:anyURI .
+
+dho:t-sn46.3 a dho:Text ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
+    skos:prefLabel "SN 46.3 Sīlasutta — Ethics"@en ;
+    dho:layer dho:SuttaLayer ;
+    dho:url "https://suttacentral.net/sn46.3/en/sujato"^^xsd:anyURI .
 
 dho:t-sn46.51 a dho:Text ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;

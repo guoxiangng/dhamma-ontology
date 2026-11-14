@@ -644,3 +644,35 @@ must_not = ["SN 46.71 explicitly states that the perception of impermanence lead
 layer = "sutta"
 status = "draft"
 note = "Tests honesty about abbreviated texts (D14)."
+
+[[q]]
+id = "Q43"
+category = "recall"
+scope = "covered"
+question = "According to SN 46.3, what gives rise to rapture, and what does rapture in turn lead to?"
+gold = [
+  "Energy: when they're energetic, rapture not of the flesh (pīti nirāmisā) arises.",
+  "When the mind is full of rapture, the body and mind become tranquil, which initiates the awakening factor of tranquility.",
+]
+segments = ["sn46.3:4.2", "sn46.3:5.1", "sn46.3:5.2", "sn46.3:6.1"]
+also_ok = ["Giving the whole sequence, from recollecting the teaching through to equanimity."]
+must_not = []
+layer = "sutta"
+status = "draft"
+note = "Added with SN 46.3 (D16)."
+
+[[q]]
+id = "Q44"
+category = "trap"
+scope = "covered"
+question = "In SN 46.56, who says that 'overcome by even a single hindrance you wouldn't truly know or see, let alone all five'?"
+gold = [
+  "Prince Abhaya, responding with approval after the Buddha's explanation. The Buddha's own statement is that the hindrances are a cause and reason for not knowing and not seeing.",
+]
+segments = ["sn46.56:4.3", "sn46.56:4.5", "sn46.56:2.4"]
+also_ok = []
+must_not = ["The Buddha says it.", "SN 46.56 teaches, in the Buddha's words, that a single hindrance is enough to prevent knowing and seeing."]
+layer = "sutta"
+status = "draft"
+note = "Tests attribution to the right speaker (D17). The ontology leaves Abhaya's lines out."
+

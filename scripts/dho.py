@@ -236,35 +236,54 @@ def card(g: Graph, c) -> list[str]:
     # Outcomes and conditions (D13) about this node, or about a list it belongs to.
     subjects = [c] + sorted(g.objects(c, DHO.memberOf))
 
-    def via(node):
-        return "" if node == c else f" (as one of {label(g, node)})"
+    rows = []  # (subject the claim is about: this node or one of its lists, section, text, claim)
+    verbs = {"Arises": ("arises", "arise"), "DoesNotArise": ("doesn't arise, or ends", "don't arise, or end"),
+             "IsAbsent": ("is absent", "are absent"), "IsFullyDeveloped": ("is fully developed", "are fully developed")}
 
-    rows = []
+    def happens(node, res):
+        one, many = verbs.get(str(res).rsplit("#", 1)[-1], (label(g, res), label(g, res)))
+        return f"{label(g, node)} {many if DHO.NumberedList in set(g.objects(node, RDF.type)) else one}"
+
     for s in subjects:
         for o in g.subjects(DHO.of, s):
-            rows.append(("outcomes", f"{label(g, g.value(o, DHO.effect))} {label(g, g.value(o, DHO.to))}{via(s)}", o))
+            rows.append((s, "outcomes", f"{label(g, g.value(o, DHO.effect))} {label(g, g.value(o, DHO.to))}", o))
         for o in g.subjects(DHO.to, s):
-            rows.append(("outcomes", f"{label(g, g.value(o, DHO.of))} → {label(g, g.value(o, DHO.effect))}", o))
+            rows.append((s, "outcomes", f"{label(g, g.value(o, DHO.of))} → {label(g, g.value(o, DHO.effect))} this", o))
         for k in g.subjects(DHO.conditioned, s):
             res = g.value(k, DHO.result)
             cond = label(g, g.value(k, DHO.condition))
-            if res:
-                text = f"when {cond} is present, these {label(g, res)}{via(s)}"
-            else:
-                text = f"{cond} → {label(g, g.value(k, DHO.relation))} this{via(s)}"
-            rows.append(("conditions", text, k))
+            text = (f"when {cond} is present, {happens(s, res)}" if res
+                    else f"{cond} → {label(g, g.value(k, DHO.relation))} this")
+            rows.append((s, "conditions", text, k))
         for k in g.subjects(DHO.condition, s):
-            rows.append(("conditions", f"{label(g, g.value(k, DHO.relation))} {label(g, g.value(k, DHO.conditioned))}"
-                         + (f": {label(g, g.value(k, DHO.result))}" if g.value(k, DHO.result) else ""), k))
+            res = g.value(k, DHO.result)
+            target = g.value(k, DHO.conditioned)
+            text = (f"when this is present, {happens(target, res)}" if res
+                    else f"{label(g, g.value(k, DHO.relation))} {label(g, target)}")
+            rows.append((s, "conditions", text, k))
+
+    def emit(items, indent):
+        for _, _, text, node in sorted(items, key=lambda r: r[2]):
+            out.append(f"{indent}- {text}   \"{g.value(node, DHO.wording)}\"  [sutta {cite(g, node)}]")
+            note = g.value(node, SKOS.note)
+            if note:
+                out.append(f"{indent}    note: {note}")
+
+    # Claims about this node first, then claims about each list it belongs to.
     for section in ("outcomes", "conditions"):
-        items = [r for r in rows if r[0] == section]
-        if items:
+        own = [r for r in rows if r[1] == section and r[0] == c]
+        if own:
             out.append(f"  {section}:")
-            for _, text, node in sorted(items, key=lambda r: r[1]):
-                out.append(f"    - {text}   \"{g.value(node, DHO.wording)}\"  [sutta {cite(g, node)}]")
-                note = g.value(node, SKOS.note)
-                if note:
-                    out.append(f"        note: {note}")
+            emit(own, "    ")
+    for lst in subjects[1:]:
+        group = [r for r in rows if r[0] == lst]
+        if group:
+            out.append(f"  as one of {label(g, lst)} ({len(group)} claims about the whole list):")
+            for section in ("outcomes", "conditions"):
+                part = [r for r in group if r[1] == section]
+                if part:
+                    out.append(f"    {section}:")
+                    emit(part, "      ")
 
     for d in g.subjects(DHO.defines, c):
         out.append(f"  is defined as: {label(g, g.value(d, DHO['as']))}   [sutta {cite(g, d)}]")
