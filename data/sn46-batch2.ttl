@@ -1,0 +1,86 @@
+@prefix dho:  <https://guoxiangng.github.io/dhamma-ontology/ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# SN 46.25-29, 46.41, 46.43, 46.130 (second batch with patterns A and B, D13).
+# Each sutta read in full. What is left out is logged in data/coverage.ttl.
+
+# ---------------------------------------------------------------- the five higher fetters (SN 46.130)
+
+dho:FiveHigherFetters a dho:NumberedList ;
+    skos:prefLabel "the five higher fetters"@en , "pañca uddhambhāgiyāni saṁyojanāni"@pi , "五上分結"@zh ;
+    dho:expectedCount 5 ;
+    dho:hasMember dho:DesireForFormRebirth , dho:DesireForFormlessRebirth , dho:Conceit , dho:Restlessness , dho:Ignorance ;
+    dho:citedBy dho:p-sn46.130-1.2 , dho:p-sn46.130-1.4 .
+
+dho:DesireForFormRebirth a dho:MentalQuality ;
+    skos:prefLabel "desire for rebirth in the realm of luminous form"@en , "rūparāga"@pi , "色貪"@zh .
+dho:DesireForFormlessRebirth a dho:MentalQuality ;
+    skos:prefLabel "desire for rebirth in the formless realm"@en , "arūparāga"@pi , "無色貪"@zh .
+dho:Conceit a dho:MentalQuality ;
+    skos:prefLabel "conceit"@en , "māna"@pi , "慢"@zh .
+dho:Ignorance a dho:MentalQuality ;
+    skos:prefLabel "ignorance"@en , "avijjā"@pi , "無明"@zh .
+# uddhacca alone, not the hindrance's compound uddhaccakukkucca: a separate concept, joined by an editor's link.
+dho:Restlessness a dho:MentalQuality ;
+    skos:prefLabel "restlessness"@en , "uddhacca"@pi , "掉舉"@zh ;
+    dho:editorialRelated dho:RestlessnessRemorse .
+
+# ---------------------------------------------------------------- concepts the outcomes point to
+
+dho:EndingOfCraving a dho:Concept ; skos:prefLabel "the ending of craving"@en , "taṇhakkhaya"@pi .
+dho:CessationOfCraving a dho:Concept ; skos:prefLabel "the cessation of craving"@en , "taṇhānirodha"@pi .
+dho:Penetration a dho:Concept ; skos:prefLabel "penetration"@en , "nibbedha"@pi .
+dho:ThingsThatTightenFetters a dho:Concept ;
+    skos:prefLabel "the things that tighten the fetters"@en , "saṁyojanīyā dhammā"@pi .
+dho:ThreeDiscriminations a dho:Concept ; skos:prefLabel "the three discriminations"@en , "tisso vidhā"@pi .
+dho:CrushingMarasArmy a dho:Concept ; skos:prefLabel "crushing Māra’s army"@en , "mārasenappamaddana"@pi .
+dho:RemovalOfGreedHateDelusion a dho:Concept ;
+    skos:prefLabel "the removal of greed, hate, and delusion"@en , "rāgavinaya dosavinaya mohavinaya"@pi .
+dho:Deathless a dho:Concept ; skos:prefLabel "freedom from death"@en , "amata"@pi ; skos:altLabel "the deathless"@en .
+
+# ---------------------------------------------------------------- outcomes
+
+dho:o-20 a dho:Outcome ; dho:of dho:SevenAwakeningFactors ; dho:effect dho:LeadsTo ; dho:to dho:EndingOfCraving ;
+    dho:wording "leads to the ending of craving" ;
+    dho:citedBy dho:p-sn46.26-1.1 , dho:p-sn46.26-1.4 .
+dho:o-21 a dho:Outcome ; dho:of dho:SevenAwakeningFactors ; dho:effect dho:LeadsTo ; dho:to dho:CessationOfCraving ;
+    dho:wording "leads to the cessation of craving" ;
+    dho:citedBy dho:p-sn46.27-1.1 , dho:p-sn46.27-1.4 , dho:p-sn46.27-2.3 .
+dho:o-22 a dho:Outcome ; dho:of dho:SevenAwakeningFactors ; dho:effect dho:LeadsTo ; dho:to dho:Penetration ;
+    dho:wording "lead to penetration" ;
+    dho:citedBy dho:p-sn46.28-1.1 , dho:p-sn46.28-1.5 , dho:p-sn46.28-1.9 , dho:p-sn46.28-2.9 .
+dho:o-23 a dho:Outcome ; dho:of dho:SevenAwakeningFactors ; dho:effect dho:GivesUp ; dho:to dho:ThingsThatTightenFetters ;
+    dho:wording "leads to giving up the things that tighten the fetters" ;
+    skos:note "Stated as a superlative: nothing else, developed like this, does so like the seven awakening factors."@en ;
+    dho:citedBy dho:p-sn46.29-1.1 , dho:p-sn46.29-2.3 .
+dho:o-24 a dho:Outcome ; dho:of dho:SevenAwakeningFactors ; dho:effect dho:GivesUp ; dho:to dho:ThreeDiscriminations ;
+    dho:wording "give up the three discriminations" ;
+    skos:note "Said of all ascetics and brahmins, past, future and present, who give them up."@en ;
+    dho:citedBy dho:p-sn46.41-1.2 , dho:p-sn46.41-1.3 , dho:p-sn46.41-1.4 , dho:p-sn46.41-1.9 .
+dho:o-25 a dho:Outcome ; dho:of dho:SevenAwakeningFactors ; dho:effect dho:LeadsTo ; dho:to dho:CrushingMarasArmy ;
+    dho:wording "path for crushing Māra’s army" ;
+    dho:citedBy dho:p-sn46.43-1.1 , dho:p-sn46.43-1.5 , dho:p-sn46.43-1.8 .
+dho:o-26 a dho:Outcome ; dho:of dho:SevenAwakeningFactors ; dho:effect dho:GivesUp ; dho:to dho:FiveHigherFetters ;
+    dho:wording "for the direct knowledge, complete understanding, finishing, and giving up of these five higher fetters" ;
+    dho:citedBy dho:p-sn46.130-1.6 , dho:p-sn46.130-1.12 .
+dho:o-27 a dho:Outcome ; dho:of dho:SevenAwakeningFactors ; dho:effect dho:LeadsTo ; dho:to dho:RemovalOfGreedHateDelusion ;
+    dho:wording "culminate in the removal of greed, hate, and delusion" ;
+    dho:citedBy dho:p-sn46.130-1.9 .
+dho:o-28 a dho:Outcome ; dho:of dho:SevenAwakeningFactors ; dho:effect dho:LeadsTo ; dho:to dho:Deathless ;
+    dho:wording "freedom from death as their objective, destination, and culmination" ;
+    dho:citedBy dho:p-sn46.130-1.10 .
+
+# SN 46.130:1.11 says of the factors what SN 46.7 says of the one developing them (nibbānaninna,
+# -poṇa, -pabbhāra): the same claim, so a citation on o-02 (D12).
+dho:o-02 dho:citedBy dho:p-sn46.130-1.11 .
+
+# The stock formula in four more suttas (o-19, c-17 to c-19).
+dho:o-19 dho:citedBy dho:p-sn46.26-2.1 , dho:p-sn46.26-2.5 , dho:p-sn46.27-2.2 , dho:p-sn46.28-2.1 , dho:p-sn46.28-2.5 , dho:p-sn46.29-2.2 .
+dho:c-17 dho:citedBy dho:p-sn46.26-2.1 , dho:p-sn46.26-2.5 , dho:p-sn46.27-2.2 , dho:p-sn46.28-2.1 , dho:p-sn46.28-2.5 , dho:p-sn46.29-2.2 .
+dho:c-18 dho:citedBy dho:p-sn46.26-2.1 , dho:p-sn46.26-2.5 , dho:p-sn46.27-2.2 , dho:p-sn46.28-2.1 , dho:p-sn46.28-2.5 , dho:p-sn46.29-2.2 .
+dho:c-19 dho:citedBy dho:p-sn46.26-2.1 , dho:p-sn46.26-2.5 , dho:p-sn46.27-2.2 , dho:p-sn46.28-2.1 , dho:p-sn46.28-2.5 , dho:p-sn46.29-2.2 .
+
+# List restatements.
+dho:SevenAwakeningFactors dho:citedBy
+    dho:p-sn46.25-1.7 , dho:p-sn46.26-1.6 , dho:p-sn46.27-1.6 , dho:p-sn46.28-1.7 , dho:p-sn46.29-1.3 ,
+    dho:p-sn46.41-1.6 , dho:p-sn46.43-1.7 .

@@ -39,7 +39,9 @@ dho:FirstJhanaFactors a dho:NumberedList ;
 dho:SensualDesire a dho:MentalQuality ;
     skos:prefLabel "sensual desire"@en , "kāmacchanda"@pi , "貪欲"@zh ;
     skos:altLabel "欲貪"@zh ;
-    skos:hiddenLabel "lust"@en , "craving"@en , "wanting"@en , "desire"@en .
+    skos:hiddenLabel "lust"@en , "wanting"@en , "desire"@en .
+# "craving" was a search word here in v0.1; removed on 2026-11-14 because craving (taṇhā) is its
+# own term in the suttas (SN 46.26, 46.27) and must not resolve to sensual desire (kāmacchanda).
 
 dho:IllWill a dho:MentalQuality ;
     skos:prefLabel "ill will"@en , "byāpāda"@pi , "瞋恚"@zh ;

@@ -12,10 +12,10 @@ This is how much of the canon the ontology actually draws on. It is small on pur
 |---|---:|---:|---:|---:|---:|
 | Long Discourses (DN) | 34 | 0 | 0 | 0 | 0.00% |
 | Middle Discourses (MN) | 152 | 0 | 2 | 2 | 2.63% |
-| Linked Discourses (SN) | 3,024 | 10 | 17 | 1 | 0.93% |
+| Linked Discourses (SN) | 3,024 | 14 | 21 | 1 | 1.19% |
 | Numbered Discourses (AN) | 8,122 | 0 | 0 | 0 | 0.00% |
 | Minor Collection (KN) | 2,748 | 0 | 0 | 1 | 0.04% |
-| **Total** | **14,080** | **10** | | | **0.23%** |
+| **Total** | **14,080** | **14** | | | **0.29%** |
 
 Counts follow SuttaCentral's numbering, with grouped ranges (e.g. `sn12.93-213`) counted as the suttas they number. Many of those are abbreviated repetitions, so this overstates the amount of distinct text. KN mixes early and late material (Dhammapada and Sutta Nipāta beside Jātaka and Apadāna) and Dhammapada is counted by verse.
 
@@ -23,13 +23,17 @@ Counts follow SuttaCentral's numbering, with grouped ranges (e.g. `sn12.93-213`)
 
 | Text | Layer | Coverage | Segments cited / in text | Claims citing it | Review |
 |---|---|---|---:|---:|---|
+| [SN 46.130 Uddhambhāgiyasutta — Higher Fetters](https://suttacentral.net/sn46.130/en/sujato) | Sutta (early discourses) | fully encoded | 7 / 19 | 5 | not yet reviewed |
 | [SN 46.20 Nibbidāsutta — Disillusionment](https://suttacentral.net/sn46.20/en/sujato) | Sutta (early discourses) | fully encoded | 3 / 11 | 8 | not yet reviewed |
 | [SN 46.21 Bodhāyasutta — To Awakening](https://suttacentral.net/sn46.21/en/sujato) | Sutta (early discourses) | fully encoded | 4 / 8 | 6 | not yet reviewed |
 | [SN 46.22 Bojjhaṅgadesanāsutta — A Teaching on the Awakening Factors](https://suttacentral.net/sn46.22/en/sujato) | Sutta (early discourses) | fully encoded | 3 / 6 | 1 | not yet reviewed |
 | [SN 46.24 Ayonisomanasikārasutta — Irrational Application of Mind](https://suttacentral.net/sn46.24/en/sujato) | Sutta (early discourses) | fully encoded | 9 / 13 | 5 | not yet reviewed |
+| [SN 46.27 Taṇhānirodhasutta — The Cessation of Craving](https://suttacentral.net/sn46.27/en/sujato) | Sutta (early discourses) | fully encoded | 5 / 11 | 6 | not yet reviewed |
 | [SN 46.35 Ayonisomanasikārasutta — Irrational Application of Mind](https://suttacentral.net/sn46.35/en/sujato) | Sutta (early discourses) | fully encoded | 2 / 5 | 3 | not yet reviewed |
 | [SN 46.36 Buddhisutta — Growth](https://suttacentral.net/sn46.36/en/sujato) | Sutta (early discourses) | fully encoded | 3 / 5 | 2 | not yet reviewed |
 | [SN 46.38 Anīvaraṇasutta — Without Obstacles](https://suttacentral.net/sn46.38/en/sujato) | Sutta (early discourses) | fully encoded | 6 / 9 | 4 | not yet reviewed |
+| [SN 46.41 Vidhāsutta — Discriminations](https://suttacentral.net/sn46.41/en/sujato) | Sutta (early discourses) | fully encoded | 5 / 10 | 2 | not yet reviewed |
+| [SN 46.43 Mārasutta — About Māra](https://suttacentral.net/sn46.43/en/sujato) | Sutta (early discourses) | fully encoded | 4 / 9 | 2 | not yet reviewed |
 | [SN 46.49 Ajjhattikaṅgasutta — Interior](https://suttacentral.net/sn46.49/en/sujato) | Sutta (early discourses) | fully encoded | 1 / 7 | 1 | not yet reviewed |
 | [SN 46.50 Bāhiraṅgasutta — Exterior](https://suttacentral.net/sn46.50/en/sujato) | Sutta (early discourses) | fully encoded | 1 / 13 | 1 | not yet reviewed |
 | [SN 46.51 Āhārasutta — Nourishing](https://suttacentral.net/sn46.51/en/sujato) | Sutta (early discourses) | fully encoded | 49 / 100 | 27 | not yet reviewed |
@@ -42,6 +46,10 @@ Counts follow SuttaCentral's numbering, with grouped ranges (e.g. `sn12.93-213`)
 | [SN 46.17 Pāraṅgamasutta — Going to the Far Shore](https://suttacentral.net/sn46.17/en/sujato) | Sutta (early discourses) | partly encoded | 3 / 27 | 2 | not yet reviewed |
 | [SN 46.19 Ariyasutta — Noble](https://suttacentral.net/sn46.19/en/sujato) | Sutta (early discourses) | partly encoded | 3 / 5 | 2 | not yet reviewed |
 | [SN 46.2 Kāyasutta — The Body](https://suttacentral.net/sn46.2/en/sujato) | Sutta (early discourses) | partly encoded | 24 / 58 | 12 | not yet reviewed |
+| [SN 46.25 Aparihāniyasutta — Non-decline](https://suttacentral.net/sn46.25/en/sujato) | Sutta (early discourses) | partly encoded | 1 / 9 | 1 | not yet reviewed |
+| [SN 46.26 Taṇhakkhayasutta — The Ending of Craving](https://suttacentral.net/sn46.26/en/sujato) | Sutta (early discourses) | partly encoded | 5 / 18 | 6 | not yet reviewed |
+| [SN 46.28 Nibbedhabhāgiyasutta — Helping Penetration](https://suttacentral.net/sn46.28/en/sujato) | Sutta (early discourses) | partly encoded | 7 / 19 | 6 | not yet reviewed |
+| [SN 46.29 Ekadhammasutta — One Thing](https://suttacentral.net/sn46.29/en/sujato) | Sutta (early discourses) | partly encoded | 4 / 16 | 6 | not yet reviewed |
 | [SN 46.31 Paṭhamakusalasutta — Skillful (1st)](https://suttacentral.net/sn46.31/en/sujato) | Sutta (early discourses) | partly encoded | 3 / 7 | 6 | not yet reviewed |
 | [SN 46.32 Dutiyakusalasutta — Skillful (2nd)](https://suttacentral.net/sn46.32/en/sujato) | Sutta (early discourses) | partly encoded | 3 / 7 | 6 | not yet reviewed |
 | [SN 46.33 Upakkilesasutta — Corruptions](https://suttacentral.net/sn46.33/en/sujato) | Sutta (early discourses) | partly encoded | 3 / 13 | 1 | not yet reviewed |
@@ -59,6 +67,11 @@ Counts follow SuttaCentral's numbering, with grouped ranges (e.g. `sn12.93-213`)
 | Visuddhimagga IV.86 | Commentary / later treatise | referenced only | not held | 5 | not yet reviewed |
 
 Segments cited are the passages a claim points to. A fully encoded text can still cite fewer than all its segments, because headings, questions and restatements carry no new claim.
+
+### SN 46.130 Uddhambhāgiyasutta — Higher Fetters
+
+- **Coverage:** fully encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** The five higher fetters as a list (1.2, 1.4); the seven factors should be developed for their direct knowledge, complete understanding, finishing and giving up (1.6, 1.12); and the formula variants: culminating in the removal of greed, hate and delusion (1.9), having freedom from death as their culmination (1.10), and inclining to extinguishment (1.11). The rest of the sutta is abbreviated in the source.
 
 ### SN 46.20 Nibbidāsutta — Disillusionment
 
@@ -80,6 +93,11 @@ Segments cited are the passages a claim points to. A fully encoded text can stil
 - **Coverage:** fully encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
 - **Encodes:** Irrational application of mind: the hindrances arise and grow, the awakening factors don't arise or cease (1.1-1.6). Rational application of mind: the hindrances don't arise or are given up, the awakening factors arise and are fully developed (2.1-3.1).
 
+### SN 46.27 Taṇhānirodhasutta — The Cessation of Craving
+
+- **Coverage:** fully encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** The seven factors are the path that leads to the cessation of craving (1.1, 1.4, 2.3); the list (1.6); the stock formula for each factor (relies on seclusion, fading away and cessation; ripens as letting go) (2.2).
+
 ### SN 46.35 Ayonisomanasikārasutta — Irrational Application of Mind
 
 - **Coverage:** fully encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
@@ -94,6 +112,16 @@ Segments cited are the passages a claim points to. A fully encoded text can stil
 
 - **Coverage:** fully encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
 - **Encodes:** Both lists (2.1, 2.2; 3.1, 3.2), and the teaching: when a noble disciple pays attention, applies the mind, concentrates wholeheartedly and actively listens to the teaching, the five hindrances are absent and the seven awakening factors are fully developed (1.1, 3.4).
+
+### SN 46.41 Vidhāsutta — Discriminations
+
+- **Coverage:** fully encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** All ascetics and brahmins, past, future and present, who give up the three discriminations do so by developing the seven factors (1.2-1.4, 1.7-1.9); the list (1.6). The sutta doesn't name the three discriminations, so neither does the ontology.
+
+### SN 46.43 Mārasutta — About Māra
+
+- **Coverage:** fully encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** The seven factors are the path for crushing Māra's army (1.1, 1.5, 1.8); the list (1.7).
 
 ### SN 46.49 Ajjhattikaṅgasutta — Interior
 
@@ -164,6 +192,30 @@ Segments cited are the passages a claim points to. A fully encoded text can stil
 - **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
 - **Encodes:** Its 12 statements of what fuels the five hindrances and seven awakening factors (2-6, 9-15). They match SN 46.51 sections 1-12 (identical English; Pali differs only in punctuation and one spelling variant), so they were added as a second citation on the same claims, not as new claims.
 - **Left out:** The simile framing the teaching: as the body is sustained by food, so the hindrances and the awakening factors are sustained by fuel (1.2-1.3, 7, 8, 16). There is no pattern for similes yet.
+
+### SN 46.25 Aparihāniyasutta — Non-decline
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** The list of the seven awakening factors (1.7).
+- **Left out:** The naming: the seven awakening factors are 'the seven principles that prevent decline' (aparihāniyā dhammā) (1.1, 1.3, 1.5, 1.8). Needs a pattern for what a quality is called.
+
+### SN 46.26 Taṇhakkhayasutta — The Ending of Craving
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** The seven factors are the path that leads to the ending of craving (1.1, 1.4); the list (1.6); the stock formula for each factor (relies on seclusion, fading away and cessation; ripens as letting go) (2.1, 2.5).
+- **Left out:** The chain: as they develop each factor, craving is given up; when craving is given up, deeds are given up; when deeds are given up, suffering is given up (2.2-2.4, 2.6-2.9). Needs a pattern for chains of ending, which dependent origination will also need. Also the description of each factor as 'abundant, expansive, limitless, and free of ill will' (2.1, 2.5).
+
+### SN 46.28 Nibbedhabhāgiyasutta — Helping Penetration
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** The seven factors are the path that helps penetration (1.1, 1.5, 1.9, 2.9); the list (1.7); the stock formula for each factor (relies on seclusion, fading away and cessation; ripens as letting go) (2.1, 2.5).
+- **Left out:** With a mind that has developed each factor, they penetrate and shatter the mass of greed, hate and delusion for the first time (2.2-2.4, 2.6-2.8); 'weakens' would understate 'shatter', so it waits for a better fit. Also 'abundant, expansive, limitless, and free of ill will' (2.1, 2.5).
+
+### SN 46.29 Ekadhammasutta — One Thing
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** Nothing else, developed like this, leads to giving up the things that tighten the fetters like the seven factors (1.1, 2.3); the list (1.3); the stock formula for each factor (relies on seclusion, fading away and cessation; ripens as letting go) (2.2).
+- **Left out:** What the things that tighten the fetters are: the eye, ear, nose, tongue, body and mind, where the fetters, shackles and attachments arise (3.1-3.8). Needs the six sense fields as a list and a pattern for 'X is where Y arises'.
 
 ### SN 46.31 Paṭhamakusalasutta — Skillful (1st)
 

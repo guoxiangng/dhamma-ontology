@@ -189,6 +189,9 @@ def card(g: Graph, c) -> list[str]:
         out.append("  is a: mind state")
     for lst in sorted(g.objects(c, DHO.memberOf)):
         out.append(f"  member of: {label(g, lst)}   [sutta {cite(g, lst)}]")
+    if DHO.NumberedList in types:
+        members = sorted(label(g, m) for m in g.objects(c, DHO.hasMember))
+        out.append(f"  members ({len(members)}): {', '.join(members)}   [sutta {cite(g, c)}]")
 
     def nutriments(prop):
         rows = []

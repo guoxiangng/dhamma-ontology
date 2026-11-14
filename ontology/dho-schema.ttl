@@ -289,6 +289,8 @@ dho:LeadsTo       a dho:Effect ; rdfs:label "leads to"@en .
 dho:DoesNotLeadTo a dho:Effect ; rdfs:label "does not lead to"@en .
 dho:Strengthens   a dho:Effect ; rdfs:label "strengthens"@en .
 dho:Weakens       a dho:Effect ; rdfs:label "weakens"@en .
+dho:GivesUp       a dho:Effect ; rdfs:label "leads to giving up"@en ;
+    rdfs:comment "Only for the text's pahāna ('giving up'). Ending (khaya) and cessation (nirodha) stay 'leads to' with their own target concepts."@en .
 
 dho:of     a owl:ObjectProperty , owl:FunctionalProperty ; rdfs:domain dho:Outcome ; rdfs:label "of"@en ;
     rdfs:comment "What has the effect: a quality, a list, or a practice."@en .

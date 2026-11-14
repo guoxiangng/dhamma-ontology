@@ -583,3 +583,32 @@ must_not = ["Yes, SN 46.1 calls ethics the forerunner of the awakening factors."
 layer = "sutta"
 status = "draft"
 note = "Tests whether a system keeps the text's own relation (basis vs forerunner) instead of a generic 'leads to'."
+
+[[q]]
+id = "Q39"
+category = "trap"
+scope = "covered"
+question = "SN 46.130 lists the five higher fetters. Is remorse one of them, as it is part of the hindrance of restlessness and remorse?"
+gold = [
+  "No. The five higher fetters are desire for rebirth in the realm of luminous form, desire for rebirth in the formless realm, conceit, restlessness (uddhacca) and ignorance.",
+  "The fetter is restlessness alone; the hindrance is the compound restlessness and remorse (uddhaccakukkucca). Remorse is not among the higher fetters.",
+]
+segments = ["sn46.130:1.2", "sn46.130:1.4", "sn46.51:4.1"]
+also_ok = []
+must_not = ["Remorse (kukkucca) is one of the five higher fetters.", "The higher fetter of restlessness is the same as the hindrance of restlessness and remorse."]
+layer = "sutta"
+status = "draft"
+note = "Added with SN 46 batch 2."
+
+[[q]]
+id = "Q40"
+category = "partial"
+scope = "partial"
+question = "According to SN 46.26, what follows when craving is given up?"
+gold = ["Deeds are given up; and when deeds are given up, suffering is given up. So when craving ends, deeds end, and when deeds end, suffering ends."]
+segments = ["sn46.26:2.2", "sn46.26:2.3", "sn46.26:2.4", "sn46.26:2.9"]
+also_ok = []
+must_not = []
+layer = "sutta"
+status = "draft"
+note = "This chain is left out of the ontology until a pattern for chains is agreed (see COVERAGE.md). A system using the ontology should say so, not invent an answer."

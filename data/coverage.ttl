@@ -274,3 +274,63 @@ dho:t-sn46.50
     dho:modelledOn "2026-11-14"^^xsd:date ;
     dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
     dho:encodes "Of exterior factors, nothing gives rise to the seven awakening factors like good friendship (1.1). The rest of the sutta is abbreviated in the source." .
+
+dho:t-sn46.25
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "The list of the seven awakening factors (1.7)." ;
+    dho:leftOut "The naming: the seven awakening factors are 'the seven principles that prevent decline' (aparihāniyā dhammā) (1.1, 1.3, 1.5, 1.8). Needs a pattern for what a quality is called." .
+
+dho:t-sn46.26
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "The seven factors are the path that leads to the ending of craving (1.1, 1.4); the list (1.6); the stock formula for each factor (relies on seclusion, fading away and cessation; ripens as letting go) (2.1, 2.5)." ;
+    dho:leftOut "The chain: as they develop each factor, craving is given up; when craving is given up, deeds are given up; when deeds are given up, suffering is given up (2.2-2.4, 2.6-2.9). Needs a pattern for chains of ending, which dependent origination will also need. Also the description of each factor as 'abundant, expansive, limitless, and free of ill will' (2.1, 2.5)." .
+
+dho:t-sn46.27
+    dho:coverage dho:FullyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "The seven factors are the path that leads to the cessation of craving (1.1, 1.4, 2.3); the list (1.6); the stock formula for each factor (relies on seclusion, fading away and cessation; ripens as letting go) (2.2)." .
+
+dho:t-sn46.28
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "The seven factors are the path that helps penetration (1.1, 1.5, 1.9, 2.9); the list (1.7); the stock formula for each factor (relies on seclusion, fading away and cessation; ripens as letting go) (2.1, 2.5)." ;
+    dho:leftOut "With a mind that has developed each factor, they penetrate and shatter the mass of greed, hate and delusion for the first time (2.2-2.4, 2.6-2.8); 'weakens' would understate 'shatter', so it waits for a better fit. Also 'abundant, expansive, limitless, and free of ill will' (2.1, 2.5)." .
+
+dho:t-sn46.29
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "Nothing else, developed like this, leads to giving up the things that tighten the fetters like the seven factors (1.1, 2.3); the list (1.3); the stock formula for each factor (relies on seclusion, fading away and cessation; ripens as letting go) (2.2)." ;
+    dho:leftOut "What the things that tighten the fetters are: the eye, ear, nose, tongue, body and mind, where the fetters, shackles and attachments arise (3.1-3.8). Needs the six sense fields as a list and a pattern for 'X is where Y arises'." .
+
+dho:t-sn46.41
+    dho:coverage dho:FullyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "All ascetics and brahmins, past, future and present, who give up the three discriminations do so by developing the seven factors (1.2-1.4, 1.7-1.9); the list (1.6). The sutta doesn't name the three discriminations, so neither does the ontology." .
+
+dho:t-sn46.43
+    dho:coverage dho:FullyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "The seven factors are the path for crushing Māra's army (1.1, 1.5, 1.8); the list (1.7)." .
+
+dho:t-sn46.130
+    dho:coverage dho:FullyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "The five higher fetters as a list (1.2, 1.4); the seven factors should be developed for their direct knowledge, complete understanding, finishing and giving up (1.6, 1.12); and the formula variants: culminating in the removal of greed, hate and delusion (1.9), having freedom from death as their culmination (1.10), and inclining to extinguishment (1.11). The rest of the sutta is abbreviated in the source." .

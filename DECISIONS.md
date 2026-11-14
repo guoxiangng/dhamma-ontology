@@ -81,7 +81,7 @@ Before merging, the wording of each pair is compared segment by segment, and any
 
 Most of SN 46 says what the awakening factors lead to, or what conditions them. Two patterns, approved by the project owner on 2026-11-14:
 
-- **Outcome** (pattern A): *of* (a quality, list or practice), *effect*, *to*, *wording*, citations. Effects are a small controlled set: leads to, does not lead to, strengthens, weakens. Example: the seven awakening factors, developed, *lead to* extinguishment ("slants, slopes, and inclines to extinguishment", SN 46.7).
+- **Outcome** (pattern A): *of* (a quality, list or practice), *effect*, *to*, *wording*, citations. Effects are a small controlled set: leads to, does not lead to, strengthens, weakens, and leads to giving up. The last was added with SN 46.29/41/130, only for the text's *pahāna* ("giving up"). Ending (*khaya*, SN 46.26) and cessation (*nirodha*, SN 46.27) are different words, so they stay "leads to" with their own target concepts. Example: the seven awakening factors, developed, *lead to* extinguishment ("slants, slopes, and inclines to extinguishment", SN 46.7).
 - **Condition** (pattern B): *condition*, *relation*, *conditioned*, optional *result*, *wording*, citations. Relations: is the basis of ("depending on and grounded on", "relies on"), is the forerunner of ("the forerunner and harbinger of"), is the root of ("rooted in and meet at"), gives rise to, supports the development of ("can expect to develop"), and when-then, whose result says what happens (arise; don't arise, or end; are absent; are fully developed).
 
 Mapping the text's words onto a controlled relation is an editorial act. So every claim also keeps the text's own words in `dho:wording`, and **S14 fails the build if that wording isn't found verbatim in a passage the claim cites**. The controlled relation makes the graph queryable; the wording keeps it honest. SN 46.1 says "grounded on ethics" and SN 46.12 says "forerunner"; eval Q38 checks that a system keeps that difference.
@@ -101,8 +101,10 @@ These kinds of teaching have come up and been left out (each logged in `data/cov
 
 - **Similes** (SN 46.1 dragons, 46.2 body and food, 46.7 rafters, 46.11 earth, 46.12/13/48 dawn, 46.33 gold, 46.53 four fire similes; SN 12.61 monkey). Probably a node linking the image, what it illustrates and the point it makes.
 - **What a quality is or isn't called:** the hindrances are "obstacles and corruptions of the heart"; the awakening factors are "not obstacles", "noble and emancipating" (SN 46.19, 46.34, 46.37).
+- **One fetter is not one hindrance.** SN 46.130's higher fetter *uddhacca* (restlessness) is its own concept, joined by an editor's link to the hindrance *uddhaccakukkucca* (restlessness and remorse), not merged into it. Eval Q39 tests this.
 - **Ranking:** "diligence is said to be the best of them" (SN 46.31, 46.32).
 - **Release from the defilements** (āsava), which needs the three defilements as a list (SN 46.5).
+- **Chains:** "when craving is given up, deeds are given up; when deeds are given up, suffering is given up" (SN 46.26). Dependent origination will need the same shape, so it should be designed once, for both.
 - **Correspondences:** "whoever has missed out on the seven awakening factors has missed out on the noble path" (SN 46.18).
 
 See `triage/sn46.md` for which suttas each pattern unlocks.
