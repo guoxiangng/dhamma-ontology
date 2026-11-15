@@ -30,6 +30,36 @@ def test_clean_data_passes(graph):
     assert sorted(r["focus"] for r in results) == [f"dho:op-0{i}" for i in range(1, 6)]
 
 
+def test_fully_encoded_texts_have_no_uncited_untranslated_pali(graph):
+    """The 2026-11-15 audit found teaching given only in the Pali (SN 46.49, 46.50). In a text
+    marked fully encoded, every Pali segment with no English must be cited, unless it is a
+    one-word end marker ("Navamaṁ."), a question, or a chapter summary verse."""
+    import json
+    from rdflib.namespace import SKOS  # noqa: F401
+    src = dho.ROOT / "sources" / "suttacentral"
+    cited = {str(graph.value(p, dho.DHO.segment)) for p in graph.subjects(RDF.type, dho.DHO.Passage)
+             if any(True for _ in graph.subjects(dho.DHO.citedBy, p))}
+    missing = []
+    for t in graph.subjects(dho.DHO.coverage, dho.DHO.FullyEncoded):
+        uid = str(t).split("#t-", 1)[1]
+        en_f, pi_f = src / f"{uid}_en.json", src / f"{uid}_pli.json"
+        if not pi_f.exists():
+            continue
+        en = json.loads(en_f.read_text(encoding="utf-8")) if en_f.exists() else {}
+        pi = json.loads(pi_f.read_text(encoding="utf-8"))
+        in_summary = False
+        for k, v in pi.items():
+            if k.split(":")[0] != uid or k.split(":")[1].startswith("0."):
+                continue
+            if v.strip().startswith("Tassuddānaṁ"):
+                in_summary = True
+            if en.get(k, "").strip() or in_summary or len(v.split()) < 3 or v.strip().rstrip("”’'").endswith("?"):
+                continue
+            if k not in cited:
+                missing.append(k)
+    assert not missing, missing
+
+
 def test_reasoner_classifies_from_lists(graph):
     assert len(set(graph.subjects(RDF.type, dho.DHO.Hindrance))) == 5
     assert len(set(graph.subjects(RDF.type, dho.DHO.AwakeningFactor))) == 7
@@ -65,6 +95,8 @@ def test_resolve_finds_hindrance_and_mind_state(graph):
     ("wording-not-in-text.ttl", ["S14:"]),
     ("condition-incomplete.ttl", ["S13:"]),
     ("outcome-bad-effect.ttl", ["S12:"]),
+    ("division-one-part.ttl", ["S15:"]),
+    ("abbreviation-unflagged.ttl", ["S16:"]),
 ])
 def test_broken_data_is_caught(fixture, expected):
     g, *_ = dho.build([BROKEN / fixture])
@@ -76,7 +108,7 @@ def test_broken_data_is_caught(fixture, expected):
 
 
 def test_pali_labels_appear_in_cited_pali(graph):
-    """Concepts reached by outcome and condition claims: each word of their Pali label
+    """Concepts reached by outcome, condition and division claims: each word of their Pali label
     appears (case endings tolerated) in the Pali of the passages those claims cite."""
     import unicodedata
     from rdflib.namespace import SKOS
@@ -87,7 +119,8 @@ def test_pali_labels_appear_in_cited_pali(graph):
 
     blob = {}
     for cls, props in ((dho.DHO.Outcome, (dho.DHO.of, dho.DHO.to)),
-                       (dho.DHO.Condition, (dho.DHO.condition, dho.DHO.conditioned))):
+                       (dho.DHO.Condition, (dho.DHO.condition, dho.DHO.conditioned)),
+                       (dho.DHO.Division, (dho.DHO.divides, dho.DHO.part))):
         for claim in graph.subjects(RDF.type, cls):
             pali = fold(" ".join(str(graph.value(p, dho.DHO.textPi) or "") for p in graph.objects(claim, dho.DHO.citedBy)))
             for prop in props:

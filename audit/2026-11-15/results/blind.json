@@ -1,0 +1,314 @@
+{
+  "batch": "blind",
+  "texts": [
+    {
+      "uid": "dhp279",
+      "claims": [
+        {"id": "sense-dhamma-phenomenon", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "dhp279:1 is 'sabbe dhamma anatta', 'All things are not-self'; dhamma here is the widest sense, any phenomenon."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "From memory only. The verse goes on: when you see this with wisdom you grow disillusioned with suffering, the path to purity. 'Cited only' fits."
+    },
+    {
+      "uid": "mn148",
+      "claims": [
+        {"id": "sense-dhamma-mind-object", "verdict": "SUPPORTED", "severity": null, "confidence": "medium", "reason": "From memory, 5.3 should be the list of exterior sense fields ending in dhammayatana, and 6.8 should be 'mind consciousness arises dependent on the mind and thoughts (dhamme)'. Both are dhamma as object of mind. Sujato renders it 'thoughts' rather than 'ideas', but the sense is right."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "I am fairly but not fully sure of the segment numbers. The pattern (5.x exterior fields, 6.x the six consciousnesses, the sixth ending at 6.8) fits MN 148's layout."
+    },
+    {
+      "uid": "sn46.5",
+      "claims": [
+        {"id": "SevenAwakeningFactors", "verdict": "SUPPORTED", "severity": null, "confidence": "medium", "reason": "SN 46.5 goes through all seven factors, each developed with the seclusion formula, in the standard order. I am not sure whether 1.6 holds the list on its own or the first item of the formula."},
+        {"id": "c-17", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "Each factor is developed 'viveka-nissita', relying on seclusion. 'Is the basis of' is a fair way to put 'nissita' (dependent on)."},
+        {"id": "c-18", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "Same formula: 'viraga-nissita', relying on fading away."},
+        {"id": "c-19", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "Same formula: 'nirodha-nissita', relying on cessation."},
+        {"id": "o-01", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "The monk asks why they are called awakening factors. The answer, given at the start and repeated at the end, is 'bodhaya samvattanti', they lead to awakening."},
+        {"id": "o-19", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "'vossagga-parinamim', ripening as letting go. Turning 'ripens as' into 'leads to' is a fair simplification, like the rubric's 'inclines to' example."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "The left-out note is right. The sutta does go on to the mind being freed from the asavas of sensuality, rebirth (bhava) and ignorance, and knowing it is freed."
+    },
+    {
+      "uid": "sn46.12",
+      "claims": [
+        {"id": "c-02", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "The dawn is the forerunner (pubbangama) and sign (pubbanimitta) of sunrise. In the same way, good friendship (kalyanamittata) is the forerunner and harbinger of the arising of the seven factors."},
+        {"id": "c-03", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "'kalyanamittassa ... patikankham satta bojjhange bhavessati', a monk with good friends can expect to develop them. 'Supports the development of' does not overstate this into causation."},
+        {"id": "c-17", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "The stock formula, 'relies on seclusion', follows in the 'how does one develop' section."},
+        {"id": "c-18", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "Stock formula, 'relies on fading away'."},
+        {"id": "c-19", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "Stock formula, 'relies on cessation'."},
+        {"id": "o-19", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "Stock formula, 'ripens as letting go'. 'Leads to' is a fair simplification."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": ""
+    },
+    {
+      "uid": "sn46.17",
+      "claims": [
+        {"id": "SevenAwakeningFactors", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "The standard seven are listed."},
+        {"id": "o-03", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "'satta bojjhanga bhavita bahulikata apara param gamanaya samvattanti'. The summary drops 'when developed and cultivated', which is acceptable."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "The left-out verses are the ones also found at Dhp 85-89 ('appaka te manussesu ...'), ending 'te loke parinibbuta'. The description of them is accurate."
+    },
+    {
+      "uid": "sn46.19",
+      "claims": [
+        {"id": "SevenAwakeningFactors", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "The standard seven are listed."},
+        {"id": "o-04", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "'ariya niyyanika niyyanti takkarassa samma dukkhakkhayaya', they bring one who practises them to the complete ending of suffering."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": ""
+    },
+    {
+      "uid": "sn46.32",
+      "claims": [
+        {"id": "c-05", "verdict": "SUPPORTED", "severity": null, "confidence": "medium", "reason": "After the 'skillful qualities' statement, the sutta says a monk accomplished in rational application of mind can expect to develop the seven factors. 'Supports the development of' is not overstated."},
+        {"id": "c-08", "verdict": "SUPPORTED", "severity": null, "confidence": "medium", "reason": "'ye keci dhamma kusala ... sabbe te yonisomanasikaramulaka yonisomanasikarasamosarana', all are rooted in it and meet at it. This should be 46.32; diligence (appamada) is the subject of 46.31, and I am fairly confident of that assignment."},
+        {"id": "c-17", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "Stock formula."},
+        {"id": "c-18", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "Stock formula."},
+        {"id": "c-19", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "Stock formula."},
+        {"id": "o-19", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "Stock formula, 'ripens as letting go'."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "The summary of c-08 says just 'skillful qualities'. The Pali has 'kusala kusalabhagiya kusalapakkhika', skillful, part of the skillful, on the side of the skillful. That simplification is fine."
+    },
+    {
+      "uid": "sn46.33",
+      "claims": [
+        {"id": "FiveCorruptionsOfMind", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "After the gold simile come the five 'cittassa upakkilesa': kamacchanda, byapada, thinamiddha, uddhaccakukkucca, vicikiccha. That is the same five as the hindrances."}
+      ],
+      "omissions": [],
+      "left_out_accurate": null,
+      "coverage_status_accurate": true,
+      "notes": "The gold simile's five impurities are iron, copper, tin, lead and silver. I cannot recall for sure whether SN 46.33, unlike AN 5.23, also has a positive section on the freed mind. If it does, the left-out note misses it."
+    },
+    {
+      "uid": "sn46.37",
+      "claims": [
+        {"id": "FiveHindrances", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "The five 'avarana nivarana cetaso upakkilesa paññaya dubbalikarana' are listed."},
+        {"id": "SevenAwakeningFactors", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "The seven factors, 'anavarana anivarana cetaso anupakkilesa', are listed."},
+        {"id": "o-12", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "'bhavita bahulikata vijjavimuttiphalasacchikiriyaya samvattanti', when developed they lead to realizing the fruit of knowledge and freedom."},
+        {"id": "o-14", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "'paññaya dubbalikarana', weakening wisdom, is said of the hindrances."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "The packet's title and numbering (46.37 = Avarananivarana) differ from Bodhi's numbering, but match SuttaCentral as far as I recall."
+    },
+    {
+      "uid": "sn46.38",
+      "claims": [
+        {"id": "FiveHindrances", "verdict": "SUPPORTED", "severity": null, "confidence": "medium", "reason": "The sutta asks which five hindrances are absent and lists the standard five."},
+        {"id": "SevenAwakeningFactors", "verdict": "SUPPORTED", "severity": null, "confidence": "medium", "reason": "The sutta asks which seven factors are fully developed and lists the standard seven."},
+        {"id": "c-15", "verdict": "STRETCH", "severity": "minor", "confidence": "medium", "reason": "The condition is the whole clause 'atthim katva manasi katva sabbam cetasa samannaharitva ohitasoto dhammam sunati', said of a noble disciple. Reducing it to 'actively listening' drops the wholehearted attention, which is what the sutta stresses."},
+        {"id": "c-16", "verdict": "STRETCH", "severity": "minor", "confidence": "medium", "reason": "Same narrowing as c-15. The result, 'bhavanaparipurim gacchanti' (go to fulfilment of development) as 'fully developed', is fine."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "The packet's own 'encoded' description has all four elements of the condition, but the claims keep only the last."
+    },
+    {
+      "uid": "sn46.40",
+      "claims": [
+        {"id": "FiveHindrances", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "The standard five are listed."},
+        {"id": "SevenAwakeningFactors", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "The standard seven are listed."},
+        {"id": "o-15", "verdict": "STRETCH", "severity": "minor", "confidence": "medium", "reason": "The Pali is 'paññanirodhika', leading to the cessation of wisdom ('block wisdom'). That is stronger than the controlled effect 'weakens', which is 46.37's 'dubbalikarana'. Merging the two loses a difference the texts draw."},
+        {"id": "o-16", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "'anibbanasamvattanika', they don't lead to extinguishment."},
+        {"id": "o-17", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "'paññavuddhiya', for the growth of wisdom. 'Strengthens' is fair."},
+        {"id": "o-18", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "'nibbanasamvattanika', they lead to extinguishment."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "The left-out note is accurate: andhakarana, acakkhukarana, aññanakarana and vighatapakkhiya, their opposites, and the uddana as the last sutta of the vagga."
+    },
+    {
+      "uid": "sn46.49",
+      "claims": [
+        {"id": "c-09", "verdict": "SUPPORTED", "severity": null, "confidence": "medium", "reason": "The sutta says: taking interior factors into account, I see no other single factor so conducive to the arising (uppadaya samvattati) of the seven factors as yonisomanasikara. The note keeps the comparison, so 'gives rise to' is fair."}
+      ],
+      "omissions": [],
+      "left_out_accurate": null,
+      "coverage_status_accurate": null,
+      "notes": "I am unsure whether the SuttaCentral text also spells out 'one accomplished in rational application of mind can expect to develop the seven factors' before the abbreviation. If it does, 'fully encoded' overstates."
+    },
+    {
+      "uid": "sn46.50",
+      "claims": [
+        {"id": "c-10", "verdict": "SUPPORTED", "severity": null, "confidence": "medium", "reason": "This mirrors 46.49 with exterior factors (bahiram angam) and kalyanamittata."}
+      ],
+      "omissions": [],
+      "left_out_accurate": null,
+      "coverage_status_accurate": null,
+      "notes": "Same doubt as 46.49 about whether an 'expect to develop' line is spelled out."
+    },
+    {
+      "uid": "sn46.51",
+      "claims": [
+        {"id": "FiveHindrances", "verdict": "STRETCH", "severity": "minor", "confidence": "medium", "reason": "As I recall, 1.2 is the announcement 'I will teach the fuel and starving of the five hindrances and seven factors'. It gives the count but not the members. The members appear in sections 1-5 and 13-17, not in the cited segment."},
+        {"id": "SevenAwakeningFactors", "verdict": "STRETCH", "severity": "minor", "confidence": "medium", "reason": "Same issue: 1.2 names the list and its count. The members appear in sections 6-12 and 18-24."},
+        {"id": "n-01", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "'atthi subhanimittam; tattha ayonisomanasikarabahulikaro', fuel for unarisen and arisen sensual desire."},
+        {"id": "n-02", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "The object is 'patighanimitta'. Sujato's exact English (aversion, repulsion or harshness) I don't recall with certainty; the meaning is right."},
+        {"id": "n-03", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "'arati tandi vijambhita bhattasammado cetaso ca linattam', fuel for thinamiddha."},
+        {"id": "n-04", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "'cetaso avupasamo', the unsettled mind, fuel for uddhaccakukkucca."},
+        {"id": "n-05", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "'vicikicchatthaniya dhamma', fuel for doubt."},
+        {"id": "n-06", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "'satisambojjhangatthaniya dhamma' with frequent yonisomanasikara."},
+        {"id": "n-07", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "'kusalakusala, savajjanavajja, hinapanita, kanhasukkasappatibhaga dhamma'."},
+        {"id": "n-08", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "'arambhadhatu nikkamadhatu parakkamadhatu'."},
+        {"id": "n-09", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "'pitisambojjhangatthaniya dhamma'."},
+        {"id": "n-10", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "'kayappassaddhi cittappassaddhi'."},
+        {"id": "n-11", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "'samathanimittam abyagganimittam'."},
+        {"id": "n-12", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "'upekkhasambojjhangatthaniya dhamma'."},
+        {"id": "n-13", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "'asubhanimittam' with frequent yonisomanasikara is 'anahara', what starves sensual desire."},
+        {"id": "n-14", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "'metta cetovimutti'."},
+        {"id": "n-15", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "The three elements of energy starve dullness and drowsiness."},
+        {"id": "n-16", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "'cetaso vupasamo'."},
+        {"id": "n-17", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "The same skillful and unskillful qualities that fuel investigation starve doubt."},
+        {"id": "n-18", "verdict": "SUPPORTED", "severity": null, "confidence": "medium", "reason": "The Pali is 'amanasikarabahulikaro', frequent non-attention. 'Not frequently applying the mind' could be misread as 'rarely attending', but the meaning holds."},
+        {"id": "n-19", "verdict": "SUPPORTED", "severity": null, "confidence": "medium", "reason": "Same pattern as n-18."},
+        {"id": "n-20", "verdict": "SUPPORTED", "severity": null, "confidence": "medium", "reason": "Same pattern as n-18."},
+        {"id": "n-21", "verdict": "SUPPORTED", "severity": null, "confidence": "medium", "reason": "Same pattern as n-18."},
+        {"id": "n-22", "verdict": "SUPPORTED", "severity": null, "confidence": "medium", "reason": "Same pattern as n-18."},
+        {"id": "n-23", "verdict": "SUPPORTED", "severity": null, "confidence": "medium", "reason": "Same pattern as n-18."},
+        {"id": "n-24", "verdict": "SUPPORTED", "severity": null, "confidence": "medium", "reason": "Same pattern as n-18."},
+        {"id": "sense-dhamma-quality", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "In 'kusalakusala dhamma ...', dhamma means qualities."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "For n-18 to n-24, 'not frequently applying the mind' renders amanasikara-bahulikara, frequent non-attention. A careful encoder might call the attention kind 'frequent non-application of mind' to avoid the reading 'occasional attention'. The 'fuels' summaries compress 'arising of the unarisen, and increase and growth of the arisen'; that is fine."
+    },
+    {
+      "uid": "sn46.52",
+      "claims": [
+        {"id": "dv-01", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "'yadapi ajjhattam kamacchando tadapi nivaranam, yadapi bahiddha kamacchando tadapi nivaranam'."},
+        {"id": "dv-02", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "Ill will, internal and external, in the same pattern."},
+        {"id": "dv-03", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "'yadapi thinam ... yadapi middham'."},
+        {"id": "dv-04", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "'yadapi uddhaccam ... yadapi kukkuccam'."},
+        {"id": "dv-05", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "'ajjhattam dhammesu vicikiccha ... bahiddha dhammesu vicikiccha'."},
+        {"id": "dv-06", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "'ajjhattam dhammesu sati ... bahiddha dhammesu sati'."},
+        {"id": "dv-07", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "'paññaya pavicinati pavicarati parivimamsam apajjati', internal and external."},
+        {"id": "dv-08", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "'kayikam viriyam ... cetasikam viriyam'."},
+        {"id": "dv-09", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "'savitakka savicara piti ... avitakka avicara piti'."},
+        {"id": "dv-10", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "'kayappassaddhi ... cittappassaddhi'. 'Physical' for kaya follows the translation."},
+        {"id": "dv-11", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "'savitakko savicaro samadhi ... avitakko avicaro samadhi'."},
+        {"id": "dv-12", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "'ajjhattam dhammesu upekkha ... bahiddha dhammesu upekkha'."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "It is correct that the Buddha himself gives the analysis, so the speaker is fine. The wanderers' restatement is rightly kept out as interlocutor speech. The order of parts in each 'parts' array is alphabetical, not textual, which is harmless."
+    },
+    {
+      "uid": "sn46.58",
+      "claims": [
+        {"id": "o-p58", "verdict": "SUPPORTED", "severity": null, "confidence": "medium", "reason": "The Pali gives 'pulavakasañña ...pe...'. By the peyyala convention the elided text is 46.57's 'bhavita bahulikata mahapphala hoti mahanisamsa', so the expansion is legitimate, and the note says so."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": ""
+    },
+    {
+      "uid": "sn46.60",
+      "claims": [
+        {"id": "o-p60", "verdict": "SUPPORTED", "severity": null, "confidence": "medium", "reason": "This is a 46.57 peyyala sutta on vicchiddakasañña, so the expansion is legitimate."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": ""
+    },
+    {
+      "uid": "sn46.61",
+      "claims": [
+        {"id": "o-p61", "verdict": "SUPPORTED", "severity": null, "confidence": "medium", "reason": "This is a 46.57 peyyala sutta on uddhumatakasañña."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": ""
+    },
+    {
+      "uid": "sn46.66",
+      "claims": [
+        {"id": "o-p66", "verdict": "SUPPORTED", "severity": null, "confidence": "medium", "reason": "'anapanassati bhavita bahulikata mahapphala hoti mahanisamsa', developed together with the factors, in the 46.57 pattern."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "The note says the Pali names only the practice. I cannot confirm how much of 1.1 is spelled out in the Pali here, but the meaning holds either way."
+    },
+    {
+      "uid": "sn46.67",
+      "claims": [
+        {"id": "o-p67", "verdict": "SUPPORTED", "severity": null, "confidence": "medium", "reason": "This is a 46.57 peyyala sutta on asubhasañña."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": ""
+    },
+    {
+      "uid": "sn46.68",
+      "claims": [
+        {"id": "o-p68", "verdict": "SUPPORTED", "severity": null, "confidence": "medium", "reason": "This is a 46.57 peyyala sutta on maranasañña."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": ""
+    },
+    {
+      "uid": "sn46.73",
+      "claims": [
+        {"id": "o-p73", "verdict": "SUPPORTED", "severity": null, "confidence": "medium", "reason": "This is a 46.57 peyyala sutta on dukkhe anattasañña. 'Not-self in suffering' is the right rendering."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": ""
+    },
+    {
+      "uid": "sn46.74",
+      "claims": [
+        {"id": "o-p74", "verdict": "SUPPORTED", "severity": null, "confidence": "medium", "reason": "This is a 46.57 peyyala sutta on pahanasañña."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": ""
+    },
+    {
+      "uid": "sn46.130",
+      "claims": [
+        {"id": "FiveHigherFetters", "verdict": "SUPPORTED", "severity": null, "confidence": "medium", "reason": "The five are 'ruparago, aruparago, mano, uddhaccam, avijja'; Sujato renders ruparaga as 'desire for rebirth in the realm of luminous form'. I am not sure that 1.2 and 1.4 rather than 1.3 hold the members."},
+        {"id": "o-02", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "'nibbananinnam nibbanaponam nibbanapabbharam', the fourth formula variant. 'Leads to' is the rubric's own example of a fair simplification."},
+        {"id": "o-26", "verdict": "STRETCH", "severity": "minor", "confidence": "medium", "reason": "The text says the seven factors 'should be developed' (bhavetabba) for the direct knowledge, complete understanding, finishing and giving up of the fetters. That is a statement of purpose, not that they 'lead to' giving up, and it picks one of the four aims."},
+        {"id": "o-27", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "'ragavinayapariyosanam dosavinayapariyosanam mohavinayapariyosanam', culminating in the removal of greed, hate and delusion."},
+        {"id": "o-28", "verdict": "SUPPORTED", "severity": null, "confidence": "high", "reason": "'amatogadham amataparayanam amatapariyosanam'."}
+      ],
+      "omissions": [],
+      "left_out_accurate": null,
+      "coverage_status_accurate": null,
+      "notes": "In SN 46 peyyala suttas the first variant is normally the seclusion/fading away/cessation/letting go formula (probably around 1.7-1.8). The packet does not list it as encoded and c-17 to c-19 and o-19 do not cite sn46.130. If that variant is in the text, 'fully encoded' is not true. Low confidence, because I cannot see the segmentation."
+    }
+  ]
+}

@@ -289,6 +289,8 @@ dho:LeadsTo       a dho:Effect ; rdfs:label "leads to"@en .
 dho:DoesNotLeadTo a dho:Effect ; rdfs:label "does not lead to"@en .
 dho:Strengthens   a dho:Effect ; rdfs:label "strengthens"@en .
 dho:Weakens       a dho:Effect ; rdfs:label "weakens"@en .
+dho:CanExpect     a dho:Effect ; rdfs:label "can be expected to lead to (one of the alternatives)"@en ;
+    rdfs:comment "pāṭikaṅkha: one of several results can be expected, e.g. 'enlightenment in this very life, or if there's residue left behind, non-return'. Each alternative is its own outcome with this effect; the note says how they relate (D19)."@en .
 dho:GivesUp       a dho:Effect ; rdfs:label "leads to giving up"@en ;
     rdfs:comment "Only for the text's pahāna ('giving up'). Ending (khaya) and cessation (nirodha) stay 'leads to' with their own target concepts."@en .
 
@@ -316,14 +318,21 @@ dho:Supports     a dho:ConditionRelation ; rdfs:label "supports the development 
     rdfs:comment "'can expect to develop and cultivate' (pāṭikaṅkha)."@en .
 dho:CauseOf      a dho:ConditionRelation ; rdfs:label "is a cause and reason for"@en ;
     rdfs:comment "'a cause and reason for' (hetu, paccaya), SN 46.56 (D16)."@en .
-dho:Accompanies  a dho:ConditionRelation ; rdfs:label "accompany the development of"@en ;
-    rdfs:comment "'develops X together with the awakening factors' (sahagata), SN 46.57-76 (D15)."@en .
+dho:Accompanies  a dho:ConditionRelation ; rdfs:label "accompanies the development of"@en ;
+    rdfs:comment "X-sahagata: the awakening factor is developed accompanied by X (SN 46.57-76). The condition is X, the conditioned is the awakening factors. Sujato's English turns the grammar round ('develops X together with the awakening factors'); the Pali is followed (D15 correction, D19)."@en .
 dho:WhenThen     a dho:ConditionRelation ; rdfs:label "when present, then"@en ;
     rdfs:comment "'when you …, X …'; the result says what happens to the conditioned."@en .
 
 dho:Result a owl:Class ; rdfs:label "Result"@en .
 dho:Arises           a dho:Result ; rdfs:label "arise"@en .
-dho:DoesNotArise     a dho:Result ; rdfs:label "don't arise, or end if already arisen"@en .
+dho:DoesNotArise     a dho:Result ; rdfs:label "don't arise, or cease if already arisen"@en ;
+    rdfs:comment "nuppajjati / nirujjhati."@en .
+dho:DoesNotAriseGivenUp a dho:Result ; rdfs:label "don't arise, or are given up if already arisen"@en ;
+    rdfs:comment "nuppajjati / pahīyati. Kept apart from cessation (D19)."@en .
+dho:ArisesAndGrows   a dho:Result ; rdfs:label "arise, and once arisen increase and grow"@en ;
+    rdfs:comment "uppajjati / bhiyyobhāvāya vepullāya saṁvattati (D19)."@en .
+dho:ArisesAndIsFullyDeveloped a dho:Result ; rdfs:label "arise, and once arisen are fully developed"@en ;
+    rdfs:comment "uppajjati / bhāvanāpāripūriṁ gacchati (D19)."@en .
 dho:IsAbsent         a dho:Result ; rdfs:label "are absent"@en .
 dho:IsFullyDeveloped a dho:Result ; rdfs:label "are fully developed"@en .
 
@@ -338,3 +347,39 @@ dho:wording a owl:DatatypeProperty ; rdfs:label "wording"@en ;
 # A meditation practice the suttas say is developed (e.g. the perception of a skeleton,
 # mindfulness of breathing). Kept distinct from the qualities it shares a word with (D15).
 dho:Practice a owl:Class ; rdfs:subClassOf dho:Concept ; rdfs:label "Practice"@en .
+
+# ---------------------------------------------------------------------------
+# Divisions (D18): "what is concisely referred to as 'the hindrance of sensual desire'
+# becomes twofold" (SN 46.52). One node per division: the whole, its two parts, the
+# basis of the division, the text's own wording and citations. The parts are not
+# classified as hindrances or awakening factors: classes still come from list
+# membership (D3), and the division says how each part relates to the whole.
+# ---------------------------------------------------------------------------
+
+dho:Division a owl:Class ; rdfs:label "Division"@en ;
+    rdfs:comment "A sutta's statement that one quality is twofold, naming the two."@en .
+dho:Aspect a owl:Class ; rdfs:subClassOf dho:Concept ; rdfs:label "Aspect"@en ;
+    rdfs:comment "One way a quality occurs, named by a division: 'sensual desire for what is internal'."@en .
+
+dho:DivisionBasis a owl:Class ; rdfs:label "Basis of division"@en .
+dho:InternalExternal a dho:DivisionBasis ; rdfs:label "internal and external"@en ;
+    rdfs:comment "ajjhattaṁ / bahiddhā."@en .
+dho:PhysicalMental a dho:DivisionBasis ; rdfs:label "physical and mental"@en ;
+    rdfs:comment "kāyika / cetasika; kāya / citta."@en .
+dho:WithWithoutPlacing a dho:DivisionBasis ; rdfs:label "with and without placing the mind and keeping it connected"@en ;
+    rdfs:comment "savitakka savicāra / avitakka avicāra."@en .
+dho:NamedParts a dho:DivisionBasis ; rdfs:label "the two qualities its name joins"@en ;
+    rdfs:comment "A compound name split into its two words: thina / middha, uddhacca / kukkucca."@en .
+
+dho:divides a owl:ObjectProperty , owl:FunctionalProperty ; rdfs:domain dho:Division ; rdfs:label "divides"@en .
+dho:part    a owl:ObjectProperty ; rdfs:domain dho:Division ; rdfs:label "part"@en .
+dho:basis   a owl:ObjectProperty , owl:FunctionalProperty ; rdfs:domain dho:Division ; rdfs:range dho:DivisionBasis ; rdfs:label "basis"@en .
+
+# ---------------------------------------------------------------------------
+# How a claim is supported, when that differs from "the text states it" (D19).
+# ---------------------------------------------------------------------------
+
+dho:SupportKind a owl:Class ; rdfs:label "Kind of support"@en .
+dho:ExpandedAbbreviation a dho:SupportKind ; rdfs:label "expanded abbreviation"@en ;
+    rdfs:comment "The Pali of every cited segment is abbreviated (…pe…). The claim rests on the conventional expansion from the full sutta of the series, as the translation fills it in, not on words the text itself gives (D14, D19)."@en .
+dho:support a owl:ObjectProperty ; rdfs:range dho:SupportKind ; rdfs:label "support"@en .

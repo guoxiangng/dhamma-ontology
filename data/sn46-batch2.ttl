@@ -21,9 +21,10 @@ dho:Conceit a dho:MentalQuality ;
 dho:Ignorance a dho:MentalQuality ;
     skos:prefLabel "ignorance"@en , "avijjā"@pi , "無明"@zh .
 # uddhacca alone, not the hindrance's compound uddhaccakukkucca: a separate concept, joined by an editor's link.
+# Its link to the hindrance restlessness and remorse is now cited: SN 46.52 names restlessness as one
+# of the two qualities in that hindrance (dv-04). The editor's link it had here was removed (D18).
 dho:Restlessness a dho:MentalQuality ;
-    skos:prefLabel "restlessness"@en , "uddhacca"@pi , "掉舉"@zh ;
-    dho:editorialRelated dho:RestlessnessRemorse .
+    skos:prefLabel "restlessness"@en , "uddhacca"@pi , "掉舉"@zh .
 
 # ---------------------------------------------------------------- concepts the outcomes point to
 
@@ -55,13 +56,14 @@ dho:o-23 a dho:Outcome ; dho:of dho:SevenAwakeningFactors ; dho:effect dho:Gives
     dho:citedBy dho:p-sn46.29-1.1 , dho:p-sn46.29-2.3 .
 dho:o-24 a dho:Outcome ; dho:of dho:SevenAwakeningFactors ; dho:effect dho:GivesUp ; dho:to dho:ThreeDiscriminations ;
     dho:wording "give up the three discriminations" ;
-    skos:note "Said of all ascetics and brahmins, past, future and present, who give them up."@en ;
+    skos:note "Said of all ascetics and brahmins, past, future and present, who give them up: they do so by developing these seven factors (bhāvitattā bahulīkatattā), the only means the text names."@en ;
     dho:citedBy dho:p-sn46.41-1.2 , dho:p-sn46.41-1.3 , dho:p-sn46.41-1.4 , dho:p-sn46.41-1.9 .
 dho:o-25 a dho:Outcome ; dho:of dho:SevenAwakeningFactors ; dho:effect dho:LeadsTo ; dho:to dho:CrushingMarasArmy ;
     dho:wording "path for crushing Māra’s army" ;
     dho:citedBy dho:p-sn46.43-1.1 , dho:p-sn46.43-1.5 , dho:p-sn46.43-1.8 .
 dho:o-26 a dho:Outcome ; dho:of dho:SevenAwakeningFactors ; dho:effect dho:GivesUp ; dho:to dho:FiveHigherFetters ;
     dho:wording "for the direct knowledge, complete understanding, finishing, and giving up of these five higher fetters" ;
+    skos:note "A statement of purpose: the factors 'should be developed for' (bhāvetabbā) four aims regarding the fetters, of which giving up is the last."@en ;
     dho:citedBy dho:p-sn46.130-1.6 , dho:p-sn46.130-1.12 .
 dho:o-27 a dho:Outcome ; dho:of dho:SevenAwakeningFactors ; dho:effect dho:LeadsTo ; dho:to dho:RemovalOfGreedHateDelusion ;
     dho:wording "culminate in the removal of greed, hate, and delusion" ;

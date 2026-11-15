@@ -1,4 +1,5 @@
 @prefix dho:  <https://guoxiangng.github.io/dhamma-ontology/ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 # Pattern A, outcomes (D13). Each node keeps the sutta's own wording (S14 checks it is in a
 # cited passage). The same statement in several suttas is one node with several citations
@@ -36,7 +37,9 @@ dho:o-13 a dho:Outcome ; dho:of dho:SevenAwakeningFactors ; dho:effect dho:Leads
 dho:o-14 a dho:Outcome ; dho:of dho:FiveHindrances ; dho:effect dho:Weakens ; dho:to dho:Wisdom ;
     dho:wording "weaken wisdom" ; dho:citedBy dho:p-sn46.37-1.1 , dho:p-sn46.37-1.8 .
 dho:o-15 a dho:Outcome ; dho:of dho:FiveHindrances ; dho:effect dho:Weakens ; dho:to dho:Wisdom ;
-    dho:wording "block wisdom" ; dho:citedBy dho:p-sn46.40-1.1 , dho:p-sn46.40-1.8 .
+    dho:wording "block wisdom" ;
+    skos:note "'Block wisdom' (paññānirodhikā) is stronger than SN 46.37's 'weaken wisdom' (paññāya dubbalīkaraṇā, o-14); both map to 'weakens' (revisit list #4)."@en ;
+    dho:citedBy dho:p-sn46.40-1.1 , dho:p-sn46.40-1.8 .
 dho:o-16 a dho:Outcome ; dho:of dho:FiveHindrances ; dho:effect dho:DoesNotLeadTo ; dho:to dho:Extinguishment ;
     dho:wording "don’t lead to extinguishment" ; dho:citedBy dho:p-sn46.40-1.1 , dho:p-sn46.40-1.8 .
 dho:o-17 a dho:Outcome ; dho:of dho:SevenAwakeningFactors ; dho:effect dho:Strengthens ; dho:to dho:Wisdom ;

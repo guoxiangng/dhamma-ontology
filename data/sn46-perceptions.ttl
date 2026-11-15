@@ -49,84 +49,102 @@ dho:o-p57 a dho:Outcome ; dho:of dho:SkeletonPerception ; dho:effect dho:LeadsTo
 dho:o-p58 a dho:Outcome ; dho:of dho:WormInfestedPerception ; dho:effect dho:LeadsTo ; dho:to dho:GreatFruit ;
     dho:wording "very fruitful and beneficial" ;
     skos:note "Abbreviated in the Pali (…pe…), which names only the practice; 'very fruitful and beneficial' is the translation's expansion, following SN 46.57. Recorded as stated, not expanded further (D14)."@en ;
-    dho:citedBy dho:p-sn46.58-1.1 .
+    dho:citedBy dho:p-sn46.58-1.1 ;
+    dho:support dho:ExpandedAbbreviation .
 dho:o-p59 a dho:Outcome ; dho:of dho:LividPerception ; dho:effect dho:LeadsTo ; dho:to dho:GreatFruit ;
     dho:wording "very fruitful and beneficial" ;
     skos:note "Abbreviated in the Pali (…pe…), which names only the practice; 'very fruitful and beneficial' is the translation's expansion, following SN 46.57. Recorded as stated, not expanded further (D14)."@en ;
-    dho:citedBy dho:p-sn46.59-1.1 .
+    dho:citedBy dho:p-sn46.59-1.1 ;
+    dho:support dho:ExpandedAbbreviation .
 dho:o-p60 a dho:Outcome ; dho:of dho:SplitOpenPerception ; dho:effect dho:LeadsTo ; dho:to dho:GreatFruit ;
     dho:wording "very fruitful and beneficial" ;
     skos:note "Abbreviated in the Pali (…pe…), which names only the practice; 'very fruitful and beneficial' is the translation's expansion, following SN 46.57. Recorded as stated, not expanded further (D14)."@en ;
-    dho:citedBy dho:p-sn46.60-1.1 .
+    dho:citedBy dho:p-sn46.60-1.1 ;
+    dho:support dho:ExpandedAbbreviation .
 dho:o-p61 a dho:Outcome ; dho:of dho:BloatedPerception ; dho:effect dho:LeadsTo ; dho:to dho:GreatFruit ;
     dho:wording "very fruitful and beneficial" ;
     skos:note "Abbreviated in the Pali (…pe…), which names only the practice; 'very fruitful and beneficial' is the translation's expansion, following SN 46.57. Recorded as stated, not expanded further (D14)."@en ;
-    dho:citedBy dho:p-sn46.61-1.1 .
+    dho:citedBy dho:p-sn46.61-1.1 ;
+    dho:support dho:ExpandedAbbreviation .
 dho:o-p62 a dho:Outcome ; dho:of dho:Love ; dho:effect dho:LeadsTo ; dho:to dho:GreatFruit ;
     dho:wording "very fruitful and beneficial" ;
     skos:note "Abbreviated in the Pali (…pe…), which names only the practice; 'very fruitful and beneficial' is the translation's expansion, following SN 46.57. Recorded as stated, not expanded further (D14)."@en ;
-    dho:citedBy dho:p-sn46.62-1.1 .
+    dho:citedBy dho:p-sn46.62-1.1 ;
+    dho:support dho:ExpandedAbbreviation .
 dho:o-p63 a dho:Outcome ; dho:of dho:Compassion ; dho:effect dho:LeadsTo ; dho:to dho:GreatFruit ;
     dho:wording "very fruitful and beneficial" ;
     skos:note "Abbreviated in the Pali (…pe…), which names only the practice; 'very fruitful and beneficial' is the translation's expansion, following SN 46.57. Recorded as stated, not expanded further (D14)."@en ;
-    dho:citedBy dho:p-sn46.63-1.1 .
+    dho:citedBy dho:p-sn46.63-1.1 ;
+    dho:support dho:ExpandedAbbreviation .
 dho:o-p64 a dho:Outcome ; dho:of dho:Rejoicing ; dho:effect dho:LeadsTo ; dho:to dho:GreatFruit ;
     dho:wording "very fruitful and beneficial" ;
     skos:note "Abbreviated in the Pali (…pe…), which names only the practice; 'very fruitful and beneficial' is the translation's expansion, following SN 46.57. Recorded as stated, not expanded further (D14)."@en ;
-    dho:citedBy dho:p-sn46.64-1.1 .
+    dho:citedBy dho:p-sn46.64-1.1 ;
+    dho:support dho:ExpandedAbbreviation .
 dho:o-p65 a dho:Outcome ; dho:of dho:EquanimityImmeasurable ; dho:effect dho:LeadsTo ; dho:to dho:GreatFruit ;
     dho:wording "very fruitful and beneficial" ;
     skos:note "Abbreviated in the Pali (…pe…), which names only the practice; 'very fruitful and beneficial' is the translation's expansion, following SN 46.57. Recorded as stated, not expanded further (D14)."@en ;
-    dho:citedBy dho:p-sn46.65-1.1 .
+    dho:citedBy dho:p-sn46.65-1.1 ;
+    dho:support dho:ExpandedAbbreviation .
 dho:o-p66 a dho:Outcome ; dho:of dho:MindfulnessOfBreathing ; dho:effect dho:LeadsTo ; dho:to dho:GreatFruit ;
     dho:wording "very fruitful and beneficial" ;
     skos:note "Abbreviated in the Pali (…pe…), which names only the practice; 'very fruitful and beneficial' is the translation's expansion, following SN 46.57. Recorded as stated, not expanded further (D14)."@en ;
-    dho:citedBy dho:p-sn46.66-1.1 .
+    dho:citedBy dho:p-sn46.66-1.1 ;
+    dho:support dho:ExpandedAbbreviation .
 dho:o-p67 a dho:Outcome ; dho:of dho:UglinessPerception ; dho:effect dho:LeadsTo ; dho:to dho:GreatFruit ;
     dho:wording "very fruitful and beneficial" ;
     skos:note "Abbreviated in the Pali (…pe…), which names only the practice; 'very fruitful and beneficial' is the translation's expansion, following SN 46.57. Recorded as stated, not expanded further (D14)."@en ;
-    dho:citedBy dho:p-sn46.67-1.1 .
+    dho:citedBy dho:p-sn46.67-1.1 ;
+    dho:support dho:ExpandedAbbreviation .
 dho:o-p68 a dho:Outcome ; dho:of dho:DeathPerception ; dho:effect dho:LeadsTo ; dho:to dho:GreatFruit ;
     dho:wording "very fruitful and beneficial" ;
     skos:note "Abbreviated in the Pali (…pe…), which names only the practice; 'very fruitful and beneficial' is the translation's expansion, following SN 46.57. Recorded as stated, not expanded further (D14)."@en ;
-    dho:citedBy dho:p-sn46.68-1.1 .
+    dho:citedBy dho:p-sn46.68-1.1 ;
+    dho:support dho:ExpandedAbbreviation .
 dho:o-p69 a dho:Outcome ; dho:of dho:FoodRepulsivenessPerception ; dho:effect dho:LeadsTo ; dho:to dho:GreatFruit ;
     dho:wording "very fruitful and beneficial" ;
     skos:note "Abbreviated in the Pali (…pe…), which names only the practice; 'very fruitful and beneficial' is the translation's expansion, following SN 46.57. Recorded as stated, not expanded further (D14)."@en ;
-    dho:citedBy dho:p-sn46.69-1.1 .
+    dho:citedBy dho:p-sn46.69-1.1 ;
+    dho:support dho:ExpandedAbbreviation .
 dho:o-p70 a dho:Outcome ; dho:of dho:WorldDissatisfactionPerception ; dho:effect dho:LeadsTo ; dho:to dho:GreatFruit ;
     dho:wording "very fruitful and beneficial" ;
     skos:note "Abbreviated in the Pali (…pe…), which names only the practice; 'very fruitful and beneficial' is the translation's expansion, following SN 46.57. Recorded as stated, not expanded further (D14)."@en ;
-    dho:citedBy dho:p-sn46.70-1.1 .
+    dho:citedBy dho:p-sn46.70-1.1 ;
+    dho:support dho:ExpandedAbbreviation .
 dho:o-p71 a dho:Outcome ; dho:of dho:ImpermanencePerception ; dho:effect dho:LeadsTo ; dho:to dho:GreatFruit ;
     dho:wording "very fruitful and beneficial" ;
     skos:note "Abbreviated in the Pali (…pe…), which names only the practice; 'very fruitful and beneficial' is the translation's expansion, following SN 46.57. Recorded as stated, not expanded further (D14)."@en ;
-    dho:citedBy dho:p-sn46.71-1.1 .
+    dho:citedBy dho:p-sn46.71-1.1 ;
+    dho:support dho:ExpandedAbbreviation .
 dho:o-p72 a dho:Outcome ; dho:of dho:SufferingInImpermanencePerception ; dho:effect dho:LeadsTo ; dho:to dho:GreatFruit ;
     dho:wording "very fruitful and beneficial" ;
     skos:note "Abbreviated in the Pali (…pe…), which names only the practice; 'very fruitful and beneficial' is the translation's expansion, following SN 46.57. Recorded as stated, not expanded further (D14)."@en ;
-    dho:citedBy dho:p-sn46.72-1.1 .
+    dho:citedBy dho:p-sn46.72-1.1 ;
+    dho:support dho:ExpandedAbbreviation .
 dho:o-p73 a dho:Outcome ; dho:of dho:NotSelfInSufferingPerception ; dho:effect dho:LeadsTo ; dho:to dho:GreatFruit ;
     dho:wording "very fruitful and beneficial" ;
     skos:note "Abbreviated in the Pali (…pe…), which names only the practice; 'very fruitful and beneficial' is the translation's expansion, following SN 46.57. Recorded as stated, not expanded further (D14)."@en ;
-    dho:citedBy dho:p-sn46.73-1.1 .
+    dho:citedBy dho:p-sn46.73-1.1 ;
+    dho:support dho:ExpandedAbbreviation .
 dho:o-p74 a dho:Outcome ; dho:of dho:GivingUpPerception ; dho:effect dho:LeadsTo ; dho:to dho:GreatFruit ;
     dho:wording "very fruitful and beneficial" ;
     skos:note "Abbreviated in the Pali (…pe…), which names only the practice; 'very fruitful and beneficial' is the translation's expansion, following SN 46.57. Recorded as stated, not expanded further (D14)."@en ;
-    dho:citedBy dho:p-sn46.74-1.1 .
+    dho:citedBy dho:p-sn46.74-1.1 ;
+    dho:support dho:ExpandedAbbreviation .
 dho:o-p75 a dho:Outcome ; dho:of dho:DispassionPerception ; dho:effect dho:LeadsTo ; dho:to dho:GreatFruit ;
     dho:wording "very fruitful and beneficial" ;
     skos:note "Abbreviated in the Pali (…pe…), which names only the practice; 'very fruitful and beneficial' is the translation's expansion, following SN 46.57. Recorded as stated, not expanded further (D14)."@en ;
-    dho:citedBy dho:p-sn46.75-1.1 .
+    dho:citedBy dho:p-sn46.75-1.1 ;
+    dho:support dho:ExpandedAbbreviation .
 dho:o-p76 a dho:Outcome ; dho:of dho:CessationPerception ; dho:effect dho:LeadsTo ; dho:to dho:GreatFruit ;
     dho:wording "very fruitful and beneficial" ;
     dho:citedBy dho:p-sn46.76-1.1 , dho:p-sn46.76-1.5 .
 
 # ---------------------------------------------------------------- SN 46.57 and 46.76 in full
 
-dho:o-p57-a a dho:Outcome ; dho:of dho:SkeletonPerception ; dho:effect dho:LeadsTo ; dho:to dho:Enlightenment ;
+dho:o-p57-a a dho:Outcome ; dho:of dho:SkeletonPerception ; dho:effect dho:CanExpect ; dho:to dho:Enlightenment ;
     dho:wording "enlightenment in this very life" ; skos:note "One of two results: enlightenment in this very life or, if there is residue left behind, non-return."@en ; dho:citedBy dho:p-sn46.57-2.1 .
-dho:o-p57-b a dho:Outcome ; dho:of dho:SkeletonPerception ; dho:effect dho:LeadsTo ; dho:to dho:NonReturn ;
+dho:o-p57-b a dho:Outcome ; dho:of dho:SkeletonPerception ; dho:effect dho:CanExpect ; dho:to dho:NonReturn ;
     dho:wording "non-return" ; skos:note "One of two results: enlightenment in this very life or, if there is residue left behind, non-return."@en ; dho:citedBy dho:p-sn46.57-2.1 .
 dho:o-p57-c a dho:Outcome ; dho:of dho:SkeletonPerception ; dho:effect dho:LeadsTo ; dho:to dho:GreatBenefit ;
     dho:wording "great benefit" ; dho:citedBy dho:p-sn46.57-3.1 .
@@ -136,12 +154,16 @@ dho:o-p57-e a dho:Outcome ; dho:of dho:SkeletonPerception ; dho:effect dho:Leads
     dho:wording "great inspiration" ; dho:citedBy dho:p-sn46.57-5.1 .
 dho:o-p57-f a dho:Outcome ; dho:of dho:SkeletonPerception ; dho:effect dho:LeadsTo ; dho:to dho:GreatEase ;
     dho:wording "great ease" ; dho:citedBy dho:p-sn46.57-6.1 .
-dho:c-p57 a dho:Condition ; dho:condition dho:SevenAwakeningFactors ; dho:relation dho:Accompanies ; dho:conditioned dho:SkeletonPerception ;
-    dho:wording "together with the awakening factors" ; dho:citedBy dho:p-sn46.57-1.4 .
+# Corrected 2026-11-15 (D19): the Pali develops the awakening factor accompanied by the perception
+# (aṭṭhikasaññāsahagataṁ satisambojjhaṅgaṁ bhāveti); this had followed the English and was reversed.
+dho:c-p57 a dho:Condition ; dho:condition dho:SkeletonPerception ; dho:relation dho:Accompanies ; dho:conditioned dho:SevenAwakeningFactors ;
+    dho:wording "aṭṭhikasaññāsahagataṁ" ;
+    skos:note "The Pali: the mendicant develops each awakening factor accompanied by the perception of a skeleton. Sujato's English: 'develops the perception of a skeleton together with the awakening factors'."@en ;
+    dho:citedBy dho:p-sn46.57-1.4 , dho:p-sn46.57-1.5 .
 
-dho:o-p76-a a dho:Outcome ; dho:of dho:CessationPerception ; dho:effect dho:LeadsTo ; dho:to dho:Enlightenment ;
+dho:o-p76-a a dho:Outcome ; dho:of dho:CessationPerception ; dho:effect dho:CanExpect ; dho:to dho:Enlightenment ;
     dho:wording "enlightenment in this very life" ; skos:note "One of two results: enlightenment in this very life or, if there is residue left behind, non-return."@en ; dho:citedBy dho:p-sn46.76-2.1 , dho:p-sn46.76-2.2 , dho:p-sn46.76-2.7 , dho:p-sn46.76-2.8 .
-dho:o-p76-b a dho:Outcome ; dho:of dho:CessationPerception ; dho:effect dho:LeadsTo ; dho:to dho:NonReturn ;
+dho:o-p76-b a dho:Outcome ; dho:of dho:CessationPerception ; dho:effect dho:CanExpect ; dho:to dho:NonReturn ;
     dho:wording "non-return" ; skos:note "One of two results: enlightenment in this very life or, if there is residue left behind, non-return."@en ; dho:citedBy dho:p-sn46.76-2.1 , dho:p-sn46.76-2.2 , dho:p-sn46.76-2.7 , dho:p-sn46.76-2.8 .
 dho:o-p76-c a dho:Outcome ; dho:of dho:CessationPerception ; dho:effect dho:LeadsTo ; dho:to dho:GreatBenefit ;
     dho:wording "great benefit" ; dho:citedBy dho:p-sn46.76-3.1 , dho:p-sn46.76-3.5 .
@@ -151,8 +173,11 @@ dho:o-p76-e a dho:Outcome ; dho:of dho:CessationPerception ; dho:effect dho:Lead
     dho:wording "great inspiration" ; dho:citedBy dho:p-sn46.76-3.1 , dho:p-sn46.76-3.5 .
 dho:o-p76-f a dho:Outcome ; dho:of dho:CessationPerception ; dho:effect dho:LeadsTo ; dho:to dho:GreatEase ;
     dho:wording "great ease" ; dho:citedBy dho:p-sn46.76-3.1 , dho:p-sn46.76-3.5 .
-dho:c-p76 a dho:Condition ; dho:condition dho:SevenAwakeningFactors ; dho:relation dho:Accompanies ; dho:conditioned dho:CessationPerception ;
-    dho:wording "together with the awakening factors" ; dho:citedBy dho:p-sn46.76-1.3 .
+# Corrected 2026-11-15 (D19), as c-p57.
+dho:c-p76 a dho:Condition ; dho:condition dho:CessationPerception ; dho:relation dho:Accompanies ; dho:conditioned dho:SevenAwakeningFactors ;
+    dho:wording "nirodhasaññāsahagataṁ" ;
+    skos:note "The Pali: the mendicant develops each awakening factor accompanied by the perception of cessation. Sujato's English: 'develops the perception of cessation together with the awakening factors'."@en ;
+    dho:citedBy dho:p-sn46.76-1.3 , dho:p-sn46.76-1.4 , dho:p-sn46.76-2.5 , dho:p-sn46.76-2.6 , dho:p-sn46.76-3.3 , dho:p-sn46.76-3.4 .
 
 # The stock formula and the list, restated in SN 46.57 and 46.76.
 dho:o-19 dho:citedBy dho:p-sn46.57-1.5 , dho:p-sn46.76-1.4 , dho:p-sn46.76-2.6 , dho:p-sn46.76-3.4 .
@@ -160,3 +185,15 @@ dho:c-17 dho:citedBy dho:p-sn46.57-1.5 , dho:p-sn46.76-1.4 , dho:p-sn46.76-2.6 ,
 dho:c-18 dho:citedBy dho:p-sn46.57-1.5 , dho:p-sn46.76-1.4 , dho:p-sn46.76-2.6 , dho:p-sn46.76-3.4 .
 dho:c-19 dho:citedBy dho:p-sn46.57-1.5 , dho:p-sn46.76-1.4 , dho:p-sn46.76-2.6 , dho:p-sn46.76-3.4 .
 dho:SevenAwakeningFactors dho:citedBy dho:p-sn46.57-1.4 , dho:p-sn46.76-1.3 .
+
+# Audit 2026-11-15 (D19): SN 46.57 sections 2-6 are abbreviated in the English but given in the Pali.
+# Cite the Pali for the accompanied development, the stock formula and each section's conclusion.
+dho:c-p57 dho:citedBy dho:p-sn46.57-2.3 , dho:p-sn46.57-2.4 , dho:p-sn46.57-3.3 , dho:p-sn46.57-3.4 ,
+    dho:p-sn46.57-4.3 , dho:p-sn46.57-4.4 , dho:p-sn46.57-5.3 , dho:p-sn46.57-5.4 , dho:p-sn46.57-6.3 , dho:p-sn46.57-6.4 .
+dho:o-19 dho:citedBy dho:p-sn46.57-2.4 , dho:p-sn46.57-3.4 , dho:p-sn46.57-4.4 , dho:p-sn46.57-5.4 , dho:p-sn46.57-6.4 .
+dho:o-p57-a dho:citedBy dho:p-sn46.57-2.5 .
+dho:o-p57-b dho:citedBy dho:p-sn46.57-2.5 .
+dho:o-p57-c dho:citedBy dho:p-sn46.57-3.5 .
+dho:o-p57-d dho:citedBy dho:p-sn46.57-4.5 .
+dho:o-p57-e dho:citedBy dho:p-sn46.57-5.5 .
+dho:o-p57-f dho:citedBy dho:p-sn46.57-6.5 .

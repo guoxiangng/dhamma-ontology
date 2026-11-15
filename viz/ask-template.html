@@ -116,8 +116,8 @@ const fold = s => (s || "").normalize("NFKD").replace(/[̀-ͯ]/g, "").toLowerCas
 const name = id => byId[id]?.en || byId[id]?.pi || id;
 const LAYER = { sutta: "sutta", derived: "derived · R1", commentary: "commentary · unverified", editor: "editor's link", lexicon: "word sense" };
 const INVERSE = { "member of": "members", counters: "countered by", opposes: "opposed by", "gives up": "given up in",
-  "has the factors": "factors of", "see also": "see also", sense: "a sense of the word", "is defined as": "defines" };
-const ORDER = ["hindrance", "factor", "jhana", "mindstate", "attention", "practice", "concept", "list", "attainment", "word", "sense", "object"];
+  "has the factors": "factors of", "see also": "see also", sense: "a sense of the word", "is defined as": "defines", "one of the two kinds of": "becomes twofold", "one of the two qualities in": "becomes twofold" };
+const ORDER = ["hindrance", "factor", "jhana", "mindstate", "attention", "practice", "concept", "aspect", "list", "attainment", "word", "sense", "object"];
 const s = DATA.stats;
 document.getElementById("stats").textContent =
   `${s.concepts} concepts · ${s.links} cited links · ${s.passages} passages · checks: ${s.shacl}`;
@@ -145,6 +145,7 @@ const citeHtml = ids => {
 };
 const link = id => `<a class="node" data-id="${esc(id)}" href="#">${esc(name(id))}</a>`;
 const tag = l => `<span class="layer l-${esc(l)}">${esc(LAYER[l] || l)}</span>`;
+const supportTag = e => e.support ? `<span class="layer l-editor" title="The Pali is abbreviated (…pe…); this rests on the conventional expansion.">${esc(e.support)}</span>` : "";
 const row = (html, layer, cites, note) =>
   `<div class="claim">${html}${tag(layer)}${note ? `<div class="wording">${esc(note)}</div>` : ""}${citeHtml(cites)}</div>`;
 
@@ -156,7 +157,7 @@ function claimsFor(id) {
     if (!out && !inc) continue;
     if (e.group === "outcomes" || e.group === "conditions") {
       const title = e.group === "outcomes" ? "Outcomes" : "Conditions";
-      add(title, row(esc(out ? e.say_out : e.say_in).replace(/\bthis\b/, "this"), e.layer, e.cites, e.note));
+      add(title, row(esc(out ? e.say_out : e.say_in).replace(/\bthis\b/, "this") + supportTag(e), e.layer, e.cites, e.note));
     } else if (e.timing) {
       add("Timing (SN 46.53)", row(out ? `${esc(e.rel)} ${link(e.target)}` : `when the mind is ${link(e.source)}: ${esc(e.rel)} this`, e.layer, e.cites));
     } else {
@@ -176,7 +177,7 @@ function claimsFor(id) {
 
 function listClaims(listId) {
   const rows = DATA.edges.filter(e => (e.source === listId || e.target === listId) && (e.group === "outcomes" || e.group === "conditions"));
-  return rows.map(e => row(esc(e.source === listId ? e.say_out : e.say_in), e.layer, e.cites, e.note));
+  return rows.map(e => row(esc(e.source === listId ? e.say_out : e.say_in) + supportTag(e), e.layer, e.cites, e.note));
 }
 
 function card(id) {
@@ -186,10 +187,10 @@ function card(id) {
     return `<span class="chip k-${k}">${esc(c)}</span>`;
   }).join("");
   const other = { mindstate: "mind state", object: "object of attention", list: "numbered list", attainment: "attainment",
-    word: "word", sense: "word sense", concept: "concept", attention: "kind of attention", practice: "practice" }[n.kind];
+    word: "word", sense: "word sense", concept: "concept", attention: "kind of attention", practice: "practice", aspect: "aspect (one of two kinds)" }[n.kind];
   const groups = claimsFor(id);
   const memberOf = DATA.edges.filter(e => e.rel === "member of" && e.source === id).map(e => e.target);
-  const order = ["member of", "members", "Fuelled by", "Starved by", "Conditions", "Outcomes", "Timing (SN 46.53)", "counters", "countered by", "opposes", "opposed by"];
+  const order = ["member of", "members", "one of the two kinds of", "one of the two qualities in", "becomes twofold", "Fuelled by", "Starved by", "Conditions", "Outcomes", "Timing (SN 46.53)", "counters", "countered by", "opposes", "opposed by"];
   const titles = Object.keys(groups).sort((a, b) => ((order.indexOf(a) + 1) || 99) - ((order.indexOf(b) + 1) || 99));
   const listParts = memberOf.map(l => {
     const r = listClaims(l);

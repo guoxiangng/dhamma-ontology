@@ -65,6 +65,8 @@ Passages are tagged with the sense they use only when it's clear. MN 10's *dhamm
 
 *thinamiddha* (dullness and drowsiness) and *uddhaccakukkucca* (restlessness and remorse) are each one hindrance in the list of five, so each is one concept. Splitting them into components is deferred.
 
+*Update 2026-11-14:* SN 46.52 splits them itself ("dullness is a hindrance; and drowsiness is also a hindrance"). The compounds stay one concept each, as members of the five, and each now divides into its two named qualities (D18).
+
 ## D11. Coverage is logged, and so is who did the modelling
 
 Every text the ontology draws on has a coverage record in `data/coverage.ttl`: fully encoded, partly encoded, cited only (quoted as evidence, teaching not modelled), or referenced only (not held). A partial record must say what it leaves out. Each record also says who modelled it and whether anyone has reviewed it. SHACL fails the build without one (S10).
@@ -105,17 +107,21 @@ Many suttas are abbreviated in the Pali itself (*peyyāla*, marked …pe…): SN
 
 The ontology records only what the translation's visible line states. Each such claim carries a note saying the Pali is abbreviated and the outcome is the translation's expansion. The rest of the expansion (developing the practice together with the awakening factors, the two results, great benefit and so on) is not added, and each coverage record says so. Expanding elisions is reconstruction, and reconstruction is where an editor's mistakes would hide.
 
+*Correction 2026-11-15 (audit, D19):* the note was not enough. A claim resting only on the expansion still looked like a sutta claim. Such claims now carry `dho:support dho:ExpandedAbbreviation`, shown as a tag, and check S16 enforces it. The audit's blind run argued that the conventional expansion is legitimate. That's the tradition's view, which is why the claims are kept and marked rather than dropped.
+
 ## D15. Practices are their own concepts, even when they share a word
 
 *Decided by Claude; the owner deferred. Revisit.*
 
-The twenty meditation subjects of SN 46.57–76 (the perception of a skeleton, love, mindfulness of breathing, the perception of impermanence, …) are `dho:Practice` concepts. Each is "very fruitful and beneficial" when developed, an outcome (D13). SN 46.57 and 46.76, given in full, add that the practice is developed *together with* the awakening factors (*sahagata*, a new condition relation "accompany the development of") and lists further results: one of two, enlightenment in this very life or non-return; great benefit, sanctuary from the yoke, inspiration and ease.
+The twenty meditation subjects of SN 46.57–76 (the perception of a skeleton, love, mindfulness of breathing, the perception of impermanence, …) are `dho:Practice` concepts. Each is "very fruitful and beneficial" when developed, an outcome (D13). SN 46.57 and 46.76, given in full, add that the practice is developed *together with* the awakening factors (*sahagata*, a new condition relation "accompanies the development of") and lists further results: one of two, enlightenment in this very life or non-return; great benefit, sanctuary from the yoke, inspiration and ease.
 
 Where a practice shares a word with something already in the ontology, it stays a separate concept with an editor's link, not a merge:
 
 - *upekkhā* in SN 46.65 sits in the run love, compassion, rejoicing, equanimity (SN 46.62–65), a different role from the awakening factor of equanimity;
 - *mettā* in SN 46.62 vs SN 46.51's object "the heart's release by love" (*mettācetovimutti*);
 - *asubhasaññā* in SN 46.67 vs SN 46.51's object "the feature of ugliness" (*asubhanimitta*).
+
+*Correction 2026-11-15 (audit, D19):* the direction was reversed. The Pali, *aṭṭhikasaññāsahagataṁ satisambojjhaṅgaṁ bhāveti*, says the mendicant develops the awakening factor, accompanied by the perception. Sujato's English turns this round, and the claims had followed the English. Fixed: the perception accompanies the development of the awakening factors.
 
 Chinese labels for the practices are left out for now: the standard term for *muditā* (喜) is already the label for rapture (*pīti*), and a wrong guess would mislead search.
 
@@ -137,13 +143,50 @@ Suttas mix teaching with framing: questions, other teachers' views, and listener
 
 The ontology does not yet record who speaks each claim. That is on the revisit list.
 
+## D18. Divisions: "becomes twofold" (SN 46.52)
+
+*Decided by Claude; the owner deferred. Revisit.*
+
+SN 46.52 says the five hindrances become ten and the seven awakening factors fourteen: each "becomes twofold". Each of the twelve statements is one `dho:Division` node: the quality it divides, exactly two parts, the basis of the division, the text's own wording and citations (SHACL S15). The bases, as the text gives them:
+
+| Basis | Qualities |
+|---|---|
+| internal and external (*ajjhattaṁ / bahiddhā*) | sensual desire, ill will, doubt, mindfulness, investigation, equanimity |
+| physical and mental (*kāyika / cetasika*) | energy, tranquility |
+| with and without placing the mind and keeping it connected (*savitakka savicāra / avitakka avicāra*) | rapture, immersion |
+| the two qualities a compound name joins | dullness / drowsiness, restlessness / remorse |
+
+- **Parts of the first three kinds are aspects** (`dho:Aspect`), named with Sujato's words: "sensual desire for what is internal", "physical energy". They are not separate qualities, only ways the one quality occurs.
+- **Parts of the compounds are qualities** (`dho:MentalQuality`): dullness (*thina*), drowsiness (*middha*), restlessness (*uddhacca*) and remorse (*kukkucca*). This takes up what D10 deferred.
+- **Restlessness is one concept**, shared by SN 46.130's higher fetter and SN 46.52's half of the hindrance: same Pali word, same rendering (D13's rule). The editor's link from restlessness to the hindrance restlessness and remorse is removed, because the connection is now cited.
+- **The parts are not classified as hindrances or awakening factors**, though the text says "is also a hindrance". Classes still come from list membership (D3). A query can find the hindrances' parts by following the divisions.
+- **The ten and the fourteen are not modelled as lists.** The text counts them, but the twelve divisions already say everything the lists would, and two more lists would double the claim.
+- **The wanderers' restatement** of the teaching (3.2, "corruptions of the heart that weaken wisdom") is left out (D17).
+
+## D19. Read the Pali first; audit every text
+
+*Decided by Claude after the 2026-11-15 audit (AUDIT.md); the owner asked for the audit. Revisit.*
+
+An independent audit checked all 270 claim–text pairs against the texts. 82% were supported, 17% were minor stretches, and 2 were major misreads (one bug in two texts). No claim was invented or put in the wrong speaker's mouth. But 5 of the 16 texts marked "fully encoded" were not. Every serious finding had one cause: the modelling read Sujato's English and treated the Pali as a check, when the English sometimes abbreviates, leaves out or rearranges what the Pali says.
+
+- **Read the Pali first.** Sujato's English is a translation: it can reverse grammar (SN 46.57's *sahagata*), leave out a formula (SN 46.130:1.8), or stop at "…" while the Pali carries on (SN 46.49, 46.50, 46.57). The add-text skill now reads each segment's Pali before its English.
+- **Wording may quote the Pali** when the English doesn't carry the claim. S14 accepts either.
+- **A fully encoded text cannot hide untranslated Pali.** A test fails if any untranslated Pali segment in such a text is uncited (questions, end markers and summary verses excepted).
+- **Claims resting only on an expanded abbreviation are marked** `dho:support dho:ExpandedAbbreviation` (S16).
+- **Results and effects keep the text's distinctions:**
+  - "can be expected to lead to (one of the alternatives)" for *pāṭikaṅkha*;
+  - "arise, and once arisen increase and grow";
+  - "arise, and once arisen are fully developed";
+  - "don't arise, or are given up" (*pahīyati*), kept apart from "cease" (*nirujjhati*).
+- **Every new text gets an audit** before it is committed (`audit/`, add-text step 7). A major finding blocks the commit.
+
 ## Patterns not modelled yet
 
 These kinds of teaching have come up and been left out (each logged in `data/coverage.ttl`) until a pattern is agreed:
 
 - **Similes** (SN 46.1 dragons, 46.2 body and food, 46.7 rafters, 46.11 earth, 46.12/13/48 dawn, 46.33 gold, 46.53 four fire similes; SN 12.61 monkey). Probably a node linking the image, what it illustrates and the point it makes.
 - **What a quality is or isn't called:** the hindrances are "obstacles and corruptions of the heart"; the awakening factors are "not obstacles", "noble and emancipating" (SN 46.19, 46.34, 46.37).
-- **One fetter is not one hindrance.** SN 46.130's higher fetter *uddhacca* (restlessness) is its own concept, joined by an editor's link to the hindrance *uddhaccakukkucca* (restlessness and remorse), not merged into it. Eval Q39 tests this.
+- **One fetter is not one hindrance.** SN 46.130's higher fetter *uddhacca* (restlessness) is its own concept, not merged into the hindrance *uddhaccakukkucca* (restlessness and remorse). Eval Q39 tests this. *Since D18:* SN 46.52 names restlessness as one of the two qualities in that hindrance, so the two are now joined by a cited division instead of an editor's link.
 - **Ranking:** "diligence is said to be the best of them" (SN 46.31, 46.32).
 - **Release from the defilements** (āsava), which needs the three defilements as a list (SN 46.5).
 - **Chains:** "when craving is given up, deeds are given up; when deeds are given up, suffering is given up" (SN 46.26). Dependent origination will need the same shape, so it should be designed once, for both.
@@ -161,7 +204,7 @@ Judgment calls a second pass should look at first. Each was made deliberately an
 | 2 | *bodhi* and *sambodhi* are separate concepts, editor-linked | D13 | Sujato renders both "awakening"; the difference may not matter |
 | 3 | *virāga* is one concept for "fading away" and "dispassion" | D13 | The two contexts may intend different senses |
 | 4 | Mapping wordings onto controlled effects and relations ("bring … to" → leads to; "block wisdom" → weakens) | D13 | Each mapping is editorial; the verbatim wording is kept, but queries use the mapping |
-| 5 | The fetter *uddhacca* is separate from the hindrance *uddhaccakukkucca* | D13 | Commentaries may treat them as one quality in different lists |
+| 5 | The fetter *uddhacca* is separate from the hindrance *uddhaccakukkucca*, and is the same concept as the *uddhacca* half of that hindrance | D13, D18 | Same word in two lists may not be the same quality; or the commentaries may treat fetter and hindrance as one |
 | 6 | Abbreviated suttas are not expanded | D14 | The tradition expects expansion; we may under-represent SN 46.58–75 |
 | 7 | *upekkhā*, *mettā* and *asubha* as practices are separate from the same words elsewhere | D15 | They may be the same qualities in different settings |
 | 8 | Mind states (*līnaṁ cittaṁ*, *uddhataṁ cittaṁ*) are separate from the hindrances | D6 | The link may be closer than an editor's link suggests |
@@ -169,6 +212,9 @@ Judgment calls a second pass should look at first. Each was made deliberately an
 | 10 | The Visuddhimagga pairings of jhāna factors and hindrances, cited from memory | D5, `data/commentary-vism.ttl` | Not checked against an edition |
 | 12 | Sequences modelled as pairwise links (SN 46.3) | D16 | A chain may deserve to be one object, e.g. for the order of the seven fruits |
 | 13 | Interlocutors' lines left out; speakers not recorded (MN 43, MN 44 claims are disciples' teaching) | D17 | Some responses add content; a speaker field may be needed |
+| 14 | SN 46.52's parts are aspects (internal/external etc.) or qualities (the compounds' halves), and are not classified as hindrances or factors | D18 | The text calls each part "a hindrance"; a reader may want them classified |
+| 15 | Claims resting on an expanded abbreviation are kept, marked (D19) | D14, D19 | Either too generous (drop them) or too cautious (the tradition expands them) |
+| 16 | Sujato's labels kept where the Pali is narrower (*rūparāga*, *ajjhattaṁ kāmacchando*, *amanasikārabahulīkāro*) | D9, AUDIT.md | A Pali-literal label would be more faithful, less readable |
 | 11 | What each coverage record says was left out | `data/coverage.ttl` | Written by Claude after reading each text; a reader may see claims we missed |
 
 A revisit pass can work text by text: every claim cites its segments, every text has a coverage record with the date it was modelled, and the review view (`viz/review.html`) shows each text beside the claims resting on it.

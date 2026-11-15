@@ -1,0 +1,142 @@
+{
+  "batch": "batch2",
+  "texts": [
+    {
+      "uid": "mn44",
+      "claims": [
+        {"id": "def-01", "verdict": "SUPPORTED", "severity": null, "reason": "12.2 'cittassa ekaggatā ayaṁ samādhi' says exactly this. The speaker is the nun Dhammadinnā, a teaching disciple, and the Buddha endorses all her answers at 30.4-30.5."}
+      ],
+      "omissions": [
+        {"segments": ["mn44:29.15"], "what": "Extinguishment is the objective, destination and culmination of the spiritual life. This sits in the 22-29 range of the left-out note, but that note describes the range only as feelings, tendencies and counterparts, so this statement is not really named."},
+        {"segments": ["mn44:30.4", "mn44:30.5"], "what": "The Buddha endorses Dhammadinnā's answers as what he would say himself. This is borderline framing, but it is what gives her definitions (including def-01) the Buddha's authority. Worth noting as provenance."}
+      ],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "The left-out note matches the text's sections (2-5, 6, 7-8, 9-11 including 10.2 'the path is conditioned', 12.3-12.5, 13-15, 16-21, 22-29). 'Partly encoded' is correct: only 12.2 is modelled."
+    },
+    {
+      "uid": "sn46.3",
+      "claims": [
+        {"id": "EarlyEnlightenment", "verdict": "SUPPORTED", "severity": null, "reason": "9.3 says this."},
+        {"id": "EnlightenmentAtDeath", "verdict": "SUPPORTED", "severity": null, "reason": "9.4 says this ('if not' the previous one)."},
+        {"id": "ExtinguishedBetweenLives", "verdict": "SUPPORTED", "severity": null, "reason": "9.5 (antarāparinibbāyī). The summary leaves out the qualifier 'with the ending of the five lower fetters', which the text gives for fruits 3-7."},
+        {"id": "ExtinguishedUponLanding", "verdict": "SUPPORTED", "severity": null, "reason": "9.6 (upahaccaparinibbāyī)."},
+        {"id": "ExtinguishedWithEffort", "verdict": "SUPPORTED", "severity": null, "reason": "9.8 (sasaṅkhāraparinibbāyī). It is correctly kept apart from 'without extra effort' (9.7)."},
+        {"id": "ExtinguishedWithoutEffort", "verdict": "SUPPORTED", "severity": null, "reason": "9.7 (asaṅkhāraparinibbāyī)."},
+        {"id": "HeadingUpstream", "verdict": "SUPPORTED", "severity": null, "reason": "9.9 (uddhaṁsoto akaniṭṭhagāmī)."},
+        {"id": "SevenFruits", "verdict": "STRETCH", "severity": "minor", "reason": "The seven members and the count are right (9.2-9.10). But the members are stored in alphabetical order, while the text gives a ranked 'if not' sequence (9.3 to 9.9). o-29's note says 'In order', and a reader taking the list order as the text's order would be misled."},
+        {"id": "c-s1", "verdict": "SUPPORTED", "severity": null, "reason": "1.9 and 2.1: when the mendicant, living withdrawn, recollects and thinks about the teaching, the mindfulness factor is initiated. The withdrawal condition is dropped, but the left-out note says so."},
+        {"id": "c-s2", "verdict": "SUPPORTED", "severity": null, "reason": "2.4 and 3.1: living mindfully, they investigate the teaching, and the investigation factor is initiated."},
+        {"id": "c-s3", "verdict": "SUPPORTED", "severity": null, "reason": "3.4 and 4.1 say this."},
+        {"id": "c-s4", "verdict": "SUPPORTED", "severity": null, "reason": "4.2 and 5.1: 'āraddhavīriyassa uppajjati pīti nirāmisā'."},
+        {"id": "c-s5", "verdict": "SUPPORTED", "severity": null, "reason": "5.2 and 6.1: when the mind is full of rapture, body and mind become tranquil."},
+        {"id": "c-s6", "verdict": "SUPPORTED", "severity": null, "reason": "6.2 and 7.1. The note correctly records that bliss (sukhino) is a co-condition."},
+        {"id": "c-s7", "verdict": "SUPPORTED", "severity": null, "reason": "7.2 and 8.1: closely watching over (ajjhupekkhitā) the immersed mind initiates the equanimity factor."},
+        {"id": "o-29", "verdict": "STRETCH", "severity": "minor", "reason": "9.1 and 9.10 say that when the factors are developed and cultivated 'in this way', seven fruits 'can be expected' (pāṭikaṅkhā). 'Leads to' firms up 'can expect' and drops the developed-and-cultivated condition. The fruits are also alternatives, and one person gets one of them, not all seven; the note only partly conveys this."}
+      ],
+      "omissions": [
+        {"segments": ["sn46.3:2.2", "sn46.3:2.3", "sn46.3:4.1", "sn46.3:8.1"], "what": "Each factor is said to be initiated (āraddho), developed (bhāveti) and brought to perfection (bhāvanāpāripūriṁ gacchati). The conditions model only 'arise'; the developing and perfecting stages are neither encoded nor mentioned."},
+        {"segments": ["sn46.3:9.5", "sn46.3:9.6", "sn46.3:9.7", "sn46.3:9.8", "sn46.3:9.9"], "what": "Fruits 3-7 happen 'with the ending of the five lower fetters'. This condition is not encoded and not mentioned in the left-out note."}
+      ],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "1.1 also lists 'knowledge and vision of freedom' (vimuttiñāṇadassanasampannā), but the left-out note lists only 'ethics, immersion, knowledge and freedom'. This is a small inaccuracy in the note."
+    },
+    {
+      "uid": "sn46.29",
+      "claims": [
+        {"id": "SevenAwakeningFactors", "verdict": "SUPPORTED", "severity": null, "reason": "1.3 lists the seven. The Pali is abbreviated (…pe…) between the first and last, but the expansion is unambiguous."},
+        {"id": "c-17", "verdict": "SUPPORTED", "severity": null, "reason": "2.2 vivekanissitaṁ: the factors are developed relying on seclusion. 'Is the basis of' is a fair simplification."},
+        {"id": "c-18", "verdict": "SUPPORTED", "severity": null, "reason": "2.2 virāganissitaṁ."},
+        {"id": "c-19", "verdict": "SUPPORTED", "severity": null, "reason": "2.2 nirodhanissitaṁ."},
+        {"id": "o-19", "verdict": "SUPPORTED", "severity": null, "reason": "2.2 vossaggapariṇāmiṁ, 'ripen as letting go'. 'Leads to' is a fair simplification."},
+        {"id": "o-23", "verdict": "SUPPORTED", "severity": null, "reason": "1.1 and 2.3: developed and cultivated, they lead to giving up (pahānāya saṁvattanti) the things that tighten the fetters. The superlative is noted correctly."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "The left-out note correctly describes 3.1-3.8: the six sense faculties as the things that tighten the fetters."
+    },
+    {
+      "uid": "sn46.27",
+      "claims": [
+        {"id": "SevenAwakeningFactors", "verdict": "SUPPORTED", "severity": null, "reason": "1.6 lists the seven (the Pali is abbreviated, but the expansion is clear)."},
+        {"id": "c-17", "verdict": "SUPPORTED", "severity": null, "reason": "2.1-2.2 vivekanissitaṁ."},
+        {"id": "c-18", "verdict": "SUPPORTED", "severity": null, "reason": "2.1-2.2 virāganissitaṁ."},
+        {"id": "c-19", "verdict": "SUPPORTED", "severity": null, "reason": "2.1-2.2 nirodhanissitaṁ."},
+        {"id": "o-19", "verdict": "SUPPORTED", "severity": null, "reason": "2.2 vossaggapariṇāmiṁ."},
+        {"id": "o-21", "verdict": "SUPPORTED", "severity": null, "reason": "1.1, 1.4 and 2.3: the seven factors are the path and practice that leads to (saṁvattati) the cessation of craving."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "The exhortation to develop the path (1.1) is folded into o-21, which is acceptable. 'Fully encoded' holds."
+    },
+    {
+      "uid": "sn46.21",
+      "claims": [
+        {"id": "SevenAwakeningFactors", "verdict": "SUPPORTED", "severity": null, "reason": "2.4-2.5 name the seven (the Pali is abbreviated, but the expansion is clear)."},
+        {"id": "c-17", "verdict": "SUPPORTED", "severity": null, "reason": "2.5 vivekanissitaṁ."},
+        {"id": "c-18", "verdict": "SUPPORTED", "severity": null, "reason": "2.5 virāganissitaṁ."},
+        {"id": "c-19", "verdict": "SUPPORTED", "severity": null, "reason": "2.5 nirodhanissitaṁ."},
+        {"id": "o-01", "verdict": "SUPPORTED", "severity": null, "reason": "2.3 and 2.6: 'bodhāya saṁvattanti', so they are called awakening factors. The Buddha is answering a mendicant's question."},
+        {"id": "o-19", "verdict": "SUPPORTED", "severity": null, "reason": "2.5 vossaggapariṇāmiṁ."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "o-01 encodes as a plain outcome what the text gives as the reason for the name. That is fine, though the definitional force ('this is why they are called') is lost unless the summary keeps it."
+    },
+    {
+      "uid": "sn11.3",
+      "claims": [
+        {"id": "sense-dhamma-teaching", "verdict": "SUPPORTED", "severity": null, "reason": "10.2 'svākkhāto bhagavatā dhammo', the Dhamma well explained by the Buddha: dhamma clearly means the teaching. It is spoken by the Buddha."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "Cited only, so no omission check was done. The visible context (9.2-11.3) matches the left-out note's description of recollection as a remedy for fear."
+    },
+    {
+      "uid": "sn46.34",
+      "claims": [
+        {"id": "SevenAwakeningFactors", "verdict": "SUPPORTED", "severity": null, "reason": "1.3 lists the seven."},
+        {"id": "o-12", "verdict": "SUPPORTED", "severity": null, "reason": "1.1 and 1.4: developed and cultivated, they lead to (saṁvattanti) the realization of the fruit of knowledge and freedom (vijjāvimuttiphalasacchikiriyāya)."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "The 'not obstacles, hindrances, corruptions' predicate is correctly declared as left out."
+    },
+    {
+      "uid": "sn46.59",
+      "claims": [
+        {"id": "o-p59", "verdict": "STRETCH", "severity": "minor", "reason": "The Pali at 1.1 is only 'Vinīlakasaññā, bhikkhave …pe…'. 'Developed and cultivated … very fruitful and beneficial' is the translator's expansion of the abbreviation, so the claim rests on English the Pali text does not contain. The note discloses this honestly, but the claim is still not attested in the source as given."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "From the packet alone I can't verify that the sutta repeats SN 46.57; I can only see that the text is abbreviated. The left-out note is consistent with what is shown."
+    },
+    {
+      "uid": "sn46.64",
+      "claims": [
+        {"id": "o-p64", "verdict": "STRETCH", "severity": "minor", "reason": "The Pali at 1.1 is 'Muditā, bhikkhave, bhāvitā …pe…': 'developed' is attested, but 'very fruitful and beneficial' exists only in the English expansion. The note discloses this."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "Same abbreviation issue as sn46.59 and sn46.71."
+    },
+    {
+      "uid": "sn46.71",
+      "claims": [
+        {"id": "o-p71", "verdict": "STRETCH", "severity": "minor", "reason": "The Pali at 1.1 is only 'Aniccasaññā, bhikkhave …pe…'. The 'very fruitful and beneficial' result comes only from the translator's expansion. The note discloses this."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "Same abbreviation issue as sn46.59 and sn46.64."
+    }
+  ]
+}

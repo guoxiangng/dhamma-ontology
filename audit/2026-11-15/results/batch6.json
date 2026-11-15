@@ -1,0 +1,154 @@
+{
+  "batch": "batch6",
+  "texts": [
+    {
+      "uid": "sn46.56",
+      "claims": [
+        {"id": "c-17", "verdict": "SUPPORTED", "severity": null, "reason": "5.3 and 6.2: each factor is developed 'vivekanissitaṁ' (relying on seclusion), stated in full for mindfulness and equanimity with the middle factors abbreviated (6.1); 'is the basis of' is a fair reading of nissita."},
+        {"id": "c-18", "verdict": "SUPPORTED", "severity": null, "reason": "5.3, 6.2 'virāganissitaṁ'; same formula as c-17."},
+        {"id": "c-19", "verdict": "SUPPORTED", "severity": null, "reason": "5.3, 6.2 'nirodhanissitaṁ'; same formula as c-17."},
+        {"id": "c-a1", "verdict": "SUPPORTED", "severity": null, "reason": "The Buddha says at 2.3-2.4 and 3.1-3.5 that a heart overcome by each of the five hindrances, not seeing the escape, is a hetu/paccaya for aññāṇa/adassana. The note is accurate, and 'sensual desire' here translates kāmarāga."},
+        {"id": "c-a2", "verdict": "SUPPORTED", "severity": null, "reason": "5.3-5.5 and 6.1-6.4: developing each factor, they know and see with a mind that has developed it, and this is a cause and reason for knowing and seeing."},
+        {"id": "o-19", "verdict": "SUPPORTED", "severity": null, "reason": "5.3 and 6.2 'vossaggapariṇāmiṁ', 'ripens as letting go'. 'Leads to' is a fair simplification."}
+      ],
+      "omissions": [],
+      "left_out_accurate": false,
+      "coverage_status_accurate": true,
+      "notes": "The left-out note calls 1.4-1.13 'Pūraṇa Kassapa's view'. Only 1.5-1.8 are his view. At 1.10-1.13 the Buddha rejects it and asserts that knowing and not knowing do have causes and reasons. That is a teaching statement, though c-a1 and c-a2 cover its content, so it is a small mislabel rather than a real omission. The exclusion of Abhaya's lines (4.3-4.5, 7.3-7.6) as interlocutor speech is correct."
+    },
+    {
+      "uid": "sn46.53",
+      "claims": [
+        {"id": "ta-01", "verdict": "SUPPORTED", "severity": null, "reason": "4.1: when the mind is sluggish (līna) it is akālo, the wrong time, to develop tranquility; the reason is at 4.3."},
+        {"id": "ta-02", "verdict": "SUPPORTED", "severity": null, "reason": "4.1: the wrong time to develop immersion."},
+        {"id": "ta-03", "verdict": "SUPPORTED", "severity": null, "reason": "4.1: the wrong time to develop equanimity."},
+        {"id": "ta-04", "verdict": "SUPPORTED", "severity": null, "reason": "7.1: when the mind is sluggish it is kālo, the right time, for investigation of principles; the reason is at 7.3."},
+        {"id": "ta-05", "verdict": "SUPPORTED", "severity": null, "reason": "7.1: the right time for energy."},
+        {"id": "ta-06", "verdict": "SUPPORTED", "severity": null, "reason": "7.1: the right time for rapture."},
+        {"id": "ta-07", "verdict": "SUPPORTED", "severity": null, "reason": "10.1: when the mind is restless (uddhata) it is the wrong time for investigation of principles; the reason is at 10.3."},
+        {"id": "ta-08", "verdict": "SUPPORTED", "severity": null, "reason": "10.1: the wrong time for energy."},
+        {"id": "ta-09", "verdict": "SUPPORTED", "severity": null, "reason": "10.1: the wrong time for rapture."},
+        {"id": "ta-10", "verdict": "SUPPORTED", "severity": null, "reason": "13.1: when the mind is restless it is the right time for tranquility; the reason is at 13.3."},
+        {"id": "ta-11", "verdict": "SUPPORTED", "severity": null, "reason": "13.1: the right time for immersion."},
+        {"id": "ta-12", "verdict": "SUPPORTED", "severity": null, "reason": "13.1: the right time for equanimity."},
+        {"id": "ta-13", "verdict": "SUPPORTED", "severity": null, "reason": "15.4: 'Satiñca khvāhaṁ ... sabbatthikaṁ vadāmi', the Buddha's own statement that mindfulness is always useful."}
+      ],
+      "omissions": [
+        {"segments": ["sn46.53:4.3", "sn46.53:7.3", "sn46.53:10.3", "sn46.53:13.3"], "what": "The reasons (sluggish mind is hard or easy to stimulate; restless mind is hard or easy to settle) are cited but no claim field records them. The encoded note says 'the reason given for each' is encoded, but none of the timing claims shown carries it."}
+      ],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "The left-out note matches the text: setting at 1.1-3.1, fire similes at 5, 8, 11 and 14, and repeats at 6, 9, 12 and 15.1-15.3. The encoded note claims more than the claims contain (see the omission). All 13 timing claims read correctly, with no swapped factors."
+    },
+    {
+      "uid": "sn46.28",
+      "claims": [
+        {"id": "SevenAwakeningFactors", "verdict": "SUPPORTED", "severity": null, "reason": "1.7 lists all seven (the Pali abbreviates with …pe… between sati and upekkhā). The members and the count are correct."},
+        {"id": "c-17", "verdict": "SUPPORTED", "severity": null, "reason": "2.1 and 2.5: 'vivekanissitaṁ'."},
+        {"id": "c-18", "verdict": "SUPPORTED", "severity": null, "reason": "2.1 and 2.5: 'virāganissitaṁ'."},
+        {"id": "c-19", "verdict": "SUPPORTED", "severity": null, "reason": "2.1 and 2.5: 'nirodhanissitaṁ'."},
+        {"id": "o-19", "verdict": "SUPPORTED", "severity": null, "reason": "2.1 and 2.5: 'vossaggapariṇāmiṁ'."},
+        {"id": "o-22", "verdict": "SUPPORTED", "severity": null, "reason": "1.1 and 1.5 call the seven factors the path that helps penetration, and 2.9 says that, developed this way, they 'nibbedhāya saṁvattanti', lead to penetration. 1.9 is Udāyī's question but only frames the claim; the Buddha affirms it at 2.9."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "The left-out note correctly describes the shattering of the masses of greed, hate and delusion (2.2-2.4, 2.6-2.8) and the 'vipulaṁ mahaggataṁ appamāṇaṁ abyāpajjaṁ' qualifiers."
+    },
+    {
+      "uid": "sn46.1",
+      "claims": [
+        {"id": "c-01", "verdict": "SUPPORTED", "severity": null, "reason": "1.4 'sīlaṁ nissāya sīle patiṭṭhāya satta bojjhaṅge bhāvento', repeated at 1.5 and 1.13."},
+        {"id": "c-17", "verdict": "SUPPORTED", "severity": null, "reason": "1.6 and 1.12: 'vivekanissitaṁ', in full for mindfulness and equanimity."},
+        {"id": "c-18", "verdict": "SUPPORTED", "severity": null, "reason": "1.6 and 1.12: 'virāganissitaṁ'."},
+        {"id": "c-19", "verdict": "SUPPORTED", "severity": null, "reason": "1.6 and 1.12: 'nirodhanissitaṁ'."},
+        {"id": "o-19", "verdict": "SUPPORTED", "severity": null, "reason": "1.6 and 1.12: 'vossaggapariṇāmiṁ'."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "The left-out note matches the text: the dragon simile at 1.2-1.3 and 'mahantattaṁ vepullattaṁ pāpuṇāti dhammesu' at 1.4 and 1.13."
+    },
+    {
+      "uid": "sn46.41",
+      "claims": [
+        {"id": "SevenAwakeningFactors", "verdict": "SUPPORTED", "severity": null, "reason": "1.6 lists all seven (abbreviated in the Pali)."},
+        {"id": "o-24", "verdict": "STRETCH", "severity": "minor", "reason": "1.2-1.4 and 1.9 say that all who have given up, will give up or are giving up the three vidhā do so 'bhāvitattā bahulīkatattā', because they developed the seven factors, and 1.9 adds imesaṁyeva, 'these very' seven. That is an exclusive-means claim about every abandoner, not a plain 'leads to'. The note keeps the scope, but the effect field flattens it into a general outcome."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "Fully encoded is accurate. Correctly, the sutta does not name the three vidhā and the ontology does not either."
+    },
+    {
+      "uid": "sn46.11",
+      "claims": [
+        {"id": "c-01", "verdict": "SUPPORTED", "severity": null, "reason": "1.3 'sīlaṁ nissāya sīle patiṭṭhāya satta bojjhaṅge bhāveti', repeated at 2.1 and 2.4."},
+        {"id": "c-17", "verdict": "SUPPORTED", "severity": null, "reason": "2.3 (and the Pali of 2.2) 'vivekanissitaṁ'."},
+        {"id": "c-18", "verdict": "SUPPORTED", "severity": null, "reason": "2.3 'virāganissitaṁ'."},
+        {"id": "c-19", "verdict": "SUPPORTED", "severity": null, "reason": "2.3 'nirodhanissitaṁ'."},
+        {"id": "o-19", "verdict": "SUPPORTED", "severity": null, "reason": "2.3 'vossaggapariṇāmiṁ'."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "Partly encoded is accurate, since only the earth simile (1.1-1.2) is unmodelled. The citations could also include 2.2, whose Pali gives the full formula for mindfulness."
+    },
+    {
+      "uid": "sn46.31",
+      "claims": [
+        {"id": "c-06", "verdict": "SUPPORTED", "severity": null, "reason": "1.1 'sabbe te appamādamūlakā appamādasamosaraṇā': all skillful qualities are rooted in diligence and meet at it."},
+        {"id": "c-07", "verdict": "SUPPORTED", "severity": null, "reason": "1.2 'Appamattassetaṁ ... pāṭikaṅkhaṁ', a diligent mendicant can expect to develop the factors. 'Supports the development of' is suitably weak and does not inflate this into causation."},
+        {"id": "c-17", "verdict": "SUPPORTED", "severity": null, "reason": "2.3 'vivekanissitaṁ' (also 2.2)."},
+        {"id": "c-18", "verdict": "SUPPORTED", "severity": null, "reason": "2.3 'virāganissitaṁ'."},
+        {"id": "c-19", "verdict": "SUPPORTED", "severity": null, "reason": "2.3 'nirodhanissitaṁ'."},
+        {"id": "o-19", "verdict": "SUPPORTED", "severity": null, "reason": "2.3 'vossaggapariṇāmiṁ'."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "The left-out note correctly identifies 'appamādo tesaṁ dhammānaṁ aggamakkhāyati' (1.1) as unencoded."
+    },
+    {
+      "uid": "sn46.36",
+      "claims": [
+        {"id": "SevenAwakeningFactors", "verdict": "SUPPORTED", "severity": null, "reason": "1.3 lists all seven (abbreviated in the Pali)."},
+        {"id": "o-13", "verdict": "SUPPORTED", "severity": null, "reason": "1.1 and 1.4 say the factors, developed and cultivated, 'buddhiyā aparihānāya saṁvattanti'. 'Progress' renders aparihāna, literally non-decline; that follows Sujato's English and is acceptable, though 'non-decline' would be more exact."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "aparihānāya means 'non-decline', not progress in an active sense. Users of the ontology may read 'progress' as something more."
+    },
+    {
+      "uid": "sn46.62",
+      "claims": [
+        {"id": "o-p62", "verdict": "STRETCH", "severity": "minor", "reason": "The Pali at 1.1 reads only 'Mettā, bhikkhave, bhāvitā …pe…'. The result 'very fruitful and beneficial' is the translator's filling-in of the peyyāla, not in the text as given. The note says so, but the claim still asserts a sutta-layer outcome that the Pali of this text does not state."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "The packet cannot verify 'understood to repeat SN 46.57'. The left-out note is accurate in that nothing beyond 1.1 exists in this text."
+    },
+    {
+      "uid": "sn46.69",
+      "claims": [
+        {"id": "o-p69", "verdict": "STRETCH", "severity": "minor", "reason": "The Pali at 1.1 reads only 'Āhāre paṭikūlasaññā, bhikkhave …pe…'. It lacks even 'bhāvitā', so both 'developed and cultivated' and 'very fruitful and beneficial' come from the translation's expansion. The note discloses this, but the outcome is not stated in this text's Pali."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "The encoded note says 'developed and cultivated', which the Pali here does not contain (unlike sn46.62:1.1, which has 'bhāvitā')."
+    },
+    {
+      "uid": "sn46.75",
+      "claims": [
+        {"id": "o-p75", "verdict": "STRETCH", "severity": "minor", "reason": "The Pali at 1.1 reads only 'Virāgasaññā, bhikkhave …pe…', with no 'bhāvitā' and no result. 'Very fruitful and beneficial' is wholly the translator's expansion. The note discloses it, but the sutta-layer outcome is not in this text's Pali."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "This has the same issue as sn46.69: 'developed and cultivated' in the encoded note is not in the Pali."
+    }
+  ]
+}

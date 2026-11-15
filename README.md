@@ -4,7 +4,7 @@ A small, **citation-first** ontology of Buddhist teachings, built from the Pali 
 
 It starts with one well-defined topic: the **five hindrances**, the **seven awakening factors** and the **factors of the first jhāna**, and what the Linked Discourses on the Awakening Factors (SN 46) say about what conditions them and where they lead. The aim is to show what an ontology can do that a glossary, a graph of related terms or a plain LLM can't, on material that can be checked line by line.
 
-> **Status: v0.1, a personal learning project.** It draws on 63 texts out of SuttaCentral's 14,080 suttas ([COVERAGE.md](COVERAGE.md)). The modelling was done by a practitioner with an AI assistant, and **no qualified reader has reviewed it yet**. The quotes are the texts' own words; the structure is our interpretation, and every choice is written down in [DECISIONS.md](DECISIONS.md) so you can disagree with a specific one. Corrections are very welcome ([CONTRIBUTING.md](CONTRIBUTING.md)).
+> **Status: v0.1, a personal learning project.** It draws on 64 texts out of SuttaCentral's 14,080 suttas ([COVERAGE.md](COVERAGE.md)). The modelling was done by a practitioner with an AI assistant, and **no qualified reader has reviewed it yet**. The quotes are the texts' own words; the structure is our interpretation, and every choice is written down in [DECISIONS.md](DECISIONS.md) so you can disagree with a specific one. Corrections are very welcome ([CONTRIBUTING.md](CONTRIBUTING.md)).
 
 **Try it:** [Ask the Suttas](https://guoxiangng.github.io/dhamma-ontology/) · [Graph](https://guoxiangng.github.io/dhamma-ontology/graph.html) · [Review each text](https://guoxiangng.github.io/dhamma-ontology/review.html)
 
@@ -39,7 +39,7 @@ $ python scripts/dho.py ask "monkey mind"
 - **Classifies by reasoning.** Nothing is typed "hindrance" by hand; the OWL reasoner works it out from list membership. Rapture comes out as both an awakening factor and a jhāna factor.
 - **Derives what a sutta implies but never states.** Rule R1 finds which awakening factor counters which hindrance from objects they share in SN 46.51. It finds exactly two pairs. It does *not* produce "tranquility counters restlessness", which many teachers say but SN 46.51 doesn't support.
 - **Keeps layers apart.** Sutta, commentary and editor claims are always labelled, and the checks stop one being filed as another.
-- **Keeps the text's own words.** Outcome and condition claims ("good friendship is the forerunner of the awakening factors") use a small controlled set of relations for querying, plus the sutta's exact wording; a check fails if that wording isn't in the cited passage.
+- **Keeps the text's own words.** Outcome, condition and division claims ("good friendship is the forerunner of the awakening factors"; "physical energy is the awakening factor of energy") use a small controlled set of relations for querying, plus the sutta's exact wording; a check fails if that wording isn't in the cited passage.
 - **Separates the meanings of one word.** `sense dhamma` shows four meanings of *dhamma*, each backed by a passage, and one contested use left unassigned.
 - **Checks itself.** SHACL rules verify that list counts match the text, every claim is cited, cited passages exist, derived links are never typed by hand, and every text has an honest coverage record. Deliberately broken files in `tests/broken/` prove each rule fires.
 
@@ -82,7 +82,8 @@ Rebuild `dist/` with `python scripts/release.py`.
 
 | | |
 |---|---|
-| [DECISIONS.md](DECISIONS.md) | Every modelling choice, who decided it, corrections (D1–D17), and a revisit list for a second pass |
+| [AUDIT.md](AUDIT.md) | An independent check of every claim against the Pali and English: 82% supported, what was wrong, what was fixed |
+| [DECISIONS.md](DECISIONS.md) | Every modelling choice, who decided it, corrections (D1–D19), and a revisit list for a second pass |
 | [COVERAGE.md](COVERAGE.md) | Which texts are encoded, how much of each, what's left out, review status. Generated |
 | [triage/](triage/) | Collections sorted by the modelling pattern each sutta needs, before ingesting them |
 | [eval/](eval/) | A golden question set for testing whether the ontology helps an LLM answer more faithfully, and the method |

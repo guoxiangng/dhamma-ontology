@@ -106,3 +106,29 @@ dho:n-23 a dho:Nutriment ; dho:object dho:o-serenity ;            dho:attention 
     dho:citedBy dho:p-sn46.51-23.2 , dho:p-sn46.51-23.3 .
 dho:n-24 a dho:Nutriment ; dho:object dho:o-grounds-equanimity ;  dho:attention dho:NonAttention ; dho:starves dho:Equanimity ;
     dho:citedBy dho:p-sn46.51-24.2 , dho:p-sn46.51-24.3 .
+
+# Audit 2026-11-15 (D19): also cite the segment that says 'fuels' / 'starves' (ayaṁ āhāro / anāhāro).
+dho:n-01 dho:citedBy dho:p-sn46.51-1.7 .
+dho:n-02 dho:citedBy dho:p-sn46.51-2.4 .
+dho:n-03 dho:citedBy dho:p-sn46.51-3.4 .
+dho:n-04 dho:citedBy dho:p-sn46.51-4.4 .
+dho:n-05 dho:citedBy dho:p-sn46.51-5.4 .
+dho:n-06 dho:citedBy dho:p-sn46.51-6.4 .
+dho:n-07 dho:citedBy dho:p-sn46.51-7.4 .
+dho:n-08 dho:citedBy dho:p-sn46.51-8.4 .
+dho:n-09 dho:citedBy dho:p-sn46.51-9.4 .
+dho:n-10 dho:citedBy dho:p-sn46.51-10.4 .
+dho:n-11 dho:citedBy dho:p-sn46.51-11.4 .
+dho:n-12 dho:citedBy dho:p-sn46.51-12.4 .
+dho:n-13 dho:citedBy dho:p-sn46.51-13.4 .
+dho:n-14 dho:citedBy dho:p-sn46.51-14.4 .
+dho:n-15 dho:citedBy dho:p-sn46.51-15.4 .
+dho:n-16 dho:citedBy dho:p-sn46.51-16.4 .
+dho:n-17 dho:citedBy dho:p-sn46.51-17.4 .
+dho:n-18 dho:citedBy dho:p-sn46.51-18.4 .
+dho:n-19 dho:citedBy dho:p-sn46.51-19.4 .
+dho:n-20 dho:citedBy dho:p-sn46.51-20.4 .
+dho:n-21 dho:citedBy dho:p-sn46.51-21.4 .
+dho:n-22 dho:citedBy dho:p-sn46.51-22.4 .
+dho:n-23 dho:citedBy dho:p-sn46.51-23.4 .
+dho:n-24 dho:citedBy dho:p-sn46.51-24.4 .

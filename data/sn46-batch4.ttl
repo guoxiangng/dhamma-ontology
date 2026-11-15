@@ -41,6 +41,7 @@ dho:SevenFruits a dho:NumberedList ;
     dho:hasMember dho:EarlyEnlightenment , dho:EnlightenmentAtDeath , dho:ExtinguishedBetweenLives ,
                   dho:ExtinguishedUponLanding , dho:ExtinguishedWithoutEffort , dho:ExtinguishedWithEffort ,
                   dho:HeadingUpstream ;
+    skos:note "The text's order (9.3-9.9): enlightenment early in this very life; at the time of death; extinguished between one life and the next; upon landing; without extra effort; with extra effort; heading upstream to the Akaniṭṭha realm. The members are a set here; the order is in this note only."@en ;
     dho:citedBy dho:p-sn46.3-9.1 , dho:p-sn46.3-9.2 , dho:p-sn46.3-9.10 .
 dho:EarlyEnlightenment a dho:Concept ;
     skos:prefLabel "enlightenment early on in this very life"@en , "diṭṭheva dhamme paṭikacca aññā"@pi ; dho:citedBy dho:p-sn46.3-9.3 .
@@ -57,9 +58,9 @@ dho:ExtinguishedWithEffort a dho:Concept ;
 dho:HeadingUpstream a dho:Concept ;
     skos:prefLabel "heading upstream, going to the Akaniṭṭha realm"@en , "uddhaṁsoto akaniṭṭhagāmī"@pi ; dho:citedBy dho:p-sn46.3-9.9 .
 
-dho:o-29 a dho:Outcome ; dho:of dho:SevenAwakeningFactors ; dho:effect dho:LeadsTo ; dho:to dho:SevenFruits ;
+dho:o-29 a dho:Outcome ; dho:of dho:SevenAwakeningFactors ; dho:effect dho:CanExpect ; dho:to dho:SevenFruits ;
     dho:wording "they can expect seven fruits and benefits" ;
-    skos:note "In order: each later fruit applies 'if not' the earlier one."@en ;
+    skos:note "Ranked alternatives, one of which can be expected: each later fruit applies 'if not' the one before (9.3-9.9). Fruits 3-7 come 'with the ending of the five lower fetters'."@en ;
     dho:citedBy dho:p-sn46.3-9.1 , dho:p-sn46.3-9.10 .
 
 # ---------------------------------------------------------------- SN 46.56: causes of not knowing and of knowing
@@ -70,11 +71,11 @@ dho:KnowingSeeing a dho:Concept ; skos:prefLabel "knowing and seeing"@en , "ñā
 dho:c-a1 a dho:Condition ; dho:condition dho:FiveHindrances ; dho:relation dho:CauseOf ; dho:conditioned dho:NotKnowingSeeing ;
     dho:wording "a cause and reason for not knowing and not seeing" ;
     skos:note "When the heart is overcome and mired in each hindrance, without truly knowing and seeing the escape from it. Given in full for sensual desire, abbreviated for the others."@en ;
-    dho:citedBy dho:p-sn46.56-2.3 , dho:p-sn46.56-2.4 , dho:p-sn46.56-3.4 , dho:p-sn46.56-3.5 .
+    dho:citedBy dho:p-sn46.56-1.10 , dho:p-sn46.56-1.11 , dho:p-sn46.56-2.3 , dho:p-sn46.56-2.4 , dho:p-sn46.56-3.4 , dho:p-sn46.56-3.5 .
 dho:c-a2 a dho:Condition ; dho:condition dho:SevenAwakeningFactors ; dho:relation dho:CauseOf ; dho:conditioned dho:KnowingSeeing ;
     dho:wording "a cause and reason for knowing and seeing" ;
     skos:note "They truly know and see with a mind that has developed each awakening factor. Given in full for mindfulness, abbreviated for the others."@en ;
-    dho:citedBy dho:p-sn46.56-5.4 , dho:p-sn46.56-5.5 , dho:p-sn46.56-6.3 , dho:p-sn46.56-6.4 .
+    dho:citedBy dho:p-sn46.56-1.12 , dho:p-sn46.56-1.13 , dho:p-sn46.56-5.4 , dho:p-sn46.56-5.5 , dho:p-sn46.56-6.3 , dho:p-sn46.56-6.4 .
 
 # The stock formula, restated in SN 46.56.
 dho:o-19 dho:citedBy dho:p-sn46.56-5.3 , dho:p-sn46.56-6.2 .

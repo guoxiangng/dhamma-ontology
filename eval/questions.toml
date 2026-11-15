@@ -676,3 +676,64 @@ layer = "sutta"
 status = "draft"
 note = "Tests attribution to the right speaker (D17). The ontology leaves Abhaya's lines out."
 
+[[q]]
+id = "Q45"
+category = "recall"
+scope = "covered"
+question = "According to SN 46.52, in what way do the five hindrances become ten?"
+gold = [
+  "Each becomes twofold. Sensual desire, ill will and doubt are each internal and external (ajjhattaṁ, bahiddhā).",
+  "Dullness and drowsiness splits into dullness (thinaṁ) and drowsiness (middhaṁ); restlessness and remorse into restlessness (uddhaccaṁ) and remorse (kukkuccaṁ).",
+]
+segments = ["sn46.52:9.2", "sn46.52:9.4", "sn46.52:9.6", "sn46.52:9.8", "sn46.52:9.10", "sn46.52:9.12"]
+also_ok = ["Noting that the Buddha poses this as a question the wanderers of other religions could not answer."]
+must_not = []
+layer = "sutta"
+status = "draft"
+note = "Added with SN 46.52 (D18)."
+
+[[q]]
+id = "Q46"
+category = "trap"
+scope = "covered"
+question = "In SN 46.52, energy and tranquility each become twofold as internal and external, like mindfulness. True?"
+gold = [
+  "No. Energy is physical and mental (kāyikaṁ vīriyaṁ, cetasikaṁ vīriyaṁ), and so is tranquility (kāyappassaddhi, cittappassaddhi). Internal and external is the division for mindfulness, investigation and equanimity.",
+  "Rapture and immersion are divided differently again: with and without placing the mind and keeping it connected (savitakka, avitakka).",
+]
+segments = ["sn46.52:12.1", "sn46.52:14.1", "sn46.52:10.2", "sn46.52:13.1", "sn46.52:15.1"]
+also_ok = []
+must_not = ["Yes, all seven are divided into internal and external."]
+layer = "sutta"
+status = "draft"
+note = "Tests the four different bases of division (D18)."
+
+[[q]]
+id = "Q47"
+category = "trap"
+scope = "covered"
+question = "Does SN 46.52 say the five hindrances are 'corruptions of the heart that weaken wisdom'?"
+gold = [
+  "The phrase appears, but in the mouths of the wanderers of other religions, quoting what they say the ascetic Gotama teaches (cetaso upakkilese paññāya dubbalīkaraṇe). The Buddha's own teaching in SN 46.52 is how the hindrances become ten and the awakening factors fourteen.",
+]
+segments = ["sn46.52:3.1", "sn46.52:3.2", "sn46.52:9.1"]
+also_ok = ["Noting that similar wording is the Buddha's own in other suttas, without asserting which."]
+must_not = ["Yes, the Buddha teaches this in SN 46.52."]
+layer = "sutta"
+status = "draft"
+note = "Speaker attribution (D17). The ontology leaves the wanderers' lines out."
+
+[[q]]
+id = "Q48"
+category = "trap"
+scope = "covered"
+question = "In SN 46.57, what is developed: the perception of a skeleton together with the awakening factors, or the awakening factors accompanied by that perception?"
+gold = [
+  "In the Pali, the awakening factors are what is developed, each accompanied by the perception of a skeleton (aṭṭhikasaññāsahagataṁ satisambojjhaṅgaṁ bhāveti), relying on seclusion, fading away and cessation. Sujato's English reads 'develops the perception of a skeleton together with the awakening factors', which turns the grammar round.",
+]
+segments = ["sn46.57:1.4", "sn46.57:1.5"]
+also_ok = ["Noting that both readings link the perception and the factors, and the Pali's grammatical object is the factor."]
+must_not = ["The perception is what is developed, and the awakening factors are added to it."]
+layer = "sutta"
+status = "draft"
+note = "Added after the 2026-11-15 audit found the ontology had followed the English (D15 correction, D19)."

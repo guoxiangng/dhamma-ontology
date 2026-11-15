@@ -44,12 +44,16 @@ def claim_summary(g, c) -> tuple[str, str, str]:
     if DHO.Definition in types:
         return "definition", "sutta", f"{L(g.value(c, DHO.defines))} is defined as {L(g.value(c, DHO['as']))}"
     if DHO.Outcome in types:
+        sup = " [expanded abbreviation]" if g.value(c, DHO.support) is not None else ""
         return "outcome", "sutta", (f"{L(g.value(c, DHO.of))} {L(g.value(c, DHO.effect))} {L(g.value(c, DHO.to))}"
-                                    f" (“{g.value(c, DHO.wording)}”)")
+                                    f" (“{g.value(c, DHO.wording)}”){sup}")
     if DHO.Condition in types:
         res = g.value(c, DHO.result)
         what = f"{L(g.value(c, DHO.relation))} {L(g.value(c, DHO.conditioned))}" + (f": {L(res)}" if res else "")
         return "condition", "sutta", f"{L(g.value(c, DHO.condition))} {what} (“{g.value(c, DHO.wording)}”)"
+    if DHO.Division in types:
+        parts = " and ".join(sorted(L(p) for p in g.objects(c, DHO.part)))
+        return "division", "sutta", f"{L(g.value(c, DHO.divides))} becomes twofold ({L(g.value(c, DHO.basis))}): {parts}"
     if ONTOLEX.LexicalSense in types:
         return "word sense", "lexicon", f"'dhamma' meaning {L(g.value(c, ONTOLEX.reference))}"
     if DHO.Opposition in types:

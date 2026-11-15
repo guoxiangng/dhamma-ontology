@@ -55,8 +55,10 @@ dho:QualityLabelShape a sh:NodeShape ;
         sh:qualifiedValueShape [ sh:languageIn ( "zh" ) ] ; sh:qualifiedMinCount 1 ;
         sh:severity sh:Warning ;
         sh:message "S3: no Chinese label yet." ] ;
-    sh:property [ sh:path dho:memberOf ; sh:minCount 1 ;
-        sh:message "S3: a mental quality must belong to at least one numbered list." ] .
+    # Anchored in the text: in a numbered list, or named as one part of a cited division (D18).
+    sh:or ( [ sh:property [ sh:path dho:memberOf ; sh:minCount 1 ] ]
+            [ sh:property [ sh:path [ sh:inversePath dho:part ] ; sh:minCount 1 ] ] ) ;
+    sh:message "S3: a mental quality must belong to a numbered list or be a part of a division." .
 
 # ---------------------------------------------------------------- S4: nutriment statements are well formed and cited
 
@@ -186,7 +188,7 @@ dho:DefinitionShape a sh:NodeShape ;
 dho:OutcomeShape a sh:NodeShape ;
     sh:targetClass dho:Outcome ;
     sh:property [ sh:path dho:of ;      sh:minCount 1 ; sh:maxCount 1 ; sh:message "S12: outcome must say what has the effect (dho:of)." ] ;
-    sh:property [ sh:path dho:effect ;  sh:minCount 1 ; sh:maxCount 1 ; sh:in ( dho:LeadsTo dho:DoesNotLeadTo dho:Strengthens dho:Weakens dho:GivesUp ) ;
+    sh:property [ sh:path dho:effect ;  sh:minCount 1 ; sh:maxCount 1 ; sh:in ( dho:LeadsTo dho:DoesNotLeadTo dho:Strengthens dho:Weakens dho:GivesUp dho:CanExpect ) ;
                   sh:message "S12: outcome needs exactly one effect: leads to, does not lead to, strengthens, weakens, leads to giving up." ] ;
     sh:property [ sh:path dho:to ;      sh:minCount 1 ; sh:maxCount 1 ; sh:message "S12: outcome must say what it leads to (dho:to)." ] ;
     sh:property [ sh:path dho:wording ; sh:minCount 1 ; sh:maxCount 1 ; sh:message "S12: outcome must keep the text's own wording." ] ;
@@ -218,12 +220,37 @@ dho:WordingInTextShape a sh:NodeShape ;
     sh:targetSubjectsOf dho:wording ;
     sh:sparql [
         sh:prefixes <https://guoxiangng.github.io/dhamma-ontology/shapes> ;
-        sh:message "S14: wording '{?w}' does not occur in any passage this claim cites." ;
+        sh:message "S14: wording '{?w}' does not occur in any passage this claim cites (English or Pali)." ;
         sh:select """
             SELECT $this ?w WHERE {
                 $this dho:wording ?w .
                 FILTER NOT EXISTS {
-                    $this dho:citedBy ?p . ?p dho:textEn ?t .
+                    $this dho:citedBy ?p . { ?p dho:textEn ?t } UNION { ?p dho:textPi ?t }
                     FILTER (CONTAINS(LCASE(STR(?t)), LCASE(STR(?w))))
                 }
+            }""" ] .
+
+# ---------------------------------------------------------------- S15: divisions (D18)
+
+dho:DivisionShape a sh:NodeShape ;
+    sh:targetClass dho:Division ;
+    sh:property [ sh:path dho:divides ; sh:minCount 1 ; sh:maxCount 1 ; sh:message "S15: a division must name the quality it divides." ] ;
+    sh:property [ sh:path dho:part ;    sh:minCount 2 ; sh:maxCount 2 ; sh:message "S15: a division names exactly two parts ('becomes twofold')." ] ;
+    sh:property [ sh:path dho:basis ;   sh:minCount 1 ; sh:maxCount 1 ; sh:class dho:DivisionBasis ;
+                  sh:message "S15: a division needs exactly one basis (internal/external, physical/mental, with/without placing, named parts)." ] ;
+    sh:property [ sh:path dho:wording ; sh:minCount 1 ; sh:maxCount 1 ; sh:message "S15: a division must keep the text's own wording." ] ;
+    sh:property [ sh:path dho:citedBy ; sh:minCount 1 ; sh:class dho:Passage ; sh:message "S15: a division must cite a passage." ] .
+
+# ---------------------------------------------------------------- S16: claims resting only on abbreviated Pali (D19)
+
+dho:AbbreviationSupportShape a sh:NodeShape ;
+    sh:targetSubjectsOf dho:wording ;
+    sh:sparql [
+        sh:prefixes <https://guoxiangng.github.io/dhamma-ontology/shapes> ;
+        sh:message "S16: every cited segment is abbreviated in the Pali (…pe…); mark the claim dho:support dho:ExpandedAbbreviation." ;
+        sh:select """
+            SELECT $this WHERE {
+                $this dho:citedBy ?any .
+                FILTER NOT EXISTS { $this dho:support dho:ExpandedAbbreviation }
+                FILTER NOT EXISTS { $this dho:citedBy ?p . ?p dho:textPi ?t . FILTER (!CONTAINS(STR(?t), "pe…")) }
             }""" ] .

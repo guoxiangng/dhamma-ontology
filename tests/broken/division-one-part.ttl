@@ -1,0 +1,5 @@
+@prefix dho: <https://guoxiangng.github.io/dhamma-ontology/ns#> .
+# Broken on purpose: a division with one part and no basis. S15 must catch it.
+dho:dv-broken a dho:Division ; dho:divides dho:SensualDesire ; dho:part dho:SensualDesireInternal ;
+    dho:wording "Sensual desire for what is internal is a hindrance" ;
+    dho:citedBy dho:p-sn46.52-9.2 .

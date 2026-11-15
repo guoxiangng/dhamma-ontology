@@ -1,0 +1,158 @@
+{
+  "batch": "batch3",
+  "texts": [
+    {
+      "uid": "sn46.51",
+      "claims": [
+        {"id": "FiveHindrances", "verdict": "STRETCH", "severity": "minor", "reason": "The cited 1.2 gives only the count ('five hindrances'). The five members are named in the section questions 1.4, 2.1, 3.1, 4.1, 5.1 (kāmacchanda, byāpāda, thinamiddha, uddhaccakukkucca, vicikicchā), which are not cited. The members themselves are correct."},
+        {"id": "SevenAwakeningFactors", "verdict": "STRETCH", "severity": "minor", "reason": "The cited 1.2 gives only the count ('seven awakening factors'). The members are named in 6.1-12.1, which are not cited. The members themselves are correct."},
+        {"id": "n-01", "verdict": "SUPPORTED", "severity": null, "reason": "1.5-1.7: subhanimitta plus ayonisomanasikārabahulīkāro is the fuel (āhāra) for sensual desire. The predicate 'fuels' is in 1.7, which is not cited."},
+        {"id": "n-02", "verdict": "SUPPORTED", "severity": null, "reason": "2.2-2.4: paṭighanimitta with frequent irrational attention fuels ill will."},
+        {"id": "n-03", "verdict": "SUPPORTED", "severity": null, "reason": "3.2-3.4: arati, tandi, vijambhitā, bhattasammado, cetaso līnattaṁ with frequent irrational attention fuel thinamiddha. All five objects are listed correctly."},
+        {"id": "n-04", "verdict": "SUPPORTED", "severity": null, "reason": "4.2-4.4: cetaso avūpasamo with frequent irrational attention fuels restlessness and remorse."},
+        {"id": "n-05", "verdict": "SUPPORTED", "severity": null, "reason": "5.2-5.4: vicikicchāṭṭhānīyā dhammā with frequent irrational attention fuel doubt."},
+        {"id": "n-06", "verdict": "SUPPORTED", "severity": null, "reason": "6.2-6.4: with frequent rational attention, the grounds for the mindfulness factor fuel its arising and full development."},
+        {"id": "n-07", "verdict": "SUPPORTED", "severity": null, "reason": "7.2-7.4: the four pairs of qualities, with frequent rational attention, fuel investigation of principles."},
+        {"id": "n-08", "verdict": "SUPPORTED", "severity": null, "reason": "8.2-8.4: ārambha-, nikkama-, parakkamadhātu with frequent rational attention fuel energy."},
+        {"id": "n-09", "verdict": "SUPPORTED", "severity": null, "reason": "9.2-9.4: the grounds for the rapture factor, with frequent rational attention, fuel rapture."},
+        {"id": "n-10", "verdict": "SUPPORTED", "severity": null, "reason": "10.2-10.4: kāyappassaddhi and cittappassaddhi with frequent rational attention fuel tranquility."},
+        {"id": "n-11", "verdict": "SUPPORTED", "severity": null, "reason": "11.2-11.4: samathanimitta and abyagganimitta ('basis' renders nimitta) with frequent rational attention fuel immersion."},
+        {"id": "n-12", "verdict": "SUPPORTED", "severity": null, "reason": "12.2-12.4: the grounds for the equanimity factor, with frequent rational attention, fuel equanimity."},
+        {"id": "n-13", "verdict": "SUPPORTED", "severity": null, "reason": "13.2-13.4: asubhanimitta with frequent rational attention is the anāhāra (starver) of sensual desire."},
+        {"id": "n-14", "verdict": "SUPPORTED", "severity": null, "reason": "14.2-14.4: mettācetovimutti with frequent rational attention starves ill will."},
+        {"id": "n-15", "verdict": "SUPPORTED", "severity": null, "reason": "15.2-15.4: the elements of initiative, persistence and exertion, with frequent rational attention, starve dullness and drowsiness."},
+        {"id": "n-16", "verdict": "SUPPORTED", "severity": null, "reason": "16.2-16.4: cetaso vūpasamo with frequent rational attention starves restlessness and remorse."},
+        {"id": "n-17", "verdict": "SUPPORTED", "severity": null, "reason": "17.2-17.4: the four pairs of qualities, with frequent rational attention, starve doubt."},
+        {"id": "n-18", "verdict": "SUPPORTED", "severity": null, "reason": "18.2-18.4: amanasikārabahulīkāro toward the grounds for mindfulness starves the mindfulness factor. The attention field copies Sujato's 'not frequently applying'. The Pali is closer to 'frequent non-attention' (see notes)."},
+        {"id": "n-19", "verdict": "SUPPORTED", "severity": null, "reason": "19.2-19.4: non-attention to the four pairs of qualities starves investigation of principles."},
+        {"id": "n-20", "verdict": "SUPPORTED", "severity": null, "reason": "20.2-20.4: non-attention to the three elements starves energy."},
+        {"id": "n-21", "verdict": "SUPPORTED", "severity": null, "reason": "21.2-21.4: non-attention to the grounds for rapture starves rapture."},
+        {"id": "n-22", "verdict": "SUPPORTED", "severity": null, "reason": "22.2-22.4: non-attention to bodily and mental tranquility starves tranquility."},
+        {"id": "n-23", "verdict": "SUPPORTED", "severity": null, "reason": "23.2-23.4: non-attention to samathanimitta and abyagganimitta starves immersion."},
+        {"id": "n-24", "verdict": "SUPPORTED", "severity": null, "reason": "24.2-24.4: non-attention to the grounds for equanimity starves equanimity."},
+        {"id": "sense-dhamma-quality", "verdict": "SUPPORTED", "severity": null, "reason": "7.2: kusalākusalā dhammā sāvajjānavajjā dhammā... Here dhammā clearly means qualities (mental or ethical), rendered 'qualities'."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "All 24 nutriment statements are present, with the right objects, attention type and polarity. Citation precision: every nutriment claim cites x.2-x.3 but not x.4, which is where the predicate 'ayam āhāro / anāhāro ... fuels/starves' is actually stated. So the left-out note's description of x.4 as a mere restatement is slightly off, since x.4 completes the sentence. Pali nuance for n-18 to n-24: amanasikārabahulīkāro means 'frequent non-attention', or making much of not attending, rather than 'not frequently attending'. The attention field copies the English. The difference is small but worth fixing in the controlled vocabulary. The model also collapses the asymmetric effects ('increase and growth' for the hindrances, 'full development' for the factors) into fuels/starves. That is an acceptable simplification."
+    },
+    {
+      "uid": "mn148",
+      "claims": [
+        {"id": "sense-dhamma-mind-object", "verdict": "SUPPORTED", "severity": null, "reason": "5.3 dhammāyatana ('sense field of ideas') and 6.8 'manañca paṭicca dhamme ca' ('mind and ideas') both use dhamma as the object of the mind."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "Cited-only text, so no omission check. The left-out note matches the visible structure: the sets of six are numbered 'first/second/third set of six'."
+    },
+    {
+      "uid": "sn46.50",
+      "claims": [
+        {"id": "c-10", "verdict": "SUPPORTED", "severity": null, "reason": "1.1: of exterior factors, none leads to the arising (uppādāya) of the seven factors like kalyāṇamittatā. The 'exterior' qualifier is kept in the note."}
+      ],
+      "omissions": [
+        {"segments": ["sn46.50:1.2"], "what": "A mendicant with good friends can expect to develop and cultivate the seven awakening factors (kalyāṇamittassetaṁ ... pāṭikaṅkhaṁ ... bhāvessati, bahulīkarissati). The Pali gives this in full; it is untranslated, not abbreviated."},
+        {"segments": ["sn46.50:1.3", "sn46.50:1.4", "sn46.50:1.5", "sn46.50:1.6"], "what": "How one with good friends develops them: the stock formula, in which each factor relies on seclusion, fading away and cessation and ripens as letting go. The Pali gives it in full apart from an internal …pe… between mindfulness and equanimity. It is not cited for c-17/c-18/c-19/o-19, although the same passage is cited in sn46.12."}
+      ],
+      "left_out_accurate": false,
+      "coverage_status_accurate": false,
+      "notes": "The modellers say the rest of the sutta is 'abbreviated in the source'. That is true only of Sujato's English (1.1 ends with '…'). The Pali has 1.2-1.6 in full. 'Fully encoded' with 'nothing' left out is therefore wrong: the text matches sn46.12 1.3-2.4, which they did encode there."
+    },
+    {
+      "uid": "sn46.5",
+      "claims": [
+        {"id": "SevenAwakeningFactors", "verdict": "STRETCH", "severity": "minor", "reason": "The cited 1.6 lists only six factors in English. Equanimity is in 1.7, and the Pali 1.6 names only satisambojjhaṅga before …pe…. The count 'seven' appears only at 1.8, which is not cited. Citing 1.6-1.7 would be correct."},
+        {"id": "c-17", "verdict": "SUPPORTED", "severity": null, "reason": "1.6-1.7 vivekanissitaṁ: the factors rely on seclusion. 'Seclusion is the basis of' is a fair converse."},
+        {"id": "c-18", "verdict": "SUPPORTED", "severity": null, "reason": "1.6-1.7 virāganissitaṁ: the factors rely on fading away."},
+        {"id": "c-19", "verdict": "SUPPORTED", "severity": null, "reason": "1.6-1.7 nirodhanissitaṁ: the factors rely on cessation."},
+        {"id": "o-01", "verdict": "SUPPORTED", "severity": null, "reason": "1.5 and 1.11: bodhāya saṁvattanti, 'they lead to awakening', which is why they are called bojjhaṅgā."},
+        {"id": "o-19", "verdict": "SUPPORTED", "severity": null, "reason": "1.7 vossaggapariṇāmiṁ, 'ripens as letting go'. 'Leads to letting go' is an acceptable simplification of 'culminates in'."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "The left-out note accurately describes 1.8-1.10: release from the three āsavas, knowledge of release, and the arahant formula."
+    },
+    {
+      "uid": "sn46.12",
+      "claims": [
+        {"id": "c-02", "verdict": "SUPPORTED", "severity": null, "reason": "1.2: kalyāṇamittatā is pubbaṅgamaṁ and nimittaṁ for the arising of the seven factors."},
+        {"id": "c-03", "verdict": "SUPPORTED", "severity": null, "reason": "1.3: one with good friends can expect (pāṭikaṅkhaṁ) to develop and cultivate them. 'Supports the development of' is a soft relation, not a causal overstatement, and the wording field keeps 'can expect'."},
+        {"id": "c-17", "verdict": "SUPPORTED", "severity": null, "reason": "2.2-2.3: vivekanissitaṁ."},
+        {"id": "c-18", "verdict": "SUPPORTED", "severity": null, "reason": "2.3: virāganissitaṁ."},
+        {"id": "c-19", "verdict": "SUPPORTED", "severity": null, "reason": "2.3: nirodhanissitaṁ."},
+        {"id": "o-19", "verdict": "SUPPORTED", "severity": null, "reason": "2.3: vossaggapariṇāmiṁ, 'ripen as letting go'."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "Only the dawn simile (1.1) is left out, and it is correctly noted. The list of factors at 2.2 is not cited for SevenAwakeningFactors, which is harmless."
+    },
+    {
+      "uid": "sn46.49",
+      "claims": [
+        {"id": "c-09", "verdict": "SUPPORTED", "severity": null, "reason": "1.1: of interior factors, none leads to the arising of the seven factors like yonisomanasikāro. The 'interior' qualifier is kept in the note."}
+      ],
+      "omissions": [
+        {"segments": ["sn46.49:1.2"], "what": "A mendicant accomplished in rational application of mind (yonisomanasikārasampanna) can expect to develop and cultivate the seven awakening factors. The Pali gives this in full; it is untranslated."},
+        {"segments": ["sn46.49:1.3", "sn46.49:1.4", "sn46.49:1.5", "sn46.49:1.6"], "what": "How such a mendicant develops them: the stock seclusion / fading away / cessation / letting go formula, given in the Pali."}
+      ],
+      "left_out_accurate": false,
+      "coverage_status_accurate": false,
+      "notes": "This is the same error as sn46.50. 'The rest of the sutta is abbreviated in the source' is true only of the English. The Pali 1.2-1.6 has the full passage, so 'fully encoded / nothing left out' is inaccurate."
+    },
+    {
+      "uid": "sn46.19",
+      "claims": [
+        {"id": "SevenAwakeningFactors", "verdict": "SUPPORTED", "severity": null, "reason": "1.2-1.3: 'What seven?' followed by the full English list. The Pali abbreviates it as satisambojjhaṅgo …pe… upekkhāsambojjhaṅgo, a standard peyyāla."},
+        {"id": "o-04", "verdict": "SUPPORTED", "severity": null, "reason": "1.1 and 1.4: when developed and cultivated, the factors nīyanti takkarassa sammā dukkhakkhayāya, leading the practitioner to the complete ending of suffering."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "The left-out note correctly identifies 'ariyā niyyānikā' as the unencoded epithet. The o-04 summary drops 'when developed and cultivated', but the wording field implies practice."
+    },
+    {
+      "uid": "sn46.58",
+      "claims": [
+        {"id": "o-p58", "verdict": "STRETCH", "severity": "minor", "reason": "The Pali of 1.1 is only 'Puḷavakasaññā, bhikkhave, bhāvitā …pe…'. Nothing in this text says 'very fruitful and beneficial'; that is the translator's expansion. The claim rests wholly on the English. The note discloses this honestly, so the severity is minor."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "Nothing here can confirm from this packet alone that the abbreviation repeats SN 46.57. 'Corpse' is also supplied by the translation (puḷavaka = worm-infested)."
+    },
+    {
+      "uid": "sn46.61",
+      "claims": [
+        {"id": "o-p61", "verdict": "STRETCH", "severity": "minor", "reason": "The Pali of 1.1 is only 'Uddhumātakasaññā, bhikkhave …pe…': not even 'bhāvitā', let alone 'very fruitful and beneficial'. The claim rests entirely on the translator's expansion. It is disclosed in the note."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "The modellers' encoded-text description says 'developed and cultivated', which the Pali here does not contain."
+    },
+    {
+      "uid": "sn46.68",
+      "claims": [
+        {"id": "o-p68", "verdict": "STRETCH", "severity": "minor", "reason": "The Pali of 1.1 is only 'Maraṇasaññā, bhikkhave …pe…'. The 'very fruitful and beneficial' outcome is the translator's expansion and is not in the Pali of this text. It is disclosed in the note."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": ""
+    },
+    {
+      "uid": "sn46.74",
+      "claims": [
+        {"id": "o-p74", "verdict": "STRETCH", "severity": "minor", "reason": "The Pali of 1.1 is only 'Pahānasaññā, bhikkhave …pe…'. The outcome is the translator's expansion and is not in the Pali of this text. It is disclosed in the note."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": ""
+    }
+  ]
+}

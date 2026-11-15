@@ -1,0 +1,137 @@
+@prefix dho:  <https://guoxiangng.github.io/dhamma-ontology/ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# SN 46.52 Is There a Way? (Pariyāyasutta), read in full (D18).
+#
+# "The five hindrances become ten and the seven awakening factors become fourteen":
+# each of the twelve qualities "becomes twofold". One dho:Division per quality, with
+# the text's own wording (the statement line) and citations to the statement, the
+# "becomes twofold" line, and the opening and closing lines of its section.
+#
+# Four bases of division occur:
+#   internal / external       sensual desire, ill will, doubt, mindfulness, investigation, equanimity
+#   physical / mental         energy, tranquility
+#   with / without placing    rapture, immersion
+#   the two named qualities   dullness and drowsiness, restlessness and remorse
+#
+# Left out: the narrative frame and the wanderers' question (1.1-7.2, D17), including their
+# restatement of the teaching with "corruptions of the heart that weaken wisdom" (3.2, 3.4);
+# the Buddha's counter-question and "they're out of their element" (8.1-8.6).
+
+# ---------------------------------------------------------------- the five hindrances become ten (9.1-9.12)
+
+dho:SensualDesireInternal a dho:Aspect ;
+    skos:prefLabel "sensual desire for what is internal"@en , "ajjhattaṁ kāmacchanda"@pi .
+dho:SensualDesireExternal a dho:Aspect ;
+    skos:prefLabel "sensual desire for what is external"@en , "bahiddhā kāmacchanda"@pi .
+dho:dv-01 a dho:Division ; dho:divides dho:SensualDesire ; dho:basis dho:InternalExternal ;
+    dho:part dho:SensualDesireInternal , dho:SensualDesireExternal ;
+    dho:wording "Sensual desire for what is internal is a hindrance; and sensual desire for what is external is also a hindrance." ;
+    dho:citedBy dho:p-sn46.52-9.1 , dho:p-sn46.52-9.2 , dho:p-sn46.52-9.3 , dho:p-sn46.52-9.12 .
+
+dho:IllWillInternal a dho:Aspect ;
+    skos:prefLabel "ill will for what is internal"@en , "ajjhattaṁ byāpāda"@pi .
+dho:IllWillExternal a dho:Aspect ;
+    skos:prefLabel "ill will for what is external"@en , "bahiddhā byāpāda"@pi .
+dho:dv-02 a dho:Division ; dho:divides dho:IllWill ; dho:basis dho:InternalExternal ;
+    dho:part dho:IllWillInternal , dho:IllWillExternal ;
+    dho:wording "Ill will for what is internal is a hindrance; and ill will for what is external is also a hindrance." ;
+    dho:citedBy dho:p-sn46.52-9.1 , dho:p-sn46.52-9.4 , dho:p-sn46.52-9.5 , dho:p-sn46.52-9.12 .
+
+# The compound hindrances split into the two qualities their names join. This takes up
+# what D10 deferred. Restlessness (uddhacca) is the same concept as the higher fetter of
+# SN 46.130: same Pali word, same rendering (D13's rule for one word, one concept).
+dho:Dullness a dho:MentalQuality ;
+    skos:prefLabel "dullness"@en , "thina"@pi , "惛沈"@zh ;
+    skos:altLabel "sloth"@en , "thīna"@pi .
+dho:Drowsiness a dho:MentalQuality ;
+    skos:prefLabel "drowsiness"@en , "middha"@pi , "睡眠"@zh ;
+    skos:altLabel "torpor"@en .
+dho:dv-03 a dho:Division ; dho:divides dho:DullnessDrowsiness ; dho:basis dho:NamedParts ;
+    dho:part dho:Dullness , dho:Drowsiness ;
+    dho:wording "Dullness is a hindrance; and drowsiness is also a hindrance." ;
+    dho:citedBy dho:p-sn46.52-9.1 , dho:p-sn46.52-9.6 , dho:p-sn46.52-9.7 , dho:p-sn46.52-9.12 .
+
+dho:Remorse a dho:MentalQuality ;
+    skos:prefLabel "remorse"@en , "kukkucca"@pi , "惡作"@zh ;
+    skos:altLabel "worry"@en .
+dho:dv-04 a dho:Division ; dho:divides dho:RestlessnessRemorse ; dho:basis dho:NamedParts ;
+    dho:part dho:Restlessness , dho:Remorse ;
+    dho:wording "Restlessness is a hindrance; and remorse is also a hindrance." ;
+    dho:citedBy dho:p-sn46.52-9.1 , dho:p-sn46.52-9.8 , dho:p-sn46.52-9.9 , dho:p-sn46.52-9.12 .
+
+dho:DoubtInternal a dho:Aspect ;
+    skos:prefLabel "doubt about internal things"@en , "ajjhattaṁ dhammesu vicikicchā"@pi .
+dho:DoubtExternal a dho:Aspect ;
+    skos:prefLabel "doubt about external things"@en , "bahiddhā dhammesu vicikicchā"@pi .
+dho:dv-05 a dho:Division ; dho:divides dho:Doubt ; dho:basis dho:InternalExternal ;
+    dho:part dho:DoubtInternal , dho:DoubtExternal ;
+    dho:wording "Doubt about internal things is a hindrance; and doubt about external things is also a hindrance." ;
+    dho:citedBy dho:p-sn46.52-9.1 , dho:p-sn46.52-9.10 , dho:p-sn46.52-9.11 , dho:p-sn46.52-9.12 .
+
+# ---------------------------------------------------------------- the seven awakening factors become fourteen (10.1-16.3)
+
+dho:MindfulnessInternal a dho:Aspect ;
+    skos:prefLabel "mindfulness of internal things"@en , "ajjhattaṁ dhammesu sati"@pi .
+dho:MindfulnessExternal a dho:Aspect ;
+    skos:prefLabel "mindfulness of external things"@en , "bahiddhā dhammesu sati"@pi .
+dho:dv-06 a dho:Division ; dho:divides dho:Mindfulness ; dho:basis dho:InternalExternal ;
+    dho:part dho:MindfulnessInternal , dho:MindfulnessExternal ;
+    dho:wording "Mindfulness of internal things is the awakening factor of mindfulness; and mindfulness of external things is also the awakening factor of mindfulness." ;
+    dho:citedBy dho:p-sn46.52-10.1 , dho:p-sn46.52-10.2 , dho:p-sn46.52-10.3 , dho:p-sn46.52-16.3 .
+
+dho:InvestigationInternal a dho:Aspect ;
+    skos:prefLabel "investigating, exploring, and inquiring into internal things with wisdom"@en ,
+                   "ajjhattaṁ dhammesu paññāya pavicinati"@pi .
+dho:InvestigationExternal a dho:Aspect ;
+    skos:prefLabel "investigating, exploring, and inquiring into external things with wisdom"@en ,
+                   "bahiddhā dhammesu paññāya pavicinati"@pi .
+dho:dv-07 a dho:Division ; dho:divides dho:Investigation ; dho:basis dho:InternalExternal ;
+    dho:part dho:InvestigationInternal , dho:InvestigationExternal ;
+    dho:wording "Investigating, exploring, and inquiring into internal things with wisdom is the awakening factor of investigation of principles; and investigating, exploring, and inquiring into external things with wisdom is also the awakening factor of investigation of principles." ;
+    dho:citedBy dho:p-sn46.52-10.1 , dho:p-sn46.52-11.1 , dho:p-sn46.52-11.2 , dho:p-sn46.52-16.3 .
+
+dho:EnergyPhysical a dho:Aspect ;
+    skos:prefLabel "physical energy"@en , "kāyika vīriya"@pi .
+dho:EnergyMental a dho:Aspect ;
+    skos:prefLabel "mental energy"@en , "cetasika vīriya"@pi .
+dho:dv-08 a dho:Division ; dho:divides dho:Energy ; dho:basis dho:PhysicalMental ;
+    dho:part dho:EnergyPhysical , dho:EnergyMental ;
+    dho:wording "Physical energy is the awakening factor of energy; and mental energy is also the awakening factor of energy." ;
+    dho:citedBy dho:p-sn46.52-10.1 , dho:p-sn46.52-12.1 , dho:p-sn46.52-12.2 , dho:p-sn46.52-16.3 .
+
+dho:RaptureWithPlacing a dho:Aspect ;
+    skos:prefLabel "rapture while placing the mind and keeping it connected"@en , "savitakkasavicārā pīti"@pi .
+dho:RaptureWithoutPlacing a dho:Aspect ;
+    skos:prefLabel "rapture without placing the mind and keeping it connected"@en , "avitakkaavicārā pīti"@pi .
+dho:dv-09 a dho:Division ; dho:divides dho:Rapture ; dho:basis dho:WithWithoutPlacing ;
+    dho:part dho:RaptureWithPlacing , dho:RaptureWithoutPlacing ;
+    dho:wording "Rapture while placing the mind and keeping it connected is the awakening factor of rapture; and rapture without placing the mind and keeping it connected is also the awakening factor of rapture." ;
+    dho:citedBy dho:p-sn46.52-10.1 , dho:p-sn46.52-13.1 , dho:p-sn46.52-13.2 , dho:p-sn46.52-16.3 .
+
+dho:TranquilityPhysical a dho:Aspect ;
+    skos:prefLabel "physical tranquility"@en , "kāyappassaddhi"@pi .
+dho:TranquilityMental a dho:Aspect ;
+    skos:prefLabel "mental tranquility"@en , "cittappassaddhi"@pi .
+dho:dv-10 a dho:Division ; dho:divides dho:Tranquility ; dho:basis dho:PhysicalMental ;
+    dho:part dho:TranquilityPhysical , dho:TranquilityMental ;
+    dho:wording "Physical tranquility is the awakening factor of tranquility; and mental tranquility is also the awakening factor of tranquility." ;
+    dho:citedBy dho:p-sn46.52-10.1 , dho:p-sn46.52-14.1 , dho:p-sn46.52-14.2 , dho:p-sn46.52-16.3 .
+
+dho:ImmersionWithPlacing a dho:Aspect ;
+    skos:prefLabel "immersion while placing the mind and keeping it connected"@en , "savitakka savicāra samādhi"@pi .
+dho:ImmersionWithoutPlacing a dho:Aspect ;
+    skos:prefLabel "immersion without placing the mind and keeping it connected"@en , "avitakkaavicāra samādhi"@pi .
+dho:dv-11 a dho:Division ; dho:divides dho:Immersion ; dho:basis dho:WithWithoutPlacing ;
+    dho:part dho:ImmersionWithPlacing , dho:ImmersionWithoutPlacing ;
+    dho:wording "Immersion while placing the mind and keeping it connected is the awakening factor of immersion; and immersion without placing the mind and keeping it connected is also the awakening factor of immersion." ;
+    dho:citedBy dho:p-sn46.52-10.1 , dho:p-sn46.52-15.1 , dho:p-sn46.52-15.2 , dho:p-sn46.52-16.3 .
+
+dho:EquanimityInternal a dho:Aspect ;
+    skos:prefLabel "equanimity for internal things"@en , "ajjhattaṁ dhammesu upekkhā"@pi .
+dho:EquanimityExternal a dho:Aspect ;
+    skos:prefLabel "equanimity for external things"@en , "bahiddhā dhammesu upekkhā"@pi .
+dho:dv-12 a dho:Division ; dho:divides dho:Equanimity ; dho:basis dho:InternalExternal ;
+    dho:part dho:EquanimityInternal , dho:EquanimityExternal ;
+    dho:wording "Equanimity for internal things is the awakening factor of equanimity; and equanimity for external things is also the awakening factor of equanimity." ;
+    dho:citedBy dho:p-sn46.52-10.1 , dho:p-sn46.52-16.1 , dho:p-sn46.52-16.2 , dho:p-sn46.52-16.3 .

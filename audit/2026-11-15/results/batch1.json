@@ -1,0 +1,126 @@
+{
+  "batch": "batch1",
+  "texts": [
+    {
+      "uid": "mn43",
+      "claims": [
+        {"id": "FirstJhana", "verdict": "SUPPORTED", "severity": null, "reason": "Sāriputta (a teaching disciple) says at 20.2-20.4 that the first absorption has given up five factors and possesses five. The five given up (20.3) are the hindrance members, though the text calls them 'factors' (aṅga), not 'hindrances'."},
+        {"id": "FirstJhanaFactors", "verdict": "SUPPORTED", "severity": null, "reason": "19.2-19.3: five factors, vitakka, vicāra, pīti, sukha, cittekaggatā. Members and count match."},
+        {"id": "FiveHindrances", "verdict": "STRETCH", "severity": "minor", "reason": "20.3 lists exactly these five members as what the first absorption has given up, but the text never calls them 'hindrances' (no nīvaraṇa). It supports the members, not the list's label."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "The left-out note covers every section, with small labelling slips: 10-11 is not about feeling and perception. It is about what purified mind consciousness released from the five senses can know (the formless dimensions) and the eye of wisdom. '15-17 states of existence' also contains the conditions for and against rebirth (16.2, 17.2), which are teaching claims in their own right. 22 includes the vitality/warmth mutual dependence and the lamp simile. 18.2 gives a different first-absorption formula (no cittekaggatā), which the ontology could note."
+    },
+    {
+      "uid": "sn46.76",
+      "claims": [
+        {"id": "SevenAwakeningFactors", "verdict": "STRETCH", "severity": "minor", "reason": "Members are correct, but the only segment cited is 1.3, which has six factors in English and only 'satisambojjhaṅgaṁ …pe…' in Pali. Equanimity is in 1.4, which is not cited."},
+        {"id": "c-17", "verdict": "SUPPORTED", "severity": null, "reason": "1.4/2.6/3.4: the factors are vivekanissita ('rely on seclusion'). 'Is the basis of' is a fair reading."},
+        {"id": "c-18", "verdict": "SUPPORTED", "severity": null, "reason": "1.4/2.6/3.4: virāganissita, 'rely on fading away'."},
+        {"id": "c-19", "verdict": "SUPPORTED", "severity": null, "reason": "1.4/2.6/3.4: nirodhanissita, 'rely on cessation'."},
+        {"id": "c-p76", "verdict": "MISREAD", "severity": "major", "reason": "In the Pali at 1.3/1.4, what is developed (the object of bhāveti) is the awakening factor, and nirodhasaññāsahagata says it is accompanied by the perception of cessation. The perception accompanies the factors, not the reverse. The claim copies Sujato's English rephrasing and reverses the direction. It also cites only 1.3, though the pattern recurs at 1.4, 2.5-2.6 and 3.3-3.4."},
+        {"id": "o-19", "verdict": "SUPPORTED", "severity": null, "reason": "1.4/2.6/3.4 vossaggapariṇāmi, 'ripen as letting go'. 'Leads to' is a fair simplification."},
+        {"id": "o-p76", "verdict": "SUPPORTED", "severity": null, "reason": "1.1 and 1.5: nirodhasaññā bhāvitā bahulīkatā mahapphalā hoti mahānisaṁsā."},
+        {"id": "o-p76-a", "verdict": "STRETCH", "severity": "minor", "reason": "2.1-2.2/2.7-2.8 say you can expect (pāṭikaṅkha) one of two results. The claim records 'leads to enlightenment in this very life' unconditionally. The note keeps the disjunction, but the fields overstate it."},
+        {"id": "o-p76-b", "verdict": "STRETCH", "severity": "minor", "reason": "Same as o-p76-a. In the text, non-return is the alternative result, 'if there's residue left behind' (sati vā upādisese). The fields make it an unconditional effect; only the note qualifies it."},
+        {"id": "o-p76-c", "verdict": "SUPPORTED", "severity": null, "reason": "3.1/3.5 mahato atthāya saṁvattati."},
+        {"id": "o-p76-d", "verdict": "SUPPORTED", "severity": null, "reason": "3.1/3.5 mahato yogakkhemāya saṁvattati."},
+        {"id": "o-p76-e", "verdict": "SUPPORTED", "severity": null, "reason": "3.1/3.5 mahato saṁvegāya saṁvattati. 'Inspiration' is the translator's word for saṁvega."},
+        {"id": "o-p76-f", "verdict": "SUPPORTED", "severity": null, "reason": "3.1/3.5 mahato phāsuvihārāya saṁvattati."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "The encoded note cites '(1.2, 1.6)' for 'very fruitful and beneficial'. 1.6 does not exist and 1.2 is 'How so?'. The supporting segments are 1.1 and 1.5 (the claim cites these correctly)."
+    },
+    {
+      "uid": "sn46.24",
+      "claims": [
+        {"id": "FiveHindrances", "verdict": "STRETCH", "severity": "minor", "reason": "1.1-1.5 name exactly these five, but the text never calls them 'hindrances' (no nīvaraṇa). It supports the members, not the label."},
+        {"id": "c-11", "verdict": "STRETCH", "severity": "minor", "reason": "1.1-1.5 say that under irrational attention the unarisen hindrances arise and the arisen ones 'increase and grow' (bhiyyobhāvāya vepullāya saṁvattati). The result 'arise' leaves out the growth half. Only 1.1 and 1.5 are cited."},
+        {"id": "c-12", "verdict": "SUPPORTED", "severity": null, "reason": "1.6: unarisen factors don't arise (nuppajjati), and arisen ones cease (nirujjhati)."},
+        {"id": "c-13", "verdict": "STRETCH", "severity": "minor", "reason": "2.1-2.5 say that arisen hindrances 'are given up' (pahīyati), not that they cease or end. The result field copies c-12's 'end' and so erases the different verb."},
+        {"id": "c-14", "verdict": "STRETCH", "severity": "minor", "reason": "3.1 says the factors arise and, once arisen, 'are fully developed' (bhāvanāpāripūriṁ gacchati). The result 'arise' leaves out the fulfilment, although the encoded note mentions it."}
+      ],
+      "omissions": [
+        {"segments": ["sn46.24:1.1", "sn46.24:1.2", "sn46.24:1.3", "sn46.24:1.4", "sn46.24:1.5"], "what": "Arisen hindrances increase and grow under irrational application of mind. The encoded note mentions this, but no claim has it."},
+        {"segments": ["sn46.24:3.1"], "what": "Arisen awakening factors reach fulfilment of development under rational application of mind. The encoded note mentions this, but no claim has it."}
+      ],
+      "left_out_accurate": true,
+      "coverage_status_accurate": false,
+      "notes": "'Fully encoded' is not quite true: the encoded note describes growth (1.1-1.5) and full development (3.1), but the claims only say 'arise'. Half of each four-way pattern (unarisen vs arisen) is missing from the fields."
+    },
+    {
+      "uid": "sn46.25",
+      "claims": [
+        {"id": "SevenAwakeningFactors", "verdict": "SUPPORTED", "severity": null, "reason": "1.7 lists the seven (the Pali gives the first and last with …pe…, and the English expands it). Members and count match."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "The left-out note correctly identifies the 'seven principles that prevent decline' naming (1.1, 1.3, 1.5, 1.8)."
+    },
+    {
+      "uid": "sn46.43",
+      "claims": [
+        {"id": "SevenAwakeningFactors", "verdict": "SUPPORTED", "severity": null, "reason": "1.7 lists the seven (the Pali uses …pe…)."},
+        {"id": "o-25", "verdict": "SUPPORTED", "severity": null, "reason": "1.1/1.5/1.8: the seven factors are the path (maggo) for crushing Māra's army. 'Leads to' is a fair reading of 'path for'."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": ""
+    },
+    {
+      "uid": "sn46.13",
+      "claims": [
+        {"id": "c-04", "verdict": "SUPPORTED", "severity": null, "reason": "1.2: rational application of mind is pubbaṅgama and pubbanimitta for the arising of the seven factors."},
+        {"id": "c-05", "verdict": "SUPPORTED", "severity": null, "reason": "1.3: one accomplished in it can expect (pāṭikaṅkha) to develop and cultivate the factors. 'Supports the development of' does not overstate this into causation."},
+        {"id": "c-17", "verdict": "SUPPORTED", "severity": null, "reason": "2.3 vivekanissita (2.2 implies it for each factor via …pe…)."},
+        {"id": "c-18", "verdict": "SUPPORTED", "severity": null, "reason": "2.3 virāganissita."},
+        {"id": "c-19", "verdict": "SUPPORTED", "severity": null, "reason": "2.3 nirodhanissita."},
+        {"id": "o-19", "verdict": "SUPPORTED", "severity": null, "reason": "2.3 vossaggapariṇāmi."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "The left-out dawn simile (1.1) is a simile, not a separate teaching."
+    },
+    {
+      "uid": "sn46.7",
+      "claims": [
+        {"id": "c-17", "verdict": "SUPPORTED", "severity": null, "reason": "2.2/2.3 vivekanissita."},
+        {"id": "c-18", "verdict": "SUPPORTED", "severity": null, "reason": "2.2/2.3 virāganissita."},
+        {"id": "c-19", "verdict": "SUPPORTED", "severity": null, "reason": "2.2/2.3 nirodhanissita."},
+        {"id": "o-02", "verdict": "SUPPORTED", "severity": null, "reason": "1.2/2.4 nibbānaninna, nibbānapoṇa, nibbānapabbhāra. 'Leads to extinguishment' is a fair simplification."},
+        {"id": "o-19", "verdict": "SUPPORTED", "severity": null, "reason": "2.3 vossaggapariṇāmi."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "The 2.2 Pali gives the full stock formula for mindfulness, so 2.2 could also be cited."
+    },
+    {
+      "uid": "sn46.63",
+      "claims": [
+        {"id": "o-p63", "verdict": "STRETCH", "severity": "minor", "reason": "The Pali 1.1 is only 'Karuṇā, bhikkhave, bhāvitā …pe…'. 'Very fruitful and beneficial' exists only in the English expansion of the elision. The claim rests on the translator's reconstruction. The note says so openly, which keeps this minor."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "Nothing in the packet shows that the elided body repeats SN 46.57. That is the modellers' assumption, though a conventional one."
+    },
+    {
+      "uid": "sn46.70",
+      "claims": [
+        {"id": "o-p70", "verdict": "STRETCH", "severity": "minor", "reason": "The Pali 1.1 is only 'Sabbaloke anabhiratisaññā, bhikkhave …pe…'. Even 'bhāvitā' is elided, and the result exists only in the English expansion. The note says so openly."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "Same caveat as sn46.63: the SN 46.57 pattern can't be checked from this packet."
+    }
+  ]
+}

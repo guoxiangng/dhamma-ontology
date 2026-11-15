@@ -22,8 +22,8 @@ dho:t-sn46.53
     dho:review dho:Unreviewed ;
     dho:modelledOn "2026-11-13"^^xsd:date ;
     dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
-    dho:encodes "The timing advice: which awakening factors it is the right or wrong time to develop when the mind is sluggish (4.1, 7.1) or restless (10.1, 13.1), the reason given for each, and 'mindfulness is always useful' (15.4)." ;
-    dho:leftOut "The setting and the challenge from wanderers of other religions (1.1-3.1); the four fire similes (5, 8, 11, 14) that illustrate the advice; the repeated statements after each simile (6, 9, 12, 15.1-15.3)." .
+    dho:encodes "The timing advice: which awakening factors it is the right or wrong time to develop when the mind is sluggish (4.1, 7.1) or restless (10.1, 13.1), and 'mindfulness is always useful' (15.4)." ;
+    dho:leftOut "The setting and the challenge from wanderers of other religions (1.1-3.1); the four fire similes (5, 8, 11, 14) that illustrate the advice; the repeated statements after each simile (6, 9, 12, 15.1-15.3); the reason given for each piece of advice, that a sluggish mind is hard or easy to stimulate and a restless one hard or easy to settle (4.3, 7.3, 10.3, 13.3): cited, but no field records it. Corrected 2026-11-15: the encoded note had claimed the reasons (D19)." .
 
 dho:t-mn43
     dho:coverage dho:PartlyEncoded ;
@@ -31,7 +31,7 @@ dho:t-mn43
     dho:modelledOn "2026-11-13"^^xsd:date ;
     dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
     dho:encodes "Only the first absorption: its five factors (19.2-19.3), and that it gives up the five hindrances and possesses those five factors (20.2-20.4)." ;
-    dho:leftOut "Most of the dialogue: wisdom and consciousness (2-6), feeling and perception (7-11), the goal of wisdom and conditions for right view (12-14), states of existence (15-17), what the first absorption is (18), the five faculties (21-22), vital forces and death vs cessation (23-25), and the releases of the heart (26-37)." .
+    dho:leftOut "Most of the dialogue: wisdom and consciousness (2-6), feeling, perception and consciousness (7-9), what purified mind consciousness can know and how it is understood with the eye of wisdom (10-11), the goal of wisdom and conditions for right view (12-14), states of existence (15-17), what the first absorption is (18), the five faculties (21-22), vital forces and death vs cessation (23-25), and the releases of the heart (26-37)." .
 
 dho:t-mn10
     dho:coverage dho:CitedOnly ;
@@ -82,7 +82,7 @@ dho:t-mn44
     dho:modelledOn "2026-11-14"^^xsd:date ;
     dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
     dho:encodes "One definition: 'Unification of the mind is immersion' (12.2). Found while checking an eval answer; it corrected decision D4, which had wrongly called this equation an interpretation." ;
-    dho:leftOut "The rest of Dhammadinnā's answers: substantial reality, its origin, cessation and the practice leading there (2-5); grasping and the aggregates (6); substantialist view (7-8); the noble eightfold path and the three spectrums of practice (9-11); the bases, prerequisites and development of immersion (12.3-12.5); the three processes (13-15); the cessation of perception and feeling (16-21); the three feelings, their underlying tendencies and their counterparts (22-29)." .
+    dho:leftOut "The rest of Dhammadinnā's answers: substantial reality, its origin, cessation and the practice leading there (2-5); grasping and the aggregates (6); substantialist view (7-8); the noble eightfold path and the three spectrums of practice (9-11); the bases, prerequisites and development of immersion (12.3-12.5); the three processes (13-15); the cessation of perception and feeling (16-21); the three feelings, their underlying tendencies and their counterparts (22-29), ending with 'extinguishment is the objective, destination, and culmination of the spiritual life' (29.15); and the Buddha's endorsement of her answers (30.4-30.5), which gives the definition its authority." .
 
 dho:t-sn46.2
     dho:coverage dho:PartlyEncoded ;
@@ -213,7 +213,7 @@ dho:t-sn46.24
     dho:review dho:Unreviewed ;
     dho:modelledOn "2026-11-14"^^xsd:date ;
     dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
-    dho:encodes "Irrational application of mind: the hindrances arise and grow, the awakening factors don't arise or cease (1.1-1.6). Rational application of mind: the hindrances don't arise or are given up, the awakening factors arise and are fully developed (2.1-3.1)." .
+    dho:encodes "Irrational application of mind: the hindrances arise and grow, the awakening factors don't arise or cease (1.1-1.6). Rational application of mind: the hindrances don't arise or are given up, the awakening factors arise and are fully developed (2.1-3.1). Corrected 2026-11-15: the results 'grow', 'given up' and 'fully developed' were described here but not in the claims (D19)." .
 
 dho:t-sn46.31
     dho:coverage dho:PartlyEncoded ;
@@ -244,7 +244,7 @@ dho:t-sn46.35
     dho:review dho:Unreviewed ;
     dho:modelledOn "2026-11-14"^^xsd:date ;
     dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
-    dho:encodes "Irrational application of mind: the hindrances arise and grow (1.1). Rational application of mind: the awakening factors arise and are fully developed (2.1)." .
+    dho:encodes "Irrational application of mind: the hindrances arise and grow (1.1). Rational application of mind: the awakening factors arise and are fully developed (2.1). Corrected 2026-11-15: 'grow' and 'fully developed' are now in the claims (D19)." .
 
 dho:t-sn46.36
     dho:coverage dho:FullyEncoded ;
@@ -266,14 +266,14 @@ dho:t-sn46.49
     dho:review dho:Unreviewed ;
     dho:modelledOn "2026-11-14"^^xsd:date ;
     dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
-    dho:encodes "Of interior factors, nothing gives rise to the seven awakening factors like rational application of mind (1.1). The rest of the sutta is abbreviated in the source." .
+    dho:encodes "Of interior factors, nothing gives rise to the seven awakening factors like rational application of mind (1.1); one accomplished in it can expect to develop and cultivate them (1.2), by the stock formula (1.3-1.6). Corrected 2026-11-15: 1.2-1.6 had been called abbreviated; they are untranslated in the English but given in the Pali (D19)." .
 
 dho:t-sn46.50
     dho:coverage dho:FullyEncoded ;
     dho:review dho:Unreviewed ;
     dho:modelledOn "2026-11-14"^^xsd:date ;
     dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
-    dho:encodes "Of exterior factors, nothing gives rise to the seven awakening factors like good friendship (1.1). The rest of the sutta is abbreviated in the source." .
+    dho:encodes "Of exterior factors, nothing gives rise to the seven awakening factors like good friendship (1.1); one with good friends can expect to develop and cultivate them (1.2), by the stock formula (1.3-1.6). Corrected 2026-11-15: 1.2-1.6 had been called abbreviated; they are untranslated in the English but given in the Pali (D19). The chapter's summary verse (2.0-2.4) is not a teaching." .
 
 dho:t-sn46.25
     dho:coverage dho:PartlyEncoded ;
@@ -333,7 +333,7 @@ dho:t-sn46.130
     dho:review dho:Unreviewed ;
     dho:modelledOn "2026-11-14"^^xsd:date ;
     dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
-    dho:encodes "The five higher fetters as a list (1.2, 1.4); the seven factors should be developed for their direct knowledge, complete understanding, finishing and giving up (1.6, 1.12); and the formula variants: culminating in the removal of greed, hate and delusion (1.9), having freedom from death as their culmination (1.10), and inclining to extinguishment (1.11). The rest of the sutta is abbreviated in the source." .
+    dho:encodes "The five higher fetters as a list (1.2, 1.4); the seven factors should be developed for their direct knowledge, complete understanding, finishing and giving up (1.6, 1.12); and the formula variants: culminating in the removal of greed, hate and delusion (1.9), having freedom from death as their culmination (1.10), and inclining to extinguishment (1.11); and the seclusion formula at 1.8, which is in the Pali but not the English of that segment (added 2026-11-15, D19). The rest of the sutta is abbreviated in the source." .
 
 dho:t-sn46.57
     dho:coverage dho:FullyEncoded ;
@@ -491,7 +491,7 @@ dho:t-sn46.76
     dho:review dho:Unreviewed ;
     dho:modelledOn "2026-11-14"^^xsd:date ;
     dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
-    dho:encodes "The perception of cessation is very fruitful and beneficial (1.2, 1.6), developed together with the awakening factors (1.4), with the stock formula (1.5); one of two results, enlightenment in this very life or non-return; great benefit, great sanctuary from the yoke, great inspiration and great ease." .
+    dho:encodes "The perception of cessation is very fruitful and beneficial (1.1, 1.5); each awakening factor is developed accompanied by it (1.3-1.4, 2.5-2.6, 3.3-3.4), with the stock formula; one of two results, enlightenment in this very life or non-return; great benefit, great sanctuary from the yoke, great inspiration and great ease." .
 
 dho:t-sn46.3
     dho:coverage dho:PartlyEncoded ;
@@ -499,7 +499,7 @@ dho:t-sn46.3
     dho:modelledOn "2026-11-14"^^xsd:date ;
     dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
     dho:encodes "The awakening factors arising in sequence, each step a condition with its own words: recollecting and thinking about the teaching gives rise to mindfulness, then investigation, energy, rapture (not of the flesh), tranquility, immersion (with bliss) and equanimity (1.9-8.1); and the seven fruits and benefits they lead to, from enlightenment early in this life to heading upstream to the Akaniṭṭha realm (9.1-9.10)." ;
-    dho:leftOut "Why it matters to see, hear, approach, pay homage to, recollect and go forth following mendicants accomplished in ethics, immersion, knowledge and freedom: 'very helpful' (1.1-1.6); and living withdrawn in body and mind after hearing their teaching (1.8). Needs a pattern for what is called helpful, and the link from hearing to withdrawal is not modelled." .
+    dho:leftOut "Why it matters to see, hear, approach, pay homage to, recollect and go forth following mendicants accomplished in ethics, immersion, knowledge, freedom, and the knowledge and vision of freedom: 'very helpful' (1.1-1.6); and living withdrawn in body and mind after hearing their teaching (1.8). Needs a pattern for what is called helpful, and the link from hearing to withdrawal is not modelled. Within the sequence, each factor is 'initiated', 'developed' and 'perfected' (e.g. 2.2-2.3); only its arising is modelled. Fruits 3-7 come 'with the ending of the five lower fetters' (9.5-9.9): kept in a note, not modelled." .
 
 dho:t-sn46.56
     dho:coverage dho:PartlyEncoded ;
@@ -507,4 +507,12 @@ dho:t-sn46.56
     dho:modelledOn "2026-11-14"^^xsd:date ;
     dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
     dho:encodes "The hindrances are a cause and reason for not knowing and not seeing, when the heart is overcome by them (2.3-3.5); the awakening factors are a cause and reason for knowing and seeing (5.3-6.4); the stock formula (5.3, 6.2)." ;
-    dho:leftOut "The framing: Pūraṇa Kassapa's view that knowing and not knowing have no cause (1.4-1.13). The naming 'these are called the hindrances / awakening factors' (4.2, 7.2). Prince Abhaya's responses, including 'overcome by even a single hindrance you wouldn't truly know or see' and 'endowed with even a single awakening factor you would' (4.3-4.5, 7.3-7.6): said by the interlocutor, not taught, so not encoded (D17)." .
+    dho:leftOut "The framing: Prince Abhaya reports Pūraṇa Kassapa's view that knowing and not knowing have no cause (1.4-1.9). (The Buddha's reply, 1.10-1.13, that both have causes and reasons, is encoded; corrected 2026-11-15.) The naming 'these are called the hindrances / awakening factors' (4.2, 7.2). Prince Abhaya's responses, including 'overcome by even a single hindrance you wouldn't truly know or see' and 'endowed with even a single awakening factor you would' (4.3-4.5, 7.3-7.6): said by the interlocutor, not taught, so not encoded (D17)." .
+
+dho:t-sn46.52
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-14"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "The way in which the five hindrances become ten (9.1-9.12) and the seven awakening factors become fourteen (10.1-16.3): each of the twelve becomes twofold, as twelve divisions (D18) on four bases: internal and external (sensual desire, ill will, doubt, mindfulness, investigation, equanimity), physical and mental (energy, tranquility), with and without placing the mind (rapture, immersion), and the two qualities a compound name joins (dullness / drowsiness, restlessness / remorse)." ;
+    dho:leftOut "The narrative frame and the wanderers' challenge (1.1-7.2), including their restatement of the teaching as 'give up the five hindrances, corruptions of the heart that weaken wisdom' (3.2, 3.4, 6.1, 6.3): said by the interlocutors (D17), and the characterisation needs a pattern. The Buddha's counter-question to put to them, and that only the Realized One, his disciple or someone who heard it from them could answer it (8.1-8.6): no pattern for claims about who can answer." .

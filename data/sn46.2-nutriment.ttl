@@ -19,3 +19,17 @@ dho:n-09 dho:citedBy dho:p-sn46.2-12.2 , dho:p-sn46.2-12.3 .
 dho:n-10 dho:citedBy dho:p-sn46.2-13.2 , dho:p-sn46.2-13.3 .
 dho:n-11 dho:citedBy dho:p-sn46.2-14.2 , dho:p-sn46.2-14.3 .
 dho:n-12 dho:citedBy dho:p-sn46.2-15.2 , dho:p-sn46.2-15.3 .
+
+# Audit 2026-11-15 (D19): also cite the segment that says 'fuels' / 'starves' (ayaṁ āhāro / anāhāro).
+dho:n-01 dho:citedBy dho:p-sn46.2-2.4 .
+dho:n-02 dho:citedBy dho:p-sn46.2-3.4 .
+dho:n-03 dho:citedBy dho:p-sn46.2-4.4 .
+dho:n-04 dho:citedBy dho:p-sn46.2-5.4 .
+dho:n-05 dho:citedBy dho:p-sn46.2-6.4 .
+dho:n-06 dho:citedBy dho:p-sn46.2-9.4 .
+dho:n-07 dho:citedBy dho:p-sn46.2-10.4 .
+dho:n-08 dho:citedBy dho:p-sn46.2-11.4 .
+dho:n-09 dho:citedBy dho:p-sn46.2-12.4 .
+dho:n-10 dho:citedBy dho:p-sn46.2-13.4 .
+dho:n-11 dho:citedBy dho:p-sn46.2-14.4 .
+dho:n-12 dho:citedBy dho:p-sn46.2-15.4 .

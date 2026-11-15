@@ -1,0 +1,140 @@
+{
+  "batch": "batch5",
+  "texts": [
+    {
+      "uid": "sn46.2",
+      "claims": [
+        {"id": "n-01", "verdict": "SUPPORTED", "severity": null, "reason": "2.2-2.3 (subhanimitta, ayonisomanasikārabahulīkāro); the 'fuels' effect is stated in 2.4, which is not cited but adjacent."},
+        {"id": "n-02", "verdict": "SUPPORTED", "severity": null, "reason": "3.2-3.3 (paṭighanimitta, frequent irrational attention); effect in 3.4."},
+        {"id": "n-03", "verdict": "SUPPORTED", "severity": null, "reason": "4.2 lists exactly the five objects (arati tandi vijambhitā bhattasammado cetaso līnattaṁ); 4.3-4.4 attention and effect."},
+        {"id": "n-04", "verdict": "SUPPORTED", "severity": null, "reason": "5.2 cetaso avūpasamo, 5.3 irrational attention; effect in 5.4."},
+        {"id": "n-05", "verdict": "SUPPORTED", "severity": null, "reason": "6.2 vicikicchāṭṭhānīyā dhammā, 6.3 irrational attention; effect in 6.4."},
+        {"id": "n-06", "verdict": "SUPPORTED", "severity": null, "reason": "9.2-9.3; 'fuels' fairly simplifies 'fuels the arising ... or fully develops it' (9.4)."},
+        {"id": "n-07", "verdict": "SUPPORTED", "severity": null, "reason": "10.2 lists the four pairs (kusalākusalā, sāvajjānavajjā, hīnapaṇītā, kaṇhasukkasappaṭibhāgā); 10.3 rational attention."},
+        {"id": "n-08", "verdict": "SUPPORTED", "severity": null, "reason": "11.2 ārambha-, nikkama-, parakkamadhātu; 11.3 rational attention."},
+        {"id": "n-09", "verdict": "SUPPORTED", "severity": null, "reason": "12.2-12.3 say exactly this."},
+        {"id": "n-10", "verdict": "SUPPORTED", "severity": null, "reason": "13.2 kāyapassaddhi, cittapassaddhi; 13.3 rational attention."},
+        {"id": "n-11", "verdict": "SUPPORTED", "severity": null, "reason": "14.2 samathanimittaṁ abyagganimittaṁ; 14.3 rational attention."},
+        {"id": "n-12", "verdict": "SUPPORTED", "severity": null, "reason": "15.2-15.3 say exactly this."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "All twelve claims cite x.2-x.3 (object and attention) but not x.4, the segment that actually states the fuelling effect; consider adding x.4 (or x.1) to each citation. 'Fuels' collapses two functions (arising of the unarisen and increase/fulfilment of the arisen), an acceptable simplification. The left-out simile (1.2-1.3, 7, 8, 16) also carries the doctrinal point that hindrances and factors do not continue without fuel; it is correctly declared."
+    },
+    {
+      "uid": "sn46.57",
+      "claims": [
+        {"id": "SevenAwakeningFactors", "verdict": "STRETCH", "severity": "minor", "reason": "Cited 1.4 holds only six factors in the English (equanimity is in 1.5), and the Pali 1.4 names only sati ...pe...; cite 1.4-1.5."},
+        {"id": "c-17", "verdict": "SUPPORTED", "severity": null, "reason": "1.4-1.5 vivekanissitaṁ: the factors rely on seclusion; 'is the basis of' is a fair inversion."},
+        {"id": "c-18", "verdict": "SUPPORTED", "severity": null, "reason": "1.5 virāganissitaṁ."},
+        {"id": "c-19", "verdict": "SUPPORTED", "severity": null, "reason": "1.5 nirodhanissitaṁ."},
+        {"id": "c-p57", "verdict": "MISREAD", "severity": "major", "reason": "Direction reversed. The Pali 1.4 'aṭṭhikasaññāsahagataṁ satisambojjhaṅgaṁ bhāveti' says the mendicant develops the awakening factor (accusative object) accompanied by the perception of a skeleton; the perception accompanies the factors, not the factors the perception. The claim leans on Sujato's looser English."},
+        {"id": "o-19", "verdict": "SUPPORTED", "severity": null, "reason": "1.5 vossaggapariṇāmiṁ, 'ripen as letting go'; 'leads to' is a fair simplification."},
+        {"id": "o-p57", "verdict": "SUPPORTED", "severity": null, "reason": "1.2 and 1.6: aṭṭhikasaññā bhāvitā bahulīkatā mahapphalā hoti mahānisaṁsā."},
+        {"id": "o-p57-a", "verdict": "STRETCH", "severity": "minor", "reason": "2.1 says one of two results can be expected (pāṭikaṅkhaṁ), not that it leads to enlightenment; the note records the disjunction, but the bare 'leads to' edge overstates it if read alone."},
+        {"id": "o-p57-b", "verdict": "STRETCH", "severity": "minor", "reason": "Same as o-p57-a; non-return is expected only 'if there is residue left' (sati vā upādisese) as the alternative, which the effect field drops (kept only in the note)."},
+        {"id": "o-p57-c", "verdict": "SUPPORTED", "severity": null, "reason": "3.1 mahato atthāya saṁvattati."},
+        {"id": "o-p57-d", "verdict": "SUPPORTED", "severity": null, "reason": "4.1 mahato yogakkhemāya saṁvattati."},
+        {"id": "o-p57-e", "verdict": "SUPPORTED", "severity": null, "reason": "5.1 mahato saṁvegāya saṁvattati."},
+        {"id": "o-p57-f", "verdict": "SUPPORTED", "severity": null, "reason": "6.1 mahato phāsuvihārāya: 'dwelling in great ease'; the target and wording drop 'dwelling', a shrug-level trim."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "The packet is really six suttas (2.0-6.0 headings: Aññataraphala, Mahattha, Yogakkhema, Saṁvega, Phāsuvihāra), each repeating the method; all results are encoded. The key fix is c-p57: the thing developed is each awakening factor, 'accompanied by' (sahagata) the skeleton perception. This same pattern presumably recurs in the sibling perception suttas (e.g. 46.65, 46.72), so the error may propagate."
+    },
+    {
+      "uid": "sn46.26",
+      "claims": [
+        {"id": "SevenAwakeningFactors", "verdict": "SUPPORTED", "severity": null, "reason": "1.4-1.6 name the seven."},
+        {"id": "c-17", "verdict": "SUPPORTED", "severity": null, "reason": "2.1 and 2.5 vivekanissitaṁ."},
+        {"id": "c-18", "verdict": "SUPPORTED", "severity": null, "reason": "2.1 and 2.5 virāganissitaṁ."},
+        {"id": "c-19", "verdict": "SUPPORTED", "severity": null, "reason": "2.1 and 2.5 nirodhanissitaṁ."},
+        {"id": "o-19", "verdict": "SUPPORTED", "severity": null, "reason": "2.1 and 2.5 vossaggapariṇāmiṁ."},
+        {"id": "o-20", "verdict": "SUPPORTED", "severity": null, "reason": "1.1-1.4: the path that leads to (saṁvattati) the ending of craving is the seven awakening factors."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "Left-out chain (2.2-2.4, 2.6-2.9) and the 'vipulaṁ mahaggataṁ appamāṇaṁ abyāpajjaṁ' description are correctly declared. Udāyī's question (1.7-1.8) is narrative framing."
+    },
+    {
+      "uid": "sn46.20",
+      "claims": [
+        {"id": "SevenAwakeningFactors", "verdict": "SUPPORTED", "severity": null, "reason": "1.3 lists the seven (Pali abbreviated but unambiguous)."},
+        {"id": "o-05", "verdict": "SUPPORTED", "severity": null, "reason": "1.1, 1.4 ekantanibbidāya."},
+        {"id": "o-06", "verdict": "SUPPORTED", "severity": null, "reason": "1.1, 1.4 virāgāya. Sujato renders it 'dispassion' here; 'fading away' is the same Pali term, so the target is fine, though the encoded note says 'dispassion'."},
+        {"id": "o-07", "verdict": "SUPPORTED", "severity": null, "reason": "1.1, 1.4 nirodhāya."},
+        {"id": "o-08", "verdict": "SUPPORTED", "severity": null, "reason": "1.1, 1.4 upasamāya."},
+        {"id": "o-09", "verdict": "SUPPORTED", "severity": null, "reason": "1.1, 1.4 abhiññāya ('insight' in Sujato)."},
+        {"id": "o-10", "verdict": "SUPPORTED", "severity": null, "reason": "1.1, 1.4 sambodhāya."},
+        {"id": "o-11", "verdict": "SUPPORTED", "severity": null, "reason": "1.1, 1.4 nibbānāya."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "'Solely' (ekanta) lives only in the wording field; the effect 'leads to' drops it. Acceptable. 2.0-2.4 are the vagga uddāna, not teaching."
+    },
+    {
+      "uid": "sn46.48",
+      "claims": [
+        {"id": "c-02", "verdict": "SUPPORTED", "severity": null, "reason": "1.2: kalyāṇamittatā is pubbaṅgamaṁ, pubbanimittaṁ for the arising of the seven factors."},
+        {"id": "c-03", "verdict": "SUPPORTED", "severity": null, "reason": "1.3 pāṭikaṅkhaṁ ... bhāvessati; 'supports the development of' is a mild relation that does not overclaim causation."},
+        {"id": "c-17", "verdict": "SUPPORTED", "severity": null, "reason": "1.5-1.6 vivekanissitaṁ."},
+        {"id": "c-18", "verdict": "SUPPORTED", "severity": null, "reason": "1.6 virāganissitaṁ."},
+        {"id": "c-19", "verdict": "SUPPORTED", "severity": null, "reason": "1.6 nirodhanissitaṁ."},
+        {"id": "o-19", "verdict": "SUPPORTED", "severity": null, "reason": "1.6 vossaggapariṇāmiṁ."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "Only the dawn simile (1.1) is left out, so 'partly encoded' is correct."
+    },
+    {
+      "uid": "sn46.22",
+      "claims": [
+        {"id": "SevenAwakeningFactors", "verdict": "SUPPORTED", "severity": null, "reason": "1.3-1.5 give the seven; 1.1 announces them."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": ""
+    },
+    {
+      "uid": "sn46.35",
+      "claims": [
+        {"id": "FiveHindrances", "verdict": "SUPPORTED", "severity": null, "reason": "1.1 names all five."},
+        {"id": "c-11", "verdict": "STRETCH", "severity": "minor", "reason": "1.1 says unarisen hindrances arise and arisen ones increase and grow (bhiyyobhāvāya vepullāya); the result field records only 'arise'."},
+        {"id": "c-14", "verdict": "STRETCH", "severity": "minor", "reason": "2.1 says unarisen factors arise and arisen ones go to fulfilment by development (bhāvanāpāripūriṁ gacchati); the result field records only 'arise'."}
+      ],
+      "omissions": [
+        {"segments": ["sn46.35:1.1"], "what": "Arisen hindrances increase and grow under irrational attention: in the encoded description, but not in any claim field."},
+        {"segments": ["sn46.35:2.1"], "what": "Arisen awakening factors are fully developed under rational attention: in the encoded description, but not in any claim field."}
+      ],
+      "left_out_accurate": true,
+      "coverage_status_accurate": false,
+      "notes": "'Fully encoded' slightly overstates: the description says 'arise and grow' / 'arise and are fully developed', but c-11 and c-14 encode only arising. The packet is two suttas (1.2 Pañcamaṁ, 2.0 Yonisomanasikārasutta)."
+    },
+    {
+      "uid": "sn46.65",
+      "claims": [
+        {"id": "o-p65", "verdict": "STRETCH", "severity": "minor", "reason": "The Pali 1.1 is only 'Upekkhā, bhikkhave, bhāvitā …pe…'; 'very fruitful and beneficial' is the translator's expansion. This is disclosed in the note, but the claim rests on English the Pali does not state. Also, by the 46.57 pattern this 'equanimity' is a meditation subject developed together with the awakening factors (including the equanimity factor), so the 'of' node must not be the equanimity awakening factor."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "Check that o-p65's subject is a distinct node from the awakening factor 'equanimity' in SevenAwakeningFactors; merging them would produce a false claim that the equanimity awakening factor is 'very fruitful' per this text."
+    },
+    {
+      "uid": "sn46.72",
+      "claims": [
+        {"id": "o-p72", "verdict": "STRETCH", "severity": "minor", "reason": "The Pali 1.1 is only 'Anicce dukkhasaññā, bhikkhave …pe…' (not even 'bhāvitā'); 'developed and cultivated ... very fruitful and beneficial' is wholly the translator's expansion. Disclosed in the note, but unsupported by the Pali as given."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "The note says the Pali 'names only the practice', which is accurate for this text (more so than for 46.65, where 'bhāvitā' is present)."
+    }
+  ]
+}

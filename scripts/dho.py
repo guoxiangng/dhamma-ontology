@@ -158,8 +158,13 @@ def nutriment_attention(g: Graph, att) -> str:
     return NUTRIMENT_ATTENTION.get(str(att).rsplit("#", 1)[-1], label(g, att))
 
 
-RESULT_VERBS = {"Arises": ("arises", "arise"), "DoesNotArise": ("doesn't arise, or ends", "don't arise, or end"),
+RESULT_VERBS = {"Arises": ("arises", "arise"), "DoesNotArise": ("doesn't arise, or ceases", "don't arise, or cease"),
+                "DoesNotAriseGivenUp": ("doesn't arise, or is given up", "don't arise, or are given up"),
+                "ArisesAndGrows": ("arises, and once arisen increases and grows", "arise, and once arisen increase and grow"),
+                "ArisesAndIsFullyDeveloped": ("arises, and once arisen is fully developed", "arise, and once arisen are fully developed"),
                 "IsAbsent": ("is absent", "are absent"), "IsFullyDeveloped": ("is fully developed", "are fully developed")}
+
+SUPPORT_NOTE = {"ExpandedAbbreviation": "abbreviated in the Pali (…pe…): rests on the conventional expansion, not on words the text gives"}
 
 
 def result_phrase(g: Graph, node, res) -> str:
@@ -287,6 +292,8 @@ def card(g: Graph, c) -> list[str]:
             note = g.value(node, SKOS.note)
             if note:
                 out.append(f"{indent}    note: {note}")
+            for s in g.objects(node, DHO.support):
+                out.append(f"{indent}    support: {SUPPORT_NOTE.get(str(s).rsplit('#', 1)[-1], label(g, s))}")
 
     # Claims about this node first, then claims about each list it belongs to.
     for section in ("outcomes", "conditions"):
@@ -303,6 +310,15 @@ def card(g: Graph, c) -> list[str]:
                 if part:
                     out.append(f"    {section}:")
                     emit(part, "      ")
+
+    for d in g.subjects(DHO.divides, c):
+        parts = sorted(label(g, p) for p in g.objects(d, DHO.part))
+        out.append(f"  becomes twofold ({label(g, g.value(d, DHO.basis))}): {'; '.join(parts)}\n"
+                   f"      \"{g.value(d, DHO.wording)}\"  [sutta {cite(g, d)}]")
+    for d in g.subjects(DHO.part, c):
+        kind = "qualities in" if g.value(d, DHO.basis) == DHO.NamedParts else "kinds of"
+        out.append(f"  one of the two {kind}: {label(g, g.value(d, DHO.divides))} "
+                   f"({label(g, g.value(d, DHO.basis))})   [sutta {cite(g, d)}]")
 
     for d in g.subjects(DHO.defines, c):
         out.append(f"  is defined as: {label(g, g.value(d, DHO['as']))}   [sutta {cite(g, d)}]")

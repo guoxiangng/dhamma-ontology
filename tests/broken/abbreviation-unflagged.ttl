@@ -1,0 +1,4 @@
+@prefix dho: <https://guoxiangng.github.io/dhamma-ontology/ns#> .
+# Broken on purpose: an outcome resting only on an abbreviated segment, without the flag. S16 must catch it.
+dho:o-broken a dho:Outcome ; dho:of dho:WormInfestedPerception ; dho:effect dho:LeadsTo ; dho:to dho:GreatFruit ;
+    dho:wording "very fruitful and beneficial" ; dho:citedBy dho:p-sn46.58-1.1 .

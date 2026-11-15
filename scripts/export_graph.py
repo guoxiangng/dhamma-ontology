@@ -30,6 +30,7 @@ KINDS = [  # order matters: first match is the node's main kind
     (DHO.Attainment, "attainment"),
     (ONTOLEX.LexicalEntry, "word"),
     (DHO.AttentionMode, "attention"),
+    (DHO.Aspect, "aspect"),
     (DHO.Concept, "concept"),
 ]
 CLASS_NAMES = {DHO.Hindrance: "Hindrance", DHO.AwakeningFactor: "Awakening factor", DHO.JhanaFactor: "Jhāna factor"}
@@ -129,10 +130,13 @@ def export() -> dict:
     for o in g.subjects(RDF.type, DHO.Outcome):
         eff = g.value(o, DHO.effect)
         say_out, say_in = dho.claim_sentences(g, o)
+        sup = g.value(o, DHO.support)
+        note = f"“{g.value(o, DHO.wording)}”" + (f" {g.value(o, SKOS.note)}" if g.value(o, SKOS.note) else "")
         edge(g.value(o, DHO.of), g.value(o, DHO.to), label(g, eff), "sutta", cites(g, o),
-             f"“{g.value(o, DHO.wording)}”", group="outcomes", effect=lid(eff),
+             note, group="outcomes", effect=lid(eff), support=label(g, sup) if sup else None,
              inv={"LeadsTo": "reached through", "DoesNotLeadTo": "not reached through",
-                  "Strengthens": "strengthened by", "Weakens": "weakened by"}.get(lid(eff), "from"),
+                  "Strengthens": "strengthened by", "Weakens": "weakened by",
+                  "CanExpect": "an expected result of"}.get(lid(eff), "from"),
              say_out=say_out, say_in=say_in)
 
     for k in g.subjects(RDF.type, DHO.Condition):
@@ -146,6 +150,13 @@ def export() -> dict:
 
     for d in g.subjects(RDF.type, DHO.Definition):
         edge(g.value(d, DHO.defines), g.value(d, DHO["as"]), "is defined as", "sutta", cites(g, d))
+
+    for d in g.subjects(RDF.type, DHO.Division):
+        whole, basis = g.value(d, DHO.divides), label(g, g.value(d, DHO.basis))
+        for p in g.objects(d, DHO.part):
+            rel = "one of the two qualities in" if g.value(d, DHO.basis) == DHO.NamedParts else "one of the two kinds of"
+            edge(p, whole, rel, "sutta", cites(g, d),
+                 f"{basis[0].upper() + basis[1:]}: “{g.value(d, DHO.wording)}”", group="divisions", inv="becomes twofold")
 
     for a, b in g.subject_objects(DHO.editorialRelated):
         edge(a, b, "see also", "editor", note="Editor's link, not a textual claim.")

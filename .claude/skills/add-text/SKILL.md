@@ -23,7 +23,13 @@ $PY scripts/sc.py fetch <uid>
 $PY scripts/sc.py show <uid> --cited      # every segment: id | English | Pali; * = already cited
 ```
 
-Read every segment, English and Pali. Don't skim, and don't model from what you remember of the sutta.
+Read every segment, **Pali first**, then the English against it. Don't skim, and don't model from what you remember of the sutta. The 2026-11-15 audit (AUDIT.md) found that Sujato's English can:
+
+- reverse the grammar: *aṭṭhikasaññāsahagataṁ satisambojjhaṅgaṁ bhāveti* develops the *awakening factor*, accompanied by the perception;
+- leave out a formula the Pali has (SN 46.130:1.8);
+- stop at "…" while the Pali carries on (SN 46.49, 46.50, 46.57). Segments with Pali and no English are teaching too.
+
+Where the Pali is abbreviated (…pe…) and a claim rests only on the expansion, mark it `dho:support dho:ExpandedAbbreviation` (S16).
 
 ## 2. Make a claim table before writing any data
 
@@ -36,6 +42,7 @@ For each teaching statement, list its segments and the pattern it fits:
 | Timing advice | `dho:TimingAdvice`: whenMind, develop, timing | ta-01 … ta-13 |
 | Attainment | `dho:Attainment`: givesUp / possesses a list | FirstJhana (mn43:20) |
 | Definition | `dho:Definition`: defines X as Y | def-01 (mn44:12.2) |
+| Division | `dho:Division`: divides X into exactly two parts, basis, **wording**, cite | dv-01 (sn46.52:9.2) |
 | Outcome | `dho:Outcome`: of, effect (leads to / does not lead to / strengthens / weakens), to, **wording**, cite | o-02 (sn46.7:1.2) |
 | Condition | `dho:Condition`: condition, relation (basis / forerunner / root / gives rise to / supports / when-then), conditioned, result, **wording**, cite | c-02 (sn46.12:1.2) |
 | Word sense | OntoLex entry → sense → concept | lex-dhamma |
@@ -44,7 +51,8 @@ For each teaching statement, list its segments and the pattern it fits:
 Rules:
 
 - **Already in the ontology?** Compare wording segment by segment (`sc.show` both texts). If it's the same claim, add a citation to the existing node (D12) and record any wording difference in the data file's comments. Never create a duplicate node.
-- **Outcomes and conditions keep the text's own words** in `dho:wording`, copied verbatim from Sujato's English. S14 fails the build if they aren't in a cited passage.
+- **Outcomes and conditions keep the text's own words** in `dho:wording`, copied verbatim from Sujato's English, or from the Pali when the English doesn't carry the claim. S14 fails the build if they aren't in a cited passage.
+- **Keep the text's distinctions.** "Can expect one of" (*pāṭikaṅkha*) is `dho:CanExpect`, not "leads to". "Arise, and once arisen grow" is `dho:ArisesAndGrows`, not "arise". "Given up" (*pahīyati*) is not "cease" (*nirujjhati*).
 - **No pattern fits?** Don't force it. Leave the claim out, list it in the coverage record's `leftOut`, and propose a pattern to the user with a draft DECISIONS.md entry. Similes are already waiting (see "Patterns not modelled yet" in DECISIONS.md).
 - **Unsure what a passage means?** Leave it out or mark it contested (like mn10:36.2). Editor's links are only for the owner's own judgment, and are labelled as such.
 - **Contradicts an existing decision?** Fix the data and add a dated *Correction* note to the decision, as D4 has. Tell the user prominently.
@@ -85,7 +93,15 @@ $PY scripts/export_ask.py
 
 Adding a new shape means adding a broken fixture in `tests/broken/` that it catches. 
 
-## 7. Report to the user
+## 7. Audit before committing
+
+```bash
+$PY audit/build_packets.py audit/<yyyy-mm-dd> <uid> [<uid> ...]
+```
+
+Then spawn one auditor agent (general-purpose) with only the packet paths and `audit/RUBRIC.md`. Tell it not to open the repo, DECISIONS.md or anything else, and to write `audit/<date>/results/<name>.json`. Re-check every major finding against the text yourself. Fix or log each finding, and don't commit with an unresolved major one. Add the run's totals to AUDIT.md.
+
+## 8. Report to the user
 
 Keep it short:
 
