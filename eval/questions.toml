@@ -737,3 +737,49 @@ must_not = ["The perception is what is developed, and the awakening factors are 
 layer = "sutta"
 status = "draft"
 note = "Added after the 2026-11-15 audit found the ontology had followed the English (D15 correction, D19)."
+
+[[q]]
+id = "Q49"
+category = "recall"
+scope = "covered"
+question = "In SN 46.6, what fulfils the seven awakening factors, and what do the awakening factors fulfil?"
+gold = [
+  "The four kinds of mindfulness meditation (cattāro satipaṭṭhānā), developed and cultivated, fulfil the seven awakening factors; the seven awakening factors fulfil knowledge and freedom (vijjāvimuttiṁ).",
+  "The ladder starts lower: sense restraint fulfils the three kinds of good conduct, which fulfil the four kinds of mindfulness meditation.",
+]
+segments = ["sn46.6:2.2", "sn46.6:2.4", "sn46.6:2.6", "sn46.6:2.8", "sn46.6:7.6", "sn46.6:8.4"]
+also_ok = []
+must_not = []
+layer = "sutta"
+status = "draft"
+note = "Added with SN 46.6 (D20)."
+
+[[q]]
+id = "Q50"
+category = "trap"
+scope = "covered"
+question = "Does SN 46.14 teach that reciting or hearing the awakening factors cures illness?"
+gold = [
+  "No. The Buddha tells the sick Mahākassapa that the seven awakening factors, developed and cultivated, lead to direct knowledge, awakening and extinguishment (abhiññāya sambodhāya nibbānāya). The text then narrates that Mahākassapa recovered; it does not teach that the factors heal.",
+]
+segments = ["sn46.14:3.1", "sn46.14:4.3"]
+also_ok = ["Mentioning that later tradition uses these suttas as protective chants (paritta), as long as this is not attributed to the text."]
+must_not = ["Yes, the sutta teaches that the awakening factors cure illness."]
+layer = "sutta"
+status = "draft"
+note = "Narrated vs taught (D20)."
+
+[[q]]
+id = "Q51"
+category = "trap"
+scope = "covered"
+question = "In SN 46.8, who explains how a mendicant can know the awakening factors are properly implemented so that they lead to living at ease?"
+gold = [
+  "Venerable Upavāṇa, answering Venerable Sāriputta's question; the Buddha does not appear. The factors, properly implemented by rational application of mind (yonisomanasikārā), lead to living at ease (phāsuvihārāya).",
+]
+segments = ["sn46.8:2.1", "sn46.8:2.2", "sn46.8:3.3"]
+also_ok = []
+must_not = ["The Buddha explains it.", "Sāriputta explains it to Upavāṇa."]
+layer = "sutta"
+status = "draft"
+note = "Speaker attribution (D17)."

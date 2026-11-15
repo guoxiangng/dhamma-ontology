@@ -89,6 +89,20 @@ These were flagged as minor stretches and kept deliberately. Each is on the revi
 - **Mapping wordings onto a few controlled relations (revisit #4).** "Block wisdom" (*paññānirodhikā*, SN 46.40) and "weaken wisdom" (*dubbalīkaraṇa*, SN 46.37) are both "weakens". So are "should be developed for" (a purpose, SN 46.130) and "give up by developing these" (SN 46.41) under "leads to giving up". Each claim keeps the verbatim wording, and the difference is spelled out in a note.
 - **The list called "the five hindrances"** is cited by MN 43 and SN 46.24, which name the same five without the word *nīvaraṇa*. The citation supports the members; the name comes from the other texts that cite the list.
 
+## Follow-up runs (2026-11-15)
+
+| Run | Texts | Claim–text pairs | Supported | Minor stretch | Major |
+|---|---:|---:|---:|---:|---:|
+| Re-check of the fixed texts (`audit/2026-11-15-recheck/`) | 8 | 72 | 67 | 5 | 0 |
+| Batch 6, before committing (`audit/2026-11-15-batch6/`) | 6 | 21 | 20 | 1 | 0 |
+
+The re-check confirmed the fixes: the reversed direction, the Pali-only citations, the abbreviation marks and the corrected coverage statuses. It also found that one correction went too far. SN 46.49/50:1.4 *is* abbreviated in the Pali, so the note now says which segments are untranslated and which are abbreviated. The batch 6 audit found:
+- the per-factor statement of SN 46.14–16, given only in the Pali (now cited);
+- the Pali-only line linking the recovery to the episode (now in the left-out notes);
+- the label "great ease" for *phāsuvihāra*, where "great" belongs to SN 46.57's *mahato* (now "living at ease").
+
+The remaining stretches are the accepted kinds listed above: Sujato's labels, and purpose mapped onto an effect.
+
 ## How it is used from now on
 
 The `add-text` skill has an audit step. After a text is encoded, `python audit/build_packets.py audit/<date> <uid>` builds its packet, and an auditor agent grades it against the rubric. A major finding blocks the commit. The skill now also says to read the Pali first and check the English against it.

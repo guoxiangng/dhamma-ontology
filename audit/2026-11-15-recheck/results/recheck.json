@@ -1,0 +1,149 @@
+{
+  "batch": "recheck",
+  "texts": [
+    {
+      "uid": "sn46.3",
+      "claims": [
+        {"id": "EarlyEnlightenment", "verdict": "SUPPORTED", "severity": null, "reason": "9.3: diṭṭheva dhamme paṭikacca aññaṁ ārādheti, the first fruit."},
+        {"id": "EnlightenmentAtDeath", "verdict": "SUPPORTED", "severity": null, "reason": "9.4: maraṇakāle aññaṁ ārādheti."},
+        {"id": "ExtinguishedBetweenLives", "verdict": "SUPPORTED", "severity": null, "reason": "9.5: antarāparinibbāyī; the five-lower-fetters condition is in the o-29 note and the left-out note."},
+        {"id": "ExtinguishedUponLanding", "verdict": "SUPPORTED", "severity": null, "reason": "9.6: upahaccaparinibbāyī."},
+        {"id": "ExtinguishedWithEffort", "verdict": "SUPPORTED", "severity": null, "reason": "9.8: sasaṅkhāraparinibbāyī, 'with extra effort'. Correctly kept apart from 9.7."},
+        {"id": "ExtinguishedWithoutEffort", "verdict": "SUPPORTED", "severity": null, "reason": "9.7: asaṅkhāraparinibbāyī, 'without extra effort'."},
+        {"id": "HeadingUpstream", "verdict": "SUPPORTED", "severity": null, "reason": "9.9: uddhaṁsoto hoti akaniṭṭhagāmī."},
+        {"id": "SevenFruits", "verdict": "SUPPORTED", "severity": null, "reason": "9.1-9.10 list seven fruits. The members and count match, and the order note matches 9.3-9.9."},
+        {"id": "c-s1", "verdict": "STRETCH", "severity": "minor", "reason": "In the Pali of 1.9 and 2.1 the condition is recollecting the teaching *while living withdrawn in this way* (tathā vūpakaṭṭho viharanto). Sujato's 2.1 shortens it to 'At such a time', and the claim drops the withdrawal. Also, āraddho ('initiated') is modelled as 'arise'. The left-out note discloses this."},
+        {"id": "c-s2", "verdict": "SUPPORTED", "severity": null, "reason": "2.4 and 3.1: 'living mindfully in this way' (tathā sato viharanto), they investigate the teaching, and the investigation factor is initiated."},
+        {"id": "c-s3", "verdict": "SUPPORTED", "severity": null, "reason": "3.4 and 4.1. The quoted English 'investigate principles' is Sujato's; the Pali has taṁ dhammaṁ ('that teaching'), as in 2.4. That is harmless, because the conditioned factor is correct."},
+        {"id": "c-s4", "verdict": "SUPPORTED", "severity": null, "reason": "4.2 and 5.1: āraddhavīriyassa uppajjati pīti nirāmisā."},
+        {"id": "c-s5", "verdict": "SUPPORTED", "severity": null, "reason": "5.2 and 6.1: pītimanassa kāyopi passambhati cittampi passambhati."},
+        {"id": "c-s6", "verdict": "SUPPORTED", "severity": null, "reason": "6.2 and 7.1: passaddhakāyassa sukhino cittaṁ samādhiyati. The note records the bliss."},
+        {"id": "c-s7", "verdict": "SUPPORTED", "severity": null, "reason": "7.2 and 8.1: sādhukaṁ ajjhupekkhitā hoti, followed by the equanimity factor."},
+        {"id": "o-29", "verdict": "SUPPORTED", "severity": null, "reason": "9.1 and 9.10: when the factors are developed and cultivated in this way, seven fruits are pāṭikaṅkhā. The note correctly gives the 'if not' ranking and the fetter condition."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "The left-out note correctly lists 1.1-1.6 ('very helpful'), 1.8 (withdrawal) and the initiated/developed/perfected triad (2.2-2.3 and the repeats). 'Partly encoded' is accurate."
+    },
+    {
+      "uid": "sn46.24",
+      "claims": [
+        {"id": "FiveHindrances", "verdict": "SUPPORTED", "severity": null, "reason": "1.1-1.5 name kāmacchanda, byāpāda, thinamiddha, uddhaccakukkucca and vicikicchā."},
+        {"id": "c-11", "verdict": "SUPPORTED", "severity": null, "reason": "1.1-1.5: unarisen hindrances arise (uppajjati), and arisen ones lead to increase and growth (bhiyyobhāvāya vepullāya saṁvattati)."},
+        {"id": "c-12", "verdict": "SUPPORTED", "severity": null, "reason": "1.6: nuppajjati / nirujjhati. The Pali gives only mindfulness and equanimity with …pe… between them, and the English expands this to all seven, which is legitimate."},
+        {"id": "c-13", "verdict": "SUPPORTED", "severity": null, "reason": "2.1-2.5: nuppajjati / pahīyati."},
+        {"id": "c-14", "verdict": "SUPPORTED", "severity": null, "reason": "3.1: uppajjati / bhāvanāpāripūriṁ gacchati (…pe… for the middle factors)."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "The 2026-11-15 correction (the results 'grow', 'given up' and 'fully developed') is now reflected in all four claims."
+    },
+    {
+      "uid": "sn46.35",
+      "claims": [
+        {"id": "FiveHindrances", "verdict": "SUPPORTED", "severity": null, "reason": "1.1 names all five in full in the Pali."},
+        {"id": "c-11", "verdict": "SUPPORTED", "severity": null, "reason": "1.1: uppajjati and bhiyyobhāvāya vepullāya saṁvattati for each hindrance."},
+        {"id": "c-14", "verdict": "SUPPORTED", "severity": null, "reason": "2.1: uppajjati / bhāvanāpāripūriṁ gacchati (…pe… for the middle factors)."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "In the Pali, 2.1 is a separate sutta (heading Yonisomanasikārasutta at 2.0, closing 'Chaṭṭhaṁ' at 2.2; 1.1 closes 'Pañcamaṁ'). SuttaCentral's sn46.35 file holds both, so citing it as sn46.35 is fine. A user should still know that the rational-attention half is its own discourse."
+    },
+    {
+      "uid": "sn46.49",
+      "claims": [
+        {"id": "c-05", "verdict": "SUPPORTED", "severity": null, "reason": "1.2 (Pali only): yonisomanasikārasampannassetaṁ … pāṭikaṅkhaṁ, satta bojjhaṅge bhāvessati, bahulīkarissati. 'Supports the development of' does not overstate 'can expect'. The wording is the modellers' own translation, since Sujato gives no English here, and the note says so."},
+        {"id": "c-09", "verdict": "SUPPORTED", "severity": null, "reason": "1.1: no other interior factor is so conducive to the arising (uppādāya) of the seven factors. The note keeps the comparative frame."},
+        {"id": "c-17", "verdict": "SUPPORTED", "severity": null, "reason": "1.4-1.5 Pali: vivekanissitaṁ … (1.5 gives it in full for equanimity). The quoted English wording is not in this text's English, which is empty for these segments."},
+        {"id": "c-18", "verdict": "SUPPORTED", "severity": null, "reason": "1.5 Pali: virāganissitaṁ. 1.4 has only vivekanissitaṁ …pe…, so this rests on 1.5 and on expanding the pe."},
+        {"id": "c-19", "verdict": "SUPPORTED", "severity": null, "reason": "1.5 Pali: nirodhanissitaṁ."},
+        {"id": "o-19", "verdict": "SUPPORTED", "severity": null, "reason": "1.5 Pali: vossaggapariṇāmiṁ ('ripening in letting go'). 'Leads to' is a fair simplification."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "The correction 'they are untranslated in the English but given in the Pali' is only partly accurate. 1.2, 1.3 and 1.6 are given in full in the Pali. But 1.4 is itself abbreviated in the Pali (satisambojjhaṅgaṁ bhāveti vivekanissitaṁ …pe…): factors 2-6, and the rest of the formula for mindfulness, are elided and restored from 1.5. So the stock formula here does rest on an expanded abbreviation, even in the Pali. The old label 'abbreviated' was half right for 1.4. This changes no verdict."
+    },
+    {
+      "uid": "sn46.50",
+      "claims": [
+        {"id": "c-03", "verdict": "SUPPORTED", "severity": null, "reason": "1.2 (Pali only): kalyāṇamittassetaṁ … pāṭikaṅkhaṁ, satta bojjhaṅge bhāvessati. The note says the wording is untranslated."},
+        {"id": "c-10", "verdict": "SUPPORTED", "severity": null, "reason": "1.1: no other exterior factor is so conducive to the arising (uppādāya) of the factors as kalyāṇamittatā. The note keeps the comparative."},
+        {"id": "c-17", "verdict": "SUPPORTED", "severity": null, "reason": "1.4-1.5 Pali: vivekanissitaṁ."},
+        {"id": "c-18", "verdict": "SUPPORTED", "severity": null, "reason": "1.5 Pali: virāganissitaṁ (1.4 is abbreviated with …pe…)."},
+        {"id": "c-19", "verdict": "SUPPORTED", "severity": null, "reason": "1.5 Pali: nirodhanissitaṁ."},
+        {"id": "o-19", "verdict": "SUPPORTED", "severity": null, "reason": "1.5 Pali: vossaggapariṇāmiṁ."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "The 'given in the Pali' correction has the same caveat as sn46.49: 1.4 has …pe… in the Pali itself, so the stock formula is partly an expanded abbreviation. The note is right that the uddāna (2.0-2.4) is not a teaching."
+    },
+    {
+      "uid": "sn46.57",
+      "claims": [
+        {"id": "SevenAwakeningFactors", "verdict": "SUPPORTED", "severity": null, "reason": "The English of 1.4-1.5 lists all seven. The Pali gives mindfulness and equanimity with …pe…, which is a legitimate expansion."},
+        {"id": "c-17", "verdict": "SUPPORTED", "severity": null, "reason": "1.5 vivekanissitaṁ. The phrase is also given in full in 1.4 and at 2.4-6.4, which the claim does not cite."},
+        {"id": "c-18", "verdict": "SUPPORTED", "severity": null, "reason": "1.5 virāganissitaṁ."},
+        {"id": "c-19", "verdict": "SUPPORTED", "severity": null, "reason": "1.5 nirodhanissitaṁ."},
+        {"id": "c-p57", "verdict": "SUPPORTED", "severity": null, "reason": "1.4: aṭṭhikasaññāsahagataṁ satisambojjhaṅgaṁ bhāveti. Each factor is developed accompanied by the perception. The note correctly flags that Sujato's English reverses this."},
+        {"id": "o-19", "verdict": "SUPPORTED", "severity": null, "reason": "1.5 and 2.4-6.4: vossaggapariṇāmiṁ."},
+        {"id": "o-p57", "verdict": "SUPPORTED", "severity": null, "reason": "1.2 and 1.6: bhāvitā bahulīkatā mahapphalā hoti mahānisaṁsā. 'Leads to' for 'is of great fruit' is a fair simplification."},
+        {"id": "o-p57-a", "verdict": "SUPPORTED", "severity": null, "reason": "2.1 and 2.5: dvinnaṁ phalānaṁ aññataraṁ … diṭṭheva dhamme aññā."},
+        {"id": "o-p57-b", "verdict": "SUPPORTED", "severity": null, "reason": "2.1 and 2.5: sati vā upādisese anāgāmitā. The note keeps the condition of residue."},
+        {"id": "o-p57-c", "verdict": "SUPPORTED", "severity": null, "reason": "3.1 and 3.5: mahato atthāya saṁvattati."},
+        {"id": "o-p57-d", "verdict": "SUPPORTED", "severity": null, "reason": "4.1 and 4.5: mahato yogakkhemāya saṁvattati."},
+        {"id": "o-p57-e", "verdict": "SUPPORTED", "severity": null, "reason": "5.1 and 5.5: mahato saṁvegāya saṁvattati. 'Inspiration' is Sujato's rendering of saṁvega, which is also 'urgency'."},
+        {"id": "o-p57-f", "verdict": "STRETCH", "severity": "minor", "reason": "6.1 and 6.5: mahato phāsuvihārāya, 'dwelling in great ease', and Sujato's 6.1 says so. 'Great ease' drops vihāra and turns a way of dwelling (comfortable abiding) into a bare quality."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "Sections 2-6 are separate short suttas in the Pali (Aññataraphala, Mahattha, Yogakkhema, Saṁvega, Phāsuvihāra), each with its English stopping at 'How so? …' while the Pali goes on (2.3-2.5 etc.). The claims correctly cite the Pali-only segments. The encoded note's 'great ease' repeats the dropped 'dwelling'."
+    },
+    {
+      "uid": "sn46.76",
+      "claims": [
+        {"id": "SevenAwakeningFactors", "verdict": "SUPPORTED", "severity": null, "reason": "The English of 1.3-1.4 lists all seven. The Pali is mindfulness …pe… equanimity, a legitimate expansion."},
+        {"id": "c-17", "verdict": "SUPPORTED", "severity": null, "reason": "1.4, 2.6 and 3.4: vivekanissitaṁ (given in full for equanimity)."},
+        {"id": "c-18", "verdict": "SUPPORTED", "severity": null, "reason": "1.4, 2.6 and 3.4: virāganissitaṁ."},
+        {"id": "c-19", "verdict": "SUPPORTED", "severity": null, "reason": "1.4, 2.6 and 3.4: nirodhanissitaṁ."},
+        {"id": "c-p76", "verdict": "SUPPORTED", "severity": null, "reason": "1.3 and the repeats: nirodhasaññāsahagataṁ satisambojjhaṅgaṁ bhāveti. The note correctly flags that the English reverses the grammar."},
+        {"id": "o-19", "verdict": "SUPPORTED", "severity": null, "reason": "1.4, 2.6 and 3.4: vossaggapariṇāmiṁ."},
+        {"id": "o-p76", "verdict": "SUPPORTED", "severity": null, "reason": "1.1 and 1.5: mahapphalā hoti mahānisaṁsā."},
+        {"id": "o-p76-a", "verdict": "SUPPORTED", "severity": null, "reason": "2.1-2.2 and 2.7-2.8: one of two fruits, diṭṭheva dhamme aññā."},
+        {"id": "o-p76-b", "verdict": "SUPPORTED", "severity": null, "reason": "2.2 and 2.8: sati vā upādisese anāgāmitā. The note keeps the condition."},
+        {"id": "o-p76-c", "verdict": "SUPPORTED", "severity": null, "reason": "3.1 and 3.5: mahato atthāya saṁvattati."},
+        {"id": "o-p76-d", "verdict": "SUPPORTED", "severity": null, "reason": "3.1 and 3.5: mahato yogakkhemāya saṁvattati. The English elides it with '…', but the Pali gives it in full."},
+        {"id": "o-p76-e", "verdict": "SUPPORTED", "severity": null, "reason": "3.1 and 3.5: mahato saṁvegāya saṁvattati."},
+        {"id": "o-p76-f", "verdict": "STRETCH", "severity": "minor", "reason": "3.1 and 3.5 Pali: mahato phāsuvihārāya, 'dwelling in great ease'. Sujato's compressed English here says just 'great ease', and the claim follows the English rather than the Pali."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "The uddāna (4.0-4.4) is correctly not encoded. Unlike sn46.57:1.4, the Pali at 1.3/2.5/3.3 does not give the seclusion formula for mindfulness, so c-17/18/19 and o-19 rest on the equanimity line only. That is fine."
+    },
+    {
+      "uid": "sn46.130",
+      "claims": [
+        {"id": "FiveHigherFetters", "verdict": "STRETCH", "severity": "minor", "reason": "1.2-1.5: the members and count are correct (rūparāgo, arūparāgo, māno, uddhaccaṁ, avijjā). But two labels lean on Sujato's gloss: the Pali is rūparāga/arūparāga ('desire for form / the formless'), with no 'rebirth' and no 'luminous'."},
+        {"id": "SevenAwakeningFactors", "verdict": "SUPPORTED", "severity": null, "reason": "1.8-1.9: mindfulness …pe… equanimity, expanded in the English."},
+        {"id": "c-17", "verdict": "SUPPORTED", "severity": null, "reason": "1.8 Pali: vivekanissitaṁ, which Sujato's English omits. The encoded note discloses this correctly."},
+        {"id": "c-18", "verdict": "SUPPORTED", "severity": null, "reason": "1.8 Pali: virāganissitaṁ."},
+        {"id": "c-19", "verdict": "SUPPORTED", "severity": null, "reason": "1.8 Pali: nirodhanissitaṁ."},
+        {"id": "o-02", "verdict": "SUPPORTED", "severity": null, "reason": "1.11: nibbānaninnaṁ nibbānapoṇaṁ nibbānapabbhāraṁ. 'Leads to' is the rubric's own example of fair simplification."},
+        {"id": "o-19", "verdict": "SUPPORTED", "severity": null, "reason": "1.8 Pali: vossaggapariṇāmiṁ (not in the English)."},
+        {"id": "o-26", "verdict": "STRETCH", "severity": "minor", "reason": "1.6 and 1.12 state a purpose: the factors should be developed (bhāvetabbā) for direct knowledge, complete understanding, finishing and giving up of the fetters. 'Leads to giving up' turns the purpose into an effect and keeps only one of the four aims. The note discloses both."},
+        {"id": "o-27", "verdict": "SUPPORTED", "severity": null, "reason": "1.9: rāga/dosa/mohavinayapariyosānaṁ."},
+        {"id": "o-28", "verdict": "SUPPORTED", "severity": null, "reason": "1.10: amatogadhaṁ amataparāyanaṁ amatapariyosānaṁ."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "1.8-1.11 compress four alternative formula series (seclusion, removal of greed/hate/delusion, the deathless, inclining to nibbāna) with …pe… and '…'. Each is encoded. The encoded note's 'the rest of the sutta is abbreviated in the source' is accurate."
+    }
+  ]
+}

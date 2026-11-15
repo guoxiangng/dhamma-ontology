@@ -320,6 +320,8 @@ dho:CauseOf      a dho:ConditionRelation ; rdfs:label "is a cause and reason for
     rdfs:comment "'a cause and reason for' (hetu, paccaya), SN 46.56 (D16)."@en .
 dho:Accompanies  a dho:ConditionRelation ; rdfs:label "accompanies the development of"@en ;
     rdfs:comment "X-sahagata: the awakening factor is developed accompanied by X (SN 46.57-76). The condition is X, the conditioned is the awakening factors. Sujato's English turns the grammar round ('develops X together with the awakening factors'); the Pali is followed (D15 correction, D19)."@en .
+dho:Fulfils      a dho:ConditionRelation ; rdfs:label "fulfils"@en ;
+    rdfs:comment "'developed and cultivated so as to fulfill' (bhāvitā bahulīkatā paripūrenti), SN 46.6 (D20)."@en .
 dho:WhenThen     a dho:ConditionRelation ; rdfs:label "when present, then"@en ;
     rdfs:comment "'when you …, X …'; the result says what happens to the conditioned."@en .
 

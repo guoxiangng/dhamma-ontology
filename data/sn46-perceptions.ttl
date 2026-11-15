@@ -13,7 +13,9 @@ dho:NonReturn a dho:Concept ; skos:prefLabel "non-return"@en , "anāgāmitā"@pi
 dho:GreatBenefit a dho:Concept ; skos:prefLabel "great benefit"@en , "attha"@pi .
 dho:SanctuaryFromYoke a dho:Concept ; skos:prefLabel "great sanctuary from the yoke"@en , "yogakkhema"@pi .
 dho:Inspiration a dho:Concept ; skos:prefLabel "great inspiration"@en , "saṁvega"@pi .
-dho:GreatEase a dho:Concept ; skos:prefLabel "great ease"@en , "phāsuvihāra"@pi .
+# phāsuvihāra. The preferred label was "great ease", but "great" is SN 46.57's mahato, not part of the
+# word; changed after the batch 6 audit (2026-11-15). The outcomes keep their verbatim wording.
+dho:GreatEase a dho:Concept ; skos:prefLabel "living at ease"@en , "phāsuvihāra"@pi ; skos:altLabel "ease"@en .
 
 # ---------------------------------------------------------------- the practices
 

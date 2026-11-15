@@ -1,0 +1,91 @@
+@prefix dho:  <https://guoxiangng.github.io/dhamma-ontology/ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Batch 6 (2026-11-15): SN 46.4, 46.6, 46.8, 46.14, 46.15, 46.16. Each read in full, Pali first (D19).
+
+# ---------------------------------------------------------------- SN 46.6: the fulfilment ladder (D20)
+# Kuṇḍaliya asks, the Buddha answers: sense restraint, developed and cultivated, fulfils the three kinds
+# of good conduct; they fulfil the four kinds of mindfulness meditation; those fulfil the seven
+# awakening factors; and those fulfil knowledge and freedom (paripūreti). Pairwise links (D16).
+
+dho:SenseRestraint a dho:Concept ;
+    skos:prefLabel "sense restraint"@en , "indriyasaṁvara"@pi .
+
+dho:ThreeGoodConducts a dho:NumberedList ;
+    skos:prefLabel "the three kinds of good conduct"@en , "tīṇi sucaritāni"@pi ;
+    dho:expectedCount 3 ;
+    dho:hasMember dho:BodilyGoodConduct , dho:VerbalGoodConduct , dho:MentalGoodConduct ;
+    dho:citedBy dho:p-sn46.6-2.6 , dho:p-sn46.6-6.2 .
+dho:BodilyGoodConduct a dho:Concept ; skos:prefLabel "good conduct by way of body"@en , "kāyasucarita"@pi .
+dho:VerbalGoodConduct a dho:Concept ; skos:prefLabel "good conduct by way of speech"@en , "vacīsucarita"@pi .
+dho:MentalGoodConduct a dho:Concept ; skos:prefLabel "good conduct by way of mind"@en , "manosucarita"@pi .
+
+# The Pali abbreviates feelings and mind (7.3-7.4: "vedanāsu …pe…", "citte …pe…") but names each.
+dho:FourMindfulnessMeditations a dho:NumberedList ;
+    skos:prefLabel "the four kinds of mindfulness meditation"@en , "cattāro satipaṭṭhānā"@pi , "四念處"@zh ;
+    skos:altLabel "four foundations of mindfulness"@en , "four establishments of mindfulness"@en , "satipaṭṭhāna"@pi ;
+    dho:expectedCount 4 ;
+    dho:hasMember dho:ObservingBody , dho:ObservingFeelings , dho:ObservingMind , dho:ObservingPrinciples ;
+    dho:citedBy dho:p-sn46.6-2.4 , dho:p-sn46.6-7.2 , dho:p-sn46.6-7.3 , dho:p-sn46.6-7.4 , dho:p-sn46.6-7.5 .
+dho:ObservingBody a dho:Concept ; skos:prefLabel "observing an aspect of the body"@en , "kāye kāyānupassī"@pi , "身念處"@zh .
+dho:ObservingFeelings a dho:Concept ; skos:prefLabel "observing an aspect of feelings"@en , "vedanāsu vedanānupassī"@pi , "受念處"@zh .
+dho:ObservingMind a dho:Concept ; skos:prefLabel "observing an aspect of the mind"@en , "citte cittānupassī"@pi , "心念處"@zh .
+dho:ObservingPrinciples a dho:Concept ; skos:prefLabel "observing an aspect of principles"@en , "dhammesu dhammānupassī"@pi , "法念處"@zh .
+
+# vijjāvimutti, not vijjāvimuttiphala ("the fruit of knowledge and freedom", SN 46.6:1.9 and SN 46.37):
+# a different compound, so a separate concept with an editor's link (D13's rule).
+dho:KnowledgeAndFreedom a dho:Concept ;
+    skos:prefLabel "knowledge and freedom"@en , "vijjāvimutti"@pi ;
+    dho:editorialRelated dho:FruitOfKnowledgeAndFreedom .
+
+dho:c-f1 a dho:Condition ; dho:condition dho:SenseRestraint ; dho:relation dho:Fulfils ; dho:conditioned dho:ThreeGoodConducts ;
+    dho:wording "sense restraint is developed and cultivated so as to fulfill the three kinds of good conduct" ;
+    dho:citedBy dho:p-sn46.6-2.7 , dho:p-sn46.6-2.8 , dho:p-sn46.6-3.1 , dho:p-sn46.6-5.7 .
+dho:c-f2 a dho:Condition ; dho:condition dho:ThreeGoodConducts ; dho:relation dho:Fulfils ; dho:conditioned dho:FourMindfulnessMeditations ;
+    dho:wording "the three kinds of good conduct are developed and cultivated so as to fulfill the four kinds of mindfulness meditation" ;
+    dho:citedBy dho:p-sn46.6-2.5 , dho:p-sn46.6-2.6 , dho:p-sn46.6-6.1 , dho:p-sn46.6-6.3 .
+dho:c-f3 a dho:Condition ; dho:condition dho:FourMindfulnessMeditations ; dho:relation dho:Fulfils ; dho:conditioned dho:SevenAwakeningFactors ;
+    dho:wording "the four kinds of mindfulness meditation are developed and cultivated so as to fulfill the seven awakening factors" ;
+    dho:citedBy dho:p-sn46.6-2.3 , dho:p-sn46.6-2.4 , dho:p-sn46.6-7.1 , dho:p-sn46.6-7.6 .
+dho:c-f4 a dho:Condition ; dho:condition dho:SevenAwakeningFactors ; dho:relation dho:Fulfils ; dho:conditioned dho:KnowledgeAndFreedom ;
+    dho:wording "the seven awakening factors are developed and cultivated so as to fulfill knowledge and freedom" ;
+    dho:citedBy dho:p-sn46.6-2.1 , dho:p-sn46.6-2.2 , dho:p-sn46.6-8.1 , dho:p-sn46.6-8.4 .
+
+# The stock formula, restated (8.2-8.3).
+dho:c-17 dho:citedBy dho:p-sn46.6-8.2 , dho:p-sn46.6-8.3 .
+dho:c-18 dho:citedBy dho:p-sn46.6-8.2 , dho:p-sn46.6-8.3 .
+dho:c-19 dho:citedBy dho:p-sn46.6-8.2 , dho:p-sn46.6-8.3 .
+dho:o-19 dho:citedBy dho:p-sn46.6-8.2 , dho:p-sn46.6-8.3 .
+
+# ---------------------------------------------------------------- SN 46.8: living at ease (taught by Upavāṇa)
+# Sāriputta asks; Venerable Upavāṇa answers (2.2-3.3). A disciple teaching, so encoded (D17).
+# phāsuvihāra is the same word as SN 46.57's "great ease" (mahato phāsuvihārāya): one concept.
+dho:o-33 a dho:Outcome ; dho:of dho:SevenAwakeningFactors ; dho:effect dho:LeadsTo ; dho:to dho:GreatEase ;
+    dho:wording "the seven awakening factors have been properly implemented so that they lead to living at ease" ;
+    skos:note "Taught by Venerable Upavāṇa in answer to Sāriputta. 'Properly implemented' (susamāraddhā) 'by rational application of mind' (yonisomanasikārā); Sujato renders the last 'by investigating inside themselves'."@en ;
+    dho:citedBy dho:p-sn46.8-2.1 , dho:p-sn46.8-2.2 , dho:p-sn46.8-3.3 .
+
+# ---------------------------------------------------------------- SN 46.14-16: direct knowledge, awakening, extinguishment
+# One statement in three suttas (D12). In 46.14 and 46.15 the Buddha says it to a sick disciple; in
+# 46.16 Mahācunda says it to the sick Buddha, who concurs (samanuñño satthā, 3.2).
+dho:o-30 a dho:Outcome ; dho:of dho:SevenAwakeningFactors ; dho:effect dho:LeadsTo ; dho:to dho:Insight ;
+    dho:wording "When developed and cultivated, they lead to direct knowledge, to awakening, and to extinguishment" ;
+    skos:note "abhiññāya: Sujato's 'direct knowledge' here, 'insight' in SN 46.20 (one concept, D13)."@en ;
+    dho:citedBy dho:p-sn46.14-3.1 , dho:p-sn46.14-3.4 , dho:p-sn46.15-3.1 , dho:p-sn46.15-3.4 , dho:p-sn46.16-2.1 , dho:p-sn46.16-2.4 .
+dho:o-31 a dho:Outcome ; dho:of dho:SevenAwakeningFactors ; dho:effect dho:LeadsTo ; dho:to dho:Sambodhi ;
+    dho:wording "When developed and cultivated, they lead to direct knowledge, to awakening, and to extinguishment" ;
+    dho:citedBy dho:p-sn46.14-3.1 , dho:p-sn46.14-3.4 , dho:p-sn46.15-3.1 , dho:p-sn46.15-3.4 , dho:p-sn46.16-2.1 , dho:p-sn46.16-2.4 .
+dho:o-32 a dho:Outcome ; dho:of dho:SevenAwakeningFactors ; dho:effect dho:LeadsTo ; dho:to dho:Extinguishment ;
+    dho:wording "When developed and cultivated, they lead to direct knowledge, to awakening, and to extinguishment" ;
+    dho:citedBy dho:p-sn46.14-3.1 , dho:p-sn46.14-3.4 , dho:p-sn46.15-3.1 , dho:p-sn46.15-3.4 , dho:p-sn46.16-2.1 , dho:p-sn46.16-2.4 .
+
+# ---------------------------------------------------------------- SN 46.4: the list (taught by Sāriputta)
+# 2.3 names all seven in the Pali too.
+dho:SevenAwakeningFactors dho:citedBy dho:p-sn46.4-2.1 , dho:p-sn46.4-2.3 , dho:p-sn46.4-2.4 .
+
+# Batch 6 audit (2026-11-15): the per-factor statement (each factor, developed, leads to direct knowledge,
+# awakening and extinguishment) is in the Pali of 46.14:3.3, 46.15:3.3, 46.16:2.3; the English shows only
+# the names. And the Buddha's endorsement of Mahācunda (46.16:2.5-2.6, 3.2).
+dho:o-30 dho:citedBy dho:p-sn46.14-3.3 , dho:p-sn46.15-3.3 , dho:p-sn46.16-2.3 , dho:p-sn46.16-2.5 , dho:p-sn46.16-3.2 .
+dho:o-31 dho:citedBy dho:p-sn46.14-3.3 , dho:p-sn46.15-3.3 , dho:p-sn46.16-2.3 , dho:p-sn46.16-2.5 , dho:p-sn46.16-3.2 .
+dho:o-32 dho:citedBy dho:p-sn46.14-3.3 , dho:p-sn46.15-3.3 , dho:p-sn46.16-2.3 , dho:p-sn46.16-2.5 , dho:p-sn46.16-3.2 .

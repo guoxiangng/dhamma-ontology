@@ -1,0 +1,86 @@
+{
+  "batch": "batch6",
+  "texts": [
+    {
+      "uid": "sn46.4",
+      "claims": [
+        {"id": "SevenAwakeningFactors", "verdict": "SUPPORTED", "severity": null, "reason": "Sāriputta, a teaching disciple, names the seven bojjhaṅgā at 2.1-2.4 (sati, dhammavicaya, vīriya, pīti, passaddhi, samādhi, upekkhā); members and count match the Pali."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "Left-out note correctly describes 2.5-2.11, the simile at 3.1-3.4 and the repeat at 3.5-3.11. 'I know that it's limitless' renders 'appamāṇo'ti me hoti ('it occurs to me: limitless'); the note's paraphrase is acceptable. The '…pe…' at 2.9 and 3.9 abbreviates the middle five factors, so the account covers all seven factors, not only mindfulness and equanimity."
+    },
+    {
+      "uid": "sn46.6",
+      "claims": [
+        {"id": "FourMindfulnessMeditations", "verdict": "SUPPORTED", "severity": null, "reason": "2.4 names the four satipaṭṭhānā, and 7.2-7.5 give body, feelings, mind, principles (kāye, vedanāsu, citte, dhammesu); members and count match."},
+        {"id": "ThreeGoodConducts", "verdict": "SUPPORTED", "severity": null, "reason": "2.6 names tīṇi sucaritāni, and 6.2 gives kāya-, vacī- and manosucarita; members and count match."},
+        {"id": "c-17", "verdict": "SUPPORTED", "severity": null, "reason": "8.2-8.3: each factor is developed vivekanissitaṁ ('relying on seclusion'). Recasting 'factors rely on seclusion' as 'seclusion is the basis of the factors' keeps the direction right and is a fair simplification."},
+        {"id": "c-18", "verdict": "SUPPORTED", "severity": null, "reason": "8.2-8.3: virāganissitaṁ, 'relying on fading away'; same fair reading as c-17."},
+        {"id": "c-19", "verdict": "SUPPORTED", "severity": null, "reason": "8.2-8.3: nirodhanissitaṁ, 'relying on cessation'; same fair reading as c-17."},
+        {"id": "c-f1", "verdict": "SUPPORTED", "severity": null, "reason": "The Buddha at 2.8 and 5.7: indriyasaṁvaro bhāvito bahulīkato tīṇi sucaritāni paripūreti. 2.7 is Kuṇḍaliya's question, but the answer is the Buddha's. The claim correctly avoids the English 'must be developed', which the Pali does not say."},
+        {"id": "c-f2", "verdict": "SUPPORTED", "severity": null, "reason": "2.6 and 6.3: tīṇi sucaritāni ... cattāro satipaṭṭhāne paripūrenti, said by the Buddha (2.5 and 6.1 are the question and the lead-in)."},
+        {"id": "c-f3", "verdict": "SUPPORTED", "severity": null, "reason": "2.4 and 7.6: cattāro satipaṭṭhānā ... satta bojjhaṅge paripūrenti, said by the Buddha."},
+        {"id": "c-f4", "verdict": "SUPPORTED", "severity": null, "reason": "2.2 and 8.4: satta bojjhaṅgā ... vijjāvimuttiṁ paripūrenti, said by the Buddha."},
+        {"id": "o-19", "verdict": "SUPPORTED", "severity": null, "reason": "8.2-8.3: vossaggapariṇāmiṁ, 'ripening as / maturing in letting go'. 'Leads to letting go' is a fair simplification. The quoted wording 'as letting go' is a clipped fragment of 'ripen as letting go', but it does not change the meaning."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "In the Pali, 2.1, 2.3, 2.5 and 2.7 are plain questions ('which things, developed and cultivated, fulfil ...?'). Sujato's 'must be developed ... in order to' adds a necessity the Pali lacks; the claims rightly don't take it over. In the Pali the stock qualifier at 8.2 attaches to the mindfulness factor (the …pe… covers the middle factors), while the English moves it to 8.3; this has no effect on the claims. 3.3 etc.: English 'mind and body are steady' reverses the Pali order (ṭhito ca kāyo ... ṭhitaṁ cittaṁ ajjhattaṁ susaṇṭhitaṁ suvimuttaṁ, in which only citta is 'internally well settled, well freed'); this falls inside the left-out section."
+    },
+    {
+      "uid": "sn46.8",
+      "claims": [
+        {"id": "o-33", "verdict": "STRETCH", "severity": "minor", "reason": "2.2 and 3.3 (Upavāṇa) say a mendicant can know for themselves that their seven factors, 'thus well undertaken by rational attention' (evaṁ susamāraddhā ... yonisomanasikārā), lead to phāsuvihāra, 'living at ease'. The target label 'great ease' adds 'great', which is in neither the Pali nor the English, and the 'of' field drops the 'well undertaken' condition (it survives only in the wording and the note)."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "Upavāṇa is a teaching disciple answering Sāriputta's question, so the speaker is acceptable; the note says this. The text's framing is epistemic (jāneyya: whether a mendicant can know this personally); the claim turns it into a plain outcome. That is acceptable, since the known content is asserted as true at 3.3, but worth noting. The note says Sujato renders yonisomanasikārā as 'by investigating inside themselves'; that English actually renders paccattaṁ + yonisomanasikārā together, and paccattaṁ may belong to jāneyya ('know personally'). 3.1 '…pe…' covers the middle five factors."
+    },
+    {
+      "uid": "sn46.14",
+      "claims": [
+        {"id": "o-30", "verdict": "SUPPORTED", "severity": null, "reason": "3.1 and 3.4 (the Buddha): bhāvitā bahulīkatā abhiññāya ... saṁvattanti. abhiññā is correctly identified. The target label 'insight' differs from this text's 'direct knowledge' and could be confused with vipassanā; the note explains it."},
+        {"id": "o-31", "verdict": "SUPPORTED", "severity": null, "reason": "3.1 and 3.4: sambodhāya saṁvattanti."},
+        {"id": "o-32", "verdict": "SUPPORTED", "severity": null, "reason": "3.1 and 3.4: nibbānāya saṁvattanti."}
+      ],
+      "omissions": [
+        {"segments": ["sn46.14:3.3"], "what": "The Pali at 3.3 (abbreviated with …pe…) says that each factor singly (satisambojjhaṅgo ... upekkhāsambojjhaṅgo), when developed and cultivated, leads to direct knowledge, awakening and extinguishment (saṁvattati, singular). Sujato's English reduces this to a bare list of names. The claims cite only 3.1 and 3.4 and model only the seven collectively, and the left-out note doesn't mention the per-factor statement, even though the encoded note says '3.1-3.4'."}
+      ],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "Left-out at 4.1-4.4: the English puts 'that's how he recovered' entirely at 4.3, but the Pali 4.3 says only 'he rose from that illness'; 4.4 (no English) says 'tathāpahīno ... so ābādho ahosi', 'in that way that illness was abandoned'. So the narrative does tie the recovery to the episode. 'The text does not say the factors cure illness' holds as teaching (there is no general statement), but the note should acknowledge 4.4's 'tathā'. The Buddha's 'mayā sammadakkhātā' (rightly explained by me) is dropped from the claims, which is harmless."
+    },
+    {
+      "uid": "sn46.15",
+      "claims": [
+        {"id": "o-30", "verdict": "SUPPORTED", "severity": null, "reason": "3.1 and 3.4 (the Buddha to Moggallāna): abhiññāya saṁvattanti. The 'insight' label caveat is the same as for SN 46.14."},
+        {"id": "o-31", "verdict": "SUPPORTED", "severity": null, "reason": "3.1 and 3.4: sambodhāya saṁvattanti."},
+        {"id": "o-32", "verdict": "SUPPORTED", "severity": null, "reason": "3.1 and 3.4: nibbānāya saṁvattanti."}
+      ],
+      "omissions": [
+        {"segments": ["sn46.15:3.3"], "what": "As in SN 46.14: the Pali states for each factor singly (saṁvattati) that, developed and cultivated, it leads to direct knowledge, awakening and extinguishment; the English shows only a list, and the claims don't model it."}
+      ],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "4.4 (Pali only, no English): 'tathāpahīno ... so ābādho ahosi' links the recovery to the episode. 'Narrated, not taught' is still correct."
+    },
+    {
+      "uid": "sn46.16",
+      "claims": [
+        {"id": "o-30", "verdict": "SUPPORTED", "severity": null, "reason": "2.1 and 2.4: Mahācunda, asked by the Buddha (1.4), states it, and the Buddha affirms it (2.5-2.6) and concurs (3.2, samanuñño satthā). This is endorsed teaching, not an interlocutor's view. The 'insight' label caveat is the same as for SN 46.14."},
+        {"id": "o-31", "verdict": "SUPPORTED", "severity": null, "reason": "2.1 and 2.4: sambodhāya saṁvattanti, endorsed by the Buddha at 2.5-2.6 and 3.2."},
+        {"id": "o-32", "verdict": "SUPPORTED", "severity": null, "reason": "2.1 and 2.4: nibbānāya saṁvattanti, endorsed by the Buddha at 2.5-2.6 and 3.2."}
+      ],
+      "omissions": [
+        {"segments": ["sn46.16:2.3"], "what": "The Pali states for each factor singly (saṁvattati, abbreviated with …pe…) that it leads to direct knowledge, awakening and extinguishment; the English shows only a list, and the claims don't model it."}
+      ],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "1.4 'paṭibhantu taṁ, cunda, bojjhaṅgā' is literally 'let the awakening factors occur to you, Cunda'; Sujato's 'express your understanding' is fine. The claims could also cite 3.2 or 2.5-2.6 for the Buddha's endorsement, which the encoded note mentions. 3.4 (Pali only): 'tathāpahīno' links the recovery to the episode, as in SN 46.14."
+    }
+  ]
+}

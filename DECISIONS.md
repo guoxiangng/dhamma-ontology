@@ -180,6 +180,18 @@ An independent audit checked all 270 claim–text pairs against the texts. 82% w
   - "don't arise, or are given up" (*pahīyati*), kept apart from "cease" (*nirujjhati*).
 - **Every new text gets an audit** before it is committed (`audit/`, add-text step 7). A major finding blocks the commit.
 
+## D20. "Fulfils": a condition relation for *paripūreti*
+
+*Decided by Claude; the owner deferred. Revisit.*
+
+SN 46.6 gives a ladder: sense restraint, "developed and cultivated", fulfils the three kinds of good conduct; they fulfil the four kinds of mindfulness meditation; those fulfil the seven awakening factors; and those fulfil knowledge and freedom. *Paripūreti* (fulfil, complete) says more than "supports the development of" (*pāṭikaṅkha*, "can expect to develop") and less than "gives rise to", so it gets its own relation. Following D16, each rung is a pairwise condition, not a chain object.
+
+- **Knowledge and freedom** (*vijjāvimutti*) is a separate concept from **the fruit of knowledge and freedom** (*vijjāvimuttiphala*, SN 46.37 and SN 46.6:1.9), with an editor's link: a different compound.
+- **The three kinds of good conduct** and **the four kinds of mindfulness meditation** become lists. Their members are named in the text (6.2; 7.2-7.5, with feelings and mind abbreviated in the Pali but named). This begins the 37 wings of awakening; the other lists will come from their own suttas.
+- **Living at ease** (SN 46.8) is the same word, *phāsuvihāra*, as SN 46.57's "great ease", so it is one concept with a second label.
+- **What is narrated is not taught.** In SN 46.14–16, a sick disciple (or the Buddha) hears the awakening factors and recovers. The ontology encodes what is said about the factors, not that they heal; eval Q50 tests this.
+- **Accounts of one's own practice** (Sāriputta in SN 46.4, Udāyī in SN 46.30) are left out until a pattern for them is agreed (revisit #13). Udāyī's is endorsed by the Buddha, which makes it a closer call.
+
 ## Patterns not modelled yet
 
 These kinds of teaching have come up and been left out (each logged in `data/coverage.ttl`) until a pattern is agreed:

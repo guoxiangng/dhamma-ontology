@@ -12,10 +12,10 @@ This is how much of the canon the ontology actually draws on. It is small on pur
 |---|---:|---:|---:|---:|---:|
 | Long Discourses (DN) | 34 | 0 | 0 | 0 | 0.00% |
 | Middle Discourses (MN) | 152 | 0 | 2 | 2 | 2.63% |
-| Linked Discourses (SN) | 3,024 | 16 | 42 | 1 | 1.95% |
+| Linked Discourses (SN) | 3,024 | 16 | 48 | 1 | 2.15% |
 | Numbered Discourses (AN) | 8,122 | 0 | 0 | 0 | 0.00% |
 | Minor Collection (KN) | 2,748 | 0 | 0 | 1 | 0.04% |
-| **Total** | **14,080** | **16** | | | **0.45%** |
+| **Total** | **14,080** | **16** | | | **0.50%** |
 
 Counts follow SuttaCentral's numbering, with grouped ranges (e.g. `sn12.93-213`) counted as the suttas they number. Many of those are abbreviated repetitions, so this overstates the amount of distinct text. KN mixes early and late material (Dhammapada and Sutta Nipāta beside Jātaka and Apadāna) and Dhammapada is counted by verse.
 
@@ -45,6 +45,9 @@ Counts follow SuttaCentral's numbering, with grouped ranges (e.g. `sn12.93-213`)
 | [SN 46.11 Pāṇasutta — Living Creatures](https://suttacentral.net/sn46.11/en/sujato) | Sutta (early discourses) | partly encoded | 2 / 8 | 5 | not yet reviewed |
 | [SN 46.12 Paṭhamasūriyūpamasutta — The Simile of the Sun (1st)](https://suttacentral.net/sn46.12/en/sujato) | Sutta (early discourses) | partly encoded | 3 / 8 | 6 | not yet reviewed |
 | [SN 46.13 Dutiyasūriyūpamasutta — The Simile of the Sun (2nd)](https://suttacentral.net/sn46.13/en/sujato) | Sutta (early discourses) | partly encoded | 3 / 8 | 6 | not yet reviewed |
+| [SN 46.14 Paṭhamagilānasutta — Sick (1st)](https://suttacentral.net/sn46.14/en/sujato) | Sutta (early discourses) | partly encoded | 3 / 16 | 3 | not yet reviewed |
+| [SN 46.15 Dutiyagilānasutta — Sick (2nd)](https://suttacentral.net/sn46.15/en/sujato) | Sutta (early discourses) | partly encoded | 3 / 16 | 3 | not yet reviewed |
+| [SN 46.16 Tatiyagilānasutta — Sick (3rd)](https://suttacentral.net/sn46.16/en/sujato) | Sutta (early discourses) | partly encoded | 5 / 15 | 3 | not yet reviewed |
 | [SN 46.17 Pāraṅgamasutta — Going to the Far Shore](https://suttacentral.net/sn46.17/en/sujato) | Sutta (early discourses) | partly encoded | 3 / 27 | 2 | not yet reviewed |
 | [SN 46.19 Ariyasutta — Noble](https://suttacentral.net/sn46.19/en/sujato) | Sutta (early discourses) | partly encoded | 3 / 5 | 2 | not yet reviewed |
 | [SN 46.2 Kāyasutta — The Body](https://suttacentral.net/sn46.2/en/sujato) | Sutta (early discourses) | partly encoded | 36 / 58 | 12 | not yet reviewed |
@@ -58,6 +61,7 @@ Counts follow SuttaCentral's numbering, with grouped ranges (e.g. `sn12.93-213`)
 | [SN 46.33 Upakkilesasutta — Corruptions](https://suttacentral.net/sn46.33/en/sujato) | Sutta (early discourses) | partly encoded | 3 / 13 | 1 | not yet reviewed |
 | [SN 46.34 Anupakkilesasutta — Not Corruptions](https://suttacentral.net/sn46.34/en/sujato) | Sutta (early discourses) | partly encoded | 3 / 5 | 2 | not yet reviewed |
 | [SN 46.37 Āvaraṇanīvaraṇasutta — Obstacles](https://suttacentral.net/sn46.37/en/sujato) | Sutta (early discourses) | partly encoded | 10 / 12 | 4 | not yet reviewed |
+| [SN 46.4 Vatthasutta — Clothes](https://suttacentral.net/sn46.4/en/sujato) | Sutta (early discourses) | partly encoded | 3 / 28 | 1 | not yet reviewed |
 | [SN 46.40 Nīvaraṇasutta — Hindrances](https://suttacentral.net/sn46.40/en/sujato) | Sutta (early discourses) | partly encoded | 10 / 19 | 6 | not yet reviewed |
 | [SN 46.48 Ādiccasutta — The Sun](https://suttacentral.net/sn46.48/en/sujato) | Sutta (early discourses) | partly encoded | 3 / 8 | 6 | not yet reviewed |
 | [SN 46.5 Bhikkhusutta — A Monk](https://suttacentral.net/sn46.5/en/sujato) | Sutta (early discourses) | partly encoded | 4 / 12 | 6 | not yet reviewed |
@@ -66,6 +70,7 @@ Counts follow SuttaCentral's numbering, with grouped ranges (e.g. `sn12.93-213`)
 | [SN 46.56 Abhayasutta — With Prince Abhaya](https://suttacentral.net/sn46.56/en/sujato) | Sutta (early discourses) | partly encoded | 14 / 53 | 6 | not yet reviewed |
 | [SN 46.58 Puḷavakasutta — Worm-Infested](https://suttacentral.net/sn46.58/en/sujato) | Sutta (early discourses) | partly encoded | 1 / 2 | 1 | not yet reviewed |
 | [SN 46.59 Vinīlakasutta — Livid](https://suttacentral.net/sn46.59/en/sujato) | Sutta (early discourses) | partly encoded | 1 / 2 | 1 | not yet reviewed |
+| [SN 46.6 Kuṇḍaliyasutta — Kuṇḍaliya](https://suttacentral.net/sn46.6/en/sujato) | Sutta (early discourses) | partly encoded | 23 / 56 | 10 | not yet reviewed |
 | [SN 46.60 Vicchiddakasutta — Split Open](https://suttacentral.net/sn46.60/en/sujato) | Sutta (early discourses) | partly encoded | 1 / 2 | 1 | not yet reviewed |
 | [SN 46.61 Uddhumātakasutta — Bloated](https://suttacentral.net/sn46.61/en/sujato) | Sutta (early discourses) | partly encoded | 1 / 2 | 1 | not yet reviewed |
 | [SN 46.62 Mettāsutta — Love](https://suttacentral.net/sn46.62/en/sujato) | Sutta (early discourses) | partly encoded | 1 / 2 | 1 | not yet reviewed |
@@ -83,6 +88,7 @@ Counts follow SuttaCentral's numbering, with grouped ranges (e.g. `sn12.93-213`)
 | [SN 46.73 Anattasutta — Not-Self in Suffering](https://suttacentral.net/sn46.73/en/sujato) | Sutta (early discourses) | partly encoded | 1 / 2 | 1 | not yet reviewed |
 | [SN 46.74 Pahānasutta — Giving Up](https://suttacentral.net/sn46.74/en/sujato) | Sutta (early discourses) | partly encoded | 1 / 2 | 1 | not yet reviewed |
 | [SN 46.75 Virāgasutta — Dispassion](https://suttacentral.net/sn46.75/en/sujato) | Sutta (early discourses) | partly encoded | 1 / 2 | 1 | not yet reviewed |
+| [SN 46.8 Upavānasutta — With Upavāṇa](https://suttacentral.net/sn46.8/en/sujato) | Sutta (early discourses) | partly encoded | 3 / 9 | 1 | not yet reviewed |
 | [Dhammapada 279](https://suttacentral.net/dhp279/en/sujato) | Sutta (early discourses) | cited only | 1 / 5 | 1 | not yet reviewed |
 | [MN 10 Satipaṭṭhānasutta — Mindfulness Meditation](https://suttacentral.net/mn10/en/sujato) | Sutta (early discourses) | cited only | 1 / 233 | 0 | not yet reviewed |
 | [MN 148 Chachakkasutta — Six By Six](https://suttacentral.net/mn148/en/sujato) | Sutta (early discourses) | cited only | 2 / 225 | 1 | not yet reviewed |
@@ -149,12 +155,12 @@ Segments cited are the passages a claim points to. A fully encoded text can stil
 ### SN 46.49 Ajjhattikaṅgasutta — Interior
 
 - **Coverage:** fully encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
-- **Encodes:** Of interior factors, nothing gives rise to the seven awakening factors like rational application of mind (1.1); one accomplished in it can expect to develop and cultivate them (1.2), by the stock formula (1.3-1.6). Corrected 2026-11-15: 1.2-1.6 had been called abbreviated; they are untranslated in the English but given in the Pali (D19).
+- **Encodes:** Of interior factors, nothing gives rise to the seven awakening factors like rational application of mind (1.1); one accomplished in it can expect to develop and cultivate them (1.2), by the stock formula (1.3-1.6). Corrected 2026-11-15: 1.2-1.6 had been called abbreviated; 1.2, 1.3 and 1.6 are untranslated in the English but given in the Pali, and 1.4-1.5 give the formula with the Pali's own abbreviation (…pe…) for the middle factors (D19; refined after the re-check audit).
 
 ### SN 46.50 Bāhiraṅgasutta — Exterior
 
 - **Coverage:** fully encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
-- **Encodes:** Of exterior factors, nothing gives rise to the seven awakening factors like good friendship (1.1); one with good friends can expect to develop and cultivate them (1.2), by the stock formula (1.3-1.6). Corrected 2026-11-15: 1.2-1.6 had been called abbreviated; they are untranslated in the English but given in the Pali (D19). The chapter's summary verse (2.0-2.4) is not a teaching.
+- **Encodes:** Of exterior factors, nothing gives rise to the seven awakening factors like good friendship (1.1); one with good friends can expect to develop and cultivate them (1.2), by the stock formula (1.3-1.6). Corrected 2026-11-15: 1.2-1.6 had been called abbreviated; 1.2, 1.3 and 1.6 are untranslated in the English but given in the Pali, and 1.4-1.5 give the formula with the Pali's own abbreviation (…pe…) for the middle factors (D19; refined after the re-check audit). The chapter's summary verse (2.0-2.4) is not a teaching.
 
 ### SN 46.51 Āhārasutta — Nourishing
 
@@ -207,6 +213,24 @@ Segments cited are the passages a claim points to. A fully encoded text can stil
 - **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
 - **Encodes:** Rational application of mind is the forerunner of the arising of the seven factors (1.2), and one accomplished in it can expect to develop them (1.3); the stock formula for each factor (relies on seclusion, fading away and cessation; ripens as letting go) (2.3).
 - **Left out:** The simile of the dawn (1.1).
+
+### SN 46.14 Paṭhamagilānasutta — Sick (1st)
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-15 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** The Buddha to the sick Mahākassapa: the seven awakening factors, rightly explained, developed and cultivated, lead to direct knowledge, awakening and extinguishment (3.1-3.4).
+- **Left out:** The setting and the exchange about his pain (1.1-2.2). Mahākassapa's affirmation (3.5-3.6). The narrative that he recovered from the illness (4.1-4.4): narrated, not taught. The Pali links the recovery to the episode, 'in that way that illness was abandoned' (tathāpahīno, 4.4, untranslated), but it teaches nothing about the factors curing illness.
+
+### SN 46.15 Dutiyagilānasutta — Sick (2nd)
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-15 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** The Buddha to the sick Mahāmoggallāna: the same statement as SN 46.14 (3.1-3.4).
+- **Left out:** The setting and the exchange about his pain (1.1-2.2). Moggallāna's affirmation (3.5-3.6). The narrative of his recovery (4.1-4.4, with the Pali-only 'in that way that illness was abandoned', 4.4): narrated, not taught.
+
+### SN 46.16 Tatiyagilānasutta — Sick (3rd)
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-15 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** Mahācunda to the sick Buddha, at his request: the same statement as SN 46.14 (2.1-2.4); the Buddha concurs (2.5-2.6, 3.2).
+- **Left out:** The setting (1.1-1.4). The Buddha's affirmation (2.5-2.6). The narrative of his recovery (3.3-3.4, with the Pali-only 'in that way that illness was abandoned', 3.4): narrated, not taught.
 
 ### SN 46.17 Pāraṅgamasutta — Going to the Far Shore
 
@@ -286,6 +310,12 @@ Segments cited are the passages a claim points to. A fully encoded text can stil
 - **Encodes:** Both lists (1.1, 1.3-1.7; 2.1, 2.3); the hindrances weaken wisdom (1.1, 1.8); developing the awakening factors leads to the realization of the fruit of knowledge and freedom (2.1, 2.4).
 - **Left out:** That the hindrances are obstacles and corruptions of the heart, and the awakening factors are not (1.1, 1.8, 2.1, 2.4). Needs a pattern for what a quality is or is not.
 
+### SN 46.4 Vatthasutta — Clothes
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-15 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** Sāriputta names the seven awakening factors (2.1-2.4).
+- **Left out:** Sāriputta's account of his own practice: he meditates in whichever factor he wishes, morning, midday and evening; knows each as limitless and properly implemented; understands that it remains while it remains, and the reason when it subsides (2.5-2.11, repeated 3.5-3.11). The simile of a chest of garments (3.1-3.4). No pattern yet for a practitioner's account or for similes.
+
 ### SN 46.40 Nīvaraṇasutta — Hindrances
 
 - **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
@@ -333,6 +363,12 @@ Segments cited are the passages a claim points to. A fully encoded text can stil
 - **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
 - **Encodes:** The one line given: the perception of a livid corpse (Pali: vinīlakasaññā), developed and cultivated, is very fruitful and beneficial (1.1).
 - **Left out:** The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14).
+
+### SN 46.6 Kuṇḍaliyasutta — Kuṇḍaliya
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-15 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** The fulfilment ladder (D20): sense restraint fulfils the three kinds of good conduct, which fulfil the four kinds of mindfulness meditation, which fulfil the seven awakening factors, which fulfil knowledge and freedom (2.1-2.8, with the closing line of each section: 5.7, 6.3, 7.6, 8.4). The three kinds of good conduct (6.2) and the four kinds of mindfulness meditation (7.2-7.5) as lists. The stock formula (8.2-8.3).
+- **Left out:** Kuṇḍaliya's framing (1.4-1.8). 'The benefit the Realized One lives for is the fruit of knowledge and freedom' (1.9): no pattern for what someone lives for. How each step is developed: sense restraint toward agreeable and disagreeable sights and the other senses (3.2-5.6), giving up bad conduct to develop good conduct (6.2), the observing practice of each mindfulness meditation (7.2-7.5): described, not modelled beyond the lists. Kuṇḍaliya's going for refuge (9.1-9.5).
 
 ### SN 46.60 Vicchiddakasutta — Split Open
 
@@ -435,6 +471,12 @@ Segments cited are the passages a claim points to. A fully encoded text can stil
 - **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
 - **Encodes:** The one line given: the perception of dispassion (Pali: virāgasaññā), developed and cultivated, is very fruitful and beneficial (1.1).
 - **Left out:** The rest of the sutta, which is abbreviated in the Pali (…pe…) and understood to repeat SN 46.57: developing it together with the awakening factors, and the further results. Not expanded here (D14).
+
+### SN 46.8 Upavānasutta — With Upavāṇa
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-15 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** Taught by Venerable Upavāṇa to Sāriputta: the seven awakening factors, properly implemented by rational application of mind, lead to living at ease (2.1-2.2, 3.3).
+- **Left out:** The setting (1.1-1.3). What a mendicant understands as they rouse up each factor: 'my mind is well freed, dullness and drowsiness eradicated, restlessness and remorse eliminated, energy roused up, mind sharply focused, not sluggish' (3.1-3.2). No pattern yet for what is known in practice; read as outcomes it would overstate the text.
 
 ### Dhammapada 279
 
