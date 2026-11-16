@@ -564,3 +564,11 @@ dho:t-sn46.16
     dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
     dho:encodes "Mahācunda to the sick Buddha, at his request: the same statement as SN 46.14 (2.1-2.4); the Buddha concurs (2.5-2.6, 3.2)." ;
     dho:leftOut "The setting (1.1-1.4). The Buddha's affirmation (2.5-2.6). The narrative of his recovery (3.3-3.4, with the Pali-only 'in that way that illness was abandoned', 3.4): narrated, not taught." .
+
+dho:t-sn46.54
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-16"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "How each heart's release (by love, compassion, rejoicing, equanimity) is developed: each awakening factor developed accompanied by that quality, with the stock formula (12.1-12.3, 13.1-13.3, 14.1-14.3, 15.1-15.3; the Pali's direction, not the English's, D21). The apex of each, for a wise mendicant who has not penetrated to a higher freedom: the beautiful; the dimension of infinite space; of infinite consciousness; of nothingness (12.8-12.9, 13.6-13.7, 14.6-14.7, 15.9-15.10)." ;
+    dho:leftOut "The narrative frame and the wanderers' challenge (1.1-10.2), including their restatement of the teaching: give up the five hindrances, corruptions of the heart that weaken wisdom, and spread a heart full of love, compassion, rejoicing and equanimity in every direction (3.2-3.5, 4.2-4.6, 8.2-9.5): said by the interlocutors (D17). The Buddha's counter-questions and 'they're out of their element' (11.1-11.9). The five ways of perceiving at will: the repulsive in the unrepulsive, the unrepulsive in the repulsive, and so on, and staying equanimous (12.4-12.8, 13.4-13.5, 14.4-14.5, 15.4-15.8): no pattern yet. The questions also ask each release's destination, fruit and end; only the apex is answered." .

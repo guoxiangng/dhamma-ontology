@@ -291,6 +291,8 @@ dho:Strengthens   a dho:Effect ; rdfs:label "strengthens"@en .
 dho:Weakens       a dho:Effect ; rdfs:label "weakens"@en .
 dho:CanExpect     a dho:Effect ; rdfs:label "can be expected to lead to (one of the alternatives)"@en ;
     rdfs:comment "pāṭikaṅkha: one of several results can be expected, e.g. 'enlightenment in this very life, or if there's residue left behind, non-return'. Each alternative is its own outcome with this effect; the note says how they relate (D19)."@en .
+dho:HasApex       a dho:Effect ; rdfs:label "has as its apex"@en ;
+    rdfs:comment "parama: 'the apex of X is Y, for a wise mendicant here who has not penetrated to a higher freedom' (SN 46.54, D21)."@en .
 dho:GivesUp       a dho:Effect ; rdfs:label "leads to giving up"@en ;
     rdfs:comment "Only for the text's pahāna ('giving up'). Ending (khaya) and cessation (nirodha) stay 'leads to' with their own target concepts."@en .
 

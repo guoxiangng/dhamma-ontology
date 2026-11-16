@@ -136,7 +136,7 @@ def export() -> dict:
              note, group="outcomes", effect=lid(eff), support=label(g, sup) if sup else None,
              inv={"LeadsTo": "reached through", "DoesNotLeadTo": "not reached through",
                   "Strengthens": "strengthened by", "Weakens": "weakened by",
-                  "CanExpect": "an expected result of"}.get(lid(eff), "from"),
+                  "CanExpect": "an expected result of", "HasApex": "the apex of"}.get(lid(eff), "from"),
              say_out=say_out, say_in=say_in)
 
     for k in g.subjects(RDF.type, DHO.Condition):

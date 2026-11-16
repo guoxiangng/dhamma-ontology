@@ -1,0 +1,79 @@
+@prefix dho:  <https://guoxiangng.github.io/dhamma-ontology/ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# SN 46.54 Full of Love (Mettāsahagatasutta), read in full, Pali first (D19, D21).
+#
+# The Buddha's teaching (11.1-15.10): how each heart's release (by love, compassion, rejoicing,
+# equanimity) is developed, and its apex.
+#
+# How it is developed: the Pali says the mendicant develops each AWAKENING FACTOR accompanied by love
+# (mettāsahagataṁ satisambojjhaṅgaṁ bhāveti). Sujato's English turns this round ("develops the heart's
+# release by love together with the awakening factors"), as in SN 46.57 (D15 correction). The Pali is
+# followed: love accompanies the development of the awakening factors.
+#
+# The apex (parama): the beautiful; the dimensions of infinite space, infinite consciousness and
+# nothingness, "for a wise mendicant here who has not penetrated to a higher freedom".
+#
+# Left out (coverage record): the wanderers' framing and their restatement (1.1-10.2, D17); the
+# challenge (11.1-11.9); the five ways of perceiving at will (12.4-12.8 and repeats).
+
+# ---------------------------------------------------------------- the four heart's releases and their apexes
+
+# dho:o-metta (SN 46.51's object "the heart's release by love") is the same concept, mettācetovimutti.
+dho:HeartsReleaseByCompassion a dho:Concept ; skos:prefLabel "the heart's release by compassion"@en , "karuṇācetovimutti"@pi .
+dho:HeartsReleaseByRejoicing a dho:Concept ; skos:prefLabel "the heart's release by rejoicing"@en , "muditācetovimutti"@pi .
+dho:HeartsReleaseByEquanimity a dho:Concept ; skos:prefLabel "the heart's release by equanimity"@en , "upekkhācetovimutti"@pi .
+
+# subha here is "the beautiful" as an attainment (12.8 Pali: subhaṁ vimokkhaṁ, "the liberation of the
+# beautiful"). Not the same as SN 46.51's "feature of beauty" (subhanimitta) that fuels sensual desire.
+dho:TheBeautiful a dho:Concept ; skos:prefLabel "the beautiful"@en , "subha"@pi ;
+    skos:note "As an attainment: 'the liberation of the beautiful' (subha vimokkha). Not SN 46.51's 'feature of beauty' (subhanimitta), which fuels sensual desire."@en .
+dho:InfiniteSpace a dho:Concept ; skos:prefLabel "the dimension of infinite space"@en , "ākāsānañcāyatana"@pi , "空無邊處"@zh .
+dho:InfiniteConsciousness a dho:Concept ; skos:prefLabel "the dimension of infinite consciousness"@en , "viññāṇañcāyatana"@pi , "識無邊處"@zh .
+dho:Nothingness a dho:Concept ; skos:prefLabel "the dimension of nothingness"@en , "ākiñcaññāyatana"@pi , "無所有處"@zh .
+
+dho:o-a1 a dho:Outcome ; dho:of dho:o-metta ; dho:effect dho:HasApex ; dho:to dho:TheBeautiful ;
+    dho:wording "is the beautiful, I say, for a wise mendicant here who has not penetrated to a higher freedom" ;
+    skos:note "The Pali of 12.8 ends 'or else they enter and remain in the liberation of the beautiful' (subhaṁ vā kho pana vimokkhaṁ upasampajja viharati); Sujato's English of that segment leaves it out."@en ;
+    dho:citedBy dho:p-sn46.54-12.1 , dho:p-sn46.54-12.8 , dho:p-sn46.54-12.9 .
+dho:o-a2 a dho:Outcome ; dho:of dho:HeartsReleaseByCompassion ; dho:effect dho:HasApex ; dho:to dho:InfiniteSpace ;
+    dho:wording "is the dimension of infinite space, I say, for a wise mendicant here who has not penetrated to a higher freedom" ;
+    dho:citedBy dho:p-sn46.54-13.1 , dho:p-sn46.54-13.6 , dho:p-sn46.54-13.7 .
+dho:o-a3 a dho:Outcome ; dho:of dho:HeartsReleaseByRejoicing ; dho:effect dho:HasApex ; dho:to dho:InfiniteConsciousness ;
+    dho:wording "is the dimension of infinite consciousness, I say, for a wise mendicant here who has not penetrated to a higher freedom" ;
+    dho:citedBy dho:p-sn46.54-14.1 , dho:p-sn46.54-14.6 , dho:p-sn46.54-14.7 .
+dho:o-a4 a dho:Outcome ; dho:of dho:HeartsReleaseByEquanimity ; dho:effect dho:HasApex ; dho:to dho:Nothingness ;
+    dho:wording "is the dimension of nothingness, I say, for a wise mendicant here who has not penetrated to a higher freedom" ;
+    dho:citedBy dho:p-sn46.54-15.1 , dho:p-sn46.54-15.9 , dho:p-sn46.54-15.10 .
+
+# ---------------------------------------------------------------- how each is developed: accompanying the awakening factors
+
+dho:c-m1 a dho:Condition ; dho:condition dho:Love ; dho:relation dho:Accompanies ; dho:conditioned dho:SevenAwakeningFactors ;
+    dho:wording "mettāsahagataṁ" ;
+    skos:note "How the heart's release by love is developed (12.1-12.3). The Pali: each awakening factor developed accompanied by love. Sujato's English: 'develops the heart's release by love together with the awakening factors'."@en ;
+    dho:citedBy dho:p-sn46.54-12.1 , dho:p-sn46.54-12.2 , dho:p-sn46.54-12.3 .
+dho:c-m2 a dho:Condition ; dho:condition dho:Compassion ; dho:relation dho:Accompanies ; dho:conditioned dho:SevenAwakeningFactors ;
+    dho:wording "karuṇāsahagataṁ" ;
+    skos:note "How the heart's release by compassion is developed (13.1-13.3). The Pali: each awakening factor developed accompanied by compassion."@en ;
+    dho:citedBy dho:p-sn46.54-13.1 , dho:p-sn46.54-13.2 , dho:p-sn46.54-13.3 .
+dho:c-m3 a dho:Condition ; dho:condition dho:Rejoicing ; dho:relation dho:Accompanies ; dho:conditioned dho:SevenAwakeningFactors ;
+    dho:wording "muditāsahagataṁ" ;
+    skos:note "How the heart's release by rejoicing is developed (14.1-14.3). The Pali: each awakening factor developed accompanied by rejoicing."@en ;
+    dho:citedBy dho:p-sn46.54-14.1 , dho:p-sn46.54-14.2 , dho:p-sn46.54-14.3 .
+dho:c-m4 a dho:Condition ; dho:condition dho:EquanimityImmeasurable ; dho:relation dho:Accompanies ; dho:conditioned dho:SevenAwakeningFactors ;
+    dho:wording "upekkhāsahagataṁ" ;
+    skos:note "How the heart's release by equanimity is developed (15.1-15.3). The Pali even has 'the awakening factor of equanimity accompanied by equanimity' (upekkhāsahagataṁ upekkhāsambojjhaṅgaṁ, 15.3): the practice and the factor are two things here, which supports keeping them as separate concepts (D15)."@en ;
+    dho:citedBy dho:p-sn46.54-15.1 , dho:p-sn46.54-15.2 , dho:p-sn46.54-15.3 .
+
+# The stock formula, restated for each (the Pali gives it in full at 15.2-15.3).
+dho:c-17 dho:citedBy dho:p-sn46.54-12.3 , dho:p-sn46.54-13.3 , dho:p-sn46.54-14.3 , dho:p-sn46.54-15.2 , dho:p-sn46.54-15.3 .
+dho:c-18 dho:citedBy dho:p-sn46.54-12.3 , dho:p-sn46.54-13.3 , dho:p-sn46.54-14.3 , dho:p-sn46.54-15.2 , dho:p-sn46.54-15.3 .
+dho:c-19 dho:citedBy dho:p-sn46.54-12.3 , dho:p-sn46.54-13.3 , dho:p-sn46.54-14.3 , dho:p-sn46.54-15.2 , dho:p-sn46.54-15.3 .
+dho:o-19 dho:citedBy dho:p-sn46.54-12.3 , dho:p-sn46.54-13.3 , dho:p-sn46.54-14.3 , dho:p-sn46.54-15.2 , dho:p-sn46.54-15.3 .
+
+# Batch 7 audit (2026-11-16): link each heart's release to the quality that accompanies the factors in
+# its development (12.1-12.2 etc.), as dho:Love already links to dho:o-metta. Editor's links: the text
+# answers "how is it developed?" with the condition above, but no pattern yet says "is developed by".
+dho:Compassion dho:editorialRelated dho:HeartsReleaseByCompassion .
+dho:Rejoicing dho:editorialRelated dho:HeartsReleaseByRejoicing .
+dho:EquanimityImmeasurable dho:editorialRelated dho:HeartsReleaseByEquanimity .

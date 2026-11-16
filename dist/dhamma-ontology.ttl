@@ -228,6 +228,11 @@ dho:c-17 a dho:Condition ;
         dho:p-sn46.5-1.7,
         dho:p-sn46.50-1.4,
         dho:p-sn46.50-1.5,
+        dho:p-sn46.54-12.3,
+        dho:p-sn46.54-13.3,
+        dho:p-sn46.54-14.3,
+        dho:p-sn46.54-15.2,
+        dho:p-sn46.54-15.3,
         dho:p-sn46.56-5.3,
         dho:p-sn46.56-6.2,
         dho:p-sn46.57-1.5,
@@ -264,6 +269,11 @@ dho:c-18 a dho:Condition ;
         dho:p-sn46.5-1.7,
         dho:p-sn46.50-1.4,
         dho:p-sn46.50-1.5,
+        dho:p-sn46.54-12.3,
+        dho:p-sn46.54-13.3,
+        dho:p-sn46.54-14.3,
+        dho:p-sn46.54-15.2,
+        dho:p-sn46.54-15.3,
         dho:p-sn46.56-5.3,
         dho:p-sn46.56-6.2,
         dho:p-sn46.57-1.5,
@@ -300,6 +310,11 @@ dho:c-19 a dho:Condition ;
         dho:p-sn46.5-1.7,
         dho:p-sn46.50-1.4,
         dho:p-sn46.50-1.5,
+        dho:p-sn46.54-12.3,
+        dho:p-sn46.54-13.3,
+        dho:p-sn46.54-14.3,
+        dho:p-sn46.54-15.2,
+        dho:p-sn46.54-15.3,
         dho:p-sn46.56-5.3,
         dho:p-sn46.56-6.2,
         dho:p-sn46.57-1.5,
@@ -379,6 +394,46 @@ dho:c-f4 a dho:Condition ;
     dho:conditioned dho:KnowledgeAndFreedom ;
     dho:relation dho:Fulfils ;
     dho:wording "the seven awakening factors are developed and cultivated so as to fulfill knowledge and freedom" .
+
+dho:c-m1 a dho:Condition ;
+    skos:note "How the heart's release by love is developed (12.1-12.3). The Pali: each awakening factor developed accompanied by love. Sujato's English: 'develops the heart's release by love together with the awakening factors'."@en ;
+    dho:citedBy dho:p-sn46.54-12.1,
+        dho:p-sn46.54-12.2,
+        dho:p-sn46.54-12.3 ;
+    dho:condition dho:Love ;
+    dho:conditioned dho:SevenAwakeningFactors ;
+    dho:relation dho:Accompanies ;
+    dho:wording "mettāsahagataṁ" .
+
+dho:c-m2 a dho:Condition ;
+    skos:note "How the heart's release by compassion is developed (13.1-13.3). The Pali: each awakening factor developed accompanied by compassion."@en ;
+    dho:citedBy dho:p-sn46.54-13.1,
+        dho:p-sn46.54-13.2,
+        dho:p-sn46.54-13.3 ;
+    dho:condition dho:Compassion ;
+    dho:conditioned dho:SevenAwakeningFactors ;
+    dho:relation dho:Accompanies ;
+    dho:wording "karuṇāsahagataṁ" .
+
+dho:c-m3 a dho:Condition ;
+    skos:note "How the heart's release by rejoicing is developed (14.1-14.3). The Pali: each awakening factor developed accompanied by rejoicing."@en ;
+    dho:citedBy dho:p-sn46.54-14.1,
+        dho:p-sn46.54-14.2,
+        dho:p-sn46.54-14.3 ;
+    dho:condition dho:Rejoicing ;
+    dho:conditioned dho:SevenAwakeningFactors ;
+    dho:relation dho:Accompanies ;
+    dho:wording "muditāsahagataṁ" .
+
+dho:c-m4 a dho:Condition ;
+    skos:note "How the heart's release by equanimity is developed (15.1-15.3). The Pali even has 'the awakening factor of equanimity accompanied by equanimity' (upekkhāsahagataṁ upekkhāsambojjhaṅgaṁ, 15.3): the practice and the factor are two things here, which supports keeping them as separate concepts (D15)."@en ;
+    dho:citedBy dho:p-sn46.54-15.1,
+        dho:p-sn46.54-15.2,
+        dho:p-sn46.54-15.3 ;
+    dho:condition dho:EquanimityImmeasurable ;
+    dho:conditioned dho:SevenAwakeningFactors ;
+    dho:relation dho:Accompanies ;
+    dho:wording "upekkhāsahagataṁ" .
 
 dho:c-p57 a dho:Condition ;
     skos:note "The Pali: the mendicant develops each awakening factor accompanied by the perception of a skeleton. Sujato's English: 'develops the perception of a skeleton together with the awakening factors'."@en ;
@@ -1139,6 +1194,11 @@ dho:o-19 a dho:Outcome ;
         dho:p-sn46.5-1.7,
         dho:p-sn46.50-1.4,
         dho:p-sn46.50-1.5,
+        dho:p-sn46.54-12.3,
+        dho:p-sn46.54-13.3,
+        dho:p-sn46.54-14.3,
+        dho:p-sn46.54-15.2,
+        dho:p-sn46.54-15.3,
         dho:p-sn46.56-5.3,
         dho:p-sn46.56-6.2,
         dho:p-sn46.57-1.5,
@@ -1307,6 +1367,43 @@ dho:o-33 a dho:Outcome ;
     dho:of dho:SevenAwakeningFactors ;
     dho:to dho:GreatEase ;
     dho:wording "the seven awakening factors have been properly implemented so that they lead to living at ease" .
+
+dho:o-a1 a dho:Outcome ;
+    skos:note "The Pali of 12.8 ends 'or else they enter and remain in the liberation of the beautiful' (subhaṁ vā kho pana vimokkhaṁ upasampajja viharati); Sujato's English of that segment leaves it out."@en ;
+    dho:citedBy dho:p-sn46.54-12.1,
+        dho:p-sn46.54-12.8,
+        dho:p-sn46.54-12.9 ;
+    dho:effect dho:HasApex ;
+    dho:of dho:o-metta ;
+    dho:to dho:TheBeautiful ;
+    dho:wording "is the beautiful, I say, for a wise mendicant here who has not penetrated to a higher freedom" .
+
+dho:o-a2 a dho:Outcome ;
+    dho:citedBy dho:p-sn46.54-13.1,
+        dho:p-sn46.54-13.6,
+        dho:p-sn46.54-13.7 ;
+    dho:effect dho:HasApex ;
+    dho:of dho:HeartsReleaseByCompassion ;
+    dho:to dho:InfiniteSpace ;
+    dho:wording "is the dimension of infinite space, I say, for a wise mendicant here who has not penetrated to a higher freedom" .
+
+dho:o-a3 a dho:Outcome ;
+    dho:citedBy dho:p-sn46.54-14.1,
+        dho:p-sn46.54-14.6,
+        dho:p-sn46.54-14.7 ;
+    dho:effect dho:HasApex ;
+    dho:of dho:HeartsReleaseByRejoicing ;
+    dho:to dho:InfiniteConsciousness ;
+    dho:wording "is the dimension of infinite consciousness, I say, for a wise mendicant here who has not penetrated to a higher freedom" .
+
+dho:o-a4 a dho:Outcome ;
+    dho:citedBy dho:p-sn46.54-15.1,
+        dho:p-sn46.54-15.10,
+        dho:p-sn46.54-15.9 ;
+    dho:effect dho:HasApex ;
+    dho:of dho:HeartsReleaseByEquanimity ;
+    dho:to dho:Nothingness ;
+    dho:wording "is the dimension of nothingness, I say, for a wise mendicant here who has not penetrated to a higher freedom" .
 
 dho:o-p57 a dho:Outcome ;
     dho:citedBy dho:p-sn46.57-1.2,
@@ -1864,10 +1961,6 @@ dho:CessationOfCraving a dho:Concept ;
     skos:prefLabel "the cessation of craving"@en,
         "taṇhānirodha"@pi .
 
-dho:Compassion a dho:Practice ;
-    skos:prefLabel "compassion"@en,
-        "karuṇā"@pi .
-
 dho:Conceit a dho:MentalQuality ;
     skos:prefLabel "conceit"@en,
         "māna"@pi,
@@ -1990,11 +2083,6 @@ dho:EquanimityExternal a dho:Aspect ;
     skos:prefLabel "equanimity for external things"@en,
         "bahiddhā dhammesu upekkhā"@pi .
 
-dho:EquanimityImmeasurable a dho:Practice ;
-    skos:prefLabel "equanimity"@en,
-        "upekkhā"@pi ;
-    dho:editorialRelated dho:Equanimity .
-
 dho:EquanimityInternal a dho:Aspect ;
     skos:prefLabel "equanimity for internal things"@en,
         "ajjhattaṁ dhammesu upekkhā"@pi .
@@ -2084,6 +2172,16 @@ dho:ImpermanencePerception a dho:Practice ;
     skos:prefLabel "the perception of impermanence"@en,
         "aniccasaññā"@pi .
 
+dho:InfiniteConsciousness a dho:Concept ;
+    skos:prefLabel "the dimension of infinite consciousness"@en,
+        "viññāṇañcāyatana"@pi,
+        "識無邊處"@zh .
+
+dho:InfiniteSpace a dho:Concept ;
+    skos:prefLabel "the dimension of infinite space"@en,
+        "ākāsānañcāyatana"@pi,
+        "空無邊處"@zh .
+
 dho:InvestigationExternal a dho:Aspect ;
     skos:prefLabel "investigating, exploring, and inquiring into external things with wisdom"@en,
         "bahiddhā dhammesu paññāya pavicinati"@pi .
@@ -2124,11 +2222,6 @@ dho:LividPerception a dho:Practice ;
     skos:prefLabel "the perception of a livid corpse"@en,
         "vinīlakasaññā"@pi .
 
-dho:Love a dho:Practice ;
-    skos:prefLabel "love"@en,
-        "mettā"@pi ;
-    dho:editorialRelated dho:o-metta .
-
 dho:MentalGoodConduct a dho:Concept ;
     skos:prefLabel "good conduct by way of mind"@en,
         "manosucarita"@pi .
@@ -2152,6 +2245,11 @@ dho:NotKnowingSeeing a dho:Concept ;
 dho:NotSelfInSufferingPerception a dho:Practice ;
     skos:prefLabel "the perception of not-self in suffering"@en,
         "dukkhe anattasaññā"@pi .
+
+dho:Nothingness a dho:Concept ;
+    skos:prefLabel "the dimension of nothingness"@en,
+        "ākiñcaññāyatana"@pi,
+        "無所有處"@zh .
 
 dho:ObservingBody a dho:Concept ;
     skos:prefLabel "observing an aspect of the body"@en,
@@ -2196,10 +2294,6 @@ dho:RecollectingTeaching a dho:Concept ;
 dho:ReferencedOnly a dho:CoverageStatus ;
     rdfs:label "referenced only"@en ;
     rdfs:comment "Cited by reference; we do not hold its text, so its claims are unverified."@en .
-
-dho:Rejoicing a dho:Practice ;
-    skos:prefLabel "rejoicing"@en,
-        "muditā"@pi .
 
 dho:Remorse a dho:MentalQuality ;
     skos:altLabel "worry"@en ;
@@ -2253,6 +2347,11 @@ dho:Strengthens a dho:Effect ;
 dho:SufferingInImpermanencePerception a dho:Practice ;
     skos:prefLabel "the perception of suffering in impermanence"@en,
         "anicce dukkhasaññā"@pi .
+
+dho:TheBeautiful a dho:Concept ;
+    skos:note "As an attainment: 'the liberation of the beautiful' (subha vimokkha). Not SN 46.51's 'feature of beauty' (subhanimitta), which fuels sensual desire."@en ;
+    skos:prefLabel "the beautiful"@en,
+        "subha"@pi .
 
 dho:ThingsThatTightenFetters a dho:Concept ;
     skos:prefLabel "the things that tighten the fetters"@en,
@@ -4248,6 +4347,83 @@ dho:p-sn46.53-15.4 a dho:Passage ;
     dho:textPi "Satiñca khvāhaṁ, bhikkhave, sabbatthikaṁ vadāmī”ti."@pi ;
     dho:url "https://suttacentral.net/sn46.53/en/sujato#sn46.53:15.4"^^xsd:anyURI .
 
+dho:p-sn46.54-12.2 a dho:Passage ;
+    dho:inText dho:t-sn46.54 ;
+    dho:segment "sn46.54:12.2" ;
+    dho:textEn "It’s when a mendicant develops the heart’s release by love together with the awakening factors of mindfulness, investigation of principles, energy, rapture, tranquility, immersion,"@en ;
+    dho:textPi "Idha, bhikkhave, bhikkhu mettāsahagataṁ satisambojjhaṅgaṁ bhāveti …pe…"@pi ;
+    dho:url "https://suttacentral.net/sn46.54/en/sujato#sn46.54:12.2"^^xsd:anyURI .
+
+dho:p-sn46.54-12.8 a dho:Passage ;
+    dho:inText dho:t-sn46.54 ;
+    dho:segment "sn46.54:12.8" ;
+    dho:textEn "If they wish: ‘May I meditate staying equanimous, mindful and aware, shunning both the repulsive and the unrepulsive,’ that’s what they do."@en ;
+    dho:textPi "Sace ākaṅkhati ‘appaṭikūlañca paṭikūlañca tadubhayaṁ abhinivajjetvā upekkhako vihareyyaṁ sato sampajāno’ti, upekkhako ca tattha viharati sato sampajāno, subhaṁ vā kho pana vimokkhaṁ upasampajja viharati."@pi ;
+    dho:url "https://suttacentral.net/sn46.54/en/sujato#sn46.54:12.8"^^xsd:anyURI .
+
+dho:p-sn46.54-12.9 a dho:Passage ;
+    dho:inText dho:t-sn46.54 ;
+    dho:segment "sn46.54:12.9" ;
+    dho:textEn "The apex of the heart’s release by love is the beautiful, I say, for a wise mendicant here who has not penetrated to a higher freedom."@en ;
+    dho:textPi "Subhaparamāhaṁ, bhikkhave, mettācetovimuttiṁ vadāmi, idhapaññassa bhikkhuno uttarivimuttiṁ appaṭivijjhato."@pi ;
+    dho:url "https://suttacentral.net/sn46.54/en/sujato#sn46.54:12.9"^^xsd:anyURI .
+
+dho:p-sn46.54-13.2 a dho:Passage ;
+    dho:inText dho:t-sn46.54 ;
+    dho:segment "sn46.54:13.2" ;
+    dho:textEn "It’s when a mendicant develops the heart’s release by compassion together with the awakening factors of mindfulness, investigation of principles, energy, rapture, tranquility, immersion,"@en ;
+    dho:textPi "Idha, bhikkhave, bhikkhu karuṇāsahagataṁ satisambojjhaṅgaṁ bhāveti …pe…"@pi ;
+    dho:url "https://suttacentral.net/sn46.54/en/sujato#sn46.54:13.2"^^xsd:anyURI .
+
+dho:p-sn46.54-13.6 a dho:Passage ;
+    dho:inText dho:t-sn46.54 ;
+    dho:segment "sn46.54:13.6" ;
+    dho:textEn "Or else, going totally beyond perceptions of form, with the disappearance of perceptions of impingement, not focusing on perceptions of diversity, aware that ‘space is infinite’, they enter and remain in the dimension of infinite space."@en ;
+    dho:textPi "Sabbaso vā pana rūpasaññānaṁ samatikkamā paṭighasaññānaṁ atthaṅgamā nānattasaññānaṁ amanasikārā ‘ananto ākāso’ti ākāsānañcāyatanaṁ upasampajja viharati."@pi ;
+    dho:url "https://suttacentral.net/sn46.54/en/sujato#sn46.54:13.6"^^xsd:anyURI .
+
+dho:p-sn46.54-13.7 a dho:Passage ;
+    dho:inText dho:t-sn46.54 ;
+    dho:segment "sn46.54:13.7" ;
+    dho:textEn "The apex of the heart’s release by compassion is the dimension of infinite space, I say, for a wise mendicant here who has not penetrated to a higher freedom."@en ;
+    dho:textPi "Ākāsānañcāyatanaparamāhaṁ, bhikkhave, karuṇācetovimuttiṁ vadāmi, idhapaññassa bhikkhuno uttarivimuttiṁ appaṭivijjhato."@pi ;
+    dho:url "https://suttacentral.net/sn46.54/en/sujato#sn46.54:13.7"^^xsd:anyURI .
+
+dho:p-sn46.54-14.2 a dho:Passage ;
+    dho:inText dho:t-sn46.54 ;
+    dho:segment "sn46.54:14.2" ;
+    dho:textEn "It’s when a mendicant develops the heart’s release by rejoicing together with the awakening factors of mindfulness, investigation of principles, energy, rapture, tranquility, immersion,"@en ;
+    dho:textPi "Idha, bhikkhave, bhikkhu muditāsahagataṁ satisambojjhaṅgaṁ bhāveti …pe…"@pi ;
+    dho:url "https://suttacentral.net/sn46.54/en/sujato#sn46.54:14.2"^^xsd:anyURI .
+
+dho:p-sn46.54-14.6 a dho:Passage ;
+    dho:inText dho:t-sn46.54 ;
+    dho:segment "sn46.54:14.6" ;
+    dho:textEn "Or else, going totally beyond the dimension of infinite space, aware that ‘consciousness is infinite’, they enter and remain in the dimension of infinite consciousness."@en ;
+    dho:textPi "Sabbaso vā pana ākāsānañcāyatanaṁ samatikkamma ‘anantaṁ viññāṇan’ti viññāṇañcāyatanaṁ upasampajja viharati."@pi ;
+    dho:url "https://suttacentral.net/sn46.54/en/sujato#sn46.54:14.6"^^xsd:anyURI .
+
+dho:p-sn46.54-14.7 a dho:Passage ;
+    dho:inText dho:t-sn46.54 ;
+    dho:segment "sn46.54:14.7" ;
+    dho:textEn "The apex of the heart’s release by rejoicing is the dimension of infinite consciousness, I say, for a wise mendicant here who has not penetrated to a higher freedom."@en ;
+    dho:textPi "Viññāṇañcāyatanaparamāhaṁ, bhikkhave, muditācetovimuttiṁ vadāmi, idhapaññassa bhikkhuno uttarivimuttiṁ appaṭivijjhato."@pi ;
+    dho:url "https://suttacentral.net/sn46.54/en/sujato#sn46.54:14.7"^^xsd:anyURI .
+
+dho:p-sn46.54-15.10 a dho:Passage ;
+    dho:inText dho:t-sn46.54 ;
+    dho:segment "sn46.54:15.10" ;
+    dho:textEn "The apex of the heart’s release by equanimity is the dimension of nothingness, I say, for a wise mendicant here who has not penetrated to a higher freedom.”"@en ;
+    dho:textPi "Ākiñcaññāyatanaparamāhaṁ, bhikkhave, upekkhācetovimuttiṁ vadāmi, idhapaññassa bhikkhuno uttarivimuttiṁ appaṭivijjhato”ti."@pi ;
+    dho:url "https://suttacentral.net/sn46.54/en/sujato#sn46.54:15.10"^^xsd:anyURI .
+
+dho:p-sn46.54-15.9 a dho:Passage ;
+    dho:inText dho:t-sn46.54 ;
+    dho:segment "sn46.54:15.9" ;
+    dho:textEn "Or else, going totally beyond the dimension of infinite consciousness, aware that ‘there is nothing at all’, they enter and remain in the dimension of nothingness."@en ;
+    dho:textPi "Sabbaso vā pana viññāṇañcāyatanaṁ samatikkamma ‘natthi kiñcī’ti ākiñcaññāyatanaṁ upasampajja viharati."@pi ;
+    dho:url "https://suttacentral.net/sn46.54/en/sujato#sn46.54:15.9"^^xsd:anyURI .
+
 dho:p-sn46.56-1.10 a dho:Passage ;
     dho:inText dho:t-sn46.56 ;
     dho:segment "sn46.56:1.10" ;
@@ -5062,10 +5238,6 @@ dho:t-sn46.75 a dho:Text ;
     dho:review dho:Unreviewed ;
     dho:url "https://suttacentral.net/sn46.75/en/sujato"^^xsd:anyURI .
 
-dho:Accompanies a dho:ConditionRelation ;
-    rdfs:label "accompanies the development of"@en ;
-    rdfs:comment "X-sahagata: the awakening factor is developed accompanied by X (SN 46.57-76). The condition is X, the conditioned is the awakening factors. Sujato's English turns the grammar round ('develops X together with the awakening factors'); the Pali is followed (D15 correction, D19)."@en .
-
 dho:Bliss a dho:MentalQuality ;
     skos:altLabel "happiness"@en,
         "pleasure"@en ;
@@ -5086,6 +5258,11 @@ dho:Cessation a dho:Concept ;
         "nirodha"@pi,
         "滅"@zh .
 
+dho:Compassion a dho:Practice ;
+    skos:prefLabel "compassion"@en,
+        "karuṇā"@pi ;
+    dho:editorialRelated dho:HeartsReleaseByCompassion .
+
 dho:Diligence a dho:Concept ;
     skos:altLabel "heedfulness"@en ;
     skos:prefLabel "diligence"@en,
@@ -5095,6 +5272,12 @@ dho:Diligence a dho:Concept ;
 dho:Enlightenment a dho:Concept ;
     skos:prefLabel "enlightenment in this very life"@en,
         "aññā"@pi .
+
+dho:EquanimityImmeasurable a dho:Practice ;
+    skos:prefLabel "equanimity"@en,
+        "upekkhā"@pi ;
+    dho:editorialRelated dho:Equanimity,
+        dho:HeartsReleaseByEquanimity .
 
 dho:FirstJhanaFactors a dho:NumberedList ;
     skos:prefLabel "the five factors of the first absorption"@en,
@@ -5142,6 +5325,18 @@ dho:GreatBenefit a dho:Concept ;
     skos:prefLabel "great benefit"@en,
         "attha"@pi .
 
+dho:HeartsReleaseByCompassion a dho:Concept ;
+    skos:prefLabel "the heart's release by compassion"@en,
+        "karuṇācetovimutti"@pi .
+
+dho:HeartsReleaseByEquanimity a dho:Concept ;
+    skos:prefLabel "the heart's release by equanimity"@en,
+        "upekkhācetovimutti"@pi .
+
+dho:HeartsReleaseByRejoicing a dho:Concept ;
+    skos:prefLabel "the heart's release by rejoicing"@en,
+        "muditācetovimutti"@pi .
+
 dho:Hindrance a owl:Class ;
     rdfs:label "Hindrance"@en,
         "nīvaraṇa"@pi,
@@ -5174,6 +5369,11 @@ dho:ListeningToTeaching a dho:Concept ;
     skos:prefLabel "actively listening to the teaching"@en,
         "ohitasoto dhammaṁ suṇāti"@pi .
 
+dho:Love a dho:Practice ;
+    skos:prefLabel "love"@en,
+        "mettā"@pi ;
+    dho:editorialRelated dho:o-metta .
+
 dho:NamedParts a dho:DivisionBasis ;
     rdfs:label "the two qualities its name joins"@en ;
     rdfs:comment "A compound name split into its two words: thina / middha, uddhacca / kukkucca."@en .
@@ -5193,6 +5393,11 @@ dho:PlacingTheMind a dho:MentalQuality ;
     skos:prefLabel "placing the mind"@en,
         "vitakka"@pi,
         "尋"@zh .
+
+dho:Rejoicing a dho:Practice ;
+    skos:prefLabel "rejoicing"@en,
+        "muditā"@pi ;
+    dho:editorialRelated dho:HeartsReleaseByRejoicing .
 
 dho:Restlessness a dho:MentalQuality ;
     skos:prefLabel "restlessness"@en,
@@ -5254,10 +5459,6 @@ dho:o-grounds-mindfulness a dho:AttentionObject ;
 dho:o-grounds-rapture a dho:AttentionObject ;
     skos:prefLabel "things that are grounds for the awakening factor of rapture"@en,
         "pītisambojjhaṅgaṭṭhānīyā dhammā"@pi .
-
-dho:o-metta a dho:AttentionObject ;
-    skos:prefLabel "the heart's release by love"@en,
-        "mettācetovimutti"@pi .
 
 dho:o-serenity a dho:AttentionObject ;
     skos:prefLabel "the basis of serenity and freedom from distraction"@en,
@@ -5377,6 +5578,34 @@ dho:p-sn46.51-7.2 a dho:Passage ;
     dho:textPi "Atthi, bhikkhave, kusalākusalā dhammā sāvajjānavajjā dhammā hīnapaṇītā dhammā kaṇhasukkasappaṭibhāgā dhammā."@pi ;
     dho:url "https://suttacentral.net/sn46.51/en/sujato#sn46.51:7.2"^^xsd:anyURI ;
     dho:usesSense dho:sense-dhamma-quality .
+
+dho:p-sn46.54-12.1 a dho:Passage ;
+    dho:inText dho:t-sn46.54 ;
+    dho:segment "sn46.54:12.1" ;
+    dho:textEn "And how is the heart’s release by love developed? What is its destination, apex, fruit, and end?"@en ;
+    dho:textPi "Kathaṁ bhāvitā ca, bhikkhave, mettācetovimutti, kiṅgatikā hoti, kiṁparamā, kiṁphalā, kiṁpariyosānā?"@pi ;
+    dho:url "https://suttacentral.net/sn46.54/en/sujato#sn46.54:12.1"^^xsd:anyURI .
+
+dho:p-sn46.54-13.1 a dho:Passage ;
+    dho:inText dho:t-sn46.54 ;
+    dho:segment "sn46.54:13.1" ;
+    dho:textEn "And how is the heart’s release by compassion developed? What is its destination, apex, fruit, and end?"@en ;
+    dho:textPi "Kathaṁ bhāvitā ca, bhikkhave, karuṇācetovimutti, kiṅgatikā hoti, kiṁparamā, kiṁphalā, kiṁpariyosānā?"@pi ;
+    dho:url "https://suttacentral.net/sn46.54/en/sujato#sn46.54:13.1"^^xsd:anyURI .
+
+dho:p-sn46.54-14.1 a dho:Passage ;
+    dho:inText dho:t-sn46.54 ;
+    dho:segment "sn46.54:14.1" ;
+    dho:textEn "And how is the heart’s release by rejoicing developed? What is its destination, apex, fruit, and end?"@en ;
+    dho:textPi "Kathaṁ bhāvitā ca, bhikkhave, muditācetovimutti, kiṅgatikā hoti, kiṁparamā, kiṁphalā, kiṁpariyosānā?"@pi ;
+    dho:url "https://suttacentral.net/sn46.54/en/sujato#sn46.54:14.1"^^xsd:anyURI .
+
+dho:p-sn46.54-15.1 a dho:Passage ;
+    dho:inText dho:t-sn46.54 ;
+    dho:segment "sn46.54:15.1" ;
+    dho:textEn "And how is the heart’s release by equanimity developed? What is its destination, apex, fruit, and end?"@en ;
+    dho:textPi "Kathaṁ bhāvitā ca, bhikkhave, upekkhācetovimutti, kiṅgatikā hoti, kiṁparamā, kiṁphalā, kiṁpariyosānā?"@pi ;
+    dho:url "https://suttacentral.net/sn46.54/en/sujato#sn46.54:15.1"^^xsd:anyURI .
 
 dho:p-sn46.57-1.4 a dho:Passage ;
     dho:inText dho:t-sn46.57 ;
@@ -5581,6 +5810,10 @@ dho:memberOf a owl:ObjectProperty ;
 dho:o-energy-elements a dho:AttentionObject ;
     skos:prefLabel "the elements of initiative, persistence, and exertion"@en,
         "ārambhadhātu nikkamadhātu parakkamadhātu"@pi .
+
+dho:o-metta a dho:AttentionObject ;
+    skos:prefLabel "the heart's release by love"@en,
+        "mettācetovimutti"@pi .
 
 dho:o-qualities a dho:AttentionObject ;
     skos:prefLabel "qualities that are skillful and unskillful, blameworthy and blameless, inferior and superior, and with a portion of dark or bright"@en,
@@ -5990,6 +6223,10 @@ dho:Fulfils a dho:ConditionRelation ;
     rdfs:label "fulfils"@en ;
     rdfs:comment "'developed and cultivated so as to fulfill' (bhāvitā bahulīkatā paripūrenti), SN 46.6 (D20)."@en .
 
+dho:HasApex a dho:Effect ;
+    rdfs:label "has as its apex"@en ;
+    rdfs:comment "parama: 'the apex of X is Y, for a wise mendicant here who has not penetrated to a higher freedom' (SN 46.54, D21)."@en .
+
 dho:ReviewStatus a owl:Class ;
     rdfs:label "Review status"@en .
 
@@ -6269,6 +6506,41 @@ dho:p-sn46.52-9.12 a dho:Passage ;
     dho:textPi "Ayaṁ kho, bhikkhave, pariyāyo, yaṁ pariyāyaṁ āgamma pañca nīvaraṇā dasa honti."@pi ;
     dho:url "https://suttacentral.net/sn46.52/en/sujato#sn46.52:9.12"^^xsd:anyURI .
 
+dho:p-sn46.54-12.3 a dho:Passage ;
+    dho:inText dho:t-sn46.54 ;
+    dho:segment "sn46.54:12.3" ;
+    dho:textEn "and equanimity, which rely on seclusion, fading away, and cessation, and ripen as letting go."@en ;
+    dho:textPi "mettāsahagataṁ upekkhāsambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ."@pi ;
+    dho:url "https://suttacentral.net/sn46.54/en/sujato#sn46.54:12.3"^^xsd:anyURI .
+
+dho:p-sn46.54-13.3 a dho:Passage ;
+    dho:inText dho:t-sn46.54 ;
+    dho:segment "sn46.54:13.3" ;
+    dho:textEn "and equanimity, which rely on seclusion, fading away, and cessation, and ripen as letting go."@en ;
+    dho:textPi "karuṇāsahagataṁ upekkhāsambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ."@pi ;
+    dho:url "https://suttacentral.net/sn46.54/en/sujato#sn46.54:13.3"^^xsd:anyURI .
+
+dho:p-sn46.54-14.3 a dho:Passage ;
+    dho:inText dho:t-sn46.54 ;
+    dho:segment "sn46.54:14.3" ;
+    dho:textEn "and equanimity, which rely on seclusion, fading away, and cessation, and ripen as letting go."@en ;
+    dho:textPi "muditāsahagataṁ upekkhāsambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ."@pi ;
+    dho:url "https://suttacentral.net/sn46.54/en/sujato#sn46.54:14.3"^^xsd:anyURI .
+
+dho:p-sn46.54-15.2 a dho:Passage ;
+    dho:inText dho:t-sn46.54 ;
+    dho:segment "sn46.54:15.2" ;
+    dho:textEn "It’s when a mendicant develops the heart’s release by equanimity together with the awakening factors of mindfulness, investigation of principles, energy, rapture, tranquility, immersion,"@en ;
+    dho:textPi "Idha, bhikkhave, bhikkhu upekkhāsahagataṁ satisambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ …pe…"@pi ;
+    dho:url "https://suttacentral.net/sn46.54/en/sujato#sn46.54:15.2"^^xsd:anyURI .
+
+dho:p-sn46.54-15.3 a dho:Passage ;
+    dho:inText dho:t-sn46.54 ;
+    dho:segment "sn46.54:15.3" ;
+    dho:textEn "and equanimity, which rely on seclusion, fading away, and cessation, and ripen as letting go."@en ;
+    dho:textPi "upekkhāsahagataṁ upekkhāsambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ."@pi ;
+    dho:url "https://suttacentral.net/sn46.54/en/sujato#sn46.54:15.3"^^xsd:anyURI .
+
 dho:p-sn46.76-2.6 a dho:Passage ;
     dho:inText dho:t-sn46.76 ;
     dho:segment "sn46.76:2.6" ;
@@ -6380,6 +6652,10 @@ dho:t-vism a dho:Text ;
     dho:modelledOn "2026-11-13"^^xsd:date ;
     dho:review dho:Unreviewed .
 
+dho:Accompanies a dho:ConditionRelation ;
+    rdfs:label "accompanies the development of"@en ;
+    rdfs:comment "X-sahagata: the awakening factor is developed accompanied by X (SN 46.57-76). The condition is X, the conditioned is the awakening factors. Sujato's English turns the grammar round ('develops X together with the awakening factors'); the Pali is followed (D15 correction, D19)."@en .
+
 dho:CommentaryLayer a dho:SourceLayer ;
     rdfs:label "Commentary / later treatise"@en .
 
@@ -6483,9 +6759,6 @@ dho:DullnessDrowsiness a dho:MentalQuality ;
         "thinamiddha"@pi,
         "惛沈睡眠"@zh .
 
-dho:Effect a owl:Class ;
-    rdfs:label "Effect"@en .
-
 dho:IrrationalAttention a dho:AttentionMode ;
     rdfs:label "irrational application of mind"@en,
         "ayoniso manasikāra"@pi,
@@ -6566,6 +6839,9 @@ dho:t-sn46.28 a dho:Text ;
 dho:CessationPerception a dho:Practice ;
     skos:prefLabel "the perception of cessation"@en,
         "nirodhasaññā"@pi .
+
+dho:Effect a owl:Class ;
+    rdfs:label "Effect"@en .
 
 dho:Energy a dho:MentalQuality ;
     skos:altLabel "effort"@en,
@@ -6799,6 +7075,19 @@ dho:Practice a owl:Class ;
     rdfs:label "Practice"@en ;
     rdfs:subClassOf dho:Concept .
 
+dho:t-sn46.54 a dho:Text ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
+    skos:prefLabel "SN 46.54 Mettāsahagatasutta — Full of Love"@en ;
+    dho:coverage dho:PartlyEncoded ;
+    dho:encodes "How each heart's release (by love, compassion, rejoicing, equanimity) is developed: each awakening factor developed accompanied by that quality, with the stock formula (12.1-12.3, 13.1-13.3, 14.1-14.3, 15.1-15.3; the Pali's direction, not the English's, D21). The apex of each, for a wise mendicant who has not penetrated to a higher freedom: the beautiful; the dimension of infinite space; of infinite consciousness; of nothingness (12.8-12.9, 13.6-13.7, 14.6-14.7, 15.9-15.10)." ;
+    dho:layer dho:SuttaLayer ;
+    dho:leftOut "The narrative frame and the wanderers' challenge (1.1-10.2), including their restatement of the teaching: give up the five hindrances, corruptions of the heart that weaken wisdom, and spread a heart full of love, compassion, rejoicing and equanimity in every direction (3.2-3.5, 4.2-4.6, 8.2-9.5): said by the interlocutors (D17). The Buddha's counter-questions and 'they're out of their element' (11.1-11.9). The five ways of perceiving at will: the repulsive in the unrepulsive, the unrepulsive in the repulsive, and so on, and staying equanimous (12.4-12.8, 13.4-13.5, 14.4-14.5, 15.4-15.8): no pattern yet. The questions also ask each release's destination, fruit and end; only the apex is answered." ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:modelledOn "2026-11-16"^^xsd:date ;
+    dho:review dho:Unreviewed ;
+    dho:url "https://suttacentral.net/sn46.54/en/sujato"^^xsd:anyURI .
+
 dho:t-sn46.6 a dho:Text ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
@@ -6882,6 +7171,9 @@ dho:PartlyEncoded a dho:CoverageStatus ;
     rdfs:label "partly encoded"@en ;
     rdfs:comment "Some sections are modelled; dho:leftOut says what is not."@en .
 
+dho:LeadsTo a dho:Effect ;
+    rdfs:label "leads to"@en .
+
 dho:SevenAwakeningFactors a dho:NumberedList ;
     skos:altLabel "the seven factors of enlightenment"@en ;
     skos:prefLabel "the seven awakening factors"@en,
@@ -6937,24 +7229,21 @@ dho:SevenAwakeningFactors a dho:NumberedList ;
         dho:Rapture,
         dho:Tranquility .
 
-dho:LeadsTo a dho:Effect ;
-    rdfs:label "leads to"@en .
-
-dho:Concept a owl:Class ;
-    rdfs:label "Concept"@en ;
-    rdfs:comment "Anything the teachings talk about."@en ;
-    rdfs:subClassOf skos:Concept .
+dho:SuttaLayer a dho:SourceLayer ;
+    rdfs:label "Sutta (early discourses)"@en .
 
 dho:Outcome a owl:Class ;
     rdfs:label "Outcome"@en ;
     rdfs:comment "A sutta's statement that something leads to, or works against, something else."@en .
 
-dho:SuttaLayer a dho:SourceLayer ;
-    rdfs:label "Sutta (early discourses)"@en .
-
 dho:Unreviewed a dho:ReviewStatus ;
     rdfs:label "not yet reviewed"@en ;
     rdfs:comment "Modelled by the editor (with an AI assistant); nobody else has checked it."@en .
+
+dho:Concept a owl:Class ;
+    rdfs:label "Concept"@en ;
+    rdfs:comment "Anything the teachings talk about."@en ;
+    rdfs:subClassOf skos:Concept .
 
 dho:Text a owl:Class ;
     rdfs:label "Text"@en .

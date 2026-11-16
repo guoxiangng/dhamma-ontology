@@ -188,7 +188,7 @@ dho:DefinitionShape a sh:NodeShape ;
 dho:OutcomeShape a sh:NodeShape ;
     sh:targetClass dho:Outcome ;
     sh:property [ sh:path dho:of ;      sh:minCount 1 ; sh:maxCount 1 ; sh:message "S12: outcome must say what has the effect (dho:of)." ] ;
-    sh:property [ sh:path dho:effect ;  sh:minCount 1 ; sh:maxCount 1 ; sh:in ( dho:LeadsTo dho:DoesNotLeadTo dho:Strengthens dho:Weakens dho:GivesUp dho:CanExpect ) ;
+    sh:property [ sh:path dho:effect ;  sh:minCount 1 ; sh:maxCount 1 ; sh:in ( dho:LeadsTo dho:DoesNotLeadTo dho:Strengthens dho:Weakens dho:GivesUp dho:CanExpect dho:HasApex ) ;
                   sh:message "S12: outcome needs exactly one effect: leads to, does not lead to, strengthens, weakens, leads to giving up." ] ;
     sh:property [ sh:path dho:to ;      sh:minCount 1 ; sh:maxCount 1 ; sh:message "S12: outcome must say what it leads to (dho:to)." ] ;
     sh:property [ sh:path dho:wording ; sh:minCount 1 ; sh:maxCount 1 ; sh:message "S12: outcome must keep the text's own wording." ] ;

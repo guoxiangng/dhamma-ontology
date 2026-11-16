@@ -1,0 +1,26 @@
+{
+  "batch": "batch7",
+  "texts": [
+    {
+      "uid": "sn46.54",
+      "claims": [
+        {"id": "c-17", "verdict": "SUPPORTED", "severity": null, "reason": "Buddha speaking. vivekanissitaṁ agrees with the awakening factor (12.3, 13.3, 14.3, 15.3; and in 15.2 the Pali also attaches it to the mindfulness factor), so 'the factors rely on seclusion' means seclusion is their basis. The direction is right."},
+        {"id": "c-18", "verdict": "SUPPORTED", "severity": null, "reason": "virāganissitaṁ in the same segments. Same reasoning as c-17."},
+        {"id": "c-19", "verdict": "SUPPORTED", "severity": null, "reason": "nirodhanissitaṁ in the same segments. Same reasoning as c-17."},
+        {"id": "c-m1", "verdict": "SUPPORTED", "severity": null, "reason": "Pali 12.2-12.3 'mettāsahagataṁ satisambojjhaṅgaṁ … upekkhāsambojjhaṅgaṁ bhāveti': the object of bhāveti is the awakening factor, accompanied by love, so the claim follows the Pali rather than Sujato's reversed English, and the note says so correctly. The Pali spells out only the first and seventh factors (…pe…), so 'seven' relies on the standard expansion."},
+        {"id": "c-m2", "verdict": "SUPPORTED", "severity": null, "reason": "13.2-13.3 karuṇāsahagataṁ … sambojjhaṅgaṁ bhāveti. Same structure as c-m1."},
+        {"id": "c-m3", "verdict": "SUPPORTED", "severity": null, "reason": "14.2-14.3 muditāsahagataṁ … sambojjhaṅgaṁ bhāveti. Same structure as c-m1."},
+        {"id": "c-m4", "verdict": "SUPPORTED", "severity": null, "reason": "15.2-15.3 upekkhāsahagataṁ … sambojjhaṅgaṁ bhāveti. The note's Pali quotation 'upekkhāsahagataṁ upekkhāsambojjhaṅgaṁ' (15.3) is accurate."},
+        {"id": "o-19", "verdict": "SUPPORTED", "severity": null, "reason": "vossaggapariṇāmiṁ (12.3, 13.3, 14.3, 15.2, 15.3), 'ripening in letting go'. 'Leads to' is a fair simplification of this, of the same kind the rubric allows."},
+        {"id": "o-a1", "verdict": "SUPPORTED", "severity": null, "reason": "12.9 'Subhaparamāhaṁ … mettācetovimuttiṁ vadāmi, idhapaññassa bhikkhuno uttarivimuttiṁ appaṭivijjhato', said by the Buddha. The note is correct: the Pali of 12.8 ends 'subhaṁ vā kho pana vimokkhaṁ upasampajja viharati', and Sujato's English leaves it out."},
+        {"id": "o-a2", "verdict": "SUPPORTED", "severity": null, "reason": "13.6 gives the attainment of ākāsānañcāyatana and 13.7 'Ākāsānañcāyatanaparamāhaṁ … karuṇācetovimuttiṁ vadāmi', with the qualifier kept."},
+        {"id": "o-a3", "verdict": "SUPPORTED", "severity": null, "reason": "14.6-14.7 'Viññāṇañcāyatanaparamāhaṁ … muditācetovimuttiṁ vadāmi', with the qualifier kept."},
+        {"id": "o-a4", "verdict": "SUPPORTED", "severity": null, "reason": "15.9-15.10 'Ākiñcaññāyatanaparamāhaṁ … upekkhācetovimuttiṁ vadāmi', with the qualifier kept."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "All claims come from the Buddha's own reply (12.1-15.10); none rely on the wanderers' restatement (3.2-4.6, 8.2-9.5), which is correctly left out as interlocutor speech. In 3.2-3.5 the wanderers report what Gotama teaches, but he neither confirms nor denies the report in this text, so excluding it is right. In 8.2-9.5 the mendicants repeat the wanderers' words to the Buddha. Three minor observations. (1) c-m1 to c-m4 model love/compassion/rejoicing/equanimity accompanying the factors, but no claim records the text's real point, which is that this is HOW the heart's release by love (etc.) is developed (12.1 is the question 'kathaṁ bhāvitā … mettācetovimutti'). That link survives only in the notes, so a reader querying the graph cannot get from mettācetovimutti to the factors. (2) The attainments themselves ('or else … enters and remains in' the beautiful liberation, infinite space, infinite consciousness or nothingness: Pali tail of 12.8, 13.6, 14.6, 15.9) are cited only as support for the apex claims, not modelled as something the developed practitioner may attain. That is acceptable given the encoded note. (3) Sujato's English of 3.5 has 'they spread' where the Pali is the imperative viharatha; this is cosmetic and irrelevant to the claims. The left-out note is accurate: the text answers only kiṁparamā (apex), not gati (destination), phala (fruit) or pariyosāna (end), and the five ways of perceiving at will (12.4-12.8, 15.4-15.8, abbreviated with …pe… in 13.4-13.5 and 14.4-14.5) are correctly described. 'Partly encoded' is accurate."
+    }
+  ]
+}

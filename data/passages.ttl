@@ -2388,6 +2388,146 @@ dho:p-sn46.53-7.3 a dho:Passage ;
     dho:textPi "Līnaṁ, bhikkhave, cittaṁ taṁ etehi dhammehi susamuṭṭhāpayaṁ hoti."@pi ;
     dho:url "https://suttacentral.net/sn46.53/en/sujato#sn46.53:7.3"^^xsd:anyURI .
 
+dho:p-sn46.54-12.1 a dho:Passage ;
+    dho:inText dho:t-sn46.54 ;
+    dho:segment "sn46.54:12.1" ;
+    dho:textEn "And how is the heart’s release by love developed? What is its destination, apex, fruit, and end?"@en ;
+    dho:textPi "Kathaṁ bhāvitā ca, bhikkhave, mettācetovimutti, kiṅgatikā hoti, kiṁparamā, kiṁphalā, kiṁpariyosānā?"@pi ;
+    dho:url "https://suttacentral.net/sn46.54/en/sujato#sn46.54:12.1"^^xsd:anyURI .
+
+dho:p-sn46.54-12.2 a dho:Passage ;
+    dho:inText dho:t-sn46.54 ;
+    dho:segment "sn46.54:12.2" ;
+    dho:textEn "It’s when a mendicant develops the heart’s release by love together with the awakening factors of mindfulness, investigation of principles, energy, rapture, tranquility, immersion,"@en ;
+    dho:textPi "Idha, bhikkhave, bhikkhu mettāsahagataṁ satisambojjhaṅgaṁ bhāveti …pe…"@pi ;
+    dho:url "https://suttacentral.net/sn46.54/en/sujato#sn46.54:12.2"^^xsd:anyURI .
+
+dho:p-sn46.54-12.3 a dho:Passage ;
+    dho:inText dho:t-sn46.54 ;
+    dho:segment "sn46.54:12.3" ;
+    dho:textEn "and equanimity, which rely on seclusion, fading away, and cessation, and ripen as letting go."@en ;
+    dho:textPi "mettāsahagataṁ upekkhāsambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ."@pi ;
+    dho:url "https://suttacentral.net/sn46.54/en/sujato#sn46.54:12.3"^^xsd:anyURI .
+
+dho:p-sn46.54-12.8 a dho:Passage ;
+    dho:inText dho:t-sn46.54 ;
+    dho:segment "sn46.54:12.8" ;
+    dho:textEn "If they wish: ‘May I meditate staying equanimous, mindful and aware, shunning both the repulsive and the unrepulsive,’ that’s what they do."@en ;
+    dho:textPi "Sace ākaṅkhati ‘appaṭikūlañca paṭikūlañca tadubhayaṁ abhinivajjetvā upekkhako vihareyyaṁ sato sampajāno’ti, upekkhako ca tattha viharati sato sampajāno, subhaṁ vā kho pana vimokkhaṁ upasampajja viharati."@pi ;
+    dho:url "https://suttacentral.net/sn46.54/en/sujato#sn46.54:12.8"^^xsd:anyURI .
+
+dho:p-sn46.54-12.9 a dho:Passage ;
+    dho:inText dho:t-sn46.54 ;
+    dho:segment "sn46.54:12.9" ;
+    dho:textEn "The apex of the heart’s release by love is the beautiful, I say, for a wise mendicant here who has not penetrated to a higher freedom."@en ;
+    dho:textPi "Subhaparamāhaṁ, bhikkhave, mettācetovimuttiṁ vadāmi, idhapaññassa bhikkhuno uttarivimuttiṁ appaṭivijjhato."@pi ;
+    dho:url "https://suttacentral.net/sn46.54/en/sujato#sn46.54:12.9"^^xsd:anyURI .
+
+dho:p-sn46.54-13.1 a dho:Passage ;
+    dho:inText dho:t-sn46.54 ;
+    dho:segment "sn46.54:13.1" ;
+    dho:textEn "And how is the heart’s release by compassion developed? What is its destination, apex, fruit, and end?"@en ;
+    dho:textPi "Kathaṁ bhāvitā ca, bhikkhave, karuṇācetovimutti, kiṅgatikā hoti, kiṁparamā, kiṁphalā, kiṁpariyosānā?"@pi ;
+    dho:url "https://suttacentral.net/sn46.54/en/sujato#sn46.54:13.1"^^xsd:anyURI .
+
+dho:p-sn46.54-13.2 a dho:Passage ;
+    dho:inText dho:t-sn46.54 ;
+    dho:segment "sn46.54:13.2" ;
+    dho:textEn "It’s when a mendicant develops the heart’s release by compassion together with the awakening factors of mindfulness, investigation of principles, energy, rapture, tranquility, immersion,"@en ;
+    dho:textPi "Idha, bhikkhave, bhikkhu karuṇāsahagataṁ satisambojjhaṅgaṁ bhāveti …pe…"@pi ;
+    dho:url "https://suttacentral.net/sn46.54/en/sujato#sn46.54:13.2"^^xsd:anyURI .
+
+dho:p-sn46.54-13.3 a dho:Passage ;
+    dho:inText dho:t-sn46.54 ;
+    dho:segment "sn46.54:13.3" ;
+    dho:textEn "and equanimity, which rely on seclusion, fading away, and cessation, and ripen as letting go."@en ;
+    dho:textPi "karuṇāsahagataṁ upekkhāsambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ."@pi ;
+    dho:url "https://suttacentral.net/sn46.54/en/sujato#sn46.54:13.3"^^xsd:anyURI .
+
+dho:p-sn46.54-13.6 a dho:Passage ;
+    dho:inText dho:t-sn46.54 ;
+    dho:segment "sn46.54:13.6" ;
+    dho:textEn "Or else, going totally beyond perceptions of form, with the disappearance of perceptions of impingement, not focusing on perceptions of diversity, aware that ‘space is infinite’, they enter and remain in the dimension of infinite space."@en ;
+    dho:textPi "Sabbaso vā pana rūpasaññānaṁ samatikkamā paṭighasaññānaṁ atthaṅgamā nānattasaññānaṁ amanasikārā ‘ananto ākāso’ti ākāsānañcāyatanaṁ upasampajja viharati."@pi ;
+    dho:url "https://suttacentral.net/sn46.54/en/sujato#sn46.54:13.6"^^xsd:anyURI .
+
+dho:p-sn46.54-13.7 a dho:Passage ;
+    dho:inText dho:t-sn46.54 ;
+    dho:segment "sn46.54:13.7" ;
+    dho:textEn "The apex of the heart’s release by compassion is the dimension of infinite space, I say, for a wise mendicant here who has not penetrated to a higher freedom."@en ;
+    dho:textPi "Ākāsānañcāyatanaparamāhaṁ, bhikkhave, karuṇācetovimuttiṁ vadāmi, idhapaññassa bhikkhuno uttarivimuttiṁ appaṭivijjhato."@pi ;
+    dho:url "https://suttacentral.net/sn46.54/en/sujato#sn46.54:13.7"^^xsd:anyURI .
+
+dho:p-sn46.54-14.1 a dho:Passage ;
+    dho:inText dho:t-sn46.54 ;
+    dho:segment "sn46.54:14.1" ;
+    dho:textEn "And how is the heart’s release by rejoicing developed? What is its destination, apex, fruit, and end?"@en ;
+    dho:textPi "Kathaṁ bhāvitā ca, bhikkhave, muditācetovimutti, kiṅgatikā hoti, kiṁparamā, kiṁphalā, kiṁpariyosānā?"@pi ;
+    dho:url "https://suttacentral.net/sn46.54/en/sujato#sn46.54:14.1"^^xsd:anyURI .
+
+dho:p-sn46.54-14.2 a dho:Passage ;
+    dho:inText dho:t-sn46.54 ;
+    dho:segment "sn46.54:14.2" ;
+    dho:textEn "It’s when a mendicant develops the heart’s release by rejoicing together with the awakening factors of mindfulness, investigation of principles, energy, rapture, tranquility, immersion,"@en ;
+    dho:textPi "Idha, bhikkhave, bhikkhu muditāsahagataṁ satisambojjhaṅgaṁ bhāveti …pe…"@pi ;
+    dho:url "https://suttacentral.net/sn46.54/en/sujato#sn46.54:14.2"^^xsd:anyURI .
+
+dho:p-sn46.54-14.3 a dho:Passage ;
+    dho:inText dho:t-sn46.54 ;
+    dho:segment "sn46.54:14.3" ;
+    dho:textEn "and equanimity, which rely on seclusion, fading away, and cessation, and ripen as letting go."@en ;
+    dho:textPi "muditāsahagataṁ upekkhāsambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ."@pi ;
+    dho:url "https://suttacentral.net/sn46.54/en/sujato#sn46.54:14.3"^^xsd:anyURI .
+
+dho:p-sn46.54-14.6 a dho:Passage ;
+    dho:inText dho:t-sn46.54 ;
+    dho:segment "sn46.54:14.6" ;
+    dho:textEn "Or else, going totally beyond the dimension of infinite space, aware that ‘consciousness is infinite’, they enter and remain in the dimension of infinite consciousness."@en ;
+    dho:textPi "Sabbaso vā pana ākāsānañcāyatanaṁ samatikkamma ‘anantaṁ viññāṇan’ti viññāṇañcāyatanaṁ upasampajja viharati."@pi ;
+    dho:url "https://suttacentral.net/sn46.54/en/sujato#sn46.54:14.6"^^xsd:anyURI .
+
+dho:p-sn46.54-14.7 a dho:Passage ;
+    dho:inText dho:t-sn46.54 ;
+    dho:segment "sn46.54:14.7" ;
+    dho:textEn "The apex of the heart’s release by rejoicing is the dimension of infinite consciousness, I say, for a wise mendicant here who has not penetrated to a higher freedom."@en ;
+    dho:textPi "Viññāṇañcāyatanaparamāhaṁ, bhikkhave, muditācetovimuttiṁ vadāmi, idhapaññassa bhikkhuno uttarivimuttiṁ appaṭivijjhato."@pi ;
+    dho:url "https://suttacentral.net/sn46.54/en/sujato#sn46.54:14.7"^^xsd:anyURI .
+
+dho:p-sn46.54-15.1 a dho:Passage ;
+    dho:inText dho:t-sn46.54 ;
+    dho:segment "sn46.54:15.1" ;
+    dho:textEn "And how is the heart’s release by equanimity developed? What is its destination, apex, fruit, and end?"@en ;
+    dho:textPi "Kathaṁ bhāvitā ca, bhikkhave, upekkhācetovimutti, kiṅgatikā hoti, kiṁparamā, kiṁphalā, kiṁpariyosānā?"@pi ;
+    dho:url "https://suttacentral.net/sn46.54/en/sujato#sn46.54:15.1"^^xsd:anyURI .
+
+dho:p-sn46.54-15.10 a dho:Passage ;
+    dho:inText dho:t-sn46.54 ;
+    dho:segment "sn46.54:15.10" ;
+    dho:textEn "The apex of the heart’s release by equanimity is the dimension of nothingness, I say, for a wise mendicant here who has not penetrated to a higher freedom.”"@en ;
+    dho:textPi "Ākiñcaññāyatanaparamāhaṁ, bhikkhave, upekkhācetovimuttiṁ vadāmi, idhapaññassa bhikkhuno uttarivimuttiṁ appaṭivijjhato”ti."@pi ;
+    dho:url "https://suttacentral.net/sn46.54/en/sujato#sn46.54:15.10"^^xsd:anyURI .
+
+dho:p-sn46.54-15.2 a dho:Passage ;
+    dho:inText dho:t-sn46.54 ;
+    dho:segment "sn46.54:15.2" ;
+    dho:textEn "It’s when a mendicant develops the heart’s release by equanimity together with the awakening factors of mindfulness, investigation of principles, energy, rapture, tranquility, immersion,"@en ;
+    dho:textPi "Idha, bhikkhave, bhikkhu upekkhāsahagataṁ satisambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ …pe…"@pi ;
+    dho:url "https://suttacentral.net/sn46.54/en/sujato#sn46.54:15.2"^^xsd:anyURI .
+
+dho:p-sn46.54-15.3 a dho:Passage ;
+    dho:inText dho:t-sn46.54 ;
+    dho:segment "sn46.54:15.3" ;
+    dho:textEn "and equanimity, which rely on seclusion, fading away, and cessation, and ripen as letting go."@en ;
+    dho:textPi "upekkhāsahagataṁ upekkhāsambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ."@pi ;
+    dho:url "https://suttacentral.net/sn46.54/en/sujato#sn46.54:15.3"^^xsd:anyURI .
+
+dho:p-sn46.54-15.9 a dho:Passage ;
+    dho:inText dho:t-sn46.54 ;
+    dho:segment "sn46.54:15.9" ;
+    dho:textEn "Or else, going totally beyond the dimension of infinite consciousness, aware that ‘there is nothing at all’, they enter and remain in the dimension of nothingness."@en ;
+    dho:textPi "Sabbaso vā pana viññāṇañcāyatanaṁ samatikkamma ‘natthi kiñcī’ti ākiñcaññāyatanaṁ upasampajja viharati."@pi ;
+    dho:url "https://suttacentral.net/sn46.54/en/sujato#sn46.54:15.9"^^xsd:anyURI .
+
 dho:p-sn46.56-1.10 a dho:Passage ;
     dho:inText dho:t-sn46.56 ;
     dho:segment "sn46.56:1.10" ;
@@ -3513,6 +3653,13 @@ dho:t-sn46.76 a dho:Text ;
     skos:prefLabel "SN 46.76 Nirodhasutta — Cessation"@en ;
     dho:layer dho:SuttaLayer ;
     dho:url "https://suttacentral.net/sn46.76/en/sujato"^^xsd:anyURI .
+
+dho:t-sn46.54 a dho:Text ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
+    skos:prefLabel "SN 46.54 Mettāsahagatasutta — Full of Love"@en ;
+    dho:layer dho:SuttaLayer ;
+    dho:url "https://suttacentral.net/sn46.54/en/sujato"^^xsd:anyURI .
 
 dho:t-sn46.6 a dho:Text ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;

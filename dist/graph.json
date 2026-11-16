@@ -1,11 +1,11 @@
 {
  "stats": {
-  "asserted": 6023,
-  "inferred": 5677,
+  "asserted": 6275,
+  "inferred": 5897,
   "derived": 16,
-  "concepts": 152,
-  "links": 221,
-  "passages": 441,
+  "concepts": 159,
+  "links": 232,
+  "passages": 461,
   "shacl": "pass",
   "warnings": 5
  },
@@ -985,6 +985,48 @@
    ]
   },
   {
+   "id": "HeartsReleaseByCompassion",
+   "kind": "concept",
+   "en": "the heart's release by compassion",
+   "pi": "karuṇācetovimutti",
+   "zh": null,
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "HeartsReleaseByEquanimity",
+   "kind": "concept",
+   "en": "the heart's release by equanimity",
+   "pi": "upekkhācetovimutti",
+   "zh": null,
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "HeartsReleaseByRejoicing",
+   "kind": "concept",
+   "en": "the heart's release by rejoicing",
+   "pi": "muditācetovimutti",
+   "zh": null,
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
    "id": "Ignorance",
    "kind": "concept",
    "en": "ignorance",
@@ -1104,6 +1146,34 @@
    "en": "the perception of impermanence",
    "pi": "aniccasaññā",
    "zh": null,
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "InfiniteConsciousness",
+   "kind": "concept",
+   "en": "the dimension of infinite consciousness",
+   "pi": "viññāṇañcāyatana",
+   "zh": "識無邊處",
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "InfiniteSpace",
+   "kind": "concept",
+   "en": "the dimension of infinite space",
+   "pi": "ākāsānañcāyatana",
+   "zh": "空無邊處",
    "alt": [],
    "hidden": [],
    "classes": [],
@@ -1431,6 +1501,20 @@
    "en": "the perception of not-self in suffering",
    "pi": "dukkhe anattasaññā",
    "zh": null,
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": null,
+   "cites": []
+  },
+  {
+   "id": "Nothingness",
+   "kind": "concept",
+   "en": "the dimension of nothingness",
+   "pi": "ākiñcaññāyatana",
+   "zh": "無所有處",
    "alt": [],
    "hidden": [],
    "classes": [],
@@ -1985,6 +2069,20 @@
    "cites": []
   },
   {
+   "id": "TheBeautiful",
+   "kind": "concept",
+   "en": "the beautiful",
+   "pi": "subha",
+   "zh": null,
+   "alt": [],
+   "hidden": [],
+   "classes": [],
+   "inferred": false,
+   "definition": null,
+   "note": "As an attainment: 'the liberation of the beautiful' (subha vimokkha). Not SN 46.51's 'feature of beauty' (subhanimitta), which fuels sensual desire.",
+   "cites": []
+  },
+  {
    "id": "ThingsThatTightenFetters",
    "kind": "concept",
    "en": "the things that tighten the fetters",
@@ -2410,57 +2508,126 @@
  "edges": [
   {
    "id": "e0",
-   "source": "Investigation",
-   "target": "SevenAwakeningFactors",
+   "source": "Conceit",
+   "target": "FiveHigherFetters",
    "rel": "member of",
    "layer": "sutta",
    "cites": [
-    "p-sn46.130-1.8",
-    "p-sn46.130-1.9",
-    "p-sn46.17-1.3",
-    "p-sn46.19-1.3",
-    "p-sn46.20-1.3",
-    "p-sn46.21-2.4",
-    "p-sn46.22-1.1",
-    "p-sn46.22-1.3",
-    "p-sn46.22-1.4",
-    "p-sn46.25-1.7",
-    "p-sn46.26-1.6",
-    "p-sn46.27-1.6",
-    "p-sn46.28-1.7",
-    "p-sn46.29-1.3",
-    "p-sn46.34-1.3",
-    "p-sn46.36-1.3",
-    "p-sn46.37-2.1",
-    "p-sn46.37-2.3",
-    "p-sn46.38-3.1",
-    "p-sn46.38-3.2",
-    "p-sn46.40-2.1",
-    "p-sn46.40-2.3",
-    "p-sn46.41-1.6",
-    "p-sn46.43-1.7",
-    "p-sn46.4-2.1",
-    "p-sn46.4-2.3",
-    "p-sn46.4-2.4",
-    "p-sn46.51-1.2",
-    "p-sn46.51-10.1",
-    "p-sn46.51-11.1",
-    "p-sn46.51-12.1",
-    "p-sn46.51-6.1",
-    "p-sn46.51-7.1",
-    "p-sn46.51-8.1",
-    "p-sn46.51-9.1",
-    "p-sn46.57-1.4",
-    "p-sn46.57-1.5",
-    "p-sn46.5-1.6",
-    "p-sn46.5-1.7",
-    "p-sn46.76-1.3",
-    "p-sn46.76-1.4"
+    "p-sn46.130-1.2",
+    "p-sn46.130-1.4"
    ],
    "note": null
   },
   {
    "id": "e1",
+   "source": "DesireForFormlessRebirth",
+   "target": "FiveHigherFetters",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.130-1.2",
+    "p-sn46.130-1.4"
+   ],
+   "note": null
+  },
+  {
+   "id": "e2",
+   "source": "Restlessness",
+   "target": "FiveHigherFetters",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.130-1.2",
+    "p-sn46.130-1.4"
+   ],
+   "note": null
+  },
+  {
+   "id": "e3",
+   "source": "DesireForFormRebirth",
+   "target": "FiveHigherFetters",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.130-1.2",
+    "p-sn46.130-1.4"
+   ],
+   "note": null
+  },
+  {
+   "id": "e4",
+   "source": "Ignorance",
+   "target": "FiveHigherFetters",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.130-1.2",
+    "p-sn46.130-1.4"
+   ],
+   "note": null
+  },
+  {
+   "id": "e5",
+   "source": "ObservingMind",
+   "target": "FourMindfulnessMeditations",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.6-2.4",
+    "p-sn46.6-7.2",
+    "p-sn46.6-7.3",
+    "p-sn46.6-7.4",
+    "p-sn46.6-7.5"
+   ],
+   "note": null
+  },
+  {
+   "id": "e6",
+   "source": "ObservingPrinciples",
+   "target": "FourMindfulnessMeditations",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.6-2.4",
+    "p-sn46.6-7.2",
+    "p-sn46.6-7.3",
+    "p-sn46.6-7.4",
+    "p-sn46.6-7.5"
+   ],
+   "note": null
+  },
+  {
+   "id": "e7",
+   "source": "ObservingBody",
+   "target": "FourMindfulnessMeditations",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.6-2.4",
+    "p-sn46.6-7.2",
+    "p-sn46.6-7.3",
+    "p-sn46.6-7.4",
+    "p-sn46.6-7.5"
+   ],
+   "note": null
+  },
+  {
+   "id": "e8",
+   "source": "ObservingFeelings",
+   "target": "FourMindfulnessMeditations",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.6-2.4",
+    "p-sn46.6-7.2",
+    "p-sn46.6-7.3",
+    "p-sn46.6-7.4",
+    "p-sn46.6-7.5"
+   ],
+   "note": null
+  },
+  {
+   "id": "e9",
    "source": "Energy",
    "target": "SevenAwakeningFactors",
    "rel": "member of",
@@ -2511,7 +2678,7 @@
    "note": null
   },
   {
-   "id": "e2",
+   "id": "e10",
    "source": "Equanimity",
    "target": "SevenAwakeningFactors",
    "rel": "member of",
@@ -2562,160 +2729,7 @@
    "note": null
   },
   {
-   "id": "e3",
-   "source": "Immersion",
-   "target": "SevenAwakeningFactors",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-sn46.130-1.8",
-    "p-sn46.130-1.9",
-    "p-sn46.17-1.3",
-    "p-sn46.19-1.3",
-    "p-sn46.20-1.3",
-    "p-sn46.21-2.4",
-    "p-sn46.22-1.1",
-    "p-sn46.22-1.3",
-    "p-sn46.22-1.4",
-    "p-sn46.25-1.7",
-    "p-sn46.26-1.6",
-    "p-sn46.27-1.6",
-    "p-sn46.28-1.7",
-    "p-sn46.29-1.3",
-    "p-sn46.34-1.3",
-    "p-sn46.36-1.3",
-    "p-sn46.37-2.1",
-    "p-sn46.37-2.3",
-    "p-sn46.38-3.1",
-    "p-sn46.38-3.2",
-    "p-sn46.40-2.1",
-    "p-sn46.40-2.3",
-    "p-sn46.41-1.6",
-    "p-sn46.43-1.7",
-    "p-sn46.4-2.1",
-    "p-sn46.4-2.3",
-    "p-sn46.4-2.4",
-    "p-sn46.51-1.2",
-    "p-sn46.51-10.1",
-    "p-sn46.51-11.1",
-    "p-sn46.51-12.1",
-    "p-sn46.51-6.1",
-    "p-sn46.51-7.1",
-    "p-sn46.51-8.1",
-    "p-sn46.51-9.1",
-    "p-sn46.57-1.4",
-    "p-sn46.57-1.5",
-    "p-sn46.5-1.6",
-    "p-sn46.5-1.7",
-    "p-sn46.76-1.3",
-    "p-sn46.76-1.4"
-   ],
-   "note": null
-  },
-  {
-   "id": "e4",
-   "source": "Rapture",
-   "target": "SevenAwakeningFactors",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-sn46.130-1.8",
-    "p-sn46.130-1.9",
-    "p-sn46.17-1.3",
-    "p-sn46.19-1.3",
-    "p-sn46.20-1.3",
-    "p-sn46.21-2.4",
-    "p-sn46.22-1.1",
-    "p-sn46.22-1.3",
-    "p-sn46.22-1.4",
-    "p-sn46.25-1.7",
-    "p-sn46.26-1.6",
-    "p-sn46.27-1.6",
-    "p-sn46.28-1.7",
-    "p-sn46.29-1.3",
-    "p-sn46.34-1.3",
-    "p-sn46.36-1.3",
-    "p-sn46.37-2.1",
-    "p-sn46.37-2.3",
-    "p-sn46.38-3.1",
-    "p-sn46.38-3.2",
-    "p-sn46.40-2.1",
-    "p-sn46.40-2.3",
-    "p-sn46.41-1.6",
-    "p-sn46.43-1.7",
-    "p-sn46.4-2.1",
-    "p-sn46.4-2.3",
-    "p-sn46.4-2.4",
-    "p-sn46.51-1.2",
-    "p-sn46.51-10.1",
-    "p-sn46.51-11.1",
-    "p-sn46.51-12.1",
-    "p-sn46.51-6.1",
-    "p-sn46.51-7.1",
-    "p-sn46.51-8.1",
-    "p-sn46.51-9.1",
-    "p-sn46.57-1.4",
-    "p-sn46.57-1.5",
-    "p-sn46.5-1.6",
-    "p-sn46.5-1.7",
-    "p-sn46.76-1.3",
-    "p-sn46.76-1.4"
-   ],
-   "note": null
-  },
-  {
-   "id": "e5",
-   "source": "Tranquility",
-   "target": "SevenAwakeningFactors",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-sn46.130-1.8",
-    "p-sn46.130-1.9",
-    "p-sn46.17-1.3",
-    "p-sn46.19-1.3",
-    "p-sn46.20-1.3",
-    "p-sn46.21-2.4",
-    "p-sn46.22-1.1",
-    "p-sn46.22-1.3",
-    "p-sn46.22-1.4",
-    "p-sn46.25-1.7",
-    "p-sn46.26-1.6",
-    "p-sn46.27-1.6",
-    "p-sn46.28-1.7",
-    "p-sn46.29-1.3",
-    "p-sn46.34-1.3",
-    "p-sn46.36-1.3",
-    "p-sn46.37-2.1",
-    "p-sn46.37-2.3",
-    "p-sn46.38-3.1",
-    "p-sn46.38-3.2",
-    "p-sn46.40-2.1",
-    "p-sn46.40-2.3",
-    "p-sn46.41-1.6",
-    "p-sn46.43-1.7",
-    "p-sn46.4-2.1",
-    "p-sn46.4-2.3",
-    "p-sn46.4-2.4",
-    "p-sn46.51-1.2",
-    "p-sn46.51-10.1",
-    "p-sn46.51-11.1",
-    "p-sn46.51-12.1",
-    "p-sn46.51-6.1",
-    "p-sn46.51-7.1",
-    "p-sn46.51-8.1",
-    "p-sn46.51-9.1",
-    "p-sn46.57-1.4",
-    "p-sn46.57-1.5",
-    "p-sn46.5-1.6",
-    "p-sn46.5-1.7",
-    "p-sn46.76-1.3",
-    "p-sn46.76-1.4"
-   ],
-   "note": null
-  },
-  {
-   "id": "e6",
+   "id": "e11",
    "source": "Mindfulness",
    "target": "SevenAwakeningFactors",
    "rel": "member of",
@@ -2766,114 +2780,206 @@
    "note": null
   },
   {
-   "id": "e7",
-   "source": "Rapture",
-   "target": "FirstJhanaFactors",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-mn43-19.2",
-    "p-mn43-19.3"
-   ],
-   "note": null
-  },
-  {
-   "id": "e8",
-   "source": "KeepingConnected",
-   "target": "FirstJhanaFactors",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-mn43-19.2",
-    "p-mn43-19.3"
-   ],
-   "note": null
-  },
-  {
-   "id": "e9",
-   "source": "Bliss",
-   "target": "FirstJhanaFactors",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-mn43-19.2",
-    "p-mn43-19.3"
-   ],
-   "note": null
-  },
-  {
-   "id": "e10",
-   "source": "PlacingTheMind",
-   "target": "FirstJhanaFactors",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-mn43-19.2",
-    "p-mn43-19.3"
-   ],
-   "note": null
-  },
-  {
-   "id": "e11",
-   "source": "Unification",
-   "target": "FirstJhanaFactors",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-mn43-19.2",
-    "p-mn43-19.3"
-   ],
-   "note": null
-  },
-  {
    "id": "e12",
-   "source": "RestlessnessRemorse",
-   "target": "FiveCorruptionsOfMind",
+   "source": "Rapture",
+   "target": "SevenAwakeningFactors",
    "rel": "member of",
    "layer": "sutta",
    "cites": [
-    "p-sn46.33-2.1",
-    "p-sn46.33-2.3",
-    "p-sn46.33-2.4"
+    "p-sn46.130-1.8",
+    "p-sn46.130-1.9",
+    "p-sn46.17-1.3",
+    "p-sn46.19-1.3",
+    "p-sn46.20-1.3",
+    "p-sn46.21-2.4",
+    "p-sn46.22-1.1",
+    "p-sn46.22-1.3",
+    "p-sn46.22-1.4",
+    "p-sn46.25-1.7",
+    "p-sn46.26-1.6",
+    "p-sn46.27-1.6",
+    "p-sn46.28-1.7",
+    "p-sn46.29-1.3",
+    "p-sn46.34-1.3",
+    "p-sn46.36-1.3",
+    "p-sn46.37-2.1",
+    "p-sn46.37-2.3",
+    "p-sn46.38-3.1",
+    "p-sn46.38-3.2",
+    "p-sn46.40-2.1",
+    "p-sn46.40-2.3",
+    "p-sn46.41-1.6",
+    "p-sn46.43-1.7",
+    "p-sn46.4-2.1",
+    "p-sn46.4-2.3",
+    "p-sn46.4-2.4",
+    "p-sn46.51-1.2",
+    "p-sn46.51-10.1",
+    "p-sn46.51-11.1",
+    "p-sn46.51-12.1",
+    "p-sn46.51-6.1",
+    "p-sn46.51-7.1",
+    "p-sn46.51-8.1",
+    "p-sn46.51-9.1",
+    "p-sn46.57-1.4",
+    "p-sn46.57-1.5",
+    "p-sn46.5-1.6",
+    "p-sn46.5-1.7",
+    "p-sn46.76-1.3",
+    "p-sn46.76-1.4"
    ],
    "note": null
   },
   {
    "id": "e13",
-   "source": "IllWill",
-   "target": "FiveCorruptionsOfMind",
+   "source": "Investigation",
+   "target": "SevenAwakeningFactors",
    "rel": "member of",
    "layer": "sutta",
    "cites": [
-    "p-sn46.33-2.1",
-    "p-sn46.33-2.3",
-    "p-sn46.33-2.4"
+    "p-sn46.130-1.8",
+    "p-sn46.130-1.9",
+    "p-sn46.17-1.3",
+    "p-sn46.19-1.3",
+    "p-sn46.20-1.3",
+    "p-sn46.21-2.4",
+    "p-sn46.22-1.1",
+    "p-sn46.22-1.3",
+    "p-sn46.22-1.4",
+    "p-sn46.25-1.7",
+    "p-sn46.26-1.6",
+    "p-sn46.27-1.6",
+    "p-sn46.28-1.7",
+    "p-sn46.29-1.3",
+    "p-sn46.34-1.3",
+    "p-sn46.36-1.3",
+    "p-sn46.37-2.1",
+    "p-sn46.37-2.3",
+    "p-sn46.38-3.1",
+    "p-sn46.38-3.2",
+    "p-sn46.40-2.1",
+    "p-sn46.40-2.3",
+    "p-sn46.41-1.6",
+    "p-sn46.43-1.7",
+    "p-sn46.4-2.1",
+    "p-sn46.4-2.3",
+    "p-sn46.4-2.4",
+    "p-sn46.51-1.2",
+    "p-sn46.51-10.1",
+    "p-sn46.51-11.1",
+    "p-sn46.51-12.1",
+    "p-sn46.51-6.1",
+    "p-sn46.51-7.1",
+    "p-sn46.51-8.1",
+    "p-sn46.51-9.1",
+    "p-sn46.57-1.4",
+    "p-sn46.57-1.5",
+    "p-sn46.5-1.6",
+    "p-sn46.5-1.7",
+    "p-sn46.76-1.3",
+    "p-sn46.76-1.4"
    ],
    "note": null
   },
   {
    "id": "e14",
-   "source": "SensualDesire",
-   "target": "FiveCorruptionsOfMind",
+   "source": "Tranquility",
+   "target": "SevenAwakeningFactors",
    "rel": "member of",
    "layer": "sutta",
    "cites": [
-    "p-sn46.33-2.1",
-    "p-sn46.33-2.3",
-    "p-sn46.33-2.4"
+    "p-sn46.130-1.8",
+    "p-sn46.130-1.9",
+    "p-sn46.17-1.3",
+    "p-sn46.19-1.3",
+    "p-sn46.20-1.3",
+    "p-sn46.21-2.4",
+    "p-sn46.22-1.1",
+    "p-sn46.22-1.3",
+    "p-sn46.22-1.4",
+    "p-sn46.25-1.7",
+    "p-sn46.26-1.6",
+    "p-sn46.27-1.6",
+    "p-sn46.28-1.7",
+    "p-sn46.29-1.3",
+    "p-sn46.34-1.3",
+    "p-sn46.36-1.3",
+    "p-sn46.37-2.1",
+    "p-sn46.37-2.3",
+    "p-sn46.38-3.1",
+    "p-sn46.38-3.2",
+    "p-sn46.40-2.1",
+    "p-sn46.40-2.3",
+    "p-sn46.41-1.6",
+    "p-sn46.43-1.7",
+    "p-sn46.4-2.1",
+    "p-sn46.4-2.3",
+    "p-sn46.4-2.4",
+    "p-sn46.51-1.2",
+    "p-sn46.51-10.1",
+    "p-sn46.51-11.1",
+    "p-sn46.51-12.1",
+    "p-sn46.51-6.1",
+    "p-sn46.51-7.1",
+    "p-sn46.51-8.1",
+    "p-sn46.51-9.1",
+    "p-sn46.57-1.4",
+    "p-sn46.57-1.5",
+    "p-sn46.5-1.6",
+    "p-sn46.5-1.7",
+    "p-sn46.76-1.3",
+    "p-sn46.76-1.4"
    ],
    "note": null
   },
   {
    "id": "e15",
-   "source": "DullnessDrowsiness",
-   "target": "FiveCorruptionsOfMind",
+   "source": "Immersion",
+   "target": "SevenAwakeningFactors",
    "rel": "member of",
    "layer": "sutta",
    "cites": [
-    "p-sn46.33-2.1",
-    "p-sn46.33-2.3",
-    "p-sn46.33-2.4"
+    "p-sn46.130-1.8",
+    "p-sn46.130-1.9",
+    "p-sn46.17-1.3",
+    "p-sn46.19-1.3",
+    "p-sn46.20-1.3",
+    "p-sn46.21-2.4",
+    "p-sn46.22-1.1",
+    "p-sn46.22-1.3",
+    "p-sn46.22-1.4",
+    "p-sn46.25-1.7",
+    "p-sn46.26-1.6",
+    "p-sn46.27-1.6",
+    "p-sn46.28-1.7",
+    "p-sn46.29-1.3",
+    "p-sn46.34-1.3",
+    "p-sn46.36-1.3",
+    "p-sn46.37-2.1",
+    "p-sn46.37-2.3",
+    "p-sn46.38-3.1",
+    "p-sn46.38-3.2",
+    "p-sn46.40-2.1",
+    "p-sn46.40-2.3",
+    "p-sn46.41-1.6",
+    "p-sn46.43-1.7",
+    "p-sn46.4-2.1",
+    "p-sn46.4-2.3",
+    "p-sn46.4-2.4",
+    "p-sn46.51-1.2",
+    "p-sn46.51-10.1",
+    "p-sn46.51-11.1",
+    "p-sn46.51-12.1",
+    "p-sn46.51-6.1",
+    "p-sn46.51-7.1",
+    "p-sn46.51-8.1",
+    "p-sn46.51-9.1",
+    "p-sn46.57-1.4",
+    "p-sn46.57-1.5",
+    "p-sn46.5-1.6",
+    "p-sn46.5-1.7",
+    "p-sn46.76-1.3",
+    "p-sn46.76-1.4"
    ],
    "note": null
   },
@@ -2892,117 +2998,149 @@
   },
   {
    "id": "e17",
-   "source": "Doubt",
-   "target": "FiveHindrances",
+   "source": "SensualDesire",
+   "target": "FiveCorruptionsOfMind",
    "rel": "member of",
    "layer": "sutta",
    "cites": [
-    "p-mn43-20.3",
-    "p-sn46.24-1.1",
-    "p-sn46.24-1.2",
-    "p-sn46.24-1.3",
-    "p-sn46.24-1.4",
-    "p-sn46.24-1.5",
-    "p-sn46.35-1.1",
-    "p-sn46.37-1.1",
-    "p-sn46.37-1.3",
-    "p-sn46.37-1.4",
-    "p-sn46.37-1.5",
-    "p-sn46.37-1.6",
-    "p-sn46.37-1.7",
-    "p-sn46.38-2.1",
-    "p-sn46.38-2.2",
-    "p-sn46.40-1.1",
-    "p-sn46.40-1.3",
-    "p-sn46.40-1.4",
-    "p-sn46.40-1.5",
-    "p-sn46.40-1.6",
-    "p-sn46.40-1.7",
-    "p-sn46.51-1.2",
-    "p-sn46.51-1.4",
-    "p-sn46.51-2.1",
-    "p-sn46.51-3.1",
-    "p-sn46.51-4.1",
-    "p-sn46.51-5.1"
+    "p-sn46.33-2.1",
+    "p-sn46.33-2.3",
+    "p-sn46.33-2.4"
    ],
    "note": null
   },
   {
    "id": "e18",
    "source": "RestlessnessRemorse",
-   "target": "FiveHindrances",
+   "target": "FiveCorruptionsOfMind",
    "rel": "member of",
    "layer": "sutta",
    "cites": [
-    "p-mn43-20.3",
-    "p-sn46.24-1.1",
-    "p-sn46.24-1.2",
-    "p-sn46.24-1.3",
-    "p-sn46.24-1.4",
-    "p-sn46.24-1.5",
-    "p-sn46.35-1.1",
-    "p-sn46.37-1.1",
-    "p-sn46.37-1.3",
-    "p-sn46.37-1.4",
-    "p-sn46.37-1.5",
-    "p-sn46.37-1.6",
-    "p-sn46.37-1.7",
-    "p-sn46.38-2.1",
-    "p-sn46.38-2.2",
-    "p-sn46.40-1.1",
-    "p-sn46.40-1.3",
-    "p-sn46.40-1.4",
-    "p-sn46.40-1.5",
-    "p-sn46.40-1.6",
-    "p-sn46.40-1.7",
-    "p-sn46.51-1.2",
-    "p-sn46.51-1.4",
-    "p-sn46.51-2.1",
-    "p-sn46.51-3.1",
-    "p-sn46.51-4.1",
-    "p-sn46.51-5.1"
+    "p-sn46.33-2.1",
+    "p-sn46.33-2.3",
+    "p-sn46.33-2.4"
    ],
    "note": null
   },
   {
    "id": "e19",
    "source": "IllWill",
-   "target": "FiveHindrances",
+   "target": "FiveCorruptionsOfMind",
    "rel": "member of",
    "layer": "sutta",
    "cites": [
-    "p-mn43-20.3",
-    "p-sn46.24-1.1",
-    "p-sn46.24-1.2",
-    "p-sn46.24-1.3",
-    "p-sn46.24-1.4",
-    "p-sn46.24-1.5",
-    "p-sn46.35-1.1",
-    "p-sn46.37-1.1",
-    "p-sn46.37-1.3",
-    "p-sn46.37-1.4",
-    "p-sn46.37-1.5",
-    "p-sn46.37-1.6",
-    "p-sn46.37-1.7",
-    "p-sn46.38-2.1",
-    "p-sn46.38-2.2",
-    "p-sn46.40-1.1",
-    "p-sn46.40-1.3",
-    "p-sn46.40-1.4",
-    "p-sn46.40-1.5",
-    "p-sn46.40-1.6",
-    "p-sn46.40-1.7",
-    "p-sn46.51-1.2",
-    "p-sn46.51-1.4",
-    "p-sn46.51-2.1",
-    "p-sn46.51-3.1",
-    "p-sn46.51-4.1",
-    "p-sn46.51-5.1"
+    "p-sn46.33-2.1",
+    "p-sn46.33-2.3",
+    "p-sn46.33-2.4"
    ],
    "note": null
   },
   {
    "id": "e20",
+   "source": "DullnessDrowsiness",
+   "target": "FiveCorruptionsOfMind",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.33-2.1",
+    "p-sn46.33-2.3",
+    "p-sn46.33-2.4"
+   ],
+   "note": null
+  },
+  {
+   "id": "e21",
+   "source": "ExtinguishedBetweenLives",
+   "target": "SevenFruits",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.3-9.1",
+    "p-sn46.3-9.10",
+    "p-sn46.3-9.2"
+   ],
+   "note": null
+  },
+  {
+   "id": "e22",
+   "source": "HeadingUpstream",
+   "target": "SevenFruits",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.3-9.1",
+    "p-sn46.3-9.10",
+    "p-sn46.3-9.2"
+   ],
+   "note": null
+  },
+  {
+   "id": "e23",
+   "source": "ExtinguishedWithEffort",
+   "target": "SevenFruits",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.3-9.1",
+    "p-sn46.3-9.10",
+    "p-sn46.3-9.2"
+   ],
+   "note": null
+  },
+  {
+   "id": "e24",
+   "source": "EarlyEnlightenment",
+   "target": "SevenFruits",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.3-9.1",
+    "p-sn46.3-9.10",
+    "p-sn46.3-9.2"
+   ],
+   "note": null
+  },
+  {
+   "id": "e25",
+   "source": "ExtinguishedUponLanding",
+   "target": "SevenFruits",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.3-9.1",
+    "p-sn46.3-9.10",
+    "p-sn46.3-9.2"
+   ],
+   "note": null
+  },
+  {
+   "id": "e26",
+   "source": "EnlightenmentAtDeath",
+   "target": "SevenFruits",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.3-9.1",
+    "p-sn46.3-9.10",
+    "p-sn46.3-9.2"
+   ],
+   "note": null
+  },
+  {
+   "id": "e27",
+   "source": "ExtinguishedWithoutEffort",
+   "target": "SevenFruits",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.3-9.1",
+    "p-sn46.3-9.10",
+    "p-sn46.3-9.2"
+   ],
+   "note": null
+  },
+  {
+   "id": "e28",
    "source": "SensualDesire",
    "target": "FiveHindrances",
    "rel": "member of",
@@ -3039,7 +3177,118 @@
    "note": null
   },
   {
-   "id": "e21",
+   "id": "e29",
+   "source": "RestlessnessRemorse",
+   "target": "FiveHindrances",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-mn43-20.3",
+    "p-sn46.24-1.1",
+    "p-sn46.24-1.2",
+    "p-sn46.24-1.3",
+    "p-sn46.24-1.4",
+    "p-sn46.24-1.5",
+    "p-sn46.35-1.1",
+    "p-sn46.37-1.1",
+    "p-sn46.37-1.3",
+    "p-sn46.37-1.4",
+    "p-sn46.37-1.5",
+    "p-sn46.37-1.6",
+    "p-sn46.37-1.7",
+    "p-sn46.38-2.1",
+    "p-sn46.38-2.2",
+    "p-sn46.40-1.1",
+    "p-sn46.40-1.3",
+    "p-sn46.40-1.4",
+    "p-sn46.40-1.5",
+    "p-sn46.40-1.6",
+    "p-sn46.40-1.7",
+    "p-sn46.51-1.2",
+    "p-sn46.51-1.4",
+    "p-sn46.51-2.1",
+    "p-sn46.51-3.1",
+    "p-sn46.51-4.1",
+    "p-sn46.51-5.1"
+   ],
+   "note": null
+  },
+  {
+   "id": "e30",
+   "source": "Doubt",
+   "target": "FiveHindrances",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-mn43-20.3",
+    "p-sn46.24-1.1",
+    "p-sn46.24-1.2",
+    "p-sn46.24-1.3",
+    "p-sn46.24-1.4",
+    "p-sn46.24-1.5",
+    "p-sn46.35-1.1",
+    "p-sn46.37-1.1",
+    "p-sn46.37-1.3",
+    "p-sn46.37-1.4",
+    "p-sn46.37-1.5",
+    "p-sn46.37-1.6",
+    "p-sn46.37-1.7",
+    "p-sn46.38-2.1",
+    "p-sn46.38-2.2",
+    "p-sn46.40-1.1",
+    "p-sn46.40-1.3",
+    "p-sn46.40-1.4",
+    "p-sn46.40-1.5",
+    "p-sn46.40-1.6",
+    "p-sn46.40-1.7",
+    "p-sn46.51-1.2",
+    "p-sn46.51-1.4",
+    "p-sn46.51-2.1",
+    "p-sn46.51-3.1",
+    "p-sn46.51-4.1",
+    "p-sn46.51-5.1"
+   ],
+   "note": null
+  },
+  {
+   "id": "e31",
+   "source": "IllWill",
+   "target": "FiveHindrances",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-mn43-20.3",
+    "p-sn46.24-1.1",
+    "p-sn46.24-1.2",
+    "p-sn46.24-1.3",
+    "p-sn46.24-1.4",
+    "p-sn46.24-1.5",
+    "p-sn46.35-1.1",
+    "p-sn46.37-1.1",
+    "p-sn46.37-1.3",
+    "p-sn46.37-1.4",
+    "p-sn46.37-1.5",
+    "p-sn46.37-1.6",
+    "p-sn46.37-1.7",
+    "p-sn46.38-2.1",
+    "p-sn46.38-2.2",
+    "p-sn46.40-1.1",
+    "p-sn46.40-1.3",
+    "p-sn46.40-1.4",
+    "p-sn46.40-1.5",
+    "p-sn46.40-1.6",
+    "p-sn46.40-1.7",
+    "p-sn46.51-1.2",
+    "p-sn46.51-1.4",
+    "p-sn46.51-2.1",
+    "p-sn46.51-3.1",
+    "p-sn46.51-4.1",
+    "p-sn46.51-5.1"
+   ],
+   "note": null
+  },
+  {
+   "id": "e32",
    "source": "DullnessDrowsiness",
    "target": "FiveHindrances",
    "rel": "member of",
@@ -3076,182 +3325,67 @@
    "note": null
   },
   {
-   "id": "e22",
-   "source": "ObservingMind",
-   "target": "FourMindfulnessMeditations",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-sn46.6-2.4",
-    "p-sn46.6-7.2",
-    "p-sn46.6-7.3",
-    "p-sn46.6-7.4",
-    "p-sn46.6-7.5"
-   ],
-   "note": null
-  },
-  {
-   "id": "e23",
-   "source": "ObservingBody",
-   "target": "FourMindfulnessMeditations",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-sn46.6-2.4",
-    "p-sn46.6-7.2",
-    "p-sn46.6-7.3",
-    "p-sn46.6-7.4",
-    "p-sn46.6-7.5"
-   ],
-   "note": null
-  },
-  {
-   "id": "e24",
-   "source": "ObservingFeelings",
-   "target": "FourMindfulnessMeditations",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-sn46.6-2.4",
-    "p-sn46.6-7.2",
-    "p-sn46.6-7.3",
-    "p-sn46.6-7.4",
-    "p-sn46.6-7.5"
-   ],
-   "note": null
-  },
-  {
-   "id": "e25",
-   "source": "ObservingPrinciples",
-   "target": "FourMindfulnessMeditations",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-sn46.6-2.4",
-    "p-sn46.6-7.2",
-    "p-sn46.6-7.3",
-    "p-sn46.6-7.4",
-    "p-sn46.6-7.5"
-   ],
-   "note": null
-  },
-  {
-   "id": "e26",
-   "source": "ExtinguishedWithoutEffort",
-   "target": "SevenFruits",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-sn46.3-9.1",
-    "p-sn46.3-9.10",
-    "p-sn46.3-9.2"
-   ],
-   "note": null
-  },
-  {
-   "id": "e27",
-   "source": "EarlyEnlightenment",
-   "target": "SevenFruits",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-sn46.3-9.1",
-    "p-sn46.3-9.10",
-    "p-sn46.3-9.2"
-   ],
-   "note": null
-  },
-  {
-   "id": "e28",
-   "source": "HeadingUpstream",
-   "target": "SevenFruits",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-sn46.3-9.1",
-    "p-sn46.3-9.10",
-    "p-sn46.3-9.2"
-   ],
-   "note": null
-  },
-  {
-   "id": "e29",
-   "source": "EnlightenmentAtDeath",
-   "target": "SevenFruits",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-sn46.3-9.1",
-    "p-sn46.3-9.10",
-    "p-sn46.3-9.2"
-   ],
-   "note": null
-  },
-  {
-   "id": "e30",
-   "source": "ExtinguishedBetweenLives",
-   "target": "SevenFruits",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-sn46.3-9.1",
-    "p-sn46.3-9.10",
-    "p-sn46.3-9.2"
-   ],
-   "note": null
-  },
-  {
-   "id": "e31",
-   "source": "ExtinguishedWithEffort",
-   "target": "SevenFruits",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-sn46.3-9.1",
-    "p-sn46.3-9.10",
-    "p-sn46.3-9.2"
-   ],
-   "note": null
-  },
-  {
-   "id": "e32",
-   "source": "ExtinguishedUponLanding",
-   "target": "SevenFruits",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-sn46.3-9.1",
-    "p-sn46.3-9.10",
-    "p-sn46.3-9.2"
-   ],
-   "note": null
-  },
-  {
    "id": "e33",
-   "source": "MentalGoodConduct",
-   "target": "ThreeGoodConducts",
+   "source": "PlacingTheMind",
+   "target": "FirstJhanaFactors",
    "rel": "member of",
    "layer": "sutta",
    "cites": [
-    "p-sn46.6-2.6",
-    "p-sn46.6-6.2"
+    "p-mn43-19.2",
+    "p-mn43-19.3"
    ],
    "note": null
   },
   {
    "id": "e34",
-   "source": "VerbalGoodConduct",
-   "target": "ThreeGoodConducts",
+   "source": "KeepingConnected",
+   "target": "FirstJhanaFactors",
    "rel": "member of",
    "layer": "sutta",
    "cites": [
-    "p-sn46.6-2.6",
-    "p-sn46.6-6.2"
+    "p-mn43-19.2",
+    "p-mn43-19.3"
    ],
    "note": null
   },
   {
    "id": "e35",
+   "source": "Rapture",
+   "target": "FirstJhanaFactors",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-mn43-19.2",
+    "p-mn43-19.3"
+   ],
+   "note": null
+  },
+  {
+   "id": "e36",
+   "source": "Bliss",
+   "target": "FirstJhanaFactors",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-mn43-19.2",
+    "p-mn43-19.3"
+   ],
+   "note": null
+  },
+  {
+   "id": "e37",
+   "source": "Unification",
+   "target": "FirstJhanaFactors",
+   "rel": "member of",
+   "layer": "sutta",
+   "cites": [
+    "p-mn43-19.2",
+    "p-mn43-19.3"
+   ],
+   "note": null
+  },
+  {
+   "id": "e38",
    "source": "BodilyGoodConduct",
    "target": "ThreeGoodConducts",
    "rel": "member of",
@@ -3263,62 +3397,26 @@
    "note": null
   },
   {
-   "id": "e36",
-   "source": "Conceit",
-   "target": "FiveHigherFetters",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-sn46.130-1.2",
-    "p-sn46.130-1.4"
-   ],
-   "note": null
-  },
-  {
-   "id": "e37",
-   "source": "Ignorance",
-   "target": "FiveHigherFetters",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-sn46.130-1.2",
-    "p-sn46.130-1.4"
-   ],
-   "note": null
-  },
-  {
-   "id": "e38",
-   "source": "DesireForFormRebirth",
-   "target": "FiveHigherFetters",
-   "rel": "member of",
-   "layer": "sutta",
-   "cites": [
-    "p-sn46.130-1.2",
-    "p-sn46.130-1.4"
-   ],
-   "note": null
-  },
-  {
    "id": "e39",
-   "source": "DesireForFormlessRebirth",
-   "target": "FiveHigherFetters",
+   "source": "VerbalGoodConduct",
+   "target": "ThreeGoodConducts",
    "rel": "member of",
    "layer": "sutta",
    "cites": [
-    "p-sn46.130-1.2",
-    "p-sn46.130-1.4"
+    "p-sn46.6-2.6",
+    "p-sn46.6-6.2"
    ],
    "note": null
   },
   {
    "id": "e40",
-   "source": "Restlessness",
-   "target": "FiveHigherFetters",
+   "source": "MentalGoodConduct",
+   "target": "ThreeGoodConducts",
    "rel": "member of",
    "layer": "sutta",
    "cites": [
-    "p-sn46.130-1.2",
-    "p-sn46.130-1.4"
+    "p-sn46.6-2.6",
+    "p-sn46.6-6.2"
    ],
    "note": null
   },
@@ -3350,26 +3448,6 @@
   },
   {
    "id": "e43",
-   "source": "Energy",
-   "target": "DullnessDrowsiness",
-   "rel": "counters",
-   "layer": "derived",
-   "cites": [
-    "p-sn46.2-11.2",
-    "p-sn46.2-11.3",
-    "p-sn46.2-11.4",
-    "p-sn46.51-15.2",
-    "p-sn46.51-15.3",
-    "p-sn46.51-15.4",
-    "p-sn46.51-8.2",
-    "p-sn46.51-8.3",
-    "p-sn46.51-8.4"
-   ],
-   "note": "Rule R1: 'the elements of initiative, persistence, and exertion', attended to rationally, fuels energy and starves dullness and drowsiness.",
-   "via": "o-energy-elements"
-  },
-  {
-   "id": "e44",
    "source": "Investigation",
    "target": "Doubt",
    "rel": "counters",
@@ -3387,6 +3465,26 @@
    ],
    "note": "Rule R1: 'qualities that are skillful and unskillful, blameworthy and blameless, inferior and superior, and with a portion of dark or bright', attended to rationally, fuels investigation of principles and starves doubt.",
    "via": "o-qualities"
+  },
+  {
+   "id": "e44",
+   "source": "Energy",
+   "target": "DullnessDrowsiness",
+   "rel": "counters",
+   "layer": "derived",
+   "cites": [
+    "p-sn46.2-11.2",
+    "p-sn46.2-11.3",
+    "p-sn46.2-11.4",
+    "p-sn46.51-15.2",
+    "p-sn46.51-15.3",
+    "p-sn46.51-15.4",
+    "p-sn46.51-8.2",
+    "p-sn46.51-8.3",
+    "p-sn46.51-8.4"
+   ],
+   "note": "Rule R1: 'the elements of initiative, persistence, and exertion', attended to rationally, fuels energy and starves dullness and drowsiness.",
+   "via": "o-energy-elements"
   },
   {
    "id": "e45",
@@ -4229,6 +4327,11 @@
     "p-sn46.49-1.5",
     "p-sn46.50-1.4",
     "p-sn46.50-1.5",
+    "p-sn46.54-12.3",
+    "p-sn46.54-13.3",
+    "p-sn46.54-14.3",
+    "p-sn46.54-15.2",
+    "p-sn46.54-15.3",
     "p-sn46.56-5.3",
     "p-sn46.56-6.2",
     "p-sn46.57-1.5",
@@ -4817,6 +4920,82 @@
   },
   {
    "id": "e127",
+   "source": "o-metta",
+   "target": "TheBeautiful",
+   "rel": "has as its apex",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.54-12.1",
+    "p-sn46.54-12.8",
+    "p-sn46.54-12.9"
+   ],
+   "note": "“is the beautiful, I say, for a wise mendicant here who has not penetrated to a higher freedom” The Pali of 12.8 ends 'or else they enter and remain in the liberation of the beautiful' (subhaṁ vā kho pana vimokkhaṁ upasampajja viharati); Sujato's English of that segment leaves it out.",
+   "group": "outcomes",
+   "effect": "HasApex",
+   "support": null,
+   "inv": "the apex of",
+   "say_out": "has as its apex the beautiful",
+   "say_in": "the heart's release by love → has as its apex this"
+  },
+  {
+   "id": "e128",
+   "source": "HeartsReleaseByCompassion",
+   "target": "InfiniteSpace",
+   "rel": "has as its apex",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.54-13.1",
+    "p-sn46.54-13.6",
+    "p-sn46.54-13.7"
+   ],
+   "note": "“is the dimension of infinite space, I say, for a wise mendicant here who has not penetrated to a higher freedom”",
+   "group": "outcomes",
+   "effect": "HasApex",
+   "support": null,
+   "inv": "the apex of",
+   "say_out": "has as its apex the dimension of infinite space",
+   "say_in": "the heart's release by compassion → has as its apex this"
+  },
+  {
+   "id": "e129",
+   "source": "HeartsReleaseByRejoicing",
+   "target": "InfiniteConsciousness",
+   "rel": "has as its apex",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.54-14.1",
+    "p-sn46.54-14.6",
+    "p-sn46.54-14.7"
+   ],
+   "note": "“is the dimension of infinite consciousness, I say, for a wise mendicant here who has not penetrated to a higher freedom”",
+   "group": "outcomes",
+   "effect": "HasApex",
+   "support": null,
+   "inv": "the apex of",
+   "say_out": "has as its apex the dimension of infinite consciousness",
+   "say_in": "the heart's release by rejoicing → has as its apex this"
+  },
+  {
+   "id": "e130",
+   "source": "HeartsReleaseByEquanimity",
+   "target": "Nothingness",
+   "rel": "has as its apex",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.54-15.1",
+    "p-sn46.54-15.10",
+    "p-sn46.54-15.9"
+   ],
+   "note": "“is the dimension of nothingness, I say, for a wise mendicant here who has not penetrated to a higher freedom”",
+   "group": "outcomes",
+   "effect": "HasApex",
+   "support": null,
+   "inv": "the apex of",
+   "say_out": "has as its apex the dimension of nothingness",
+   "say_in": "the heart's release by equanimity → has as its apex this"
+  },
+  {
+   "id": "e131",
    "source": "RecollectingTeaching",
    "target": "Mindfulness",
    "rel": "when present, then (arise)",
@@ -4832,7 +5011,7 @@
    "say_in": "when recollecting and thinking about the teaching is present, mindfulness arises"
   },
   {
-   "id": "e128",
+   "id": "e132",
    "source": "Mindfulness",
    "target": "Investigation",
    "rel": "when present, then (arise)",
@@ -4848,7 +5027,7 @@
    "say_in": "when mindfulness is present, investigation of principles arises"
   },
   {
-   "id": "e129",
+   "id": "e133",
    "source": "Investigation",
    "target": "Energy",
    "rel": "when present, then (arise)",
@@ -4864,7 +5043,7 @@
    "say_in": "when investigation of principles is present, energy arises"
   },
   {
-   "id": "e130",
+   "id": "e134",
    "source": "Energy",
    "target": "Rapture",
    "rel": "when present, then (arise)",
@@ -4880,7 +5059,7 @@
    "say_in": "when energy is present, rapture arises"
   },
   {
-   "id": "e131",
+   "id": "e135",
    "source": "Rapture",
    "target": "Tranquility",
    "rel": "when present, then (arise)",
@@ -4896,7 +5075,7 @@
    "say_in": "when rapture is present, tranquility arises"
   },
   {
-   "id": "e132",
+   "id": "e136",
    "source": "Tranquility",
    "target": "Immersion",
    "rel": "when present, then (arise)",
@@ -4912,7 +5091,7 @@
    "say_in": "when tranquility is present, immersion arises"
   },
   {
-   "id": "e133",
+   "id": "e137",
    "source": "Immersion",
    "target": "Equanimity",
    "rel": "when present, then (arise)",
@@ -4928,7 +5107,7 @@
    "say_in": "when immersion is present, equanimity arises"
   },
   {
-   "id": "e134",
+   "id": "e138",
    "source": "FiveHindrances",
    "target": "NotKnowingSeeing",
    "rel": "is a cause and reason for",
@@ -4948,7 +5127,7 @@
    "say_in": "the five hindrances → is a cause and reason for this"
   },
   {
-   "id": "e135",
+   "id": "e139",
    "source": "SevenAwakeningFactors",
    "target": "KnowingSeeing",
    "rel": "is a cause and reason for",
@@ -4968,7 +5147,7 @@
    "say_in": "the seven awakening factors → is a cause and reason for this"
   },
   {
-   "id": "e136",
+   "id": "e140",
    "source": "SenseRestraint",
    "target": "ThreeGoodConducts",
    "rel": "fulfils",
@@ -4986,7 +5165,7 @@
    "say_in": "sense restraint → fulfils this"
   },
   {
-   "id": "e137",
+   "id": "e141",
    "source": "ThreeGoodConducts",
    "target": "FourMindfulnessMeditations",
    "rel": "fulfils",
@@ -5004,7 +5183,7 @@
    "say_in": "the three kinds of good conduct → fulfils this"
   },
   {
-   "id": "e138",
+   "id": "e142",
    "source": "FourMindfulnessMeditations",
    "target": "SevenAwakeningFactors",
    "rel": "fulfils",
@@ -5022,7 +5201,7 @@
    "say_in": "the four kinds of mindfulness meditation → fulfils this"
   },
   {
-   "id": "e139",
+   "id": "e143",
    "source": "SevenAwakeningFactors",
    "target": "KnowledgeAndFreedom",
    "rel": "fulfils",
@@ -5040,7 +5219,7 @@
    "say_in": "the seven awakening factors → fulfils this"
   },
   {
-   "id": "e140",
+   "id": "e144",
    "source": "Ethics",
    "target": "SevenAwakeningFactors",
    "rel": "is the basis of",
@@ -5056,7 +5235,7 @@
    "say_in": "ethics → is the basis of this"
   },
   {
-   "id": "e141",
+   "id": "e145",
    "source": "GoodFriendship",
    "target": "SevenAwakeningFactors",
    "rel": "is the forerunner of",
@@ -5072,7 +5251,7 @@
    "say_in": "good friendship → is the forerunner of this"
   },
   {
-   "id": "e142",
+   "id": "e146",
    "source": "GoodFriendship",
    "target": "SevenAwakeningFactors",
    "rel": "supports the development of",
@@ -5090,7 +5269,7 @@
    "say_in": "good friendship → supports the development of this"
   },
   {
-   "id": "e143",
+   "id": "e147",
    "source": "RationalAttention",
    "target": "SevenAwakeningFactors",
    "rel": "is the forerunner of",
@@ -5105,7 +5284,7 @@
    "say_in": "rational application of mind → is the forerunner of this"
   },
   {
-   "id": "e144",
+   "id": "e148",
    "source": "RationalAttention",
    "target": "SevenAwakeningFactors",
    "rel": "supports the development of",
@@ -5123,7 +5302,7 @@
    "say_in": "rational application of mind → supports the development of this"
   },
   {
-   "id": "e145",
+   "id": "e149",
    "source": "Diligence",
    "target": "SkillfulQualities",
    "rel": "is the root of",
@@ -5138,7 +5317,7 @@
    "say_in": "diligence → is the root of this"
   },
   {
-   "id": "e146",
+   "id": "e150",
    "source": "Diligence",
    "target": "SevenAwakeningFactors",
    "rel": "supports the development of",
@@ -5153,7 +5332,7 @@
    "say_in": "diligence → supports the development of this"
   },
   {
-   "id": "e147",
+   "id": "e151",
    "source": "RationalAttention",
    "target": "SkillfulQualities",
    "rel": "is the root of",
@@ -5168,7 +5347,7 @@
    "say_in": "rational application of mind → is the root of this"
   },
   {
-   "id": "e148",
+   "id": "e152",
    "source": "RationalAttention",
    "target": "SevenAwakeningFactors",
    "rel": "gives rise to",
@@ -5183,7 +5362,7 @@
    "say_in": "rational application of mind → gives rise to this"
   },
   {
-   "id": "e149",
+   "id": "e153",
    "source": "GoodFriendship",
    "target": "SevenAwakeningFactors",
    "rel": "gives rise to",
@@ -5198,7 +5377,7 @@
    "say_in": "good friendship → gives rise to this"
   },
   {
-   "id": "e150",
+   "id": "e154",
    "source": "IrrationalAttention",
    "target": "FiveHindrances",
    "rel": "when present, then (arise, and once arisen increase and grow)",
@@ -5215,7 +5394,7 @@
    "say_in": "when irrational application of mind is present, the five hindrances arise, and once arisen increase and grow"
   },
   {
-   "id": "e151",
+   "id": "e155",
    "source": "IrrationalAttention",
    "target": "SevenAwakeningFactors",
    "rel": "when present, then (don't arise, or cease if already arisen)",
@@ -5231,7 +5410,7 @@
    "say_in": "when irrational application of mind is present, the seven awakening factors don't arise, or cease"
   },
   {
-   "id": "e152",
+   "id": "e156",
    "source": "RationalAttention",
    "target": "FiveHindrances",
    "rel": "when present, then (don't arise, or are given up if already arisen)",
@@ -5247,7 +5426,7 @@
    "say_in": "when rational application of mind is present, the five hindrances don't arise, or are given up"
   },
   {
-   "id": "e153",
+   "id": "e157",
    "source": "RationalAttention",
    "target": "SevenAwakeningFactors",
    "rel": "when present, then (arise, and once arisen are fully developed)",
@@ -5264,7 +5443,7 @@
    "say_in": "when rational application of mind is present, the seven awakening factors arise, and once arisen are fully developed"
   },
   {
-   "id": "e154",
+   "id": "e158",
    "source": "ListeningToTeaching",
    "target": "FiveHindrances",
    "rel": "when present, then (are absent)",
@@ -5280,7 +5459,7 @@
    "say_in": "when actively listening to the teaching is present, the five hindrances are absent"
   },
   {
-   "id": "e155",
+   "id": "e159",
    "source": "ListeningToTeaching",
    "target": "SevenAwakeningFactors",
    "rel": "when present, then (are fully developed)",
@@ -5296,7 +5475,7 @@
    "say_in": "when actively listening to the teaching is present, the seven awakening factors are fully developed"
   },
   {
-   "id": "e156",
+   "id": "e160",
    "source": "Seclusion",
    "target": "SevenAwakeningFactors",
    "rel": "is the basis of",
@@ -5322,6 +5501,11 @@
     "p-sn46.49-1.5",
     "p-sn46.50-1.4",
     "p-sn46.50-1.5",
+    "p-sn46.54-12.3",
+    "p-sn46.54-13.3",
+    "p-sn46.54-14.3",
+    "p-sn46.54-15.2",
+    "p-sn46.54-15.3",
     "p-sn46.56-5.3",
     "p-sn46.56-6.2",
     "p-sn46.57-1.5",
@@ -5340,7 +5524,7 @@
    "say_in": "seclusion → is the basis of this"
   },
   {
-   "id": "e157",
+   "id": "e161",
    "source": "Virāga",
    "target": "SevenAwakeningFactors",
    "rel": "is the basis of",
@@ -5366,6 +5550,11 @@
     "p-sn46.49-1.5",
     "p-sn46.50-1.4",
     "p-sn46.50-1.5",
+    "p-sn46.54-12.3",
+    "p-sn46.54-13.3",
+    "p-sn46.54-14.3",
+    "p-sn46.54-15.2",
+    "p-sn46.54-15.3",
     "p-sn46.56-5.3",
     "p-sn46.56-6.2",
     "p-sn46.57-1.5",
@@ -5384,7 +5573,7 @@
    "say_in": "fading away → is the basis of this"
   },
   {
-   "id": "e158",
+   "id": "e162",
    "source": "Cessation",
    "target": "SevenAwakeningFactors",
    "rel": "is the basis of",
@@ -5410,6 +5599,11 @@
     "p-sn46.49-1.5",
     "p-sn46.50-1.4",
     "p-sn46.50-1.5",
+    "p-sn46.54-12.3",
+    "p-sn46.54-13.3",
+    "p-sn46.54-14.3",
+    "p-sn46.54-15.2",
+    "p-sn46.54-15.3",
     "p-sn46.56-5.3",
     "p-sn46.56-6.2",
     "p-sn46.57-1.5",
@@ -5428,7 +5622,7 @@
    "say_in": "cessation → is the basis of this"
   },
   {
-   "id": "e159",
+   "id": "e163",
    "source": "SkeletonPerception",
    "target": "SevenAwakeningFactors",
    "rel": "accompanies the development of",
@@ -5454,7 +5648,7 @@
    "say_in": "the perception of a skeleton → accompanies the development of this"
   },
   {
-   "id": "e160",
+   "id": "e164",
    "source": "CessationPerception",
    "target": "SevenAwakeningFactors",
    "rel": "accompanies the development of",
@@ -5474,7 +5668,75 @@
    "say_in": "the perception of cessation → accompanies the development of this"
   },
   {
-   "id": "e161",
+   "id": "e165",
+   "source": "Love",
+   "target": "SevenAwakeningFactors",
+   "rel": "accompanies the development of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.54-12.1",
+    "p-sn46.54-12.2",
+    "p-sn46.54-12.3"
+   ],
+   "note": "“mettāsahagataṁ” How the heart's release by love is developed (12.1-12.3). The Pali: each awakening factor developed accompanied by love. Sujato's English: 'develops the heart's release by love together with the awakening factors'.",
+   "group": "conditions",
+   "inv": "conditioned by",
+   "say_out": "accompanies the development of the seven awakening factors",
+   "say_in": "love → accompanies the development of this"
+  },
+  {
+   "id": "e166",
+   "source": "Compassion",
+   "target": "SevenAwakeningFactors",
+   "rel": "accompanies the development of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.54-13.1",
+    "p-sn46.54-13.2",
+    "p-sn46.54-13.3"
+   ],
+   "note": "“karuṇāsahagataṁ” How the heart's release by compassion is developed (13.1-13.3). The Pali: each awakening factor developed accompanied by compassion.",
+   "group": "conditions",
+   "inv": "conditioned by",
+   "say_out": "accompanies the development of the seven awakening factors",
+   "say_in": "compassion → accompanies the development of this"
+  },
+  {
+   "id": "e167",
+   "source": "Rejoicing",
+   "target": "SevenAwakeningFactors",
+   "rel": "accompanies the development of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.54-14.1",
+    "p-sn46.54-14.2",
+    "p-sn46.54-14.3"
+   ],
+   "note": "“muditāsahagataṁ” How the heart's release by rejoicing is developed (14.1-14.3). The Pali: each awakening factor developed accompanied by rejoicing.",
+   "group": "conditions",
+   "inv": "conditioned by",
+   "say_out": "accompanies the development of the seven awakening factors",
+   "say_in": "rejoicing → accompanies the development of this"
+  },
+  {
+   "id": "e168",
+   "source": "EquanimityImmeasurable",
+   "target": "SevenAwakeningFactors",
+   "rel": "accompanies the development of",
+   "layer": "sutta",
+   "cites": [
+    "p-sn46.54-15.1",
+    "p-sn46.54-15.2",
+    "p-sn46.54-15.3"
+   ],
+   "note": "“upekkhāsahagataṁ” How the heart's release by equanimity is developed (15.1-15.3). The Pali even has 'the awakening factor of equanimity accompanied by equanimity' (upekkhāsahagataṁ upekkhāsambojjhaṅgaṁ, 15.3): the practice and the factor are two things here, which supports keeping them as separate concepts (D15).",
+   "group": "conditions",
+   "inv": "conditioned by",
+   "say_out": "accompanies the development of the seven awakening factors",
+   "say_in": "equanimity → accompanies the development of this"
+  },
+  {
+   "id": "e169",
    "source": "Unification",
    "target": "Immersion",
    "rel": "is defined as",
@@ -5485,7 +5747,7 @@
    "note": null
   },
   {
-   "id": "e162",
+   "id": "e170",
    "source": "SensualDesireInternal",
    "target": "SensualDesire",
    "rel": "one of the two kinds of",
@@ -5501,7 +5763,7 @@
    "inv": "becomes twofold"
   },
   {
-   "id": "e163",
+   "id": "e171",
    "source": "SensualDesireExternal",
    "target": "SensualDesire",
    "rel": "one of the two kinds of",
@@ -5517,7 +5779,7 @@
    "inv": "becomes twofold"
   },
   {
-   "id": "e164",
+   "id": "e172",
    "source": "IllWillInternal",
    "target": "IllWill",
    "rel": "one of the two kinds of",
@@ -5533,7 +5795,7 @@
    "inv": "becomes twofold"
   },
   {
-   "id": "e165",
+   "id": "e173",
    "source": "IllWillExternal",
    "target": "IllWill",
    "rel": "one of the two kinds of",
@@ -5549,7 +5811,7 @@
    "inv": "becomes twofold"
   },
   {
-   "id": "e166",
+   "id": "e174",
    "source": "Dullness",
    "target": "DullnessDrowsiness",
    "rel": "one of the two qualities in",
@@ -5565,7 +5827,7 @@
    "inv": "becomes twofold"
   },
   {
-   "id": "e167",
+   "id": "e175",
    "source": "Drowsiness",
    "target": "DullnessDrowsiness",
    "rel": "one of the two qualities in",
@@ -5581,7 +5843,7 @@
    "inv": "becomes twofold"
   },
   {
-   "id": "e168",
+   "id": "e176",
    "source": "Restlessness",
    "target": "RestlessnessRemorse",
    "rel": "one of the two qualities in",
@@ -5597,7 +5859,7 @@
    "inv": "becomes twofold"
   },
   {
-   "id": "e169",
+   "id": "e177",
    "source": "Remorse",
    "target": "RestlessnessRemorse",
    "rel": "one of the two qualities in",
@@ -5613,7 +5875,7 @@
    "inv": "becomes twofold"
   },
   {
-   "id": "e170",
+   "id": "e178",
    "source": "DoubtInternal",
    "target": "Doubt",
    "rel": "one of the two kinds of",
@@ -5629,7 +5891,7 @@
    "inv": "becomes twofold"
   },
   {
-   "id": "e171",
+   "id": "e179",
    "source": "DoubtExternal",
    "target": "Doubt",
    "rel": "one of the two kinds of",
@@ -5645,7 +5907,7 @@
    "inv": "becomes twofold"
   },
   {
-   "id": "e172",
+   "id": "e180",
    "source": "MindfulnessInternal",
    "target": "Mindfulness",
    "rel": "one of the two kinds of",
@@ -5661,7 +5923,7 @@
    "inv": "becomes twofold"
   },
   {
-   "id": "e173",
+   "id": "e181",
    "source": "MindfulnessExternal",
    "target": "Mindfulness",
    "rel": "one of the two kinds of",
@@ -5677,7 +5939,7 @@
    "inv": "becomes twofold"
   },
   {
-   "id": "e174",
+   "id": "e182",
    "source": "InvestigationInternal",
    "target": "Investigation",
    "rel": "one of the two kinds of",
@@ -5693,7 +5955,7 @@
    "inv": "becomes twofold"
   },
   {
-   "id": "e175",
+   "id": "e183",
    "source": "InvestigationExternal",
    "target": "Investigation",
    "rel": "one of the two kinds of",
@@ -5709,7 +5971,7 @@
    "inv": "becomes twofold"
   },
   {
-   "id": "e176",
+   "id": "e184",
    "source": "EnergyPhysical",
    "target": "Energy",
    "rel": "one of the two kinds of",
@@ -5725,7 +5987,7 @@
    "inv": "becomes twofold"
   },
   {
-   "id": "e177",
+   "id": "e185",
    "source": "EnergyMental",
    "target": "Energy",
    "rel": "one of the two kinds of",
@@ -5741,7 +6003,7 @@
    "inv": "becomes twofold"
   },
   {
-   "id": "e178",
+   "id": "e186",
    "source": "RaptureWithPlacing",
    "target": "Rapture",
    "rel": "one of the two kinds of",
@@ -5757,7 +6019,7 @@
    "inv": "becomes twofold"
   },
   {
-   "id": "e179",
+   "id": "e187",
    "source": "RaptureWithoutPlacing",
    "target": "Rapture",
    "rel": "one of the two kinds of",
@@ -5773,7 +6035,7 @@
    "inv": "becomes twofold"
   },
   {
-   "id": "e180",
+   "id": "e188",
    "source": "TranquilityPhysical",
    "target": "Tranquility",
    "rel": "one of the two kinds of",
@@ -5789,7 +6051,7 @@
    "inv": "becomes twofold"
   },
   {
-   "id": "e181",
+   "id": "e189",
    "source": "TranquilityMental",
    "target": "Tranquility",
    "rel": "one of the two kinds of",
@@ -5805,7 +6067,7 @@
    "inv": "becomes twofold"
   },
   {
-   "id": "e182",
+   "id": "e190",
    "source": "ImmersionWithPlacing",
    "target": "Immersion",
    "rel": "one of the two kinds of",
@@ -5821,7 +6083,7 @@
    "inv": "becomes twofold"
   },
   {
-   "id": "e183",
+   "id": "e191",
    "source": "ImmersionWithoutPlacing",
    "target": "Immersion",
    "rel": "one of the two kinds of",
@@ -5837,7 +6099,7 @@
    "inv": "becomes twofold"
   },
   {
-   "id": "e184",
+   "id": "e192",
    "source": "EquanimityInternal",
    "target": "Equanimity",
    "rel": "one of the two kinds of",
@@ -5853,7 +6115,7 @@
    "inv": "becomes twofold"
   },
   {
-   "id": "e185",
+   "id": "e193",
    "source": "EquanimityExternal",
    "target": "Equanimity",
    "rel": "one of the two kinds of",
@@ -5869,7 +6131,7 @@
    "inv": "becomes twofold"
   },
   {
-   "id": "e186",
+   "id": "e194",
    "source": "SluggishMind",
    "target": "DullnessDrowsiness",
    "rel": "see also",
@@ -5878,7 +6140,7 @@
    "note": "Editor's link, not a textual claim."
   },
   {
-   "id": "e187",
+   "id": "e195",
    "source": "RestlessMind",
    "target": "RestlessnessRemorse",
    "rel": "see also",
@@ -5887,7 +6149,7 @@
    "note": "Editor's link, not a textual claim."
   },
   {
-   "id": "e188",
+   "id": "e196",
    "source": "KnowledgeAndFreedom",
    "target": "FruitOfKnowledgeAndFreedom",
    "rel": "see also",
@@ -5896,7 +6158,7 @@
    "note": "Editor's link, not a textual claim."
   },
   {
-   "id": "e189",
+   "id": "e197",
    "source": "Sambodhi",
    "target": "Bodhi",
    "rel": "see also",
@@ -5905,7 +6167,7 @@
    "note": "Editor's link, not a textual claim."
   },
   {
-   "id": "e190",
+   "id": "e198",
    "source": "Love",
    "target": "o-metta",
    "rel": "see also",
@@ -5914,7 +6176,7 @@
    "note": "Editor's link, not a textual claim."
   },
   {
-   "id": "e191",
+   "id": "e199",
    "source": "EquanimityImmeasurable",
    "target": "Equanimity",
    "rel": "see also",
@@ -5923,7 +6185,7 @@
    "note": "Editor's link, not a textual claim."
   },
   {
-   "id": "e192",
+   "id": "e200",
    "source": "UglinessPerception",
    "target": "o-ugliness",
    "rel": "see also",
@@ -5932,7 +6194,34 @@
    "note": "Editor's link, not a textual claim."
   },
   {
-   "id": "e193",
+   "id": "e201",
+   "source": "Compassion",
+   "target": "HeartsReleaseByCompassion",
+   "rel": "see also",
+   "layer": "editor",
+   "cites": [],
+   "note": "Editor's link, not a textual claim."
+  },
+  {
+   "id": "e202",
+   "source": "Rejoicing",
+   "target": "HeartsReleaseByRejoicing",
+   "rel": "see also",
+   "layer": "editor",
+   "cites": [],
+   "note": "Editor's link, not a textual claim."
+  },
+  {
+   "id": "e203",
+   "source": "EquanimityImmeasurable",
+   "target": "HeartsReleaseByEquanimity",
+   "rel": "see also",
+   "layer": "editor",
+   "cites": [],
+   "note": "Editor's link, not a textual claim."
+  },
+  {
+   "id": "e204",
    "source": "lex-dhamma",
    "target": "DhammaTeaching",
    "rel": "sense",
@@ -5943,7 +6232,7 @@
    "note": null
   },
   {
-   "id": "e194",
+   "id": "e205",
    "source": "lex-dhamma",
    "target": "DhammaPhenomenon",
    "rel": "sense",
@@ -5954,7 +6243,7 @@
    "note": null
   },
   {
-   "id": "e195",
+   "id": "e206",
    "source": "lex-dhamma",
    "target": "DhammaMindObject",
    "rel": "sense",
@@ -5966,7 +6255,7 @@
    "note": null
   },
   {
-   "id": "e196",
+   "id": "e207",
    "source": "lex-dhamma",
    "target": "DhammaQuality",
    "rel": "sense",
@@ -9205,6 +9494,166 @@
    "en": "Because it’s easy to stimulate a sluggish mind with these things.",
    "pi": "Līnaṁ, bhikkhave, cittaṁ taṁ etehi dhammehi susamuṭṭhāpayaṁ hoti.",
    "url": "https://suttacentral.net/sn46.53/en/sujato#sn46.53:7.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.54-12.1": {
+   "segment": "sn46.54:12.1",
+   "en": "And how is the heart’s release by love developed? What is its destination, apex, fruit, and end?",
+   "pi": "Kathaṁ bhāvitā ca, bhikkhave, mettācetovimutti, kiṅgatikā hoti, kiṁparamā, kiṁphalā, kiṁpariyosānā?",
+   "url": "https://suttacentral.net/sn46.54/en/sujato#sn46.54:12.1",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.54-12.2": {
+   "segment": "sn46.54:12.2",
+   "en": "It’s when a mendicant develops the heart’s release by love together with the awakening factors of mindfulness, investigation of principles, energy, rapture, tranquility, immersion,",
+   "pi": "Idha, bhikkhave, bhikkhu mettāsahagataṁ satisambojjhaṅgaṁ bhāveti …pe…",
+   "url": "https://suttacentral.net/sn46.54/en/sujato#sn46.54:12.2",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.54-12.3": {
+   "segment": "sn46.54:12.3",
+   "en": "and equanimity, which rely on seclusion, fading away, and cessation, and ripen as letting go.",
+   "pi": "mettāsahagataṁ upekkhāsambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ.",
+   "url": "https://suttacentral.net/sn46.54/en/sujato#sn46.54:12.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.54-12.8": {
+   "segment": "sn46.54:12.8",
+   "en": "If they wish: ‘May I meditate staying equanimous, mindful and aware, shunning both the repulsive and the unrepulsive,’ that’s what they do.",
+   "pi": "Sace ākaṅkhati ‘appaṭikūlañca paṭikūlañca tadubhayaṁ abhinivajjetvā upekkhako vihareyyaṁ sato sampajāno’ti, upekkhako ca tattha viharati sato sampajāno, subhaṁ vā kho pana vimokkhaṁ upasampajja viharati.",
+   "url": "https://suttacentral.net/sn46.54/en/sujato#sn46.54:12.8",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.54-12.9": {
+   "segment": "sn46.54:12.9",
+   "en": "The apex of the heart’s release by love is the beautiful, I say, for a wise mendicant here who has not penetrated to a higher freedom.",
+   "pi": "Subhaparamāhaṁ, bhikkhave, mettācetovimuttiṁ vadāmi, idhapaññassa bhikkhuno uttarivimuttiṁ appaṭivijjhato.",
+   "url": "https://suttacentral.net/sn46.54/en/sujato#sn46.54:12.9",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.54-13.1": {
+   "segment": "sn46.54:13.1",
+   "en": "And how is the heart’s release by compassion developed? What is its destination, apex, fruit, and end?",
+   "pi": "Kathaṁ bhāvitā ca, bhikkhave, karuṇācetovimutti, kiṅgatikā hoti, kiṁparamā, kiṁphalā, kiṁpariyosānā?",
+   "url": "https://suttacentral.net/sn46.54/en/sujato#sn46.54:13.1",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.54-13.2": {
+   "segment": "sn46.54:13.2",
+   "en": "It’s when a mendicant develops the heart’s release by compassion together with the awakening factors of mindfulness, investigation of principles, energy, rapture, tranquility, immersion,",
+   "pi": "Idha, bhikkhave, bhikkhu karuṇāsahagataṁ satisambojjhaṅgaṁ bhāveti …pe…",
+   "url": "https://suttacentral.net/sn46.54/en/sujato#sn46.54:13.2",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.54-13.3": {
+   "segment": "sn46.54:13.3",
+   "en": "and equanimity, which rely on seclusion, fading away, and cessation, and ripen as letting go.",
+   "pi": "karuṇāsahagataṁ upekkhāsambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ.",
+   "url": "https://suttacentral.net/sn46.54/en/sujato#sn46.54:13.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.54-13.6": {
+   "segment": "sn46.54:13.6",
+   "en": "Or else, going totally beyond perceptions of form, with the disappearance of perceptions of impingement, not focusing on perceptions of diversity, aware that ‘space is infinite’, they enter and remain in the dimension of infinite space.",
+   "pi": "Sabbaso vā pana rūpasaññānaṁ samatikkamā paṭighasaññānaṁ atthaṅgamā nānattasaññānaṁ amanasikārā ‘ananto ākāso’ti ākāsānañcāyatanaṁ upasampajja viharati.",
+   "url": "https://suttacentral.net/sn46.54/en/sujato#sn46.54:13.6",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.54-13.7": {
+   "segment": "sn46.54:13.7",
+   "en": "The apex of the heart’s release by compassion is the dimension of infinite space, I say, for a wise mendicant here who has not penetrated to a higher freedom.",
+   "pi": "Ākāsānañcāyatanaparamāhaṁ, bhikkhave, karuṇācetovimuttiṁ vadāmi, idhapaññassa bhikkhuno uttarivimuttiṁ appaṭivijjhato.",
+   "url": "https://suttacentral.net/sn46.54/en/sujato#sn46.54:13.7",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.54-14.1": {
+   "segment": "sn46.54:14.1",
+   "en": "And how is the heart’s release by rejoicing developed? What is its destination, apex, fruit, and end?",
+   "pi": "Kathaṁ bhāvitā ca, bhikkhave, muditācetovimutti, kiṅgatikā hoti, kiṁparamā, kiṁphalā, kiṁpariyosānā?",
+   "url": "https://suttacentral.net/sn46.54/en/sujato#sn46.54:14.1",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.54-14.2": {
+   "segment": "sn46.54:14.2",
+   "en": "It’s when a mendicant develops the heart’s release by rejoicing together with the awakening factors of mindfulness, investigation of principles, energy, rapture, tranquility, immersion,",
+   "pi": "Idha, bhikkhave, bhikkhu muditāsahagataṁ satisambojjhaṅgaṁ bhāveti …pe…",
+   "url": "https://suttacentral.net/sn46.54/en/sujato#sn46.54:14.2",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.54-14.3": {
+   "segment": "sn46.54:14.3",
+   "en": "and equanimity, which rely on seclusion, fading away, and cessation, and ripen as letting go.",
+   "pi": "muditāsahagataṁ upekkhāsambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ.",
+   "url": "https://suttacentral.net/sn46.54/en/sujato#sn46.54:14.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.54-14.6": {
+   "segment": "sn46.54:14.6",
+   "en": "Or else, going totally beyond the dimension of infinite space, aware that ‘consciousness is infinite’, they enter and remain in the dimension of infinite consciousness.",
+   "pi": "Sabbaso vā pana ākāsānañcāyatanaṁ samatikkamma ‘anantaṁ viññāṇan’ti viññāṇañcāyatanaṁ upasampajja viharati.",
+   "url": "https://suttacentral.net/sn46.54/en/sujato#sn46.54:14.6",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.54-14.7": {
+   "segment": "sn46.54:14.7",
+   "en": "The apex of the heart’s release by rejoicing is the dimension of infinite consciousness, I say, for a wise mendicant here who has not penetrated to a higher freedom.",
+   "pi": "Viññāṇañcāyatanaparamāhaṁ, bhikkhave, muditācetovimuttiṁ vadāmi, idhapaññassa bhikkhuno uttarivimuttiṁ appaṭivijjhato.",
+   "url": "https://suttacentral.net/sn46.54/en/sujato#sn46.54:14.7",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.54-15.1": {
+   "segment": "sn46.54:15.1",
+   "en": "And how is the heart’s release by equanimity developed? What is its destination, apex, fruit, and end?",
+   "pi": "Kathaṁ bhāvitā ca, bhikkhave, upekkhācetovimutti, kiṅgatikā hoti, kiṁparamā, kiṁphalā, kiṁpariyosānā?",
+   "url": "https://suttacentral.net/sn46.54/en/sujato#sn46.54:15.1",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.54-15.10": {
+   "segment": "sn46.54:15.10",
+   "en": "The apex of the heart’s release by equanimity is the dimension of nothingness, I say, for a wise mendicant here who has not penetrated to a higher freedom.”",
+   "pi": "Ākiñcaññāyatanaparamāhaṁ, bhikkhave, upekkhācetovimuttiṁ vadāmi, idhapaññassa bhikkhuno uttarivimuttiṁ appaṭivijjhato”ti.",
+   "url": "https://suttacentral.net/sn46.54/en/sujato#sn46.54:15.10",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.54-15.2": {
+   "segment": "sn46.54:15.2",
+   "en": "It’s when a mendicant develops the heart’s release by equanimity together with the awakening factors of mindfulness, investigation of principles, energy, rapture, tranquility, immersion,",
+   "pi": "Idha, bhikkhave, bhikkhu upekkhāsahagataṁ satisambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ …pe…",
+   "url": "https://suttacentral.net/sn46.54/en/sujato#sn46.54:15.2",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.54-15.3": {
+   "segment": "sn46.54:15.3",
+   "en": "and equanimity, which rely on seclusion, fading away, and cessation, and ripen as letting go.",
+   "pi": "upekkhāsahagataṁ upekkhāsambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ.",
+   "url": "https://suttacentral.net/sn46.54/en/sujato#sn46.54:15.3",
+   "contested": null,
+   "sense": null
+  },
+  "p-sn46.54-15.9": {
+   "segment": "sn46.54:15.9",
+   "en": "Or else, going totally beyond the dimension of infinite consciousness, aware that ‘there is nothing at all’, they enter and remain in the dimension of nothingness.",
+   "pi": "Sabbaso vā pana viññāṇañcāyatanaṁ samatikkamma ‘natthi kiñcī’ti ākiñcaññāyatanaṁ upasampajja viharati.",
+   "url": "https://suttacentral.net/sn46.54/en/sujato#sn46.54:15.9",
    "contested": null,
    "sense": null
   },

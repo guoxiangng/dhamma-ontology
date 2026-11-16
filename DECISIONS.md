@@ -192,6 +192,18 @@ SN 46.6 gives a ladder: sense restraint, "developed and cultivated", fulfils the
 - **What is narrated is not taught.** In SN 46.14–16, a sick disciple (or the Buddha) hears the awakening factors and recovers. The ontology encodes what is said about the factors, not that they heal; eval Q50 tests this.
 - **Accounts of one's own practice** (Sāriputta in SN 46.4, Udāyī in SN 46.30) are left out until a pattern for them is agreed (revisit #13). Udāyī's is endorsed by the Buddha, which makes it a closer call.
 
+## D21. "Has as its apex" (SN 46.54)
+
+*Decided by Claude; the owner deferred. Revisit.*
+
+SN 46.54 asks of each heart's release (by love, compassion, rejoicing, equanimity): "what is its destination, apex, fruit, and end?" The answer gives the apex (*parama*) only: the beautiful, then the dimensions of infinite space, infinite consciousness and nothingness, each "for a wise mendicant here who has not penetrated to a higher freedom". This is a new outcome effect, "has as its apex", and the qualifying phrase stays in the wording. It is not "leads to": the text names a ceiling, not a destination.
+
+- **Same reversal as SN 46.57 (D19), caught this time before encoding.** The Pali *mettāsahagataṁ satisambojjhaṅgaṁ bhāveti* develops the awakening factor accompanied by love. Sujato's English says "develops the heart's release by love together with the awakening factors". The claims follow the Pali.
+- **The English leaves out a phrase.** At 12.8 the Pali ends "or else they enter and remain in the liberation of the beautiful" (*subhaṁ vā kho pana vimokkhaṁ*); the English doesn't. It is cited, with a note.
+- **"Upekkhāsahagataṁ upekkhāsambojjhaṅgaṁ"** (15.3): the equanimity factor developed accompanied by equanimity. The practice and the factor are two things here, which supports D15's separate concepts.
+- **The beautiful** (*subha*, as an attainment) is kept apart from SN 46.51's "feature of beauty" (*subhanimitta*), which fuels sensual desire.
+- **The wanderers' version** of the teaching (spreading love to every direction) is left out (D17). The Buddha's own answer is about the awakening factors.
+
 ## Patterns not modelled yet
 
 These kinds of teaching have come up and been left out (each logged in `data/coverage.ttl`) until a pattern is agreed:
