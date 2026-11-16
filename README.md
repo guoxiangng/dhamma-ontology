@@ -83,7 +83,7 @@ Rebuild `dist/` with `python scripts/release.py`.
 | | |
 |---|---|
 | [AUDIT.md](AUDIT.md) | An independent check of every claim against the Pali and English: 82% supported, what was wrong, what was fixed |
-| [DECISIONS.md](DECISIONS.md) | Every modelling choice, who decided it, corrections (D1–D21), and a revisit list for a second pass |
+| [DECISIONS.md](DECISIONS.md) | Every modelling choice, who decided it, corrections (D1–D22), and a revisit list for a second pass |
 | [COVERAGE.md](COVERAGE.md) | Which texts are encoded, how much of each, what's left out, review status. Generated |
 | [triage/](triage/) | Collections sorted by the modelling pattern each sutta needs, before ingesting them |
 | [eval/](eval/) | A golden question set for testing whether the ontology helps an LLM answer more faithfully, and the method |

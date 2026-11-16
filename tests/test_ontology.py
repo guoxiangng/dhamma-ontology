@@ -97,6 +97,7 @@ def test_resolve_finds_hindrance_and_mind_state(graph):
     ("outcome-bad-effect.ttl", ["S12:"]),
     ("division-one-part.ttl", ["S15:"]),
     ("abbreviation-unflagged.ttl", ["S16:"]),
+    ("simile-incomplete.ttl", ["S17:"]),
 ])
 def test_broken_data_is_caught(fixture, expected):
     g, *_ = dho.build([BROKEN / fixture])

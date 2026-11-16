@@ -1,0 +1,158 @@
+{
+  "batch": "batch8",
+  "texts": [
+    {
+      "uid": "sn46.1",
+      "claims": [
+        {"id": "c-01", "verdict": "SUPPORTED", "severity": null, "reason": "1.4 (and 1.13): sīlaṁ nissāya sīle patiṭṭhāya the mendicant develops the seven factors; 'is the basis of' is a fair reading."},
+        {"id": "c-17", "verdict": "SUPPORTED", "severity": null, "reason": "1.6 and 1.12: factors developed vivekanissitaṁ ('relying on seclusion'); the middle five are …pe… of the same formula."},
+        {"id": "c-18", "verdict": "SUPPORTED", "severity": null, "reason": "1.6, 1.12: virāganissitaṁ, same stock formula."},
+        {"id": "c-19", "verdict": "SUPPORTED", "severity": null, "reason": "1.6, 1.12: nirodhanissitaṁ, same stock formula."},
+        {"id": "o-19", "verdict": "SUPPORTED", "severity": null, "reason": "1.6, 1.12: vossaggapariṇāmiṁ, 'ripens as letting go'; 'leads to' is a fair simplification."},
+        {"id": "sim-dragons", "verdict": "SUPPORTED", "severity": null, "reason": "Image (1.2-1.3: nāgas grow strong depending on the Himalaya, descend through pools, rivers to the ocean, gain great body) and point (1.4) are the text's; the point is about ethics as support for developing the seven factors, and the name fits."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "The result 'mahantattaṁ vepullattaṁ pāpuṇāti dhammesu' (1.4, 1.13) is only in the simile's wording, as the left-out note says; 'partly encoded' is therefore correct."
+    },
+    {
+      "uid": "sn46.2",
+      "claims": [
+        {"id": "n-01", "verdict": "SUPPORTED", "severity": null, "reason": "2.2-2.4: subhanimitta + ayonisomanasikārabahulīkāro is the fuel of kāmacchanda."},
+        {"id": "n-02", "verdict": "SUPPORTED", "severity": null, "reason": "3.2-3.4: paṭighanimitta, ill will."},
+        {"id": "n-03", "verdict": "SUPPORTED", "severity": null, "reason": "4.2-4.4: arati, tandi, vijambhitā, bhattasammada, cetaso līnatta fuel thinamiddha."},
+        {"id": "n-04", "verdict": "SUPPORTED", "severity": null, "reason": "5.2-5.4: cetaso avūpasamo fuels uddhaccakukkucca."},
+        {"id": "n-05", "verdict": "SUPPORTED", "severity": null, "reason": "6.2-6.4: vicikicchāṭṭhānīyā dhammā fuel doubt."},
+        {"id": "n-06", "verdict": "SUPPORTED", "severity": null, "reason": "9.2-9.4: yonisomanasikārabahulīkāro on grounds for the mindfulness factor."},
+        {"id": "n-07", "verdict": "SUPPORTED", "severity": null, "reason": "10.2-10.4: skillful/unskillful etc. qualities fuel investigation of principles."},
+        {"id": "n-08", "verdict": "SUPPORTED", "severity": null, "reason": "11.2-11.4: ārambha-, nikkama-, parakkamadhātu fuel energy."},
+        {"id": "n-09", "verdict": "SUPPORTED", "severity": null, "reason": "12.2-12.4: grounds for rapture."},
+        {"id": "n-10", "verdict": "SUPPORTED", "severity": null, "reason": "13.2-13.4: kāyapassaddhi, cittapassaddhi fuel tranquility."},
+        {"id": "n-11", "verdict": "SUPPORTED", "severity": null, "reason": "14.2-14.4: samathanimitta, abyagganimitta fuel immersion."},
+        {"id": "n-12", "verdict": "SUPPORTED", "severity": null, "reason": "15.2-15.4: grounds for equanimity."},
+        {"id": "sim-body-food-factors", "verdict": "SUPPORTED", "severity": null, "reason": "8.1-8.2 and 16.1-16.2: body sustained by food (āhāraṭṭhitiko); in the same way the seven factors are sustained by fuel (same Pali word āhāra). Point, image and name are correct."},
+        {"id": "sim-body-food-hindrances", "verdict": "SUPPORTED", "severity": null, "reason": "1.2-1.3 and 7.1-7.2: same image, point about the five hindrances; correct."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "The 'fuels' field flattens two different results: for hindrances 'arising or increase and growth' (bhiyyobhāvāya vepullāya), for factors 'arising or full development' (bhāvanāya pāripūriyā). Not wrong, but the distinction is lost. The point that hindrances/factors 'without fuel do not continue' (anāhārā no tiṭṭhanti, 1.3, 7.2, 8.2, 16.2) exists only in simile wording, not as a separate claim; acceptable under the simile pattern. English 'food'/'fuel' both render āhāra."
+    },
+    {
+      "uid": "sn46.7",
+      "claims": [
+        {"id": "c-17", "verdict": "SUPPORTED", "severity": null, "reason": "2.3 (and Pali 2.2): vivekanissitaṁ in the stock formula."},
+        {"id": "c-18", "verdict": "SUPPORTED", "severity": null, "reason": "2.2-2.3: virāganissitaṁ."},
+        {"id": "c-19", "verdict": "SUPPORTED", "severity": null, "reason": "2.2-2.3: nirodhanissitaṁ."},
+        {"id": "o-02", "verdict": "SUPPORTED", "severity": null, "reason": "1.2, 2.4: bhikkhu developing the factors is nibbānaninno, nibbānapoṇo, nibbānapabbhāro; 'leads to' is the rubric's accepted simplification (subject is strictly the practitioner)."},
+        {"id": "o-19", "verdict": "SUPPORTED", "severity": null, "reason": "2.2-2.3: vossaggapariṇāmiṁ."},
+        {"id": "sim-rafters", "verdict": "SUPPORTED", "severity": null, "reason": "1.1: all the rafters (gopānasiyo) of a peaked house incline to the peak (kūṭa); 1.2 point: the mendicant developing the seven factors inclines to nibbāna. Correct."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "English 2.2-2.3 moves the stock formula to the end of the list; the Pali has it with mindfulness in 2.2 and with equanimity in 2.3. Citing 2.2 as well would match the Pali better (citation nicety only)."
+    },
+    {
+      "uid": "sn46.11",
+      "claims": [
+        {"id": "c-01", "verdict": "SUPPORTED", "severity": null, "reason": "1.3 (also 2.1, 2.4): sīlaṁ nissāya sīle patiṭṭhāya satta bojjhaṅge bhāveti."},
+        {"id": "c-17", "verdict": "SUPPORTED", "severity": null, "reason": "2.2-2.3 stock formula, vivekanissitaṁ."},
+        {"id": "c-18", "verdict": "SUPPORTED", "severity": null, "reason": "2.2-2.3 virāganissitaṁ."},
+        {"id": "c-19", "verdict": "SUPPORTED", "severity": null, "reason": "2.2-2.3 nirodhanissitaṁ."},
+        {"id": "o-19", "verdict": "SUPPORTED", "severity": null, "reason": "2.2-2.3 vossaggapariṇāmiṁ."},
+        {"id": "sim-earth", "verdict": "SUPPORTED", "severity": null, "reason": "1.1-1.2: creatures carry on the four postures depending on and grounded on the earth (pathaviṁ nissāya pathaviyaṁ patiṭṭhāya); 1.3 point uses the same verbs for ethics and the seven factors. Name fits."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": ""
+    },
+    {
+      "uid": "sn46.12",
+      "claims": [
+        {"id": "c-02", "verdict": "SUPPORTED", "severity": null, "reason": "1.2: kalyāṇamittatā is pubbaṅgamaṁ … nimittaṁ for the arising of the seven factors."},
+        {"id": "c-03", "verdict": "SUPPORTED", "severity": null, "reason": "1.3: for one with good friends it is to be expected (pāṭikaṅkhaṁ) that they will develop the factors; 'supports the development of' is weaker than 'causes' and a fair reading."},
+        {"id": "c-17", "verdict": "SUPPORTED", "severity": null, "reason": "2.2-2.3 stock formula."},
+        {"id": "c-18", "verdict": "SUPPORTED", "severity": null, "reason": "2.2-2.3 stock formula."},
+        {"id": "c-19", "verdict": "SUPPORTED", "severity": null, "reason": "2.2-2.3 stock formula."},
+        {"id": "o-19", "verdict": "SUPPORTED", "severity": null, "reason": "2.3 vossaggapariṇāmiṁ."},
+        {"id": "sim-dawn-friendship", "verdict": "SUPPORTED", "severity": null, "reason": "1.1 dawn (aruṇuggaṁ) is the forerunner and sign of the sunrise; 1.2 point is good friendship as forerunner of the factors' arising. Name and point correct."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": "Pali 1.2 reads 'etaṁ nimittaṁ' (not pubbanimittaṁ as in 1.1 and in SN 46.48:1.2); the English 'harbinger' is still fine."
+    },
+    {
+      "uid": "sn46.13",
+      "claims": [
+        {"id": "c-04", "verdict": "SUPPORTED", "severity": null, "reason": "1.2: yonisomanasikāro is pubbaṅgamaṁ, pubbanimittaṁ for the arising of the seven factors."},
+        {"id": "c-05", "verdict": "SUPPORTED", "severity": null, "reason": "1.3: one accomplished in rational application of mind (yonisomanasikārasampanna) can expect to develop the factors; 'supports the development of' is a fair reading."},
+        {"id": "c-17", "verdict": "SUPPORTED", "severity": null, "reason": "2.2-2.3 stock formula."},
+        {"id": "c-18", "verdict": "SUPPORTED", "severity": null, "reason": "2.2-2.3 stock formula."},
+        {"id": "c-19", "verdict": "SUPPORTED", "severity": null, "reason": "2.2-2.3 stock formula."},
+        {"id": "o-19", "verdict": "SUPPORTED", "severity": null, "reason": "2.3 vossaggapariṇāmiṁ."},
+        {"id": "sim-dawn-attention", "verdict": "SUPPORTED", "severity": null, "reason": "1.1 dawn image; 1.2 point is rational application of mind as forerunner of the factors. Correct, and correctly separate from the good-friendship simile."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": ""
+    },
+    {
+      "uid": "sn46.33",
+      "claims": [
+        {"id": "FiveCorruptionsOfMind", "verdict": "SUPPORTED", "severity": null, "reason": "2.1 and 2.4 give five corruptions of the mind; English 2.3 names all five. The Pali 2.3 names only kāmacchanda then …pe…, which the claim's note discloses, so the other four rest on the conventional expansion that the translation gives."},
+        {"id": "sim-gold", "verdict": "STRETCH", "severity": "minor", "reason": "Image (1.1-1.8: iron, copper, tin, lead, silver corrupt native gold) and point (2.1) are right, but the note says these corrupt gold 'as the five hindrances corrupt the mind (1.3-1.7)': the text never says 'hindrances' (it says cittassa upakkilesā), and 1.3-1.7 are gold-only segments. The cited segments also skip 1.4-1.6 (copper, tin, lead) although the note names them."}
+      ],
+      "omissions": [],
+      "left_out_accurate": false,
+      "coverage_status_accurate": true,
+      "notes": "The left-out note says 'No pattern yet for similes', which is stale now that sim-gold is encoded; and the effects of the corruptions (not pliable, workable, radiant; brittle; not rightly concentrated for the ending of the āsavas, 2.1, 2.4) now appear verbatim in sim-gold's wording, though still not as a modelled claim. 'Partly encoded' is still correct. Note also the image differs from the point in its last item: gold is 'na sammā upeti kammāya' (not ready for working), mind is 'na sammā samādhiyati āsavānaṁ khayāya'; the wording quotes the point correctly."
+    },
+    {
+      "uid": "sn46.48",
+      "claims": [
+        {"id": "c-02", "verdict": "SUPPORTED", "severity": null, "reason": "1.2: kalyāṇamittatā is pubbaṅgamaṁ, pubbanimittaṁ for the factors' arising."},
+        {"id": "c-03", "verdict": "SUPPORTED", "severity": null, "reason": "1.3: pāṭikaṅkhaṁ, satta bojjhaṅge bhāvessati; fair reading."},
+        {"id": "c-17", "verdict": "SUPPORTED", "severity": null, "reason": "1.5-1.6 stock formula."},
+        {"id": "c-18", "verdict": "SUPPORTED", "severity": null, "reason": "1.5-1.6 stock formula."},
+        {"id": "c-19", "verdict": "SUPPORTED", "severity": null, "reason": "1.5-1.6 stock formula."},
+        {"id": "o-19", "verdict": "SUPPORTED", "severity": null, "reason": "1.6 vossaggapariṇāmiṁ."},
+        {"id": "sim-dawn-friendship", "verdict": "SUPPORTED", "severity": null, "reason": "1.1-1.2: the same dawn image and the same point as SN 46.12 (ādiccassa instead of sūriyassa, same meaning)."}
+      ],
+      "omissions": [],
+      "left_out_accurate": true,
+      "coverage_status_accurate": true,
+      "notes": ""
+    },
+    {
+      "uid": "sn46.53",
+      "claims": [
+        {"id": "sim-fire-great-dry", "verdict": "SUPPORTED", "severity": null, "reason": "11.1-11.3: wanting to extinguish a great mass of fire, adding dry grass, dung and timber, blowing, no dirt: cannot; 12.1 point: restless mind, wrong time for investigation, energy, rapture. Pairing and name correct."},
+        {"id": "sim-fire-great-wet", "verdict": "SUPPORTED", "severity": null, "reason": "14.1-14.3 wet fuel, water (udakavāta), dirt puts out a great fire; 15.1 point: restless mind, right time for tranquility, immersion, equanimity. Correct."},
+        {"id": "sim-fire-small-dry", "verdict": "SUPPORTED", "severity": null, "reason": "8.1-8.3 dry fuel and blowing make a small fire flare up; 9.1 point: sluggish mind, right time for investigation, energy, rapture. Correct."},
+        {"id": "sim-fire-small-wet", "verdict": "SUPPORTED", "severity": null, "reason": "5.1-5.3 wet fuel, water, dirt cannot make a small fire flare up; 6.1 point: sluggish mind, wrong time for tranquility, immersion, equanimity. Correct."},
+        {"id": "ta-01", "verdict": "SUPPORTED", "severity": null, "reason": "4.1: līnaṁ cittaṁ, akālo passaddhisambojjhaṅgassa bhāvanāya."},
+        {"id": "ta-02", "verdict": "SUPPORTED", "severity": null, "reason": "4.1: akālo samādhisambojjhaṅgassa bhāvanāya."},
+        {"id": "ta-03", "verdict": "SUPPORTED", "severity": null, "reason": "4.1: akālo upekkhāsambojjhaṅgassa bhāvanāya."},
+        {"id": "ta-04", "verdict": "SUPPORTED", "severity": null, "reason": "7.1: kālo dhammavicayasambojjhaṅgassa bhāvanāya."},
+        {"id": "ta-05", "verdict": "SUPPORTED", "severity": null, "reason": "7.1: kālo vīriyasambojjhaṅgassa bhāvanāya."},
+        {"id": "ta-06", "verdict": "SUPPORTED", "severity": null, "reason": "7.1: kālo pītisambojjhaṅgassa bhāvanāya."},
+        {"id": "ta-07", "verdict": "SUPPORTED", "severity": null, "reason": "10.1: uddhataṁ cittaṁ, akālo dhammavicaya…"},
+        {"id": "ta-08", "verdict": "SUPPORTED", "severity": null, "reason": "10.1: akālo vīriya…"},
+        {"id": "ta-09", "verdict": "SUPPORTED", "severity": null, "reason": "10.1: akālo pīti…"},
+        {"id": "ta-10", "verdict": "SUPPORTED", "severity": null, "reason": "13.1: kālo passaddhi…"},
+        {"id": "ta-11", "verdict": "SUPPORTED", "severity": null, "reason": "13.1: kālo samādhi…"},
+        {"id": "ta-12", "verdict": "SUPPORTED", "severity": null, "reason": "13.1: kālo upekkhā…"},
+        {"id": "ta-13", "verdict": "SUPPORTED", "severity": null, "reason": "15.4: satiñca khvāhaṁ sabbatthikaṁ vadāmi, said by the Buddha; 'always useful' is Sujato's rendering of sabbatthika ('useful in all cases'). Note it says sati, not explicitly the mindfulness awakening factor."}
+      ],
+      "omissions": [],
+      "left_out_accurate": false,
+      "coverage_status_accurate": true,
+      "notes": "The left-out note lists 'the repeated statements after each simile (6, 9, 12, 15.1-15.3)' as left out, but the four similes cite 6.1, 9.1, 12.1 and 15.1 as their points, and the encoded note says the similes cover 5-6, 8-9, 11-12, 14-15. Probably meant 'not added as citations to the timing claims', but as written it contradicts the encoding (stale since similes were added). The reasons (4.3, 7.3, 10.3, 13.3) are cited by ta-claims but recorded in no field, as the note correctly admits."
+    }
+  ]
+}

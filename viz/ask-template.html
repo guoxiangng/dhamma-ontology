@@ -116,8 +116,8 @@ const fold = s => (s || "").normalize("NFKD").replace(/[̀-ͯ]/g, "").toLowerCas
 const name = id => byId[id]?.en || byId[id]?.pi || id;
 const LAYER = { sutta: "sutta", derived: "derived · R1", commentary: "commentary · unverified", editor: "editor's link", lexicon: "word sense" };
 const INVERSE = { "member of": "members", counters: "countered by", opposes: "opposed by", "gives up": "given up in",
-  "has the factors": "factors of", "see also": "see also", sense: "a sense of the word", "is defined as": "defines", "one of the two kinds of": "becomes twofold", "one of the two qualities in": "becomes twofold" };
-const ORDER = ["hindrance", "factor", "jhana", "mindstate", "attention", "practice", "concept", "aspect", "list", "attainment", "word", "sense", "object"];
+  "has the factors": "factors of", "see also": "see also", sense: "a sense of the word", "is defined as": "defines", "one of the two kinds of": "becomes twofold", "one of the two qualities in": "becomes twofold", "simile for": "similes" };
+const ORDER = ["hindrance", "factor", "jhana", "mindstate", "attention", "practice", "concept", "aspect", "simile", "list", "attainment", "word", "sense", "object"];
 const s = DATA.stats;
 document.getElementById("stats").textContent =
   `${s.concepts} concepts · ${s.links} cited links · ${s.passages} passages · checks: ${s.shacl}`;
@@ -187,7 +187,7 @@ function card(id) {
     return `<span class="chip k-${k}">${esc(c)}</span>`;
   }).join("");
   const other = { mindstate: "mind state", object: "object of attention", list: "numbered list", attainment: "attainment",
-    word: "word", sense: "word sense", concept: "concept", attention: "kind of attention", practice: "practice", aspect: "aspect (one of two kinds)" }[n.kind];
+    word: "word", sense: "word sense", concept: "concept", attention: "kind of attention", practice: "practice", aspect: "aspect (one of two kinds)", simile: "simile" }[n.kind];
   const groups = claimsFor(id);
   const memberOf = DATA.edges.filter(e => e.rel === "member of" && e.source === id).map(e => e.target);
   const order = ["member of", "members", "one of the two kinds of", "one of the two qualities in", "becomes twofold", "Fuelled by", "Starved by", "Conditions", "Outcomes", "Timing (SN 46.53)", "counters", "countered by", "opposes", "opposed by"];

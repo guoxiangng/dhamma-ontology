@@ -96,6 +96,7 @@ These were flagged as minor stretches and kept deliberately. Each is on the revi
 | Re-check of the fixed texts (`audit/2026-11-15-recheck/`) | 8 | 72 | 67 | 5 | 0 |
 | Batch 6, before committing (`audit/2026-11-15-batch6/`) | 6 | 21 | 20 | 1 | 0 |
 | Batch 7, SN 46.54, before committing (`audit/2026-11-16-batch7/`) | 1 | 12 | 12 | 0 | 0 |
+| Batch 8, similes, before committing (`audit/2026-11-16-batch8/`) | 9 | 72 | 71 | 1 | 0 |
 
 The re-check confirmed the fixes: the reversed direction, the Pali-only citations, the abbreviation marks and the corrected coverage statuses. It also found that one correction went too far. SN 46.49/50:1.4 *is* abbreviated in the Pali, so the note now says which segments are untranslated and which are abbreviated. The batch 6 audit found:
 - the per-factor statement of SN 46.14–16, given only in the Pali (now cited);

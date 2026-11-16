@@ -90,6 +90,20 @@ dho:p-sn46.1-1.12 a dho:Passage ;
     dho:textPi "upekkhāsambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ."@pi ;
     dho:url "https://suttacentral.net/sn46.1/en/sujato#sn46.1:1.12"^^xsd:anyURI .
 
+dho:p-sn46.1-1.2 a dho:Passage ;
+    dho:inText dho:t-sn46.1 ;
+    dho:segment "sn46.1:1.2" ;
+    dho:textEn "“Mendicants, dragons grow and wax strong supported by the Himalayas, the king of mountains."@en ;
+    dho:textPi "“Seyyathāpi, bhikkhave, himavantaṁ pabbatarājānaṁ nissāya nāgā kāyaṁ vaḍḍhenti, balaṁ gāhenti;"@pi ;
+    dho:url "https://suttacentral.net/sn46.1/en/sujato#sn46.1:1.2"^^xsd:anyURI .
+
+dho:p-sn46.1-1.3 a dho:Passage ;
+    dho:inText dho:t-sn46.1 ;
+    dho:segment "sn46.1:1.3" ;
+    dho:textEn "When they’re strong they dive into the pools. Then they dive into the lakes, the streams, the rivers, and finally the ocean. There they acquire a great and abundant body."@en ;
+    dho:textPi "te tattha kāyaṁ vaḍḍhetvā balaṁ gāhetvā kusobbhe otaranti, kusobbhe otaritvā mahāsobbhe otaranti, mahāsobbhe otaritvā kunnadiyo otaranti, kunnadiyo otaritvā mahānadiyo otaranti, mahānadiyo otaritvā mahāsamuddasāgaraṁ otaranti; te tattha mahantattaṁ vepullattaṁ āpajjanti kāyena;"@pi ;
+    dho:url "https://suttacentral.net/sn46.1/en/sujato#sn46.1:1.3"^^xsd:anyURI .
+
 dho:p-sn46.1-1.4 a dho:Passage ;
     dho:inText dho:t-sn46.1 ;
     dho:segment "sn46.1:1.4" ;
@@ -104,6 +118,20 @@ dho:p-sn46.1-1.6 a dho:Passage ;
     dho:textPi "Idha, bhikkhave, bhikkhu satisambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ;"@pi ;
     dho:url "https://suttacentral.net/sn46.1/en/sujato#sn46.1:1.6"^^xsd:anyURI .
 
+dho:p-sn46.11-1.1 a dho:Passage ;
+    dho:inText dho:t-sn46.11 ;
+    dho:segment "sn46.11:1.1" ;
+    dho:textEn "“Mendicants, whatever living creatures engage in the four postures—"@en ;
+    dho:textPi "“Seyyathāpi, bhikkhave, ye keci pāṇā cattāro iriyāpathe kappenti—"@pi ;
+    dho:url "https://suttacentral.net/sn46.11/en/sujato#sn46.11:1.1"^^xsd:anyURI .
+
+dho:p-sn46.11-1.2 a dho:Passage ;
+    dho:inText dho:t-sn46.11 ;
+    dho:segment "sn46.11:1.2" ;
+    dho:textEn "sometimes walking, sometimes standing, sometimes sitting, sometimes lying down—all do so depending on the earth and grounded on the earth."@en ;
+    dho:textPi "kālena gamanaṁ, kālena ṭhānaṁ, kālena nisajjaṁ, kālena seyyaṁ, sabbe te pathaviṁ nissāya pathaviyaṁ patiṭṭhāya evamete cattāro iriyāpathe kappenti;"@pi ;
+    dho:url "https://suttacentral.net/sn46.11/en/sujato#sn46.11:1.2"^^xsd:anyURI .
+
 dho:p-sn46.11-1.3 a dho:Passage ;
     dho:inText dho:t-sn46.11 ;
     dho:segment "sn46.11:1.3" ;
@@ -117,6 +145,13 @@ dho:p-sn46.11-2.3 a dho:Passage ;
     dho:textEn "and equanimity, which rely on seclusion, fading away, and cessation, and ripen as letting go."@en ;
     dho:textPi "upekkhāsambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ."@pi ;
     dho:url "https://suttacentral.net/sn46.11/en/sujato#sn46.11:2.3"^^xsd:anyURI .
+
+dho:p-sn46.12-1.1 a dho:Passage ;
+    dho:inText dho:t-sn46.12 ;
+    dho:segment "sn46.12:1.1" ;
+    dho:textEn "“Mendicants, the dawn is the forerunner and harbinger of the sunrise."@en ;
+    dho:textPi "“Sūriyassa, bhikkhave, udayato etaṁ pubbaṅgamaṁ etaṁ pubbanimittaṁ, yadidaṁ—aruṇuggaṁ;"@pi ;
+    dho:url "https://suttacentral.net/sn46.12/en/sujato#sn46.12:1.1"^^xsd:anyURI .
 
 dho:p-sn46.12-1.2 a dho:Passage ;
     dho:inText dho:t-sn46.12 ;
@@ -138,6 +173,13 @@ dho:p-sn46.12-2.3 a dho:Passage ;
     dho:textEn "and equanimity, which rely on seclusion, fading away, and cessation, and ripen as letting go."@en ;
     dho:textPi "upekkhāsambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ."@pi ;
     dho:url "https://suttacentral.net/sn46.12/en/sujato#sn46.12:2.3"^^xsd:anyURI .
+
+dho:p-sn46.13-1.1 a dho:Passage ;
+    dho:inText dho:t-sn46.13 ;
+    dho:segment "sn46.13:1.1" ;
+    dho:textEn "“Mendicants, the dawn is the forerunner and harbinger of the sunrise."@en ;
+    dho:textPi "“Sūriyassa, bhikkhave, udayato etaṁ pubbaṅgamaṁ etaṁ pubbanimittaṁ, yadidaṁ—aruṇuggaṁ;"@pi ;
+    dho:url "https://suttacentral.net/sn46.13/en/sujato#sn46.13:1.1"^^xsd:anyURI .
 
 dho:p-sn46.13-1.2 a dho:Passage ;
     dho:inText dho:t-sn46.13 ;
@@ -335,6 +377,20 @@ dho:p-sn46.19-1.4 a dho:Passage ;
     dho:textPi "ime kho, bhikkhave, satta bojjhaṅgā bhāvitā bahulīkatā ariyā niyyānikā nīyanti takkarassa sammā dukkhakkhayāyā”ti."@pi ;
     dho:url "https://suttacentral.net/sn46.19/en/sujato#sn46.19:1.4"^^xsd:anyURI .
 
+dho:p-sn46.2-1.2 a dho:Passage ;
+    dho:inText dho:t-sn46.2 ;
+    dho:segment "sn46.2:1.2" ;
+    dho:textEn "“Mendicants, this body is sustained by food. It depends on food to continue, and without food it doesn’t continue."@en ;
+    dho:textPi "“Seyyathāpi, bhikkhave, ayaṁ kāyo āhāraṭṭhitiko, āhāraṁ paṭicca tiṭṭhati, anāhāro no tiṭṭhati;"@pi ;
+    dho:url "https://suttacentral.net/sn46.2/en/sujato#sn46.2:1.2"^^xsd:anyURI .
+
+dho:p-sn46.2-1.3 a dho:Passage ;
+    dho:inText dho:t-sn46.2 ;
+    dho:segment "sn46.2:1.3" ;
+    dho:textEn "In the same way, the five hindrances are sustained by fuel. They depend on fuel to continue, and without fuel they don’t continue."@en ;
+    dho:textPi "evameva kho, bhikkhave, pañca nīvaraṇā āhāraṭṭhitikā, āhāraṁ paṭicca tiṭṭhanti, anāhārā no tiṭṭhanti."@pi ;
+    dho:url "https://suttacentral.net/sn46.2/en/sujato#sn46.2:1.3"^^xsd:anyURI .
+
 dho:p-sn46.2-10.2 a dho:Passage ;
     dho:inText dho:t-sn46.2 ;
     dho:segment "sn46.2:10.2" ;
@@ -461,6 +517,20 @@ dho:p-sn46.2-15.4 a dho:Passage ;
     dho:textPi "ayamāhāro anuppannassa vā upekkhāsambojjhaṅgassa uppādāya, uppannassa vā upekkhāsambojjhaṅgassa bhāvanāya pāripūriyā."@pi ;
     dho:url "https://suttacentral.net/sn46.2/en/sujato#sn46.2:15.4"^^xsd:anyURI .
 
+dho:p-sn46.2-16.1 a dho:Passage ;
+    dho:inText dho:t-sn46.2 ;
+    dho:segment "sn46.2:16.1" ;
+    dho:textEn "This body is sustained by food. It depends on food to continue, and without food it doesn’t continue."@en ;
+    dho:textPi "Seyyathāpi, bhikkhave, ayaṁ kāyo āhāraṭṭhitiko, āhāraṁ paṭicca tiṭṭhati, anāhāro no tiṭṭhati;"@pi ;
+    dho:url "https://suttacentral.net/sn46.2/en/sujato#sn46.2:16.1"^^xsd:anyURI .
+
+dho:p-sn46.2-16.2 a dho:Passage ;
+    dho:inText dho:t-sn46.2 ;
+    dho:segment "sn46.2:16.2" ;
+    dho:textEn "In the same way, the seven awakening factors are sustained by fuel. They depend on fuel to continue, and without fuel they don’t continue.”"@en ;
+    dho:textPi "evameva kho, bhikkhave, ime satta bojjhaṅgā āhāraṭṭhitikā, āhāraṁ paṭicca tiṭṭhanti, anāhārā no tiṭṭhantī”ti."@pi ;
+    dho:url "https://suttacentral.net/sn46.2/en/sujato#sn46.2:16.2"^^xsd:anyURI .
+
 dho:p-sn46.2-2.2 a dho:Passage ;
     dho:inText dho:t-sn46.2 ;
     dho:segment "sn46.2:2.2" ;
@@ -565,6 +635,34 @@ dho:p-sn46.2-6.4 a dho:Passage ;
     dho:textEn "fuels the arising of doubt, or, when it has arisen, makes it increase and grow."@en ;
     dho:textPi "ayamāhāro anuppannāya vā vicikicchāya uppādāya, uppannāya vā vicikicchāya bhiyyobhāvāya vepullāya."@pi ;
     dho:url "https://suttacentral.net/sn46.2/en/sujato#sn46.2:6.4"^^xsd:anyURI .
+
+dho:p-sn46.2-7.1 a dho:Passage ;
+    dho:inText dho:t-sn46.2 ;
+    dho:segment "sn46.2:7.1" ;
+    dho:textEn "This body is sustained by food. It depends on food to continue, and without food it doesn’t continue."@en ;
+    dho:textPi "Seyyathāpi, bhikkhave, ayaṁ kāyo āhāraṭṭhitiko, āhāraṁ paṭicca tiṭṭhati, anāhāro no tiṭṭhati;"@pi ;
+    dho:url "https://suttacentral.net/sn46.2/en/sujato#sn46.2:7.1"^^xsd:anyURI .
+
+dho:p-sn46.2-7.2 a dho:Passage ;
+    dho:inText dho:t-sn46.2 ;
+    dho:segment "sn46.2:7.2" ;
+    dho:textEn "In the same way, the five hindrances are sustained by fuel. They depend on fuel to continue, and without fuel they don’t continue."@en ;
+    dho:textPi "evameva kho, bhikkhave, ime pañca nīvaraṇā āhāraṭṭhitikā, āhāraṁ paṭicca tiṭṭhanti, anāhārā no tiṭṭhanti."@pi ;
+    dho:url "https://suttacentral.net/sn46.2/en/sujato#sn46.2:7.2"^^xsd:anyURI .
+
+dho:p-sn46.2-8.1 a dho:Passage ;
+    dho:inText dho:t-sn46.2 ;
+    dho:segment "sn46.2:8.1" ;
+    dho:textEn "This body is sustained by food. It depends on food to continue, and without food it doesn’t continue."@en ;
+    dho:textPi "Seyyathāpi, bhikkhave, ayaṁ kāyo āhāraṭṭhitiko, āhāraṁ paṭicca tiṭṭhati, anāhāro no tiṭṭhati;"@pi ;
+    dho:url "https://suttacentral.net/sn46.2/en/sujato#sn46.2:8.1"^^xsd:anyURI .
+
+dho:p-sn46.2-8.2 a dho:Passage ;
+    dho:inText dho:t-sn46.2 ;
+    dho:segment "sn46.2:8.2" ;
+    dho:textEn "In the same way, the seven awakening factors are sustained by fuel. They depend on fuel to continue, and without fuel they don’t continue."@en ;
+    dho:textPi "evameva kho, bhikkhave, satta bojjhaṅgā āhāraṭṭhitikā, āhāraṁ paṭicca tiṭṭhanti, anāhārā no tiṭṭhanti."@pi ;
+    dho:url "https://suttacentral.net/sn46.2/en/sujato#sn46.2:8.2"^^xsd:anyURI .
 
 dho:p-sn46.2-9.2 a dho:Passage ;
     dho:inText dho:t-sn46.2 ;
@@ -1084,6 +1182,55 @@ dho:p-sn46.32-2.3 a dho:Passage ;
     dho:textPi "upekkhāsambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ."@pi ;
     dho:url "https://suttacentral.net/sn46.32/en/sujato#sn46.32:2.3"^^xsd:anyURI .
 
+dho:p-sn46.33-1.1 a dho:Passage ;
+    dho:inText dho:t-sn46.33 ;
+    dho:segment "sn46.33:1.1" ;
+    dho:textEn "“Mendicants, there are these five corruptions of native gold. When native gold is corrupted by these it’s not pliable, workable, or radiant, but is brittle and not completely ready for working."@en ;
+    dho:textPi "“Pañcime, bhikkhave, jātarūpassa upakkilesā, yehi upakkilesehi upakkiliṭṭhaṁ jātarūpaṁ na ceva mudu hoti na ca kammaniyaṁ, na ca pabhassaraṁ pabhaṅgu ca, na ca sammā upeti kammāya."@pi ;
+    dho:url "https://suttacentral.net/sn46.33/en/sujato#sn46.33:1.1"^^xsd:anyURI .
+
+dho:p-sn46.33-1.3 a dho:Passage ;
+    dho:inText dho:t-sn46.33 ;
+    dho:segment "sn46.33:1.3" ;
+    dho:textEn "Iron,"@en ;
+    dho:textPi "Ayo, bhikkhave, jātarūpassa upakkileso, yena upakkilesena upakkiliṭṭhaṁ jātarūpaṁ na ceva mudu hoti na ca kammaniyaṁ, na ca pabhassaraṁ pabhaṅgu ca, na ca sammā upeti kammāya."@pi ;
+    dho:url "https://suttacentral.net/sn46.33/en/sujato#sn46.33:1.3"^^xsd:anyURI .
+
+dho:p-sn46.33-1.4 a dho:Passage ;
+    dho:inText dho:t-sn46.33 ;
+    dho:segment "sn46.33:1.4" ;
+    dho:textEn "copper,"@en ;
+    dho:textPi "Lohaṁ, bhikkhave, jātarūpassa upakkileso, yena upakkilesena upakkiliṭṭhaṁ jātarūpaṁ …pe…"@pi ;
+    dho:url "https://suttacentral.net/sn46.33/en/sujato#sn46.33:1.4"^^xsd:anyURI .
+
+dho:p-sn46.33-1.5 a dho:Passage ;
+    dho:inText dho:t-sn46.33 ;
+    dho:segment "sn46.33:1.5" ;
+    dho:textEn "tin,"@en ;
+    dho:textPi "tipu, bhikkhave, jātarūpassa upakkileso …pe…"@pi ;
+    dho:url "https://suttacentral.net/sn46.33/en/sujato#sn46.33:1.5"^^xsd:anyURI .
+
+dho:p-sn46.33-1.6 a dho:Passage ;
+    dho:inText dho:t-sn46.33 ;
+    dho:segment "sn46.33:1.6" ;
+    dho:textEn "lead,"@en ;
+    dho:textPi "sīsaṁ, bhikkhave, jātarūpassa upakkileso …pe…"@pi ;
+    dho:url "https://suttacentral.net/sn46.33/en/sujato#sn46.33:1.6"^^xsd:anyURI .
+
+dho:p-sn46.33-1.7 a dho:Passage ;
+    dho:inText dho:t-sn46.33 ;
+    dho:segment "sn46.33:1.7" ;
+    dho:textEn "and silver."@en ;
+    dho:textPi "sajjhu, bhikkhave, jātarūpassa upakkileso, yena upakkilesena upakkiliṭṭhaṁ jātarūpaṁ na ceva mudu hoti na ca kammaniyaṁ, na ca pabhassaraṁ pabhaṅgu ca, na ca sammā upeti kammāya."@pi ;
+    dho:url "https://suttacentral.net/sn46.33/en/sujato#sn46.33:1.7"^^xsd:anyURI .
+
+dho:p-sn46.33-1.8 a dho:Passage ;
+    dho:inText dho:t-sn46.33 ;
+    dho:segment "sn46.33:1.8" ;
+    dho:textEn "When native gold is corrupted by these five corruptions it’s not pliable, workable, or radiant, but is brittle and not completely ready for working."@en ;
+    dho:textPi "Ime kho, bhikkhave, pañca jātarūpassa upakkilesā, yehi upakkilesehi upakkiliṭṭhaṁ jātarūpaṁ na ceva mudu hoti na ca kammaniyaṁ, na ca pabhassaraṁ pabhaṅgu ca, na ca sammā upeti kammāya."@pi ;
+    dho:url "https://suttacentral.net/sn46.33/en/sujato#sn46.33:1.8"^^xsd:anyURI .
+
 dho:p-sn46.33-2.1 a dho:Passage ;
     dho:inText dho:t-sn46.33 ;
     dho:segment "sn46.33:2.1" ;
@@ -1422,6 +1569,13 @@ dho:p-sn46.43-1.8 a dho:Passage ;
     dho:textEn "This is the path for crushing Māra’s army.”"@en ;
     dho:textPi "ayaṁ kho, bhikkhave, mārasenappamaddano maggo”ti."@pi ;
     dho:url "https://suttacentral.net/sn46.43/en/sujato#sn46.43:1.8"^^xsd:anyURI .
+
+dho:p-sn46.48-1.1 a dho:Passage ;
+    dho:inText dho:t-sn46.48 ;
+    dho:segment "sn46.48:1.1" ;
+    dho:textEn "“Mendicants, the dawn is the forerunner and harbinger of the sunrise."@en ;
+    dho:textPi "“Ādiccassa, bhikkhave, udayato etaṁ pubbaṅgamaṁ etaṁ pubbanimittaṁ, yadidaṁ—aruṇuggaṁ."@pi ;
+    dho:url "https://suttacentral.net/sn46.48/en/sujato#sn46.48:1.1"^^xsd:anyURI .
 
 dho:p-sn46.48-1.2 a dho:Passage ;
     dho:inText dho:t-sn46.48 ;
@@ -2339,6 +2493,34 @@ dho:p-sn46.53-10.3 a dho:Passage ;
     dho:textPi "Uddhataṁ, bhikkhave, cittaṁ taṁ etehi dhammehi duvūpasamayaṁ hoti."@pi ;
     dho:url "https://suttacentral.net/sn46.53/en/sujato#sn46.53:10.3"^^xsd:anyURI .
 
+dho:p-sn46.53-11.1 a dho:Passage ;
+    dho:inText dho:t-sn46.53 ;
+    dho:segment "sn46.53:11.1" ;
+    dho:textEn "Suppose someone wanted to extinguish a great mass of fire."@en ;
+    dho:textPi "Seyyathāpi, bhikkhave, puriso mahantaṁ aggikkhandhaṁ nibbāpetukāmo assa."@pi ;
+    dho:url "https://suttacentral.net/sn46.53/en/sujato#sn46.53:11.1"^^xsd:anyURI .
+
+dho:p-sn46.53-11.2 a dho:Passage ;
+    dho:inText dho:t-sn46.53 ;
+    dho:segment "sn46.53:11.2" ;
+    dho:textEn "If they toss dry grass, cow-dung, and timber on it, blow on it, and don’t scatter dirt on it,"@en ;
+    dho:textPi "So tattha sukkhāni ceva tiṇāni pakkhipeyya, sukkhāni ca gomayāni pakkhipeyya, sukkhāni ca kaṭṭhāni pakkhipeyya, mukhavātañca dadeyya, na ca paṁsukena okireyya;"@pi ;
+    dho:url "https://suttacentral.net/sn46.53/en/sujato#sn46.53:11.2"^^xsd:anyURI .
+
+dho:p-sn46.53-11.3 a dho:Passage ;
+    dho:inText dho:t-sn46.53 ;
+    dho:segment "sn46.53:11.3" ;
+    dho:textEn "could they extinguish it?”"@en ;
+    dho:textPi "bhabbo nu kho so puriso mahantaṁ aggikkhandhaṁ nibbāpetun”ti?"@pi ;
+    dho:url "https://suttacentral.net/sn46.53/en/sujato#sn46.53:11.3"^^xsd:anyURI .
+
+dho:p-sn46.53-12.1 a dho:Passage ;
+    dho:inText dho:t-sn46.53 ;
+    dho:segment "sn46.53:12.1" ;
+    dho:textEn "“In the same way, when the mind is restless, it’s the wrong time to develop the awakening factors of investigation of principles, energy, and rapture."@en ;
+    dho:textPi "“Evameva kho, bhikkhave, yasmiṁ samaye uddhataṁ cittaṁ hoti, akālo tasmiṁ samaye dhammavicayasambojjhaṅgassa bhāvanāya, akālo vīriyasambojjhaṅgassa bhāvanāya, akālo pītisambojjhaṅgassa bhāvanāya."@pi ;
+    dho:url "https://suttacentral.net/sn46.53/en/sujato#sn46.53:12.1"^^xsd:anyURI .
+
 dho:p-sn46.53-13.1 a dho:Passage ;
     dho:inText dho:t-sn46.53 ;
     dho:segment "sn46.53:13.1" ;
@@ -2352,6 +2534,34 @@ dho:p-sn46.53-13.3 a dho:Passage ;
     dho:textEn "Because it’s easy to settle a restless mind with these things."@en ;
     dho:textPi "Uddhataṁ, bhikkhave, cittaṁ taṁ etehi dhammehi suvūpasamayaṁ hoti."@pi ;
     dho:url "https://suttacentral.net/sn46.53/en/sujato#sn46.53:13.3"^^xsd:anyURI .
+
+dho:p-sn46.53-14.1 a dho:Passage ;
+    dho:inText dho:t-sn46.53 ;
+    dho:segment "sn46.53:14.1" ;
+    dho:textEn "Suppose someone wanted to extinguish a great mass of fire."@en ;
+    dho:textPi "Seyyathāpi, bhikkhave, puriso mahantaṁ aggikkhandhaṁ nibbāpetukāmo assa."@pi ;
+    dho:url "https://suttacentral.net/sn46.53/en/sujato#sn46.53:14.1"^^xsd:anyURI .
+
+dho:p-sn46.53-14.2 a dho:Passage ;
+    dho:inText dho:t-sn46.53 ;
+    dho:segment "sn46.53:14.2" ;
+    dho:textEn "If they toss wet grass, cow-dung, and timber on it, spray it with water, and scatter dirt on it,"@en ;
+    dho:textPi "So tattha allāni ceva tiṇāni pakkhipeyya, allāni ca gomayāni pakkhipeyya, allāni ca kaṭṭhāni pakkhipeyya, udakavātañca dadeyya, paṁsukena ca okireyya;"@pi ;
+    dho:url "https://suttacentral.net/sn46.53/en/sujato#sn46.53:14.2"^^xsd:anyURI .
+
+dho:p-sn46.53-14.3 a dho:Passage ;
+    dho:inText dho:t-sn46.53 ;
+    dho:segment "sn46.53:14.3" ;
+    dho:textEn "could they extinguish it?”"@en ;
+    dho:textPi "bhabbo nu kho so puriso mahantaṁ aggikkhandhaṁ nibbāpetun”ti?"@pi ;
+    dho:url "https://suttacentral.net/sn46.53/en/sujato#sn46.53:14.3"^^xsd:anyURI .
+
+dho:p-sn46.53-15.1 a dho:Passage ;
+    dho:inText dho:t-sn46.53 ;
+    dho:segment "sn46.53:15.1" ;
+    dho:textEn "“In the same way, when the mind is restless, it’s the right time to develop the awakening factors of tranquility, immersion, and equanimity."@en ;
+    dho:textPi "“Evameva kho, bhikkhave, yasmiṁ samaye uddhataṁ cittaṁ hoti, kālo tasmiṁ samaye passaddhisambojjhaṅgassa bhāvanāya, kālo samādhisambojjhaṅgassa bhāvanāya, kālo upekkhāsambojjhaṅgassa bhāvanāya."@pi ;
+    dho:url "https://suttacentral.net/sn46.53/en/sujato#sn46.53:15.1"^^xsd:anyURI .
 
 dho:p-sn46.53-15.4 a dho:Passage ;
     dho:inText dho:t-sn46.53 ;
@@ -2374,6 +2584,34 @@ dho:p-sn46.53-4.3 a dho:Passage ;
     dho:textPi "Līnaṁ, bhikkhave, cittaṁ taṁ etehi dhammehi dussamuṭṭhāpayaṁ hoti."@pi ;
     dho:url "https://suttacentral.net/sn46.53/en/sujato#sn46.53:4.3"^^xsd:anyURI .
 
+dho:p-sn46.53-5.1 a dho:Passage ;
+    dho:inText dho:t-sn46.53 ;
+    dho:segment "sn46.53:5.1" ;
+    dho:textEn "Suppose someone wanted to make a small fire flare up."@en ;
+    dho:textPi "Seyyathāpi, bhikkhave, puriso parittaṁ aggiṁ ujjāletukāmo assa."@pi ;
+    dho:url "https://suttacentral.net/sn46.53/en/sujato#sn46.53:5.1"^^xsd:anyURI .
+
+dho:p-sn46.53-5.2 a dho:Passage ;
+    dho:inText dho:t-sn46.53 ;
+    dho:segment "sn46.53:5.2" ;
+    dho:textEn "If they toss wet grass, cow-dung, and timber on it, spray it with water, and scatter dirt on it,"@en ;
+    dho:textPi "So tattha allāni ceva tiṇāni pakkhipeyya, allāni ca gomayāni pakkhipeyya, allāni ca kaṭṭhāni pakkhipeyya, udakavātañca dadeyya, paṁsukena ca okireyya;"@pi ;
+    dho:url "https://suttacentral.net/sn46.53/en/sujato#sn46.53:5.2"^^xsd:anyURI .
+
+dho:p-sn46.53-5.3 a dho:Passage ;
+    dho:inText dho:t-sn46.53 ;
+    dho:segment "sn46.53:5.3" ;
+    dho:textEn "could they make it flare up?”"@en ;
+    dho:textPi "bhabbo nu kho so puriso parittaṁ aggiṁ ujjāletun”ti?"@pi ;
+    dho:url "https://suttacentral.net/sn46.53/en/sujato#sn46.53:5.3"^^xsd:anyURI .
+
+dho:p-sn46.53-6.1 a dho:Passage ;
+    dho:inText dho:t-sn46.53 ;
+    dho:segment "sn46.53:6.1" ;
+    dho:textEn "“In the same way, when the mind is sluggish, it’s the wrong time to develop the awakening factors of tranquility, immersion, and equanimity."@en ;
+    dho:textPi "“Evameva kho, bhikkhave, yasmiṁ samaye līnaṁ cittaṁ hoti, akālo tasmiṁ samaye passaddhisambojjhaṅgassa bhāvanāya, akālo samādhisambojjhaṅgassa bhāvanāya, akālo upekkhāsambojjhaṅgassa bhāvanāya."@pi ;
+    dho:url "https://suttacentral.net/sn46.53/en/sujato#sn46.53:6.1"^^xsd:anyURI .
+
 dho:p-sn46.53-7.1 a dho:Passage ;
     dho:inText dho:t-sn46.53 ;
     dho:segment "sn46.53:7.1" ;
@@ -2387,6 +2625,34 @@ dho:p-sn46.53-7.3 a dho:Passage ;
     dho:textEn "Because it’s easy to stimulate a sluggish mind with these things."@en ;
     dho:textPi "Līnaṁ, bhikkhave, cittaṁ taṁ etehi dhammehi susamuṭṭhāpayaṁ hoti."@pi ;
     dho:url "https://suttacentral.net/sn46.53/en/sujato#sn46.53:7.3"^^xsd:anyURI .
+
+dho:p-sn46.53-8.1 a dho:Passage ;
+    dho:inText dho:t-sn46.53 ;
+    dho:segment "sn46.53:8.1" ;
+    dho:textEn "Suppose someone wanted to make a small fire flare up."@en ;
+    dho:textPi "Seyyathāpi, bhikkhave, puriso parittaṁ aggiṁ ujjāletukāmo assa."@pi ;
+    dho:url "https://suttacentral.net/sn46.53/en/sujato#sn46.53:8.1"^^xsd:anyURI .
+
+dho:p-sn46.53-8.2 a dho:Passage ;
+    dho:inText dho:t-sn46.53 ;
+    dho:segment "sn46.53:8.2" ;
+    dho:textEn "If they toss dry grass, cow-dung, and timber on it, blow on it, and don’t scatter dirt on it,"@en ;
+    dho:textPi "So tattha sukkhāni ceva tiṇāni pakkhipeyya, sukkhāni gomayāni pakkhipeyya, sukkhāni kaṭṭhāni pakkhipeyya, mukhavātañca dadeyya, na ca paṁsukena okireyya;"@pi ;
+    dho:url "https://suttacentral.net/sn46.53/en/sujato#sn46.53:8.2"^^xsd:anyURI .
+
+dho:p-sn46.53-8.3 a dho:Passage ;
+    dho:inText dho:t-sn46.53 ;
+    dho:segment "sn46.53:8.3" ;
+    dho:textEn "could they make it flare up?”"@en ;
+    dho:textPi "bhabbo nu kho so puriso parittaṁ aggiṁ ujjāletun”ti?"@pi ;
+    dho:url "https://suttacentral.net/sn46.53/en/sujato#sn46.53:8.3"^^xsd:anyURI .
+
+dho:p-sn46.53-9.1 a dho:Passage ;
+    dho:inText dho:t-sn46.53 ;
+    dho:segment "sn46.53:9.1" ;
+    dho:textEn "“In the same way, when the mind is sluggish, it’s the right time to develop the awakening factors of investigation of principles, energy, and rapture."@en ;
+    dho:textPi "“Evameva kho, bhikkhave, yasmiṁ samaye līnaṁ cittaṁ hoti, kālo tasmiṁ samaye dhammavicayasambojjhaṅgassa bhāvanāya, kālo vīriyasambojjhaṅgassa bhāvanāya, kālo pītisambojjhaṅgassa bhāvanāya."@pi ;
+    dho:url "https://suttacentral.net/sn46.53/en/sujato#sn46.53:9.1"^^xsd:anyURI .
 
 dho:p-sn46.54-12.1 a dho:Passage ;
     dho:inText dho:t-sn46.54 ;
@@ -3024,12 +3290,26 @@ dho:p-sn46.69-1.1 a dho:Passage ;
     dho:textPi "“Āhāre paṭikūlasaññā, bhikkhave …pe…”"@pi ;
     dho:url "https://suttacentral.net/sn46.69/en/sujato#sn46.69:1.1"^^xsd:anyURI .
 
+dho:p-sn46.7-1.1 a dho:Passage ;
+    dho:inText dho:t-sn46.7 ;
+    dho:segment "sn46.7:1.1" ;
+    dho:textEn "“Mendicants, the rafters of a bungalow all slant, slope, and incline to the peak."@en ;
+    dho:textPi "“Seyyathāpi, bhikkhave, kūṭāgārassa yā kāci gopānasiyo, sabbā tā kūṭaninnā kūṭapoṇā kūṭapabbhārā;"@pi ;
+    dho:url "https://suttacentral.net/sn46.7/en/sujato#sn46.7:1.1"^^xsd:anyURI .
+
 dho:p-sn46.7-1.2 a dho:Passage ;
     dho:inText dho:t-sn46.7 ;
     dho:segment "sn46.7:1.2" ;
     dho:textEn "In the same way, a mendicant who develops and cultivates the seven awakening factors slants, slopes, and inclines to extinguishment."@en ;
     dho:textPi "evameva kho, bhikkhave, bhikkhu satta bojjhaṅge bhāvento satta bojjhaṅge bahulīkaronto nibbānaninno hoti nibbānapoṇo nibbānapabbhāro."@pi ;
     dho:url "https://suttacentral.net/sn46.7/en/sujato#sn46.7:1.2"^^xsd:anyURI .
+
+dho:p-sn46.7-2.2 a dho:Passage ;
+    dho:inText dho:t-sn46.7 ;
+    dho:segment "sn46.7:2.2" ;
+    dho:textEn "It’s when a mendicant develops the awakening factors of mindfulness, investigation of principles, energy, rapture, tranquility, immersion,"@en ;
+    dho:textPi "Idha, bhikkhave, bhikkhu satisambojjhaṅgaṁ bhāveti vivekanissitaṁ virāganissitaṁ nirodhanissitaṁ vossaggapariṇāmiṁ …pe…"@pi ;
+    dho:url "https://suttacentral.net/sn46.7/en/sujato#sn46.7:2.2"^^xsd:anyURI .
 
 dho:p-sn46.7-2.3 a dho:Passage ;
     dho:inText dho:t-sn46.7 ;
@@ -3374,40 +3654,12 @@ dho:t-mn148 a dho:Text ;
     dho:layer dho:SuttaLayer ;
     dho:url "https://suttacentral.net/mn148/en/sujato"^^xsd:anyURI .
 
-dho:t-sn46.11 a dho:Text ;
-    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
-    skos:prefLabel "SN 46.11 Pāṇasutta — Living Creatures"@en ;
-    dho:layer dho:SuttaLayer ;
-    dho:url "https://suttacentral.net/sn46.11/en/sujato"^^xsd:anyURI .
-
 dho:t-sn46.35 a dho:Text ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
     skos:prefLabel "SN 46.35 Ayonisomanasikārasutta — Irrational Application of Mind"@en ;
     dho:layer dho:SuttaLayer ;
     dho:url "https://suttacentral.net/sn46.35/en/sujato"^^xsd:anyURI .
-
-dho:t-sn46.1 a dho:Text ;
-    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
-    skos:prefLabel "SN 46.1 Himavantasutta — The Himalaya"@en ;
-    dho:layer dho:SuttaLayer ;
-    dho:url "https://suttacentral.net/sn46.1/en/sujato"^^xsd:anyURI .
-
-dho:t-sn46.12 a dho:Text ;
-    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
-    skos:prefLabel "SN 46.12 Paṭhamasūriyūpamasutta — The Simile of the Sun (1st)"@en ;
-    dho:layer dho:SuttaLayer ;
-    dho:url "https://suttacentral.net/sn46.12/en/sujato"^^xsd:anyURI .
-
-dho:t-sn46.13 a dho:Text ;
-    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
-    skos:prefLabel "SN 46.13 Dutiyasūriyūpamasutta — The Simile of the Sun (2nd)"@en ;
-    dho:layer dho:SuttaLayer ;
-    dho:url "https://suttacentral.net/sn46.13/en/sujato"^^xsd:anyURI .
 
 dho:t-sn46.14 a dho:Text ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -3465,13 +3717,6 @@ dho:t-sn46.32 a dho:Text ;
     dho:layer dho:SuttaLayer ;
     dho:url "https://suttacentral.net/sn46.32/en/sujato"^^xsd:anyURI .
 
-dho:t-sn46.33 a dho:Text ;
-    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
-    skos:prefLabel "SN 46.33 Upakkilesasutta — Corruptions"@en ;
-    dho:layer dho:SuttaLayer ;
-    dho:url "https://suttacentral.net/sn46.33/en/sujato"^^xsd:anyURI .
-
 dho:t-sn46.34 a dho:Text ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
@@ -3493,26 +3738,33 @@ dho:t-sn46.4 a dho:Text ;
     dho:layer dho:SuttaLayer ;
     dho:url "https://suttacentral.net/sn46.4/en/sujato"^^xsd:anyURI .
 
-dho:t-sn46.48 a dho:Text ;
-    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
-    skos:prefLabel "SN 46.48 Ādiccasutta — The Sun"@en ;
-    dho:layer dho:SuttaLayer ;
-    dho:url "https://suttacentral.net/sn46.48/en/sujato"^^xsd:anyURI .
-
-dho:t-sn46.7 a dho:Text ;
-    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
-    skos:prefLabel "SN 46.7 Kūṭāgārasutta — A Bungalow"@en ;
-    dho:layer dho:SuttaLayer ;
-    dho:url "https://suttacentral.net/sn46.7/en/sujato"^^xsd:anyURI .
-
 dho:t-sn46.8 a dho:Text ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
     skos:prefLabel "SN 46.8 Upavānasutta — With Upavāṇa"@en ;
     dho:layer dho:SuttaLayer ;
     dho:url "https://suttacentral.net/sn46.8/en/sujato"^^xsd:anyURI .
+
+dho:t-sn46.11 a dho:Text ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
+    skos:prefLabel "SN 46.11 Pāṇasutta — Living Creatures"@en ;
+    dho:layer dho:SuttaLayer ;
+    dho:url "https://suttacentral.net/sn46.11/en/sujato"^^xsd:anyURI .
+
+dho:t-sn46.12 a dho:Text ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
+    skos:prefLabel "SN 46.12 Paṭhamasūriyūpamasutta — The Simile of the Sun (1st)"@en ;
+    dho:layer dho:SuttaLayer ;
+    dho:url "https://suttacentral.net/sn46.12/en/sujato"^^xsd:anyURI .
+
+dho:t-sn46.13 a dho:Text ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
+    skos:prefLabel "SN 46.13 Dutiyasūriyūpamasutta — The Simile of the Sun (2nd)"@en ;
+    dho:layer dho:SuttaLayer ;
+    dho:url "https://suttacentral.net/sn46.13/en/sujato"^^xsd:anyURI .
 
 dho:t-sn46.21 a dho:Text ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -3535,6 +3787,13 @@ dho:t-sn46.43 a dho:Text ;
     dho:layer dho:SuttaLayer ;
     dho:url "https://suttacentral.net/sn46.43/en/sujato"^^xsd:anyURI .
 
+dho:t-sn46.48 a dho:Text ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
+    skos:prefLabel "SN 46.48 Ādiccasutta — The Sun"@en ;
+    dho:layer dho:SuttaLayer ;
+    dho:url "https://suttacentral.net/sn46.48/en/sujato"^^xsd:anyURI .
+
 dho:t-sn46.5 a dho:Text ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
@@ -3548,6 +3807,13 @@ dho:t-mn43 a dho:Text ;
     skos:prefLabel "MN 43 Mahāvedallasutta — The Great Elaboration"@en ;
     dho:layer dho:SuttaLayer ;
     dho:url "https://suttacentral.net/mn43/en/sujato"^^xsd:anyURI .
+
+dho:t-sn46.1 a dho:Text ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
+    skos:prefLabel "SN 46.1 Himavantasutta — The Himalaya"@en ;
+    dho:layer dho:SuttaLayer ;
+    dho:url "https://suttacentral.net/sn46.1/en/sujato"^^xsd:anyURI .
 
 dho:t-sn46.16 a dho:Text ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -3591,6 +3857,13 @@ dho:t-sn46.50 a dho:Text ;
     dho:layer dho:SuttaLayer ;
     dho:url "https://suttacentral.net/sn46.50/en/sujato"^^xsd:anyURI .
 
+dho:t-sn46.7 a dho:Text ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
+    skos:prefLabel "SN 46.7 Kūṭāgārasutta — A Bungalow"@en ;
+    dho:layer dho:SuttaLayer ;
+    dho:url "https://suttacentral.net/sn46.7/en/sujato"^^xsd:anyURI .
+
 dho:t-sn46.38 a dho:Text ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
@@ -3619,12 +3892,12 @@ dho:t-sn46.24 a dho:Text ;
     dho:layer dho:SuttaLayer ;
     dho:url "https://suttacentral.net/sn46.24/en/sujato"^^xsd:anyURI .
 
-dho:t-sn46.53 a dho:Text ;
+dho:t-sn46.33 a dho:Text ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
-    skos:prefLabel "SN 46.53 Aggisutta — Fire"@en ;
+    skos:prefLabel "SN 46.33 Upakkilesasutta — Corruptions"@en ;
     dho:layer dho:SuttaLayer ;
-    dho:url "https://suttacentral.net/sn46.53/en/sujato"^^xsd:anyURI .
+    dho:url "https://suttacentral.net/sn46.33/en/sujato"^^xsd:anyURI .
 
 dho:t-sn46.37 a dho:Text ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -3681,6 +3954,13 @@ dho:t-sn46.57 a dho:Text ;
     skos:prefLabel "SN 46.57 Aṭṭhikamahapphalasutta — A Skeleton"@en ;
     dho:layer dho:SuttaLayer ;
     dho:url "https://suttacentral.net/sn46.57/en/sujato"^^xsd:anyURI .
+
+dho:t-sn46.53 a dho:Text ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
+    skos:prefLabel "SN 46.53 Aggisutta — Fire"@en ;
+    dho:layer dho:SuttaLayer ;
+    dho:url "https://suttacentral.net/sn46.53/en/sujato"^^xsd:anyURI .
 
 dho:t-sn46.52 a dho:Text ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;

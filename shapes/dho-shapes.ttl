@@ -254,3 +254,24 @@ dho:AbbreviationSupportShape a sh:NodeShape ;
                 FILTER NOT EXISTS { $this dho:support dho:ExpandedAbbreviation }
                 FILTER NOT EXISTS { $this dho:citedBy ?p . ?p dho:textPi ?t . FILTER (!CONTAINS(STR(?t), "pe…")) }
             }""" ] .
+
+# ---------------------------------------------------------------- S17: similes (D22)
+
+dho:SimileShape a sh:NodeShape ;
+    sh:targetClass dho:Simile ;
+    sh:property [ sh:path skos:prefLabel ; sh:minCount 1 ; sh:message "S17: a simile needs a short name." ] ;
+    sh:property [ sh:path dho:image ;       sh:minCount 1 ; sh:maxCount 1 ; sh:message "S17: a simile must keep its image in the text's own words." ] ;
+    sh:property [ sh:path dho:wording ;     sh:minCount 1 ; sh:maxCount 1 ; sh:message "S17: a simile must keep its point in the text's own words." ] ;
+    sh:property [ sh:path dho:illustrates ; sh:minCount 1 ; sh:message "S17: a simile must say what it illustrates." ] ;
+    sh:property [ sh:path dho:citedBy ;     sh:minCount 1 ; sh:class dho:Passage ; sh:message "S17: a simile must cite a passage." ] ;
+    sh:sparql [
+        sh:prefixes <https://guoxiangng.github.io/dhamma-ontology/shapes> ;
+        sh:message "S17: image '{?w}' does not occur in any passage this simile cites." ;
+        sh:select """
+            SELECT $this ?w WHERE {
+                $this dho:image ?w .
+                FILTER NOT EXISTS {
+                    $this dho:citedBy ?p . { ?p dho:textEn ?t } UNION { ?p dho:textPi ?t }
+                    FILTER (CONTAINS(LCASE(STR(?t)), LCASE(STR(?w))))
+                }
+            }""" ] .

@@ -31,6 +31,7 @@ KINDS = [  # order matters: first match is the node's main kind
     (ONTOLEX.LexicalEntry, "word"),
     (DHO.AttentionMode, "attention"),
     (DHO.Aspect, "aspect"),
+    (DHO.Simile, "simile"),
     (DHO.Concept, "concept"),
 ]
 CLASS_NAMES = {DHO.Hindrance: "Hindrance", DHO.AwakeningFactor: "Awakening factor", DHO.JhanaFactor: "Jhāna factor"}
@@ -157,6 +158,12 @@ def export() -> dict:
             rel = "one of the two qualities in" if g.value(d, DHO.basis) == DHO.NamedParts else "one of the two kinds of"
             edge(p, whole, rel, "sutta", cites(g, d),
                  f"{basis[0].upper() + basis[1:]}: “{g.value(d, DHO.wording)}”", group="divisions", inv="becomes twofold")
+
+    for s in g.subjects(RDF.type, DHO.Simile):
+        ends = {e for i in g.objects(s, DHO.illustrates) for e in dho.claim_endpoints(g, i)}
+        for e in sorted(ends, key=str):
+            edge(s, e, "simile for", "sutta", cites(g, s), f"“{g.value(s, DHO.image)}” … “{g.value(s, DHO.wording)}”",
+                 group="similes", inv="illustrated by the simile")
 
     for a, b in g.subject_objects(DHO.editorialRelated):
         edge(a, b, "see also", "editor", note="Editor's link, not a textual claim.")

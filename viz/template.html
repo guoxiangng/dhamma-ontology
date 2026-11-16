@@ -161,6 +161,7 @@ const GROUPS = [
   { id: "conditions", label: "Conditions", line: "solid", color: "--accent", on: true },
   { id: "outcomes", label: "Outcomes", line: "solid", color: "--jhana", on: true },
   { id: "divisions", label: "Twofold (SN 46.52)", line: "dashed", color: "--list", on: true },
+  { id: "similes", label: "Similes", line: "dotted", color: "--muted", on: false },
   { id: "commentary", label: "Commentary", line: "dotted", color: "--commentary", on: true },
   { id: "editor", label: "Editor", line: "dashed", color: "--editor", on: true },
   { id: "senses", label: "Word senses", line: "solid", color: "--muted", on: false },
@@ -261,6 +262,8 @@ function style() {
     { selector: 'node[kind="attainment"]', style: { "background-color": c.accent, shape: "star", width: 34, height: 34, "font-weight": 600 } },
     { selector: 'node[kind="word"]', style: { "background-color": c.fg, shape: "round-rectangle", width: 40, height: 24, "font-weight": 700 } },
     { selector: 'node[kind="sense"]', style: { "background-color": c.surface, "border-width": 2, "border-color": c.muted, width: 18, height: 18, "font-size": 10 } },
+    { selector: 'node[kind="simile"]', style: { "background-color": c.surface, shape: "round-rectangle", "border-width": 1.5, "border-style": "dotted", "border-color": c.muted, width: 16, height: 12, "font-size": 9.5, "font-style": "italic" } },
+    { selector: 'edge[group="similes"]', style: { "line-style": "dotted", "line-color": c.muted, "target-arrow-color": c.muted, opacity: 0.6 } },
     { selector: 'node[kind="aspect"]', style: { "background-color": c.surface, "border-width": 1.5, "border-style": "dashed", "border-color": c.list, width: 14, height: 14, "font-size": 9.5 } },
     { selector: 'node[kind="concept"]', style: { "background-color": c.surface, "border-width": 2, "border-color": c.accent, width: 20, height: 20, "font-size": 10.5 } },
     { selector: 'node[kind="attention"]', style: { "background-color": c.accent, shape: "round-diamond", width: 22, height: 22, "font-size": 10.5 } },
@@ -371,7 +374,7 @@ function header(n) {
     return `<span class="chip k-${k}">${esc(c)}</span>`;
   }).join("");
   const other = { concept: "Concept", attention: "Kind of attention", mindstate: "Mind state", object: "Object of attention", list: "Numbered list", attainment: "Attainment",
-    word: "Word (lexical entry)", sense: "Word sense", aspect: "Aspect (one of two kinds, SN 46.52)" }[n.kind];
+    word: "Word (lexical entry)", sense: "Word sense", aspect: "Aspect (one of two kinds, SN 46.52)", simile: "Simile" }[n.kind];
   return `<h2>${esc(n.en || n.pi)}</h2>
     <div class="names">${n.pi && n.pi !== n.en ? `<i>${esc(n.pi)}</i>` : ""}${n.zh ? ` · ${esc(n.zh)}` : ""}</div>
     <div class="chips">${kindChips}${other ? `<span class="chip">${other}</span>` : ""}</div>

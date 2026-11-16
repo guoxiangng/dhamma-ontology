@@ -1,0 +1,7 @@
+@prefix dho: <https://guoxiangng.github.io/dhamma-ontology/ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+# Broken on purpose: a simile whose image is not in the text and which illustrates nothing. S17 must catch it.
+dho:sim-broken a dho:Simile ; skos:prefLabel "a made-up simile"@en ;
+    dho:image "the moon is like a lamp" ;
+    dho:wording "In the same way, a mendicant who develops and cultivates the seven awakening factors slants, slopes, and inclines to extinguishment." ;
+    dho:citedBy dho:p-sn46.7-1.2 .

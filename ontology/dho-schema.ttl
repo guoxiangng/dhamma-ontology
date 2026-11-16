@@ -387,3 +387,16 @@ dho:SupportKind a owl:Class ; rdfs:label "Kind of support"@en .
 dho:ExpandedAbbreviation a dho:SupportKind ; rdfs:label "expanded abbreviation"@en ;
     rdfs:comment "The Pali of every cited segment is abbreviated (…pe…). The claim rests on the conventional expansion from the full sutta of the series, as the translation fills it in, not on words the text itself gives (D14, D19)."@en .
 dho:support a owl:ObjectProperty ; rdfs:range dho:SupportKind ; rdfs:label "support"@en .
+
+# ---------------------------------------------------------------------------
+# Similes (D22): "the rafters of a bungalow all slant to the peak; in the same way, a mendicant who
+# develops the seven awakening factors slants to extinguishment". One node per simile: a short name,
+# the image and the point in the text's own words, and what it illustrates (claims, a list or advice
+# the ontology already has).
+# ---------------------------------------------------------------------------
+
+dho:Simile a owl:Class ; rdfs:label "Simile"@en ;
+    rdfs:comment "An image a sutta uses to illustrate a teaching ('seyyathāpi … evameva')."@en .
+dho:image a owl:DatatypeProperty ; rdfs:domain dho:Simile ; rdfs:label "image"@en ;
+    rdfs:comment "The image, verbatim from a cited passage (S17). The point ('in the same way …') is dho:wording (S14)."@en .
+dho:illustrates a owl:ObjectProperty ; rdfs:domain dho:Simile ; rdfs:label "illustrates"@en .

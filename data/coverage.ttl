@@ -22,8 +22,8 @@ dho:t-sn46.53
     dho:review dho:Unreviewed ;
     dho:modelledOn "2026-11-13"^^xsd:date ;
     dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
-    dho:encodes "The timing advice: which awakening factors it is the right or wrong time to develop when the mind is sluggish (4.1, 7.1) or restless (10.1, 13.1), and 'mindfulness is always useful' (15.4)." ;
-    dho:leftOut "The setting and the challenge from wanderers of other religions (1.1-3.1); the four fire similes (5, 8, 11, 14) that illustrate the advice; the repeated statements after each simile (6, 9, 12, 15.1-15.3); the reason given for each piece of advice, that a sluggish mind is hard or easy to stimulate and a restless one hard or easy to settle (4.3, 7.3, 10.3, 13.3): cited, but no field records it. Corrected 2026-11-15: the encoded note had claimed the reasons (D19)." .
+    dho:encodes "The timing advice: which awakening factors it is the right or wrong time to develop when the mind is sluggish (4.1, 7.1) or restless (10.1, 13.1), and 'mindfulness is always useful' (15.4). The four fire similes, each illustrating three pieces of timing advice (5-6, 8-9, 11-12, 14-15; D22)." ;
+    dho:leftOut "The setting and the challenge from wanderers of other religions (1.1-3.1); the reason given for each piece of advice, that a sluggish mind is hard or easy to stimulate and a restless one hard or easy to settle (4.3, 7.3, 10.3, 13.3, repeated after each simile at 6.3, 9.3, 12.3, 15.3): cited, but no field records it. Corrected 2026-11-15: the encoded note had claimed the reasons (D19)." .
 
 dho:t-mn43
     dho:coverage dho:PartlyEncoded ;
@@ -85,12 +85,11 @@ dho:t-mn44
     dho:leftOut "The rest of Dhammadinnā's answers: substantial reality, its origin, cessation and the practice leading there (2-5); grasping and the aggregates (6); substantialist view (7-8); the noble eightfold path and the three spectrums of practice (9-11); the bases, prerequisites and development of immersion (12.3-12.5); the three processes (13-15); the cessation of perception and feeling (16-21); the three feelings, their underlying tendencies and their counterparts (22-29), ending with 'extinguishment is the objective, destination, and culmination of the spiritual life' (29.15); and the Buddha's endorsement of her answers (30.4-30.5), which gives the definition its authority." .
 
 dho:t-sn46.2
-    dho:coverage dho:PartlyEncoded ;
+    dho:coverage dho:FullyEncoded ;
     dho:review dho:Unreviewed ;
     dho:modelledOn "2026-11-14"^^xsd:date ;
     dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
-    dho:encodes "Its 12 statements of what fuels the five hindrances and seven awakening factors (2-6, 9-15). They match SN 46.51 sections 1-12 (identical English; Pali differs only in punctuation and one spelling variant), so they were added as a second citation on the same claims, not as new claims." ;
-    dho:leftOut "The simile framing the teaching: as the body is sustained by food, so the hindrances and the awakening factors are sustained by fuel (1.2-1.3, 7, 8, 16). There is no pattern for similes yet." .
+    dho:encodes "Its 12 statements of what fuels the five hindrances and seven awakening factors (2-6, 9-15). They match SN 46.51 sections 1-12 (identical English; Pali differs only in punctuation and one spelling variant), so they were added as a second citation on the same claims, not as new claims. The simile framing it, the body sustained by food, for the hindrances and for the awakening factors (1.2-1.3, 7-8, 16; D22)." .
 
 dho:t-sn46.22
     dho:coverage dho:FullyEncoded ;
@@ -104,8 +103,8 @@ dho:t-sn46.33
     dho:review dho:Unreviewed ;
     dho:modelledOn "2026-11-14"^^xsd:date ;
     dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
-    dho:encodes "The five corruptions of the mind as a list whose members are the same five qualities as the hindrances (2.1, 2.3, 2.4)." ;
-    dho:leftOut "The simile of the five corruptions of native gold (1.1-1.8), and what the corruptions do: the mind is not pliable, workable or radiant, is brittle, and is not rightly immersed for the ending of defilements (2.1, 2.4). No pattern yet for similes or for what a quality does." .
+    dho:encodes "The five corruptions of the mind as a list whose members are the same five qualities as the hindrances (2.1, 2.3, 2.4). The simile of the five corruptions of native gold (1.1-1.8, 2.1; D22)." ;
+    dho:leftOut "What the corruptions do: the mind is not pliable, workable or radiant, is brittle, and is not rightly immersed for the ending of defilements (2.1, 2.4): quoted in the simile's point (D22), but no pattern yet for what a quality does." .
 
 dho:t-sn46.37
     dho:coverage dho:PartlyEncoded ;
@@ -135,8 +134,8 @@ dho:t-sn46.1
     dho:review dho:Unreviewed ;
     dho:modelledOn "2026-11-14"^^xsd:date ;
     dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
-    dho:encodes "The seven factors developed depending on and grounded on ethics (1.4), and the stock formula for each factor (relies on seclusion, fading away and cessation; ripens as letting go) (1.6, 1.12)." ;
-    dho:leftOut "The simile of dragons growing strong on the Himalayas and reaching the ocean (1.2-1.3), and the result 'acquiring great and abundant good qualities' (1.4, 1.13). No simile pattern yet." .
+    dho:encodes "The seven factors developed depending on and grounded on ethics (1.4), and the stock formula for each factor (relies on seclusion, fading away and cessation; ripens as letting go) (1.6, 1.12). The simile of dragons growing strong on the Himalayas (1.2-1.4; D22)." ;
+    dho:leftOut "The result 'acquiring great and abundant good qualities' (1.4, 1.13): kept in the simile's point (D22), not modelled as an outcome. The simile itself is encoded (1.2-1.4)." .
 
 dho:t-sn46.5
     dho:coverage dho:PartlyEncoded ;
@@ -147,36 +146,32 @@ dho:t-sn46.5
     dho:leftOut "As they are developed the mind is freed from the defilements of sensuality, desire to be reborn and ignorance, and knows it is freed (1.8-1.10). Needs the three defilements (āsava) as a list and a pattern for release." .
 
 dho:t-sn46.7
-    dho:coverage dho:PartlyEncoded ;
+    dho:coverage dho:FullyEncoded ;
     dho:review dho:Unreviewed ;
     dho:modelledOn "2026-11-14"^^xsd:date ;
     dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
-    dho:encodes "Developing the seven factors slants, slopes and inclines to extinguishment (1.2, 2.4); the stock formula for each factor (relies on seclusion, fading away and cessation; ripens as letting go) (2.3)." ;
-    dho:leftOut "The simile of a bungalow's rafters inclining to the peak (1.1)." .
+    dho:encodes "Developing the seven factors slants, slopes and inclines to extinguishment (1.2, 2.4); the stock formula for each factor (relies on seclusion, fading away and cessation; ripens as letting go) (2.3). The simile of a bungalow's rafters inclining to the peak (1.1; D22)." .
 
 dho:t-sn46.11
-    dho:coverage dho:PartlyEncoded ;
+    dho:coverage dho:FullyEncoded ;
     dho:review dho:Unreviewed ;
     dho:modelledOn "2026-11-14"^^xsd:date ;
     dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
-    dho:encodes "The seven factors developed depending on and grounded on ethics (1.3); the stock formula for each factor (relies on seclusion, fading away and cessation; ripens as letting go) (2.3)." ;
-    dho:leftOut "The simile of creatures in the four postures depending on the earth (1.1-1.2)." .
+    dho:encodes "The seven factors developed depending on and grounded on ethics (1.3); the stock formula for each factor (relies on seclusion, fading away and cessation; ripens as letting go) (2.3). The simile of creatures in the four postures depending on the earth (1.1-1.2; D22)." .
 
 dho:t-sn46.12
-    dho:coverage dho:PartlyEncoded ;
+    dho:coverage dho:FullyEncoded ;
     dho:review dho:Unreviewed ;
     dho:modelledOn "2026-11-14"^^xsd:date ;
     dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
-    dho:encodes "Good friendship is the forerunner of the arising of the seven factors (1.2), and one with good friends can expect to develop them (1.3); the stock formula for each factor (relies on seclusion, fading away and cessation; ripens as letting go) (2.3)." ;
-    dho:leftOut "The simile of the dawn as forerunner of the sunrise (1.1)." .
+    dho:encodes "Good friendship is the forerunner of the arising of the seven factors (1.2), and one with good friends can expect to develop them (1.3); the stock formula for each factor (relies on seclusion, fading away and cessation; ripens as letting go) (2.3). The simile of the dawn as forerunner of the sunrise (1.1; D22)." .
 
 dho:t-sn46.13
-    dho:coverage dho:PartlyEncoded ;
+    dho:coverage dho:FullyEncoded ;
     dho:review dho:Unreviewed ;
     dho:modelledOn "2026-11-14"^^xsd:date ;
     dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
-    dho:encodes "Rational application of mind is the forerunner of the arising of the seven factors (1.2), and one accomplished in it can expect to develop them (1.3); the stock formula for each factor (relies on seclusion, fading away and cessation; ripens as letting go) (2.3)." ;
-    dho:leftOut "The simile of the dawn (1.1)." .
+    dho:encodes "Rational application of mind is the forerunner of the arising of the seven factors (1.2), and one accomplished in it can expect to develop them (1.3); the stock formula for each factor (relies on seclusion, fading away and cessation; ripens as letting go) (2.3). The simile of the dawn (1.1; D22)." .
 
 dho:t-sn46.17
     dho:coverage dho:PartlyEncoded ;
@@ -254,12 +249,11 @@ dho:t-sn46.36
     dho:encodes "Developing the seven factors leads to growth and progress (1.1, 1.4); the list (1.3)." .
 
 dho:t-sn46.48
-    dho:coverage dho:PartlyEncoded ;
+    dho:coverage dho:FullyEncoded ;
     dho:review dho:Unreviewed ;
     dho:modelledOn "2026-11-14"^^xsd:date ;
     dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
-    dho:encodes "Good friendship is the forerunner of the arising of the seven factors (1.2), and one with good friends can expect to develop them (1.3); the stock formula for each factor (relies on seclusion, fading away and cessation; ripens as letting go) (1.6). Same statements as SN 46.12, added as citations." ;
-    dho:leftOut "The simile of the dawn (1.1)." .
+    dho:encodes "Good friendship is the forerunner of the arising of the seven factors (1.2), and one with good friends can expect to develop them (1.3); the stock formula for each factor (relies on seclusion, fading away and cessation; ripens as letting go) (1.6). Same statements as SN 46.12, added as citations. The simile of the dawn (1.1; D22)." .
 
 dho:t-sn46.49
     dho:coverage dho:FullyEncoded ;

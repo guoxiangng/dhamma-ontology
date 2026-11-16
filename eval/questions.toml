@@ -814,3 +814,34 @@ must_not = ["Yes, the Buddha's reply in SN 46.54 is the instruction to spread lo
 layer = "sutta"
 status = "draft"
 note = "Speaker attribution (D17) and the Pali's direction (D21)."
+
+[[q]]
+id = "Q54"
+category = "recall"
+scope = "covered"
+question = "In SN 46.53, what does the simile of a small fire illustrate, and what makes it flare up?"
+gold = [
+  "When the mind is sluggish, it is the right time to develop investigation of principles, energy and rapture: like making a small fire flare up by adding dry grass, cow-dung and timber and blowing on it (sukkhāni ceva tiṇāni).",
+  "Adding wet fuel, spraying water and scattering dirt would not make it flare up: so too tranquility, immersion and equanimity are the wrong factors for a sluggish mind.",
+]
+segments = ["sn46.53:8.2", "sn46.53:9.1", "sn46.53:5.2", "sn46.53:6.1"]
+also_ok = ["Adding the reverse simile of putting out a great fire for the restless mind."]
+must_not = []
+layer = "sutta"
+status = "draft"
+note = "Added with the simile pattern (D22)."
+
+[[q]]
+id = "Q55"
+category = "trap"
+scope = "covered"
+question = "In SN 46.13, what does the dawn before the sunrise stand for: good friendship?"
+gold = [
+  "No: in SN 46.13 the dawn is the forerunner of rational application of mind (yonisomanasikāra) as the forerunner of the awakening factors. The same image stands for good friendship in SN 46.12 and 46.48.",
+]
+segments = ["sn46.13:1.1", "sn46.13:1.2", "sn46.12:1.2"]
+also_ok = []
+must_not = ["Yes, in SN 46.13 the dawn is good friendship."]
+layer = "sutta"
+status = "draft"
+note = "One image, two points (D22)."

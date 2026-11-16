@@ -51,6 +51,9 @@ def claim_summary(g, c) -> tuple[str, str, str]:
         res = g.value(c, DHO.result)
         what = f"{L(g.value(c, DHO.relation))} {L(g.value(c, DHO.conditioned))}" + (f": {L(res)}" if res else "")
         return "condition", "sutta", f"{L(g.value(c, DHO.condition))} {what} (“{g.value(c, DHO.wording)}”)"
+    if DHO.Simile in types:
+        ill = ", ".join(sorted({L(e) for i in g.objects(c, DHO.illustrates) for e in dho.claim_endpoints(g, i)}))
+        return "simile", "sutta", f"simile: {L(c)}, illustrating {ill}"
     if DHO.Division in types:
         parts = " and ".join(sorted(L(p) for p in g.objects(c, DHO.part)))
         return "division", "sutta", f"{L(g.value(c, DHO.divides))} becomes twofold ({L(g.value(c, DHO.basis))}): {parts}"

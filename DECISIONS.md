@@ -204,11 +204,28 @@ SN 46.54 asks of each heart's release (by love, compassion, rejoicing, equanimit
 - **The beautiful** (*subha*, as an attainment) is kept apart from SN 46.51's "feature of beauty" (*subhanimitta*), which fuels sensual desire.
 - **The wanderers' version** of the teaching (spreading love to every direction) is left out (D17). The Buddha's own answer is about the awakening factors.
 
+## D22. Similes: image, point, and what they illustrate
+
+*Decided by Claude; the owner deferred. Revisit.*
+
+Most SN 46 similes have one shape. "Just as (*seyyathāpi*) the rafters of a bungalow all slant to the peak, in the same way (*evameva*) a mendicant who develops the seven awakening factors slants to extinguishment." Each is a `dho:Simile` with four parts:
+
+- a short name, given by the editor;
+- the **image** and the **point** ("in the same way …"), both copied from the source files by a script and checked against the cited passages (S14, S17);
+- what it **illustrates**: the claims, list or advice the ontology already has. The rafters illustrate o-02, the dawn c-02 or c-04, the gold the five corruptions of the mind, and each fire three pieces of timing advice.
+
+Decisions within the pattern:
+
+- **A simile illustrates; it doesn't claim.** The point line restates a claim the ontology already models, which is why a simile points at that claim instead of adding a new one.
+- **One image with two different points is two similes.** The dawn illustrates good friendship (SN 46.12, 46.48) and rational application of mind (SN 46.13). The same image with the same point is one simile with several citations (D12).
+- **Not every image's details are modelled.** The dragons' route from mountain pools to the ocean, and the five metals that corrupt gold, are kept in notes.
+- **Similes for teachings the ontology leaves out stay out.** SN 46.4's chest of clothes illustrates Sāriputta's account of his own practice, which is not modelled (D20).
+
 ## Patterns not modelled yet
 
 These kinds of teaching have come up and been left out (each logged in `data/coverage.ttl`) until a pattern is agreed:
 
-- **Similes** (SN 46.1 dragons, 46.2 body and food, 46.7 rafters, 46.11 earth, 46.12/13/48 dawn, 46.33 gold, 46.53 four fire similes; SN 12.61 monkey). Probably a node linking the image, what it illustrates and the point it makes.
+- ~~Similes~~: modelled from 2026-11-16 (D22). Still out: similes for teachings that aren't modelled (SN 46.4).
 - **What a quality is or isn't called:** the hindrances are "obstacles and corruptions of the heart"; the awakening factors are "not obstacles", "noble and emancipating" (SN 46.19, 46.34, 46.37).
 - **One fetter is not one hindrance.** SN 46.130's higher fetter *uddhacca* (restlessness) is its own concept, not merged into the hindrance *uddhaccakukkucca* (restlessness and remorse). Eval Q39 tests this. *Since D18:* SN 46.52 names restlessness as one of the two qualities in that hindrance, so the two are now joined by a cited division instead of an editor's link.
 - **Ranking:** "diligence is said to be the best of them" (SN 46.31, 46.32).

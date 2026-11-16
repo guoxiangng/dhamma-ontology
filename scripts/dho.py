@@ -185,6 +185,21 @@ def claim_sentences(g: Graph, claim) -> tuple[str, str]:
     return f"{label(g, rel)} {label(g, target)}", f"{label(g, cond)} → {label(g, rel)} this"
 
 
+def claim_endpoints(g: Graph, claim) -> list:
+    """The concepts a claim is about: its subject and target, or the node itself if it isn't a claim."""
+    pairs = ((DHO.of, DHO.to), (DHO.condition, DHO.conditioned), (DHO.develop, DHO.whenMind))
+    ends = [g.value(claim, p) for pair in pairs for p in pair if g.value(claim, p) is not None]
+    for p in (DHO.fuels, DHO.starves):
+        if g.value(claim, p) is not None:
+            ends.append(g.value(claim, p))
+    return ends or [claim]
+
+
+def similes_about(g: Graph, c) -> set:
+    return {s for s in g.subjects(RDF.type, DHO.Simile)
+            if any(c in claim_endpoints(g, i) for i in g.objects(s, DHO.illustrates))}
+
+
 # --------------------------------------------------------------------------- resolve
 
 def resolve(g: Graph, text: str) -> list[URIRef]:
@@ -192,7 +207,7 @@ def resolve(g: Graph, text: str) -> list[URIRef]:
     q = fold(text)
     candidates = (set(g.subjects(RDF.type, DHO.MentalQuality)) | set(g.subjects(RDF.type, DHO.MindState))
                   | set(g.subjects(RDF.type, DHO.Concept)) | set(g.subjects(RDF.type, DHO.AttentionMode))
-                  | set(g.subjects(RDF.type, DHO.NumberedList)))
+                  | set(g.subjects(RDF.type, DHO.NumberedList)) | set(g.subjects(RDF.type, DHO.Simile)))
     exact, partial = [], []
     for c in candidates:
         names = [fold(str(l)) for p in (SKOS.prefLabel, SKOS.altLabel, SKOS.hiddenLabel, RDFS.label) for l in g.objects(c, p)]
@@ -324,6 +339,12 @@ def card(g: Graph, c) -> list[str]:
         out.append(f"  is defined as: {label(g, g.value(d, DHO['as']))}   [sutta {cite(g, d)}]")
     for d in g.subjects(DHO['as'], c):
         out.append(f"  defines: {label(g, g.value(d, DHO.defines))} is {label(g, c)}   [sutta {cite(g, d)}]")
+
+    for s in sorted(similes_about(g, c), key=str):
+        out.append(f"  simile: {label(g, s)}\n      \"{g.value(s, DHO.image)}\" / \"{g.value(s, DHO.wording)}\"  [sutta {cite(g, s)}]")
+    if (c, RDF.type, DHO.Simile) in g:
+        out.append(f"  image: \"{g.value(c, DHO.image)}\"\n  point: \"{g.value(c, DHO.wording)}\"   [sutta {cite(g, c)}]")
+        out.append("  illustrates: " + ", ".join(sorted(label(g, n) for i in g.objects(c, DHO.illustrates) for n in claim_endpoints(g, i))))
 
     related = set(g.objects(c, DHO.editorialRelated)) | set(g.subjects(DHO.editorialRelated, c))
     for r in sorted(related):
