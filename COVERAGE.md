@@ -12,10 +12,10 @@ This is how much of the canon the ontology actually draws on. It is small on pur
 |---|---:|---:|---:|---:|---:|
 | Long Discourses (DN) | 34 | 0 | 0 | 0 | 0.00% |
 | Middle Discourses (MN) | 152 | 0 | 2 | 2 | 2.63% |
-| Linked Discourses (SN) | 3,024 | 22 | 43 | 1 | 2.18% |
+| Linked Discourses (SN) | 3,024 | 25 | 45 | 1 | 2.35% |
 | Numbered Discourses (AN) | 8,122 | 0 | 0 | 0 | 0.00% |
 | Minor Collection (KN) | 2,748 | 0 | 0 | 1 | 0.04% |
-| **Total** | **14,080** | **22** | | | **0.50%** |
+| **Total** | **14,080** | **25** | | | **0.54%** |
 
 Counts follow SuttaCentral's numbering, with grouped ranges (e.g. `sn12.93-213`) counted as the suttas they number. Many of those are abbreviated repetitions, so this overstates the amount of distinct text. KN mixes early and late material (Dhammapada and Sutta Nipāta beside Jātaka and Apadāna) and Dhammapada is counted by verse.
 
@@ -23,6 +23,7 @@ Counts follow SuttaCentral's numbering, with grouped ranges (e.g. `sn12.93-213`)
 
 | Text | Layer | Coverage | Segments cited / in text | Claims citing it | Review |
 |---|---|---|---:|---:|---|
+| [SN 46.10 Dutiyauppannasutta — Arisen (2nd)](https://suttacentral.net/sn46.10/en/sujato) | Sutta (early discourses) | fully encoded | 3 / 11 | 2 | not yet reviewed |
 | [SN 46.11 Pāṇasutta — Living Creatures](https://suttacentral.net/sn46.11/en/sujato) | Sutta (early discourses) | fully encoded | 4 / 8 | 6 | not yet reviewed |
 | [SN 46.12 Paṭhamasūriyūpamasutta — The Simile of the Sun (1st)](https://suttacentral.net/sn46.12/en/sujato) | Sutta (early discourses) | fully encoded | 4 / 8 | 7 | not yet reviewed |
 | [SN 46.13 Dutiyasūriyūpamasutta — The Simile of the Sun (2nd)](https://suttacentral.net/sn46.13/en/sujato) | Sutta (early discourses) | fully encoded | 4 / 8 | 7 | not yet reviewed |
@@ -37,6 +38,7 @@ Counts follow SuttaCentral's numbering, with grouped ranges (e.g. `sn12.93-213`)
 | [SN 46.36 Buddhisutta — Growth](https://suttacentral.net/sn46.36/en/sujato) | Sutta (early discourses) | fully encoded | 3 / 5 | 2 | not yet reviewed |
 | [SN 46.38 Anīvaraṇasutta — Without Obstacles](https://suttacentral.net/sn46.38/en/sujato) | Sutta (early discourses) | fully encoded | 6 / 9 | 4 | not yet reviewed |
 | [SN 46.41 Vidhāsutta — Discriminations](https://suttacentral.net/sn46.41/en/sujato) | Sutta (early discourses) | fully encoded | 5 / 10 | 2 | not yet reviewed |
+| [SN 46.42 Cakkavattisutta — A Wheel-Turning Monarch](https://suttacentral.net/sn46.42/en/sujato) | Sutta (early discourses) | fully encoded | 6 / 9 | 3 | not yet reviewed |
 | [SN 46.43 Mārasutta — About Māra](https://suttacentral.net/sn46.43/en/sujato) | Sutta (early discourses) | fully encoded | 4 / 9 | 2 | not yet reviewed |
 | [SN 46.48 Ādiccasutta — The Sun](https://suttacentral.net/sn46.48/en/sujato) | Sutta (early discourses) | fully encoded | 4 / 8 | 7 | not yet reviewed |
 | [SN 46.49 Ajjhattikaṅgasutta — Interior](https://suttacentral.net/sn46.49/en/sujato) | Sutta (early discourses) | fully encoded | 5 / 7 | 6 | not yet reviewed |
@@ -45,6 +47,7 @@ Counts follow SuttaCentral's numbering, with grouped ranges (e.g. `sn12.93-213`)
 | [SN 46.57 Aṭṭhikamahapphalasutta — A Skeleton](https://suttacentral.net/sn46.57/en/sujato) | Sutta (early discourses) | fully encoded | 24 / 37 | 13 | not yet reviewed |
 | [SN 46.7 Kūṭāgārasutta — A Bungalow](https://suttacentral.net/sn46.7/en/sujato) | Sutta (early discourses) | fully encoded | 5 / 7 | 6 | not yet reviewed |
 | [SN 46.76 Nirodhasutta — Cessation](https://suttacentral.net/sn46.76/en/sujato) | Sutta (early discourses) | fully encoded | 14 / 25 | 13 | not yet reviewed |
+| [SN 46.9 Paṭhamauppannasutta — Arisen (1st)](https://suttacentral.net/sn46.9/en/sujato) | Sutta (early discourses) | fully encoded | 3 / 5 | 2 | not yet reviewed |
 | [MN 43 Mahāvedallasutta — The Great Elaboration](https://suttacentral.net/mn43/en/sujato) | Sutta (early discourses) | partly encoded | 5 / 181 | 3 | not yet reviewed |
 | [MN 44 Cūḷavedallasutta — The Shorter Elaboration](https://suttacentral.net/mn44/en/sujato) | Sutta (early discourses) | partly encoded | 1 / 136 | 1 | not yet reviewed |
 | [SN 46.1 Himavantasutta — The Himalaya](https://suttacentral.net/sn46.1/en/sujato) | Sutta (early discourses) | partly encoded | 5 / 14 | 6 | not yet reviewed |
@@ -63,12 +66,14 @@ Counts follow SuttaCentral's numbering, with grouped ranges (e.g. `sn12.93-213`)
 | [SN 46.33 Upakkilesasutta — Corruptions](https://suttacentral.net/sn46.33/en/sujato) | Sutta (early discourses) | partly encoded | 10 / 13 | 2 | not yet reviewed |
 | [SN 46.34 Anupakkilesasutta — Not Corruptions](https://suttacentral.net/sn46.34/en/sujato) | Sutta (early discourses) | partly encoded | 3 / 5 | 2 | not yet reviewed |
 | [SN 46.37 Āvaraṇanīvaraṇasutta — Obstacles](https://suttacentral.net/sn46.37/en/sujato) | Sutta (early discourses) | partly encoded | 10 / 12 | 4 | not yet reviewed |
+| [SN 46.39 Rukkhasutta — Trees](https://suttacentral.net/sn46.39/en/sujato) | Sutta (early discourses) | partly encoded | 10 / 18 | 4 | not yet reviewed |
 | [SN 46.4 Vatthasutta — Clothes](https://suttacentral.net/sn46.4/en/sujato) | Sutta (early discourses) | partly encoded | 3 / 28 | 1 | not yet reviewed |
 | [SN 46.40 Nīvaraṇasutta — Hindrances](https://suttacentral.net/sn46.40/en/sujato) | Sutta (early discourses) | partly encoded | 10 / 19 | 6 | not yet reviewed |
 | [SN 46.5 Bhikkhusutta — A Monk](https://suttacentral.net/sn46.5/en/sujato) | Sutta (early discourses) | partly encoded | 4 / 12 | 6 | not yet reviewed |
 | [SN 46.52 Pariyāyasutta — Is There a Way?](https://suttacentral.net/sn46.52/en/sujato) | Sutta (early discourses) | partly encoded | 28 / 62 | 12 | not yet reviewed |
 | [SN 46.53 Aggisutta — Fire](https://suttacentral.net/sn46.53/en/sujato) | Sutta (early discourses) | partly encoded | 25 / 51 | 17 | not yet reviewed |
 | [SN 46.54 Mettāsahagatasutta — Full of Love](https://suttacentral.net/sn46.54/en/sujato) | Sutta (early discourses) | partly encoded | 20 / 84 | 12 | not yet reviewed |
+| [SN 46.55 Saṅgāravasutta — With Saṅgārava](https://suttacentral.net/sn46.55/en/sujato) | Sutta (early discourses) | partly encoded | 23 / 55 | 12 | not yet reviewed |
 | [SN 46.56 Abhayasutta — With Prince Abhaya](https://suttacentral.net/sn46.56/en/sujato) | Sutta (early discourses) | partly encoded | 14 / 53 | 6 | not yet reviewed |
 | [SN 46.58 Puḷavakasutta — Worm-Infested](https://suttacentral.net/sn46.58/en/sujato) | Sutta (early discourses) | partly encoded | 1 / 2 | 1 | not yet reviewed |
 | [SN 46.59 Vinīlakasutta — Livid](https://suttacentral.net/sn46.59/en/sujato) | Sutta (early discourses) | partly encoded | 1 / 2 | 1 | not yet reviewed |
@@ -97,6 +102,11 @@ Counts follow SuttaCentral's numbering, with grouped ranges (e.g. `sn12.93-213`)
 | Visuddhimagga IV.86 | Commentary / later treatise | referenced only | not held | 5 | not yet reviewed |
 
 Segments cited are the passages a claim points to. A fully encoded text can still cite fewer than all its segments, because headings, questions and restatements carry no new claim.
+
+### SN 46.10 Dutiyauppannasutta — Arisen (2nd)
+
+- **Coverage:** fully encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-16 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** The list (1.1, 1.3), and the teaching: the seven awakening factors, unarisen, don't arise apart from the Holy One's training (1.1, 1.4; D23). The chapter's summary verse (2.0-2.4) lists the chapter's titles and is not teaching.
 
 ### SN 46.11 Pāṇasutta — Living Creatures
 
@@ -168,6 +178,11 @@ Segments cited are the passages a claim points to. A fully encoded text can stil
 - **Coverage:** fully encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
 - **Encodes:** All ascetics and brahmins, past, future and present, who give up the three discriminations do so by developing the seven factors (1.2-1.4, 1.7-1.9); the list (1.6). The sutta doesn't name the three discriminations, so neither does the ontology.
 
+### SN 46.42 Cakkavattisutta — A Wheel-Turning Monarch
+
+- **Coverage:** fully encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-16 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** The list (2.1, 2.3); when a Realized One appears, the seven treasures of the awakening factors appear (2.1, 2.4); the comparison with a Wheel-Turning Monarch's seven treasures, as a simile (1.1-1.4; D23).
+
 ### SN 46.43 Mārasutta — About Māra
 
 - **Coverage:** fully encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
@@ -208,6 +223,11 @@ Segments cited are the passages a claim points to. A fully encoded text can stil
 
 - **Coverage:** fully encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-14 by project owner with Claude (AI assistant), from SuttaCentral's text
 - **Encodes:** The perception of cessation is very fruitful and beneficial (1.1, 1.5); each awakening factor is developed accompanied by it (1.3-1.4, 2.5-2.6, 3.3-3.4), with the stock formula; one of two results, enlightenment in this very life or non-return; great benefit, great sanctuary from the yoke, great inspiration and great ease.
+
+### SN 46.9 Paṭhamauppannasutta — Arisen (1st)
+
+- **Coverage:** fully encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-16 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** The list (1.1, 1.3), and the teaching: the seven awakening factors, unarisen, don't arise apart from the appearance of a Realized One (1.1, 1.4; D23).
 
 ### MN 43 Mahāvedallasutta — The Great Elaboration
 
@@ -317,6 +337,12 @@ Segments cited are the passages a claim points to. A fully encoded text can stil
 - **Encodes:** Both lists (1.1, 1.3-1.7; 2.1, 2.3); the hindrances weaken wisdom (1.1, 1.8); developing the awakening factors leads to the realization of the fruit of knowledge and freedom (2.1, 2.4).
 - **Left out:** That the hindrances are obstacles and corruptions of the heart, and the awakening factors are not (1.1, 1.8, 2.1, 2.4). Needs a pattern for what a quality is or is not.
 
+### SN 46.39 Rukkhasutta — Trees
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-16 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** Both lists (2.1, 2.3-2.7; 3.1, 3.3); the hindrances, parasites of the mind, weaken wisdom (2.1, 2.8; stated of each hindrance in the Pali only, 2.3-2.7); developing the awakening factors leads to the realization of the fruit of knowledge and freedom (3.1, 3.3-3.4).
+- **Left out:** The simile of the large parasitic fig trees whose host trees collapse (1.1-1.4). Its point is a renunciate overcome by sensual pleasures like those he gave up, or worse (1.5), which is not modelled, so under D22 the simile stays out too. That the hindrances are obstacles and the awakening factors are not (2.1, 3.1): no pattern yet for what a quality is or is not (as SN 46.37).
+
 ### SN 46.4 Vatthasutta — Clothes
 
 - **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-15 by project owner with Claude (AI assistant), from SuttaCentral's text
@@ -352,6 +378,12 @@ Segments cited are the passages a claim points to. A fully encoded text can stil
 - **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-16 by project owner with Claude (AI assistant), from SuttaCentral's text
 - **Encodes:** How each heart's release (by love, compassion, rejoicing, equanimity) is developed: each awakening factor developed accompanied by that quality, with the stock formula (12.1-12.3, 13.1-13.3, 14.1-14.3, 15.1-15.3; the Pali's direction, not the English's, D21). The apex of each, for a wise mendicant who has not penetrated to a higher freedom: the beautiful; the dimension of infinite space; of infinite consciousness; of nothingness (12.8-12.9, 13.6-13.7, 14.6-14.7, 15.9-15.10).
 - **Left out:** The narrative frame and the wanderers' challenge (1.1-10.2), including their restatement of the teaching: give up the five hindrances, corruptions of the heart that weaken wisdom, and spread a heart full of love, compassion, rejoicing and equanimity in every direction (3.2-3.5, 4.2-4.6, 8.2-9.5): said by the interlocutors (D17). The Buddha's counter-questions and 'they're out of their element' (11.1-11.9). The five ways of perceiving at will: the repulsive in the unrepulsive, the unrepulsive in the repulsive, and so on, and staying equanimous (12.4-12.8, 13.4-13.5, 14.4-14.5, 15.4-15.8): no pattern yet. The questions also ask each release's destination, fruit and end; only the apex is answered.
+
+### SN 46.55 Saṅgāravasutta — With Saṅgārava
+
+- **Coverage:** partly encoded · **Review:** not yet reviewed · **Modelled:** 2026-11-16 by project owner with Claude (AI assistant), from SuttaCentral's text
+- **Encodes:** When the heart is overcome by each of five (sensual lust, ill will, dullness and drowsiness, restlessness and remorse, doubt) and the escape from it isn't understood, one doesn't truly know or see what is good for oneself, for another or for both (3.1, 5.1, 7.1, 9.1, 11.1); the five similes of a bowl of water that is dyed, boiling, covered with moss, stirred by the wind, or muddy in the dark (4, 6, 8, 10, 12; D22); developing the awakening factors leads to the realization of the fruit of knowledge and freedom (23.1, 23.3-23.4).
+- **Left out:** The reverse teaching, when the heart is not overcome and the escape is understood (13.1-22.4), and its five similes of clear water: the ontology has no concept for the absence of a quality, so the reverse similes stay out too (D22). The consequence the brahmin asked about, long-rehearsed hymns not springing to mind (2.1-2.2, 12.4, 22.4): kept in the claims' notes and the similes' points, not modelled as a claim. That the awakening factors are not obstacles, hindrances or corruptions of the mind (23.1): no pattern yet. The setting and Saṅgārava's going for refuge (1.1-1.3, 24.1-24.3).
 
 ### SN 46.56 Abhayasutta — With Prince Abhaya
 

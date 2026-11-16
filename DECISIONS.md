@@ -221,6 +221,18 @@ Decisions within the pattern:
 - **Not every image's details are modelled.** The dragons' route from mountain pools to the ocean, and the five metals that corrupt gold, are kept in notes.
 - **Similes for teachings the ontology leaves out stay out.** SN 46.4's chest of clothes illustrates Sāriputta's account of his own practice, which is not modelled (D20).
 
+## D23. Necessary conditions; a different word in a familiar list; comparisons without "just as"
+
+*Decided by Claude; the owner deferred. Revisit.*
+
+Batch 9 (SN 46.9, 46.10, 46.39, 46.42, 46.55) needed three small calls.
+
+- **"Not apart from" is its own relation.** SN 46.9 says the seven awakening factors, unarisen, don't arise *nāññatra tathāgatassa pātubhāvā*, "except when a Realized One has appeared". SN 46.10 says the same of the Holy One's training (*sugatavinaya*). That is a necessary condition. "When-then" would make it sufficient, so a new relation, **is required for**, takes it. SN 46.42 says the opposite direction: with (*pātubhāvā*) a Realized One's appearance the factors appear. That one is "when-then", and the two claims are kept apart.
+- **A different Pali word in a familiar list is a different concept.** SN 46.55's five begin with *kāmarāga* (sensual lust), not *kāmacchanda* (sensual desire, the hindrance). Sujato renders both "sensual desire". Following the Pali (D19) and the fetter *uddhacca* (D13), sensual lust is its own concept with an editor's link to sensual desire, and its English label is literal rather than Sujato's, so the two don't share a name. The text doesn't call its five "the hindrances", so SN 46.55 doesn't cite the hindrance list.
+- **A comparison set side by side is a simile.** SN 46.42 lists a Wheel-Turning Monarch's seven treasures and then the seven "treasures" of the awakening factors, without *seyyathāpi … evameva*. The monarch's treasures are there only to illustrate, so it is modelled as a simile (D22), with a note.
+
+Also: SN 46.55's claims are "when the heart is overcome by X and the escape isn't understood, truly knowing and seeing what is good for oneself, for another and for both is absent". The reverse half (not overcome, escape understood) is left out, because the ontology has no concept for the absence of a quality, and so are its five clear-water similes (D22). SN 46.39's parasitic-tree simile is left out for the same reason: its point, a renunciate overcome by sensual pleasures, isn't modelled.
+
 ## Patterns not modelled yet
 
 These kinds of teaching have come up and been left out (each logged in `data/coverage.ttl`) until a pattern is agreed:
@@ -256,6 +268,9 @@ Judgment calls a second pass should look at first. Each was made deliberately an
 | 14 | SN 46.52's parts are aspects (internal/external etc.) or qualities (the compounds' halves), and are not classified as hindrances or factors | D18 | The text calls each part "a hindrance"; a reader may want them classified |
 | 15 | Claims resting on an expanded abbreviation are kept, marked (D19) | D14, D19 | Either too generous (drop them) or too cautious (the tradition expands them) |
 | 16 | Sujato's labels kept where the Pali is narrower (*rūparāga*, *ajjhattaṁ kāmacchando*, *amanasikārabahulīkāro*) | D9, AUDIT.md | A Pali-literal label would be more faithful, less readable |
+| 17 | *kāmarāga* (SN 46.55) is a separate concept from the hindrance *kāmacchanda*, with a literal English label | D23 | The text sets it among the other four hindrances; a reader may take it as the hindrance under another name |
+| 18 | SN 46.42's side-by-side comparison modelled as a simile | D23 | It has no 'just as … in the same way'; it may be meant as a parallel, not an illustration |
+| 19 | SN 46.55's reverse half and its five similes left out | D23 | Half the sutta, and the clearest images in it; a pattern for the absence of a quality would bring them in |
 | 11 | What each coverage record says was left out | `data/coverage.ttl` | Written by Claude after reading each text; a reader may see claims we missed |
 
 A revisit pass can work text by text: every claim cites its segments, every text has a coverage record with the date it was modelled, and the review view (`viz/review.html`) shows each text beside the claims resting on it.

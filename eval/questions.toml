@@ -845,3 +845,33 @@ must_not = ["Yes, in SN 46.13 the dawn is good friendship."]
 layer = "sutta"
 status = "draft"
 note = "One image, two points (D22)."
+
+[[q]]
+id = "Q56"
+category = "trap"
+scope = "covered"
+question = "In SN 46.55, the five qualities that make the mind like a bowl of dyed, boiling, mossy, wind-stirred or muddy water: are they exactly the five hindrances?"
+gold = [
+  "Not by name: the first is sensual lust (kāmarāga), where the hindrance list has kāmacchanda; the other four (ill will, dullness and drowsiness, restlessness and remorse, doubt) are the hindrances' names. Sujato renders both words 'sensual desire', and the sutta doesn't call its five 'hindrances'.",
+]
+segments = ["sn46.55:3.1", "sn46.55:4.3", "sn46.55:5.1"]
+also_ok = ["Noting that many teachers treat them as the five hindrances."]
+must_not = ["Yes, the text lists the five hindrances by their usual names."]
+layer = "sutta"
+status = "draft"
+note = "Pali-first catch (D23)."
+
+[[q]]
+id = "Q57"
+category = "recall"
+scope = "covered"
+question = "According to SN 46.9, can the seven awakening factors arise when no Buddha has appeared?"
+gold = [
+  "No: the seven awakening factors, unarisen, don't arise except when a Realized One, a perfected one, a fully awakened Buddha has appeared (nāññatra tathāgatassa pātubhāvā).",
+]
+segments = ["sn46.9:1.1", "sn46.9:1.4", "sn46.10:1.1"]
+also_ok = ["Adding that SN 46.10 says the same of the Holy One's training (sugatavinaya), and SN 46.42 that the factors appear when a Realized One appears."]
+must_not = ["Yes, they can arise through one's own effort anywhere."]
+layer = "sutta"
+status = "draft"
+note = "A necessary condition, not a sufficient one (D23)."

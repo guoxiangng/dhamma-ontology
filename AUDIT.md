@@ -97,6 +97,7 @@ These were flagged as minor stretches and kept deliberately. Each is on the revi
 | Batch 6, before committing (`audit/2026-11-15-batch6/`) | 6 | 21 | 20 | 1 | 0 |
 | Batch 7, SN 46.54, before committing (`audit/2026-11-16-batch7/`) | 1 | 12 | 12 | 0 | 0 |
 | Batch 8, similes, before committing (`audit/2026-11-16-batch8/`) | 9 | 72 | 71 | 1 | 0 |
+| Batch 9, SN 46.9/10/39/42/55, before committing (`audit/2026-11-16-batch9/`) | 5 | 23 | 18 | 5 | 0 |
 
 The re-check confirmed the fixes: the reversed direction, the Pali-only citations, the abbreviation marks and the corrected coverage statuses. It also found that one correction went too far. SN 46.49/50:1.4 *is* abbreviated in the Pali, so the note now says which segments are untranslated and which are abbreviated. The batch 6 audit found:
 - the per-factor statement of SN 46.14–16, given only in the Pali (now cited);
@@ -104,6 +105,11 @@ The re-check confirmed the fixes: the reversed direction, the Pali-only citation
 - the label "great ease" for *phāsuvihāra*, where "great" belongs to SN 46.57's *mahato* (now "living at ease").
 
 The remaining stretches are the accepted kinds listed above: Sujato's labels, and purpose mapped onto an effect.
+
+The batch 9 audit found:
+- SN 46.55's five claims carry a two-part condition (the heart overcome by the quality, *and* not understanding the escape from it), but the controlled relation shows only "when present". This is accepted, like the other mappings above: the wording keeps both parts, and the note now says the relation shows only the first.
+- Notes on three of those claims said "for both" was abbreviated in the Pali; only "for another" is. They are corrected, and merged with the claims' other note, which had been hidden.
+- In every text of the batch, the Pali names only the first and last awakening factor (…pe…). The list's middle five rest on the conventional expansion there. They are named in full in other texts that cite the list (for example SN 46.51).
 
 ## How it is used from now on
 

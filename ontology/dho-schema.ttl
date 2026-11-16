@@ -324,6 +324,8 @@ dho:Accompanies  a dho:ConditionRelation ; rdfs:label "accompanies the developme
     rdfs:comment "X-sahagata: the awakening factor is developed accompanied by X (SN 46.57-76). The condition is X, the conditioned is the awakening factors. Sujato's English turns the grammar round ('develops X together with the awakening factors'); the Pali is followed (D15 correction, D19)."@en .
 dho:Fulfils      a dho:ConditionRelation ; rdfs:label "fulfils"@en ;
     rdfs:comment "'developed and cultivated so as to fulfill' (bhāvitā bahulīkatā paripūrenti), SN 46.6 (D20)."@en .
+dho:RequiredFor  a dho:ConditionRelation ; rdfs:label "is required for"@en ;
+    rdfs:comment "'not apart from' (nāññatra): the conditioned don't arise apart from the condition. A necessary condition, not a sufficient one (SN 46.9, 46.10; D23)."@en .
 dho:WhenThen     a dho:ConditionRelation ; rdfs:label "when present, then"@en ;
     rdfs:comment "'when you …, X …'; the result says what happens to the conditioned."@en .
 

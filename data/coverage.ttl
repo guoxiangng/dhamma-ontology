@@ -566,3 +566,40 @@ dho:t-sn46.54
     dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
     dho:encodes "How each heart's release (by love, compassion, rejoicing, equanimity) is developed: each awakening factor developed accompanied by that quality, with the stock formula (12.1-12.3, 13.1-13.3, 14.1-14.3, 15.1-15.3; the Pali's direction, not the English's, D21). The apex of each, for a wise mendicant who has not penetrated to a higher freedom: the beautiful; the dimension of infinite space; of infinite consciousness; of nothingness (12.8-12.9, 13.6-13.7, 14.6-14.7, 15.9-15.10)." ;
     dho:leftOut "The narrative frame and the wanderers' challenge (1.1-10.2), including their restatement of the teaching: give up the five hindrances, corruptions of the heart that weaken wisdom, and spread a heart full of love, compassion, rejoicing and equanimity in every direction (3.2-3.5, 4.2-4.6, 8.2-9.5): said by the interlocutors (D17). The Buddha's counter-questions and 'they're out of their element' (11.1-11.9). The five ways of perceiving at will: the repulsive in the unrepulsive, the unrepulsive in the repulsive, and so on, and staying equanimous (12.4-12.8, 13.4-13.5, 14.4-14.5, 15.4-15.8): no pattern yet. The questions also ask each release's destination, fruit and end; only the apex is answered." .
+
+dho:t-sn46.9
+    dho:coverage dho:FullyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-16"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "The list (1.1, 1.3), and the teaching: the seven awakening factors, unarisen, don't arise apart from the appearance of a Realized One (1.1, 1.4; D23)." .
+
+dho:t-sn46.10
+    dho:coverage dho:FullyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-16"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "The list (1.1, 1.3), and the teaching: the seven awakening factors, unarisen, don't arise apart from the Holy One's training (1.1, 1.4; D23). The chapter's summary verse (2.0-2.4) lists the chapter's titles and is not teaching." .
+
+dho:t-sn46.42
+    dho:coverage dho:FullyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-16"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "The list (2.1, 2.3); when a Realized One appears, the seven treasures of the awakening factors appear (2.1, 2.4); the comparison with a Wheel-Turning Monarch's seven treasures, as a simile (1.1-1.4; D23)." .
+
+dho:t-sn46.39
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-16"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "Both lists (2.1, 2.3-2.7; 3.1, 3.3); the hindrances, parasites of the mind, weaken wisdom (2.1, 2.8; stated of each hindrance in the Pali only, 2.3-2.7); developing the awakening factors leads to the realization of the fruit of knowledge and freedom (3.1, 3.3-3.4)." ;
+    dho:leftOut "The simile of the large parasitic fig trees whose host trees collapse (1.1-1.4). Its point is a renunciate overcome by sensual pleasures like those he gave up, or worse (1.5), which is not modelled, so under D22 the simile stays out too. That the hindrances are obstacles and the awakening factors are not (2.1, 3.1): no pattern yet for what a quality is or is not (as SN 46.37)." .
+
+dho:t-sn46.55
+    dho:coverage dho:PartlyEncoded ;
+    dho:review dho:Unreviewed ;
+    dho:modelledOn "2026-11-16"^^xsd:date ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:encodes "When the heart is overcome by each of five (sensual lust, ill will, dullness and drowsiness, restlessness and remorse, doubt) and the escape from it isn't understood, one doesn't truly know or see what is good for oneself, for another or for both (3.1, 5.1, 7.1, 9.1, 11.1); the five similes of a bowl of water that is dyed, boiling, covered with moss, stirred by the wind, or muddy in the dark (4, 6, 8, 10, 12; D22); developing the awakening factors leads to the realization of the fruit of knowledge and freedom (23.1, 23.3-23.4)." ;
+    dho:leftOut "The reverse teaching, when the heart is not overcome and the escape is understood (13.1-22.4), and its five similes of clear water: the ontology has no concept for the absence of a quality, so the reverse similes stay out too (D22). The consequence the brahmin asked about, long-rehearsed hymns not springing to mind (2.1-2.2, 12.4, 22.4): kept in the claims' notes and the similes' points, not modelled as a claim. That the awakening factors are not obstacles, hindrances or corruptions of the mind (23.1): no pattern yet. The setting and Saṅgārava's going for refuge (1.1-1.3, 24.1-24.3)." .

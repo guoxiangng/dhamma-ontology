@@ -497,6 +497,26 @@ dho:c-s7 a dho:Condition ;
     dho:result dho:Arises ;
     dho:wording "They closely watch over that mind immersed in samādhi" .
 
+dho:c-u1 a dho:Condition ;
+    skos:note "Pali: 'these seven awakening factors, developed and cultivated, arise unarisen, not apart from (nāññatra) the appearance of a Realized One'. 'To be developed and cultivated' is Sujato's reading of bhāvitā bahulīkatā. A necessary condition, not a sufficient one (D23)."@en ;
+    dho:citedBy dho:p-sn46.9-1.1,
+        dho:p-sn46.9-1.4 ;
+    dho:condition dho:AppearanceOfRealizedOne ;
+    dho:conditioned dho:SevenAwakeningFactors ;
+    dho:relation dho:RequiredFor ;
+    dho:result dho:Arises ;
+    dho:wording "don’t arise to be developed and cultivated except when a Realized One, a perfected one, a fully awakened Buddha has appeared" .
+
+dho:c-u2 a dho:Condition ;
+    skos:note "Same form as SN 46.9 (c-u1), with the Holy One's training (sugatavinaya) in place of the appearance of a Realized One."@en ;
+    dho:citedBy dho:p-sn46.10-1.1,
+        dho:p-sn46.10-1.4 ;
+    dho:condition dho:SugataVinaya ;
+    dho:conditioned dho:SevenAwakeningFactors ;
+    dho:relation dho:RequiredFor ;
+    dho:result dho:Arises ;
+    dho:wording "don’t arise to be developed and cultivated apart from the Holy One’s training" .
+
 dho:citationNote a owl:DatatypeProperty ;
     rdfs:label "citation note"@en ;
     rdfs:comment "Free-text reference for sources we do not hold verbatim (e.g. Visuddhimagga). Claims that only have this are flagged as unverified."@en .
@@ -951,7 +971,13 @@ dho:o-12 a dho:Outcome ;
     dho:citedBy dho:p-sn46.34-1.1,
         dho:p-sn46.34-1.4,
         dho:p-sn46.37-2.1,
-        dho:p-sn46.37-2.4 ;
+        dho:p-sn46.37-2.4,
+        dho:p-sn46.39-3.1,
+        dho:p-sn46.39-3.3,
+        dho:p-sn46.39-3.4,
+        dho:p-sn46.55-23.1,
+        dho:p-sn46.55-23.3,
+        dho:p-sn46.55-23.4 ;
     dho:effect dho:LeadsTo ;
     dho:of dho:SevenAwakeningFactors ;
     dho:to dho:FruitOfKnowledgeAndFreedom ;
@@ -967,7 +993,14 @@ dho:o-13 a dho:Outcome ;
 
 dho:o-14 a dho:Outcome ;
     dho:citedBy dho:p-sn46.37-1.1,
-        dho:p-sn46.37-1.8 ;
+        dho:p-sn46.37-1.8,
+        dho:p-sn46.39-2.1,
+        dho:p-sn46.39-2.3,
+        dho:p-sn46.39-2.4,
+        dho:p-sn46.39-2.5,
+        dho:p-sn46.39-2.6,
+        dho:p-sn46.39-2.7,
+        dho:p-sn46.39-2.8 ;
     dho:effect dho:Weakens ;
     dho:of dho:FiveHindrances ;
     dho:to dho:Wisdom ;
@@ -1653,6 +1686,51 @@ dho:sim-body-food-hindrances a dho:Simile ;
     dho:image "Mendicants, this body is sustained by food. It depends on food to continue, and without food it doesn’t continue." ;
     dho:wording "In the same way, the five hindrances are sustained by fuel. They depend on fuel to continue, and without fuel they don’t continue." .
 
+dho:sim-bowl-boiling a dho:Simile ;
+    skos:prefLabel "a bowl of water heated and boiling"@en ;
+    dho:citedBy dho:p-sn46.55-6.1,
+        dho:p-sn46.55-6.2,
+        dho:p-sn46.55-6.3 ;
+    dho:illustrates dho:c-g2 ;
+    dho:image "Suppose there was a bowl of water that was heated by fire, boiling and bubbling." ;
+    dho:wording "In the same way, when your heart is overcome and mired in ill will … Even hymns that are long-rehearsed don’t spring to mind, let alone those that are not rehearsed." .
+
+dho:sim-bowl-dyed a dho:Simile ;
+    skos:prefLabel "a bowl of water mixed with dye"@en ;
+    dho:citedBy dho:p-sn46.55-4.1,
+        dho:p-sn46.55-4.2,
+        dho:p-sn46.55-4.3 ;
+    dho:illustrates dho:c-g1 ;
+    dho:image "Suppose there was a bowl of water that was mixed with dye such as red lac, turmeric, indigo, or rose madder." ;
+    dho:wording "In the same way, when your heart is overcome and mired in sensual desire … Even hymns that are long-rehearsed don’t spring to mind, let alone those that are not rehearsed." .
+
+dho:sim-bowl-moss a dho:Simile ;
+    skos:prefLabel "a bowl of water covered with moss"@en ;
+    dho:citedBy dho:p-sn46.55-8.1,
+        dho:p-sn46.55-8.2,
+        dho:p-sn46.55-8.3 ;
+    dho:illustrates dho:c-g3 ;
+    dho:image "Suppose there was a bowl of water enveloped with moss and aquatic plants." ;
+    dho:wording "In the same way, when your heart is overcome and mired in dullness and drowsiness … Even hymns that are long-rehearsed don’t spring to mind, let alone those that are not rehearsed." .
+
+dho:sim-bowl-muddy a dho:Simile ;
+    skos:prefLabel "a bowl of muddy water in the dark"@en ;
+    dho:citedBy dho:p-sn46.55-12.1,
+        dho:p-sn46.55-12.2,
+        dho:p-sn46.55-12.3 ;
+    dho:illustrates dho:c-g5 ;
+    dho:image "Suppose there was a bowl of water that was cloudy, murky, and muddy, hidden in the darkness." ;
+    dho:wording "In the same way, there’s a time when your heart is overcome and mired in doubt and you don’t truly understand the escape from doubt that has arisen. At that time you don’t truly know or see what is good for yourself, good for another, or good for both. Even hymns that are long-rehearsed don’t spring to mind, let alone those that are not rehearsed." .
+
+dho:sim-bowl-wind a dho:Simile ;
+    skos:prefLabel "a bowl of water stirred by the wind"@en ;
+    dho:citedBy dho:p-sn46.55-10.1,
+        dho:p-sn46.55-10.2,
+        dho:p-sn46.55-10.3 ;
+    dho:illustrates dho:c-g4 ;
+    dho:image "Suppose there was a bowl of water stirred by the wind, quivering, swirling, and rippling." ;
+    dho:wording "In the same way, when your heart is overcome and mired in restlessness and remorse … Even hymns that are long-rehearsed don’t spring to mind, let alone those that are not rehearsed." .
+
 dho:sim-dawn-attention a dho:Simile ;
     skos:note "The same image as for good friendship (SN 46.12), with a different point, so a separate simile."@en ;
     skos:prefLabel "the dawn before the sunrise (rational application of mind)"@en ;
@@ -1758,6 +1836,17 @@ dho:sim-gold a dho:Simile ;
     dho:illustrates dho:FiveCorruptionsOfMind ;
     dho:image "Mendicants, there are these five corruptions of native gold. When native gold is corrupted by these it’s not pliable, workable, or radiant, but is brittle and not completely ready for working." ;
     dho:wording "In the same way, there are these five corruptions of the mind. When the mind is corrupted by these it’s not pliable, workable, or radiant. It’s brittle, and not rightly immersed in samādhi for the ending of defilements." .
+
+dho:sim-monarch a dho:Simile ;
+    skos:note "The text sets the two side by side without 'just as … in the same way' (seyyathāpi … evameva); treated as a simile because the monarch's treasures are there only to illustrate (D23). The seven treasures are named in 1.3."@en ;
+    skos:prefLabel "the seven treasures of a Wheel-Turning Monarch"@en ;
+    dho:citedBy dho:p-sn46.42-1.1,
+        dho:p-sn46.42-1.3,
+        dho:p-sn46.42-1.4,
+        dho:p-sn46.42-2.1 ;
+    dho:illustrates dho:c-u3 ;
+    dho:image "Mendicants, when a Wheel-Turning Monarch appears seven treasures appear." ;
+    dho:wording "When a Realized One, a perfected one, a fully awakened Buddha appears the seven treasures of the awakening factors appear." .
 
 dho:sim-rafters a dho:Simile ;
     skos:prefLabel "the rafters of a bungalow"@en ;
@@ -2099,9 +2188,6 @@ dho:InvestigationInternal a dho:Aspect ;
     skos:prefLabel "investigating, exploring, and inquiring into internal things with wisdom"@en,
         "ajjhattaṁ dhammesu paññāya pavicinati"@pi .
 
-dho:IsAbsent a dho:Result ;
-    rdfs:label "are absent"@en .
-
 dho:IsFullyDeveloped a dho:Result ;
     rdfs:label "are fully developed"@en .
 
@@ -2230,6 +2316,12 @@ dho:SensualDesireInternal a dho:Aspect ;
     skos:prefLabel "sensual desire for what is internal"@en,
         "ajjhattaṁ kāmacchanda"@pi .
 
+dho:SensualLust a dho:Concept ;
+    skos:note "SN 46.55 opens its five with kāmarāga, not the hindrance's usual name kāmacchanda; the other four are the hindrances' names. Sujato renders both words 'sensual desire'. Kept as its own concept, editor-linked to sensual desire, because the text uses a different word (D23, as for the fetter uddhacca, D13)."@en ;
+    skos:prefLabel "sensual lust"@en,
+        "kāmarāga"@pi ;
+    dho:editorialRelated dho:SensualDesire .
+
 dho:SevenFruits a dho:NumberedList ;
     skos:note "The text's order (9.3-9.9): enlightenment early in this very life; at the time of death; extinguished between one life and the next; upon landing; without extra effort; with extra effort; heading upstream to the Akaniṭṭha realm. The members are a set here; the order is in this note only."@en ;
     skos:prefLabel "the seven fruits and benefits of the awakening factors"@en,
@@ -2256,6 +2348,11 @@ dho:Strengthens a dho:Effect ;
 dho:SufferingInImpermanencePerception a dho:Practice ;
     skos:prefLabel "the perception of suffering in impermanence"@en,
         "anicce dukkhasaññā"@pi .
+
+dho:SugataVinaya a dho:Concept ;
+    skos:prefLabel "the Holy One's training"@en,
+        "sugatavinaya"@pi,
+        "善逝律"@zh .
 
 dho:TheBeautiful a dho:Concept ;
     skos:note "As an attainment: 'the liberation of the beautiful' (subha vimokkha). Not SN 46.51's 'feature of beauty' (subhanimitta), which fuels sensual desire."@en ;
@@ -2309,6 +2406,69 @@ dho:c-04 a dho:Condition ;
     dho:conditioned dho:SevenAwakeningFactors ;
     dho:relation dho:ForerunnerOf ;
     dho:wording "rational application of mind is the forerunner and harbinger of the arising of the seven awakening factors" .
+
+dho:c-g1 a dho:Condition ;
+    skos:note "The condition has two parts, and the controlled relation shows only the first: the heart overcome and mired in kāmarāga, and not truly understanding the escape from it once it has arisen (the wording keeps both). The text adds the answer to the brahmin's question: even long-rehearsed hymns don't spring to mind."@en ;
+    dho:citedBy dho:p-sn46.55-3.1,
+        dho:p-sn46.55-4.3 ;
+    dho:condition dho:SensualLust ;
+    dho:conditioned dho:SeeingWhatIsGood ;
+    dho:relation dho:WhenThen ;
+    dho:result dho:IsAbsent ;
+    dho:wording "your heart is overcome and mired in sensual desire and you don’t truly understand the escape from sensual desire that has arisen. At that time you don’t truly know or see what is good for yourself, good for another, or good for both." .
+
+dho:c-g2 a dho:Condition ;
+    skos:note "The condition has two parts, and the controlled relation shows only the first: the heart overcome and mired in byāpāda, and not truly understanding the escape from it once it has arisen (the wording keeps both). The text adds the answer to the brahmin's question: even long-rehearsed hymns don't spring to mind. In both cited segments the Pali gives 'for oneself' and 'for both' in full and abbreviates 'for another' (paratthampi …pe…), which rests on the conventional expansion (D19)."@en ;
+    dho:citedBy dho:p-sn46.55-5.1,
+        dho:p-sn46.55-6.3 ;
+    dho:condition dho:IllWill ;
+    dho:conditioned dho:SeeingWhatIsGood ;
+    dho:relation dho:WhenThen ;
+    dho:result dho:IsAbsent ;
+    dho:support dho:ExpandedAbbreviation ;
+    dho:wording "yasmiṁ samaye byāpādapariyuṭṭhitena cetasā viharati byāpādaparetena, uppannassa ca byāpādassa nissaraṇaṁ yathābhūtaṁ nappajānāti, attatthampi tasmiṁ samaye yathābhūtaṁ na jānāti na passati" .
+
+dho:c-g3 a dho:Condition ;
+    skos:note "The condition has two parts, and the controlled relation shows only the first: the heart overcome and mired in thinamiddha, and not truly understanding the escape from it once it has arisen (the wording keeps both). The text adds the answer to the brahmin's question: even long-rehearsed hymns don't spring to mind. In both cited segments the Pali gives 'for oneself' and 'for both' in full and abbreviates 'for another' (paratthampi …pe…), which rests on the conventional expansion (D19)."@en ;
+    dho:citedBy dho:p-sn46.55-7.1,
+        dho:p-sn46.55-8.3 ;
+    dho:condition dho:DullnessDrowsiness ;
+    dho:conditioned dho:SeeingWhatIsGood ;
+    dho:relation dho:WhenThen ;
+    dho:result dho:IsAbsent ;
+    dho:support dho:ExpandedAbbreviation ;
+    dho:wording "yasmiṁ samaye thinamiddhapariyuṭṭhitena cetasā viharati thinamiddhaparetena, uppannassa ca thinamiddhassa nissaraṇaṁ yathābhūtaṁ nappajānāti, attatthampi tasmiṁ samaye yathābhūtaṁ na jānāti na passati" .
+
+dho:c-g4 a dho:Condition ;
+    skos:note "The condition has two parts, and the controlled relation shows only the first: the heart overcome and mired in uddhaccakukkucca, and not truly understanding the escape from it once it has arisen (the wording keeps both). The text adds the answer to the brahmin's question: even long-rehearsed hymns don't spring to mind. In both cited segments the Pali gives 'for oneself' and 'for both' in full and abbreviates 'for another' (paratthampi …pe…), which rests on the conventional expansion (D19)."@en ;
+    dho:citedBy dho:p-sn46.55-10.3,
+        dho:p-sn46.55-9.1 ;
+    dho:condition dho:RestlessnessRemorse ;
+    dho:conditioned dho:SeeingWhatIsGood ;
+    dho:relation dho:WhenThen ;
+    dho:result dho:IsAbsent ;
+    dho:support dho:ExpandedAbbreviation ;
+    dho:wording "yasmiṁ samaye uddhaccakukkuccapariyuṭṭhitena cetasā viharati uddhaccakukkuccaparetena, uppannassa ca uddhaccakukkuccassa nissaraṇaṁ yathābhūtaṁ nappajānāti, attatthampi tasmiṁ samaye yathābhūtaṁ na jānāti na passati" .
+
+dho:c-g5 a dho:Condition ;
+    skos:note "The condition has two parts, and the controlled relation shows only the first: the heart overcome and mired in vicikicchā, and not truly understanding the escape from it once it has arisen (the wording keeps both). The text adds the answer to the brahmin's question: even long-rehearsed hymns don't spring to mind."@en ;
+    dho:citedBy dho:p-sn46.55-11.1,
+        dho:p-sn46.55-12.3 ;
+    dho:condition dho:Doubt ;
+    dho:conditioned dho:SeeingWhatIsGood ;
+    dho:relation dho:WhenThen ;
+    dho:result dho:IsAbsent ;
+    dho:wording "yasmiṁ samaye vicikicchāpariyuṭṭhitena cetasā viharati vicikicchāparetena, uppannāya ca vicikicchāya nissaraṇaṁ yathābhūtaṁ nappajānāti, attatthampi tasmiṁ samaye yathābhūtaṁ na jānāti na passati" .
+
+dho:c-u3 a dho:Condition ;
+    skos:note "SN 46.42 calls the factors 'treasures' (bojjhaṅgaratana) and says they appear with (pātubhāvā) a Realized One's appearance; SN 46.9 (c-u1) says they don't arise apart from it. Two claims, kept apart."@en ;
+    dho:citedBy dho:p-sn46.42-2.1,
+        dho:p-sn46.42-2.4 ;
+    dho:condition dho:AppearanceOfRealizedOne ;
+    dho:conditioned dho:SevenAwakeningFactors ;
+    dho:relation dho:WhenThen ;
+    dho:result dho:Arises ;
+    dho:wording "When a Realized One, a perfected one, a fully awakened Buddha appears the seven treasures of the awakening factors appear" .
 
 dho:hasMember a owl:ObjectProperty ;
     rdfs:label "has member"@en ;
@@ -2557,6 +2717,20 @@ dho:p-sn46.1-1.3 a dho:Passage ;
     dho:textEn "When they’re strong they dive into the pools. Then they dive into the lakes, the streams, the rivers, and finally the ocean. There they acquire a great and abundant body."@en ;
     dho:textPi "te tattha kāyaṁ vaḍḍhetvā balaṁ gāhetvā kusobbhe otaranti, kusobbhe otaritvā mahāsobbhe otaranti, mahāsobbhe otaritvā kunnadiyo otaranti, kunnadiyo otaritvā mahānadiyo otaranti, mahānadiyo otaritvā mahāsamuddasāgaraṁ otaranti; te tattha mahantattaṁ vepullattaṁ āpajjanti kāyena;"@pi ;
     dho:url "https://suttacentral.net/sn46.1/en/sujato#sn46.1:1.3"^^xsd:anyURI .
+
+dho:p-sn46.10-1.3 a dho:Passage ;
+    dho:inText dho:t-sn46.10 ;
+    dho:segment "sn46.10:1.3" ;
+    dho:textEn "The awakening factors of mindfulness, investigation of principles, energy, rapture, tranquility, immersion, and equanimity."@en ;
+    dho:textPi "Satisambojjhaṅgo …pe… upekkhāsambojjhaṅgo—"@pi ;
+    dho:url "https://suttacentral.net/sn46.10/en/sujato#sn46.10:1.3"^^xsd:anyURI .
+
+dho:p-sn46.10-1.4 a dho:Passage ;
+    dho:inText dho:t-sn46.10 ;
+    dho:segment "sn46.10:1.4" ;
+    dho:textEn "These seven awakening factors don’t arise to be developed and cultivated apart from the Holy One’s training.”"@en ;
+    dho:textPi "ime kho, bhikkhave, satta bojjhaṅgā bhāvitā bahulīkatā anuppannā uppajjanti, nāññatra sugatavinayā”ti."@pi ;
+    dho:url "https://suttacentral.net/sn46.10/en/sujato#sn46.10:1.4"^^xsd:anyURI .
 
 dho:p-sn46.11-1.1 a dho:Passage ;
     dho:inText dho:t-sn46.11 ;
@@ -3573,6 +3747,20 @@ dho:p-sn46.38-3.2 a dho:Passage ;
     dho:textPi "Satisambojjhaṅgo tasmiṁ samaye bhāvanāpāripūriṁ gacchati …pe… upekkhāsambojjhaṅgo tasmiṁ samaye bhāvanāpāripūriṁ gacchati."@pi ;
     dho:url "https://suttacentral.net/sn46.38/en/sujato#sn46.38:3.2"^^xsd:anyURI .
 
+dho:p-sn46.39-2.8 a dho:Passage ;
+    dho:inText dho:t-sn46.39 ;
+    dho:segment "sn46.39:2.8" ;
+    dho:textEn "These are the five obstacles and hindrances, parasites of the mind that weaken wisdom."@en ;
+    dho:textPi "Ime kho, bhikkhave, pañca āvaraṇā nīvaraṇā cetaso ajjhāruhā paññāya dubbalīkaraṇā."@pi ;
+    dho:url "https://suttacentral.net/sn46.39/en/sujato#sn46.39:2.8"^^xsd:anyURI .
+
+dho:p-sn46.39-3.4 a dho:Passage ;
+    dho:inText dho:t-sn46.39 ;
+    dho:segment "sn46.39:3.4" ;
+    dho:textEn "These seven awakening factors are not obstacles, hindrances, or parasites of the mind. When developed and cultivated they lead to the realization of the fruit of knowledge and freedom.”"@en ;
+    dho:textPi "Ime kho, bhikkhave, satta bojjhaṅgā anāvaraṇā anīvaraṇā cetaso anajjhāruhā bhāvitā bahulīkatā vijjāvimuttiphalasacchikiriyāya saṁvattantī”ti."@pi ;
+    dho:url "https://suttacentral.net/sn46.39/en/sujato#sn46.39:3.4"^^xsd:anyURI .
+
 dho:p-sn46.4-2.1 a dho:Passage ;
     dho:inText dho:t-sn46.4 ;
     dho:segment "sn46.4:2.1" ;
@@ -3666,6 +3854,41 @@ dho:p-sn46.41-1.9 a dho:Passage ;
     dho:textEn "and present who give up the three discriminations do so by developing and cultivating the seven awakening factors.”"@en ;
     dho:textPi "pajahanti, sabbe te imesaṁyeva sattannaṁ bojjhaṅgānaṁ bhāvitattā bahulīkatattā”ti."@pi ;
     dho:url "https://suttacentral.net/sn46.41/en/sujato#sn46.41:1.9"^^xsd:anyURI .
+
+dho:p-sn46.42-1.1 a dho:Passage ;
+    dho:inText dho:t-sn46.42 ;
+    dho:segment "sn46.42:1.1" ;
+    dho:textEn "“Mendicants, when a Wheel-Turning Monarch appears seven treasures appear."@en ;
+    dho:textPi "“Rañño, bhikkhave, cakkavattissa pātubhāvā sattannaṁ ratanānaṁ pātubhāvo hoti."@pi ;
+    dho:url "https://suttacentral.net/sn46.42/en/sujato#sn46.42:1.1"^^xsd:anyURI .
+
+dho:p-sn46.42-1.3 a dho:Passage ;
+    dho:inText dho:t-sn46.42 ;
+    dho:segment "sn46.42:1.3" ;
+    dho:textEn "The wheel, the elephant, the horse, the jewel, the woman, the householder, and the commander."@en ;
+    dho:textPi "Cakkaratanassa pātubhāvo hoti, hatthiratanassa pātubhāvo hoti, assaratanassa pātubhāvo hoti, maṇiratanassa pātubhāvo hoti, itthiratanassa pātubhāvo hoti, gahapatiratanassa pātubhāvo hoti, pariṇāyakaratanassa pātubhāvo hoti."@pi ;
+    dho:url "https://suttacentral.net/sn46.42/en/sujato#sn46.42:1.3"^^xsd:anyURI .
+
+dho:p-sn46.42-1.4 a dho:Passage ;
+    dho:inText dho:t-sn46.42 ;
+    dho:segment "sn46.42:1.4" ;
+    dho:textEn "When a Wheel-Turning Monarch appears these seven treasures appear."@en ;
+    dho:textPi "Rañño, bhikkhave, cakkavattissa pātubhāvā imesaṁ sattannaṁ ratanānaṁ pātubhāvo hoti."@pi ;
+    dho:url "https://suttacentral.net/sn46.42/en/sujato#sn46.42:1.4"^^xsd:anyURI .
+
+dho:p-sn46.42-2.3 a dho:Passage ;
+    dho:inText dho:t-sn46.42 ;
+    dho:segment "sn46.42:2.3" ;
+    dho:textEn "The treasures of the awakening factors of mindfulness, investigation of principles, energy, rapture, tranquility, immersion, and equanimity."@en ;
+    dho:textPi "Satisambojjhaṅgassa ratanassa pātubhāvo hoti …pe… upekkhāsambojjhaṅgassa ratanassa pātubhāvo hoti."@pi ;
+    dho:url "https://suttacentral.net/sn46.42/en/sujato#sn46.42:2.3"^^xsd:anyURI .
+
+dho:p-sn46.42-2.4 a dho:Passage ;
+    dho:inText dho:t-sn46.42 ;
+    dho:segment "sn46.42:2.4" ;
+    dho:textEn "When a Realized One, a perfected one, a fully awakened Buddha appears these seven treasures of the awakening factors appear.”"@en ;
+    dho:textPi "Tathāgatassa, bhikkhave, pātubhāvā arahato sammāsambuddhassa imesaṁ sattannaṁ bojjhaṅgaratanānaṁ pātubhāvo hotī”ti."@pi ;
+    dho:url "https://suttacentral.net/sn46.42/en/sujato#sn46.42:2.4"^^xsd:anyURI .
 
 dho:p-sn46.43-1.1 a dho:Passage ;
     dho:inText dho:t-sn46.43 ;
@@ -4713,6 +4936,118 @@ dho:p-sn46.54-15.9 a dho:Passage ;
     dho:textPi "Sabbaso vā pana viññāṇañcāyatanaṁ samatikkamma ‘natthi kiñcī’ti ākiñcaññāyatanaṁ upasampajja viharati."@pi ;
     dho:url "https://suttacentral.net/sn46.54/en/sujato#sn46.54:15.9"^^xsd:anyURI .
 
+dho:p-sn46.55-10.1 a dho:Passage ;
+    dho:inText dho:t-sn46.55 ;
+    dho:segment "sn46.55:10.1" ;
+    dho:textEn "Suppose there was a bowl of water stirred by the wind, quivering, swirling, and rippling."@en ;
+    dho:textPi "Seyyathāpi, brāhmaṇa, udapatto vāterito calito bhanto ūmijāto."@pi ;
+    dho:url "https://suttacentral.net/sn46.55/en/sujato#sn46.55:10.1"^^xsd:anyURI .
+
+dho:p-sn46.55-10.2 a dho:Passage ;
+    dho:inText dho:t-sn46.55 ;
+    dho:segment "sn46.55:10.2" ;
+    dho:textEn "Even a person with clear eyes checking their own reflection wouldn’t truly know it or see it."@en ;
+    dho:textPi "Tattha cakkhumā puriso sakaṁ mukhanimittaṁ paccavekkhamāno yathābhūtaṁ na jāneyya na passeyya."@pi ;
+    dho:url "https://suttacentral.net/sn46.55/en/sujato#sn46.55:10.2"^^xsd:anyURI .
+
+dho:p-sn46.55-11.1 a dho:Passage ;
+    dho:inText dho:t-sn46.55 ;
+    dho:segment "sn46.55:11.1" ;
+    dho:textEn "Furthermore, when your heart is overcome and mired in doubt … Even hymns that are long-rehearsed don’t spring to mind, let alone those that are not rehearsed."@en ;
+    dho:textPi "Puna caparaṁ, brāhmaṇa, yasmiṁ samaye vicikicchāpariyuṭṭhitena cetasā viharati vicikicchāparetena, uppannāya ca vicikicchāya nissaraṇaṁ yathābhūtaṁ nappajānāti, attatthampi tasmiṁ samaye yathābhūtaṁ na jānāti na passati, paratthampi …pe… ubhayatthampi … dīgharattaṁ sajjhāyakatāpi mantā nappaṭibhanti, pageva asajjhāyakatā."@pi ;
+    dho:url "https://suttacentral.net/sn46.55/en/sujato#sn46.55:11.1"^^xsd:anyURI .
+
+dho:p-sn46.55-12.1 a dho:Passage ;
+    dho:inText dho:t-sn46.55 ;
+    dho:segment "sn46.55:12.1" ;
+    dho:textEn "Suppose there was a bowl of water that was cloudy, murky, and muddy, hidden in the darkness."@en ;
+    dho:textPi "Seyyathāpi, brāhmaṇa, udapatto āvilo luḷito kalalībhūto andhakāre nikkhitto."@pi ;
+    dho:url "https://suttacentral.net/sn46.55/en/sujato#sn46.55:12.1"^^xsd:anyURI .
+
+dho:p-sn46.55-12.2 a dho:Passage ;
+    dho:inText dho:t-sn46.55 ;
+    dho:segment "sn46.55:12.2" ;
+    dho:textEn "Even a person with clear eyes checking their own reflection wouldn’t truly know it or see it."@en ;
+    dho:textPi "Tattha cakkhumā puriso sakaṁ mukhanimittaṁ paccavekkhamāno yathābhūtaṁ na jāneyya na passeyya."@pi ;
+    dho:url "https://suttacentral.net/sn46.55/en/sujato#sn46.55:12.2"^^xsd:anyURI .
+
+dho:p-sn46.55-23.4 a dho:Passage ;
+    dho:inText dho:t-sn46.55 ;
+    dho:segment "sn46.55:23.4" ;
+    dho:textEn "These seven awakening factors are not obstacles, hindrances, or corruptions of the mind. When developed and cultivated they lead to the realization of the fruit of knowledge and freedom.”"@en ;
+    dho:textPi "Ime kho, brāhmaṇa, satta bojjhaṅgā anāvaraṇā anīvaraṇā cetaso anupakkilesā bhāvitā bahulīkatā vijjāvimuttiphalasacchikiriyāya saṁvattantī”ti."@pi ;
+    dho:url "https://suttacentral.net/sn46.55/en/sujato#sn46.55:23.4"^^xsd:anyURI .
+
+dho:p-sn46.55-3.1 a dho:Passage ;
+    dho:inText dho:t-sn46.55 ;
+    dho:segment "sn46.55:3.1" ;
+    dho:textEn "“Brahmin, there’s a time when your heart is overcome and mired in sensual desire and you don’t truly understand the escape from sensual desire that has arisen. At that time you don’t truly know or see what is good for yourself, good for another, or good for both. Even hymns that are long-rehearsed don’t spring to mind, let alone those that are not rehearsed."@en ;
+    dho:textPi "“Yasmiṁ kho, brāhmaṇa, samaye kāmarāgapariyuṭṭhitena cetasā viharati kāmarāgaparetena, uppannassa ca kāmarāgassa nissaraṇaṁ yathābhūtaṁ nappajānāti, attatthampi tasmiṁ samaye yathābhūtaṁ na jānāti na passati, paratthampi tasmiṁ samaye yathābhūtaṁ na jānāti na passati, ubhayatthampi tasmiṁ samaye yathābhūtaṁ na jānāti na passati; dīgharattaṁ sajjhāyakatāpi mantā nappaṭibhanti, pageva asajjhāyakatā."@pi ;
+    dho:url "https://suttacentral.net/sn46.55/en/sujato#sn46.55:3.1"^^xsd:anyURI .
+
+dho:p-sn46.55-4.1 a dho:Passage ;
+    dho:inText dho:t-sn46.55 ;
+    dho:segment "sn46.55:4.1" ;
+    dho:textEn "Suppose there was a bowl of water that was mixed with dye such as red lac, turmeric, indigo, or rose madder."@en ;
+    dho:textPi "Seyyathāpi, brāhmaṇa, udapatto saṁsaṭṭho lākhāya vā haliddiyā vā nīliyā vā mañjiṭṭhāya vā."@pi ;
+    dho:url "https://suttacentral.net/sn46.55/en/sujato#sn46.55:4.1"^^xsd:anyURI .
+
+dho:p-sn46.55-4.2 a dho:Passage ;
+    dho:inText dho:t-sn46.55 ;
+    dho:segment "sn46.55:4.2" ;
+    dho:textEn "Even a person with clear eyes checking their own reflection wouldn’t truly know it or see it."@en ;
+    dho:textPi "Tattha cakkhumā puriso sakaṁ mukhanimittaṁ paccavekkhamāno yathābhūtaṁ na jāneyya na passeyya."@pi ;
+    dho:url "https://suttacentral.net/sn46.55/en/sujato#sn46.55:4.2"^^xsd:anyURI .
+
+dho:p-sn46.55-5.1 a dho:Passage ;
+    dho:inText dho:t-sn46.55 ;
+    dho:segment "sn46.55:5.1" ;
+    dho:textEn "Furthermore, when your heart is overcome and mired in ill will … Even hymns that are long-rehearsed don’t spring to mind, let alone those that are not rehearsed."@en ;
+    dho:textPi "Puna caparaṁ, brāhmaṇa, yasmiṁ samaye byāpādapariyuṭṭhitena cetasā viharati byāpādaparetena, uppannassa ca byāpādassa nissaraṇaṁ yathābhūtaṁ nappajānāti, attatthampi tasmiṁ samaye yathābhūtaṁ na jānāti na passati, paratthampi …pe… ubhayatthampi tasmiṁ samaye yathābhūtaṁ na jānāti na passati; dīgharattaṁ sajjhāyakatāpi mantā nappaṭibhanti, pageva asajjhāyakatā."@pi ;
+    dho:url "https://suttacentral.net/sn46.55/en/sujato#sn46.55:5.1"^^xsd:anyURI .
+
+dho:p-sn46.55-6.1 a dho:Passage ;
+    dho:inText dho:t-sn46.55 ;
+    dho:segment "sn46.55:6.1" ;
+    dho:textEn "Suppose there was a bowl of water that was heated by fire, boiling and bubbling."@en ;
+    dho:textPi "Seyyathāpi, brāhmaṇa, udapatto agginā santatto pakkuthito usmudakajāto."@pi ;
+    dho:url "https://suttacentral.net/sn46.55/en/sujato#sn46.55:6.1"^^xsd:anyURI .
+
+dho:p-sn46.55-6.2 a dho:Passage ;
+    dho:inText dho:t-sn46.55 ;
+    dho:segment "sn46.55:6.2" ;
+    dho:textEn "Even a person with clear eyes checking their own reflection wouldn’t truly know it or see it."@en ;
+    dho:textPi "Tattha cakkhumā puriso sakaṁ mukhanimittaṁ paccavekkhamāno yathābhūtaṁ na jāneyya na passeyya."@pi ;
+    dho:url "https://suttacentral.net/sn46.55/en/sujato#sn46.55:6.2"^^xsd:anyURI .
+
+dho:p-sn46.55-7.1 a dho:Passage ;
+    dho:inText dho:t-sn46.55 ;
+    dho:segment "sn46.55:7.1" ;
+    dho:textEn "Furthermore, when your heart is overcome and mired in dullness and drowsiness … Even hymns that are long-rehearsed don’t spring to mind, let alone those that are not rehearsed."@en ;
+    dho:textPi "Puna caparaṁ, brāhmaṇa, yasmiṁ samaye thinamiddhapariyuṭṭhitena cetasā viharati thinamiddhaparetena, uppannassa ca thinamiddhassa nissaraṇaṁ yathābhūtaṁ nappajānāti, attatthampi tasmiṁ samaye yathābhūtaṁ na jānāti na passati, paratthampi …pe… ubhayatthampi tasmiṁ samaye yathābhūtaṁ na jānāti na passati; dīgharattaṁ sajjhāyakatāpi mantā nappaṭibhanti, pageva asajjhāyakatā."@pi ;
+    dho:url "https://suttacentral.net/sn46.55/en/sujato#sn46.55:7.1"^^xsd:anyURI .
+
+dho:p-sn46.55-8.1 a dho:Passage ;
+    dho:inText dho:t-sn46.55 ;
+    dho:segment "sn46.55:8.1" ;
+    dho:textEn "Suppose there was a bowl of water enveloped with moss and aquatic plants."@en ;
+    dho:textPi "Seyyathāpi, brāhmaṇa, udapatto sevālapaṇakapariyonaddho."@pi ;
+    dho:url "https://suttacentral.net/sn46.55/en/sujato#sn46.55:8.1"^^xsd:anyURI .
+
+dho:p-sn46.55-8.2 a dho:Passage ;
+    dho:inText dho:t-sn46.55 ;
+    dho:segment "sn46.55:8.2" ;
+    dho:textEn "Even a person with clear eyes checking their own reflection wouldn’t truly know it or see it."@en ;
+    dho:textPi "Tattha cakkhumā puriso sakaṁ mukhanimittaṁ paccavekkhamāno yathābhūtaṁ na jāneyya na passeyya."@pi ;
+    dho:url "https://suttacentral.net/sn46.55/en/sujato#sn46.55:8.2"^^xsd:anyURI .
+
+dho:p-sn46.55-9.1 a dho:Passage ;
+    dho:inText dho:t-sn46.55 ;
+    dho:segment "sn46.55:9.1" ;
+    dho:textEn "Furthermore, when your heart is overcome and mired in restlessness and remorse … Even hymns that are long-rehearsed don’t spring to mind, let alone those that are not rehearsed."@en ;
+    dho:textPi "Puna caparaṁ, brāhmaṇa, yasmiṁ samaye uddhaccakukkuccapariyuṭṭhitena cetasā viharati uddhaccakukkuccaparetena, uppannassa ca uddhaccakukkuccassa nissaraṇaṁ yathābhūtaṁ nappajānāti, attatthampi tasmiṁ samaye yathābhūtaṁ na jānāti na passati, paratthampi …pe… ubhayatthampi tasmiṁ samaye yathābhūtaṁ na jānāti na passati; dīgharattaṁ sajjhāyakatāpi mantā nappaṭibhanti, pageva asajjhāyakatā."@pi ;
+    dho:url "https://suttacentral.net/sn46.55/en/sujato#sn46.55:9.1"^^xsd:anyURI .
+
 dho:p-sn46.56-1.10 a dho:Passage ;
     dho:inText dho:t-sn46.56 ;
     dho:segment "sn46.56:1.10" ;
@@ -5215,6 +5550,20 @@ dho:p-sn46.8-3.3 a dho:Passage ;
     dho:textPi "“Evaṁ kho, āvuso sāriputta, bhikkhu jāneyya ‘paccattaṁ yonisomanasikārā evaṁ susamāraddhā me satta bojjhaṅgā phāsuvihārāya saṁvattantī’”ti."@pi ;
     dho:url "https://suttacentral.net/sn46.8/en/sujato#sn46.8:3.3"^^xsd:anyURI .
 
+dho:p-sn46.9-1.3 a dho:Passage ;
+    dho:inText dho:t-sn46.9 ;
+    dho:segment "sn46.9:1.3" ;
+    dho:textEn "The awakening factors of mindfulness, investigation of principles, energy, rapture, tranquility, immersion, and equanimity."@en ;
+    dho:textPi "Satisambojjhaṅgo …pe… upekkhāsambojjhaṅgo—"@pi ;
+    dho:url "https://suttacentral.net/sn46.9/en/sujato#sn46.9:1.3"^^xsd:anyURI .
+
+dho:p-sn46.9-1.4 a dho:Passage ;
+    dho:inText dho:t-sn46.9 ;
+    dho:segment "sn46.9:1.4" ;
+    dho:textEn "These seven awakening factors don’t arise to be developed and cultivated except when a Realized One, a perfected one, a fully awakened Buddha has appeared.”"@en ;
+    dho:textPi "ime kho, bhikkhave, satta bojjhaṅgā bhāvitā bahulīkatā anuppannā uppajjanti, nāññatra tathāgatassa pātubhāvā arahato sammāsambuddhassā”ti."@pi ;
+    dho:url "https://suttacentral.net/sn46.9/en/sujato#sn46.9:1.4"^^xsd:anyURI .
+
 dho:sense-dhamma-mind-object a ontolex:LexicalSense ;
     ontolex:reference dho:DhammaMindObject ;
     dho:citedBy dho:p-mn148-5.3,
@@ -5611,6 +5960,13 @@ dho:ta-12 a dho:TimingAdvice ;
     dho:timing dho:RightTime ;
     dho:whenMind dho:RestlessMind .
 
+dho:AppearanceOfRealizedOne a dho:Concept ;
+    skos:altLabel "the appearance of a Buddha"@en ;
+    skos:note "'A Realized One, a perfected one, a fully awakened Buddha' (tathāgata arahant sammāsambuddha), SN 46.9 and 46.42."@en ;
+    skos:prefLabel "the appearance of a Realized One"@en,
+        "tathāgatassa pātubhāva"@pi,
+        "如來出世"@zh .
+
 dho:Bliss a dho:MentalQuality ;
     skos:altLabel "happiness"@en,
         "pleasure"@en ;
@@ -5772,6 +6128,10 @@ dho:Rejoicing a dho:Practice ;
         "muditā"@pi ;
     dho:editorialRelated dho:HeartsReleaseByRejoicing .
 
+dho:RequiredFor a dho:ConditionRelation ;
+    rdfs:label "is required for"@en ;
+    rdfs:comment "'not apart from' (nāññatra): the conditioned don't arise apart from the condition. A necessary condition, not a sufficient one (SN 46.9, 46.10; D23)."@en .
+
 dho:Restlessness a dho:MentalQuality ;
     skos:prefLabel "restlessness"@en,
         "uddhacca"@pi,
@@ -5866,6 +6226,13 @@ dho:p-sn46.1-1.4 a dho:Passage ;
     dho:textEn "In the same way, a mendicant develops and cultivates the seven awakening factors depending on and grounded on ethics, acquiring great and abundant good qualities."@en ;
     dho:textPi "evameva kho, bhikkhave, bhikkhu sīlaṁ nissāya sīle patiṭṭhāya satta bojjhaṅge bhāvento satta bojjhaṅge bahulīkaronto mahantattaṁ vepullattaṁ pāpuṇāti dhammesu."@pi ;
     dho:url "https://suttacentral.net/sn46.1/en/sujato#sn46.1:1.4"^^xsd:anyURI .
+
+dho:p-sn46.10-1.1 a dho:Passage ;
+    dho:inText dho:t-sn46.10 ;
+    dho:segment "sn46.10:1.1" ;
+    dho:textEn "“Mendicants, these seven awakening factors don’t arise to be developed and cultivated apart from the Holy One’s training."@en ;
+    dho:textPi "“Sattime, bhikkhave, bojjhaṅgā bhāvitā bahulīkatā anuppannā uppajjanti, nāññatra sugatavinayā."@pi ;
+    dho:url "https://suttacentral.net/sn46.10/en/sujato#sn46.10:1.1"^^xsd:anyURI .
 
 dho:p-sn46.11-1.3 a dho:Passage ;
     dho:inText dho:t-sn46.11 ;
@@ -5965,6 +6332,62 @@ dho:p-sn46.38-3.4 a dho:Passage ;
     dho:textPi "Yasmiṁ, bhikkhave, samaye ariyasāvako aṭṭhiṁ katvā manasi katvā sabbaṁ cetaso samannāharitvā ohitasoto dhammaṁ suṇāti, imassa pañca nīvaraṇā tasmiṁ samaye na honti. Ime satta bojjhaṅgā tasmiṁ samaye bhāvanāpāripūriṁ gacchantī”ti."@pi ;
     dho:url "https://suttacentral.net/sn46.38/en/sujato#sn46.38:3.4"^^xsd:anyURI .
 
+dho:p-sn46.39-2.1 a dho:Passage ;
+    dho:inText dho:t-sn46.39 ;
+    dho:segment "sn46.39:2.1" ;
+    dho:textEn "There are these five obstacles and hindrances, parasites of the mind that weaken wisdom."@en ;
+    dho:textPi "Pañcime, bhikkhave, āvaraṇā nīvaraṇā cetaso ajjhāruhā paññāya dubbalīkaraṇā."@pi ;
+    dho:url "https://suttacentral.net/sn46.39/en/sujato#sn46.39:2.1"^^xsd:anyURI .
+
+dho:p-sn46.39-2.3 a dho:Passage ;
+    dho:inText dho:t-sn46.39 ;
+    dho:segment "sn46.39:2.3" ;
+    dho:textEn "Sensual desire,"@en ;
+    dho:textPi "Kāmacchando, bhikkhave, āvaraṇo nīvaraṇo cetaso ajjhāruho paññāya dubbalīkaraṇo."@pi ;
+    dho:url "https://suttacentral.net/sn46.39/en/sujato#sn46.39:2.3"^^xsd:anyURI .
+
+dho:p-sn46.39-2.4 a dho:Passage ;
+    dho:inText dho:t-sn46.39 ;
+    dho:segment "sn46.39:2.4" ;
+    dho:textEn "ill will,"@en ;
+    dho:textPi "Byāpādo, bhikkhave, āvaraṇo nīvaraṇo cetaso ajjhāruho paññāya dubbalīkaraṇo."@pi ;
+    dho:url "https://suttacentral.net/sn46.39/en/sujato#sn46.39:2.4"^^xsd:anyURI .
+
+dho:p-sn46.39-2.5 a dho:Passage ;
+    dho:inText dho:t-sn46.39 ;
+    dho:segment "sn46.39:2.5" ;
+    dho:textEn "dullness and drowsiness,"@en ;
+    dho:textPi "Thinamiddhaṁ, bhikkhave, āvaraṇaṁ nīvaraṇaṁ cetaso ajjhāruhaṁ paññāya dubbalīkaraṇaṁ."@pi ;
+    dho:url "https://suttacentral.net/sn46.39/en/sujato#sn46.39:2.5"^^xsd:anyURI .
+
+dho:p-sn46.39-2.6 a dho:Passage ;
+    dho:inText dho:t-sn46.39 ;
+    dho:segment "sn46.39:2.6" ;
+    dho:textEn "restlessness and remorse,"@en ;
+    dho:textPi "Uddhaccakukkuccaṁ, bhikkhave, āvaraṇaṁ nīvaraṇaṁ cetaso ajjhāruhaṁ paññāya dubbalīkaraṇaṁ."@pi ;
+    dho:url "https://suttacentral.net/sn46.39/en/sujato#sn46.39:2.6"^^xsd:anyURI .
+
+dho:p-sn46.39-2.7 a dho:Passage ;
+    dho:inText dho:t-sn46.39 ;
+    dho:segment "sn46.39:2.7" ;
+    dho:textEn "and doubt."@en ;
+    dho:textPi "Vicikicchā, bhikkhave, āvaraṇā nīvaraṇā cetaso ajjhāruhā paññāya dubbalīkaraṇā."@pi ;
+    dho:url "https://suttacentral.net/sn46.39/en/sujato#sn46.39:2.7"^^xsd:anyURI .
+
+dho:p-sn46.39-3.1 a dho:Passage ;
+    dho:inText dho:t-sn46.39 ;
+    dho:segment "sn46.39:3.1" ;
+    dho:textEn "These seven awakening factors are not obstacles, hindrances, or parasites of the mind. When developed and cultivated they lead to the realization of the fruit of knowledge and freedom."@en ;
+    dho:textPi "Sattime, bhikkhave, bojjhaṅgā anāvaraṇā anīvaraṇā cetaso anajjhāruhā bhāvitā bahulīkatā vijjāvimuttiphalasacchikiriyāya saṁvattanti."@pi ;
+    dho:url "https://suttacentral.net/sn46.39/en/sujato#sn46.39:3.1"^^xsd:anyURI .
+
+dho:p-sn46.39-3.3 a dho:Passage ;
+    dho:inText dho:t-sn46.39 ;
+    dho:segment "sn46.39:3.3" ;
+    dho:textEn "The awakening factors of mindfulness, investigation of principles, energy, rapture, tranquility, immersion, and equanimity."@en ;
+    dho:textPi "Satisambojjhaṅgo, bhikkhave, anāvaraṇo anīvaraṇo cetaso anajjhāruho bhāvito bahulīkato vijjāvimuttiphalasacchikiriyāya saṁvattati …pe… upekkhāsambojjhaṅgo, bhikkhave, anāvaraṇo anīvaraṇo cetaso anajjhāruho bhāvito bahulīkato vijjāvimuttiphalasacchikiriyāya saṁvattati."@pi ;
+    dho:url "https://suttacentral.net/sn46.39/en/sujato#sn46.39:3.3"^^xsd:anyURI .
+
 dho:p-sn46.40-1.8 a dho:Passage ;
     dho:inText dho:t-sn46.40 ;
     dho:segment "sn46.40:1.8" ;
@@ -6029,6 +6452,55 @@ dho:p-sn46.54-15.1 a dho:Passage ;
     dho:textEn "And how is the heart’s release by equanimity developed? What is its destination, apex, fruit, and end?"@en ;
     dho:textPi "Kathaṁ bhāvitā ca, bhikkhave, upekkhācetovimutti, kiṅgatikā hoti, kiṁparamā, kiṁphalā, kiṁpariyosānā?"@pi ;
     dho:url "https://suttacentral.net/sn46.54/en/sujato#sn46.54:15.1"^^xsd:anyURI .
+
+dho:p-sn46.55-10.3 a dho:Passage ;
+    dho:inText dho:t-sn46.55 ;
+    dho:segment "sn46.55:10.3" ;
+    dho:textEn "In the same way, when your heart is overcome and mired in restlessness and remorse … Even hymns that are long-rehearsed don’t spring to mind, let alone those that are not rehearsed."@en ;
+    dho:textPi "Evameva kho, brāhmaṇa, yasmiṁ samaye uddhaccakukkuccapariyuṭṭhitena cetasā viharati uddhaccakukkuccaparetena, uppannassa ca uddhaccakukkuccassa nissaraṇaṁ yathābhūtaṁ nappajānāti, attatthampi tasmiṁ samaye yathābhūtaṁ na jānāti na passati, paratthampi …pe… ubhayatthampi tasmiṁ samaye yathābhūtaṁ na jānāti na passati; dīgharattaṁ sajjhāyakatāpi mantā nappaṭibhanti, pageva asajjhāyakatā."@pi ;
+    dho:url "https://suttacentral.net/sn46.55/en/sujato#sn46.55:10.3"^^xsd:anyURI .
+
+dho:p-sn46.55-12.3 a dho:Passage ;
+    dho:inText dho:t-sn46.55 ;
+    dho:segment "sn46.55:12.3" ;
+    dho:textEn "In the same way, there’s a time when your heart is overcome and mired in doubt and you don’t truly understand the escape from doubt that has arisen. At that time you don’t truly know or see what is good for yourself, good for another, or good for both. Even hymns that are long-rehearsed don’t spring to mind, let alone those that are not rehearsed."@en ;
+    dho:textPi "Evameva kho, brāhmaṇa, yasmiṁ samaye vicikicchāpariyuṭṭhitena cetasā viharati vicikicchāparetena, uppannāya ca vicikicchāya nissaraṇaṁ yathābhūtaṁ nappajānāti, attatthampi tasmiṁ samaye yathābhūtaṁ na jānāti na passati, paratthampi tasmiṁ samaye yathābhūtaṁ na jānāti na passati, ubhayatthampi tasmiṁ samaye yathābhūtaṁ na jānāti na passati; dīgharattaṁ sajjhāyakatāpi mantā nappaṭibhanti, pageva asajjhāyakatā."@pi ;
+    dho:url "https://suttacentral.net/sn46.55/en/sujato#sn46.55:12.3"^^xsd:anyURI .
+
+dho:p-sn46.55-23.1 a dho:Passage ;
+    dho:inText dho:t-sn46.55 ;
+    dho:segment "sn46.55:23.1" ;
+    dho:textEn "These seven awakening factors are not obstacles, hindrances, or corruptions of the mind. When developed and cultivated they lead to the realization of the fruit of knowledge and freedom."@en ;
+    dho:textPi "Sattime, brāhmaṇa, bojjhaṅgā anāvaraṇā anīvaraṇā cetaso anupakkilesā bhāvitā bahulīkatā vijjāvimuttiphalasacchikiriyāya saṁvattanti."@pi ;
+    dho:url "https://suttacentral.net/sn46.55/en/sujato#sn46.55:23.1"^^xsd:anyURI .
+
+dho:p-sn46.55-23.3 a dho:Passage ;
+    dho:inText dho:t-sn46.55 ;
+    dho:segment "sn46.55:23.3" ;
+    dho:textEn "The awakening factors of mindfulness, investigation of principles, energy, rapture, tranquility, immersion, and equanimity."@en ;
+    dho:textPi "Satisambojjhaṅgo kho, brāhmaṇa, anāvaraṇo anīvaraṇo cetaso anupakkileso bhāvito bahulīkato vijjāvimuttiphalasacchikiriyāya saṁvattati …pe… upekkhāsambojjhaṅgo kho, brāhmaṇa, anāvaraṇo anīvaraṇo cetaso anupakkileso bhāvito bahulīkato vijjāvimuttiphalasacchikiriyāya saṁvattati."@pi ;
+    dho:url "https://suttacentral.net/sn46.55/en/sujato#sn46.55:23.3"^^xsd:anyURI .
+
+dho:p-sn46.55-4.3 a dho:Passage ;
+    dho:inText dho:t-sn46.55 ;
+    dho:segment "sn46.55:4.3" ;
+    dho:textEn "In the same way, when your heart is overcome and mired in sensual desire … Even hymns that are long-rehearsed don’t spring to mind, let alone those that are not rehearsed."@en ;
+    dho:textPi "Evameva kho, brāhmaṇa, yasmiṁ samaye kāmarāgapariyuṭṭhitena cetasā viharati kāmarāgaparetena, uppannassa ca kāmarāgassa nissaraṇaṁ yathābhūtaṁ nappajānāti, attatthampi tasmiṁ samaye yathābhūtaṁ na jānāti na passati …pe… paratthampi …pe… ubhayatthampi tasmiṁ samaye yathābhūtaṁ na jānāti na passati; dīgharattaṁ sajjhāyakatāpi mantā nappaṭibhanti, pageva asajjhāyakatā."@pi ;
+    dho:url "https://suttacentral.net/sn46.55/en/sujato#sn46.55:4.3"^^xsd:anyURI .
+
+dho:p-sn46.55-6.3 a dho:Passage ;
+    dho:inText dho:t-sn46.55 ;
+    dho:segment "sn46.55:6.3" ;
+    dho:textEn "In the same way, when your heart is overcome and mired in ill will … Even hymns that are long-rehearsed don’t spring to mind, let alone those that are not rehearsed."@en ;
+    dho:textPi "Evameva kho, brāhmaṇa, yasmiṁ samaye byāpādapariyuṭṭhitena cetasā viharati byāpādaparetena, uppannassa ca byāpādassa nissaraṇaṁ yathābhūtaṁ nappajānāti, attatthampi tasmiṁ samaye yathābhūtaṁ na jānāti na passati, paratthampi tasmiṁ samaye …pe… ubhayatthampi tasmiṁ samaye yathābhūtaṁ na jānāti na passati; dīgharattaṁ sajjhāyakatāpi mantā nappaṭibhanti, pageva asajjhāyakatā."@pi ;
+    dho:url "https://suttacentral.net/sn46.55/en/sujato#sn46.55:6.3"^^xsd:anyURI .
+
+dho:p-sn46.55-8.3 a dho:Passage ;
+    dho:inText dho:t-sn46.55 ;
+    dho:segment "sn46.55:8.3" ;
+    dho:textEn "In the same way, when your heart is overcome and mired in dullness and drowsiness … Even hymns that are long-rehearsed don’t spring to mind, let alone those that are not rehearsed."@en ;
+    dho:textPi "Evameva kho, brāhmaṇa, yasmiṁ samaye thinamiddhapariyuṭṭhitena cetasā viharati thinamiddhaparetena, uppannassa ca thinamiddhassa nissaraṇaṁ yathābhūtaṁ nappajānāti, attatthampi tasmiṁ samaye yathābhūtaṁ na jānāti na passati, paratthampi …pe… ubhayatthampi tasmiṁ samaye yathābhūtaṁ na jānāti na passati; dīgharattaṁ sajjhāyakatāpi mantā nappaṭibhanti, pageva asajjhāyakatā."@pi ;
+    dho:url "https://suttacentral.net/sn46.55/en/sujato#sn46.55:8.3"^^xsd:anyURI .
 
 dho:p-sn46.57-1.4 a dho:Passage ;
     dho:inText dho:t-sn46.57 ;
@@ -6135,6 +6607,13 @@ dho:p-sn46.76-2.8 a dho:Passage ;
     dho:textEn "enlightenment in this very life, or if there’s residue left behind, non-return.”"@en ;
     dho:textPi "diṭṭheva dhamme aññā, sati vā upādisese anāgāmitāti."@pi ;
     dho:url "https://suttacentral.net/sn46.76/en/sujato#sn46.76:2.8"^^xsd:anyURI .
+
+dho:p-sn46.9-1.1 a dho:Passage ;
+    dho:inText dho:t-sn46.9 ;
+    dho:segment "sn46.9:1.1" ;
+    dho:textEn "“Mendicants, these seven awakening factors don’t arise to be developed and cultivated except when a Realized One, a perfected one, a fully awakened Buddha has appeared."@en ;
+    dho:textPi "“Sattime, bhikkhave, bojjhaṅgā bhāvitā bahulīkatā anuppannā uppajjanti, nāññatra tathāgatassa pātubhāvā arahato sammāsambuddhassa."@pi ;
+    dho:url "https://suttacentral.net/sn46.9/en/sujato#sn46.9:1.1"^^xsd:anyURI .
 
 dho:sense-dhamma-quality a ontolex:LexicalSense ;
     ontolex:reference dho:DhammaQuality ;
@@ -6334,6 +6813,13 @@ dho:p-sn46.40-2.1 a dho:Passage ;
     dho:textPi "Sattime, bhikkhave, bojjhaṅgā cakkhukaraṇā ñāṇakaraṇā paññābuddhiyā avighātapakkhiyā nibbānasaṁvattanikā."@pi ;
     dho:url "https://suttacentral.net/sn46.40/en/sujato#sn46.40:2.1"^^xsd:anyURI .
 
+dho:p-sn46.42-2.1 a dho:Passage ;
+    dho:inText dho:t-sn46.42 ;
+    dho:segment "sn46.42:2.1" ;
+    dho:textEn "When a Realized One, a perfected one, a fully awakened Buddha appears the seven treasures of the awakening factors appear."@en ;
+    dho:textPi "Tathāgatassa, bhikkhave, pātubhāvā arahato sammāsambuddhassa sattannaṁ bojjhaṅgaratanānaṁ pātubhāvo hoti."@pi ;
+    dho:url "https://suttacentral.net/sn46.42/en/sujato#sn46.42:2.1"^^xsd:anyURI .
+
 dho:p-sn46.53-10.1 a dho:Passage ;
     dho:inText dho:t-sn46.53 ;
     dho:segment "sn46.53:10.1" ;
@@ -6389,6 +6875,18 @@ dho:p-sn46.53-7.3 a dho:Passage ;
     dho:textEn "Because it’s easy to stimulate a sluggish mind with these things."@en ;
     dho:textPi "Līnaṁ, bhikkhave, cittaṁ taṁ etehi dhammehi susamuṭṭhāpayaṁ hoti."@pi ;
     dho:url "https://suttacentral.net/sn46.53/en/sujato#sn46.53:7.3"^^xsd:anyURI .
+
+dho:t-sn46.10 a dho:Text ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
+    skos:prefLabel "SN 46.10 Dutiyauppannasutta — Arisen (2nd)"@en ;
+    dho:coverage dho:FullyEncoded ;
+    dho:encodes "The list (1.1, 1.3), and the teaching: the seven awakening factors, unarisen, don't arise apart from the Holy One's training (1.1, 1.4; D23). The chapter's summary verse (2.0-2.4) lists the chapter's titles and is not teaching." ;
+    dho:layer dho:SuttaLayer ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:modelledOn "2026-11-16"^^xsd:date ;
+    dho:review dho:Unreviewed ;
+    dho:url "https://suttacentral.net/sn46.10/en/sujato"^^xsd:anyURI .
 
 dho:t-sn46.14 a dho:Text ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -6542,6 +7040,18 @@ dho:t-sn46.8 a dho:Text ;
     dho:modelledOn "2026-11-15"^^xsd:date ;
     dho:review dho:Unreviewed ;
     dho:url "https://suttacentral.net/sn46.8/en/sujato"^^xsd:anyURI .
+
+dho:t-sn46.9 a dho:Text ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
+    skos:prefLabel "SN 46.9 Paṭhamauppannasutta — Arisen (1st)"@en ;
+    dho:coverage dho:FullyEncoded ;
+    dho:encodes "The list (1.1, 1.3), and the teaching: the seven awakening factors, unarisen, don't arise apart from the appearance of a Realized One (1.1, 1.4; D23)." ;
+    dho:layer dho:SuttaLayer ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:modelledOn "2026-11-16"^^xsd:date ;
+    dho:review dho:Unreviewed ;
+    dho:url "https://suttacentral.net/sn46.9/en/sujato"^^xsd:anyURI .
 
 dho:AttentionMode a owl:Class ;
     rdfs:label "Mode of attention"@en .
@@ -6872,6 +7382,11 @@ dho:Extinguishment a dho:Concept ;
         "nibbāna"@pi,
         "涅槃"@zh .
 
+dho:SeeingWhatIsGood a dho:Concept ;
+    skos:altLabel "knowing what is good"@en ;
+    skos:prefLabel "truly knowing and seeing what is good for oneself, for another, and for both"@en,
+        "attattha parattha ubhayattha yathābhūtaṁ jānāti passati"@pi .
+
 dho:p-sn46.130-1.8 a dho:Passage ;
     dho:inText dho:t-sn46.130 ;
     dho:segment "sn46.130:1.8" ;
@@ -7078,28 +7593,12 @@ dho:Accompanies a dho:ConditionRelation ;
 dho:CommentaryLayer a dho:SourceLayer ;
     rdfs:label "Commentary / later treatise"@en .
 
-dho:Doubt a dho:MentalQuality ;
-    skos:hiddenLabel "indecision"@en,
-        "skepticism"@en,
-        "uncertainty"@en ;
-    skos:prefLabel "doubt"@en,
-        "vicikicchā"@pi,
-        "疑"@zh .
-
-dho:IllWill a dho:MentalQuality ;
-    skos:altLabel "瞋"@zh ;
-    skos:hiddenLabel "anger"@en,
-        "annoyed"@en,
-        "aversion"@en,
-        "irritation"@en,
-        "resentment"@en ;
-    skos:prefLabel "ill will"@en,
-        "byāpāda"@pi,
-        "瞋恚"@zh .
-
 dho:InternalExternal a dho:DivisionBasis ;
     rdfs:label "internal and external"@en ;
     rdfs:comment "ajjhattaṁ / bahiddhā."@en .
+
+dho:IsAbsent a dho:Result ;
+    rdfs:label "are absent"@en .
 
 dho:RestlessMind a dho:MindState ;
     skos:hiddenLabel "agitated"@en,
@@ -7113,15 +7612,6 @@ dho:RestlessMind a dho:MindState ;
 dho:RightTime a dho:Timing ;
     rdfs:label "right time to develop"@en,
         "kāla"@pi .
-
-dho:SensualDesire a dho:MentalQuality ;
-    skos:altLabel "欲貪"@zh ;
-    skos:hiddenLabel "desire"@en,
-        "lust"@en,
-        "wanting"@en ;
-    skos:prefLabel "sensual desire"@en,
-        "kāmacchanda"@pi,
-        "貪欲"@zh .
 
 dho:SluggishMind a dho:MindState ;
     skos:hiddenLabel "dull"@en,
@@ -7162,21 +7652,36 @@ dho:t-sn46.38 a dho:Text ;
     dho:review dho:Unreviewed ;
     dho:url "https://suttacentral.net/sn46.38/en/sujato"^^xsd:anyURI .
 
-dho:Arises a dho:Result ;
-    rdfs:label "arise"@en .
+dho:t-sn46.42 a dho:Text ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
+    skos:prefLabel "SN 46.42 Cakkavattisutta — A Wheel-Turning Monarch"@en ;
+    dho:coverage dho:FullyEncoded ;
+    dho:encodes "The list (2.1, 2.3); when a Realized One appears, the seven treasures of the awakening factors appear (2.1, 2.4); the comparison with a Wheel-Turning Monarch's seven treasures, as a simile (1.1-1.4; D23)." ;
+    dho:layer dho:SuttaLayer ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:modelledOn "2026-11-16"^^xsd:date ;
+    dho:review dho:Unreviewed ;
+    dho:url "https://suttacentral.net/sn46.42/en/sujato"^^xsd:anyURI .
 
-dho:DullnessDrowsiness a dho:MentalQuality ;
-    skos:altLabel "sloth and torpor"@en,
-        "thīnamiddha"@pi,
-        "睡眠"@zh ;
-    skos:hiddenLabel "drowsy"@en,
-        "lethargy"@en,
-        "sleepy"@en,
-        "sluggish"@en,
-        "tired"@en ;
-    skos:prefLabel "dullness and drowsiness"@en,
-        "thinamiddha"@pi,
-        "惛沈睡眠"@zh .
+dho:Doubt a dho:MentalQuality ;
+    skos:hiddenLabel "indecision"@en,
+        "skepticism"@en,
+        "uncertainty"@en ;
+    skos:prefLabel "doubt"@en,
+        "vicikicchā"@pi,
+        "疑"@zh .
+
+dho:IllWill a dho:MentalQuality ;
+    skos:altLabel "瞋"@zh ;
+    skos:hiddenLabel "anger"@en,
+        "annoyed"@en,
+        "aversion"@en,
+        "irritation"@en,
+        "resentment"@en ;
+    skos:prefLabel "ill will"@en,
+        "byāpāda"@pi,
+        "瞋恚"@zh .
 
 dho:IrrationalAttention a dho:AttentionMode ;
     rdfs:label "irrational application of mind"@en,
@@ -7199,20 +7704,14 @@ dho:Opposition a owl:Class ;
     rdfs:label "Opposition"@en ;
     rdfs:comment "A one-to-one pairing of a quality against a hindrance. The suttas give the sets; the pairing comes from the commentaries."@en .
 
-dho:RestlessnessRemorse a dho:MentalQuality ;
-    skos:altLabel "restlessness and worry"@en,
-        "uddhacca-kukkucca"@pi,
-        "掉悔"@zh ;
-    skos:hiddenLabel "agitation"@en,
-        "anxious"@en,
-        "monkey mind"@en,
-        "regret"@en,
-        "restless"@en,
-        "restlessness"@en,
-        "worry"@en ;
-    skos:prefLabel "restlessness and remorse"@en,
-        "uddhaccakukkucca"@pi,
-        "掉舉惡作"@zh .
+dho:SensualDesire a dho:MentalQuality ;
+    skos:altLabel "欲貪"@zh ;
+    skos:hiddenLabel "desire"@en,
+        "lust"@en,
+        "wanting"@en ;
+    skos:prefLabel "sensual desire"@en,
+        "kāmacchanda"@pi,
+        "貪欲"@zh .
 
 dho:p-sn46.20-1.1 a dho:Passage ;
     dho:inText dho:t-sn46.20 ;
@@ -7259,6 +7758,19 @@ dho:CessationPerception a dho:Practice ;
     skos:prefLabel "the perception of cessation"@en,
         "nirodhasaññā"@pi .
 
+dho:DullnessDrowsiness a dho:MentalQuality ;
+    skos:altLabel "sloth and torpor"@en,
+        "thīnamiddha"@pi,
+        "睡眠"@zh ;
+    skos:hiddenLabel "drowsy"@en,
+        "lethargy"@en,
+        "sleepy"@en,
+        "sluggish"@en,
+        "tired"@en ;
+    skos:prefLabel "dullness and drowsiness"@en,
+        "thinamiddha"@pi,
+        "惛沈睡眠"@zh .
+
 dho:Effect a owl:Class ;
     rdfs:label "Effect"@en .
 
@@ -7284,6 +7796,21 @@ dho:Investigation a dho:MentalQuality ;
     skos:prefLabel "investigation of principles"@en,
         "dhammavicaya"@pi,
         "擇法"@zh .
+
+dho:RestlessnessRemorse a dho:MentalQuality ;
+    skos:altLabel "restlessness and worry"@en,
+        "uddhacca-kukkucca"@pi,
+        "掉悔"@zh ;
+    skos:hiddenLabel "agitation"@en,
+        "anxious"@en,
+        "monkey mind"@en,
+        "regret"@en,
+        "restless"@en,
+        "restlessness"@en,
+        "worry"@en ;
+    skos:prefLabel "restlessness and remorse"@en,
+        "uddhaccakukkucca"@pi,
+        "掉舉惡作"@zh .
 
 dho:Result a owl:Class ;
     rdfs:label "Result"@en .
@@ -7332,6 +7859,12 @@ dho:FiveHindrances a dho:NumberedList ;
         dho:p-sn46.37-1.7,
         dho:p-sn46.38-2.1,
         dho:p-sn46.38-2.2,
+        dho:p-sn46.39-2.1,
+        dho:p-sn46.39-2.3,
+        dho:p-sn46.39-2.4,
+        dho:p-sn46.39-2.5,
+        dho:p-sn46.39-2.6,
+        dho:p-sn46.39-2.7,
         dho:p-sn46.40-1.1,
         dho:p-sn46.40-1.3,
         dho:p-sn46.40-1.4,
@@ -7371,8 +7904,8 @@ dho:t-sn46.24 a dho:Text ;
     dho:review dho:Unreviewed ;
     dho:url "https://suttacentral.net/sn46.24/en/sujato"^^xsd:anyURI .
 
-dho:ConditionRelation a owl:Class ;
-    rdfs:label "Condition relation"@en .
+dho:Arises a dho:Result ;
+    rdfs:label "arise"@en .
 
 dho:Rapture a dho:MentalQuality ;
     skos:altLabel "joy"@en,
@@ -7408,6 +7941,19 @@ dho:t-sn46.37 a dho:Text ;
     dho:review dho:Unreviewed ;
     dho:url "https://suttacentral.net/sn46.37/en/sujato"^^xsd:anyURI .
 
+dho:t-sn46.39 a dho:Text ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
+    skos:prefLabel "SN 46.39 Rukkhasutta — Trees"@en ;
+    dho:coverage dho:PartlyEncoded ;
+    dho:encodes "Both lists (2.1, 2.3-2.7; 3.1, 3.3); the hindrances, parasites of the mind, weaken wisdom (2.1, 2.8; stated of each hindrance in the Pali only, 2.3-2.7); developing the awakening factors leads to the realization of the fruit of knowledge and freedom (3.1, 3.3-3.4)." ;
+    dho:layer dho:SuttaLayer ;
+    dho:leftOut "The simile of the large parasitic fig trees whose host trees collapse (1.1-1.4). Its point is a renunciate overcome by sensual pleasures like those he gave up, or worse (1.5), which is not modelled, so under D22 the simile stays out too. That the hindrances are obstacles and the awakening factors are not (2.1, 3.1): no pattern yet for what a quality is or is not (as SN 46.37)." ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:modelledOn "2026-11-16"^^xsd:date ;
+    dho:review dho:Unreviewed ;
+    dho:url "https://suttacentral.net/sn46.39/en/sujato"^^xsd:anyURI .
+
 dho:t-sn46.40 a dho:Text ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
@@ -7421,18 +7967,13 @@ dho:t-sn46.40 a dho:Text ;
     dho:review dho:Unreviewed ;
     dho:url "https://suttacentral.net/sn46.40/en/sujato"^^xsd:anyURI .
 
+dho:ConditionRelation a owl:Class ;
+    rdfs:label "Condition relation"@en .
+
 dho:NumberedList a owl:Class ;
     rdfs:label "Numbered list"@en ;
     rdfs:comment "One of the canon's numbered lists (the five hindrances, the seven awakening factors, ...)."@en ;
     rdfs:subClassOf skos:Collection .
-
-dho:WhenThen a dho:ConditionRelation ;
-    rdfs:label "when present, then"@en ;
-    rdfs:comment "'when you …, X …'; the result says what happens to the conditioned."@en .
-
-dho:Simile a owl:Class ;
-    rdfs:label "Simile"@en ;
-    rdfs:comment "An image a sutta uses to illustrate a teaching ('seyyathāpi … evameva')."@en .
 
 dho:t-sn46.56 a dho:Text ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -7472,14 +8013,14 @@ dho:TimingAdvice a owl:Class ;
     rdfs:label "Timing advice"@en ;
     rdfs:comment "One statement from SN 46.53: when the mind is in STATE, it is the right/wrong time to develop FACTOR."@en .
 
-dho:ExpandedAbbreviation a dho:SupportKind ;
-    rdfs:label "expanded abbreviation"@en ;
-    rdfs:comment "The Pali of every cited segment is abbreviated (…pe…). The claim rests on the conventional expansion from the full sutta of the series, as the translation fills it in, not on words the text itself gives (D14, D19)."@en .
-
 dho:RationalAttention a dho:AttentionMode ;
     rdfs:label "rational application of mind"@en,
         "yoniso manasikāra"@pi,
         "如理作意"@zh .
+
+dho:WhenThen a dho:ConditionRelation ;
+    rdfs:label "when present, then"@en ;
+    rdfs:comment "'when you …, X …'; the result says what happens to the conditioned."@en .
 
 dho:Aspect a owl:Class ;
     rdfs:label "Aspect"@en ;
@@ -7494,6 +8035,10 @@ dho:Practice a owl:Class ;
     rdfs:label "Practice"@en ;
     rdfs:subClassOf dho:Concept .
 
+dho:Simile a owl:Class ;
+    rdfs:label "Simile"@en ;
+    rdfs:comment "An image a sutta uses to illustrate a teaching ('seyyathāpi … evameva')."@en .
+
 dho:t-sn46.54 a dho:Text ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
@@ -7507,9 +8052,22 @@ dho:t-sn46.54 a dho:Text ;
     dho:review dho:Unreviewed ;
     dho:url "https://suttacentral.net/sn46.54/en/sujato"^^xsd:anyURI .
 
-dho:FullyEncoded a dho:CoverageStatus ;
-    rdfs:label "fully encoded"@en ;
-    rdfs:comment "Every teaching claim in the text is modelled."@en .
+dho:ExpandedAbbreviation a dho:SupportKind ;
+    rdfs:label "expanded abbreviation"@en ;
+    rdfs:comment "The Pali of every cited segment is abbreviated (…pe…). The claim rests on the conventional expansion from the full sutta of the series, as the translation fills it in, not on words the text itself gives (D14, D19)."@en .
+
+dho:t-sn46.55 a dho:Text ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
+    skos:prefLabel "SN 46.55 Saṅgāravasutta — With Saṅgārava"@en ;
+    dho:coverage dho:PartlyEncoded ;
+    dho:encodes "When the heart is overcome by each of five (sensual lust, ill will, dullness and drowsiness, restlessness and remorse, doubt) and the escape from it isn't understood, one doesn't truly know or see what is good for oneself, for another or for both (3.1, 5.1, 7.1, 9.1, 11.1); the five similes of a bowl of water that is dyed, boiling, covered with moss, stirred by the wind, or muddy in the dark (4, 6, 8, 10, 12; D22); developing the awakening factors leads to the realization of the fruit of knowledge and freedom (23.1, 23.3-23.4)." ;
+    dho:layer dho:SuttaLayer ;
+    dho:leftOut "The reverse teaching, when the heart is not overcome and the escape is understood (13.1-22.4), and its five similes of clear water: the ontology has no concept for the absence of a quality, so the reverse similes stay out too (D22). The consequence the brahmin asked about, long-rehearsed hymns not springing to mind (2.1-2.2, 12.4, 22.4): kept in the claims' notes and the similes' points, not modelled as a claim. That the awakening factors are not obstacles, hindrances or corruptions of the mind (23.1): no pattern yet. The setting and Saṅgārava's going for refuge (1.1-1.3, 24.1-24.3)." ;
+    dho:modelledBy "project owner with Claude (AI assistant), from SuttaCentral's text" ;
+    dho:modelledOn "2026-11-16"^^xsd:date ;
+    dho:review dho:Unreviewed ;
+    dho:url "https://suttacentral.net/sn46.55/en/sujato"^^xsd:anyURI .
 
 dho:t-sn46.6 a dho:Text ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -7549,6 +8107,10 @@ dho:t-sn46.57 a dho:Text ;
     dho:review dho:Unreviewed ;
     dho:url "https://suttacentral.net/sn46.57/en/sujato"^^xsd:anyURI .
 
+dho:FullyEncoded a dho:CoverageStatus ;
+    rdfs:label "fully encoded"@en ;
+    rdfs:comment "Every teaching claim in the text is modelled."@en .
+
 dho:t-sn46.53 a dho:Text ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
@@ -7586,10 +8148,6 @@ dho:MentalQuality a owl:Class ;
     rdfs:comment "A quality of mind that can arise, grow, or be abandoned."@en ;
     rdfs:subClassOf dho:Concept .
 
-dho:Condition a owl:Class ;
-    rdfs:label "Condition"@en ;
-    rdfs:comment "A sutta's statement that one thing conditions another."@en .
-
 dho:t-sn46.2 a dho:Text ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dct:source "SuttaCentral bilara-data: English by Bhikkhu Sujato, Pali Mahāsaṅgīti edition" ;
@@ -7606,6 +8164,10 @@ dho:PartlyEncoded a dho:CoverageStatus ;
     rdfs:label "partly encoded"@en ;
     rdfs:comment "Some sections are modelled; dho:leftOut says what is not."@en .
 
+dho:Condition a owl:Class ;
+    rdfs:label "Condition"@en ;
+    rdfs:comment "A sutta's statement that one thing conditions another."@en .
+
 dho:LeadsTo a dho:Effect ;
     rdfs:label "leads to"@en .
 
@@ -7614,7 +8176,9 @@ dho:SevenAwakeningFactors a dho:NumberedList ;
     skos:prefLabel "the seven awakening factors"@en,
         "satta bojjhaṅgā"@pi,
         "七覺支"@zh ;
-    dho:citedBy dho:p-sn46.130-1.8,
+    dho:citedBy dho:p-sn46.10-1.1,
+        dho:p-sn46.10-1.3,
+        dho:p-sn46.130-1.8,
         dho:p-sn46.130-1.9,
         dho:p-sn46.17-1.3,
         dho:p-sn46.19-1.3,
@@ -7634,12 +8198,16 @@ dho:SevenAwakeningFactors a dho:NumberedList ;
         dho:p-sn46.37-2.3,
         dho:p-sn46.38-3.1,
         dho:p-sn46.38-3.2,
+        dho:p-sn46.39-3.1,
+        dho:p-sn46.39-3.3,
         dho:p-sn46.4-2.1,
         dho:p-sn46.4-2.3,
         dho:p-sn46.4-2.4,
         dho:p-sn46.40-2.1,
         dho:p-sn46.40-2.3,
         dho:p-sn46.41-1.6,
+        dho:p-sn46.42-2.1,
+        dho:p-sn46.42-2.3,
         dho:p-sn46.43-1.7,
         dho:p-sn46.5-1.6,
         dho:p-sn46.5-1.7,
@@ -7651,10 +8219,14 @@ dho:SevenAwakeningFactors a dho:NumberedList ;
         dho:p-sn46.51-7.1,
         dho:p-sn46.51-8.1,
         dho:p-sn46.51-9.1,
+        dho:p-sn46.55-23.1,
+        dho:p-sn46.55-23.3,
         dho:p-sn46.57-1.4,
         dho:p-sn46.57-1.5,
         dho:p-sn46.76-1.3,
-        dho:p-sn46.76-1.4 ;
+        dho:p-sn46.76-1.4,
+        dho:p-sn46.9-1.1,
+        dho:p-sn46.9-1.3 ;
     dho:expectedCount 7 ;
     dho:hasMember dho:Energy,
         dho:Equanimity,
@@ -7664,12 +8236,12 @@ dho:SevenAwakeningFactors a dho:NumberedList ;
         dho:Rapture,
         dho:Tranquility .
 
-dho:SuttaLayer a dho:SourceLayer ;
-    rdfs:label "Sutta (early discourses)"@en .
-
 dho:Outcome a owl:Class ;
     rdfs:label "Outcome"@en ;
     rdfs:comment "A sutta's statement that something leads to, or works against, something else."@en .
+
+dho:SuttaLayer a dho:SourceLayer ;
+    rdfs:label "Sutta (early discourses)"@en .
 
 dho:Unreviewed a dho:ReviewStatus ;
     rdfs:label "not yet reviewed"@en ;
