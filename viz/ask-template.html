@@ -85,6 +85,14 @@ h3 { margin: 6px 0 0; font-size: 11.5px; text-transform: uppercase; letter-spaci
 .note { font-size: 13px; color: var(--muted); margin-top: 2px; }
 details { border-top: 1px solid var(--line); padding-top: 6px; }
 summary { cursor: pointer; color: var(--muted); font-size: 13.5px; }
+.about { border: 1px solid var(--line); border-radius: 10px; padding: 12px 16px; display: flex; flex-direction: column; gap: 8px; font-size: 13.5px; color: var(--muted); }
+.about p { margin: 0; max-width: 70ch; }
+.about b { color: var(--fg); font-weight: 600; }
+.about a { color: var(--accent); }
+.nums { display: flex; flex-wrap: wrap; gap: 6px 22px; margin: 2px 0; }
+.nums div { display: flex; flex-direction: column; }
+.nums dt { order: 2; font-size: 12px; }
+.nums dd { order: 1; margin: 0; color: var(--fg); font-family: var(--font-text); font-size: 1.25rem; font-weight: 600; font-variant-numeric: tabular-nums; line-height: 1.2; }
 footer { color: var(--muted); font-size: 13px; border-top: 1px solid var(--line); padding-top: 14px; display: flex; flex-direction: column; gap: 6px; }
 footer a { color: var(--accent); }
 </style>
@@ -94,6 +102,18 @@ footer a { color: var(--accent); }
     <h1>Ask the Suttas</h1>
     <p>Type a word in English, Pali or Chinese. Every answer comes from the dhamma-ontology and cites the passage that says it. Nothing is generated.</p>
   </header>
+  <section class="about" aria-label="About this project">
+    <p>A citation-first map of what the Buddha's discourses say about the five hindrances and the seven awakening factors: what feeds them, what they lead to, how they are divided. Every link points to the exact passage, in Pali and English.</p>
+    <dl class="nums" id="nums"></dl>
+    <p class="checked"><b>How it's checked:</b> automated checks on every change; each batch is audited claim by claim against the Pali by independent AI auditors before it is published. <b>Not yet reviewed</b> by a qualified reader.</p>
+    <p class="links">
+      <a href="graph.html">Graph</a> · <a href="review.html">Review each text</a> ·
+      <a href="https://github.com/guoxiangng/dhamma-ontology/blob/main/AUDIT.md" target="_blank" rel="noopener">How it was audited</a> ·
+      <a href="https://github.com/guoxiangng/dhamma-ontology/blob/main/DECISIONS.md" target="_blank" rel="noopener">Every decision</a> ·
+      <a href="https://github.com/guoxiangng/dhamma-ontology/blob/main/COVERAGE.md" target="_blank" rel="noopener">What's covered</a> ·
+      <a href="https://github.com/guoxiangng/dhamma-ontology" target="_blank" rel="noopener">Source and data</a>
+    </p>
+  </section>
   <form id="f" role="search">
     <input id="q" type="search" placeholder="sleepy, monkey mind, nibbāna, 喜 …" autocomplete="off" aria-label="Search the suttas">
     <button class="go" type="submit">Ask</button>
@@ -121,6 +141,16 @@ const ORDER = ["hindrance", "factor", "jhana", "mindstate", "attention", "practi
 const s = DATA.stats;
 document.getElementById("stats").textContent =
   `${s.concepts} concepts · ${s.links} cited links · ${s.passages} passages · checks: ${s.shacl}`;
+const A = DATA.about;
+if (A) {
+  const nf = new Intl.NumberFormat("en");
+  document.getElementById("nums").innerHTML = [
+    [nf.format(A.suttas), `suttas of ${nf.format(A.canon)} (${A.fully} in full)`],
+    [s.concepts, "concepts"], [s.links, "cited links"], [s.passages, "passages quoted"],
+    [A.decisions, "logged decisions"], [A.questions, "eval questions"],
+  ].map(([v, k]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join("") +
+  `<div><dt>updated</dt><dd>${esc(A.built)}</dd></div>`;
+}
 
 // ------------------------------------------------------------------ search
 function search(text) {

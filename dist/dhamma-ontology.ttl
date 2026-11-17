@@ -5988,8 +5988,16 @@ dho:Cessation a dho:Concept ;
         "滅"@zh .
 
 dho:Compassion a dho:Practice ;
+    skos:hiddenLabel "brahmavihara"@en,
+        "four immeasurables"@en,
+        "四梵住"@zh,
+        "四無量心"@zh,
+        "悲"@zh,
+        "悲心"@zh,
+        "慈悲"@zh ;
     skos:prefLabel "compassion"@en,
-        "karuṇā"@pi ;
+        "karuṇā"@pi,
+        "悲無量"@zh ;
     dho:editorialRelated dho:HeartsReleaseByCompassion .
 
 dho:Diligence a dho:Concept ;
@@ -6003,8 +6011,15 @@ dho:Enlightenment a dho:Concept ;
         "aññā"@pi .
 
 dho:EquanimityImmeasurable a dho:Practice ;
+    skos:hiddenLabel "brahmavihara"@en,
+        "four immeasurables"@en,
+        "四梵住"@zh,
+        "四無量心"@zh,
+        "捨"@zh,
+        "捨心"@zh ;
     skos:prefLabel "equanimity"@en,
-        "upekkhā"@pi ;
+        "upekkhā"@pi,
+        "捨無量"@zh ;
     dho:editorialRelated dho:Equanimity,
         dho:HeartsReleaseByEquanimity .
 
@@ -6056,15 +6071,18 @@ dho:GreatBenefit a dho:Concept ;
 
 dho:HeartsReleaseByCompassion a dho:Concept ;
     skos:prefLabel "the heart's release by compassion"@en,
-        "karuṇācetovimutti"@pi .
+        "karuṇācetovimutti"@pi,
+        "悲心解脫"@zh .
 
 dho:HeartsReleaseByEquanimity a dho:Concept ;
     skos:prefLabel "the heart's release by equanimity"@en,
-        "upekkhācetovimutti"@pi .
+        "upekkhācetovimutti"@pi,
+        "捨心解脫"@zh .
 
 dho:HeartsReleaseByRejoicing a dho:Concept ;
     skos:prefLabel "the heart's release by rejoicing"@en,
-        "muditācetovimutti"@pi .
+        "muditācetovimutti"@pi,
+        "喜心解脫"@zh .
 
 dho:Hindrance a owl:Class ;
     rdfs:label "Hindrance"@en,
@@ -6099,8 +6117,17 @@ dho:ListeningToTeaching a dho:Concept ;
         "ohitasoto dhammaṁ suṇāti"@pi .
 
 dho:Love a dho:Practice ;
+    skos:altLabel "loving-kindness"@en ;
+    skos:hiddenLabel "brahmavihara"@en,
+        "four immeasurables"@en,
+        "四梵住"@zh,
+        "四無量心"@zh,
+        "慈"@zh,
+        "慈心"@zh,
+        "慈悲"@zh ;
     skos:prefLabel "love"@en,
-        "mettā"@pi ;
+        "mettā"@pi,
+        "慈無量"@zh ;
     dho:editorialRelated dho:o-metta .
 
 dho:NamedParts a dho:DivisionBasis ;
@@ -6124,8 +6151,17 @@ dho:PlacingTheMind a dho:MentalQuality ;
         "尋"@zh .
 
 dho:Rejoicing a dho:Practice ;
+    skos:altLabel "sympathetic joy"@en ;
+    skos:hiddenLabel "brahmavihara"@en,
+        "four immeasurables"@en,
+        "喜"@zh,
+        "喜心"@zh,
+        "四梵住"@zh,
+        "四無量心"@zh,
+        "隨喜"@zh ;
     skos:prefLabel "rejoicing"@en,
-        "muditā"@pi ;
+        "muditā"@pi,
+        "喜無量"@zh ;
     dho:editorialRelated dho:HeartsReleaseByRejoicing .
 
 dho:RequiredFor a dho:ConditionRelation ;
@@ -6709,7 +6745,8 @@ dho:o-energy-elements a dho:AttentionObject ;
 
 dho:o-metta a dho:AttentionObject ;
     skos:prefLabel "the heart's release by love"@en,
-        "mettācetovimutti"@pi .
+        "mettācetovimutti"@pi,
+        "慈心解脫"@zh .
 
 dho:o-qualities a dho:AttentionObject ;
     skos:prefLabel "qualities that are skillful and unskillful, blameworthy and blameless, inferior and superior, and with a portion of dark or bright"@en,

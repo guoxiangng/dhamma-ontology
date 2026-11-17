@@ -22,15 +22,15 @@ dho:MentalGoodConduct a dho:Concept ; skos:prefLabel "good conduct by way of min
 
 # The Pali abbreviates feelings and mind (7.3-7.4: "vedanāsu …pe…", "citte …pe…") but names each.
 dho:FourMindfulnessMeditations a dho:NumberedList ;
-    skos:prefLabel "the four kinds of mindfulness meditation"@en , "cattāro satipaṭṭhānā"@pi , "四念處"@zh ;
+    skos:prefLabel "the four kinds of mindfulness meditation"@en , "cattāro satipaṭṭhānā"@pi ;
     skos:altLabel "four foundations of mindfulness"@en , "four establishments of mindfulness"@en , "satipaṭṭhāna"@pi ;
     dho:expectedCount 4 ;
     dho:hasMember dho:ObservingBody , dho:ObservingFeelings , dho:ObservingMind , dho:ObservingPrinciples ;
     dho:citedBy dho:p-sn46.6-2.4 , dho:p-sn46.6-7.2 , dho:p-sn46.6-7.3 , dho:p-sn46.6-7.4 , dho:p-sn46.6-7.5 .
-dho:ObservingBody a dho:Concept ; skos:prefLabel "observing an aspect of the body"@en , "kāye kāyānupassī"@pi , "身念處"@zh .
-dho:ObservingFeelings a dho:Concept ; skos:prefLabel "observing an aspect of feelings"@en , "vedanāsu vedanānupassī"@pi , "受念處"@zh .
-dho:ObservingMind a dho:Concept ; skos:prefLabel "observing an aspect of the mind"@en , "citte cittānupassī"@pi , "心念處"@zh .
-dho:ObservingPrinciples a dho:Concept ; skos:prefLabel "observing an aspect of principles"@en , "dhammesu dhammānupassī"@pi , "法念處"@zh .
+dho:ObservingBody a dho:Concept ; skos:prefLabel "observing an aspect of the body"@en , "kāye kāyānupassī"@pi .
+dho:ObservingFeelings a dho:Concept ; skos:prefLabel "observing an aspect of feelings"@en , "vedanāsu vedanānupassī"@pi .
+dho:ObservingMind a dho:Concept ; skos:prefLabel "observing an aspect of the mind"@en , "citte cittānupassī"@pi .
+dho:ObservingPrinciples a dho:Concept ; skos:prefLabel "observing an aspect of principles"@en , "dhammesu dhammānupassī"@pi .
 
 # vijjāvimutti, not vijjāvimuttiphala ("the fruit of knowledge and freedom", SN 46.6:1.9 and SN 46.37):
 # a different compound, so a separate concept with an editor's link (D13's rule).

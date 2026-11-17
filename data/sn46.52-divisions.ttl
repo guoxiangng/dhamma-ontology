@@ -42,10 +42,10 @@ dho:dv-02 a dho:Division ; dho:divides dho:IllWill ; dho:basis dho:InternalExter
 # what D10 deferred. Restlessness (uddhacca) is the same concept as the higher fetter of
 # SN 46.130: same Pali word, same rendering (D13's rule for one word, one concept).
 dho:Dullness a dho:MentalQuality ;
-    skos:prefLabel "dullness"@en , "thina"@pi , "惛沈"@zh ;
+    skos:prefLabel "dullness"@en , "thina"@pi ;
     skos:altLabel "sloth"@en , "thīna"@pi .
 dho:Drowsiness a dho:MentalQuality ;
-    skos:prefLabel "drowsiness"@en , "middha"@pi , "睡眠"@zh ;
+    skos:prefLabel "drowsiness"@en , "middha"@pi ;
     skos:altLabel "torpor"@en .
 dho:dv-03 a dho:Division ; dho:divides dho:DullnessDrowsiness ; dho:basis dho:NamedParts ;
     dho:part dho:Dullness , dho:Drowsiness ;
@@ -53,7 +53,7 @@ dho:dv-03 a dho:Division ; dho:divides dho:DullnessDrowsiness ; dho:basis dho:Na
     dho:citedBy dho:p-sn46.52-9.1 , dho:p-sn46.52-9.6 , dho:p-sn46.52-9.7 , dho:p-sn46.52-9.12 .
 
 dho:Remorse a dho:MentalQuality ;
-    skos:prefLabel "remorse"@en , "kukkucca"@pi , "惡作"@zh ;
+    skos:prefLabel "remorse"@en , "kukkucca"@pi ;
     skos:altLabel "worry"@en .
 dho:dv-04 a dho:Division ; dho:divides dho:RestlessnessRemorse ; dho:basis dho:NamedParts ;
     dho:part dho:Restlessness , dho:Remorse ;

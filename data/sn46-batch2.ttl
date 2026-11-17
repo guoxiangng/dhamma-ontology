@@ -7,24 +7,24 @@
 # ---------------------------------------------------------------- the five higher fetters (SN 46.130)
 
 dho:FiveHigherFetters a dho:NumberedList ;
-    skos:prefLabel "the five higher fetters"@en , "pañca uddhambhāgiyāni saṁyojanāni"@pi , "五上分結"@zh ;
+    skos:prefLabel "the five higher fetters"@en , "pañca uddhambhāgiyāni saṁyojanāni"@pi ;
     dho:expectedCount 5 ;
     dho:hasMember dho:DesireForFormRebirth , dho:DesireForFormlessRebirth , dho:Conceit , dho:Restlessness , dho:Ignorance ;
     dho:citedBy dho:p-sn46.130-1.2 , dho:p-sn46.130-1.4 .
 
 dho:DesireForFormRebirth a dho:MentalQuality ;
-    skos:prefLabel "desire for rebirth in the realm of luminous form"@en , "rūparāga"@pi , "色貪"@zh .
+    skos:prefLabel "desire for rebirth in the realm of luminous form"@en , "rūparāga"@pi .
 dho:DesireForFormlessRebirth a dho:MentalQuality ;
-    skos:prefLabel "desire for rebirth in the formless realm"@en , "arūparāga"@pi , "無色貪"@zh .
+    skos:prefLabel "desire for rebirth in the formless realm"@en , "arūparāga"@pi .
 dho:Conceit a dho:MentalQuality ;
-    skos:prefLabel "conceit"@en , "māna"@pi , "慢"@zh .
+    skos:prefLabel "conceit"@en , "māna"@pi .
 dho:Ignorance a dho:MentalQuality ;
-    skos:prefLabel "ignorance"@en , "avijjā"@pi , "無明"@zh .
+    skos:prefLabel "ignorance"@en , "avijjā"@pi .
 # uddhacca alone, not the hindrance's compound uddhaccakukkucca: a separate concept, joined by an editor's link.
 # Its link to the hindrance restlessness and remorse is now cited: SN 46.52 names restlessness as one
 # of the two qualities in that hindrance (dv-04). The editor's link it had here was removed (D18).
 dho:Restlessness a dho:MentalQuality ;
-    skos:prefLabel "restlessness"@en , "uddhacca"@pi , "掉舉"@zh .
+    skos:prefLabel "restlessness"@en , "uddhacca"@pi .
 
 # ---------------------------------------------------------------- concepts the outcomes point to
 

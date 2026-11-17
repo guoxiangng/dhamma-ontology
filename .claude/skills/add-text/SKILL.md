@@ -60,7 +60,7 @@ Rules:
 ## 3. Write the data
 
 - One file per text: `data/<uid>-<topic>.ttl`, with a header comment saying what it encodes.
-- New concepts follow D9: English preferred label = Sujato's rendering; Pali from the text; Chinese only as the standard Buddhist term, supplied by the editor; hidden labels only for real everyday words.
+- New concepts follow D9: English preferred label = Sujato's rendering; Pali from the text; Chinese only as the standard Buddhist term, supplied by the editor, added to `data/labels-zh.ttl` (D24); hidden labels only for real everyday words.
 - Classes come from list membership (D3). Never type `dho:Hindrance` etc. by hand.
 - Derived links (`dho:counters`) are never written by hand (S9).
 

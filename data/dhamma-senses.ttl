@@ -38,19 +38,19 @@ dho:sense-dhamma-quality a ontolex:LexicalSense ;
 # ---------------------------------------------------------------- the concepts
 
 dho:DhammaTeaching a dho:Concept ;
-    skos:prefLabel "the Dhamma (the Buddha's teaching)"@en , "dhamma"@pi , "法"@zh ;
+    skos:prefLabel "the Dhamma (the Buddha's teaching)"@en , "dhamma"@pi ;
     skos:definition "The teaching the Buddha explained: 'the teaching is well explained by the Buddha' (svākkhāto bhagavatā dhammo)."@en .
 
 dho:DhammaPhenomenon a dho:Concept ;
-    skos:prefLabel "a dhamma (any phenomenon, any thing)"@en , "dhamma"@pi , "法"@zh ;
+    skos:prefLabel "a dhamma (any phenomenon, any thing)"@en , "dhamma"@pi ;
     skos:definition "Any thing at all, as in 'all things are not-self' (sabbe dhammā anattā)."@en .
 
 dho:DhammaMindObject a dho:Concept ;
-    skos:prefLabel "a dhamma (an object of the mind, an idea)"@en , "dhamma"@pi , "法"@zh ;
+    skos:prefLabel "a dhamma (an object of the mind, an idea)"@en , "dhamma"@pi ;
     skos:definition "What the mind knows, as the sixth sense field alongside sights, sounds, smells, tastes and touches (dhammāyatana)."@en .
 
 dho:DhammaQuality a dho:Concept ;
-    skos:prefLabel "a dhamma (a mental quality)"@en , "dhamma"@pi , "法"@zh ;
+    skos:prefLabel "a dhamma (a mental quality)"@en , "dhamma"@pi ;
     skos:definition "A quality of mind, e.g. 'qualities that are skillful and unskillful' (kusalākusalā dhammā)."@en .
 
 # ---------------------------------------------------------------- passages tagged with a sense

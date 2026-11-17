@@ -1,0 +1,86 @@
+@prefix dho:  <https://guoxiangng.github.io/dhamma-ontology/ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Chinese labels: a search and translation layer, not a source (D9, D24).
+# Each is the standard Chinese term, supplied by the editor. No claim, check or reasoning rests on them:
+# the claims cite the Pali and English. Add or correct labels here freely without touching the claims.
+
+dho:AppearanceOfRealizedOne skos:prefLabel "如來出世"@zh .
+dho:Bliss skos:prefLabel "樂"@zh .
+dho:Cessation skos:prefLabel "滅"@zh .
+dho:Conceit skos:prefLabel "慢"@zh .
+dho:DesireForFormRebirth skos:prefLabel "色貪"@zh .
+dho:DesireForFormlessRebirth skos:prefLabel "無色貪"@zh .
+dho:DhammaMindObject skos:prefLabel "法"@zh .
+dho:DhammaPhenomenon skos:prefLabel "法"@zh .
+dho:DhammaQuality skos:prefLabel "法"@zh .
+dho:DhammaTeaching skos:prefLabel "法"@zh .
+dho:Diligence skos:prefLabel "不放逸"@zh .
+dho:Doubt skos:prefLabel "疑"@zh .
+dho:Drowsiness skos:prefLabel "睡眠"@zh .
+dho:Dullness skos:prefLabel "惛沈"@zh .
+dho:DullnessDrowsiness skos:prefLabel "惛沈睡眠"@zh ;
+    skos:altLabel "睡眠"@zh .
+dho:Energy skos:prefLabel "精進"@zh ;
+    skos:altLabel "精進覺支"@zh .
+dho:Equanimity skos:prefLabel "捨"@zh ;
+    skos:altLabel "捨覺支"@zh .
+dho:Ethics skos:prefLabel "戒"@zh .
+dho:Extinguishment skos:prefLabel "涅槃"@zh .
+dho:FirstJhana skos:prefLabel "初禪"@zh .
+dho:FirstJhanaFactors skos:prefLabel "初禪五支"@zh .
+dho:FiveHigherFetters skos:prefLabel "五上分結"@zh .
+dho:FiveHindrances skos:prefLabel "五蓋"@zh .
+dho:FourMindfulnessMeditations skos:prefLabel "四念處"@zh .
+dho:Ignorance skos:prefLabel "無明"@zh .
+dho:IllWill skos:prefLabel "瞋恚"@zh ;
+    skos:altLabel "瞋"@zh .
+dho:Immersion skos:prefLabel "定"@zh ;
+    skos:altLabel "定覺支"@zh .
+dho:InfiniteConsciousness skos:prefLabel "識無邊處"@zh .
+dho:InfiniteSpace skos:prefLabel "空無邊處"@zh .
+dho:Investigation skos:prefLabel "擇法"@zh ;
+    skos:altLabel "擇法覺支"@zh .
+dho:KeepingConnected skos:prefLabel "伺"@zh ;
+    skos:altLabel "觀"@zh .
+dho:Mindfulness skos:prefLabel "念"@zh ;
+    skos:altLabel "念覺支"@zh .
+dho:Nothingness skos:prefLabel "無所有處"@zh .
+dho:ObservingBody skos:prefLabel "身念處"@zh .
+dho:ObservingFeelings skos:prefLabel "受念處"@zh .
+dho:ObservingMind skos:prefLabel "心念處"@zh .
+dho:ObservingPrinciples skos:prefLabel "法念處"@zh .
+dho:PlacingTheMind skos:prefLabel "尋"@zh ;
+    skos:altLabel "覺"@zh .
+dho:Rapture skos:prefLabel "喜"@zh ;
+    skos:altLabel "喜覺支"@zh .
+dho:Remorse skos:prefLabel "惡作"@zh .
+dho:Restlessness skos:prefLabel "掉舉"@zh .
+dho:RestlessnessRemorse skos:prefLabel "掉舉惡作"@zh ;
+    skos:altLabel "掉悔"@zh .
+dho:SensualDesire skos:prefLabel "貪欲"@zh ;
+    skos:altLabel "欲貪"@zh .
+dho:SevenAwakeningFactors skos:prefLabel "七覺支"@zh .
+dho:SkillfulQualities skos:prefLabel "善法"@zh .
+dho:SugataVinaya skos:prefLabel "善逝律"@zh .
+dho:Tranquility skos:prefLabel "輕安"@zh ;
+    skos:altLabel "猗"@zh , "輕安覺支"@zh .
+dho:Unification skos:prefLabel "心一境性"@zh .
+dho:Wisdom skos:prefLabel "慧"@zh .
+
+# Added 2026-11-17 (D24): the four practices of SN 46.54 and their heart's releases, so that everyday Chinese
+# words find them. 喜 and 捨 alone are already rapture's and equanimity's (the awakening factors), so here they
+# are search words: a search for 喜 shows both meanings. 慈悲, 四無量心 and 四梵住 are not words of SN 46;
+# they are search words only.
+dho:Love skos:prefLabel "慈無量"@zh ;
+    skos:hiddenLabel "慈"@zh , "慈心"@zh , "慈悲"@zh , "四無量心"@zh , "四梵住"@zh .
+dho:Compassion skos:prefLabel "悲無量"@zh ;
+    skos:hiddenLabel "悲"@zh , "悲心"@zh , "慈悲"@zh , "四無量心"@zh , "四梵住"@zh .
+dho:Rejoicing skos:prefLabel "喜無量"@zh ;
+    skos:hiddenLabel "喜"@zh , "喜心"@zh , "隨喜"@zh , "四無量心"@zh , "四梵住"@zh .
+dho:EquanimityImmeasurable skos:prefLabel "捨無量"@zh ;
+    skos:hiddenLabel "捨"@zh , "捨心"@zh , "四無量心"@zh , "四梵住"@zh .
+dho:o-metta skos:prefLabel "慈心解脫"@zh .
+dho:HeartsReleaseByCompassion skos:prefLabel "悲心解脫"@zh .
+dho:HeartsReleaseByRejoicing skos:prefLabel "喜心解脫"@zh .
+dho:HeartsReleaseByEquanimity skos:prefLabel "捨心解脫"@zh .

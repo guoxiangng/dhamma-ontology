@@ -28,9 +28,9 @@ dho:HeartsReleaseByEquanimity a dho:Concept ; skos:prefLabel "the heart's releas
 # beautiful"). Not the same as SN 46.51's "feature of beauty" (subhanimitta) that fuels sensual desire.
 dho:TheBeautiful a dho:Concept ; skos:prefLabel "the beautiful"@en , "subha"@pi ;
     skos:note "As an attainment: 'the liberation of the beautiful' (subha vimokkha). Not SN 46.51's 'feature of beauty' (subhanimitta), which fuels sensual desire."@en .
-dho:InfiniteSpace a dho:Concept ; skos:prefLabel "the dimension of infinite space"@en , "ākāsānañcāyatana"@pi , "空無邊處"@zh .
-dho:InfiniteConsciousness a dho:Concept ; skos:prefLabel "the dimension of infinite consciousness"@en , "viññāṇañcāyatana"@pi , "識無邊處"@zh .
-dho:Nothingness a dho:Concept ; skos:prefLabel "the dimension of nothingness"@en , "ākiñcaññāyatana"@pi , "無所有處"@zh .
+dho:InfiniteSpace a dho:Concept ; skos:prefLabel "the dimension of infinite space"@en , "ākāsānañcāyatana"@pi .
+dho:InfiniteConsciousness a dho:Concept ; skos:prefLabel "the dimension of infinite consciousness"@en , "viññāṇañcāyatana"@pi .
+dho:Nothingness a dho:Concept ; skos:prefLabel "the dimension of nothingness"@en , "ākiñcaññāyatana"@pi .
 
 dho:o-a1 a dho:Outcome ; dho:of dho:o-metta ; dho:effect dho:HasApex ; dho:to dho:TheBeautiful ;
     dho:wording "is the beautiful, I say, for a wise mendicant here who has not penetrated to a higher freedom" ;

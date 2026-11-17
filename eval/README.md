@@ -6,7 +6,7 @@ The question this answers: for questions about the suttas, does an LLM do better
 
 | File | What |
 |---|---|
-| `questions.toml` | 32 questions with gold answers, cited segments and "fails if it says" traps |
+| `questions.toml` | 57 questions with gold answers, cited segments and "fails if it says" traps |
 | `check_gold.py` | Verifies every cited segment exists and every Pali term in a gold answer appears in the cited Pali; writes the review sheet |
 | `GOLD-REVIEW.md` | **Generated.** Each gold answer beside the exact English and Pali it rests on, for a human to check |
 
@@ -30,15 +30,15 @@ B is the control that matters. "Ontology beats a bare LLM" is easy to show and n
 
 | Category | Tests | Count |
 |---|---|---:|
-| recall | What a text says | 11 |
+| recall | What a text says | 21 |
 | list | Completeness of numbered lists | 5 |
-| trap | A popular claim the text doesn't support | 2 |
+| trap | A popular claim the text doesn't support, or a near-miss reading | 15 |
 | derived | A link the text implies but never states | 1 |
 | layer | Keeping sutta and commentary apart | 4 |
 | plain | Everyday-language questions | 2 |
 | sense | Which meaning of an ambiguous word | 3 |
 | citation | Naming the right source | 1 |
-| partial | A part of a covered text the ontology left out | 1 |
+| partial | A part of a covered text the ontology left out | 3 |
 | scope | Outside the ontology entirely | 2 |
 
 Q17 (left out of the ontology, but in B's text) is there on purpose: B should win it. A fair eval includes questions the favoured system should lose.
@@ -60,7 +60,7 @@ The headline numbers for the write-up: accuracy, trap failures, invented citatio
 
 ## Limitations, stated up front
 
-- **Small:** 32 questions on a narrow slice (SN 46.51, SN 46.53, MN 43, MN 44 and a few word senses).
+- **Small:** 57 questions on a narrow slice (76 suttas, mostly SN 46, plus MN 43, MN 44 and a few word senses).
 - **Home advantage:** the questions were written by the same people who built the ontology, so they lean towards what it models. The traps and the B-should-win question partly offset this; outside questions written by someone else would offset it more.
 - **Gold drafted with an AI assistant.** Every gold point cites segments that a script checks, and Pali terms are checked against the cited Pali. Gold is still `draft` until the owner checks it in `GOLD-REVIEW.md`. Q21's pairing rests on a text we don't hold (Visuddhimagga) and stays unverified until checked against an edition.
 - **Absence claims** ("no sutta says X") are only as good as the coverage in `COVERAGE.md`.

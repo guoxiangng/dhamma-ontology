@@ -25,10 +25,16 @@ dho:LividPerception a dho:Practice ; skos:prefLabel "the perception of a livid c
 dho:SplitOpenPerception a dho:Practice ; skos:prefLabel "the perception of a split open corpse"@en , "vicchiddakasaññā"@pi .
 dho:BloatedPerception a dho:Practice ; skos:prefLabel "the perception of a bloated corpse"@en , "uddhumātakasaññā"@pi .
 dho:Love a dho:Practice ; skos:prefLabel "love"@en , "mettā"@pi ;
+    skos:altLabel "loving-kindness"@en ;
+    skos:hiddenLabel "brahmavihara"@en , "four immeasurables"@en ;
     dho:editorialRelated dho:o-metta .
-dho:Compassion a dho:Practice ; skos:prefLabel "compassion"@en , "karuṇā"@pi .
-dho:Rejoicing a dho:Practice ; skos:prefLabel "rejoicing"@en , "muditā"@pi .
+dho:Compassion a dho:Practice ; skos:prefLabel "compassion"@en , "karuṇā"@pi ;
+    skos:hiddenLabel "brahmavihara"@en , "four immeasurables"@en .
+dho:Rejoicing a dho:Practice ; skos:prefLabel "rejoicing"@en , "muditā"@pi ;
+    skos:altLabel "sympathetic joy"@en ;
+    skos:hiddenLabel "brahmavihara"@en , "four immeasurables"@en .
 dho:EquanimityImmeasurable a dho:Practice ; skos:prefLabel "equanimity"@en , "upekkhā"@pi ;
+    skos:hiddenLabel "brahmavihara"@en , "four immeasurables"@en ;
     dho:editorialRelated dho:Equanimity .
 dho:MindfulnessOfBreathing a dho:Practice ; skos:prefLabel "mindfulness of breathing"@en , "ānāpānassati"@pi .
 dho:UglinessPerception a dho:Practice ; skos:prefLabel "the perception of ugliness"@en , "asubhasaññā"@pi ;

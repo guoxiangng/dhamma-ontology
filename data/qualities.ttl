@@ -13,14 +13,14 @@
 # ---------------------------------------------------------------- lists
 
 dho:FiveHindrances a dho:NumberedList ;
-    skos:prefLabel "the five hindrances"@en , "pañca nīvaraṇā"@pi , "五蓋"@zh ;
+    skos:prefLabel "the five hindrances"@en , "pañca nīvaraṇā"@pi ;
     dho:expectedCount 5 ;
     dho:hasMember dho:SensualDesire , dho:IllWill , dho:DullnessDrowsiness ,
                   dho:RestlessnessRemorse , dho:Doubt ;
     dho:citedBy dho:p-sn46.51-1.2 , dho:p-mn43-20.3 .
 
 dho:SevenAwakeningFactors a dho:NumberedList ;
-    skos:prefLabel "the seven awakening factors"@en , "satta bojjhaṅgā"@pi , "七覺支"@zh ;
+    skos:prefLabel "the seven awakening factors"@en , "satta bojjhaṅgā"@pi ;
     skos:altLabel "the seven factors of enlightenment"@en ;
     dho:expectedCount 7 ;
     dho:hasMember dho:Mindfulness , dho:Investigation , dho:Energy , dho:Rapture ,
@@ -28,7 +28,7 @@ dho:SevenAwakeningFactors a dho:NumberedList ;
     dho:citedBy dho:p-sn46.51-1.2 .
 
 dho:FirstJhanaFactors a dho:NumberedList ;
-    skos:prefLabel "the five factors of the first absorption"@en , "paṭhamajjhānassa pañcaṅgāni"@pi , "初禪五支"@zh ;
+    skos:prefLabel "the five factors of the first absorption"@en , "paṭhamajjhānassa pañcaṅgāni"@pi ;
     dho:expectedCount 5 ;
     dho:hasMember dho:PlacingTheMind , dho:KeepingConnected , dho:Rapture ,
                   dho:Bliss , dho:Unification ;
@@ -37,80 +37,78 @@ dho:FirstJhanaFactors a dho:NumberedList ;
 # ---------------------------------------------------------------- hindrances
 
 dho:SensualDesire a dho:MentalQuality ;
-    skos:prefLabel "sensual desire"@en , "kāmacchanda"@pi , "貪欲"@zh ;
-    skos:altLabel "欲貪"@zh ;
+    skos:prefLabel "sensual desire"@en , "kāmacchanda"@pi ;
     skos:hiddenLabel "lust"@en , "wanting"@en , "desire"@en .
 # "craving" was a search word here in v0.1; removed on 2026-11-14 because craving (taṇhā) is its
 # own term in the suttas (SN 46.26, 46.27) and must not resolve to sensual desire (kāmacchanda).
 
 dho:IllWill a dho:MentalQuality ;
-    skos:prefLabel "ill will"@en , "byāpāda"@pi , "瞋恚"@zh ;
-    skos:altLabel "瞋"@zh ;
+    skos:prefLabel "ill will"@en , "byāpāda"@pi ;
     skos:hiddenLabel "anger"@en , "aversion"@en , "irritation"@en , "resentment"@en , "annoyed"@en .
 
 dho:DullnessDrowsiness a dho:MentalQuality ;
-    skos:prefLabel "dullness and drowsiness"@en , "thinamiddha"@pi , "惛沈睡眠"@zh ;
-    skos:altLabel "sloth and torpor"@en , "thīnamiddha"@pi , "睡眠"@zh ;
+    skos:prefLabel "dullness and drowsiness"@en , "thinamiddha"@pi ;
+    skos:altLabel "sloth and torpor"@en , "thīnamiddha"@pi ;
     skos:hiddenLabel "sleepy"@en , "drowsy"@en , "sluggish"@en , "lethargy"@en , "tired"@en .
 
 dho:RestlessnessRemorse a dho:MentalQuality ;
-    skos:prefLabel "restlessness and remorse"@en , "uddhaccakukkucca"@pi , "掉舉惡作"@zh ;
-    skos:altLabel "restlessness and worry"@en , "uddhacca-kukkucca"@pi , "掉悔"@zh ;
+    skos:prefLabel "restlessness and remorse"@en , "uddhaccakukkucca"@pi ;
+    skos:altLabel "restlessness and worry"@en , "uddhacca-kukkucca"@pi ;
     skos:hiddenLabel "restless"@en , "restlessness"@en , "agitation"@en , "worry"@en ,
                      "anxious"@en , "regret"@en , "monkey mind"@en .
 
 dho:Doubt a dho:MentalQuality ;
-    skos:prefLabel "doubt"@en , "vicikicchā"@pi , "疑"@zh ;
+    skos:prefLabel "doubt"@en , "vicikicchā"@pi ;
     skos:hiddenLabel "uncertainty"@en , "indecision"@en , "skepticism"@en .
 
 # ---------------------------------------------------------------- awakening factors
 
 dho:Mindfulness a dho:MentalQuality ;
-    skos:prefLabel "mindfulness"@en , "sati"@pi , "念"@zh ;
-    skos:altLabel "satisambojjhaṅga"@pi , "念覺支"@zh .
+    skos:prefLabel "mindfulness"@en , "sati"@pi ;
+    skos:altLabel "satisambojjhaṅga"@pi .
 
 dho:Investigation a dho:MentalQuality ;
-    skos:prefLabel "investigation of principles"@en , "dhammavicaya"@pi , "擇法"@zh ;
-    skos:altLabel "investigation of states"@en , "dhammavicayasambojjhaṅga"@pi , "擇法覺支"@zh .
+    skos:prefLabel "investigation of principles"@en , "dhammavicaya"@pi ;
+    skos:altLabel "investigation of states"@en , "dhammavicayasambojjhaṅga"@pi .
 
 dho:Energy a dho:MentalQuality ;
-    skos:prefLabel "energy"@en , "vīriya"@pi , "精進"@zh ;
-    skos:altLabel "effort"@en , "vīriyasambojjhaṅga"@pi , "精進覺支"@zh .
+    skos:prefLabel "energy"@en , "vīriya"@pi ;
+    skos:altLabel "effort"@en , "vīriyasambojjhaṅga"@pi .
 
 # Rapture sits in two lists (awakening factors AND first-jhāna factors).
 # One concept, two memberships: the reasoner will classify it as both.
 dho:Rapture a dho:MentalQuality ;
-    skos:prefLabel "rapture"@en , "pīti"@pi , "喜"@zh ;
-    skos:altLabel "joy"@en , "pītisambojjhaṅga"@pi , "喜覺支"@zh .
+    skos:prefLabel "rapture"@en , "pīti"@pi ;
+    skos:altLabel "joy"@en , "pītisambojjhaṅga"@pi .
 
 dho:Tranquility a dho:MentalQuality ;
-    skos:prefLabel "tranquility"@en , "passaddhi"@pi , "輕安"@zh ;
-    skos:altLabel "calm"@en , "passaddhisambojjhaṅga"@pi , "猗"@zh , "輕安覺支"@zh .
+    skos:prefLabel "tranquility"@en , "passaddhi"@pi ;
+    skos:altLabel "calm"@en , "passaddhisambojjhaṅga"@pi .
 
 dho:Immersion a dho:MentalQuality ;
-    skos:prefLabel "immersion"@en , "samādhi"@pi , "定"@zh ;
-    skos:altLabel "concentration"@en , "samādhisambojjhaṅga"@pi , "定覺支"@zh .
+    skos:prefLabel "immersion"@en , "samādhi"@pi ;
+    skos:altLabel "concentration"@en , "samādhisambojjhaṅga"@pi .
 
 dho:Equanimity a dho:MentalQuality ;
-    skos:prefLabel "equanimity"@en , "upekkhā"@pi , "捨"@zh ;
-    skos:altLabel "upekkhāsambojjhaṅga"@pi , "捨覺支"@zh .
+    skos:prefLabel "equanimity"@en , "upekkhā"@pi ;
+    skos:altLabel "upekkhāsambojjhaṅga"@pi .
 
 # ---------------------------------------------------------------- first-jhāna factors
 
 dho:PlacingTheMind a dho:MentalQuality ;
-    skos:prefLabel "placing the mind"@en , "vitakka"@pi , "尋"@zh ;
-    skos:altLabel "applied thought"@en , "directed thought"@en , "覺"@zh .
+    skos:prefLabel "placing the mind"@en , "vitakka"@pi ;
+    skos:altLabel "applied thought"@en , "directed thought"@en .
 
 dho:KeepingConnected a dho:MentalQuality ;
-    skos:prefLabel "keeping it connected"@en , "vicāra"@pi , "伺"@zh ;
-    skos:altLabel "sustained thought"@en , "evaluation"@en , "觀"@zh .
+    skos:prefLabel "keeping it connected"@en , "vicāra"@pi ;
+    skos:altLabel "sustained thought"@en , "evaluation"@en .
 
 dho:Bliss a dho:MentalQuality ;
-    skos:prefLabel "bliss"@en , "sukha"@pi , "樂"@zh ;
+    skos:prefLabel "bliss"@en , "sukha"@pi ;
     skos:altLabel "happiness"@en , "pleasure"@en .
 
 dho:Unification a dho:MentalQuality ;
-    skos:prefLabel "unification of mind"@en , "cittekaggatā"@pi , "心一境性"@zh ;
+    skos:prefLabel "unification of mind"@en , "cittekaggatā"@pi ;
     skos:altLabel "one-pointedness"@en .
 
 # ---------------------------------------------------------------- mind states (SN 46.53)
@@ -128,7 +126,7 @@ dho:RestlessMind a dho:MindState ;
 # ---------------------------------------------------------------- attainment (MN 43)
 
 dho:FirstJhana a dho:Attainment ;
-    skos:prefLabel "first absorption"@en , "paṭhamaṁ jhānaṁ"@pi , "初禪"@zh ;
+    skos:prefLabel "first absorption"@en , "paṭhamaṁ jhānaṁ"@pi ;
     skos:altLabel "first jhāna"@en ;
     dho:givesUp dho:FiveHindrances ;
     dho:possesses dho:FirstJhanaFactors ;

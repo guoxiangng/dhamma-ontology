@@ -83,7 +83,7 @@ Rebuild `dist/` with `python scripts/release.py`.
 | | |
 |---|---|
 | [AUDIT.md](AUDIT.md) | An independent check of every claim against the Pali and English: 82% supported, what was wrong, what was fixed |
-| [DECISIONS.md](DECISIONS.md) | Every modelling choice, who decided it, corrections (D1–D23), and a revisit list for a second pass |
+| [DECISIONS.md](DECISIONS.md) | Every modelling choice, who decided it, corrections (D1–D24), and a revisit list for a second pass |
 | [COVERAGE.md](COVERAGE.md) | Which texts are encoded, how much of each, what's left out, review status. Generated |
 | [triage/](triage/) | Collections sorted by the modelling pattern each sutta needs, before ingesting them |
 | [eval/](eval/) | A golden question set for testing whether the ontology helps an LLM answer more faithfully, and the method |
@@ -95,6 +95,7 @@ Rebuild `dist/` with `python scripts/release.py`.
 |---|---|
 | `ontology/dho-schema.ttl` | Schema: classes, and what each relation means |
 | `data/*.ttl` | Lists and qualities, SN 46.51 / 46.2 nutriments, SN 46.53 timing, SN 46 outcomes and conditions, MN 44 definition, commentary pairings, dhamma senses, coverage records |
+| `data/labels-zh.ttl` | Chinese labels: a search layer, editor-supplied; nothing rests on them (D24) |
 | `data/passages.ttl` | **Generated**: cited passages with exact English and Pali |
 | `rules/` | Rule R1 (SPARQL CONSTRUCT) |
 | `shapes/dho-shapes.ttl` | SHACL checks S1–S14 |

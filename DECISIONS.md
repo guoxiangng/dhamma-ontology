@@ -58,7 +58,7 @@ Passages are tagged with the sense they use only when it's clear. MN 10's *dhamm
 ## D9. Labels
 
 - **English preferred label:** Sujato's rendering, because that's the translation we cite. Other common renderings ("sloth and torpor", "concentration") are alternative labels.
-- **Chinese labels:** the standard Chinese Buddhist terms (五蓋, 七覺支 and so on), supplied by the editor and not cited to a text. Mind states have no Chinese label yet, rather than an invented one.
+- **Chinese labels:** the standard Chinese Buddhist terms (五蓋, 七覺支 and so on), supplied by the editor and not cited to a text. Mind states have no Chinese label yet, rather than an invented one. *Since 2026-11-17 they all live in `data/labels-zh.ttl` (D24).*
 - **Hidden labels** ("monkey mind", "sleepy"): search-only everyday words, chosen by the editor. They help resolve plain-language questions and are never shown as doctrine.
 
 ## D10. Compound hindrances are kept whole (for now)
@@ -233,6 +233,25 @@ Batch 9 (SN 46.9, 46.10, 46.39, 46.42, 46.55) needed three small calls.
 
 Also: SN 46.55's claims are "when the heart is overcome by X and the escape isn't understood, truly knowing and seeing what is good for oneself, for another and for both is absent". The reverse half (not overcome, escape understood) is left out, because the ontology has no concept for the absence of a quality, and so are its five clear-water similes (D22). SN 46.39's parasitic-tree simile is left out for the same reason: its point, a renunciate overcome by sensual pleasures, isn't modelled.
 
+## D24. Chinese labels are a separate layer
+
+*Decided by Claude after a question from the owner, 2026-11-17. Revisit.*
+
+The owner asked whether Chinese is part of the ontology or a translation layer. In practice it is a layer. The claims cite the Pali and the English, and a test checks Pali labels against the cited Pali, but nothing checks Chinese labels, and no claim, check or reasoning uses them. Their job is to let someone find a concept from a word they already use.
+
+So every Chinese label now lives in one file, `data/labels-zh.ttl`, separate from the concepts and claims. The move changed nothing in the graph: it is isomorphic before and after, 2,994 triples. New Chinese labels go there and can be added freely.
+
+Two things this does **not** mean:
+
+- **Chinese labels don't wait for the Āgamas.** They are search aids (D9). Citing a Chinese Āgama as a second witness for a claim would be a separate step. It has been proposed (start with SN 46.51 and its Saṃyukta-āgama parallel) and not started.
+- **A label is not a claim of equivalence in meaning.** Lay usage treats 慈悲 as one thing; the suttas name *mettā* (love, 慈) and *karuṇā* (compassion, 悲) separately. So 慈悲 is a search word on both, not a concept.
+
+Labels added on 2026-11-17, because the owner found that 慈悲 found nothing:
+
+- SN 46.54's four practices: preferred 慈無量, 悲無量, 喜無量, 捨無量. 慈, 悲, 喜 and 捨 are search words, and so are 慈悲, 四無量心 and 四梵住. 喜 and 捨 alone were already rapture's and equanimity's (the awakening factors), so a search for 喜 shows both.
+- The four heart's releases: 慈心解脫, 悲心解脫, 喜心解脫, 捨心解脫.
+- English: "loving-kindness" and "sympathetic joy" as alternative labels; "brahmavihara" and "four immeasurables" as search words. None of these words occur in SN 46.
+
 ## Patterns not modelled yet
 
 These kinds of teaching have come up and been left out (each logged in `data/coverage.ttl`) until a pattern is agreed:
@@ -271,6 +290,7 @@ Judgment calls a second pass should look at first. Each was made deliberately an
 | 17 | *kāmarāga* (SN 46.55) is a separate concept from the hindrance *kāmacchanda*, with a literal English label | D23 | The text sets it among the other four hindrances; a reader may take it as the hindrance under another name |
 | 18 | SN 46.42's side-by-side comparison modelled as a simile | D23 | It has no 'just as … in the same way'; it may be meant as a parallel, not an illustration |
 | 19 | SN 46.55's reverse half and its five similes left out | D23 | Half the sutta, and the clearest images in it; a pattern for the absence of a quality would bring them in |
+| 20 | Chinese labels: 慈悲, 四無量心 and the bare 喜 and 捨 as search words on SN 46.54's practices | D24 | Lay usage may expect 慈悲 to be one concept; 喜 and 捨 now return two meanings |
 | 11 | What each coverage record says was left out | `data/coverage.ttl` | Written by Claude after reading each text; a reader may see claims we missed |
 
 A revisit pass can work text by text: every claim cites its segments, every text has a coverage record with the date it was modelled, and the review view (`viz/review.html`) shows each text beside the claims resting on it.

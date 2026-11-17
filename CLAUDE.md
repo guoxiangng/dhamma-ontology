@@ -36,7 +36,7 @@ Behind a TLS-inspecting proxy, set `SSL_CERT_FILE` to your CA bundle before `sc.
 ## Conventions
 
 - **Namespace:** `dho: <https://guoxiangng.github.io/dhamma-ontology/ns#>`. Passages are `dho:p-<uid>-<segment>`, texts `dho:t-<uid>`.
-- **Labels (D9):** English preferred label = Sujato's rendering; Pali from the text; Chinese = the standard term, editor-supplied; hidden labels only for real everyday words.
+- **Labels (D9):** English preferred label = Sujato's rendering; Pali from the text; Chinese = the standard term, editor-supplied, and kept in `data/labels-zh.ttl` (D24), never in the concept files; hidden labels only for real everyday words.
 - **Classes like Hindrance are defined by list membership (D3).** Never type them by hand. `dho:counters` comes only from rule R1 (S9).
 - **One claim stated in several suttas is one node with several citations (D12).**
 - **New checks:** a new SHACL shape gets a broken fixture in `tests/broken/` and a line in `tests/test_ontology.py`.

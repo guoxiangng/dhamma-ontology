@@ -80,7 +80,9 @@ def test_rule_r1_derives_exactly_two_pairs(graph):
 def test_resolve_finds_hindrance_and_mind_state(graph):
     assert set(dho.resolve(graph, "monkey mind")) == {dho.DHO.RestlessnessRemorse, dho.DHO.RestlessMind}
     assert dho.resolve(graph, "uddhacca kukkucca") == [dho.DHO.RestlessnessRemorse]
-    assert dho.resolve(graph, "喜") == [dho.DHO.Rapture]
+    # 喜 is the standard Chinese for both pīti (rapture) and muditā (rejoicing); D24 shows both.
+    assert set(dho.resolve(graph, "喜")) == {dho.DHO.Rapture, dho.DHO.Rejoicing}
+    assert set(dho.resolve(graph, "慈悲")) == {dho.DHO.Love, dho.DHO.Compassion}
 
 
 @pytest.mark.parametrize("fixture, expected", [

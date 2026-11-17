@@ -5,12 +5,12 @@
 # and dho:image is sliced from the source files, never typed. Read Pali first (D19).
 
 dho:AppearanceOfRealizedOne a dho:Concept ;
-    skos:prefLabel "the appearance of a Realized One"@en , "tathāgatassa pātubhāva"@pi , "如來出世"@zh ;
+    skos:prefLabel "the appearance of a Realized One"@en , "tathāgatassa pātubhāva"@pi ;
     skos:altLabel "the appearance of a Buddha"@en ;
     skos:note "'A Realized One, a perfected one, a fully awakened Buddha' (tathāgata arahant sammāsambuddha), SN 46.9 and 46.42."@en .
 
 dho:SugataVinaya a dho:Concept ;
-    skos:prefLabel "the Holy One's training"@en , "sugatavinaya"@pi , "善逝律"@zh .
+    skos:prefLabel "the Holy One's training"@en , "sugatavinaya"@pi .
 
 dho:SensualLust a dho:Concept ;
     skos:prefLabel "sensual lust"@en , "kāmarāga"@pi ;

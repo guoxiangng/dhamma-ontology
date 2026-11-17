@@ -1,5 +1,5 @@
 # dhamma-ontology: https://github.com/guoxiangng/dhamma-ontology
-# Inferred: after OWL RL reasoning (+6655 triples) and rule R1 (+16).
+# Inferred: after OWL RL reasoning (+6677 triples) and rule R1 (+16).
 # Sutta text from SuttaCentral (CC0): English by Bhikkhu Sujato, Pali from the Mahāsaṅgīti edition.
 # Personal learning project; modelling unreviewed. See COVERAGE.md and DECISIONS.md.
 
@@ -937,7 +937,7 @@ dho:lex-dhamma a ontolex:LexicalEntry,
         ontolex:Word ;
     owl:sameAs dho:lex-dhamma ;
     skos:note "Sanskrit dharma; Chinese 法. Kept as one Pali entry for v0.1."@en ;
-    ontolex:canonicalForm _:n4340a462f6f04c19819d30175046c503b1 ;
+    ontolex:canonicalForm _:n7d996dd21d544f9ead97707c73f9ffc9b1 ;
     ontolex:sense dho:sense-dhamma-mind-object,
         dho:sense-dhamma-phenomenon,
         dho:sense-dhamma-quality,
@@ -11845,6 +11845,8 @@ dho:ta-12 a owl:Thing,
 
 "love"@en owl:sameAs "love"@en .
 
+"loving-kindness"@en owl:sameAs "loving-kindness"@en .
+
 "low energy"@en owl:sameAs "low energy"@en .
 
 "lust"@en owl:sameAs "lust"@en .
@@ -12038,6 +12040,8 @@ dho:ta-12 a owl:Thing,
 "supports the development of"@en owl:sameAs "supports the development of"@en .
 
 "sustained thought"@en owl:sameAs "sustained thought"@en .
+
+"sympathetic joy"@en owl:sameAs "sympathetic joy"@en .
 
 "target"@en owl:sameAs "target"@en .
 
@@ -13505,7 +13509,11 @@ dho:ta-12 a owl:Thing,
 
 "善逝律"@zh owl:sameAs "善逝律"@zh .
 
-"喜"@zh owl:sameAs "喜"@zh .
+"喜心"@zh owl:sameAs "喜心"@zh .
+
+"喜心解脫"@zh owl:sameAs "喜心解脫"@zh .
+
+"喜無量"@zh owl:sameAs "喜無量"@zh .
 
 "喜覺支"@zh owl:sameAs "喜覺支"@zh .
 
@@ -13529,11 +13537,27 @@ dho:ta-12 a owl:Thing,
 
 "念覺支"@zh owl:sameAs "念覺支"@zh .
 
+"悲"@zh owl:sameAs "悲"@zh .
+
+"悲心"@zh owl:sameAs "悲心"@zh .
+
+"悲心解脫"@zh owl:sameAs "悲心解脫"@zh .
+
+"悲無量"@zh owl:sameAs "悲無量"@zh .
+
 "惛沈"@zh owl:sameAs "惛沈"@zh .
 
 "惛沈睡眠"@zh owl:sameAs "惛沈睡眠"@zh .
 
 "惡作"@zh owl:sameAs "惡作"@zh .
+
+"慈"@zh owl:sameAs "慈"@zh .
+
+"慈心"@zh owl:sameAs "慈心"@zh .
+
+"慈心解脫"@zh owl:sameAs "慈心解脫"@zh .
+
+"慈無量"@zh owl:sameAs "慈無量"@zh .
 
 "慢"@zh owl:sameAs "慢"@zh .
 
@@ -13541,7 +13565,11 @@ dho:ta-12 a owl:Thing,
 
 "戒"@zh owl:sameAs "戒"@zh .
 
-"捨"@zh owl:sameAs "捨"@zh .
+"捨心"@zh owl:sameAs "捨心"@zh .
+
+"捨心解脫"@zh owl:sameAs "捨心解脫"@zh .
+
+"捨無量"@zh owl:sameAs "捨無量"@zh .
 
 "捨覺支"@zh owl:sameAs "捨覺支"@zh .
 
@@ -13607,12 +13635,14 @@ dho:ta-12 a owl:Thing,
 
 "輕安覺支"@zh owl:sameAs "輕安覺支"@zh .
 
+"隨喜"@zh owl:sameAs "隨喜"@zh .
+
 "食"@zh owl:sameAs "食"@zh .
 
 owl:Nothing a owl:Class ;
-    rdfs:subClassOf _:n3a73a91b149a48dc9556c74e6514d3e2b1,
-        _:n3a73a91b149a48dc9556c74e6514d3e2b2,
-        _:n3a73a91b149a48dc9556c74e6514d3e2b3,
+    rdfs:subClassOf _:nc931e5be73c94ee39c5f5af38e7534c0b1,
+        _:nc931e5be73c94ee39c5f5af38e7534c0b2,
+        _:nc931e5be73c94ee39c5f5af38e7534c0b3,
         owl:Nothing,
         owl:Thing,
         skos:Collection,
@@ -13689,8 +13719,16 @@ dho:Compassion a owl:Thing,
         dho:Concept,
         dho:Practice ;
     owl:sameAs dho:Compassion ;
+    skos:hiddenLabel "brahmavihara"@en,
+        "four immeasurables"@en,
+        "四梵住"@zh,
+        "四無量心"@zh,
+        "悲"@zh,
+        "悲心"@zh,
+        "慈悲"@zh ;
     skos:prefLabel "compassion"@en,
-        "karuṇā"@pi ;
+        "karuṇā"@pi,
+        "悲無量"@zh ;
     skos:related dho:HeartsReleaseByCompassion ;
     dho:editorialRelated dho:HeartsReleaseByCompassion .
 
@@ -13763,8 +13801,15 @@ dho:EquanimityImmeasurable a owl:Thing,
         dho:Concept,
         dho:Practice ;
     owl:sameAs dho:EquanimityImmeasurable ;
+    skos:hiddenLabel "brahmavihara"@en,
+        "four immeasurables"@en,
+        "四梵住"@zh,
+        "四無量心"@zh,
+        "捨"@zh,
+        "捨心"@zh ;
     skos:prefLabel "equanimity"@en,
-        "upekkhā"@pi ;
+        "upekkhā"@pi,
+        "捨無量"@zh ;
     skos:related dho:Equanimity,
         dho:HeartsReleaseByEquanimity ;
     dho:editorialRelated dho:Equanimity,
@@ -13870,8 +13915,17 @@ dho:Love a owl:Thing,
         dho:Concept,
         dho:Practice ;
     owl:sameAs dho:Love ;
+    skos:altLabel "loving-kindness"@en ;
+    skos:hiddenLabel "brahmavihara"@en,
+        "four immeasurables"@en,
+        "四梵住"@zh,
+        "四無量心"@zh,
+        "慈"@zh,
+        "慈心"@zh,
+        "慈悲"@zh ;
     skos:prefLabel "love"@en,
-        "mettā"@pi ;
+        "mettā"@pi,
+        "慈無量"@zh ;
     skos:related dho:o-metta ;
     dho:editorialRelated dho:o-metta .
 
@@ -13943,8 +13997,17 @@ dho:Rejoicing a owl:Thing,
         dho:Concept,
         dho:Practice ;
     owl:sameAs dho:Rejoicing ;
+    skos:altLabel "sympathetic joy"@en ;
+    skos:hiddenLabel "brahmavihara"@en,
+        "four immeasurables"@en,
+        "喜"@zh,
+        "喜心"@zh,
+        "四梵住"@zh,
+        "四無量心"@zh,
+        "隨喜"@zh ;
     skos:prefLabel "rejoicing"@en,
-        "muditā"@pi ;
+        "muditā"@pi,
+        "喜無量"@zh ;
     skos:related dho:HeartsReleaseByRejoicing ;
     dho:editorialRelated dho:HeartsReleaseByRejoicing .
 
@@ -14093,13 +14156,13 @@ dho:conditioned a owl:FunctionalProperty,
 dho:counters a owl:ObjectProperty ;
     rdfs:label "counters"@en ;
     rdfs:comment "Derived by rule R1: the same object, attended to rationally, both fuels this awakening factor and starves that hindrance (SN 46.51). The sutta never states it directly."@en ;
-    rdfs:domain _:n3a73a91b149a48dc9556c74e6514d3e2b2,
+    rdfs:domain _:nc931e5be73c94ee39c5f5af38e7534c0b2,
         owl:Thing,
         skos:Concept,
         dho:AwakeningFactor,
         dho:Concept,
         dho:MentalQuality ;
-    rdfs:range _:n3a73a91b149a48dc9556c74e6514d3e2b1,
+    rdfs:range _:nc931e5be73c94ee39c5f5af38e7534c0b1,
         owl:Thing,
         skos:Concept,
         dho:Concept,
@@ -14160,7 +14223,7 @@ dho:develop a owl:ObjectProperty ;
     rdfs:label "develop"@en ;
     rdfs:domain owl:Thing,
         dho:TimingAdvice ;
-    rdfs:range _:n3a73a91b149a48dc9556c74e6514d3e2b2,
+    rdfs:range _:nc931e5be73c94ee39c5f5af38e7534c0b2,
         owl:Thing,
         skos:Concept,
         dho:AwakeningFactor,
@@ -15061,7 +15124,7 @@ dho:target a owl:ObjectProperty ;
     rdfs:label "target"@en ;
     rdfs:domain owl:Thing,
         dho:Opposition ;
-    rdfs:range _:n3a73a91b149a48dc9556c74e6514d3e2b1,
+    rdfs:range _:nc931e5be73c94ee39c5f5af38e7534c0b1,
         owl:Thing,
         skos:Concept,
         dho:Concept,
@@ -15339,11 +15402,17 @@ dho:wording a owl:DatatypeProperty ;
 
 "“Sūriyassa, bhikkhave, udayato etaṁ pubbaṅgamaṁ etaṁ pubbanimittaṁ, yadidaṁ—aruṇuggaṁ;"@pi owl:sameAs "“Sūriyassa, bhikkhave, udayato etaṁ pubbaṅgamaṁ etaṁ pubbanimittaṁ, yadidaṁ—aruṇuggaṁ;"@pi .
 
+"喜"@zh owl:sameAs "喜"@zh .
+
+"慈悲"@zh owl:sameAs "慈悲"@zh .
+
+"捨"@zh owl:sameAs "捨"@zh .
+
 "睡眠"@zh owl:sameAs "睡眠"@zh .
 
 owl:Restriction owl:sameAs owl:Restriction .
 
-dho:Bliss a _:n3a73a91b149a48dc9556c74e6514d3e2b3,
+dho:Bliss a _:nc931e5be73c94ee39c5f5af38e7534c0b3,
         owl:Thing,
         skos:Concept,
         dho:Concept,
@@ -15398,23 +15467,26 @@ dho:HeartsReleaseByCompassion a owl:Thing,
         dho:Concept ;
     owl:sameAs dho:HeartsReleaseByCompassion ;
     skos:prefLabel "the heart's release by compassion"@en,
-        "karuṇācetovimutti"@pi .
+        "karuṇācetovimutti"@pi,
+        "悲心解脫"@zh .
 
 dho:HeartsReleaseByEquanimity a owl:Thing,
         skos:Concept,
         dho:Concept ;
     owl:sameAs dho:HeartsReleaseByEquanimity ;
     skos:prefLabel "the heart's release by equanimity"@en,
-        "upekkhācetovimutti"@pi .
+        "upekkhācetovimutti"@pi,
+        "捨心解脫"@zh .
 
 dho:HeartsReleaseByRejoicing a owl:Thing,
         skos:Concept,
         dho:Concept ;
     owl:sameAs dho:HeartsReleaseByRejoicing ;
     skos:prefLabel "the heart's release by rejoicing"@en,
-        "muditācetovimutti"@pi .
+        "muditācetovimutti"@pi,
+        "喜心解脫"@zh .
 
-dho:KeepingConnected a _:n3a73a91b149a48dc9556c74e6514d3e2b3,
+dho:KeepingConnected a _:nc931e5be73c94ee39c5f5af38e7534c0b3,
         owl:Thing,
         skos:Concept,
         dho:Concept,
@@ -15429,7 +15501,7 @@ dho:KeepingConnected a _:n3a73a91b149a48dc9556c74e6514d3e2b3,
         "伺"@zh ;
     dho:memberOf dho:FirstJhanaFactors .
 
-dho:PlacingTheMind a _:n3a73a91b149a48dc9556c74e6514d3e2b3,
+dho:PlacingTheMind a _:nc931e5be73c94ee39c5f5af38e7534c0b3,
         owl:Thing,
         skos:Concept,
         dho:Concept,
@@ -15983,7 +16055,7 @@ dho:HasApex a owl:Thing,
     rdfs:comment "parama: 'the apex of X is Y, for a wise mendicant here who has not penetrated to a higher freedom' (SN 46.54, D21)."@en ;
     owl:sameAs dho:HasApex .
 
-dho:Unification a _:n3a73a91b149a48dc9556c74e6514d3e2b3,
+dho:Unification a _:nc931e5be73c94ee39c5f5af38e7534c0b3,
         owl:Thing,
         skos:Concept,
         dho:Concept,
@@ -16010,7 +16082,8 @@ dho:o-metta a owl:Thing,
         dho:Concept ;
     owl:sameAs dho:o-metta ;
     skos:prefLabel "the heart's release by love"@en,
-        "mettācetovimutti"@pi .
+        "mettācetovimutti"@pi,
+        "慈心解脫"@zh .
 
 dho:o-qualities a owl:Thing,
         skos:Concept,
@@ -16385,9 +16458,17 @@ dho:t-sn46.5 a owl:Thing,
 
 "There are the elements of initiative, persistence, and exertion."@en owl:sameAs "There are the elements of initiative, persistence, and exertion."@en .
 
+"brahmavihara"@en owl:sameAs "brahmavihara"@en .
+
+"four immeasurables"@en owl:sameAs "four immeasurables"@en .
+
 "Atthi, bhikkhave, ārambhadhātu nikkamadhātu parakkamadhātu."@pi owl:sameAs "Atthi, bhikkhave, ārambhadhātu nikkamadhātu parakkamadhātu."@pi .
 
 "satta bojjhaṅgā."@pi owl:sameAs "satta bojjhaṅgā."@pi .
+
+"四梵住"@zh owl:sameAs "四梵住"@zh .
+
+"四無量心"@zh owl:sameAs "四無量心"@zh .
 
 "法"@zh owl:sameAs "法"@zh .
 
@@ -17065,7 +17146,7 @@ dho:DivisionBasis a owl:Class ;
     owl:equivalentClass dho:DivisionBasis ;
     owl:sameAs dho:DivisionBasis .
 
-dho:Mindfulness a _:n3a73a91b149a48dc9556c74e6514d3e2b2,
+dho:Mindfulness a _:nc931e5be73c94ee39c5f5af38e7534c0b2,
         owl:Thing,
         skos:Concept,
         dho:AwakeningFactor,
@@ -17142,7 +17223,7 @@ dho:Derivation a owl:Class ;
     owl:equivalentClass dho:Derivation ;
     owl:sameAs dho:Derivation .
 
-dho:IllWill a _:n3a73a91b149a48dc9556c74e6514d3e2b1,
+dho:IllWill a _:nc931e5be73c94ee39c5f5af38e7534c0b1,
         owl:Thing,
         skos:Concept,
         dho:Concept,
@@ -17161,7 +17242,7 @@ dho:IllWill a _:n3a73a91b149a48dc9556c74e6514d3e2b1,
     dho:memberOf dho:FiveCorruptionsOfMind,
         dho:FiveHindrances .
 
-dho:Tranquility a _:n3a73a91b149a48dc9556c74e6514d3e2b2,
+dho:Tranquility a _:nc931e5be73c94ee39c5f5af38e7534c0b2,
         owl:Thing,
         skos:Concept,
         dho:AwakeningFactor,
@@ -17196,7 +17277,7 @@ dho:Arises a owl:Thing,
     rdfs:label "arise"@en ;
     owl:sameAs dho:Arises .
 
-dho:Energy a _:n3a73a91b149a48dc9556c74e6514d3e2b2,
+dho:Energy a _:nc931e5be73c94ee39c5f5af38e7534c0b2,
         owl:Thing,
         skos:Concept,
         dho:AwakeningFactor,
@@ -17212,7 +17293,7 @@ dho:Energy a _:n3a73a91b149a48dc9556c74e6514d3e2b2,
     dho:counters dho:DullnessDrowsiness ;
     dho:memberOf dho:SevenAwakeningFactors .
 
-dho:Equanimity a _:n3a73a91b149a48dc9556c74e6514d3e2b2,
+dho:Equanimity a _:nc931e5be73c94ee39c5f5af38e7534c0b2,
         owl:Thing,
         skos:Concept,
         dho:AwakeningFactor,
@@ -17226,7 +17307,7 @@ dho:Equanimity a _:n3a73a91b149a48dc9556c74e6514d3e2b2,
         "捨"@zh ;
     dho:memberOf dho:SevenAwakeningFactors .
 
-dho:Immersion a _:n3a73a91b149a48dc9556c74e6514d3e2b2,
+dho:Immersion a _:nc931e5be73c94ee39c5f5af38e7534c0b2,
         owl:Thing,
         skos:Concept,
         dho:AwakeningFactor,
@@ -17241,7 +17322,7 @@ dho:Immersion a _:n3a73a91b149a48dc9556c74e6514d3e2b2,
         "定"@zh ;
     dho:memberOf dho:SevenAwakeningFactors .
 
-dho:Investigation a _:n3a73a91b149a48dc9556c74e6514d3e2b2,
+dho:Investigation a _:nc931e5be73c94ee39c5f5af38e7534c0b2,
         owl:Thing,
         skos:Concept,
         dho:AwakeningFactor,
@@ -17265,7 +17346,7 @@ dho:Opposition a owl:Class ;
     owl:equivalentClass dho:Opposition ;
     owl:sameAs dho:Opposition .
 
-dho:SensualDesire a _:n3a73a91b149a48dc9556c74e6514d3e2b1,
+dho:SensualDesire a _:nc931e5be73c94ee39c5f5af38e7534c0b1,
         owl:Thing,
         skos:Concept,
         dho:Concept,
@@ -17344,7 +17425,7 @@ dho:t-sn46.40 a owl:Thing,
 
 "Tattha ayonisomanasikārabahulīkāro—"@pi owl:sameAs "Tattha ayonisomanasikārabahulīkāro—"@pi .
 
-dho:Doubt a _:n3a73a91b149a48dc9556c74e6514d3e2b1,
+dho:Doubt a _:nc931e5be73c94ee39c5f5af38e7534c0b1,
         owl:Thing,
         skos:Concept,
         dho:Concept,
@@ -17371,17 +17452,17 @@ dho:JhanaFactor a owl:Class ;
     rdfs:label "Factor of the first jhāna"@en,
         "jhānaṅga"@pi,
         "禪支"@zh ;
-    rdfs:subClassOf _:n3a73a91b149a48dc9556c74e6514d3e2b3,
+    rdfs:subClassOf _:nc931e5be73c94ee39c5f5af38e7534c0b3,
         owl:Thing,
         skos:Concept,
         dho:Concept,
         dho:JhanaFactor,
         dho:MentalQuality ;
-    owl:equivalentClass _:n3a73a91b149a48dc9556c74e6514d3e2b3,
+    owl:equivalentClass _:nc931e5be73c94ee39c5f5af38e7534c0b3,
         dho:JhanaFactor ;
     owl:sameAs dho:JhanaFactor .
 
-dho:RestlessnessRemorse a _:n3a73a91b149a48dc9556c74e6514d3e2b1,
+dho:RestlessnessRemorse a _:nc931e5be73c94ee39c5f5af38e7534c0b1,
         owl:Thing,
         skos:Concept,
         dho:Concept,
@@ -17415,7 +17496,7 @@ dho:Hindrance a owl:Class ;
     rdfs:label "Hindrance"@en,
         "nīvaraṇa"@pi,
         "蓋"@zh ;
-    rdfs:subClassOf _:n3a73a91b149a48dc9556c74e6514d3e2b1,
+    rdfs:subClassOf _:nc931e5be73c94ee39c5f5af38e7534c0b1,
         owl:Thing,
         skos:Concept,
         dho:Concept,
@@ -17423,12 +17504,12 @@ dho:Hindrance a owl:Class ;
         dho:MentalQuality ;
     owl:disjointWith dho:AwakeningFactor,
         dho:JhanaFactor ;
-    owl:equivalentClass _:n3a73a91b149a48dc9556c74e6514d3e2b1,
+    owl:equivalentClass _:nc931e5be73c94ee39c5f5af38e7534c0b1,
         dho:Hindrance ;
     owl:sameAs dho:Hindrance .
 
-dho:Rapture a _:n3a73a91b149a48dc9556c74e6514d3e2b2,
-        _:n3a73a91b149a48dc9556c74e6514d3e2b3,
+dho:Rapture a _:nc931e5be73c94ee39c5f5af38e7534c0b2,
+        _:nc931e5be73c94ee39c5f5af38e7534c0b3,
         owl:Thing,
         skos:Concept,
         dho:AwakeningFactor,
@@ -17445,7 +17526,7 @@ dho:Rapture a _:n3a73a91b149a48dc9556c74e6514d3e2b2,
     dho:memberOf dho:FirstJhanaFactors,
         dho:SevenAwakeningFactors .
 
-dho:DullnessDrowsiness a _:n3a73a91b149a48dc9556c74e6514d3e2b1,
+dho:DullnessDrowsiness a _:nc931e5be73c94ee39c5f5af38e7534c0b1,
         owl:Thing,
         skos:Concept,
         dho:Concept,
@@ -17566,13 +17647,13 @@ dho:AwakeningFactor a owl:Class ;
     rdfs:label "Awakening factor"@en,
         "bojjhaṅga"@pi,
         "覺支"@zh ;
-    rdfs:subClassOf _:n3a73a91b149a48dc9556c74e6514d3e2b2,
+    rdfs:subClassOf _:nc931e5be73c94ee39c5f5af38e7534c0b2,
         owl:Thing,
         skos:Concept,
         dho:AwakeningFactor,
         dho:Concept,
         dho:MentalQuality ;
-    owl:equivalentClass _:n3a73a91b149a48dc9556c74e6514d3e2b2,
+    owl:equivalentClass _:nc931e5be73c94ee39c5f5af38e7534c0b2,
         dho:AwakeningFactor ;
     owl:sameAs dho:AwakeningFactor .
 
@@ -18000,46 +18081,46 @@ owl:Thing a owl:Class ;
     owl:equivalentClass owl:Thing ;
     owl:sameAs owl:Thing .
 
-_:n4340a462f6f04c19819d30175046c503b1 a ontolex:Form ;
-    owl:sameAs _:n4340a462f6f04c19819d30175046c503b1 ;
+_:n7d996dd21d544f9ead97707c73f9ffc9b1 a ontolex:Form ;
+    owl:sameAs _:n7d996dd21d544f9ead97707c73f9ffc9b1 ;
     ontolex:writtenRep "dhamma"@pi .
 
-_:n3a73a91b149a48dc9556c74e6514d3e2b3 a owl:Restriction ;
-    rdfs:subClassOf _:n3a73a91b149a48dc9556c74e6514d3e2b3,
+_:nc931e5be73c94ee39c5f5af38e7534c0b3 a owl:Restriction ;
+    rdfs:subClassOf _:nc931e5be73c94ee39c5f5af38e7534c0b3,
         owl:Thing,
         skos:Concept,
         dho:Concept,
         dho:JhanaFactor,
         dho:MentalQuality ;
-    owl:equivalentClass _:n3a73a91b149a48dc9556c74e6514d3e2b3,
+    owl:equivalentClass _:nc931e5be73c94ee39c5f5af38e7534c0b3,
         dho:JhanaFactor ;
     owl:hasValue dho:FirstJhanaFactors ;
     owl:onProperty dho:memberOf ;
-    owl:sameAs _:n3a73a91b149a48dc9556c74e6514d3e2b3 .
+    owl:sameAs _:nc931e5be73c94ee39c5f5af38e7534c0b3 .
 
-_:n3a73a91b149a48dc9556c74e6514d3e2b1 a owl:Restriction ;
-    rdfs:subClassOf _:n3a73a91b149a48dc9556c74e6514d3e2b1,
+_:nc931e5be73c94ee39c5f5af38e7534c0b1 a owl:Restriction ;
+    rdfs:subClassOf _:nc931e5be73c94ee39c5f5af38e7534c0b1,
         owl:Thing,
         skos:Concept,
         dho:Concept,
         dho:Hindrance,
         dho:MentalQuality ;
-    owl:equivalentClass _:n3a73a91b149a48dc9556c74e6514d3e2b1,
+    owl:equivalentClass _:nc931e5be73c94ee39c5f5af38e7534c0b1,
         dho:Hindrance ;
     owl:hasValue dho:FiveHindrances ;
     owl:onProperty dho:memberOf ;
-    owl:sameAs _:n3a73a91b149a48dc9556c74e6514d3e2b1 .
+    owl:sameAs _:nc931e5be73c94ee39c5f5af38e7534c0b1 .
 
-_:n3a73a91b149a48dc9556c74e6514d3e2b2 a owl:Restriction ;
-    rdfs:subClassOf _:n3a73a91b149a48dc9556c74e6514d3e2b2,
+_:nc931e5be73c94ee39c5f5af38e7534c0b2 a owl:Restriction ;
+    rdfs:subClassOf _:nc931e5be73c94ee39c5f5af38e7534c0b2,
         owl:Thing,
         skos:Concept,
         dho:AwakeningFactor,
         dho:Concept,
         dho:MentalQuality ;
-    owl:equivalentClass _:n3a73a91b149a48dc9556c74e6514d3e2b2,
+    owl:equivalentClass _:nc931e5be73c94ee39c5f5af38e7534c0b2,
         dho:AwakeningFactor ;
     owl:hasValue dho:SevenAwakeningFactors ;
     owl:onProperty dho:memberOf ;
-    owl:sameAs _:n3a73a91b149a48dc9556c74e6514d3e2b2 .
+    owl:sameAs _:nc931e5be73c94ee39c5f5af38e7534c0b2 .
 
