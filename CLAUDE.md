@@ -23,6 +23,7 @@ Use the `add-text` skill (`.claude/skills/add-text/SKILL.md`). It covers fetchin
 python scripts/dho.py check                    # reason + rule R1 + SHACL; must be 0 violations
 python -m pytest -q -p no:cacheprovider tests  # clean data passes; tests/broken/* each caught
 python eval/check_gold.py                      # gold answers: segments exist, Pali terms match
+python eval/run.py plan                        # eval dry run: no model calls, cost estimate (see eval/README.md)
 python scripts/coverage.py                     # regenerate COVERAGE.md
 python scripts/export_graph.py                 # rebuild viz/graph.html
 python scripts/export_review.py                # rebuild viz/review.html (segment-by-segment review)

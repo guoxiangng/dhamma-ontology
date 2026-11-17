@@ -254,8 +254,8 @@ status = "draft"
 
 [[q]]
 id = "Q17"
-category = "partial"
-scope = "partial"
+category = "recall"
+scope = "covered"
 question = "What simile does SN 46.53 use to show why tranquility is the wrong thing to develop when the mind is sluggish?"
 gold = ["Trying to make a small fire flare up while tossing wet grass, cow-dung and timber on it, spraying it with water and scattering dirt on it: it can't flare up."]
 segments = ["sn46.53:5.1", "sn46.53:5.2", "sn46.53:5.3", "sn46.53:5.4"]
@@ -263,7 +263,7 @@ also_ok = []
 must_not = []
 layer = "sutta"
 status = "draft"
-note = "The fire similes were left out of the ontology (see COVERAGE.md). A system using the ontology should say so, not invent an answer."
+note = "Was a partial question (left out of the ontology, so B should win it) until the fire similes were added on 2026-11-16 (D22). Now covered; Q40 takes over that role."
 
 # ------------------------------------------------------------------ traps: popular but unsupported
 
