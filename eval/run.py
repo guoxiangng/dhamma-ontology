@@ -35,9 +35,10 @@ import systems as S  # noqa: E402
 QUESTIONS = HERE / "questions.toml"
 REGION = os.environ.get("EVAL_AWS_REGION", "ap-southeast-1")
 ANSWER_MODEL = "global.anthropic.claude-haiku-5-5"
-JUDGE_MODEL = "global.anthropic.claude-sonnet-5-5"
+JUDGES = {"haiku": "global.anthropic.claude-haiku-5-5", "sonnet": "global.anthropic.claude-sonnet-5-5"}
+JUDGE_MODEL = JUDGES["haiku"]  # set by --judge
 # US$ per million tokens, input / output (Anthropic list prices; Haiku 5.5's rate is for prompts under 100K).
-PRICE = {ANSWER_MODEL: (0.10, 0.50), JUDGE_MODEL: (2.00, 10.00)}
+PRICE = {JUDGES["haiku"]: (0.10, 0.50), JUDGES["sonnet"]: (2.00, 10.00)}
 MAX_TURNS = 8
 
 
@@ -422,6 +423,8 @@ def main() -> int:
     sub = p.add_subparsers(dest="cmd", required=True)
     for name in ("plan", "run"):
         sp = sub.add_parser(name)
+        sp.add_argument("--judge", choices=sorted(JUDGES), default="haiku",
+                        help="marking model: haiku (default, ~20x cheaper) or sonnet")
         sp.add_argument("--only", help="comma-separated question ids")
         sp.add_argument("--systems", default="A,B,C")
         sp.add_argument("--runs", type=int, default=3)
@@ -436,6 +439,10 @@ def main() -> int:
     sp.add_argument("name")
     sp.add_argument("args", nargs="?", default="")
     a = p.parse_args()
+    global JUDGE_MODEL
+    JUDGE_MODEL = JUDGES[getattr(a, "judge", "haiku")]
+    if a.cmd == "report" and (Path(a.out) / "config.json").exists():
+        JUDGE_MODEL = json.loads((Path(a.out) / "config.json").read_text(encoding="utf-8"))["judge_model"]
     sys.stdout.reconfigure(encoding="utf-8")
     return {"plan": cmd_plan, "run": cmd_run, "report": cmd_report, "tool": cmd_tool}[a.cmd](a)
 

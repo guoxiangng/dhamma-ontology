@@ -18,7 +18,7 @@ The question this answers: for questions about the suttas, does an LLM do better
 $PY eval/check_gold.py                                    # gold answers: segments exist, Pali terms match
 $PY eval/run.py plan                                      # dry run: no model calls; sizes and cost estimate
 $PY eval/run.py tool C lookup "monkey mind"               # try one of B's or C's tools, no model
-$PY eval/run.py run --out eval/results/<name> --cap 15    # the real run (resumable; stops at the cap)
+$PY eval/run.py run --out eval/results/<name> --cap 3     # the real run (resumable; stops at the cap)
 $PY eval/run.py report --out eval/results/<name>          # rebuild summary.md from the logs
 ```
 
@@ -29,9 +29,9 @@ On your machine. Model calls go to Amazon Bedrock through your default AWS profi
 | Role | Model |
 |---|---|
 | Answers (A, B and C) | Claude Haiku 5.5 (`global.anthropic.claude-haiku-5-5`), effort medium |
-| Judge | Claude Sonnet 5.5 (`global.anthropic.claude-sonnet-5-5`), effort medium |
+| Judge | Claude Haiku 5.5 by default; `--judge sonnet` for Claude Sonnet 5.5 (about 20 times the cost). Effort medium |
 
-A smaller model answers on purpose: if structure helps, it should help most where the model knows least. The judge is a stronger model from the same family; the owner checks its verdicts (below).
+A smaller model answers on purpose: if structure helps, it should help most where the model knows least. Haiku as judge keeps a full run near $1.65 (Sonnet: about $13). A model marking its own family's answers may be lenient, so the owner checks the judge's verdicts (below), and a sample can be re-marked with `--judge sonnet` into a separate results folder.
 
 ## Systems compared
 
