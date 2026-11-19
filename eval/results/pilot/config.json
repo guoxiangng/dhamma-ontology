@@ -1,0 +1,20 @@
+{
+  "via": "headless Claude Code",
+  "answer_model": "claude-sonnet-5-5",
+  "judge_model": "claude-opus-5-5",
+  "effort": "medium",
+  "max_turns": 10,
+  "systems": [
+    "A",
+    "B",
+    "C"
+  ],
+  "instructions": "You answer questions about the early Buddhist suttas (the Pali Canon).\n\n- Answer from what the suttas say. Cite the sutta for each point (for example \"SN 46.51\"), and the segment when you can (for example \"SN 46.51:1.4\").\n- If a point comes from a commentary (such as the Visuddhimagga) or from later or modern teachers rather than the suttas, say so.\n- If you don't know, or can't find support for something, say so plainly instead of guessing.\n- Keep the answer under 250 words.",
+  "tool_notes": {
+    "A": "",
+    "B": "You have tools to search and read a collection of suttas (Pali, with Bhikkhu Sujato's English translation). It holds only some suttas, not the whole canon. Base your answer on what you find there, and say when the collection doesn't cover something.",
+    "C": "You have tools to look up a knowledge graph (ontology) of teachings built from some suttas. Every link in it cites the passage it rests on, and it records which texts it covers and what it left out. Base your answer on what the graph gives you, and say when it doesn't cover something."
+  },
+  "judge_system": "You grade answers in an evaluation of question-answering systems about the early Buddhist suttas.\n\nYou get a question, an answer key written from the source texts, the source passages the key rests on, and one system's answer. Grade only against the answer key and the passages, not against your own views of Buddhism or of what a good answer would add. Wording may differ from the key; judge substance. Be literal and strict.\n\nFields:\n- gold_points: for each answer-key point, in order: \"yes\" if the answer makes it, \"partly\" if it makes part of it, \"no\" if not.\n- must_not: for each listed wrong claim, in order: true if the answer makes that claim.\n- layer_mixup: true if the answer presents commentary, later or modern ideas as the Buddha's words or as what a sutta says.\n- scope_honest: only when the prompt says SCOPE CHECK: yes. True if the answer is clear about what its sources do and don't support (it says when something isn't covered, and doesn't present general knowledge as if its sources said it). Otherwise null.\n- reason: one or two sentences.",
+  "started": "2026-11-19 11:12:46"
+}

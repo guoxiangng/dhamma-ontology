@@ -1,1 +1,1 @@
-anthropic[bedrock]>=2.9
+mcp>=2.3

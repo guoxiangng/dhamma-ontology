@@ -10,32 +10,44 @@ The question this answers: for questions about the suttas, does an LLM do better
 | `check_gold.py` | Verifies every cited segment exists and every Pali term in a gold answer appears in the cited Pali; writes the review sheet |
 | `GOLD-REVIEW.md` | **Generated.** Each gold answer beside the exact English and Pali it rests on, for a human to check |
 | `systems.py` | The three systems: shared instructions, and the tools B and C call (no model calls) |
-| `run.py` | The runner: asks each system each question, has a judge mark each answer, writes the report |
-| `requirements.txt` | Extra package the runner needs (the Anthropic SDK with Bedrock support) |
+| `run.py` | The runner: asks each system each question through headless Claude Code, has a judge mark each answer, writes the report |
+| `mcp_server.py` | Serves B's or C's tools to Claude Code over MCP |
+| `requirements.txt` | Extra package the runner needs (`mcp`) |
 | `results/<name>/` | **Generated** by a run: `answers.jsonl`, `judgments.jsonl`, `config.json`, `summary.md` |
 
 ```bash
 $PY eval/check_gold.py                                    # gold answers: segments exist, Pali terms match
-$PY eval/run.py plan                                      # dry run: no model calls; sizes and cost estimate
+$PY eval/run.py plan                                      # dry run: no model calls; counts and tool sizes
 $PY eval/run.py tool C lookup "monkey mind"               # try one of B's or C's tools, no model
-$PY eval/run.py run --out eval/results/<name> --cap 3     # the real run (resumable; stops at the cap)
+$PY eval/run.py run --out eval/results/<name>             # the real run (resumable)
 $PY eval/run.py report --out eval/results/<name>          # rebuild summary.md from the logs
 ```
 
 ## Where it runs
 
-On your machine. Model calls go to Amazon Bedrock through your default AWS profile (region `ap-southeast-1`, the account's `global.` cross-region inference profiles). Nothing is deployed and no AWS resources are created. Behind a TLS-inspecting proxy, set `AWS_CA_BUNDLE` to your CA bundle.
+On your machine, through headless Claude Code (`claude -p`) on the owner's Claude plan: nothing is deployed and nothing is billed per call; usage counts toward the plan's limits. If a run hits the limit it stops, and rerunning the same command carries on where it stopped.
+
+Each call is isolated so that no system can reach the answer key:
+
+| Flag | Effect |
+|---|---|
+| `--system-prompt` | Our instructions replace Claude Code's own (a test call received 140 input tokens: the instruction and the question, nothing else) |
+| `--tools ""` | No built-in tools: no file reading, no shell, no web |
+| `--mcp-config` + `--strict-mcp-config` | Only B's or C's tool server (`mcp_server.py`); the test call listed exactly those tools |
+| `--setting-sources project`, run from an empty temporary folder | No CLAUDE.md, hooks, skills or memory from this project |
+
+The judge gets the answer key in its prompt and no tools. The runner uses the newest Claude Code bundled with the VS Code extension (set `CLAUDE_BIN` to choose another), since older standalone versions can't run the current models.
 
 | Role | Model |
 |---|---|
-| Answers (A, B and C) | Claude Haiku 5.5 (`global.anthropic.claude-haiku-5-5`), effort medium |
-| Judge | Claude Haiku 5.5 by default; `--judge sonnet` for Claude Sonnet 5.5 (about 20 times the cost). Effort medium |
+| Answers (A, B and C) | Claude Sonnet 5.5, effort medium (`--model` to change) |
+| Judge | Claude Opus 5.5, effort medium (`--judge` to change) |
 
-A smaller model answers on purpose: if structure helps, it should help most where the model knows least. Haiku as judge keeps a full run near $1.65 (Sonnet: about $13). A model marking its own family's answers may be lenient, so the owner checks the judge's verdicts (below), and a sample can be re-marked with `--judge sonnet` into a separate results folder.
+The judge is a stronger model than the one answering. It still makes mistakes, so the owner checks its verdicts (below).
 
 ## Systems compared
 
-All three use the same model and the same instructions ("answer from the suttas; cite; say when you don't know"; in `systems.py`). B and C add one sentence saying what their tools reach. Temperature can't be set on these models, so each question runs three times and consistency is measured instead.
+All three use the same model and the same instructions ("answer from the suttas; cite; say when you don't know"; in `systems.py`). B and C add one sentence saying what their tools reach. Temperature can't be set, so consistency is measured by running questions more than once (`--runs`; default 1 to spare the plan's limits).
 
 | | System | Gets |
 |---|---|---|
@@ -43,7 +55,7 @@ All three use the same model and the same instructions ("answer from the suttas;
 | **B** | LLM + text search | Tools over the same cached SuttaCentral texts the ontology is built from, including the parts it left out: keyword search (BM25) over every segment in English and Pali, read a whole sutta, list the suttas |
 | **C** | LLM + ontology | Tools over the reasoned graph: look up a word (the concept cards `dho.py ask` prints), list concepts, a word's senses, the text of cited passages, coverage records |
 
-B and C run the same tool loop (up to 8 model turns). The only difference between them is what their tools can reach.
+B and C run the same tool loop (up to 10 turns). The only difference between them is what their tools can reach.
 
 B is the control that matters. "Ontology beats a bare LLM" is easy to show and not very interesting. The real question is whether structure beats retrieval over the same text.
 
